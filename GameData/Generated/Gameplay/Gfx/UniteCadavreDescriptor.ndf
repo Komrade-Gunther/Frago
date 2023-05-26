@@ -14201,6 +14201,69 @@ Descriptor_UnitCadavre_GAZ_66_SOV is TEntityDescriptor
         ~/DebugModuleDescriptor,
     ]
 )
+Descriptor_UnitCadavre_GAZ_66_supply_SOV is TEntityDescriptor
+(
+    DescriptorId       = GUID:{064dc0f5-b2c1-4279-8b99-3b4f9abb73ed}
+    ClassNameForDebug  = 'Unit_CadavreGAZ_66_supply_SOV'
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Nationalite                      = ENationalite/Axis
+            MotherCountry                    = 'SOV'
+            AcknowUnitType                   = ~/TAcknowUnitType_Logistic
+            TypeUnitFormation                = 'Supply'
+        ),
+        ~/EmptyTagsModuleDescriptor,
+        TFlagsModuleDescriptor
+        (
+            InitialFlagSet =
+            [
+                Flag_Detectable,
+                Flag_LdDetectable,
+            ]
+        ),
+            TPositionModuleDescriptor
+            (
+                UseFollowCam               = False
+                StickToGround              = True
+                InGeoDb                    = False
+                PorteurMustBeVisible       = True
+                ClampInWorld               = True
+                ClampOutMap                = False
+                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
+                LowAltitudeFlyingAltitude  = ((0) * Metre)
+                NearGroundFlyingAltitude   = ((0) * Metre)
+            ),
+        ~/LinkTeamModuleDescriptor,
+            TCadavreModuleDescriptor
+            (
+                ExplodeAtEnd = True
+                KillAsVehicule = True
+                KillAsInfanterie = False
+                KillAsHelico = False
+                KillAsAirplane = False
+                KillAsBatiment = False
+                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum
+                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum
+                FadingDuration = 1
+                DeathExplosionAmmo = ~/Ammo_Mort_Unite_ravitaillement
+                ModuleDescriptorsToSteal =
+                [
+                   $/GFX/Everything/Descriptor_Unit_GAZ_66_supply_SOV/ApparenceModel,
+                   $/GFX/Everything/Descriptor_Unit_GAZ_66_supply_SOV/LandMovement,
+                   $/GFX/Everything/Descriptor_Unit_GAZ_66_supply_SOV/GenericMovement,
+                   $/GFX/Everything/Descriptor_Unit_GAZ_66_supply_SOV/FacingInfos,
+                ]
+            ),
+            $/GFX/Everything/Descriptor_Unit_GAZ_66_supply_SOV/ApparenceModel,
+            $/GFX/Everything/Descriptor_Unit_GAZ_66_supply_SOV/LandMovement,
+            $/GFX/Everything/Descriptor_Unit_GAZ_66_supply_SOV/GenericMovement,
+            $/GFX/Everything/Descriptor_Unit_GAZ_66_supply_SOV/FacingInfos,
+        ~/PackSignauxModuleDescriptor,
+        ~/DebugModuleDescriptor,
+    ]
+)
 Descriptor_UnitCadavre_Gendarmerie_FR is TEntityDescriptor
 (
     DescriptorId       = GUID:{e431215b-a07e-4f14-9738-63ccd4537d30}
