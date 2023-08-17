@@ -55099,7 +55099,7 @@ Ammo_Sniper_C3A1 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 100.0
@@ -55190,7 +55190,7 @@ Ammo_Sniper_CETME_C is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 50.0
@@ -55281,7 +55281,7 @@ Ammo_Sniper_FAL is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 50.0
@@ -55373,7 +55373,7 @@ Ammo_Sniper_FN_Model_3011 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 100.0
@@ -55465,7 +55465,7 @@ Ammo_Sniper_FRF1 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 100.0
@@ -55556,7 +55556,7 @@ Ammo_Sniper_FRF2 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 100.0
@@ -55648,7 +55648,7 @@ Ammo_Sniper_G3A3ZF is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 50.0
@@ -55740,7 +55740,7 @@ Ammo_Sniper_L1A1_SLR is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 50.0
@@ -55832,7 +55832,7 @@ Ammo_Sniper_L96A1 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 100.0
@@ -55924,7 +55924,7 @@ Ammo_Sniper_M14 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 50.0
@@ -56016,7 +56016,7 @@ Ammo_Sniper_M24 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 100.0
@@ -56108,7 +56108,7 @@ Ammo_Sniper_M43 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 100.0
@@ -56199,7 +56199,7 @@ Ammo_Sniper_PSG1 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 50.0
@@ -56291,7 +56291,7 @@ Ammo_Sniper_SVD_Dragunov is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 50.0
@@ -56383,7 +56383,7 @@ Ammo_Sniper_VSS_Vintorez is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.26
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 36 * Metre
     SuppressDamages                   = 50.0
@@ -56475,7 +56475,7 @@ Ammo_SniperHvy_Barret_M82 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.2
+    PhysicalDamages                   = 0.4
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 50.0
@@ -77173,7 +77173,7 @@ Ammo_SniperHvy_Barret_M82_AP_FRL is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.1
+    PhysicalDamages                   = 0.2 
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 5 * Metre
     SuppressDamages                   = 30

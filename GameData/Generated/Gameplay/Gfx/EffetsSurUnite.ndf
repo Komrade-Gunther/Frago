@@ -3076,7 +3076,7 @@ export UnitEffect_sniper is TEffectsPackDescriptor
         TUnitEffectIncreaseWeaponPhysicalDamagesDescriptor
         (
             ModifierType               = ~/ModifierType_Pourcentage
-            BonusWeaponPhysicalDamages = 500
+            BonusWeaponPhysicalDamages = 250
         ),
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (
