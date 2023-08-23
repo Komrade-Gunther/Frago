@@ -868,6 +868,7 @@ export ShowRoomEquivalenceManager is TShowRoomEquivalenceManager
         ( ~/Descriptor_Unit_BMP_2_SOV_recon_FRL, ~/Descriptor_ShowRoomUnit_BMP_2_SOV ),
         ( ~/Descriptor_Unit_Sniper_US_101st_FRL, ~/Descriptor_ShowRoomUnit_Sniper_US_101st_FRL ),
         ( ~/Descriptor_Unit_ZU_23_2_SOV_AF_FRL, ~/Descriptor_ShowRoomUnit_DCA_ZU_23_2_SOV ),
+        ( ~/Descriptor_Unit_60mm_mortar_101st_FRL, ~/Descriptor_ShowRoomUUnit_60mm_mortar_101st_FRL ),
 
     ]
 )

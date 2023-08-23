@@ -3220,6 +3220,7 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Unit_BMP_2_SOV_recon_FRL, 20027),
         (Descriptor_Unit_Sniper_US_101st_FRL, 20028),
         (Descriptor_Unit_ZU_23_2_SOV_AF_FRL, 20029),
+        (Descriptor_Unit_60mm_mortar_101st_FRL, 20030),
 
 
 
