@@ -2692,9 +2692,3 @@ Gfx_ZSU_57_2_DDR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Selector = Selector_ZSU_57_2_DDR
     SubDepictions = HumanSubDepictionsShowroom_ZSU_57_2_DDR
 )
-Gfx_60mm_mortar_101st_FRL_Showroom_Autogen is ShowroomVehicleDepictionTemplate
-(
-    Alternatives = Alternatives_81mm_mortar_UK
-    Selector = Selector_81mm_mortar_UK
-    SubDepictions = HumanSubDepictionsShowroom_Mortier_107mm_Airborne_US
-)
