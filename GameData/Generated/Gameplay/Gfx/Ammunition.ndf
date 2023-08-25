@@ -13,12 +13,12 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=6)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM230AP' ]
     FxPower                           = EFXPower/Moyen
-    TempsEntreDeuxTirs                = 0.1
-    TempsEntreDeuxFx                  = 0.1
+    TempsEntreDeuxTirs                = 0.075
+    TempsEntreDeuxFx                  = 0.075
     PorteeMaximale                    = ((4457) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
@@ -31,15 +31,15 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.3
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 92 * Metre
-    SuppressDamages                   = 15.0
+    SuppressDamages                   = 6.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -58,8 +58,8 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 7),
-             (EBaseHitValueModifier/Moving, 2),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -93,7 +93,7 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 2.0
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_AC_Helo
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
 (
@@ -107,12 +107,12 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen
-    TempsEntreDeuxTirs                = 0.3
-    TempsEntreDeuxFx                  = 0.3
+    TempsEntreDeuxTirs                = 0.075
+    TempsEntreDeuxFx                  = 0.075
     PorteeMaximale                    = ((4457) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
@@ -124,15 +124,16 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.3
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 102 * Metre
-    SuppressDamages                   = 15.0
+    SuppressDamages                   = 6.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -151,8 +152,8 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 16),
-             (EBaseHitValueModifier/Moving, 6),
+             (EBaseHitValueModifier/Idling, 35),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -168,13 +169,13 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     TempsEntreDeuxSalves              = 2.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 5
-    SupplyCost                        = 5
+    NbTirParSalves                    = 10
+    SupplyCost                        = 10
     NbSalvosShootOnPosition           = 3
     CanShootOnPosition                = False
     CanShootWhileMoving               = True
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 5
+    AffichageMunitionParSalve         = 10
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_GIAT_M621"
     SmokeDescriptor                   = nil
@@ -185,7 +186,7 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.6
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
 (
@@ -199,7 +200,7 @@ Ammo_AutoCanon_AP_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM242APFSDST' ]
     FxPower                           = EFXPower/Moyen
@@ -220,12 +221,12 @@ Ammo_AutoCanon_AP_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.4
+    PhysicalDamages                   = 0.3
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 102 * Metre
     SuppressDamages                   = 6.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -244,8 +245,8 @@ Ammo_AutoCanon_AP_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -278,7 +279,7 @@ Ammo_AutoCanon_AP_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.6
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_23mm_Bitube_Gsh23L is TAmmunitionDescriptor
 (
@@ -292,12 +293,12 @@ Ammo_AutoCanon_AP_23mm_Bitube_Gsh23L is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM230AP' ]
     FxPower                           = EFXPower/Moyen
-    TempsEntreDeuxTirs                = 0.1
-    TempsEntreDeuxFx                  = 0.1
+    TempsEntreDeuxTirs                = 0.075
+    TempsEntreDeuxFx                  = 0.075
     PorteeMaximale                    = ((4457) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
@@ -310,15 +311,15 @@ Ammo_AutoCanon_AP_23mm_Bitube_Gsh23L is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.5
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 92 * Metre
     SuppressDamages                   = 17.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -337,8 +338,8 @@ Ammo_AutoCanon_AP_23mm_Bitube_Gsh23L is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 7),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -372,7 +373,7 @@ Ammo_AutoCanon_AP_23mm_Bitube_Gsh23L is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 2.0
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_AC_Helo
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_23mm_NS23 is TAmmunitionDescriptor
 (
@@ -386,12 +387,12 @@ Ammo_AutoCanon_AP_23mm_NS23 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen
-    TempsEntreDeuxTirs                = 0.1
-    TempsEntreDeuxFx                  = 0.1
+    TempsEntreDeuxTirs                = 0.075
+    TempsEntreDeuxFx                  = 0.075
     PorteeMaximale                    = ((4457) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
@@ -404,15 +405,15 @@ Ammo_AutoCanon_AP_23mm_NS23 is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.7
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 92 * Metre
     SuppressDamages                   = 15.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -431,8 +432,8 @@ Ammo_AutoCanon_AP_23mm_NS23 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 7),
-             (EBaseHitValueModifier/Moving, 2),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -466,7 +467,7 @@ Ammo_AutoCanon_AP_23mm_NS23 is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 2.0
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_AC_Helo
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_25mm_KBA is TAmmunitionDescriptor
 (
@@ -480,7 +481,7 @@ Ammo_AutoCanon_AP_25mm_KBA is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=13)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM242APFSDST' ]
     FxPower                           = EFXPower/Moyen
@@ -497,15 +498,16 @@ Ammo_AutoCanon_AP_25mm_KBA is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.7
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 106 * Metre
     SuppressDamages                   = 19.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -524,8 +526,8 @@ Ammo_AutoCanon_AP_25mm_KBA is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 10),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 35),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -558,7 +560,7 @@ Ammo_AutoCanon_AP_25mm_KBA is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.6
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
 (
@@ -572,7 +574,7 @@ Ammo_AutoCanon_AP_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=13)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM242APFSDST' ]
     FxPower                           = EFXPower/Moyen
@@ -589,15 +591,16 @@ Ammo_AutoCanon_AP_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.7
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 106 * Metre
     SuppressDamages                   = 19.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -616,8 +619,8 @@ Ammo_AutoCanon_AP_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 13),
-             (EBaseHitValueModifier/Moving, 6),
+             (EBaseHitValueModifier/Idling, 35),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -650,7 +653,7 @@ Ammo_AutoCanon_AP_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.6
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_30mm_24A2 is TAmmunitionDescriptor
 (
@@ -664,7 +667,7 @@ Ammo_AutoCanon_AP_30mm_24A2 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=8)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit24A2APAIR' ]
     FxPower                           = EFXPower/Moyen
@@ -682,15 +685,15 @@ Ammo_AutoCanon_AP_30mm_24A2 is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.7
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 92 * Metre
     SuppressDamages                   = 22.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -709,8 +712,8 @@ Ammo_AutoCanon_AP_30mm_24A2 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 10),
-             (EBaseHitValueModifier/Moving, 7),
+             (EBaseHitValueModifier/Idling, 30),
+             (EBaseHitValueModifier/Moving, 20),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -744,7 +747,7 @@ Ammo_AutoCanon_AP_30mm_24A2 is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.0
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_AC_Helo
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_30mm_24A2_BMP2 is TAmmunitionDescriptor
 (
@@ -758,7 +761,7 @@ Ammo_AutoCanon_AP_30mm_24A2_BMP2 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=12)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit24A2AP' ]
     FxPower                           = EFXPower/Moyen
@@ -775,15 +778,16 @@ Ammo_AutoCanon_AP_30mm_24A2_BMP2 is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.7
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 104 * Metre
     SuppressDamages                   = 22.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -802,8 +806,8 @@ Ammo_AutoCanon_AP_30mm_24A2_BMP2 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -836,7 +840,7 @@ Ammo_AutoCanon_AP_30mm_24A2_BMP2 is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.6
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_30mm_2A72_BMP3 is TAmmunitionDescriptor
 (
@@ -850,7 +854,7 @@ Ammo_AutoCanon_AP_30mm_2A72_BMP3 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=13)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen
@@ -867,15 +871,16 @@ Ammo_AutoCanon_AP_30mm_2A72_BMP3 is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.7
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 106 * Metre
     SuppressDamages                   = 22.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -894,8 +899,8 @@ Ammo_AutoCanon_AP_30mm_2A72_BMP3 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -928,7 +933,7 @@ Ammo_AutoCanon_AP_30mm_2A72_BMP3 is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.6
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
 (
@@ -942,7 +947,7 @@ Ammo_AutoCanon_AP_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=8)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM230AP' ]
     FxPower                           = EFXPower/Moyen
@@ -960,7 +965,7 @@ Ammo_AutoCanon_AP_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 0.5
@@ -968,7 +973,7 @@ Ammo_AutoCanon_AP_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 104 * Metre
     SuppressDamages                   = 16
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -987,8 +992,8 @@ Ammo_AutoCanon_AP_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 8),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1022,7 +1027,7 @@ Ammo_AutoCanon_AP_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.0
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_AC_Helo
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_30mm_L21A1_RARDEN is TAmmunitionDescriptor
 (
@@ -1036,7 +1041,7 @@ Ammo_AutoCanon_AP_30mm_L21A1_RARDEN is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=12)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=13)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitRARDENAP' ]
     FxPower                           = EFXPower/Moyen
@@ -1053,15 +1058,16 @@ Ammo_AutoCanon_AP_30mm_L21A1_RARDEN is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.7
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 104 * Metre
     SuppressDamages                   = 22.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1080,8 +1086,8 @@ Ammo_AutoCanon_AP_30mm_L21A1_RARDEN is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1114,7 +1120,7 @@ Ammo_AutoCanon_AP_30mm_L21A1_RARDEN is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.6
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_30mm_M230 is TAmmunitionDescriptor
 (
@@ -1146,7 +1152,7 @@ Ammo_AutoCanon_AP_30mm_M230 is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 1.0
@@ -1154,7 +1160,7 @@ Ammo_AutoCanon_AP_30mm_M230 is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 104 * Metre
     SuppressDamages                   = 22.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1173,8 +1179,8 @@ Ammo_AutoCanon_AP_30mm_M230 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 10),
-             (EBaseHitValueModifier/Moving, 7),
+             (EBaseHitValueModifier/Idling, 30),
+             (EBaseHitValueModifier/Moving, 20),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1222,7 +1228,7 @@ Ammo_AutoCanon_AP_M693_F1_20mm is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen
@@ -1239,15 +1245,16 @@ Ammo_AutoCanon_AP_M693_F1_20mm is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.4
+    PhysicalDamages                   = 0.3
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 102 * Metre
     SuppressDamages                   = 6
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1266,8 +1273,8 @@ Ammo_AutoCanon_AP_M693_F1_20mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1300,7 +1307,7 @@ Ammo_AutoCanon_AP_M693_F1_20mm is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.6
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_AP_T20_20mm is TAmmunitionDescriptor
 (
@@ -1314,7 +1321,7 @@ Ammo_AutoCanon_AP_T20_20mm is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen
@@ -1331,15 +1338,16 @@ Ammo_AutoCanon_AP_T20_20mm is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.7
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 102 * Metre
     SuppressDamages                   = 15.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1358,8 +1366,8 @@ Ammo_AutoCanon_AP_T20_20mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1392,7 +1400,7 @@ Ammo_AutoCanon_AP_T20_20mm is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 1.6
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_AutoCanon_HE_20mm_M621_GIAT is TAmmunitionDescriptor
 (
@@ -1410,8 +1418,8 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT is TAmmunitionDescriptor
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM230HEDP' ]
     FxPower                           = EFXPower/Moyen
-    TempsEntreDeuxTirs                = 0.1
-    TempsEntreDeuxFx                  = 0.1
+    TempsEntreDeuxTirs                = 0.075
+    TempsEntreDeuxFx                  = 0.075
     PorteeMaximale                    = ((4457) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((4033) * Metre)
@@ -1424,15 +1432,15 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.284
+    PhysicalDamages                   = 0.13
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 30.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1451,8 +1459,8 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 5),
-             (EBaseHitValueModifier/Moving, 2),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1505,8 +1513,8 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72HEFI' ]
     FxPower                           = EFXPower/Moyen
-    TempsEntreDeuxTirs                = 0.3
-    TempsEntreDeuxFx                  = 0.3
+    TempsEntreDeuxTirs                = 0.075
+    TempsEntreDeuxFx                  = 0.075
     PorteeMaximale                    = ((4457) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((4033) * Metre)
@@ -1518,15 +1526,16 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.284
+    PhysicalDamages                   = 0.13
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 21 * Metre
-    SuppressDamages                   = 30.0
+    SuppressDamages                   = 12.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1545,8 +1554,8 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 16),
-             (EBaseHitValueModifier/Moving, 6),
+             (EBaseHitValueModifier/Idling, 35),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1562,13 +1571,13 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     TempsEntreDeuxSalves              = 2.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 5
-    SupplyCost                        = 5
+    NbTirParSalves                    = 10
+    SupplyCost                        = 10
     NbSalvosShootOnPosition           = 3
     CanShootOnPosition                = True
     CanShootWhileMoving               = True
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 5
+    AffichageMunitionParSalve         = 10
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_GIAT_M621"
     SmokeDescriptor                   = nil
@@ -1620,7 +1629,7 @@ Ammo_AutoCanon_HE_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 20 * Metre
     SuppressDamages                   = 12.0
     AllowSuppressDamageWhenNoImpact                = True
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1639,8 +1648,8 @@ Ammo_AutoCanon_HE_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1706,15 +1715,15 @@ Ammo_AutoCanon_HE_23mm_Bitube_Gsh23L is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.32659999999999995
+    PhysicalDamages                   = 0.345
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 34.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1733,8 +1742,8 @@ Ammo_AutoCanon_HE_23mm_Bitube_Gsh23L is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 7),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1801,7 +1810,7 @@ Ammo_AutoCanon_HE_23mm_NS23 is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
     PhysicalDamages                   = 0.284
@@ -1809,7 +1818,7 @@ Ammo_AutoCanon_HE_23mm_NS23 is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 30.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1828,8 +1837,8 @@ Ammo_AutoCanon_HE_23mm_NS23 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 5),
-             (EBaseHitValueModifier/Moving, 2),
+             (EBaseHitValueModifier/Idling, 15),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1895,15 +1904,16 @@ Ammo_AutoCanon_HE_25mm_KBA is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.355
+    PhysicalDamages                   = 0.26875
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 38.0
     AllowSuppressDamageWhenNoImpact                = True
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -1922,8 +1932,8 @@ Ammo_AutoCanon_HE_25mm_KBA is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 10),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 35),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -1988,15 +1998,16 @@ Ammo_AutoCanon_HE_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.355
+    PhysicalDamages                   = 0.26875
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 38.0
     AllowSuppressDamageWhenNoImpact                = True
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -2015,8 +2026,8 @@ Ammo_AutoCanon_HE_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 13),
-             (EBaseHitValueModifier/Moving, 6),
+             (EBaseHitValueModifier/Idling, 35),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -2082,7 +2093,7 @@ Ammo_AutoCanon_HE_30mm_24A2 is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
     PhysicalDamages                   = 0.426
@@ -2090,7 +2101,7 @@ Ammo_AutoCanon_HE_30mm_24A2 is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 45.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -2109,8 +2120,8 @@ Ammo_AutoCanon_HE_30mm_24A2 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 10),
-             (EBaseHitValueModifier/Moving, 7),
+             (EBaseHitValueModifier/Idling, 30),
+             (EBaseHitValueModifier/Moving, 20),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -2176,7 +2187,8 @@ Ammo_AutoCanon_HE_30mm_24A2_BMP2 is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
     PhysicalDamages                   = 0.426
@@ -2184,7 +2196,7 @@ Ammo_AutoCanon_HE_30mm_24A2_BMP2 is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 45.0
     AllowSuppressDamageWhenNoImpact                = True
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -2203,8 +2215,8 @@ Ammo_AutoCanon_HE_30mm_24A2_BMP2 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -2269,7 +2281,8 @@ Ammo_AutoCanon_HE_30mm_2A72_BMP3 is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
     PhysicalDamages                   = 0.426
@@ -2277,7 +2290,7 @@ Ammo_AutoCanon_HE_30mm_2A72_BMP3 is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 45.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -2296,8 +2309,8 @@ Ammo_AutoCanon_HE_30mm_2A72_BMP3 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -2363,7 +2376,7 @@ Ammo_AutoCanon_HE_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.32
@@ -2371,7 +2384,7 @@ Ammo_AutoCanon_HE_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 20 * Metre
     SuppressDamages                   = 32
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -2390,8 +2403,8 @@ Ammo_AutoCanon_HE_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 8),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -2457,7 +2470,8 @@ Ammo_AutoCanon_HE_30mm_L21A1_RARDEN is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
     PhysicalDamages                   = 0.426
@@ -2465,7 +2479,7 @@ Ammo_AutoCanon_HE_30mm_L21A1_RARDEN is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 45.0
     AllowSuppressDamageWhenNoImpact                = True
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -2484,8 +2498,8 @@ Ammo_AutoCanon_HE_30mm_L21A1_RARDEN is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -2551,7 +2565,7 @@ Ammo_AutoCanon_HE_30mm_M230 is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
     PhysicalDamages                   = 0.426
@@ -2559,7 +2573,7 @@ Ammo_AutoCanon_HE_30mm_M230 is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 45.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -2578,8 +2592,8 @@ Ammo_AutoCanon_HE_30mm_M230 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 10),
-             (EBaseHitValueModifier/Moving, 7),
+             (EBaseHitValueModifier/Idling, 30),
+             (EBaseHitValueModifier/Moving, 20),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -2644,7 +2658,8 @@ Ammo_AutoCanon_HE_M693_F1_20mm is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.13
@@ -2652,7 +2667,7 @@ Ammo_AutoCanon_HE_M693_F1_20mm is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 20 * Metre
     SuppressDamages                   = 12.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -2671,8 +2686,8 @@ Ammo_AutoCanon_HE_M693_F1_20mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 11),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 25),
+             (EBaseHitValueModifier/Moving, 5),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -2737,6 +2752,7 @@ Ammo_AutoCanon_HE_T20_20mm is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
@@ -26134,7 +26150,7 @@ Ammo_HMG_12_7_mm_DShKM is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26228,7 +26244,7 @@ Ammo_HMG_12_7_mm_M2HB is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26322,7 +26338,7 @@ export Ammo_HMG_12_7_mm_M2HB_CTRL is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26416,7 +26432,7 @@ Ammo_HMG_12_7_mm_M85 is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26510,7 +26526,7 @@ Ammo_HMG_12_7_mm_NSVT is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26698,7 +26714,7 @@ Ammo_HMG_14_5_mm_KPVT is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.238
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26792,7 +26808,7 @@ Ammo_HMG_team_12_7_mm_M2HB is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.28
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26886,7 +26902,7 @@ Ammo_HMG_team_12_7_mm_NSV is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.28
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26980,7 +26996,7 @@ Ammo_HMG_team_14_5_mm_KPVT is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.318
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -28399,10 +28415,10 @@ Ammo_Howz_Canon_2A65_towed_152mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((500) * Metre)
     DispersionAtMinRange              = ((500) * Metre)
     DispersionWithoutSorting          = True
-    CorrectedShotDispersionMultiplier = 0.7
+    CorrectedShotDispersionMultiplier = 0.65
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 274 * Metre
-    PhysicalDamages                   = 3.1
+    PhysicalDamages                   = 3.7
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 388 * Metre
     SuppressDamages                   = 194.0
@@ -35112,7 +35128,7 @@ Ammo_MMG_AANF1_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35205,7 +35221,7 @@ Ammo_MMG_AANF1_7_62mm_x2 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35298,7 +35314,7 @@ Ammo_MMG_FN_MAG_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35391,7 +35407,7 @@ Ammo_MMG_HK21_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35484,7 +35500,7 @@ Ammo_MMG_L37A2_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35577,7 +35593,7 @@ Ammo_MMG_L43A1_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35670,7 +35686,7 @@ Ammo_MMG_L8A2_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35763,7 +35779,7 @@ Ammo_MMG_L94A1_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35856,7 +35872,7 @@ Ammo_MMG_M1919 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35949,7 +35965,7 @@ Ammo_MMG_M240_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36042,7 +36058,7 @@ Ammo_MMG_M240_abrams_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36135,7 +36151,7 @@ Ammo_MMG_M240d_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36321,7 +36337,7 @@ Ammo_MMG_MG3_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36507,7 +36523,7 @@ Ammo_MMG_PKT_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36600,7 +36616,7 @@ Ammo_MMG_PKT_7_62mm_x2 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36693,7 +36709,7 @@ Ammo_MMG_PKT_7_62mm_x4 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36786,7 +36802,7 @@ Ammo_MMG_SGMB_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37251,7 +37267,7 @@ Ammo_MMG_team_7_62mm_AANF1 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37344,7 +37360,7 @@ Ammo_MMG_team_7_62mm_FN_MAG is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37437,7 +37453,7 @@ Ammo_MMG_team_7_62mm_M1919 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37530,7 +37546,7 @@ Ammo_MMG_team_7_62mm_M60 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37623,7 +37639,7 @@ Ammo_MMG_team_7_62mm_MG3 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37716,7 +37732,7 @@ Ammo_MMG_team_7_62mm_PKM is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -44031,7 +44047,7 @@ Ammo_Pod_GUV_AGS17 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.4
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 120 * Metre
@@ -44124,7 +44140,7 @@ Ammo_Pod_GUV_AGS17_2x is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 7 * Metre
+    RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.4
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 120 * Metre
