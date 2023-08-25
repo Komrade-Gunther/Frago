@@ -6808,7 +6808,7 @@ Ammo_Canon_AP_100mm_2A29_Rapira is TAmmunitionDescriptor
     PhysicalDamages                   = 1.0
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 122 * Metre
-    SuppressDamages                   = 68.0
+    SuppressDamages                   = 75.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
@@ -6901,7 +6901,7 @@ Ammo_Canon_AP_100mm_D10T_Merida is TAmmunitionDescriptor
     PhysicalDamages                   = 1.0
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 121 * Metre
-    SuppressDamages                   = 68.0
+    SuppressDamages                   = 75.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
@@ -6994,7 +6994,7 @@ Ammo_Canon_AP_100mm_D10T_early is TAmmunitionDescriptor
     PhysicalDamages                   = 1.0
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 120 * Metre
-    SuppressDamages                   = 68.0
+    SuppressDamages                   = 75.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
@@ -7087,7 +7087,7 @@ Ammo_Canon_AP_100mm_D10T_late is TAmmunitionDescriptor
     PhysicalDamages                   = 1.0
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 121 * Metre
-    SuppressDamages                   = 68.0
+    SuppressDamages                   = 75.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
@@ -7180,7 +7180,7 @@ Ammo_Canon_AP_105mm_CN105 is TAmmunitionDescriptor
     PhysicalDamages                   = 1.0
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 124 * Metre
-    SuppressDamages                   = 85.0
+    SuppressDamages                   = 94.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
@@ -7273,7 +7273,7 @@ Ammo_Canon_AP_105mm_CN_105_F1 is TAmmunitionDescriptor
     PhysicalDamages                   = 1.0
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 109 * Metre
-    SuppressDamages                   = 94.0
+    SuppressDamages                   = 105.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
@@ -7365,7 +7365,7 @@ Ammo_Canon_AP_105mm_CN_105_F1_BRENNUS is TAmmunitionDescriptor
     PhysicalDamages                   = 1.0
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 125 * Metre
-    SuppressDamages                   = 71.0
+    SuppressDamages                   = 79.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
@@ -7458,7 +7458,7 @@ Ammo_Canon_AP_105mm_CN_105_F1_late is TAmmunitionDescriptor
     PhysicalDamages                   = 1.0
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 123 * Metre
-    SuppressDamages                   = 71.0
+    SuppressDamages                   = 79.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
@@ -8201,7 +8201,7 @@ Ammo_Canon_AP_105mm_L7A3_Leo1A5 is TAmmunitionDescriptor
     PhysicalDamages                   = 1.0
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 122 * Metre
-    SuppressDamages                   = 71.0
+    SuppressDamages                   = 79.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
@@ -21687,7 +21687,7 @@ Ammo_FM_AKS_74 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -21779,7 +21779,7 @@ Ammo_FM_AK_74 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -21871,7 +21871,7 @@ Ammo_FM_C7A1 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -21963,7 +21963,7 @@ Ammo_FM_FAL is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 6 * Metre
     PhysicalDamages                   = 0.074
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 20 * Metre
+    RadiusSplashSuppressDamages       = 60 * Metre
     SuppressDamages                   = 3.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22055,7 +22055,7 @@ Ammo_FM_FAMAS is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22147,7 +22147,7 @@ Ammo_FM_FNC is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 6 * Metre
     PhysicalDamages                   = 0.074
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 20 * Metre
+    RadiusSplashSuppressDamages       = 60 * Metre
     SuppressDamages                   = 3.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22239,7 +22239,7 @@ Ammo_FM_FNC_Para is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 6 * Metre
     PhysicalDamages                   = 0.074
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 60 * Metre
     SuppressDamages                   = 3.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22331,7 +22331,7 @@ Ammo_FM_G3KA4 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 6 * Metre
     PhysicalDamages                   = 0.074
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 23 * Metre
+    RadiusSplashSuppressDamages       = 60 * Metre
     SuppressDamages                   = 3.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22423,7 +22423,7 @@ Ammo_FM_KMS_72 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 6 * Metre
     PhysicalDamages                   = 0.074
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 23 * Metre
+    RadiusSplashSuppressDamages       = 60 * Metre
     SuppressDamages                   = 3.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22515,7 +22515,7 @@ Ammo_FM_L1A1_SLR is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 6 * Metre
     PhysicalDamages                   = 0.074
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 23 * Metre
+    RadiusSplashSuppressDamages       = 60 * Metre
     SuppressDamages                   = 3.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22607,7 +22607,7 @@ Ammo_FM_L85A1 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22699,7 +22699,7 @@ Ammo_FM_M16 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22791,7 +22791,7 @@ Ammo_FM_M16A1 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22813,8 +22813,8 @@ Ammo_FM_M16A1 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 25),
-             (EBaseHitValueModifier/Moving, 10),
+             (EBaseHitValueModifier/Idling, 30),
+             (EBaseHitValueModifier/Moving, 15),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -22883,7 +22883,7 @@ Ammo_FM_MAS_56 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 6 * Metre
     PhysicalDamages                   = 0.074
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 23 * Metre
+    RadiusSplashSuppressDamages       = 60 * Metre
     SuppressDamages                   = 3.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -22975,7 +22975,7 @@ Ammo_FM_Mpi_AKS_74NK is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23067,7 +23067,7 @@ Ammo_FM_Mpi_AK_74N is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23159,7 +23159,7 @@ Ammo_FM_SIG_543 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23251,7 +23251,7 @@ Ammo_FM_StG_941 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23343,7 +23343,7 @@ Ammo_FM_StG_942 is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23435,7 +23435,7 @@ Ammo_FM_Tantal is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23527,7 +23527,7 @@ Ammo_FM_kbk_AK is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 6 * Metre
     PhysicalDamages                   = 0.072
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 23 * Metre
+    RadiusSplashSuppressDamages       = 60 * Metre
     SuppressDamages                   = 3.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23619,7 +23619,7 @@ Ammo_FM_kbk_AKM is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 5 * Metre
     PhysicalDamages                   = 0.06
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 17 * Metre
+    RadiusSplashSuppressDamages       = 50 * Metre
     SuppressDamages                   = 2.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23734,8 +23734,8 @@ Ammo_Gatling_AP_M197_20mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 7),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -23803,10 +23803,10 @@ Ammo_Gatling_JakB_12_7mm is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.17039999999999997
+    RadiusSplashPhysicalDamages       = 20 * Metre
+    PhysicalDamages                   = 0.18
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 21 * Metre
+    RadiusSplashSuppressDamages       = 20 * Metre
     SuppressDamages                   = 18.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23828,8 +23828,8 @@ Ammo_Gatling_JakB_12_7mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 7),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -23898,10 +23898,10 @@ Ammo_Gatling_M197_20mm is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.284
+    RadiusSplashPhysicalDamages       = 20 * Metre
+    PhysicalDamages                   = 0.3
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 21 * Metre
+    RadiusSplashSuppressDamages       = 20 * Metre
     SuppressDamages                   = 30.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = True
@@ -23923,8 +23923,8 @@ Ammo_Gatling_M197_20mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 7),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -24210,8 +24210,8 @@ Ammo_Gatling_m134_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 7),
-             (EBaseHitValueModifier/Moving, 3),
+             (EBaseHitValueModifier/Idling, 20),
+             (EBaseHitValueModifier/Moving, 10),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -26783,7 +26783,7 @@ Ammo_HMG_team_12_7_mm_M2HB is TAmmunitionDescriptor
     PorteeMaximaleTBA                 = ((2901) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((330) * Metre)
+    PorteeMinimale                    = ((100) * Metre)
     AltitudeAPorteeMinimale           = ((15.0) * Metre)
     AltitudeAPorteeMaximale           = ((30.0) * Metre)
     AffecteParNombre                  = True
@@ -26877,7 +26877,7 @@ Ammo_HMG_team_12_7_mm_NSV is TAmmunitionDescriptor
     PorteeMaximaleTBA                 = ((2901) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((330) * Metre)
+    PorteeMinimale                    = ((100) * Metre)
     AltitudeAPorteeMinimale           = ((15.0) * Metre)
     AltitudeAPorteeMaximale           = ((30.0) * Metre)
     AffecteParNombre                  = True
@@ -26971,7 +26971,7 @@ Ammo_HMG_team_14_5_mm_KPVT is TAmmunitionDescriptor
     PorteeMaximaleTBA                 = ((2901) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((330) * Metre)
+    PorteeMinimale                    = ((100) * Metre)
     AltitudeAPorteeMinimale           = ((15.0) * Metre)
     AltitudeAPorteeMaximale           = ((30.0) * Metre)
     AffecteParNombre                  = True
