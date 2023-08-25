@@ -123,7 +123,7 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -217,7 +217,7 @@ Ammo_AutoCanon_AP_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
@@ -497,7 +497,7 @@ Ammo_AutoCanon_AP_25mm_KBA is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -590,7 +590,7 @@ Ammo_AutoCanon_AP_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -777,7 +777,7 @@ Ammo_AutoCanon_AP_30mm_24A2_BMP2 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -870,7 +870,7 @@ Ammo_AutoCanon_AP_30mm_2A72_BMP3 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -1057,7 +1057,7 @@ Ammo_AutoCanon_AP_30mm_L21A1_RARDEN is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -1244,7 +1244,7 @@ Ammo_AutoCanon_AP_M693_F1_20mm is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((30.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -1337,7 +1337,7 @@ Ammo_AutoCanon_AP_T20_20mm is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((30.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -1525,7 +1525,7 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -1620,7 +1620,7 @@ Ammo_AutoCanon_HE_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 20 * Metre
@@ -1903,7 +1903,7 @@ Ammo_AutoCanon_HE_25mm_KBA is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -1997,7 +1997,7 @@ Ammo_AutoCanon_HE_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -2186,7 +2186,7 @@ Ammo_AutoCanon_HE_30mm_24A2_BMP2 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((60.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -2280,7 +2280,7 @@ Ammo_AutoCanon_HE_30mm_2A72_BMP3 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -2469,7 +2469,7 @@ Ammo_AutoCanon_HE_30mm_L21A1_RARDEN is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((40.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -2657,7 +2657,7 @@ Ammo_AutoCanon_HE_M693_F1_20mm is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((30.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
@@ -2751,7 +2751,7 @@ Ammo_AutoCanon_HE_T20_20mm is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((30.0) * Metre)
     AffecteParNombre                  = True
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
