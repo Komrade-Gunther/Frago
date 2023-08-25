@@ -63217,7 +63217,7 @@ Ammo_ATGM_9M112_1_Kobra is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 45),
+             (EBaseHitValueModifier/Idling, 50),
              (EBaseHitValueModifier/Moving, 0),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
@@ -72811,7 +72811,7 @@ Ammo_FRL_1_MANPAD_Suppress is TAmmunitionDescriptor
     PhysicalDamages                   = 0.0
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 188 * Metre
-    SuppressDamages                   = 90.0
+    SuppressDamages                   = 190.0
     AllowSuppressDamageWhenNoImpact                = True
     DisplaySalveAccuracy              = False
     TirIndirect                       = False
