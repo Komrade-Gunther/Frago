@@ -27843,3 +27843,15 @@ Descriptor_Deck_Pack_ZU_23_2_SOV_AF_FRL is TDeckPackDescriptor
         ),
     ]
 )
+Descriptor_Deck_Pack_60mm_mortar_101st_FRL is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{399fef75-c472-40a8-80ab-a928649e3524}
+    CfgName = 'Descriptor_Deck_Pack_399fef75-c472-40a8-80ab-a928649e3524'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_60mm_mortar_101st_FRL
+        ),
+    ]
+)
