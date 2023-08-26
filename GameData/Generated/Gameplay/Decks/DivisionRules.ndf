@@ -17016,7 +17016,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Rifles_LAW_US
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_M113_Dragon_US, ~/Descriptor_Unit_M35_trans_US,~/Descriptor_Unit_M2A2_Bradley_TOW1_IFV_US_FRL]
+                        AvailableTransportList = [~/Descriptor_Unit_M113_Dragon_US, ~/Descriptor_Unit_M35_trans_US]
                         NumberOfUnitInPack = 9
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
                     ),
@@ -17024,7 +17024,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Rifles_US
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_M113A3_US, ~/Descriptor_Unit_M35_trans_US,~/Descriptor_Unit_M2A2_Bradley_TOW1_IFV_US_FRL]
+                        AvailableTransportList = [~/Descriptor_Unit_M113A3_US, ~/Descriptor_Unit_M35_trans_US]
                         NumberOfUnitInPack = 8
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.5, 0.25]
                     ),
@@ -17040,7 +17040,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Rifles_half_LAW_US
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_M1038_Humvee_US, ~/Descriptor_Unit_M113_Dragon_US, ~/Descriptor_Unit_M113A3_US]
+                        AvailableTransportList = [~/Descriptor_Unit_M1038_Humvee_US, ~/Descriptor_Unit_M113_Dragon_US, ~/Descriptor_Unit_M113A3_US,~/Descriptor_Unit_M2A2_Bradley_TOW1_IFV_US_FRL]
                         NumberOfUnitInPack = 9
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
                     ),

@@ -13,7 +13,7 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM230AP' ]
     FxPower                           = EFXPower/Moyen
@@ -107,7 +107,7 @@ Ammo_AutoCanon_AP_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen
@@ -200,7 +200,7 @@ Ammo_AutoCanon_AP_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM242APFSDST' ]
     FxPower                           = EFXPower/Moyen
@@ -293,7 +293,7 @@ Ammo_AutoCanon_AP_23mm_Bitube_Gsh23L is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM230AP' ]
     FxPower                           = EFXPower/Moyen
@@ -387,7 +387,7 @@ Ammo_AutoCanon_AP_23mm_NS23 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen
@@ -481,7 +481,7 @@ Ammo_AutoCanon_AP_25mm_KBA is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=11)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM242APFSDST' ]
     FxPower                           = EFXPower/Moyen
@@ -574,7 +574,7 @@ Ammo_AutoCanon_AP_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=11)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM242APFSDST' ]
     FxPower                           = EFXPower/Moyen
@@ -667,7 +667,7 @@ Ammo_AutoCanon_AP_30mm_24A2 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit24A2APAIR' ]
     FxPower                           = EFXPower/Moyen
@@ -761,7 +761,7 @@ Ammo_AutoCanon_AP_30mm_24A2_BMP2 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit24A2AP' ]
     FxPower                           = EFXPower/Moyen
@@ -854,7 +854,7 @@ Ammo_AutoCanon_AP_30mm_2A72_BMP3 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=11)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=11)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen
@@ -947,7 +947,7 @@ Ammo_AutoCanon_AP_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM230AP' ]
     FxPower                           = EFXPower/Moyen
@@ -1041,7 +1041,7 @@ Ammo_AutoCanon_AP_30mm_L21A1_RARDEN is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=13)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=13)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitRARDENAP' ]
     FxPower                           = EFXPower/Moyen
@@ -1228,7 +1228,7 @@ Ammo_AutoCanon_AP_M693_F1_20mm is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen
@@ -1321,7 +1321,7 @@ Ammo_AutoCanon_AP_T20_20mm is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=9)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=9)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetit2A72APT' ]
     FxPower                           = EFXPower/Moyen

@@ -147,6 +147,13 @@ DamageTypeComponentConfigurations is
         Button = "MissileHEButton"
         AmmoText = "WeaponMissileHEAmmoText"
         CalibreText = "WeaponMissileHECalibreText"
+    ),
+	TDamageComponentConfiguration
+    (
+        DamageType = "ap"
+        Button = "APButton"
+        AmmoText = "WeaponAPAmmoText"
+        CalibreText = "WeaponAPCalibreText"
     )
 ]
 

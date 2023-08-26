@@ -32,6 +32,10 @@ export WeaponConstantes is TWeaponConstantsDescriptor
             "balledca",
             TDamageTypeRTTI(Family="suppressdca" Index=1)
         ),
+		(
+            "ap_autocannon",
+            TDamageTypeRTTI(Family="suppressap" Index=1)
+        ),
     ]
 
     //Types de blindage qui doivent être percées pour subir des dégâts
@@ -60,6 +64,8 @@ export WeaponConstantes is TWeaponConstantsDescriptor
         ("ap", EImpactProjectile/APShell),
         ("ap_missile", EImpactProjectile/APShell),
         ("he", EImpactProjectile/HEShell),
+		("ap_autocannon", EImpactProjectile/APShell),
+
     ]
 
     BlindagesToIgnoreForDamageFamilies = MAP
