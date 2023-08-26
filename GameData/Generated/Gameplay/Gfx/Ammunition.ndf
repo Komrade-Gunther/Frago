@@ -23726,7 +23726,7 @@ Ammo_Gatling_AP_M197_20mm is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 1.0
+    PhysicalDamages                   = 0.7
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 92 * Metre
     SuppressDamages                   = 15.0
