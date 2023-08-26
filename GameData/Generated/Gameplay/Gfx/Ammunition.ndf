@@ -23705,7 +23705,7 @@ Ammo_Gatling_AP_M197_20mm is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_MachineGun
     MinMaxCategory                    = MinMax_Gatling
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap" Index=6)
+    Arme                              = TDamageTypeRTTI(Family="ap_autocannon" Index=6)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'M197Gatling' ]
     FxPower                           = EFXPower/Moyen
@@ -23723,7 +23723,7 @@ Ammo_Gatling_AP_M197_20mm is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 1.0
@@ -23731,7 +23731,7 @@ Ammo_Gatling_AP_M197_20mm is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 92 * Metre
     SuppressDamages                   = 15.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -23764,7 +23764,7 @@ Ammo_Gatling_AP_M197_20mm is TAmmunitionDescriptor
          ]
     )
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 2.5
+    TempsDeVisee                      = 1.5
     TempsEntreDeuxSalves              = 1.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -23785,7 +23785,7 @@ Ammo_Gatling_AP_M197_20mm is TAmmunitionDescriptor
     PiercingWeapon                    = True
     FlightTimeForSpeed                    = 0.85
     DistanceForSpeed                      = 5000.0 * Metre
-    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_AC_Helo
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL
 )
 Ammo_Gatling_JakB_12_7mm is TAmmunitionDescriptor
 (
@@ -23912,7 +23912,7 @@ Ammo_Gatling_M197_20mm is TAmmunitionDescriptor
     AngleDispersion                   = 0.0
     DispersionAtMaxRange              = ((30) * Metre)
     DispersionAtMinRange              = ((5) * Metre)
-    DispersionWithoutSorting          = False
+    DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.3
@@ -23920,7 +23920,7 @@ Ammo_Gatling_M197_20mm is TAmmunitionDescriptor
     RadiusSplashSuppressDamages       = 20 * Metre
     SuppressDamages                   = 30.0
     AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
