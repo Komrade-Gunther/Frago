@@ -540,7 +540,7 @@ Ammo_AutoCanon_AP_25mm_KBA is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -633,7 +633,7 @@ Ammo_AutoCanon_AP_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -727,7 +727,7 @@ Ammo_AutoCanon_AP_30mm_24A2 is TAmmunitionDescriptor
     )
     MaxSuccessiveHitCount             = 1
     TempsDeVisee                      = 2.5
-    TempsEntreDeuxSalves              = 3.0
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 10
@@ -820,7 +820,7 @@ Ammo_AutoCanon_AP_30mm_24A2_BMP2 is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -913,7 +913,7 @@ Ammo_AutoCanon_AP_30mm_2A72_BMP3 is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -1006,7 +1006,7 @@ Ammo_AutoCanon_AP_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
          ]
     )
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 2.5
+    TempsDeVisee                      = 1.5
     TempsEntreDeuxSalves              = 3.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -1100,7 +1100,7 @@ Ammo_AutoCanon_AP_30mm_L21A1_RARDEN is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -1435,7 +1435,7 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.18
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 30.0
@@ -1530,7 +1530,7 @@ Ammo_AutoCanon_HE_20mm_M621_GIAT_AMX30 is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.18
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 12.0
@@ -1624,7 +1624,7 @@ Ammo_AutoCanon_HE_20mm_MK_20_Rh_202 is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 20 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.18
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
     SuppressDamages                   = 12.0
@@ -1908,7 +1908,7 @@ Ammo_AutoCanon_HE_25mm_KBA is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.26875
+    PhysicalDamages                   = 0.375
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 38.0
@@ -1946,7 +1946,7 @@ Ammo_AutoCanon_HE_25mm_KBA is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -2002,7 +2002,7 @@ Ammo_AutoCanon_HE_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 21 * Metre
-    PhysicalDamages                   = 0.26875
+    PhysicalDamages                   = 0.375
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 21 * Metre
     SuppressDamages                   = 38.0
@@ -2040,7 +2040,7 @@ Ammo_AutoCanon_HE_25mm_M242_Bushmaster_Late is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -2135,7 +2135,7 @@ Ammo_AutoCanon_HE_30mm_24A2 is TAmmunitionDescriptor
     )
     MaxSuccessiveHitCount             = 1
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 3.0
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 10
@@ -2229,7 +2229,7 @@ Ammo_AutoCanon_HE_30mm_24A2_BMP2 is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -2323,7 +2323,7 @@ Ammo_AutoCanon_HE_30mm_2A72_BMP3 is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -2418,7 +2418,7 @@ Ammo_AutoCanon_HE_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
     )
     MaxSuccessiveHitCount             = 1
     TempsDeVisee                      = 1.0
-    TempsEntreDeuxSalves              = 3.0
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 10
@@ -2512,7 +2512,7 @@ Ammo_AutoCanon_HE_30mm_L21A1_RARDEN is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 2.5
+    TempsEntreDeuxSalves              = 1.5
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 5
@@ -2662,7 +2662,7 @@ Ammo_AutoCanon_HE_M693_F1_20mm is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 20 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.18
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
     SuppressDamages                   = 12.0
@@ -26150,7 +26150,7 @@ Ammo_HMG_12_7_mm_DShKM is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_hmg_splash) * Metre)
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26244,7 +26244,7 @@ Ammo_HMG_12_7_mm_M2HB is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_hmg_splash) * Metre)
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26432,7 +26432,7 @@ Ammo_HMG_12_7_mm_M85 is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_hmg_splash) * Metre)
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26526,7 +26526,7 @@ Ammo_HMG_12_7_mm_NSVT is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_hmg_splash) * Metre)
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26620,7 +26620,7 @@ Ammo_HMG_12_7_mm_avenger_M3P is TAmmunitionDescriptor
     DispersionAtMinRange              = ((3) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 6 * Metre
+    RadiusSplashPhysicalDamages       = ((var_hmg_splash) * Metre)
     PhysicalDamages                   = 0.28
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 53 * Metre
@@ -26714,7 +26714,7 @@ Ammo_HMG_14_5_mm_KPVT is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_hmg_splash) * Metre)
     PhysicalDamages                   = 0.238
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26808,7 +26808,7 @@ Ammo_HMG_team_12_7_mm_M2HB is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_hmg_splash) * Metre)
     PhysicalDamages                   = 0.28
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26902,7 +26902,7 @@ Ammo_HMG_team_12_7_mm_NSV is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_hmg_splash) * Metre)
     PhysicalDamages                   = 0.28
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -26996,7 +26996,7 @@ Ammo_HMG_team_14_5_mm_KPVT is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_hmg_splash) * Metre)
     PhysicalDamages                   = 0.318
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35128,7 +35128,7 @@ Ammo_MMG_AANF1_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35221,7 +35221,7 @@ Ammo_MMG_AANF1_7_62mm_x2 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35314,7 +35314,7 @@ Ammo_MMG_FN_MAG_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35407,7 +35407,7 @@ Ammo_MMG_HK21_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35500,7 +35500,7 @@ Ammo_MMG_L37A2_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35593,7 +35593,7 @@ Ammo_MMG_L43A1_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35686,7 +35686,7 @@ Ammo_MMG_L8A2_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35779,7 +35779,7 @@ Ammo_MMG_L94A1_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35872,7 +35872,7 @@ Ammo_MMG_M1919 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -35965,7 +35965,7 @@ Ammo_MMG_M240_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36058,7 +36058,7 @@ Ammo_MMG_M240_abrams_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36151,7 +36151,7 @@ Ammo_MMG_M240d_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36245,7 +36245,7 @@ Ammo_MMG_M60_7_62mm is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 5 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.196
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 23 * Metre
@@ -36337,7 +36337,7 @@ Ammo_MMG_MG3_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36431,7 +36431,7 @@ Ammo_MMG_PKM_7_62mm is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 5 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.196
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 23 * Metre
@@ -36523,7 +36523,7 @@ Ammo_MMG_PKT_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36616,7 +36616,7 @@ Ammo_MMG_PKT_7_62mm_x2 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36709,7 +36709,7 @@ Ammo_MMG_PKT_7_62mm_x4 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.204
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36802,7 +36802,7 @@ Ammo_MMG_SGMB_7_62mm is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -36896,7 +36896,7 @@ Ammo_MMG_inf__MG3_7_62mm is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 5 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.196
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 23 * Metre
@@ -36989,7 +36989,7 @@ Ammo_MMG_inf_AA52_7_5mm is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 5 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.196
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 23 * Metre
@@ -37082,7 +37082,7 @@ Ammo_MMG_inf_AANF1_7_62mm is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 5 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.196
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 23 * Metre
@@ -37175,7 +37175,7 @@ Ammo_MMG_inf_MAG_7_62mm is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 5 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.192
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 23 * Metre
@@ -37267,7 +37267,7 @@ Ammo_MMG_team_7_62mm_AANF1 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37360,7 +37360,7 @@ Ammo_MMG_team_7_62mm_FN_MAG is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37453,7 +37453,7 @@ Ammo_MMG_team_7_62mm_M1919 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37546,7 +37546,7 @@ Ammo_MMG_team_7_62mm_M60 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37639,7 +37639,7 @@ Ammo_MMG_team_7_62mm_MG3 is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -37732,7 +37732,7 @@ Ammo_MMG_team_7_62mm_PKM is TAmmunitionDescriptor
     DispersionAtMaxRange              = ((15) * Metre)
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
     PhysicalDamages                   = 0.202
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -74492,7 +74492,7 @@ Ammo_HMG_12_7_mm_M2HB_AP_FRL is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -74586,7 +74586,7 @@ Ammo_HMG_12_7_mm_M85_AP_FRL is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -74680,7 +74680,7 @@ Ammo_HMG_12_7_mm_NSVT_AP_FRL is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -74774,7 +74774,7 @@ Ammo_HMG_14_5_mm_KPVT_AP_FRL is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 0.119
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -74868,7 +74868,7 @@ Ammo_HMG_team_12_7_mm_M2HB_AP_FRL is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -74962,7 +74962,7 @@ Ammo_HMG_team_12_7_mm_NSV_AP_FRL is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 20 * Metre
+    RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 0.102
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 20 * Metre
@@ -75059,7 +75059,7 @@ Ammo_HMG_team_14_5_mm_AP_FRL is TAmmunitionDescriptor
     RadiusSplashPhysicalDamages       = 20 * Metre
     PhysicalDamages                   = 0.119
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 20 * Metre
+    RadiusSplashSuppressDamages       = 0 * Metre
     SuppressDamages                   = 28.0
     AllowSuppressDamageWhenNoImpact                = False
     DisplaySalveAccuracy              = False
@@ -75150,7 +75150,7 @@ Ammo_HMG_12_7_mm_avenger_M3P_AP_FRL is TAmmunitionDescriptor
     DispersionAtMinRange              = ((5) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 6 * Metre
+    RadiusSplashPhysicalDamages       = 0 * Metre
     PhysicalDamages                   = 0.18
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 53 * Metre
