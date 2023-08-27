@@ -1134,7 +1134,7 @@ Ammo_AutoCanon_AP_30mm_M230 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_FastCanon
     MinMaxCategory                    = MinMax_AutocanonHE
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=4)
+    Arme                              = TDamageTypeRTTI(Family="ap" Index=4)
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'CanonPetitM230AP' ]
     FxPower                           = EFXPower/Moyen
@@ -1155,7 +1155,7 @@ Ammo_AutoCanon_AP_30mm_M230 is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 0 * Metre
-    PhysicalDamages                   = 0.1
+    PhysicalDamages                   = 1
     ShowDamageInUI                    = False
     RadiusSplashSuppressDamages       = 104 * Metre
     SuppressDamages                   = 22.0
@@ -1175,7 +1175,7 @@ Ammo_AutoCanon_AP_30mm_M230 is TAmmunitionDescriptor
     (
          DescriptorId          = GUID:{f66d7f93-3231-4a9c-8153-4cc0b34d4f8c}
          BaseCriticModifier = 0
-         BaseEffectModifier = -187
+         BaseEffectModifier = 0
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
