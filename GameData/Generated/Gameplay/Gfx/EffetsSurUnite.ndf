@@ -1703,6 +1703,23 @@ export UnitEffect_Gain_un_niveau_XP is TEffectsPackDescriptor
             TextureToken         = "icone_leader"
             CanBeSeenByEnemy         = false
         ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 1.25
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "reserviste_immune",
+            ]
+        ),
+        TUnitEffectShowLabelIconDescriptor
+        (
+            TextureToken         = "icone_mp"
+            CanBeSeenByEnemy         = false
+        ),
     ]
 )
 export UnitEffect_Global_Cowering is TEffectsPackDescriptor

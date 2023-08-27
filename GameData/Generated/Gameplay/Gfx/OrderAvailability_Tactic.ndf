@@ -203,6 +203,8 @@ Descriptor_OrderAvailability_AML_60_FR is [
     "Shoot",
     "ShootOnPosition",
     "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
     "AskForSupply",
     "GoGetSupply",
     "AIDefend",
@@ -222,11 +224,14 @@ Descriptor_OrderAvailability_AML_60_Gendarmerie_FR is [
     "Shoot",
     "ShootOnPosition",
     "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
     "AskForSupply",
     "GoGetSupply",
     "AIDefend",
     "AIAttack",
     "AIStop",
+
 ]
 Descriptor_OrderAvailability_AML_90_FR is [
     "Stop",
