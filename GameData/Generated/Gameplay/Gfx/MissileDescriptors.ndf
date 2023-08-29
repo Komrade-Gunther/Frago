@@ -15822,7 +15822,7 @@ export Descriptor_Missile_Javelin_LML is TEntityDescriptor
                  Dangerousness  = 200
              ),
         ~/PackSignauxModuleDescriptor,
-        ~/TargetDataModuleDescriptor,
+        ~/TargetDataModuleDescriptor,	
     ]
 )
 export Descriptor_Missile_M47_DRAGON is TEntityDescriptor

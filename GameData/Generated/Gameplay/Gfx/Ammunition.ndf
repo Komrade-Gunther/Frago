@@ -19906,7 +19906,7 @@ Ammo_DCA_2_canons_2A38M_30mm is TAmmunitionDescriptor
     TempsEntreDeuxFx                  = 0.2
     PorteeMaximale                    = ((3962) * Metre)
     PorteeMinimaleTBA                 = ((100) * Metre)
-    PorteeMaximaleTBA                 = ((7500) * Metre)
+    PorteeMaximaleTBA                 = ((7995) * Metre)
     PorteeMinimaleHA                  = ((100) * Metre)
     PorteeMaximaleHA                  = ((7995) * Metre)
     PorteeMinimale                    = ((100) * Metre)
@@ -20000,7 +20000,7 @@ Ammo_DCA_2_canons_HS_831_30mm is TAmmunitionDescriptor
     TempsEntreDeuxFx                  = 0.2
     PorteeMaximale                    = ((3962) * Metre)
     PorteeMinimaleTBA                 = ((100) * Metre)
-    PorteeMaximaleTBA                 = ((7500) * Metre)
+    PorteeMaximaleTBA                 = ((7995) * Metre)
     PorteeMinimaleHA                  = ((100) * Metre)
     PorteeMaximaleHA                  = ((7995) * Metre)
     PorteeMinimale                    = ((100) * Metre)
@@ -20841,7 +20841,7 @@ Ammo_DCA_4_canons_APZ23_23mm is TAmmunitionDescriptor
     TempsEntreDeuxFx                  = 0.15
     PorteeMaximale                    = ((3962) * Metre)
     PorteeMinimaleTBA                 = ((100) * Metre)
-    PorteeMaximaleTBA                 = ((7004) * Metre)
+    PorteeMaximaleTBA                 = ((7500) * Metre)
     PorteeMinimaleHA                  = ((100) * Metre)
     PorteeMaximaleHA                  = ((7500) * Metre)
     PorteeMinimale                    = ((100) * Metre)
@@ -21028,7 +21028,7 @@ Ammo_DCA_4_canons_AZP_23_Amur_23mm_late is TAmmunitionDescriptor
     TempsEntreDeuxFx                  = 0.15
     PorteeMaximale                    = ((3962) * Metre)
     PorteeMinimaleTBA                 = ((100) * Metre)
-    PorteeMaximaleTBA                 = ((7004) * Metre)
+    PorteeMaximaleTBA                 = ((7500) * Metre)
     PorteeMinimaleHA                  = ((100) * Metre)
     PorteeMaximaleHA                  = ((7500) * Metre)
     PorteeMinimale                    = ((100) * Metre)
@@ -23997,7 +23997,7 @@ Ammo_Gatling_M61_Vulcan_20mm_late is TAmmunitionDescriptor
     TempsEntreDeuxFx                  = 0.05
     PorteeMaximale                    = ((3962) * Metre)
     PorteeMinimaleTBA                 = ((100) * Metre)
-    PorteeMaximaleTBA                 = ((7004) * Metre)
+    PorteeMaximaleTBA                 = ((7500) * Metre)
     PorteeMinimaleHA                  = ((100) * Metre)
     PorteeMaximaleHA                  = ((7500) * Metre)
     PorteeMinimale                    = ((100) * Metre)
@@ -24093,7 +24093,7 @@ Ammo_Gatling_M61_Vulcan_20mm_late_TOWED is TAmmunitionDescriptor
     TempsEntreDeuxFx                  = 0.05
     PorteeMaximale                    = ((3962) * Metre)
     PorteeMinimaleTBA                 = ((100) * Metre)
-    PorteeMaximaleTBA                 = ((7004) * Metre)
+    PorteeMaximaleTBA                 = ((7500) * Metre)
     PorteeMinimaleHA                  = ((100) * Metre)
     PorteeMaximaleHA                  = ((7500) * Metre)
     PorteeMinimale                    = ((100) * Metre)
