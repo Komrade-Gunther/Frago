@@ -1,12 +1,13 @@
 StrategicObjectivesResources is TUIObjectivesResources
 (
     Layer = $/UserInterface/UILayer_Labels
+    WorldFloorProxy = $/M3D/Scene/WorldFloorForIAProxy
 
     ObjectiveLabelMagnificationMultiplier = 1.0
 
     ObjectiveLabelDescriptors =
     [
-        PrimaryStrategicObjectiveLabel, // Primary
+        ~/PrimaryObjectiveLabel,        // Primary
         BonusStrategicObjectiveLabel,   // Bonus
         InfoStrategicObjectiveLabel,    // Hint
         CaptureStrategicObjectiveLabel, // CapturePoint
@@ -22,11 +23,6 @@ StrategicObjectivesResources is TUIObjectivesResources
         (ENationalite/OTAN, "CommonTexture_MotherCountryFlag_NATO"),
         (ENationalite/PACT, "CommonTexture_MotherCountryFlag_PACT"),
     ]
-)
-
-PrimaryStrategicObjectiveLabel is StrategicObjectiveLabelTemplate
-(
-    NewObjectiveToken = "OBJ_NEWP"
 )
 
 BonusStrategicObjectiveLabel is StrategicObjectiveLabelTemplate

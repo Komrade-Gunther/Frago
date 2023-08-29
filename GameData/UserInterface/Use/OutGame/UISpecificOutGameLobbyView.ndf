@@ -725,6 +725,19 @@ FullPanelLobby is BUCKContainerDescriptor
 
     Components =
     [
+        // This item ensures the pointer events are blocked
+        // It is shorter than the background texture, tu ensure the BACK button is still accessible when the lobby is hidden
+        BUCKContainerDescriptor
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = [1479.0, 660.0]
+                AlignementToFather = [0.0, 1.0]
+                AlignementToAnchor = [0.0, 1.0]
+                MagnifiableOffset = [0.0, 74.0 - LobbyVerticalOffset]
+            )
+            HidePointerEvents = true
+        ),
         BUCKTextureDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
@@ -735,10 +748,8 @@ FullPanelLobby is BUCKContainerDescriptor
                 MagnifiableOffset = [0.0, 74.0 - LobbyVerticalOffset]
             )
             TextureToken = 'Texture_dossier_triple_lobby'
-
-            HidePointerEvents = true
         ),
-        ~/ShowHideButton,
+        ~/LobbyTopTabContent,
         ~/MainListLobby,
         BUCKTextureDescriptor
         (
@@ -779,104 +790,105 @@ FullPanelLobby is BUCKContainerDescriptor
 
 //-------------------------------------------------------------------------------------
 
-ShowHideButton is BUCKButtonDescriptor
+LobbyTopTabContent is BUCKButtonDescriptor
 (
     ElementName = "ShowHideButton"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [50.0, 0.0]
-        MagnifiableOffset = [290.0, 463.0 - LobbyVerticalOffset]
-        // MagnifiableOffset = [290.0, 435]
+        MagnifiableWidthHeight = [430.0, 30.0]
+        MagnifiableOffset = [290.0, 461.0 - LobbyVerticalOffset]
     )
-
-    FitStyle = ~/FitStyle/FitToContent
 
     Components =
     [
-        BUCKListDescriptor
+        ShowHideArrow,
+        BUCKTextDescriptor
         (
+            ElementName = "GameNameText"
             ComponentFrame = TUIFramePropertyRTTI
             (
-                // MagnifiableWidthHeight = [0.0, 0.0]
+                RelativeWidthHeight = [1.0, 1.0]
+                MagnifiableWidthHeight = [-50.0, 0.0] // To ensure the game name never overlaps the show/hide arrow
+                AlignementToAnchor = [0.5, 0.0]
+                AlignementToFather = [0.5, 0.0]
             )
-            Axis = ~/ListAxis/Horizontal
-            InterItemMargin = TRTTILength( Magnifiable = 6.0 )
 
-            BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+            ParagraphStyle = TParagraphStyleRTTI
+            (
+                Alignment = UIText_Center
+                VerticalAlignment = UIText_VerticalCenter
+            )
 
-            Elements =
-            [
+            TextSize = "20"
+            TextColor = "Blanc_multi"
+            TextDico = ~/LocalisationConstantes/dico_interface_outgame
+            TextStyle = "Default"
+            TypefaceToken = "Courrier"
 
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKTextureDescriptor
-                    (
-                        ElementName = 'ShowArrowTexture'
-
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            MagnifiableWidthHeight = [20.0, 20.0]
-                            AlignementToAnchor = [0.0, 0.5]
-                            AlignementToFather = [0.0, 0.5]
-                        )
-
-                        TextureToken = "show_hide_arrow"
-                        TextureColorToken = "Blanc_multi"
-                    )
-                ),
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKTextureDescriptor
-                    (
-                        ElementName = 'HideArrowTexture'
-
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            MagnifiableWidthHeight = [20.0, 20.0]
-                            AlignementToAnchor = [0.0, 0.5]
-                            AlignementToFather = [0.0, 0.5]
-                        )
-
-                        Rotation = 180
-                        TextureToken = "show_hide_arrow"
-                        TextureColorToken = "Blanc_multi"
-                    )
-                ),
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKTextDescriptor
-                    (
-                        ElementName = "ShowHideText"
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            // RelativeWidthHeight = [1.0, 0.0]
-                            MagnifiableWidthHeight = [0.0, 25.0]
-                            AlignementToFather = [0.0, 0.5]
-                            AlignementToAnchor = [0.0, 0.5]
-                        )
-
-                        TextStyle = "Default"
-
-                        ParagraphStyle = TParagraphStyleRTTI
-                        (
-                            Alignment = UIText_Center
-                            VerticalAlignment = UIText_VerticalCenter
-                        )
-
-                        TextToken = ""
-                        TextSize = "18"
-                        TextColor = "Blanc_multi"
-                        TextDico = ~/LocalisationConstantes/dico_interface_outgame
-                        TypefaceToken = "Liberator"
-
-                        BigLineAction = ~/BigLineAction/ResizeFont
-                        HorizontalFitStyle = ~/FitStyle/FitToContent
-                        VerticalFitStyle = ~/FitStyle/UserDefined
-                    )
-                ),
-            ] // Elements
+            BigLineAction = ~/BigLineAction/ResizeFont
+            HorizontalFitStyle = ~/FitStyle/UserDefined
+            VerticalFitStyle = ~/FitStyle/UserDefined
         )
-    ] // Components
+    ]
+)
+
+//-------------------------------------------------------------------------------------
+
+ShowHideArrow is BUCKContainerDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [20.0, 20.0]
+        AlignementToAnchor = [0.0, 0.5]
+        AlignementToFather = [0.0, 0.5]
+    )
+
+    Components =
+    [
+        BUCKTextureDescriptor
+        (
+            ElementName = 'ShowArrowTexture'
+
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+            )
+
+            TextureToken = "show_hide_arrow"
+            TextureColorToken = "Blanc_multi"
+
+            Components =
+            [
+                BUCKSpecificHintableArea
+                (
+                    DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+                    HintBodyToken = "LBY_SHOW"
+                )
+            ]
+        ),
+        BUCKTextureDescriptor
+        (
+            ElementName = 'HideArrowTexture'
+
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+            )
+
+            Rotation = 180
+            TextureToken = "show_hide_arrow"
+            TextureColorToken = "Blanc_multi"
+
+            Components =
+            [
+                BUCKSpecificHintableArea
+                (
+                    DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+                    HintBodyToken = "LBY_HIDE"
+                )
+            ]
+        ),
+    ]
 )
 
 //-------------------------------------------------------------------------------------

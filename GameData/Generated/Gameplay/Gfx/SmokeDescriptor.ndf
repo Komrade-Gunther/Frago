@@ -10,17 +10,7 @@ export Descriptor_Smoke_Fumi105mm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -49,17 +39,7 @@ export Descriptor_Smoke_Fumi107mm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -88,17 +68,7 @@ export Descriptor_Smoke_Fumi120mm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -127,17 +97,7 @@ export Descriptor_Smoke_Fumi122mm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -166,17 +126,7 @@ export Descriptor_Smoke_Fumi152mm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -205,17 +155,7 @@ export Descriptor_Smoke_Fumi155mm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -244,17 +184,7 @@ export Descriptor_Smoke_Fumi203mm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -283,17 +213,7 @@ export Descriptor_Smoke_Fumi60mm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -322,17 +242,7 @@ export Descriptor_Smoke_Fumi81mm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -361,17 +271,7 @@ export Descriptor_Smoke_FumiBombe is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -400,17 +300,7 @@ export Descriptor_Smoke_FumiIncendie is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
     ]
 )
 export Descriptor_Smoke_FumiIncendie_bomb_FRL is TEntityDescriptor
@@ -422,17 +312,8 @@ export Descriptor_Smoke_FumiIncendie_bomb_FRL is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
+
 		TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -462,17 +343,7 @@ export Descriptor_Smoke_FumiNapalm is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
     ]
 )
 export Descriptor_Smoke_FumiNapalmleger is TEntityDescriptor
@@ -484,17 +355,7 @@ export Descriptor_Smoke_FumiNapalmleger is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
     ]
 )
 export Descriptor_Smoke_FumiNapalmlourd is TEntityDescriptor
@@ -506,17 +367,7 @@ export Descriptor_Smoke_FumiNapalmlourd is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
     ]
 )
 export Descriptor_Smoke_FumiTest1 is TEntityDescriptor
@@ -528,17 +379,7 @@ export Descriptor_Smoke_FumiTest1 is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -567,17 +408,7 @@ export Descriptor_Smoke_Fumi_smoke_grenade is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -606,17 +437,8 @@ export Descriptor_Smoke_FumiIncendie_bomb_NUKE_FRL is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
+
 		TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction
@@ -647,18 +469,7 @@ export Descriptor_Smoke_FumiIncendie_bomb_FRL_small is TEntityDescriptor
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/SmokePositionModuleDescriptor,
 		TApparenceModelModuleDescriptor
         (
             Depiction  = Template_DescriptorSmoke_Depiction

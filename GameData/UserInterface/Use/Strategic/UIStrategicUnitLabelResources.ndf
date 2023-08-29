@@ -5,9 +5,8 @@ SpecificStrategicUnitLabelResources is TUISpecificUnitLabelResources
     Camera                          = $/M3D/Camera/CameraPrincipale
 
     CameraMoverHelperProxy          = $/M3D/Scene/IngameCameraMoverHelperProxy
-    FadeHeightTransitionStart       = 9000.0
-    FadeHeightTransitionEnd         = 5000.0
     FadeFactorForShaderParameter    = $/M3D/Scene/MaskAlphaFade
+    OpacityControlByFloat           = $/M3D/Shader/StrategicUnitLabelOpacity
 
     LabelInAggregatMagnifiableBox = [1.0, 1.0]
     LabelMagnifiableBox = [36.0, 15.0] //Aggregate unit on X,Y

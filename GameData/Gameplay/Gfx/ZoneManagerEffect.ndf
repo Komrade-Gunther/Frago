@@ -1,4 +1,3 @@
-
 private deploiementZoneManagerDescriptor is TDeploiementZoneManagerDescriptor
 (
     AreaManagerProxy = $/M3D/Scene/DeploymentZoneManagerProxy

@@ -84,21 +84,6 @@ GameModeResources is TUIOutGameGameModeResources
             GameRoomListFilterName = 'GRL_CONQ'
         ),
 
-        //EDeploymentMode/CloseQuarter,
-        TUIGameModeResource
-        (
-            Name = 'GMODE_CLOQ'
-            HintBody = 'HGM_CLOQ'
-            GameRoomListIconComponent = GameModeDecorationComponent
-            (
-                TextureToken = "OutgameTexture_CloseQuarterModeTexture"
-                HintTitle = "GRL_CLOQU"
-                HintBody = "GRL_CLOQB"
-                HintExtended = "GRL_CLOQE"
-            )
-            GameRoomListFilterName = 'GRL_CLOS'
-        ),
-
         //EDeploymentMode/Strategic,
         TUIGameModeResource
         (
@@ -127,15 +112,6 @@ GameModeResources is TUIOutGameGameModeResources
                 HintExtended = "GRL_ATTPE"
             )
             GameRoomListFilterName = 'GRL_BREA'
-        ),
-
-        //EDeploymentMode/NoDeployment,
-        TUIGameModeResource
-        (
-            Name = 'NON_APP'
-            HintBody = 'NON_APP'
-            GameRoomListFilterName = ''
-            GameRoomListIconComponent = nil
         ),
     ]
 )

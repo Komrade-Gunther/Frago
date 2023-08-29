@@ -5,9 +5,6 @@ export ChallengeGotterdammerungStrategy_East is TIAGeneralStrategy
 (
     StrategyName = "ChalGotEAI"
     FirstGenerator = ChalGotterdammerung_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AuthorizedCorridorList = [2]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =

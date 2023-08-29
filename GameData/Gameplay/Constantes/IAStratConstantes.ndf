@@ -4,11 +4,6 @@ CommandZoneCustomWeighForIAStrat is 0xDEF
 
 export IAStratConstantes is TIAStratConstantesDescriptor_Specific
 (
-    DefaultConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-        ("DoNotCancelProduction", TEugBBoolean(Value = false)),
-    ]
-
     // AutoDeploy
     AutoDeployNumberOfFrameWithoutProduction = 3 // nombre de frame sans production pour considérer qu'on a fini de déployer automatiquement
 
@@ -224,6 +219,7 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     NumberOfDangerousIndiceAlwaysIgnoredForTacticalPathInCover = 1  // X | Dans le TacticalPathInCover, nombre de cases dangereuses à éviter :
     SecondsToIgnoreDangerousIndiceForTacticalPathInCover = 10.0     // Y | (X + (1 toutes les Y secondes)) * (Z si on est en Blitzkireg)
     BlitzkriegMultiplierForTacticalPathInCover = 4.0                // Z |
+    ForceTacticalMoveAndAttack = true
 
     //--------------- Regroup Point ---------------------------------------//
     NumberOfDangerousIndicesToIgnoreForRegroupPoint = 1
@@ -253,12 +249,14 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     DistanceForEnemiesToBeConsideredForStall = 400 * Metre
 
     TimeSinceLastShotReceivedForStall = 10
-    CapacityStall = ~/Capacite_Infanterie_Retraite
 
     //StateMachine Retreat No Ammo
     UpdateRetreatPointInterval = 7.0
     NumberTicksForIdle = 5.0
     MinSupplyStock = 100.0
+    MinLifeRatioForRetreat = 0.3
+    MinFuelRatioForRetreat = 0.3
+
     //StateMachine ActionIA_Crawl (drop smoke)
     ProbabilityDropSmokeOnCrawl = 1.0
     MaxMinimumRangeForDropSmokeOnCrawl = 150 * Metre //Réglé pour correspondre aux smokes des véhicules avec une marge
@@ -274,11 +272,6 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     DefaultTransportSettings = [~/DefaultWargameTransport,]
     DefaultTransportIsRequiredProduction = false
 
-    // Override de l'autocover
-    TagsForAutoCoverOverride = ["Char", "ChasseurDeChar", "Vehicule", "Canon_AA_Porte", "Artillerie"]
-    MinAutoCoverRange = 800 * Metre
-    MinAutoCoverRadius = 400 * Metre
-
     // RoE Pour l'IA
     RoEConstantes = ~/RoEConstantes
 
@@ -290,7 +283,7 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     ]
 
     IAStratPathCostCacheFilePath = "$/ScenarioPaths/IAStratZonePathCostCache"
-    IAStratDistanceFromNotDefendedCommandZone = 8000 * Metre //Un peu plus que la taille de 1 zone IAStrat
+    IAStratDistanceFromNotDefendedCommandZone = 4000 * Metre //Un peu plus que la taille de 1 zone IAStrat
 
     //first moveOutRatio / second CaptureRatio
     CapturableCommandZoneMoveOutAndCapturePowerRatioForAIDifficulty = MAP
@@ -382,9 +375,9 @@ AirstrikeConstantes is TIAStratAirstrikeConstantes
         (["Avion_SEAD"], 1)
     ]
     OpportunisticTargetInGroupAirstrikeSettings = [
-        (["Avion_Bombardier"], 1),
-        (["Avion_Chasseur_Bombardier"], 1),
-        (["Avion_Napalm"], 1),
+        (["Avion_Bombardier"], 2),
+        (["Avion_Chasseur_Bombardier"], 2),
+        (["Avion_Napalm"], 2),
     ]
     TargetPowerForOpportunisticSingleTargetAirStrike = 50
     TargetPowerForOpportunisticTargetInGroupAirStrike = 75

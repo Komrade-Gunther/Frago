@@ -34,7 +34,6 @@ export OrderDisplayDrawer is TOrderDisplayDrawer
                                 OrderDisplayLoadUnit,
                                 OrderDisplayLoadIntoTransport,
                                 //???
-                                OrderDisplayFleeFromAttackers,
                                 OrderDisplayUseCapacite,
                                 //HELICOPTERS
                                 OrderDisplayLand,
@@ -411,23 +410,6 @@ export OrderDisplayLoadUnit is TOrderDisplayDrawInfo
 )
 
 //---------------------???----------------------------------------------
-
-export OrderDisplayFleeFromAttackers is TOrderDisplayDrawInfo
-(
-    OrderToken                  = "FleeFromAttackers"
-    ColorLineStart              = [150, 150, 150, 255]
-    ColorLineEnd                = [150, 150, 150, alpha]
-    MaxMetersBetweenColors      = 0
-    LineThickness               = 1000.0
-    ColorCircleDestination      = [150, 150, 150, 255]
-    CircleDestinationThickness  = 100.0
-    CircleDestinationRadius     = 3000.0
-    DashLengthInMeters          = 0
-    DisplayWaypoints            = false
-    HideNextOrders              = false
-    MustDrawCircle              = true
-    MustDrawArrow               = false
-)
 
 export OrderDisplayUseCapacite is TOrderDisplayDrawInfo
 (

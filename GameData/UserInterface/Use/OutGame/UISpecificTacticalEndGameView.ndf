@@ -4,6 +4,7 @@ TacticalEndgameTitleFontSize is "Debrief/Title"
 
 TacticalEndgameKillLossTextFont is "Liberator"
 TacticalEndgameKillLossUnitTextFontSize is "Debrief/UnitName"
+TacticalEndgameWinStreakInfoTextFontSize is "Debrief/SoldierName"
 TacticalEndgameKillLossSoldierTextFontSize is "Debrief/SoldierName"
 TacticalEndgameKillLossPlayerTextFontSize is "Debrief/SoldierName"
 
@@ -438,6 +439,7 @@ template EndgameTabButton
 
     IsTogglable = true
     RadioButtonManager = <RadioButtonManager>
+    CannotDeselect = true
 
     ButtonMagnifiableWidthHeight = [300.0, 35.0]
     TextTypefaceToken = "UISecondFont"
@@ -1524,16 +1526,6 @@ TacticalEndgameXPDetails is BUCKListDescriptor
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = DebriefXpLine
-            (
-                LineName = 'WinStreak'
-                LegendToken = 'EG_WINSTRK'
-                ModificatorToken = 'MULTFORMAT'
-                ValueToken = 'VALUFORMAT'
-            )
-        ),
-        BUCKListElementDescriptor
-        (
             ComponentDescriptor = PlainSeparator
         ),
         BUCKListElementDescriptor
@@ -1545,6 +1537,53 @@ TacticalEndgameXPDetails is BUCKListDescriptor
                 ModificatorToken = 'VALUFORMAT'
                 ValueToken = ''
                 IsSum = true
+            )
+        ),
+
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = DebriefXpLine
+            (
+                LineName = 'WinStreak'
+                LegendToken = 'EG_WINSTRK'
+                ModificatorToken = 'MULTFORMAT'
+                ValueToken = 'VALUFORMAT'
+            )
+        ),
+
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKContainerDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 0.0]
+                    MagnifiableWidthHeight = [0.0, 24.0]
+                )
+                Components =
+                [
+                    BUCKSpecificTextWithHint
+                    (
+                        ElementName = 'WinStreakAdditionalInfoLegend'
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            MagnifiableOffset = [XpLeftOffset + 50.0, -10.0]
+                            RelativeWidthHeight = [1.0, 1.0]
+
+                        )
+                        ParagraphStyle = TParagraphStyleRTTI
+                        (
+                            Alignment = UIText_Left
+                            VerticalAlignment = UIText_Center
+                        )
+                        TypefaceToken = TacticalEndgameKillLossTextFont
+                        TextStyle = 'Default'
+                        TextToken = "EG_WINS_BO"
+                        TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                        TextColor = "GrisTexte"
+                        TextSize = TacticalEndgameWinStreakInfoTextFontSize
+                    )
+                ]
             )
         ),
 

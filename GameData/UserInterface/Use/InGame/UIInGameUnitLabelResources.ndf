@@ -18,10 +18,8 @@ SpecificInGameUnitLabelResources is TUISpecificUnitLabelResources
     Camera                          = $/M3D/Camera/CameraPrincipale
 
     CameraMoverHelperProxy          = $/M3D/Scene/IngameCameraMoverHelperProxy
-    FadeHeightTransitionStart       = 20*1000
-    FadeHeightTransitionEnd         = 10*1000
+    OpacityControlByFloat           = $/M3D/Shader/UnitLabelOpacity
     FadeFactorForShaderParameter    = $/M3D/Scene/MaskAlphaFade
-    // ---------
 
     // pour configurer il faut ouvrir les ajustables : label et agregate
     LabelInAggregatMagnifiableBox = [UnitLabelAggregationWidth, UnitLabelAggregationHeight]

@@ -1,7 +1,7 @@
 
 // CONSTANTES POUR LE GAME DESIGN
 
-StrategicCameraConstantes is TStrategicCameraConstantesDescriptor
+unnamed TStrategicCameraConstantesDescriptor
 (
     GoingBackDuration = 0.5             //  temps de certain mouvement de cam
     GoBackWithStraightPath = true       // a true la camera va tout droit, sinon elle fait une pirouette cacahouète pour rejoindre sa position. Note que la pirouette n'a pas l'air de fonctionner très bien.

@@ -674,15 +674,40 @@ BUCKSpecificLossesStateMainComponentDescriptor is BUCKListDescriptor
         //-------------------------------------------------------------------------------------
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = PanelBottomButton
+            ComponentDescriptor = ButtonsBottomPanel
             (
-                Bouton = BoutonScore
-                (
-                    MagnifiableWidthHeight = [160,40]
-                    ElementName = 'OkButton'
-                    TextToken = "OK_BTN"
-                    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
-                )
+                ElementName = 'DuringGameButtons'
+                Buttons =
+                [
+                    BottomPanelButtonElement
+                    (
+                        ElementName = 'OkButton'
+                        TextToken = "OK_BTN"
+                        Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
+                    )
+                ]
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = ButtonsBottomPanel
+            (
+                ElementName = 'EndGameButtons'
+                Buttons =
+                [
+                    BottomPanelButtonElement
+                    (
+                        ElementName = 'ExitButton'
+                        TextToken = "EXIT_BTN"
+                        Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
+                    ),
+                    BottomPanelButtonElement
+                    (
+                        ElementName = 'ScoreButton'
+                        TextToken = "SCORE_BTN"
+                        Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_TAB ) )
+                    )
+                ]
             )
         ),
     ]
@@ -695,31 +720,6 @@ BUCKSpecificLossesStateMainComponentDescriptor is BUCKListDescriptor
             BackgroundBlockColorToken = 'SM_RifleGreen'
             BorderLineColorToken = 'SM_Grullo'
         )
-    ]
-)
-
-//-------------------------------------------------------------------------------------
-template PanelBottomButton
-[
-    Bouton : TBUCKButtonDescriptor,
-]
- is BUCKContainerDescriptor
-(
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        RelativeWidthHeight = [1,0]
-        MagnifiableWidthHeight = [0,80]
-    )
-
-
-    HasBorder = true
-    BorderLineColorToken = 'SM_Grullo'
-    BorderThicknessToken = '1'
-    BordersToDraw =  ~/TBorderSide/Top
-
-    Components =
-    [
-        <Bouton>
     ]
 )
 

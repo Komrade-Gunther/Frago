@@ -2,7 +2,6 @@ public coverTypeForInterface is TCoverTypeForInterface(
     TerrainTypeToCover = MAP
     [
         (ETerrainType/Default                , ECoverTypeForInterface/None),
-        (ETerrainType/Tous                   , ECoverTypeForInterface/None),
 
         (ETerrainType/EauPeuProfonde         , ECoverTypeForInterface/None),
         (ETerrainType/EauProfonde            , ECoverTypeForInterface/None),

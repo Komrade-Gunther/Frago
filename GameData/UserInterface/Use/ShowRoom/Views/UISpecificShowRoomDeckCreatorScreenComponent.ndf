@@ -1282,49 +1282,6 @@ private template DeckEditorTopBarLeftContent
 
 //-------------------------------------------------------------------------------------
 
-DeckEditorPackXPSelector is BUCKListDescriptor
-(
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [~/UnitButtonXPAreaWidth, 0.0]
-    )
-    Axis = ~/ListAxis/Vertical
-
-    Elements =
-    [
-        BoutonXp
-        (
-            ElementName = "Veterancy/3"
-            TextureToken = "CommonTexture_Chevron_3"
-            HintTitle = "DES_UE_VE3"
-            HintBody = "pi_ve3"
-        ),
-        BoutonXp
-        (
-            ElementName = "Veterancy/2"
-            TextureToken = "CommonTexture_Chevron_2"
-            HintTitle = "DES_UE_VE2"
-            HintBody = "pi_ve2"
-        ),
-        BoutonXp
-        (
-            ElementName = "Veterancy/1"
-            TextureToken = "CommonTexture_Chevron_1"
-            HintTitle = "DES_UE_VE1"
-            HintBody = "pi_ve1"
-        ),
-        BoutonXp
-        (
-            ElementName = "Veterancy/0"
-            TextureToken = "CommonTexture_Chevron_0"
-            HintTitle = "DES_UE_VE0"
-            HintBody = "pi_ve0"
-        ),
-    ]
-)
-
-//-------------------------------------------------------------------------------------
-
 private DeckEditorBattlegroupNameFrame is BUCKContainerDescriptor
 (
     ElementName = "DeckEditorBattlegroupNameFrame"

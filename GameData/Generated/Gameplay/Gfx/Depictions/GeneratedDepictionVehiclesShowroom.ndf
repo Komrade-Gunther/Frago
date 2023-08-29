@@ -1396,6 +1396,12 @@ Gfx_M1025_Humvee_scout_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Selector = Selector_M1025_Humvee_scout_US
     SubDepictions = HumanSubDepictionsShowroom_M1025_Humvee_scout_US
 )
+Gfx_M1025_Humvee_scout_tuto_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_M1025_Humvee_scout_tuto_US
+    Selector = Selector_M1025_Humvee_scout_tuto_US
+    SubDepictions = HumanSubDepictionsShowroom_M1025_Humvee_scout_tuto_US
+)
 Gfx_M1038_Humvee_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
     Alternatives = Alternatives_M1038_Humvee_US
@@ -1716,6 +1722,12 @@ Gfx_M35_trans_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Alternatives = Alternatives_M35_trans_US
     Selector = Selector_M35_trans_US
     SubDepictions = HumanSubDepictionsShowroom_M35_trans_US
+)
+Gfx_M35_trans_tuto_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_M35_trans_tuto_US
+    Selector = Selector_M35_trans_tuto_US
+    SubDepictions = HumanSubDepictionsShowroom_M35_trans_tuto_US
 )
 Gfx_M3A1_Bradley_CFV_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
@@ -2691,10 +2703,4 @@ Gfx_ZSU_57_2_DDR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Alternatives = Alternatives_ZSU_57_2_DDR
     Selector = Selector_ZSU_57_2_DDR
     SubDepictions = HumanSubDepictionsShowroom_ZSU_57_2_DDR
-)
-Gfx_60mm_mortar_101st_FRL_Showroom_Autogen is ShowroomVehicleDepictionTemplate
-(
-    Alternatives = Alternatives_81mm_mortar_UK
-    Selector = Selector_81mm_mortar_UK
-    SubDepictions = HumanSubDepictionsShowroom_Mortier_107mm_Airborne_US
 )

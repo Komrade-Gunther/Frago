@@ -2,60 +2,42 @@ private SelectionPanelWidth is 370.0
 
 private StartBattleBoutonsList is BUCKListDescriptor
 (
-    UniqueName = 'spotLightPanelStartBattleAction'
+    UniqueName = "spotLightPanelStartBattleAction"
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1.0, 0.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
     )
 
-    Axis = ~/ListAxis/Vertical
-    FirstMargin = TRTTILength (Magnifiable = 10.0)
-    LastMargin = TRTTILength (Magnifiable = 10.0)
+    Axis = ~/ListAxis/Horizontal
+    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
     Elements =
     [
-        BUCKListElementDescriptor
+        // autoresolve
+        BoutonStartBattle
         (
-            ComponentDescriptor = BUCKListDescriptor
-            (
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    AlignementToFather = [0.5, 0.0]
-                    AlignementToAnchor = [0.5, 0.0]
-                )
-
-                Axis = ~/ListAxis/Horizontal
-                BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-
-                Elements =
-                [
-                    // autoresolve
-                    BoutonStartBattle
-                    (
-                        MagnifiableWidthHeight = [160.0, 40.0]
-                        ElementName = 'AutoresolveButton'
-                        TextToken = "BtnAutoRes"
-                        HintBodyToken = "BtnAutoReH"
-                    ),
-                    // tactical battle
-                    BoutonStartBattle
-                    (
-                        MagnifiableWidthHeight = [160.0, 40.0]
-                        ElementName = 'StartBattleButton'
-                        TextToken = "BtnBattle"
-                        HintBodyToken = "BtnBattleH"
-                    ),
-                    // cancel
-                    BoutonStartBattle
-                    (
-                        MagnifiableWidthHeight = [160.0, 40.0]
-                        ElementName = 'CancelButton'
-                        TextToken = "BtnCanPrep"
-                        HintBodyToken = "BtnCanPreH"
-                    )
-                ]
-            )
+            MagnifiableWidthHeight = [160.0, 40.0]
+            ElementName = 'AutoresolveButton'
+            TextToken = "BtnAutoRes"
+            HintBodyToken = "BtnAutoReH"
+        ),
+        // tactical battle
+        BoutonStartBattle
+        (
+            MagnifiableWidthHeight = [160.0, 40.0]
+            ElementName = 'StartBattleButton'
+            TextToken = "BtnBattle"
+            HintBodyToken = "BtnBattleH"
+        ),
+        // cancel
+        BoutonStartBattle
+        (
+            MagnifiableWidthHeight = [160.0, 40.0]
+            ElementName = 'CancelButton'
+            TextToken = "BtnCanPrep"
+            HintBodyToken = "BtnCanPreH"
         )
     ]
 )
@@ -88,7 +70,7 @@ template BoutonStartBattle
 
         Components =
         [
-            BUCKContainerDescriptor
+            PanelRoundedCorner
             (
                 ComponentFrame = TUIFramePropertyRTTI
                 (
@@ -98,15 +80,9 @@ template BoutonStartBattle
                     AlignementToAnchor = [0.5, 0.5]
                 )
 
-                Components =
-                [
-                    PanelRoundedCorner
-                    (
-                        Radius = 3
-                        BackgroundBlockColorToken = "SM_Feldgrau"
-                        BorderLineColorToken = "SM_Grullo"
-                    )
-                ]
+                Radius = 3
+                BackgroundBlockColorToken = "SM_Feldgrau"
+                BorderLineColorToken = "SM_Grullo"
             ),
             BUCKTextDescriptor
             (
@@ -146,46 +122,33 @@ template PanelListeGroup
 [
     Name : string
 ]
-is BUCKContainerDescriptor
+is BUCKRackDescriptor
 (
-    ElementName = <Name> + "Container"
+    ElementName = "PanelListeGroup" + <Name> + "Rack"
+
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1.0, 0.0]
         MagnifiableWidthHeight = [0.0, 100.0]
         AlignementToFather = [0.5, 0.0]
         AlignementToAnchor = [0.5, 0.0]
     )
 
-    Components =
-    [
-        BUCKRackDescriptor
+    Axis = ~/ListAxis/Horizontal
+
+    InterItemMargin = TRTTILength (Magnifiable = 10.0)
+
+    BladeDescriptor = BUCKContainerDescriptor
+    (
+        ElementName = "PanelListeGroupContent"
+        ComponentFrame = TUIFramePropertyRTTI
         (
-            ElementName = "PanelListeGroup" + <Name> + "Rack"
-
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                AlignementToFather = [0.5, 0.5]
-                AlignementToAnchor = [0.5, 0.5]
-            )
-
-            BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-            Axis = ~/ListAxis/Horizontal
-
-            InterItemMargin = TRTTILength (Magnifiable = 10.0)
-
-            BladeDescriptor = BUCKContainerDescriptor
-            (
-                ElementName = "PanelListeGroupContent"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [80.0, 80.0]
-                )
-                // envoie UISpecificStrategicStartBattleGroupViewDescriptor pour le pion vide
-                // envoie BUCKSpecificStrategicStartBattlePawnBriefMainComponentDescriptor pour le pion ajouté
-            )
+            MagnifiableWidthHeight = [80.0, 80.0]
+            AlignementToFather = [0.0, 0.5]
+            AlignementToAnchor = [0.0, 0.5]
         )
-    ]
+        // envoie UISpecificStrategicStartBattleGroupViewDescriptor pour le pion vide
+        // envoie BUCKSpecificStrategicStartBattlePawnBriefMainComponentDescriptor pour le pion ajouté
+    )
 )
 
 //-------------------------------------------------------------------------------------
@@ -482,9 +445,6 @@ is BUCKListDescriptor
             )
         ),
     ]
-
-
-
 )
 
 //------------------------------------------------------------------------------
@@ -653,8 +613,6 @@ private PanelInfosBataille is BUCKListDescriptor
                 TextColorToken2 = 'BlancEquipe'
                 HintTitleToken = 'strength'
                 HintBodyToken = 'sm_pre2'
-
-
             )
         ),
         //-------------------------------------------------------------------------------------
@@ -683,8 +641,6 @@ private PanelInfosBataille is BUCKListDescriptor
                 TextColorToken2 = 'BlancEquipe'
                 HintTitleToken = 'PrC_cc'
                 HintBodyToken = 'sm_pre7'
-
-
             )
         ),
         BUCKListElementDescriptor
@@ -702,8 +658,6 @@ private PanelInfosBataille is BUCKListDescriptor
                 MagnifiableWidth_text2 = 105.0-70
                 HintTitleToken = 'PrC_cc'
                 HintBodyToken = 'sm_pre7'
-
-
             )
         ),
         BUCKListElementSpacer(Magnifiable = 20.0),
@@ -728,9 +682,9 @@ private PanelInfosBataille is BUCKListDescriptor
                 ElementName = "BattlegroupsPanel"
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    AlignementToFather = [0.5, 0]
-                    AlignementToAnchor = [0.5, 0]
-                    RelativeWidthHeight = [0.9, 0]
+                    AlignementToFather = [0.5, 0.0]
+                    AlignementToAnchor = [0.5, 0.0]
+                    RelativeWidthHeight = [0.9, 0.0]
                 )
 
                 Axis = ~/ListAxis/Vertical
@@ -747,8 +701,8 @@ private PanelInfosBataille is BUCKListDescriptor
                             ElementName = "BattlegroupsPanelSubTitles"
                             ComponentFrame = TUIFramePropertyRTTI
                             (
-                                AlignementToFather = [0.5, 0]
-                                AlignementToAnchor = [0.5, 0]
+                                AlignementToFather = [0.5, 0.0]
+                                AlignementToAnchor = [0.5, 0.0]
                             )
 
                             Axis = ~/ListAxis/Horizontal
@@ -827,7 +781,7 @@ private PanelInfosBataille is BUCKListDescriptor
                                             HintTitleToken = 'PrC_aux'
                                             HintBodyToken = 'PrC_auxb'
                                             HintExtendedToken = ''
-                                            )
+                                        )
                                     )
                                 ),
                             ]
@@ -840,8 +794,8 @@ private PanelInfosBataille is BUCKListDescriptor
                         (
                             ComponentFrame = TUIFramePropertyRTTI
                             (
-                                AlignementToFather = [0.5, 0]
-                                AlignementToAnchor = [0.5, 0]
+                                AlignementToFather = [0.5, 0.0]
+                                AlignementToAnchor = [0.5, 0.0]
                             )
 
                             Axis = ~/ListAxis/Horizontal
@@ -857,8 +811,8 @@ private PanelInfosBataille is BUCKListDescriptor
                                     (
                                         ComponentFrame = TUIFramePropertyRTTI
                                         (
-                                            AlignementToFather = [0.5, 0]
-                                            AlignementToAnchor = [0.5, 0]
+                                            AlignementToFather = [0.5, 0.0]
+                                            AlignementToAnchor = [0.5, 0.0]
                                         )
 
                                         FitStyle = ~/ContainerFitStyle/FitToContentVertically
@@ -880,8 +834,8 @@ private PanelInfosBataille is BUCKListDescriptor
                                     (
                                         ComponentFrame = TUIFramePropertyRTTI
                                         (
-                                            AlignementToFather = [0.5, 0]
-                                            AlignementToAnchor = [0.5, 0]
+                                            AlignementToFather = [0.5, 0.0]
+                                            AlignementToAnchor = [0.5, 0.0]
                                         )
 
                                         FitStyle = ~/ContainerFitStyle/FitToContentVertically
@@ -960,22 +914,7 @@ private PanelInfosBataille is BUCKListDescriptor
             Radius = 15
             BackgroundBlockColorToken = "SM_Feldgrau_75"
             BorderLineColorToken = "SM_Grullo"
-
-            // Components =
-            // [
-            // BUCKTextureDescriptor
-            // (
-            //     ClipTextureToComponent = true
-            //     ComponentFrame = TUIFramePropertyRTTI
-            //     (
-            //             RelativeWidthHeight = [1,1]
-            //         )
-            //     TextureToken = 'CommonTexture_Ombre_TopTileTexture'
-            // )
-            // ]
         ),
-
-
     ]
 )
 
@@ -1039,7 +978,7 @@ PanelAide is PanelRoundedCorner
             Axis = ~/ListAxis/Vertical
             FirstMargin = TRTTILength (Magnifiable = 15.0)
             InterItemMargin = TRTTILength(Magnifiable = 5.0)
-            LastMargin = TRTTILength(Magnifiable = 15.0)
+            LastMargin = TRTTILength(Magnifiable = 25.0)
 
             Elements =
             [
@@ -1052,7 +991,6 @@ PanelAide is PanelRoundedCorner
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [1.0, 0.0]
-                            // MagnifiableWidthHeight = [0.0, 20.0]
                         )
 
                         ParagraphStyle = paragraphStyleTextCenter
@@ -1107,10 +1045,164 @@ PanelAide is PanelRoundedCorner
                 ),
                 BUCKListElementDescriptor
                 (
+                    ComponentDescriptor = ~/OutcomePrediction
+                ),
+                BUCKListElementSpacer(Magnifiable = 10.0),
+                BUCKListElementDescriptor
+                (
                     ComponentDescriptor = ~/StartBattleBoutonsList
                 ),
             ]
         )
+    ]
+)
+
+//------------------------------------------------------------------------------
+
+OutcomePredictionLineHeight is 25.0
+
+private OutcomePrediction is BUCKListDescriptor
+(
+    ElementName = "OutcomePrediction"
+
+    ComponentFrame = TUIFramePropertyRTTI()
+
+    Axis = ~/ListAxis/Horizontal
+    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+
+    FirstMargin = TRTTILength(Magnifiable = 50.0)
+    LastMargin = TRTTILength(Magnifiable = 50.0)
+    InterItemMargin = TRTTILength(Magnifiable = 5.0)
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ExtendWeight = 1.0
+            ComponentDescriptor = ~/OutcomePredictionTitles
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = ~/OutcomePredictionValues
+        )
+    ]
+)
+
+//------------------------------------------------------------------------------
+
+private template OutcomePredictionText
+[
+    ElementName : string = "",
+    HasBackground : bool = false,
+    BackgroundBlockColorToken : string = "",
+    TextToken : string = "",
+    TextColor : string = "BlancEquipe",
+    ParagraphStyle : TParagraphStyleRTTI = ~/paragraphStyleTextLeftAlign,
+
+] is BUCKTextDescriptor
+(
+    ElementName = <ElementName>
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, ~/OutcomePredictionLineHeight]
+    )
+
+    HasBackground = <HasBackground>
+    BackgroundBlockColorToken = <BackgroundBlockColorToken>
+
+    ParagraphStyle = <ParagraphStyle>
+    TextStyle = "Default"
+
+    HorizontalFitStyle = ~/FitStyle/UserDefined
+    VerticalFitStyle = ~/FitStyle/UserDefined
+
+    TypefaceToken = "Eurostyle"
+    BigLineAction = ~/BigLineAction/ResizeFont
+
+    TextToken = <TextToken>
+    TextDico = ~/LocalisationConstantes/dico_interface_ingame
+
+    TextColor = <TextColor>
+    TextSize = "18"
+)
+
+//------------------------------------------------------------------------------
+
+OutcomePredictionTitles is BUCKListDescriptor
+(
+    ElementName = "OutcomePredictionTitles"
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+    )
+
+    Axis = ~/ListAxis/Vertical
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = OutcomePredictionText(TextToken = "BP_ATTK")
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = OutcomePredictionText(TextToken = "BP_DEFDR")
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = OutcomePredictionText(TextToken = "BP_OUTCOM")
+        ),
+    ]
+)
+
+//------------------------------------------------------------------------------
+
+OutcomePredictionValues is BUCKListDescriptor
+(
+    ElementName = "OutcomePredictionValues"
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [100.0, 0.0]
+    )
+
+    Axis = ~/ListAxis/Vertical
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = OutcomePredictionText
+            (
+                ElementName = "ProbableOutcomeAttackValue"
+                HasBackground = true
+                BackgroundBlockColorToken = "Noir"
+                TextColor = "BlancEquipe"
+                ParagraphStyle = paragraphStyleTextCenter
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = OutcomePredictionText
+            (
+                ElementName = "ProbableOutcomeDefenseValue"
+                HasBackground = true
+                BackgroundBlockColorToken = "BlancEquipe"
+                TextColor = "PureBlack"
+                ParagraphStyle = paragraphStyleTextCenter
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = OutcomePredictionText
+            (
+                ElementName = "ProbableOutcomeOutcomeValue"
+                ParagraphStyle = paragraphStyleTextCenter
+            )
+        ),
     ]
 )
 

@@ -22,7 +22,7 @@ StrategicResource is TUISpecificStrategicResources
         ("UISpecificSelectionPanelPawnViewDescriptor", UISpecificSelectionPanelPawnViewDescriptorTemplate(MainComponentContainerUniqueName = "BUCKSpecificSelectionPanelPawnMainComponentContainer" ContainsCubeAction = true)),
         ("UISpecificStrategicSpawnPointViewDescriptor", ~/UISpecificStrategicSpawnPointViewDescriptor),
         ("MenuButtonDescriptor", ~/UISpecificMenuButtonViewDescriptor),
-        ("ScorePanelDescriptor", UISpecificStrategicScorePanelViewDescriptor(isEndgame = false)),
+        ("ScorePanelDescriptor", ~/UISpecificStrategicScorePanelViewDescriptor),
         ("UISpecificStrategicCubeActionViewDescriptor", ~/UISpecificStrategicCubeActionViewDescriptor),
         ("UISpecificStrategicBattleOrderPanelViewDescriptor", ~/UISpecificStrategicBattleOrderPanelViewDescriptor),
         ("StrategicProductionMenu", ~/UIStrategicProductionMenuViewDescriptor),

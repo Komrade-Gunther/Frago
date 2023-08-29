@@ -5,9 +5,6 @@ export ChallengeTauroggenStrategy_East is TIAGeneralStrategy
 (
     StrategyName = "TaurEAstAI"
     FirstGenerator = ChalTauroEast_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AuthorizedCorridorList = [2]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =

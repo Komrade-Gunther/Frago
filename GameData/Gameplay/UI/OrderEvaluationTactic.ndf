@@ -103,9 +103,8 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             IgnoreDefaultOrder = false
             IgnoreDirectOrder = false
             CapaciteDescriptor = ~/Capacite_Suicide_SurCetteCibleEnnemie
-            FXFeedback = $/GFX/GameFx/FX_Feedback_Attack_PositionInScreen
+            FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Explode"
-            PlayFXFeedbackWithPositionOnScreen = true
         ),
 
         TOrderEvaluatorAny(
@@ -120,9 +119,8 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
         TOrderEvaluatorAny(
             OrderToken = "AIAttack"
             IgnoreDefaultOrder = true
-            FXFeedback = $/GFX/GameFx/FX_Feedback_AIAttack_PositionInScreen
+            FXFeedback = $/GFX/GameFx/FX_Feedback_AIAttack
             MouseWidgetSelector = "MouseWidgetSelector_AIAttack"
-            PlayFXFeedbackWithPositionOnScreen = true
             PlayFXFeedbackWithoutTargets = true
             IsTargetAuthorized = true
         ),
@@ -130,9 +128,8 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
         TOrderEvaluatorAny(
             OrderToken = "AIManageArtillery_Focus"
             IgnoreDefaultOrder = true
-            FXFeedback = $/GFX/GameFx/FX_Feedback_AIArtillery_Focus_PositionInScreen
+            FXFeedback = $/GFX/GameFx/FX_Feedback_AIArtillery_Focus
             MouseWidgetSelector = "MouseWidgetSelector_AIArtilleryFocus"
-            PlayFXFeedbackWithPositionOnScreen = true
             PlayFXFeedbackWithoutTargets = true
             IsTargetAuthorized = true
         ),
@@ -141,18 +138,16 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             OrderToken = "AssaultDistrict"
             IgnoreDefaultOrder = false
             IgnoreDirectOrder = true
-            FXFeedback = $/GFX/GameFx/FX_Feedback_Attack_PositionInScreen
+            FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
-            PlayFXFeedbackWithPositionOnScreen = true
             OrderInterpretationForOrderDisplayAndAcknows = "Assault"
         ),
 
         TOrderEvaluatorEnterDistrict(
             OrderToken = "EnterDistrict"
             IgnoreDefaultOrder = false
-            FXFeedback = $/GFX/GameFx/FX_Feedback_Move_PositionInScreen
+            FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector =  "MouseWidgetSelector_DefaultOrder"
-            PlayFXFeedbackWithPositionOnScreen = true
         ),
 
         TOrderEvaluatorAttack(
@@ -161,7 +156,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
         ),
 
         TOrderEvaluatorAttack(
@@ -170,7 +164,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
         ),
 
         TOrderEvaluatorMoveAndAttack(
@@ -180,7 +173,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
             OrderInterpretationForOrderDisplayAndAcknows = "FastMoveAndAttack"
         ),
@@ -192,7 +184,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
             OrderInterpretationForOrderDisplayAndAcknows = "MoveAndAttack"
         ),
@@ -204,7 +195,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
             OrderInterpretationForOrderDisplayAndAcknows = "MoveAndAttack"
         ),
@@ -215,7 +205,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             OrderInterpretationForOrderDisplayAndAcknows = "ShootOnPosition"
         ),
 
@@ -225,7 +214,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             OrderInterpretationForOrderDisplayAndAcknows = "ShootOnPositionSmoke"
         ),
 
@@ -235,7 +223,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
         ),
 
         TOrderEvaluatorShootOnPosition(
@@ -244,7 +231,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
         ),
 
         TOrderEvaluatorAny(
@@ -253,7 +239,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             IsTargetAuthorized = false
         ),
 
@@ -263,7 +248,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_UnloadAtPosition"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
         ),
 
@@ -272,7 +256,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             IgnoreDefaultOrder = false
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
-            PlayFXFeedbackWithPositionOnScreen = false
         ),
 
         TOrderEvaluatorLoadUnit(
@@ -280,7 +263,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             IgnoreDefaultOrder = false
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
-            PlayFXFeedbackWithPositionOnScreen = false
         ),
 
         TOrderEvaluatorMove(
@@ -289,7 +271,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_Reverse"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
         ),
 
@@ -299,7 +280,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_MoveFast"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
         ),
 
@@ -309,7 +289,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
             OrderInterpretationForOrderDisplayAndAcknows = "Move"
         ),
@@ -320,7 +299,6 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
             PlayFXFeedbackWithoutTargets = true
-            PlayFXFeedbackWithPositionOnScreen = false
             ClampDestination = true
         ),
 

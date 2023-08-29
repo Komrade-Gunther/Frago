@@ -26,8 +26,6 @@ private EffectsPacksList is TGameplayEffectsPacksList
         ~/UnitEffect_Artillerie_Stressed,
         ~/UnitEffect_Artillerie_Suppressed,
         ~/UnitEffect_Aura_Commandement_Plus,
-        ~/UnitEffect_Autoprotection,
-        ~/UnitEffect_Autoprotection_chars,
         ~/UnitEffect_Baisse_Dangerosite,
         ~/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
         ~/UnitEffect_Bouclier_Suppression_100,
@@ -173,7 +171,5 @@ private EffectsPacksList is TGameplayEffectsPacksList
         ~/UnitEffect_resolute,
         ~/UnitEffect_security,
         ~/UnitEffect_sniper,
-        ~/UnitEffect_health50percent,
-        ~/UnitEffect_health25percent,
     ]
 )

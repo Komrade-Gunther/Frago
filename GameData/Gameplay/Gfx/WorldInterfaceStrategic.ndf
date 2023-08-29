@@ -9,6 +9,5 @@ WorldInterfaceStrategic is TWorldInterfaceDescriptor
         ~/strategicZoneManagerForIAStratDescriptor,
     ]
 
-    PathDrawingManager = ~/PathDrawingManager
     SoundAndMusicSwitchDescriptor = soundAndMusic
 )

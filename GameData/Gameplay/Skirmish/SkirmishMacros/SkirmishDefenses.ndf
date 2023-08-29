@@ -275,7 +275,6 @@ private template Template_Capture_Command_Zone
     NumberLaunchBasedOnGenerationType:int = 0,
     AlsoConsiderTheseDescriptorsForMaintain = [],
     RoundFloor:bool = false,
-    CanTargetAlliance:bool = false,
     PoolModelList = [~/Pool_Commandant],
 ]
 is TMacroActionDescriptor_CaptureCommandZone_Specific
@@ -309,20 +308,12 @@ is TMacroActionDescriptor_CaptureCommandZone_Specific
         ),
         TDefensePositionSettingHolder(ForbidDefenseOnZoneBorder = true),
     ]
-    +
-    (
-        <CanTargetAlliance> == false ? []:
-        [
-            TCanTargetAlliedSettingHolder(LaunchOnlyIfHasAlly = true),
-        ]
-    )
 )
 //-------------------------------------------------------------------------
 export CaptureOneObjectifForAlliance is Template_Capture_Command_Zone
 (
     GenerationType = TGenerationType_FixedSize
     NumberLaunchBasedOnGenerationType = 1
-    CanTargetAlliance = true
 )
 //-------------------------------------------------------------------------
 export CaptureOneObjectif is Template_Capture_Command_Zone

@@ -1,4 +1,3 @@
-InfluencePositionModuleDescriptor is TInfluencePositionModuleDescriptor()
 ActionPointsReachModuleDescriptor is TActionPointsReachModuleDescriptor()
 IALinkToGroupModuleDescriptor is TIALinkToGroupModuleDescriptor()
 IAMacroOrderModuleDescriptor is TIAMacroOrderModuleDescriptor()
@@ -23,12 +22,21 @@ StrategicSelectionModuleDescriptor is TSelectionModuleDescriptor
 
 PawnPositionModuleDescriptor is TPositionModuleDescriptor
 (
-    StickToGround              = True
     InGeoDb                    = True
-    PorteurMustBeVisible       = True
     ClampInWorld               = False
     ClampOutMap                = False
-    RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
-    LowAltitudeFlyingAltitude  = ((0) * Metre)
-    NearGroundFlyingAltitude   = ((0) * Metre)
+    LowAltitudeFlyingAltitude  = 0
+    NearGroundFlyingAltitude   = 0
+)
+
+StrategicStateEngineModuleDescriptor is TStateEngineModuleDescriptor
+(
+    InitialStateId = 'UnitIdle'
+    StateEngineUpdateMode = WorldControllerAccess_InWorld
+)
+
+StrategicBuildingModuleDescriptor is TWargameBuildingModuleDescriptor
+(
+    BoundingBoxMin = ~/StrategicBuildingBoxMin
+    BoundingBoxMax = ~/StrategicBuildingBoxMax
 )

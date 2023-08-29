@@ -22,14 +22,6 @@ GameRulesHelper is TUITacticalGameRulesHelper
                     (90.0, "win90")
                 ]
             ),
-            (
-                EDeploymentMode/CloseQuarter,
-                [
-                    (50.0, "win50"),
-                    (75.0, "win75"),
-                    (90.0, "win90")
-                ]
-            ),
         ]
 
         // Message about other alliance score update
@@ -37,14 +29,6 @@ GameRulesHelper is TUITacticalGameRulesHelper
         [
             (
                 EDeploymentMode/ConquestGameMode,
-                [
-                    (50.0, "Ewin50"),
-                    (75.0, "Ewin75"),
-                    (90.0, "Ewin90")
-                ]
-            ),
-            (
-                EDeploymentMode/CloseQuarter,
                 [
                     (50.0, "Ewin50"),
                     (75.0, "Ewin75"),

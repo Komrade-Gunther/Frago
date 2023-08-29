@@ -24,7 +24,6 @@ FeedbackLineOfSightDescriptor is TFeedbackLineOfSightDescriptor
 
     RenderRange = 12000 * Metre
     DefaultVisionRange = 10000 * Metre
-    VisionOffset = DecalageParDefautDuPointDeVision
 
     BorderColor = [255, 255, 255, 255]
     BorderThickness = 2500

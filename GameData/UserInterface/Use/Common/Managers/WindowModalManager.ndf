@@ -168,6 +168,7 @@ template SpecificModalEditableText
     TextToken : string = "",
     EditableTextElementName : string = "",
     Flags : int = EditableTextFlag/ONE_LINE,
+    MaxChars : int = 500,
 ] is BUCKListDescriptor
 (
     ElementName = <ElementName>
@@ -225,7 +226,7 @@ template SpecificModalEditableText
                 )
 
                 TextStyle = "TextStyleEcranMoniteur"
-                MaxChars = 500
+                MaxChars = <MaxChars>
                 Flags = <Flags>
                 TextSizeToken = "20"
             )

@@ -2315,6 +2315,15 @@ HumanSubDepictions_M1025_Humvee_scout_US is
     ),
 ]
 HumanSubDepictionsShowroom_M1025_Humvee_scout_US is []
+HumanSubDepictions_M1025_Humvee_scout_tuto_US is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_US
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_US_LOW
+    ),
+]
+HumanSubDepictionsShowroom_M1025_Humvee_scout_tuto_US is []
 HumanSubDepictions_M1038_Humvee_US is 
 [
     SubDepiction_Driver
@@ -2378,6 +2387,15 @@ HumanSubDepictions_M35_trans_US is
     ),
 ]
 HumanSubDepictionsShowroom_M35_trans_US is []
+HumanSubDepictions_M35_trans_tuto_US is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_US
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_US_LOW
+    ),
+]
+HumanSubDepictionsShowroom_M35_trans_tuto_US is []
 HumanSubDepictions_M998_Avenger_US is 
 [
     SubDepiction_Driver
@@ -3315,6 +3333,7 @@ MAP[
     ("M1025_Humvee_TOW_US", 1),
     ("M1025_Humvee_TOW_para_US", 1),
     ("M1025_Humvee_scout_US", 1),
+    ("M1025_Humvee_scout_tuto_US", 1),
     ("M1038_Humvee_US", 1),
     ("M151A2_scout_US", 1),
     ("M151_MUTT_CMD_US", 1),
@@ -3322,6 +3341,7 @@ MAP[
     ("M151_MUTT_trans_US", 1),
     ("M35_supply_US", 1),
     ("M35_trans_US", 1),
+    ("M35_trans_tuto_US", 1),
     ("M998_Avenger_US", 2),
     ("M998_Humvee_US", 1),
     ("MAN_Kat_6x6_RFA", 1),
@@ -3592,6 +3612,7 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M1025_Humvee_TOW_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M1025_Humvee_TOW_para_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M1025_Humvee_scout_US", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M1025_Humvee_scout_tuto_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M1038_Humvee_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M151A2_scout_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M151_MUTT_CMD_US", "01" ] ),
@@ -3599,6 +3620,7 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M151_MUTT_trans_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M35_supply_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M35_trans_US", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M35_trans_tuto_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Airborne_G_US SelectorId = [ "M998_Avenger_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Airborne_D_US SelectorId = [ "M998_Avenger_US", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M998_Humvee_US", "01" ] ),

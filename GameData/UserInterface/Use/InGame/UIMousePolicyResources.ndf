@@ -1093,7 +1093,7 @@ private AirplaneMissionArrowDescriptor is TUIPathDescriptor
     ArrowLength           = 2500
     ArrowWidth            = 2500
     SizeMultiplierHelper  = PathAndArrowSizeMultiplierHelper
-    OpacityControlByFloat = $/M3D/Shader/AreaFillOpacity
+    OpacityControlByFloat = $/M3D/Shader/UnitLabelOpacity
 )
 
 // Flèche pour une unité de renfort
@@ -1107,7 +1107,7 @@ private SpawnUnitArrowDescriptor is TUIPathDescriptor
     ArrowLength           = 2500
     ArrowWidth            = 2500
     SizeMultiplierHelper  = PathAndArrowSizeMultiplierHelper
-    OpacityControlByFloat = $/M3D/Shader/AreaFillOpacity
+    OpacityControlByFloat = $/M3D/Shader/UnitLabelOpacity
 )
 
 //--------------------------------------------------------

@@ -5,11 +5,8 @@ export AutoDeployBreakthroughStrategy is TIAGeneralStrategy
 (
     StrategyName = "AuDepBKAI"
     FirstGenerator = GenBT_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-        ("DoNotCancelProduction", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
+    DoNotCancelProduction = true
     TransitionList =
     [
         AutoDeployBKT_Transition_DoNothingToDeployATK,

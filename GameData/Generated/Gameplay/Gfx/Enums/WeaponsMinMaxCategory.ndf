@@ -15,10 +15,10 @@ export MinMax_Grenade is 8
 export MinMax_MMG_HMG is 9
 export MinMax_obusier is 10
 export MinMax_Mortier is 11
-export MinMax_Cluster is 12
-export MinMax_LAW is 13
-export MinMax_Roquette_AS is 14
-export MinMax_MLRS is 15
+export MinMax_MLRS is 12
+export MinMax_Cluster is 13
+export MinMax_LAW is 14
+export MinMax_Roquette_AS is 15
 export MinMax_inf_sniper is 16
 
 export MinMax_AAM is 17
@@ -41,10 +41,10 @@ export MinMaxCategory_Enum is TWeaponMinMaxCategory
         "MMG_HMG",
         "obusier",
         "Mortier",
+        "MLRS",
         "Cluster",
         "LAW",
         "Roquette_AS",
-        "MLRS",
         "inf_sniper",
         "AAM",
         "AGM",

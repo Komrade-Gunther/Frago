@@ -571,8 +571,8 @@ DepictionOperator_AML_90_FR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_AML_90_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -622,8 +622,8 @@ DepictionOperator_AMX_10_HOT_FR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_AMX_10_HOT_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -674,8 +674,8 @@ DepictionOperator_AMX_10_PC_CMD_FR_Weapon5 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_AMX_10_PC_CMD_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -729,8 +729,8 @@ DepictionOperator_AMX_10_P_FR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_AMX_10_P_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -794,8 +794,8 @@ DepictionOperator_AMX_10_P_MILAN_FR_Weapon5 is DepictionOperator_WeaponInstantFi
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_AMX_10_P_MILAN_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -848,8 +848,8 @@ DepictionOperator_AMX_10_P_VOA_FR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_AMX_10_P_VOA_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -909,8 +909,8 @@ DepictionOperator_AMX_10_RCR_FR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_AMX_10_RCR_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -975,8 +975,8 @@ DepictionOperator_AMX_10_RC_FR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_AMX_10_RC_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -1063,8 +1063,8 @@ DepictionOperator_AMX_13_90mm_FR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_AMX_13_90mm_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -1354,8 +1354,8 @@ DepictionOperator_AMX_30_B2_Brennus_FR_Weapon6 is DepictionOperator_WeaponInstan
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_AMX_30_B2_Brennus_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -1440,8 +1440,8 @@ DepictionOperator_AMX_30_B2_CMD_FR_Weapon6 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_AMX_30_B2_CMD_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -1526,8 +1526,8 @@ DepictionOperator_AMX_30_B2_FR_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_AMX_30_B2_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -1612,8 +1612,8 @@ DepictionOperator_AMX_30_B_CMD_FR_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_AMX_30_B_CMD_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -1698,8 +1698,8 @@ DepictionOperator_AMX_30_B_FR_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_AMX_30_B_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -1763,8 +1763,8 @@ DepictionOperator_AMX_30_EBG_FR_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_AMX_30_EBG_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -3516,8 +3516,8 @@ DepictionOperator_BMP_1P_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BMP_1P_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -3594,8 +3594,8 @@ DepictionOperator_BMP_1P_SOV_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BMP_1P_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -3742,8 +3742,8 @@ DepictionOperator_BMP_1P_reco_SOV_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BMP_1P_reco_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -3951,8 +3951,8 @@ DepictionOperator_BMP_1_SP1_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BMP_1_SP1_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -4027,8 +4027,8 @@ DepictionOperator_BMP_1_SP2_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BMP_1_SP2_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -4105,8 +4105,8 @@ DepictionOperator_BMP_2_SOV_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BMP_2_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -4196,8 +4196,8 @@ DepictionOperator_BMP_3_SOV_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BMP_3_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -4629,8 +4629,8 @@ DepictionOperator_BRM_1_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BRM_1_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -4694,8 +4694,8 @@ DepictionOperator_BRM_1_SOV_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BRM_1_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -5107,8 +5107,8 @@ DepictionOperator_BTR_80_SOV_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BTR_80_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -5175,8 +5175,8 @@ DepictionOperator_BTR_D_Robot_SOV_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BTR_D_Robot_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -5242,8 +5242,8 @@ DepictionOperator_BTR_D_SOV_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_BTR_D_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -5510,8 +5510,8 @@ DepictionOperator_Challenger_1_Mk1_CMD_UK_Weapon5 is DepictionOperator_WeaponIns
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Challenger_1_Mk1_CMD_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -5587,8 +5587,8 @@ DepictionOperator_Challenger_1_Mk1_UK_Weapon5 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Challenger_1_Mk1_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6123,8 +6123,8 @@ DepictionOperator_ERC_90_Sagaie_FR_Weapon5 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_ERC_90_Sagaie_FR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6275,8 +6275,8 @@ DepictionOperator_FV101_Scorpion_BEL_Weapon5 is DepictionOperator_WeaponInstantF
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV101_Scorpion_BEL_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6340,8 +6340,8 @@ DepictionOperator_FV101_Scorpion_UK_Weapon5 is DepictionOperator_WeaponInstantFi
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV101_Scorpion_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6391,8 +6391,8 @@ DepictionOperator_FV102_Striker_BEL_Weapon5 is DepictionOperator_WeaponInstantFi
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV102_Striker_BEL_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6435,8 +6435,8 @@ DepictionOperator_FV102_Striker_UK_Weapon5 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV102_Striker_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6479,8 +6479,8 @@ DepictionOperator_FV103_Spartan_BEL_Weapon5 is DepictionOperator_WeaponInstantFi
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV103_Spartan_BEL_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6547,8 +6547,8 @@ DepictionOperator_FV103_Spartan_UK_Weapon5 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV103_Spartan_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6607,8 +6607,8 @@ DepictionOperator_FV105_Sultan_BEL_Weapon5 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV105_Sultan_BEL_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6640,8 +6640,8 @@ DepictionOperator_FV105_Sultan_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV105_Sultan_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6695,8 +6695,8 @@ DepictionOperator_FV107_Scimitar_BEL_Weapon5 is DepictionOperator_WeaponInstantF
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV107_Scimitar_BEL_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6760,8 +6760,8 @@ DepictionOperator_FV107_Scimitar_UK_Weapon5 is DepictionOperator_WeaponInstantFi
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV107_Scimitar_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6819,8 +6819,8 @@ DepictionOperator_FV120_Spartan_MCT_UK_Weapon5 is DepictionOperator_WeaponInstan
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV120_Spartan_MCT_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6875,8 +6875,8 @@ DepictionOperator_FV4003_Centurion_AVRE_UK_Weapon5 is DepictionOperator_WeaponIn
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV4003_Centurion_AVRE_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -6946,8 +6946,8 @@ DepictionOperator_FV4201_Chieftain_CMD_UK_Weapon5 is DepictionOperator_WeaponIns
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV4201_Chieftain_CMD_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7022,8 +7022,8 @@ DepictionOperator_FV4201_Chieftain_Mk11_CMD_UK_Weapon5 is DepictionOperator_Weap
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV4201_Chieftain_Mk11_CMD_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7098,8 +7098,8 @@ DepictionOperator_FV4201_Chieftain_Mk11_UK_Weapon5 is DepictionOperator_WeaponIn
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV4201_Chieftain_Mk11_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7174,8 +7174,8 @@ DepictionOperator_FV4201_Chieftain_Mk9_UK_Weapon5 is DepictionOperator_WeaponIns
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV4201_Chieftain_Mk9_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7251,8 +7251,8 @@ DepictionOperator_FV4201_Chieftain_UK_Weapon5 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV4201_Chieftain_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7298,8 +7298,8 @@ DepictionOperator_FV432_CMD_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV432_CMD_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7353,8 +7353,8 @@ DepictionOperator_FV432_Mortar_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV432_Mortar_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7430,8 +7430,8 @@ DepictionOperator_FV432_Rarden_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV432_Rarden_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7478,8 +7478,8 @@ DepictionOperator_FV432_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV432_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7560,8 +7560,8 @@ DepictionOperator_FV433_Abbot_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV433_Abbot_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7609,8 +7609,8 @@ DepictionOperator_FV438_Swingfire_UK_Weapon5 is DepictionOperator_WeaponInstantF
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV438_Swingfire_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7668,8 +7668,8 @@ DepictionOperator_FV721_Fox_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_FV721_Fox_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7748,8 +7748,8 @@ DepictionOperator_Ferret_Mk2_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Ferret_Mk2_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -7916,8 +7916,8 @@ DepictionOperator_Gepard_1A2_RFA_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Gepard_1A2_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -9292,7 +9292,7 @@ Gfx_Howz_MstaB_150mm_SOV_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_Howz_Canon_2A65_towed_152mm ),
                 ( [ "weapon_effet_tag2" ], Weapon_Howz_Canon_2A65_towed_152mm_SMOKE ),
-                ( [ "weapon_effet_tag3" ], Weapon_Howz_Canon_2A65_SP_152mm_Direct ),
+                ( [ "weapon_effet_tag3" ], Weapon_Howz_Canon_2A65_152mm_Direct ),
             ]
             + DepictionAction_CriticalFX_Towed
 
@@ -9530,8 +9530,8 @@ DepictionOperator_Jaguar_1_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_Jaguar_1_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -9594,8 +9594,8 @@ DepictionOperator_Jaguar_2_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_Jaguar_2_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -9672,8 +9672,8 @@ DepictionOperator_KanJagdPanzer_RFA_Weapon5 is DepictionOperator_WeaponInstantFi
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_KanJagdPanzer_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -9986,8 +9986,8 @@ DepictionOperator_Leopard_1A1_CMD_RFA_Weapon6 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_Leopard_1A1_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -10084,8 +10084,8 @@ DepictionOperator_Leopard_1A1_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_Leopard_1A1_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -10182,8 +10182,8 @@ DepictionOperator_Leopard_1A5_CMD_RFA_Weapon6 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_Leopard_1A5_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -10280,8 +10280,8 @@ DepictionOperator_Leopard_1A5_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_Leopard_1A5_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -10378,8 +10378,8 @@ DepictionOperator_Leopard_2A3_CMD_RFA_Weapon6 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_Leopard_2A3_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -10455,8 +10455,8 @@ DepictionOperator_Leopard_2A3_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_Leopard_2A3_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -10532,8 +10532,8 @@ DepictionOperator_Leopard_2A4_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_Leopard_2A4_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -10593,8 +10593,8 @@ DepictionOperator_Luchs_A1_RFA_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Luchs_A1_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -10869,6 +10869,46 @@ Gfx_M1025_Humvee_scout_US_Autogen is TacticVehicleDepictionTemplate
 
     SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
 )
+// Dépiction de l'unité M1025_Humvee_scout_tuto_US
+DepictionOperator_M1025_Humvee_scout_tuto_US_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    NbFX = 1
+)
+Gfx_M1025_Humvee_scout_tuto_US_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'M1025_Humvee_scout_tuto_US'
+    Selector = Selector_M1025_Humvee_scout_tuto_US
+    Alternatives = Alternatives_M1025_Humvee_scout_tuto_US
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_Humvee,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_MediumTank_NoCanonRecoil,
+        DepictionOperator_Propulsion_Wheels_Generic,
+        DepictionOperator_MovementFX_Standard,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
+        DepictionOperator_M1025_Humvee_scout_tuto_US_Weapon1,
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_HMG_12_7_mm_M2HB ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Wheeled
+            + DepictionAction_CriticalFX_Tank
+
+    SubDepictions = [
+    ] + HumanSubDepictions_M1025_Humvee_scout_tuto_US
+
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+)
 // Dépiction de l'unité M1038_Humvee_US
 Gfx_M1038_Humvee_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -11101,8 +11141,8 @@ DepictionOperator_M109A2_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_M109A2_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -11317,8 +11357,8 @@ DepictionOperator_M113A1G_RFA_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M113A1G_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -11385,8 +11425,8 @@ DepictionOperator_M113A1G_reco_RFA_Weapon6 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M113A1G_reco_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -11744,8 +11784,8 @@ DepictionOperator_M113_GreenArcher_RFA_Weapon5 is DepictionOperator_WeaponInstan
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_M113_GreenArcher_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -11819,8 +11859,8 @@ DepictionOperator_M113_GreenArcher_UK_Weapon5 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_M113_GreenArcher_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -12248,8 +12288,8 @@ DepictionOperator_M1A1HA_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponInstan
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M1A1HA_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -12336,8 +12376,8 @@ DepictionOperator_M1A1HA_Abrams_US_Weapon6 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M1A1HA_Abrams_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -12424,8 +12464,8 @@ DepictionOperator_M1A1_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponInstantF
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M1A1_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -12519,8 +12559,8 @@ DepictionOperator_M1A1_Abrams_US_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M1A1_Abrams_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -12619,8 +12659,8 @@ DepictionOperator_M1A1_Abrams_reco_US_Weapon6 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M1A1_Abrams_reco_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -12719,8 +12759,8 @@ DepictionOperator_M1IP_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponInstantF
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M1IP_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -12807,8 +12847,8 @@ DepictionOperator_M1IP_Abrams_US_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M1IP_Abrams_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -12895,8 +12935,8 @@ DepictionOperator_M1_Abrams_CMD_US_Weapon6 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M1_Abrams_CMD_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -12996,8 +13036,8 @@ DepictionOperator_M1_Abrams_US_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M1_Abrams_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -13194,8 +13234,8 @@ DepictionOperator_M2A2_Bradley_IFV_US_Weapon5 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_M2A2_Bradley_IFV_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -13271,8 +13311,8 @@ DepictionOperator_M2A2_Bradley_Leader_US_Weapon5 is DepictionOperator_WeaponInst
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_M2A2_Bradley_Leader_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -13366,6 +13406,35 @@ Gfx_M35_trans_US_Autogen is TacticVehicleDepictionTemplate
 
     SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
 )
+// Dépiction de l'unité M35_trans_tuto_US
+Gfx_M35_trans_tuto_US_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'M35_trans_tuto_US'
+    Selector = Selector_M35_trans_tuto_US
+    Alternatives = Alternatives_M35_trans_tuto_US
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_M35,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_Vehicle,
+        DepictionOperator_Propulsion_Wheels_Generic,
+        DepictionOperator_MovementFX_Standard,
+    ]
+
+    Actions = MAP[
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Wheeled
+            + DepictionAction_CriticalFX_Tank
+
+    SubDepictions = [
+        SubDepictionTowedUnit,
+    ] + HumanSubDepictions_M35_trans_tuto_US
+
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+)
 // Dépiction de l'unité M3A1_Bradley_CFV_US
 DepictionOperator_M3A1_Bradley_CFV_US_Weapon1 is DepictionOperator_WeaponInstantFire
 (
@@ -13401,8 +13470,8 @@ DepictionOperator_M3A1_Bradley_CFV_US_Weapon5 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_M3A1_Bradley_CFV_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -13476,8 +13545,8 @@ DepictionOperator_M48A2C_RFA_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_M48A2C_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -13544,8 +13613,8 @@ DepictionOperator_M48A2GA2_CMD_RFA_Weapon5 is DepictionOperator_WeaponInstantFir
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_M48A2GA2_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -13609,8 +13678,8 @@ DepictionOperator_M48A2GA2_RFA_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_M48A2GA2_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -13730,8 +13799,8 @@ DepictionOperator_M551A1_TTS_Sheridan_CMD_US_Weapon6 is DepictionOperator_Weapon
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M551A1_TTS_Sheridan_CMD_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -13806,8 +13875,8 @@ DepictionOperator_M551A1_TTS_Sheridan_US_Weapon6 is DepictionOperator_WeaponInst
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M551A1_TTS_Sheridan_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -13930,8 +13999,8 @@ DepictionOperator_M60A3_CMD_US_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M60A3_CMD_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -14018,8 +14087,8 @@ DepictionOperator_M60A3_Patton_US_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_M60A3_Patton_US_Autogen is TacticVehicleDepictionTemplate
 (
@@ -14395,8 +14464,8 @@ DepictionOperator_MCV_80_Warrior_MILAN_UK_Weapon5 is DepictionOperator_WeaponIns
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_MCV_80_Warrior_MILAN_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -14485,8 +14554,8 @@ DepictionOperator_MCV_80_Warrior_UK_Weapon5 is DepictionOperator_WeaponInstantFi
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_MCV_80_Warrior_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -14964,8 +15033,8 @@ DepictionOperator_Marder_1A2_MILAN_RFA_Weapon5 is DepictionOperator_WeaponInstan
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Marder_1A2_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -15034,8 +15103,8 @@ DepictionOperator_Marder_1A2_RFA_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Marder_1A2_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -15109,8 +15178,8 @@ DepictionOperator_Marder_1A3_MILAN_RFA_Weapon5 is DepictionOperator_WeaponInstan
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Marder_1A3_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -15179,8 +15248,8 @@ DepictionOperator_Marder_1A3_RFA_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Marder_1A3_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -16263,8 +16332,8 @@ DepictionOperator_Saxon_CMD_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Saxon_CMD_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -16307,8 +16376,8 @@ DepictionOperator_Saxon_UK_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_Saxon_UK_Autogen is TacticVehicleDepictionTemplate
 (
@@ -16508,8 +16577,8 @@ DepictionOperator_T55AM2B_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_T55AM2B_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -16582,8 +16651,8 @@ DepictionOperator_T55AM2_CMD_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_T55AM2_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -16657,8 +16726,8 @@ DepictionOperator_T55AM2_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_T55AM2_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -16998,8 +17067,8 @@ DepictionOperator_T62M1_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T62M1_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17073,8 +17142,8 @@ DepictionOperator_T62MV_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T62MV_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17147,8 +17216,8 @@ DepictionOperator_T62M_CMD_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T62M_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17222,8 +17291,8 @@ DepictionOperator_T62M_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T62M_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17296,8 +17365,8 @@ DepictionOperator_T64BV_CMD_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T64BV_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17372,8 +17441,8 @@ DepictionOperator_T64BV_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T64BV_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17448,8 +17517,8 @@ DepictionOperator_T64B_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T64B_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17524,8 +17593,8 @@ DepictionOperator_T72M1_CMD_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_T72M1_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17600,8 +17669,8 @@ DepictionOperator_T72M1_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_T72M1_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17676,8 +17745,8 @@ DepictionOperator_T72M_CMD_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_T72M_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17752,8 +17821,8 @@ DepictionOperator_T72M_DDR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_T72M_DDR_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17895,8 +17964,8 @@ DepictionOperator_T80BV_Beast_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T80BV_Beast_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -17971,8 +18040,8 @@ DepictionOperator_T80BV_CMD_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T80BV_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18048,8 +18117,8 @@ DepictionOperator_T80BV_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T80BV_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18124,8 +18193,8 @@ DepictionOperator_T80B_CMD_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T80B_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18201,8 +18270,8 @@ DepictionOperator_T80B_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T80B_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18277,8 +18346,8 @@ DepictionOperator_T80UD_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T80UD_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18353,8 +18422,8 @@ DepictionOperator_T80U_CMD_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T80U_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18429,8 +18498,8 @@ DepictionOperator_T80U_SOV_Weapon6 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag6"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_6", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_6", "WeaponShootData_1_6", "WeaponShootData_2_6", "WeaponShootData_3_6", ]
+    NbProj = 4
 )
 Gfx_T80U_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18706,8 +18775,8 @@ DepictionOperator_TPZ_Fuchs_1_RFA_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_TPZ_Fuchs_1_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18774,8 +18843,8 @@ DepictionOperator_TPZ_Fuchs_CMD_RFA_Weapon5 is DepictionOperator_WeaponInstantFi
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_TPZ_Fuchs_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18848,8 +18917,8 @@ DepictionOperator_TPZ_Fuchs_MILAN_RFA_Weapon5 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_TPZ_Fuchs_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -18929,8 +18998,8 @@ DepictionOperator_TPZ_Fuchs_RASIT_RFA_Weapon5 is DepictionOperator_WeaponInstant
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_TPZ_Fuchs_RASIT_RFA_Autogen is TacticVehicleDepictionTemplate
 (
@@ -20380,8 +20449,8 @@ DepictionOperator_VAB_T20_FR_Weapon5 is DepictionOperator_WeaponInstantFire
 (
     FireEffectTag = "weapon_effet_tag5"
     Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
-    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
-    NbProj = 1
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
 )
 Gfx_VAB_T20_FR_Autogen is TacticVehicleDepictionTemplate
 (

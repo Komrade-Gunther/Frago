@@ -89,7 +89,7 @@ export HitRollParams is TRollParameters
     UseECMToReduceHitChance = true
 
     // défini quel sera le minimum, cad qu'on prend le max entre BaseHitChance - ECM et MinimalHitChanceWithECM
-    MinimalHitChanceWithECM = 20
+    MinimalHitChanceWithECM = 10
 
     // pour l'instant on part du principe qu'on est entre -0.6 et 0.0. Si on change cette valeur, merci de prévenir un dev, il faut que l'exporteur soit updaté aussi
     MinimalECMValue = -0.6

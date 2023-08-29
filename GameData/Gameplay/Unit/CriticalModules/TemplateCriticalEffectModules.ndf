@@ -26,7 +26,7 @@ CriticalEffect_FuelExplosion_Desc is TCriticalEffectDescriptor
 (
     Token = 'CRITIC2'
     HappeningKey = 'critical_fuel_explosion'
-    EffectsPack = ~/UnitEffect_Critic_Perd_1_PV
+    EffectsPack = ~/UnitEffect_Critic_Pert_4_PV
     TimeOut = 5
     RepairCost = -1
     Unique = False
@@ -147,7 +147,7 @@ CriticalEffect_EngineDamaged_Desc is TCriticalEffectDescriptor
 (
     Token = 'CRITIC8'
     HappeningKey = 'critical_engine_damaged'
-    EffectsPack = ~/UnitEffect_Critic_Vitesse_30
+    EffectsPack = ~/UnitEffect_Critic_Vitesse_50
     TimeOut = -1
     RepairCost = 50
     Unique = True
@@ -188,7 +188,7 @@ CriticalEffect_TracksBroken_Desc is TCriticalEffectDescriptor
     Token = 'CRITIC10'
     HappeningKey = 'critical_track_broke'
     EffectsPack = ~/UnitEffect_Critic_Chenille_Detruite
-    TimeOut = 30
+    TimeOut = 60
     RepairCost = -1
     Unique = True
     DisplayOnDeath = False
@@ -346,7 +346,7 @@ CriticalEffect_Incendiary_Desc is TCriticalEffectDescriptor
 (
     Token = 'CRITIC20'
     HappeningKey = 'critical_incendiary'
-    EffectsPack = ~/UnitEffect_Critic_Perd_1_PV
+    EffectsPack = ~/UnitEffect_Critic_Pert_3_PV
     TimeOut = 5
     RepairCost = -1
     Unique = True
@@ -1233,20 +1233,16 @@ template HelicoCriticalEffect_Hydraulic_Fluid_Fire
 PackEffetCritique_VehiculeStandard is
 [
     CriticalEffect_Incendiary(Roll = (1,1)),
-    CriticalEffect_EngineDamaged(Roll = (2,3)),
+    CriticalEffect_EngineDamaged(Roll = (2,2)),
+    CriticalEffect_EngineDestroyed(Roll = (3,3)),
     CriticalEffect_AmmoExplosion(Roll = (4,4)),
     CriticalEffect_FuelExplosion(Roll = (5,5)),
-    CriticalEffect_CompReset(Roll = (6,7)),
-    CriticalEffect_TracksBroken(Roll = (7,7)),
+    CriticalEffect_CompReset(Roll = (6,6)),
+    CriticalEffect_BailedOut(Roll = (7,7)),
     CriticalEffect_ArmourCracked (Roll = (8,8)),
     CriticalEffect_Spalling (Roll = (9,9)),
-    CriticalEffect_TurretStuck(Roll = (11,12)),
-    CriticalEffect_TracksBroken(Roll = (13,13)),
-
-    CriticalEffect_EngineDestroyed(Roll = (103,103)),
-    //CriticalEffect_TracksBroken(Roll = (110,110)),
-	//CriticalEffect_BailedOut(Roll = (7,7)),
-
+    CriticalEffect_TracksBroken(Roll = (10,10)),
+    CriticalEffect_TurretStuck(Roll = (11,11)),
 ]
 
 PackEffetCritique_VehiculeNonArme is

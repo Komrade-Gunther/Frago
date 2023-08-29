@@ -12,7 +12,6 @@ export ModernWarfareModularUnitFireDescriptorForTestIA is TEntityDescriptor
         TPositionModuleDescriptor
         (
             InGeoDb              = false
-            PorteurMustBeVisible = False
         ),
         TApparenceModelModuleDescriptor
         (
@@ -118,7 +117,6 @@ export Descriptor_FireWithHighSpreadProba is TEntityDescriptor
         TPositionModuleDescriptor
         (
             InGeoDb              = False
-            PorteurMustBeVisible = True
         ),
         TFireModuleDescriptor
         (

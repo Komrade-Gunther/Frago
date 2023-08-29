@@ -5,9 +5,6 @@ export GenericStrategy is TIAGeneralStrategy
 (
     StrategyName = "GenericAI"
     FirstGenerator = Gen_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [
@@ -85,8 +82,6 @@ export Gen_Phase_Deploiement is TSequenceGeneratorDescriptor
     NbMacroActionAllowedToProduceSimultaneous = 4
     GeneratorList =
     [
-        ~/FOB_Skirmish,
-
         //------------------------------
         // Support & Supply
         //------------------------------
@@ -96,6 +91,7 @@ export Gen_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/CaptureOneObjectif,
 
+        ~/FOB_Skirmish,
         // Capture de zones
         ~/Attack_Objectives,
 
@@ -108,12 +104,13 @@ export Gen_Phase_Deploiement is TSequenceGeneratorDescriptor
         //------------------------------
         // Grosse attaque
         ~/Attack_Main,              // Plusieurs tanks pour un budget donné // 200 => un cmd pas cher, une reco pas cher, et le reste de tanks pour fill le budget en random.
-        ~/Attack_Helo,
 
         ~/Defense_Static_AA,
         ~/Defense_Dynamic_AA,
 
-        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Attack_Helo,
+
+        ~/Artillery_TriggerHappy,        // Artillerie pas chère                 //  80
 
         // Reste du front
         ~/Attack_Adaptive,          // ~100
@@ -167,7 +164,6 @@ export Gen_Phase_Command is TSequenceGeneratorDescriptor
         // Attaques principales
         //------------------------------
         ~/Attack_Main,              // Plusieurs tanks pour un budget donné // 200
-        ~/Attack_Helo,
 
         ~/Defense_Objectif,
 
@@ -183,12 +179,13 @@ export Gen_Phase_Command is TSequenceGeneratorDescriptor
         ~/Defense_Static_AA,
         ~/Defense_Dynamic_AA,
 
+        ~/Attack_Helo,
 
         ~/CaptureHalfZoneObjectif_Ceil,
 
         ~/Attack_Filler,
 
-        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Artillery_TriggerHappy,        // Artillerie pas chère                 //  80
 
         ~/Attack_Adaptive,  // Faire du code pour adapater le budget en fonction de l'income
         ~/Attack_Adaptive,
@@ -255,7 +252,7 @@ export Gen_Phase_LastHope is TSequenceGeneratorDescriptor
         ~/Attack_Main,
         ~/Attack_Main,
         ~/Attack_Helo,
-        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Artillery_TriggerHappy,        // Artillerie pas chère                 //  80
 
         ~/Attack_Adaptive,  // Faire du code pour adapater le budget en fonction de l'income
         ~/Attack_Adaptive,
@@ -301,10 +298,11 @@ Defenses_Airstrike_Arti_Shuffle_Deploy is
 
 Airstrike_Arti_Shuffle is
 [
-    ~/Airstrike_SEAD,
-    ~/Airstrike_Assault,
-    ~/Artillery_Expensive,
     ~/Artillery_TriggerHappy_1for4Corridors,
+    ~/Airstrike_Assault,
+    ~/Artillery_Support,
+    ~/Airstrike_SEAD,
+    ~/Artillery_Expensive,
 ]
 
 Medium_Scaling is

@@ -49,8 +49,8 @@ DefaultStyleGuide is TUIStyleGuide
         ("ActivationPoint",                                         MAP [ ( ~/ComponentState/Normal, TextStyleActivationPoint ), ]),
         ("ActivationPointTemp",                                     MAP [ ( ~/ComponentState/Normal, TextStyleActivationPointTemp ), ]),
         ("ActionPoint",                                             MAP [ ( ~/ComponentState/Normal, TextStylePointAction ), ]),
-        ("ActionPointREDFOR",                                       MAP [ ( ~/ComponentState/Normal, TextStylePointActionREDFOR ), ]),
-        ("ActionPointBLUFOR",                                       MAP [ ( ~/ComponentState/Normal, TextStylePointActionBLUFOR ), ]),
+        ("ActionPointREDFOR",                                       MAP [ ( ~/ComponentState/Normal, TextStyleDefault ), ]),
+        ("ActionPointBLUFOR",                                       MAP [ ( ~/ComponentState/Normal, TextStyleDefault ), ]),
         ("ActionPointREDFORCantAttack",                             MAP [ ( ~/ComponentState/Normal, TextStylePointActionREDFORCantAttack ), ]),
         ("ActionPointBLUFORCantAttack",                             MAP [ ( ~/ComponentState/Normal, TextStylePointActionBLUFORCantAttack ), ]),
         ("Default",                                             MAP [ ( ~/ComponentState/Normal, TextStyleDefault ), ]),
@@ -906,8 +906,9 @@ DefaultStyleGuide is TUIStyleGuide
                                             ( ~/ComponentState/Highlighted,      TColorRTTI( Color = [73,215,99,240] ) ),
                                             ]),
         ("loginBoutonBackground_vert",  MAP [
-                                            ( ~/ComponentState/Normal,      TColorRTTI( Color = [124,210,150,0] ) ),
+                                            ( ~/ComponentState/Normal,      TColorRTTI( Color = Transparent ) ),
                                             ( ~/ComponentState/Highlighted,      TColorRTTI( Color = [124,210,150,240] ) ),
+                                            ( ~/ComponentState/ToggleGrayed,      TColorRTTI( Color = [124,210,150,180] ) ),
                                             ]),
 
         ("loginBoutonBackground_cyan",  MAP [
@@ -1289,7 +1290,7 @@ DefaultStyleGuide is TUIStyleGuide
         ("UIPlayerSpecific/Grey/PawnVerticalBarColor",                  MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BlancPur ) ), ]),
 
         ("UIPlayerSpecific/Red/LabelActionPoints",                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = RougeSovietique_100 ) ), ]),
-        ("UIPlayerSpecific/Blue/LabelActionPoints",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisAllemand_100 ) ), ]),
+        ("UIPlayerSpecific/Blue/LabelActionPoints",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Otan ) ), ]),
         ("UIPlayerSpecific/Green/LabelActionPoints",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisAllemand_100 ) ), ]),
         ("UIPlayerSpecific/Orange/LabelActionPoints",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = RougeSovietique_100 ) ), ]),
         ("UIPlayerSpecific/Grey/LabelActionPoints",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisBleu ) ), ]),
@@ -2918,6 +2919,7 @@ DefaultStyleGuide is TUIStyleGuide
         ("CyanChrono",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [129,238,242,255] ) ), ]),
         ("VertSecteur",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [184,239,154,255] ) ), ]),
         ("BlancEquipe_alpha",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [202,223,229,180] ) ), ]),
+        ("BlancEquipe_30",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [202,223,229,50] ) ), ]),
         ("BlancEquipe",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [202,223,229,255] ) ), ]),
         ("WIP_Vert",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [89,210,112,255] ) ), ]),
 

@@ -8,9 +8,6 @@ export ChallengeAirborneAssault_Front is TIAGeneralStrategy
 (
     StrategyName = "AirFrontAI"
     FirstGenerator = ChalAttackGeneric_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AuthorizedCorridorList = [1]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =

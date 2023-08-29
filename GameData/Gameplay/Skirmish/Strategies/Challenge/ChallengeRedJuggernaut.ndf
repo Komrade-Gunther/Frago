@@ -5,9 +5,6 @@ export ChallengeRedJuggernautStrategy is TIAGeneralStrategy
 (
     StrategyName = "ChalRedJAI"
     FirstGenerator = ChalRedJuggernaut_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [

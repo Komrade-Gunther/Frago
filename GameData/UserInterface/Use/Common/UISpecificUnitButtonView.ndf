@@ -22,13 +22,14 @@ private template BUCKSpecificUnitButtonMainComponentDescriptor
 ]
 is BUCKDraggableContainerDescriptor
 (
+    ElementName = "BUCKSpecificUnitDraggable"
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         AlignementToFather = <ComponentFrameAlignment>
         AlignementToAnchor = <ComponentFrameAlignment>
     )
 
-    ElementName = "BUCKSpecificUnitDraggable"
     FitStyle = ~/ContainerFitStyle/FitToContent
 
     HidePointerEvents = true
@@ -95,31 +96,12 @@ is BUCKDraggableContainerDescriptor
 
                 BUCKListElementDescriptor
                 (
-                    ComponentDescriptor = BUCKListDescriptor
+                    ComponentDescriptor = UnitButtonUnitAloneButton
                     (
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [1.0, 0.0]
-                        )
-
-                        Axis = ~/ListAxis/Vertical
-                        BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
-                        InterItemMargin = TRTTILength( Magnifiable = UnitButtonUnitButtonAndAloneUnitButtonContainerInterItemMargin )
-
-                        Elements =
-                        [
-                            // Alone Unit Button
-                            BUCKListElementDescriptor
-                            (
-                                ComponentDescriptor = UnitButtonUnitAloneButton
-                                (
-                                    IsTogglable = <IsTogglable>
-                                    CannotDeselect = <CannotDeselect>
-                                    ForceEvents = <ForceEvents>
-                                    RadioButtonManager = <RadioButtonManager>
-                                )
-                            ),
-                        ]
+                        IsTogglable = <IsTogglable>
+                        CannotDeselect = <CannotDeselect>
+                        ForceEvents = <ForceEvents>
+                        RadioButtonManager = <RadioButtonManager>
                     )
                 ),
             ]
@@ -309,6 +291,8 @@ is BUCKButtonDescriptor
     ]
 )
 
+// -------------------------------------------------------------------------------------------------
+
 private template MainButtonContent
 [
     ShowXPButtons : bool = false,
@@ -342,9 +326,6 @@ private template MainButtonContent
             Components =
             [
                 ~/UnitButtonUnitTexture,
-
-                // OverBlock
-                ~/OverBlockMainUnitButton,
 
                 // Feedback for when the player took charge or placed all units of this type
                 ~/UnitButtonUnitAvailabilityFeedback,
@@ -389,6 +370,51 @@ private template MainButtonContent
     ]
 )
 
+//-------------------------------------------------------------------------------------
+
+DeckEditorPackXPSelector is BUCKListDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [~/UnitButtonXPAreaWidth, 0.0]
+    )
+    Axis = ~/ListAxis/Vertical
+
+    Elements =
+    [
+        BoutonXp
+        (
+            ElementName = "Veterancy/3"
+            TextureToken = "CommonTexture_Chevron_3"
+            HintTitle = "DES_UE_VE3"
+            HintBody = "pi_ve3"
+        ),
+        BoutonXp
+        (
+            ElementName = "Veterancy/2"
+            TextureToken = "CommonTexture_Chevron_2"
+            HintTitle = "DES_UE_VE2"
+            HintBody = "pi_ve2"
+        ),
+        BoutonXp
+        (
+            ElementName = "Veterancy/1"
+            TextureToken = "CommonTexture_Chevron_1"
+            HintTitle = "DES_UE_VE1"
+            HintBody = "pi_ve1"
+        ),
+        BoutonXp
+        (
+            ElementName = "Veterancy/0"
+            TextureToken = "CommonTexture_Chevron_0"
+            HintTitle = "DES_UE_VE0"
+            HintBody = "pi_ve0"
+        ),
+    ]
+)
+
+//-------------------------------------------------------------------------------------
+
 template UnitCornerButton
 [
     ElementName : string,
@@ -422,7 +448,7 @@ template UnitCornerButton
     HidePointerEvents = false
 )
 
-////-------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
 
 AddUnitButton is UnitCornerButton
 (
@@ -433,7 +459,7 @@ AddUnitButton is UnitCornerButton
     TextTypefaceToken = "Liberator"
 )
 
-////-------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
 
 RemoveUnitButton is UnitCornerButton
 (
@@ -444,7 +470,7 @@ RemoveUnitButton is UnitCornerButton
     TextTypefaceToken = "UIMainFont"
 )
 
-////-------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
 
 ManualGrayMask is BUCKContainerDescriptor
 (
@@ -458,7 +484,7 @@ ManualGrayMask is BUCKContainerDescriptor
     BackgroundBlockColorToken = "Black80"
 )
 
-////-------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
 
 AffichageInfosUnit is BUCKContainerDescriptor
 (
@@ -506,6 +532,7 @@ AffichageInfosUnit is BUCKContainerDescriptor
                         (
                             MagnifiableWidthHeight = [0.0, 0.0]
                         )
+
                         Axis = ~/ListAxis/Horizontal
                         BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
@@ -632,16 +659,16 @@ private UnitButtonUnitNameText is BUCKSpecificTextWithHint
     TextSize = "11"
 
     ClipContent = true
-
-
 )
+
+// -------------------------------------------------------------------------------------------------
 
 PackAndUnitNameList is BUCKContainerDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1,0]
-        MagnifiableWidthHeight = [0, UnitNameContainerMagnifiableHeight]
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, UnitNameContainerMagnifiableHeight]
     )
 
     HasBackground = true
@@ -672,10 +699,6 @@ PackAndUnitNameList is BUCKContainerDescriptor
         )
     ]
 )
-
-
-
-
 
 // -------------------------------------------------------------------------------------------------
 // ListSpecialityIcons
@@ -828,6 +851,7 @@ private UnitButtonAdditionalUnitNameText is BUCKTextDescriptor
         VerticalAlignment = UIText_VerticalCenter
         InterLine = 0
     )
+
     HasBackground = true
     BackgroundBlockColorToken = 'ArmoryUnitButtonName'
     TextStyle = "Default"
@@ -919,6 +943,7 @@ is BUCKButtonDescriptor
                 AlignementToFather = [0.0, 0.5]
                 AlignementToAnchor = [0.0, 0.5]
             )
+
             TextToken = 'UnitAlo'
 
             HorizontalFitStyle = ~/FitStyle/UserDefined
@@ -929,6 +954,7 @@ is BUCKButtonDescriptor
                 Alignment = UIText_Center
                 VerticalAlignment = UIText_VerticalCenter
             )
+
             TextPadding = TRTTILength4( Magnifiable = [5.0, 5.0, 5.0, 5.0] )
             TypefaceToken = "UIMainFont"
             BigLineAction = ~/BigLineAction/BalancedMultiline
@@ -1092,7 +1118,6 @@ IconeSpecialite is BUCKContainerDescriptor
             MagnifiableWidthHeight = [14.0, 14.0]
         )
     ]
-
 )
 
 //-------------------------------------------------------------------------------------
@@ -1228,7 +1253,6 @@ NbUnitInThePack is BUCKContainerDescriptor
                 (
                     ComponentDescriptor = BUCKTextDescriptor
                     (
-
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [0.0, 1.0]
@@ -1325,7 +1349,7 @@ NombreDePack is BUCKTextDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [0,1]
+        RelativeWidthHeight = [0.0, 1.0]
     )
 
     ParagraphStyle = TParagraphStyleRTTI
@@ -1361,29 +1385,14 @@ NombreDePack is BUCKTextDescriptor
 )
 
 // -------------------------------------------------------------------------------------------------
-// OverBlockMainUnitButton
-// -------------------------------------------------------------------------------------------------
-
-private OverBlockMainUnitButton is BUCKContainerDescriptor
-(
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        // Use these to apply the overblock on the whole button
-        RelativeWidthHeight = [1.0, 1.0]
-    )
-
-    HasBackground = false
-    BackgroundBlockColorToken = "AppleGreen"
-)
-
-// -------------------------------------------------------------------------------------------------
 // UnitNumberText
 // -------------------------------------------------------------------------------------------------
 
 // Number of units in pack
 private UnitButtonUnitNumberText is BUCKListDescriptor
 (
-    ElementName = "NbUntsInPackCiontainer"
+    ElementName = "NbUnitsInPackContainer"
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableOffset = [-5.0, 3.0]

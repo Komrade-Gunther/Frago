@@ -1,25 +1,22 @@
 
 // CONSTANTES POUR LE GAME DESIGN
-private scaleAffichage is 0.02
 StrategicIAStratConstantes is TIAStratStrategicConstantesDescriptor
 (
     NbAirplanesToKeepBeforeUsingAirDeny = 3
     NbAirplanesToKeepBeforeUsingBombard = 1
     NbMaxPawnAllowedToFortifyPerObjective = 0
-    NbMaxPawnAllowedToFortifyAntiAirPerObjective = 3
 
+    DistanceMaxToAssignPawnToExistingGroup = 3000.0 * Metre
     DistanceMaxForPawnToBeAvailableForCurrentObjective = 1500.0 * Metre
-    DistanceMaxToReassignPawnIFP = 3000.0 * Metre
-
-    MinimumRankForWeakestBattleUnitDefensePoint = 0 //Attention, ça commence à 0
-    MinimumRankForStrongestBattleUnitDefensePoint = 1 //Attention, ça commence à 0
-    MinimumRankForSupportUnitDefensePoint = 2 //Attention, ça commence à 0
-
-    MinPowerValueForPowerfullPawn = 10 * 1666 // valeur du pion dit "powerfull"
 
     NumberMaxOfProductionPerTurn = 3
 
     MaxFatigueToBeSelectedForStrategicBattle = 3
+
+    // Par defaut, tous les Fighter et AuxiliarySupport se placent au plus près de l'ennemi
+    PawnWithTagToPlaceFarthestFromEnemy = [
+        "AntiAir",
+    ]
 
     NbApToKeepAfterMoveWithTargetForBattleRole = MAP
     [
@@ -171,5 +168,35 @@ StrategicIAStratConstantes is TIAStratStrategicConstantesDescriptor
         (~/ETerrainType/StrategicSemiUrban, 0.66),
         (~/ETerrainType/Urbain, 1),
     ]
-    NumberDefenseRank = 3
+
+    NumberPositionRankToPlaceUnits = 3
+    MinimumRankForWeakestBattleUnitDefensePoint = 0 //Attention, ça commence à 0
+    MinimumRankForStrongestBattleUnitDefensePoint = 1 //Attention, ça commence à 0
+    MinimumRankForWeakestBattleUnitAttackPoint = 0 //Attention, ça commence à 0
+    MinimumRankForStrongestBattleUnitAttackPoint = 0 //Attention, ça commence à 0
+    MinimumRankForSupportUnit = 2 //Attention, ça commence à 0
+
+    GroupPoolsSortedByPriority =
+    [
+        TIAGroupPool
+        (
+            Name = "AntiAir"
+            PossibleTags = ["AntiAir"]
+            NbMaxPawns = 1
+        ),
+        TIAGroupPool
+        (
+            Name = "DefaultGroup"
+            PossibleTags = ["AllUnits"]
+            MaxPowerValue = 25000.0
+        ),
+    ]
+
+    NbGroupMaxPerObjective = MAP
+    [
+        (
+            "AntiAir",
+            1
+        ),
+    ]
 )

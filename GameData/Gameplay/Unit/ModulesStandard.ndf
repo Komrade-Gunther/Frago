@@ -1,5 +1,9 @@
-
 DebugModuleDescriptor is TDebugModuleDescriptor()
+EmptyTagsModuleDescriptor is TTagsModuleDescriptor()
+LinkTeamModuleDescriptor is TLinkTeamModuleDescriptor()
+PackSignauxModuleDescriptor  is TPackSignauxModuleDescriptor()
+SimpleTypeUnitModuleDescriptor is TTypeUnitModuleDescriptor()
+TargetDataModuleDescriptor is TTargetDataModuleDescriptor()
 
 template TModuleSelectorFilterIfCadavre
 [ Descriptor ]
@@ -14,57 +18,63 @@ NilDescriptorIfCadavre is TModuleSelectorFilterIfCadavre
     Descriptor = nil
 )
 
-LinkTeamModuleDescriptor is TLinkTeamModuleDescriptor()
-InfluenceDataModuleDescriptor is TInfluenceDataModuleDescriptor()
-EffectApplierModuleDescriptor is TEffectApplierModuleDescriptor()
-OrderDisplayModuleDescriptor is TOrderDisplayModuleDescriptor()
-PackSignauxModuleDescriptor  is TPackSignauxModuleDescriptor()
-InflammableModuleDescriptorUnit  is TInflammableModuleDescriptor()
-
-public FXState is TBaseClass
+ShowroomPositionModuleDescriptor is TPositionModuleDescriptor
 (
-    // Doit être synchro avec TActOfRuseBuildingAnimationStates/Type
-    // (BuildingAnimationModule_WarGame.h)
-
-    Idle            is 0x00000001
-    OnFire          is 0x00000002
-
-    // Merci de mettre à jour ce champ au besoin
-    All is Idle + OnFire
+    InGeoDb                    = False
+    ClampInWorld               = False
+    ClampOutMap                = False
+    LowAltitudeFlyingAltitude  = 0
+    NearGroundFlyingAltitude   = 0
 )
 
-InflammableModuleDescriptorDistrict  is TInflammableModuleDescriptor
+FirePositionModuleDescriptor is TPositionModuleDescriptor
 (
-    FireFxStateId                   = ~/FXState/OnFire
-    IdleFxStateId                   = ~/FXState/Idle
+    InGeoDb                    = False
+    ClampInWorld               = True
+    ClampOutMap                = False
+    LowAltitudeFlyingAltitude  = 0
+    NearGroundFlyingAltitude   = 0
 )
 
-TargetDataModuleDescriptor is TTargetDataModuleDescriptor()
-
-template TCadavreGeneratorModuleDescriptorUnit
-[ CadavreDescriptor ]
-is TCadavreGeneratorModuleDescriptor
+MissilePositionModuleDescriptor is TPositionModuleDescriptor
 (
-    CadavreDescriptor = <CadavreDescriptor>
+    InGeoDb                    = True
+    ClampInWorld               = False
+    ClampOutMap                = True
+    LowAltitudeFlyingAltitude  = 0
+    NearGroundFlyingAltitude   = 0
 )
 
-SimpleTypeUnitModuleDescriptor is TTypeUnitModuleDescriptor()
-
-SelectionModuleDescriptor is TSelectionModuleDescriptor
+SmokePositionModuleDescriptor is TPositionModuleDescriptor
 (
-    IsSelectable        = True
-    IsHighlightable     = True
-    HasSelectionShader  = False // Disabled by [SDDEUX-1276]
-    HasHighlightShader  = True
+    InGeoDb                    = False
+    ClampInWorld               = True
+    ClampOutMap                = False
+    LowAltitudeFlyingAltitude  = 0
+    NearGroundFlyingAltitude   = 0
 )
 
-DistrictSelectionModuleDescriptor is TSelectionModuleDescriptor
+template Descriptor_Unit_MimeticUnit[ DescriptorId, MimeticName ] is TEntityDescriptor
 (
-    IsSelectable        = True
-    IsHighlightable     = True
-    HasSelectionShader  = True
-    HasHighlightShader  = True
+    DescriptorId      = <DescriptorId>
+    ClassNameForDebug = 'Unit_MimeticUnit'
+    World = WorldIndices_Mimetic_Units
+    ModulesDescriptors = [
+        // Position
+            TMimeticTransformModuleDescriptor(),
+            TMimeticSteeringModuleDescriptor(),
+            TLinkTeamModuleDescriptor(),
+            TLinkToOwnerModuleDescriptor(),
+            TApparenceModelModuleDescriptor
+            (
+                PickableObject = True
+                Depiction      = TTimelyDepictionReceiverFactory( MimeticName = <MimeticName> )
+            ),
+            TSoldierAnimationModuleDescriptor
+            (
+                SoldierAnimationDataDescriptor = ~/SoldierAnimationDataDescriptor
+            ),
+            TSoldierStatusModuleDescriptor(),
+            TMimeticFXManagerModuleDescriptor(),
+    ]
 )
-
-TemplateLinkTeam is TLinkTeamModuleDescriptor()
-EmptyTagsModuleDescriptor is TTagsModuleDescriptor()

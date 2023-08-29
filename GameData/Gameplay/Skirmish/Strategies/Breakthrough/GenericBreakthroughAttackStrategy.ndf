@@ -5,9 +5,6 @@ export GenericBreakthroughAttackStrategy is TIAGeneralStrategy
 (
     StrategyName = "GenBTAtkAI"
     FirstGenerator = GenBTAtk_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [

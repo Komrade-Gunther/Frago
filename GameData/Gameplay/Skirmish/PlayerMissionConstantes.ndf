@@ -89,6 +89,7 @@ export colonelAirstrikeDescriptor is TMacroActionDescriptor_AirStrike_Specific
         TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = []),
         TMacroActionLifetimeSettingHolder(MaintainForever = true), //IMPORTANT
         TAirStrikeSettingHolder(AnnulerSupportSiAttaqueEchoue = true TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/All),
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
         TDisableUnitToReleaseSettingHolder(),
     ]
 )

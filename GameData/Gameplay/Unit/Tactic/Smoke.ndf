@@ -12,7 +12,6 @@ export ModernWarfareModularUnitSmokeDescriptorForTestIA is TEntityDescriptor
         TPositionModuleDescriptor
         (
             InGeoDb              = false
-            PorteurMustBeVisible = False
         ),
         TApparenceModelModuleDescriptor
         (

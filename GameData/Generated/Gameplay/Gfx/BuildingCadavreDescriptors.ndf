@@ -14,37 +14,17 @@ export Descriptor_UnitCadavre_FOB_DDR is TEntityDescriptor
                 Flag_LdDetectable,
             ]
         ),
-            TPositionModuleDescriptor
-            (
-                StickToGround              = True
-                InGeoDb                    = True
-                PorteurMustBeVisible       = True
-                ClampInWorld               = True
-                ClampOutMap                = False
-                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
-                LowAltitudeFlyingAltitude  = ((0) * Metre)
-                NearGroundFlyingAltitude   = ((0) * Metre)
-            ),
+        ~/BuildingPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-            TCadavreModuleDescriptor
-            (
-                ExplodeAtEnd = False
-                KillAsVehicule = False
-                KillAsInfanterie = False
-                KillAsHelico = False
-                KillAsAirplane = False
-                KillAsBatiment = True
-                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
-                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
-                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
-                FadingDuration = 6
-                DeathExplosionAmmo = nil
-                ModuleDescriptorsToSteal =
-                [
-                   $/GFX/Everything/Descriptor_Unit_FOB_DDR/ApparenceModel,
-                ]
-            ),
-            $/GFX/Everything/Descriptor_Unit_FOB_DDR/ApparenceModel,
+        BuildingCadavreModuleDescriptor
+        (
+            CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+            ModuleDescriptorsToSteal =
+            [
+                $/GFX/Everything/Descriptor_Unit_FOB_DDR/ApparenceModel,
+            ]
+        ),
+        $/GFX/Everything/Descriptor_Unit_FOB_DDR/ApparenceModel,
         ~/PackSignauxModuleDescriptor,
         ~/DebugModuleDescriptor,
     ]
@@ -62,37 +42,17 @@ export Descriptor_UnitCadavre_FOB_FR is TEntityDescriptor
                 Flag_LdDetectable,
             ]
         ),
-            TPositionModuleDescriptor
-            (
-                StickToGround              = True
-                InGeoDb                    = True
-                PorteurMustBeVisible       = True
-                ClampInWorld               = True
-                ClampOutMap                = False
-                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
-                LowAltitudeFlyingAltitude  = ((0) * Metre)
-                NearGroundFlyingAltitude   = ((0) * Metre)
-            ),
+        ~/BuildingPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-            TCadavreModuleDescriptor
-            (
-                ExplodeAtEnd = False
-                KillAsVehicule = False
-                KillAsInfanterie = False
-                KillAsHelico = False
-                KillAsAirplane = False
-                KillAsBatiment = True
-                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
-                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
-                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
-                FadingDuration = 6
-                DeathExplosionAmmo = nil
-                ModuleDescriptorsToSteal =
-                [
-                   $/GFX/Everything/Descriptor_Unit_FOB_FR/ApparenceModel,
-                ]
-            ),
-            $/GFX/Everything/Descriptor_Unit_FOB_FR/ApparenceModel,
+        BuildingCadavreModuleDescriptor
+        (
+            CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+            ModuleDescriptorsToSteal =
+            [
+                $/GFX/Everything/Descriptor_Unit_FOB_FR/ApparenceModel,
+            ]
+        ),
+        $/GFX/Everything/Descriptor_Unit_FOB_FR/ApparenceModel,
         ~/PackSignauxModuleDescriptor,
         ~/DebugModuleDescriptor,
     ]
@@ -110,37 +70,17 @@ export Descriptor_UnitCadavre_FOB_RFA is TEntityDescriptor
                 Flag_LdDetectable,
             ]
         ),
-            TPositionModuleDescriptor
-            (
-                StickToGround              = True
-                InGeoDb                    = True
-                PorteurMustBeVisible       = True
-                ClampInWorld               = True
-                ClampOutMap                = False
-                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
-                LowAltitudeFlyingAltitude  = ((0) * Metre)
-                NearGroundFlyingAltitude   = ((0) * Metre)
-            ),
+        ~/BuildingPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-            TCadavreModuleDescriptor
-            (
-                ExplodeAtEnd = False
-                KillAsVehicule = False
-                KillAsInfanterie = False
-                KillAsHelico = False
-                KillAsAirplane = False
-                KillAsBatiment = True
-                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
-                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
-                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
-                FadingDuration = 6
-                DeathExplosionAmmo = nil
-                ModuleDescriptorsToSteal =
-                [
-                   $/GFX/Everything/Descriptor_Unit_FOB_RFA/ApparenceModel,
-                ]
-            ),
-            $/GFX/Everything/Descriptor_Unit_FOB_RFA/ApparenceModel,
+        BuildingCadavreModuleDescriptor
+        (
+            CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+            ModuleDescriptorsToSteal =
+            [
+                $/GFX/Everything/Descriptor_Unit_FOB_RFA/ApparenceModel,
+            ]
+        ),
+        $/GFX/Everything/Descriptor_Unit_FOB_RFA/ApparenceModel,
         ~/PackSignauxModuleDescriptor,
         ~/DebugModuleDescriptor,
     ]
@@ -158,37 +98,17 @@ export Descriptor_UnitCadavre_FOB_SOV is TEntityDescriptor
                 Flag_LdDetectable,
             ]
         ),
-            TPositionModuleDescriptor
-            (
-                StickToGround              = True
-                InGeoDb                    = True
-                PorteurMustBeVisible       = True
-                ClampInWorld               = True
-                ClampOutMap                = False
-                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
-                LowAltitudeFlyingAltitude  = ((0) * Metre)
-                NearGroundFlyingAltitude   = ((0) * Metre)
-            ),
+        ~/BuildingPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-            TCadavreModuleDescriptor
-            (
-                ExplodeAtEnd = False
-                KillAsVehicule = False
-                KillAsInfanterie = False
-                KillAsHelico = False
-                KillAsAirplane = False
-                KillAsBatiment = True
-                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
-                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
-                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
-                FadingDuration = 6
-                DeathExplosionAmmo = nil
-                ModuleDescriptorsToSteal =
-                [
-                   $/GFX/Everything/Descriptor_Unit_FOB_SOV/ApparenceModel,
-                ]
-            ),
-            $/GFX/Everything/Descriptor_Unit_FOB_SOV/ApparenceModel,
+        BuildingCadavreModuleDescriptor
+        (
+            CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+            ModuleDescriptorsToSteal =
+            [
+                $/GFX/Everything/Descriptor_Unit_FOB_SOV/ApparenceModel,
+            ]
+        ),
+        $/GFX/Everything/Descriptor_Unit_FOB_SOV/ApparenceModel,
         ~/PackSignauxModuleDescriptor,
         ~/DebugModuleDescriptor,
     ]
@@ -206,37 +126,17 @@ export Descriptor_UnitCadavre_FOB_UK is TEntityDescriptor
                 Flag_LdDetectable,
             ]
         ),
-            TPositionModuleDescriptor
-            (
-                StickToGround              = True
-                InGeoDb                    = True
-                PorteurMustBeVisible       = True
-                ClampInWorld               = True
-                ClampOutMap                = False
-                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
-                LowAltitudeFlyingAltitude  = ((0) * Metre)
-                NearGroundFlyingAltitude   = ((0) * Metre)
-            ),
+        ~/BuildingPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-            TCadavreModuleDescriptor
-            (
-                ExplodeAtEnd = False
-                KillAsVehicule = False
-                KillAsInfanterie = False
-                KillAsHelico = False
-                KillAsAirplane = False
-                KillAsBatiment = True
-                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
-                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
-                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
-                FadingDuration = 6
-                DeathExplosionAmmo = nil
-                ModuleDescriptorsToSteal =
-                [
-                   $/GFX/Everything/Descriptor_Unit_FOB_UK/ApparenceModel,
-                ]
-            ),
-            $/GFX/Everything/Descriptor_Unit_FOB_UK/ApparenceModel,
+        BuildingCadavreModuleDescriptor
+        (
+            CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+            ModuleDescriptorsToSteal =
+            [
+                $/GFX/Everything/Descriptor_Unit_FOB_UK/ApparenceModel,
+            ]
+        ),
+        $/GFX/Everything/Descriptor_Unit_FOB_UK/ApparenceModel,
         ~/PackSignauxModuleDescriptor,
         ~/DebugModuleDescriptor,
     ]
@@ -254,37 +154,17 @@ export Descriptor_UnitCadavre_FOB_US is TEntityDescriptor
                 Flag_LdDetectable,
             ]
         ),
-            TPositionModuleDescriptor
-            (
-                StickToGround              = True
-                InGeoDb                    = True
-                PorteurMustBeVisible       = True
-                ClampInWorld               = True
-                ClampOutMap                = False
-                RelativeScanningPosition   = ~/DecalageParDefautDuPointDeVision
-                LowAltitudeFlyingAltitude  = ((0) * Metre)
-                NearGroundFlyingAltitude   = ((0) * Metre)
-            ),
+        ~/BuildingPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
-            TCadavreModuleDescriptor
-            (
-                ExplodeAtEnd = False
-                KillAsVehicule = False
-                KillAsInfanterie = False
-                KillAsHelico = False
-                KillAsAirplane = False
-                KillAsBatiment = True
-                CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
-                CadavreFireDurationMin = $/GFX/Everything/CadavrePeriodeEnFeu_Minimum_Batiment
-                CadavreFireDurationMax = $/GFX/Everything/CadavrePeriodeEnFeu_Maximum_Batiment
-                FadingDuration = 6
-                DeathExplosionAmmo = nil
-                ModuleDescriptorsToSteal =
-                [
-                   $/GFX/Everything/Descriptor_Unit_FOB_US/ApparenceModel,
-                ]
-            ),
-            $/GFX/Everything/Descriptor_Unit_FOB_US/ApparenceModel,
+        BuildingCadavreModuleDescriptor
+        (
+            CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu
+            ModuleDescriptorsToSteal =
+            [
+                $/GFX/Everything/Descriptor_Unit_FOB_US/ApparenceModel,
+            ]
+        ),
+        $/GFX/Everything/Descriptor_Unit_FOB_US/ApparenceModel,
         ~/PackSignauxModuleDescriptor,
         ~/DebugModuleDescriptor,
     ]

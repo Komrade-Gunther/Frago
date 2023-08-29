@@ -5,9 +5,6 @@ export HardStrategy is TIAGeneralStrategy
 (
     StrategyName = "GenericAI"
     FirstGenerator = Hard_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [
@@ -84,7 +81,6 @@ export Hard_Phase_Deploiement is TSequenceGeneratorDescriptor
     NbMacroActionAllowedToProduceSimultaneous = 4
     GeneratorList =
     [
-        ~/FOB_Skirmish,
 
         //------------------------------
         // Support & Supply
@@ -94,6 +90,8 @@ export Hard_Phase_Deploiement is TSequenceGeneratorDescriptor
         ~/Supply_Skirmish,
 
         ~/CaptureOneObjectif,
+
+        ~/FOB_Skirmish,
 
         ~/Attack_Objectives,
 
@@ -107,21 +105,20 @@ export Hard_Phase_Deploiement is TSequenceGeneratorDescriptor
         //------------------------------
         // Grosse attaque
         ~/Attack_Main,
-        ~/Attack_Helo,
 
         ~/Defense_Static_AA,
         ~/Defense_Dynamic_AA,
 
-        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Attack_Helo,
+
+        ~/Artillery_TriggerHappy,        // Artillerie pas chère                 //  80
 
         ~/CaptureHalfZoneObjectif_Ceil,
         // Reste du front
-        ~/Attack_Adaptive,          // ~100
-        ~/Attack_Adaptive,          // ~100
+        ~/Defense_Dynamic_Adaptive,
+        ~/Defense_Dynamic_Adaptive,
 
         ~/Attack_Filler,            // budget 40
-
-
 
         //------------------------------
         // Défenses Avions Arti
@@ -175,7 +172,6 @@ export Hard_Phase_Command is TSequenceGeneratorDescriptor
         // Attaques principales
         //------------------------------
         ~/Attack_Main,
-        ~/Attack_Helo,
 
         //------------------------------
         // Défenses prioritaires
@@ -191,7 +187,8 @@ export Hard_Phase_Command is TSequenceGeneratorDescriptor
         //Cet mission lance les objectifs restant
         ~/Defense_Objectif,
 
-        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Attack_Helo,
+        ~/Artillery_TriggerHappy,        // Artillerie pas chère                 //  80
 
         ~/CaptureHalfZoneObjectif_Ceil,
 
@@ -271,7 +268,7 @@ export Hard_Phase_LastHope is TSequenceGeneratorDescriptor
         //Cet mission lance les objectifs restant
         ~/Defense_Objectif,
 
-        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Artillery_TriggerHappy,        // Artillerie pas chère                 //  80
 
         ~/Attack_Adaptive,  // Faire du code pour adapater le budget en fonction de l'income
         ~/Attack_Adaptive,

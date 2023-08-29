@@ -292,15 +292,17 @@ SpecificStrategicBattleOrderPanelMainComponentDescriptor is BUCKListDescriptor
         // bouton close
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = PanelBottomButton
+            ComponentDescriptor = ButtonsBottomPanel
             (
-                Bouton = BoutonScore
-                (
-                    MagnifiableWidthHeight = [160,40]
-                    ElementName = 'CloseButton'
-                    TextToken = "CPT_CLOSE"
-                    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
-                )
+                Buttons =
+                [
+                    BottomPanelButtonElement
+                    (
+                        ElementName = 'CloseButton'
+                        TextToken = "CPT_CLOSE"
+                        Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
+                    )
+                ]
             )
         ),
     ]

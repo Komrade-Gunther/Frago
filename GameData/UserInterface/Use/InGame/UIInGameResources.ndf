@@ -66,6 +66,7 @@ UIInGameResource is TUISpecificInGameResources
     FeedbackManagerDescriptor   = ~/IngameFeedbackMessageManagerDescriptor
     GameRulesHelper             = ~/GameRulesHelper
     CorrectedShotRessources     = ~/InGameCorrectedShotFeedbackRessources
+    ReinforcementResource       = ~/ReinforcementResource
 
     SelectionHandlerInGameResources = ~/SelectionResources
     GroupSelectionReminderResources = ~/GroupSelectionReminder

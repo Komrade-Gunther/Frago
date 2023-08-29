@@ -8,9 +8,6 @@ export VeryEasyStrategy is TIAGeneralStrategy
 (
     StrategyName = "VeryEasyAI"
     FirstGenerator = VEasy_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [
@@ -74,10 +71,9 @@ export VEasy_Phase_Deploiement is TSequenceGeneratorDescriptor
     NbMacroActionAllowedToProduceSimultaneous = 4
     GeneratorList =
     [
-        ~/FOB_Skirmish,
-
         ~/CaptureOneObjectif,
 
+        ~/FOB_Skirmish,
         // On garde quand même une attaque objective pour allez prendre les zones de commandement
         ~/Attack_Objectives,
 

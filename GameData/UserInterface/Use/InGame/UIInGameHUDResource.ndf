@@ -3,7 +3,6 @@ export InGameHUDResource is TUISpecificInGameHUDResource
     MinimapResources            = ~/InGameMinimap
 
     HUDReplayResource               = ~/HUDReplayResource
-    HUDOrderButtonListDescriptor    = ~/HUDOrderButtonListDescriptor
     HUDAlertPanelDescriptor         = ~/UISpecificHUDAlertPanelViewDescriptor
     HUDLaunchBattleButtonResources  = ~/HUDLaunchBattleButtonResources
     CameraMoverTargetClient             = $/Camera/CameraMoverTargetClient

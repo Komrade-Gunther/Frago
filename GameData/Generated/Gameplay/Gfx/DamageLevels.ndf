@@ -1356,7 +1356,6 @@ export DamageLevelsPackDescriptor_Default_pack_paliers_degats_phy is TDamageLeve
             MoralModifier = -2
             TextColor = RGBA[0,0,0,0]
             EffectsPacks = [
-                ~/UnitEffect_health50percent
             ]
             NameForDebug = "Default_pack_paliers_degats_phy_palier_4"
         ),
@@ -1377,7 +1376,6 @@ export DamageLevelsPackDescriptor_Default_pack_paliers_degats_phy is TDamageLeve
             MoralModifier = -4
             TextColor = RGBA[0,0,0,0]
             EffectsPacks = [
-                ~/UnitEffect_health25percent
             ]
             NameForDebug = "Default_pack_paliers_degats_phy_palier_6"
         ),

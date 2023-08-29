@@ -1161,12 +1161,12 @@ Weapon_Howz_Canon_2A65_towed_152mm_SMOKE is TCompositeHappening
         SFXWeapon_Howz_Canon_2A65_towed_152mm_SMOKE,
     ]
 )
-Weapon_Howz_Canon_2A65_SP_152mm_Direct is TCompositeHappening
+Weapon_Howz_Canon_2A65_152mm_Direct is TCompositeHappening
 (
     SubHappenings = 
     [
-        FXWeapon_Howz_Canon_2A65_SP_152mm_Direct,
-        SFXWeapon_Howz_Canon_2A65_SP_152mm_Direct,
+        FXWeapon_Howz_Canon_2A65_152mm_Direct,
+        SFXWeapon_Howz_Canon_2A65_152mm_Direct,
     ]
 )
 Weapon_Howz_Canon_ZiS3_Howitzer_76mm is TCompositeHappening
@@ -2417,14 +2417,6 @@ Weapon_AGM_BGM71_TOW_x8 is TCompositeHappening
     [
         FXWeapon_AGM_BGM71_TOW_x8,
         SFXWeapon_AGM_BGM71_TOW_x8,
-    ]
-)
-Weapon_MMG_inf_MAG_7_62mm is TCompositeHappening
-(
-    SubHappenings = 
-    [
-        FXWeapon_MMG_inf_MAG_7_62mm,
-        SFXWeapon_MMG_inf_MAG_7_62mm,
     ]
 )
 Weapon_AGM_BGM71C_ITOW_x8 is TCompositeHappening

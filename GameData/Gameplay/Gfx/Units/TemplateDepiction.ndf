@@ -159,10 +159,8 @@ template TemplateInfantryDepictionFactory
     ResidentMaterialTags = [],
     Operators,
     Surrogates = [['high', '01']]
-] is TTimelyDepictionReceiverFactory
+] is TDepictionTemplate
 (
-    DepictionTemplate = TDepictionTemplate
-    (
         ResidentMaterialTags = <ResidentMaterialTags>
         Scaler = CommonInfantryScaler
         Selector = TInfantryLodSelector
@@ -177,7 +175,6 @@ template TemplateInfantryDepictionFactory
         DepictionAlternatives = <Alternatives> + [DepictionDescriptor_LOD_InfantryNone]
         SubDepictions = <SubDepictions>
         Operators = <Operators>
-    )
 )
 
 template TemplateInfantryDepictionFactoryGhost

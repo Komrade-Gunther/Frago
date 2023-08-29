@@ -56,7 +56,7 @@ UISpecificReinforcementLabelViewDescriptor is TUISpecificReinforcementLabelViewD
     VisibilityRange = ~/AllInGameRanges/ZoomRenfortArrow
     FadeDuration = 0.5
 
-    OpacityControlByFloat = $/M3D/Shader/AreaFillOpacity
+    OpacityControlByFloat = $/M3D/Shader/AreaTextOpacity
 
     ReinforcementTokens =
     [

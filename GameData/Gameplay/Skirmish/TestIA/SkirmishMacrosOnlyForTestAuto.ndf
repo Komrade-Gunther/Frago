@@ -235,6 +235,7 @@ is TMacroActionDescriptor_AirStrike_Specific
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [<PoolModel>]),
         TAirStrikeSettingHolder(AnnulerSupportSiAttaqueEchoue = false TypesDeRequetesAcceptees = <TypesDeRequetesAcceptees>),
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
     ]
 )
 

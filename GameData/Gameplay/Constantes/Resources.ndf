@@ -1,7 +1,4 @@
-
-//Export pour etre utilisable dans Map/Template/NdfScriptingDefine
-
-specificResourcesAccesser is TSpecificResourcesAccesser
+unnamed TSpecificResourcesAccesser
 (
     CommandPointResource = ~/Resource_CommandPoints
     StrategicPointResource = ~/Resource_StrategicPoints

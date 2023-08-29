@@ -2,8 +2,6 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
 (
     UserInputLayer = $/M3D/Input/UserInputLayerHandler/InputLayer_SkipLDHint
 
-    PauseButton = ~/LDHintDefaultButton
-
     DontMaskUserInputEvents = true
 
     ComponentByName = MAP[
@@ -315,7 +313,9 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "Steelman_tuto_2",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman = 'Steelman_tuto_2' )),
         ( "Steelman_tuto_3",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman = 'Steelman_tuto_3' )),
 
+        //-------------------------------------------------------------------------------------
         // bad h.
+        //-------------------------------------------------------------------------------------
         // ( "bad_hersfeld_sov_01",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_hersfeld_sov_01' )),
         // ( "bad_hersfeld_sov_02",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_hersfeld_sov_02' )),
         // ( "bad_hersfeld_sov_03",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_hersfeld_sov_03' )),
@@ -338,9 +338,13 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "BH_otan_4",             Steelman_newLDHINT (Texture = 'BH_otan_4' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_5",             Steelman_newLDHINT (Texture = 'BH_otan_5' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_6",             Steelman_newLDHINT (Texture = 'BH_otan_6' HasButtons = true portrait_name = 'rfa_maj_1' )),
+
         ( "BH_otan_popup_1",             Steelman_newLDHINT (Texture = 'BH_otan_popup_1' HasButtons = true text_laius = 'bh_o1' text1_title = 'bh_o1_1t' text1_body = 'bh_o1_1b' text2_title = 'bh_o1_2t' text2_body = 'bh_o1_2b')),
-        ( "BH_otan_popup_2",             Steelman_newLDHINT (Texture = 'BH_otan_popup_2' HasButtons = true text_laius = 'bh_o1' text1_title = 'bh_o1_1t' text1_body = 'bh_o1_1b' text2_title = 'bh_o1_2t' text2_body = 'bh_o1_2b')),
-        ( "BH_otan_popup_3",             Steelman_newLDHINT (Texture = 'BH_otan_popup_3' HasButtons = true text_laius = 'bh_o1' text1_title = 'bh_o1_1t' text1_body = 'bh_o1_1b' text2_title = 'bh_o1_2t' text2_body = 'bh_o1_2b')),
+        ( "BH_otan_popup_2",             Steelman_newLDHINT (Texture = 'BH_otan_popup_2' HasButtons = true text_laius = 'bh_o2' text1_title = 'bh_o2_1t' text1_body = 'bh_o2_1b' text2_title = 'bh_o2_2t' text2_body = 'bh_o2_2b')),
+        ( "BH_otan_popup_3",             Steelman_newLDHINT (Texture = 'BH_otan_popup_3' HasButtons = true text_laius = 'bh_o3' text1_title = 'bh_o3_1t' text1_body = 'bh_o3_1b' text2_title = 'bh_o3_2t' text2_body = 'bh_o3_2b')),
+
+        ( "BH_pact_popup_1",             Steelman_newLDHINT (Texture = 'BH_pact_popup_1' HasButtons = true text_laius = 'bh_p1' text1_title = 'bh_p1_1t' text1_body = 'bh_p1_1b' text2_title = 'bh_p1_2t' text2_body = 'bh_p1_2b')),
+        ( "BH_pact_popup_2",             Steelman_newLDHINT (Texture = 'BH_pact_popup_2' HasButtons = true text_laius = 'bh_p2' text1_title = 'bh_p2_1t' text1_body = 'bh_p2_1b' text2_title = 'bh_p2_2t' text2_body = 'bh_p2_2b')),
 
         ( "BH_otan_renfort_13_brigade",             Steelman_newLDHINT (Texture = 'BH_otan_renfort_13_brigade' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_renfort_14_brigade",             Steelman_newLDHINT (Texture = 'BH_otan_renfort_14_brigade' HasButtons = true portrait_name = 'rfa_maj_1' )),
@@ -348,6 +352,22 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "BH_otan_renfort_22",             Steelman_newLDHINT (Texture = 'BH_otan_renfort_22' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_renfort_142",             Steelman_newLDHINT (Texture = 'BH_otan_renfort_142' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_renfort_vkk",             Steelman_newLDHINT (Texture = 'BH_otan_renfort_vkk' HasButtons = true portrait_name = 'rfa_maj_1' )),
+
+        ( "BH_pact_1",             Steelman_newLDHINT (Texture = 'BH_pact_1' HasButtons = true portrait_name = 'ddr_gen_1' )),
+        ( "BH_pact_2",             Steelman_newLDHINT (Texture = 'BH_pact_2' HasButtons = true portrait_name = 'ddr_gen_1' )),
+        ( "BH_pact_event_1",             Steelman_newLDHINT (Texture = 'BH_pact_event_1' HasButtons = true portrait_name = 'ddr_gen_1' )),
+        ( "BH_pact_event_1a",             Steelman_newLDHINT (Texture = 'BH_pact_event_1a' HasButtons = true portrait_name = 'ddr_gen_1' )),
+        ( "BH_pact_event_2",             Steelman_newLDHINT (Texture = 'BH_pact_event_2' HasButtons = true portrait_name = 'ddr_gen_1' )),
+
+        //-------------------------------------------------------------------------------------
+        // common
+        //-------------------------------------------------------------------------------------
+        ( "time_elapsed",             Steelman_newLDHINT (Texture = 'time_elapsed' HasButtons = true text_laius = 'ag_endg' )),
+        ( "nato_victory",             Steelman_newLDHINT (Texture = 'nato_victory' HasButtons = true text_laius = 'ag_endg')),
+        ( "pact_victory",             Steelman_newLDHINT (Texture = 'pact_victory' HasButtons = true text_laius = 'ag_endg')),
+
+
+
    ]
 )
 
@@ -524,6 +544,8 @@ UseInGame_AdditionalLDHintTextureBank is TBUCKToolAdditionalTextureBank
     ( "BH_otan_popup_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_popup_1.png' ))] ),
     ( "BH_otan_popup_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_popup_2.png' ))] ),
     ( "BH_otan_popup_3",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_popup_3.png' ))] ),
+    ( "BH_pact_popup_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/pact_popup_1.png' ))] ),
+    ( "BH_pact_popup_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/pact_popup_2.png' ))] ),
 
     ( "BH_otan_renfort_13_brigade",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_renfort_13_brigade.png' ))] ),
     ( "BH_otan_renfort_14_brigade",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_renfort_14_brigade.png' ))] ),
@@ -531,6 +553,16 @@ UseInGame_AdditionalLDHintTextureBank is TBUCKToolAdditionalTextureBank
     ( "BH_otan_renfort_22",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_renfort_22.png' ))] ),
     ( "BH_otan_renfort_142",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_renfort_142.png' ))] ),
     ( "BH_otan_renfort_vkk",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_renfort_vkk.png' ))] ),
+
+    ( "BH_pact_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/pact_diapo_1.png' ))] ),
+    ( "BH_pact_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/pact_diapo_2.png' ))] ),
+    ( "BH_pact_event_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/pact_diapo_event_1.png' ))] ),
+    ( "BH_pact_event_1a",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/pact_diapo_event_1a.png' ))] ),
+    ( "BH_pact_event_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/pact_diapo_event_2.png' ))] ),
+    //-------------------------------------------------------------------------------------
+    ( "time_elapsed",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/time_elapsed.png' ))] ),
+    ( "nato_victory",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/nato_victory.png' ))] ),
+    ( "pact_victory",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/pact_victory.png' ))] ),
     //-------------------------------------------------------------------------------------
     // animation
 

@@ -877,6 +877,19 @@ export Modele_LRRP_US_05 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
 export Modele_LRRP_US_06 is TemplateMeshDescriptor( FileName = US_GI_Officer )
 export Modele_LRRP_US_LOW is TemplateMeshDescriptor( FileName = US_Rangers_1 )
 
+//Ranger_tuto_US
+export Modele_Ranger_tuto_US is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_tuto_US_02 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_tuto_US_03 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_tuto_US_04 is TemplateMeshDescriptor( FileName = US_GI_NCO )
+export Modele_Ranger_tuto_US_05 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_tuto_US_06 is TemplateMeshDescriptor( FileName = US_GI_Sniper )
+export Modele_Ranger_tuto_US_07 is TemplateMeshDescriptor( FileName = US_GI_2 )
+export Modele_Ranger_tuto_US_08 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
+export Modele_Ranger_tuto_US_09 is TemplateMeshDescriptor( FileName = US_GI_Officer )
+export Modele_Ranger_tuto_US_10 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
+export Modele_Ranger_tuto_US_LOW is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+
 //Ranger_US
 export Modele_Ranger_US is TemplateMeshDescriptor( FileName = US_Rangers_1 )
 export Modele_Ranger_US_02 is TemplateMeshDescriptor( FileName = US_Rangers_1 )

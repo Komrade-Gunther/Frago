@@ -9,17 +9,7 @@ export Descriptor_Fire_Incendie is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -54,17 +44,7 @@ export Descriptor_Fire_Napalm is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -99,17 +79,7 @@ export Descriptor_Fire_NapalmCluster is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -144,17 +114,7 @@ export Descriptor_Fire_NapalmCluster_petit is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -189,17 +149,7 @@ export Descriptor_Fire_NapalmLeger is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -234,17 +184,7 @@ export Descriptor_Fire_NapalmLourd is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -279,17 +219,7 @@ export Descriptor_Fire_NapalmMoyen is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -324,17 +254,7 @@ export Descriptor_Fire_NapalmMoyen_bomb_FRL is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -369,17 +289,7 @@ export Descriptor_Fire_NapalmMoyen_bomb_to55_death is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -414,17 +324,7 @@ export Descriptor_Fire_Nuke is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
@@ -459,17 +359,7 @@ export Descriptor_Fire_NapalmMoyen_small_zis3 is TEntityDescriptor
     ModulesDescriptors = [
         ~/SimpleTypeUnitModuleDescriptor,
         ~/EmptyTagsModuleDescriptor,
-        TPositionModuleDescriptor
-        (
-            StickToGround              = True
-            InGeoDb                    = False
-            PorteurMustBeVisible       = True
-            ClampInWorld               = True
-            ClampOutMap                = False
-            RelativeScanningPosition   = [0,0,0]
-            LowAltitudeFlyingAltitude  = ((0) * Metre)
-            NearGroundFlyingAltitude   = ((0) * Metre)
-        ),
+        ~/FirePositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (

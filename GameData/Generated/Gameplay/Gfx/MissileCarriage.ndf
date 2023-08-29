@@ -9103,14 +9103,14 @@ MissileCarriage_Su_25_rkt_SOV is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 20
+            Count = 40
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 2
         ),
         TMissileCarriageWeaponInfo
         (
-            Count = 20
+            Count = 40
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 3
@@ -9125,14 +9125,14 @@ MissileCarriage_Su_25_rkt_SOV_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 20
+            Count = 40
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 2
         ),
         TMissileCarriageWeaponInfo
         (
-            Count = 20
+            Count = 40
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 3
@@ -9548,89 +9548,3 @@ MissileCarriage_Tornado_IDS_RFA_Showroom is TMissileCarriageConnoisseur
     ]
 )
 
-// AH64_Apache_US_101st_FRL : ['RocketAir Hydra 70mm x19'] ['ATAS x4']
-MissileCarriage_AH64_Apache_US_ATAS_101st_FRL is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = $/GFX/DepictionResources/Modele_AH64_Apache_US
-    PylonSet = ~/DepictionPylonSet_Helico_Default
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 38
-            MissileType = eAGM
-            MountingType = eMountingPod
-            WeaponIndex = 2
-        ),
-        TMissileCarriageWeaponInfo
-        (
-            Count = 4
-            MissileType = eAGM
-            WeaponIndex = 3
-        ),
-    ]
-)
-MissileCarriage_AH64_Apache_US_ATAS_101st_FRL_Showroom is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = $/GFX/DepictionResources/Modele_AH64_Apache_US
-    PylonSet = ~/DepictionPylonSet_Helico_Default_Showroom
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 38
-            MissileType = eAGM
-            MountingType = eMountingPod
-            WeaponIndex = 2
-        ),
-        TMissileCarriageWeaponInfo
-        (
-            Count = 4
-            MissileType = eAGM
-            WeaponIndex = 3
-        ),
-    ]
-)
-// F16E_AA_US : ['AA AIM9M Sidewinder'] ['AA AIM7M Sparrow']
-MissileCarriage_F16E_AA_US_101st_FRL is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = $/GFX/DepictionResources/Modele_F16E_AA_US
-    PylonSet = ~/DepictionPylonSet_Airplane_Default
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 2
-            MissileType = eAAM
-            WeaponIndex = 2
-        ),
-        TMissileCarriageWeaponInfo
-        (
-            Count = 38
-            MissileType = eAGM
-            MountingType = eMountingPod
-            WeaponIndex = 3
-        ),
-    ]
-)
-MissileCarriage_F16E_AA_US_101st_FRL_Showroom is TMissileCarriageConnoisseur
-(
-    MeshDescriptor = $/GFX/DepictionResources/Modele_F16E_AA_US
-    PylonSet = ~/DepictionPylonSet_Airplane_Default_Showroom
-    WeaponInfos = 
-    [
-        TMissileCarriageWeaponInfo
-        (
-            Count = 2
-            MissileType = eAAM
-            WeaponIndex = 2
-        ),
-        TMissileCarriageWeaponInfo
-        (
-            Count = 38
-            MissileType = eAGM
-            MountingType = eMountingPod
-            WeaponIndex = 3
-        ),
-    ]
-)

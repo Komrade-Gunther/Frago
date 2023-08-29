@@ -103,7 +103,6 @@ export OutGameResourceSpecific is TUISpecificOutGameResources
         ("UISpecificOutGameFriendListSubViewDescriptor", UISpecificOutGameFriendListViewDescriptor(ComponentContainerUniqueName="MultiFriendSubViewDescriptor" IsSubView=true)),
         ("UIOutgameFriendLineViewDescriptor", ~/UIOutgameFriendLineViewDescriptor),
         ("UISpecificOutGameFriendModaleViewDescriptor", ~/UISpecificOutGameFriendModaleViewDescriptor),
-        ("ScorePanelDescriptor", UISpecificStrategicScorePanelViewDescriptor(isEndgame = true)),
         ("TacticalEndGameDescriptor", ~/UISpecificTacticalEndGameViewDescriptor),
 
         ("UISpecificStrategicCampaignViewDescriptor",     UISpecificScenarioViewDescriptor(GameType = GameStrategic )),

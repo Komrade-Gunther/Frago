@@ -131,7 +131,7 @@ UISpecificCommandZoneLabelViewDescriptor is TUISpecificCommandZoneLabelViewDescr
     VisibilityRange = ~/AllInGameRanges/ZoomCommandArea
     FadeDuration = 0.5
 
-    OpacityControlByFloat = $/M3D/Shader/AreaFillOpacity
+    OpacityControlByFloat = $/M3D/Shader/AreaTextOpacity
 
     TokenFormatCommandPointsByCombatRule = MAP
     [

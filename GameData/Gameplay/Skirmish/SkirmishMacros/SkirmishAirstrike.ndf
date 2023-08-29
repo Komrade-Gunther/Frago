@@ -19,7 +19,8 @@ private template Template_Airstrike
     MinimumResourceForLaunch:int = 0,
     AnnulerSupportSiAttaqueEchoue:bool = false,
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/All,
-    PoolModel = ~/Pool_Airstrike_AA
+    PoolModel = ~/Pool_Airstrike_AA,
+    AdditionnalParameter = []
 ]
 is TMacroActionDescriptor_AirStrike_Specific
 (
@@ -30,6 +31,8 @@ is TMacroActionDescriptor_AirStrike_Specific
         TMacroActionLifetimeSettingHolder(MinimumResourceForLaunch = <MinimumResourceForLaunch>),
         TAirStrikeSettingHolder(AnnulerSupportSiAttaqueEchoue = <AnnulerSupportSiAttaqueEchoue> TypesDeRequetesAcceptees = <TypesDeRequetesAcceptees>),
     ]
+    +
+    <AdditionnalParameter>
 )
 //-------------------------------------------------------------------------
 // Missions
@@ -39,6 +42,11 @@ export Airstrike_Defense is Template_Airstrike
     AnnulerSupportSiAttaqueEchoue = false
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Defense // pas d'attaque du tout
     PoolModel = ~/Pool_Airstrike_AA
+    AdditionnalParameter =
+    [
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
+        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
+    ]
 )
 
 //-------------------------------------------------------------------------
@@ -47,6 +55,11 @@ export Airstrike_Offensive_AA is Template_Airstrike
     AnnulerSupportSiAttaqueEchoue = false
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Attack | ~/EAirStrikeRequestType/OpportunisticSingleTarget
     PoolModel = ~/Pool_Airstrike_AA
+    AdditionnalParameter =
+    [
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
+        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
+    ]
 )
 
 //-------------------------------------------------------------------------
@@ -55,6 +68,11 @@ export Airstrike_Offense is Template_Airstrike
     AnnulerSupportSiAttaqueEchoue = false
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Attack | ~/EAirStrikeRequestType/OpportunisticTargetInGroup
     PoolModel = ~/Pool_Airstrike_Offense
+    AdditionnalParameter =
+    [
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
+        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
+    ]
 )
 //-------------------------------------------------------------------------
 export Airstrike_Assault is Template_Airstrike
@@ -62,6 +80,11 @@ export Airstrike_Assault is Template_Airstrike
     AnnulerSupportSiAttaqueEchoue = true
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/OpportunisticSingleTarget
     PoolModel = ~/Pool_Airstrike_Assault
+    AdditionnalParameter =
+    [
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
+        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
+    ]
 )
 //-------------------------------------------------------------------------
 export Airstrike_SEAD is Template_Airstrike
@@ -79,6 +102,11 @@ export Airstrike_Defense_Autogen is Template_Airstrike
     AnnulerSupportSiAttaqueEchoue = false
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Defense // pas d'attaque du tout
     PoolModel = ~/Pool_Airstrike_AA
+    AdditionnalParameter =
+    [
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
+        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
+    ]
 )
 //-------------------------------------------------------------------------
 //Principalement pour la defense BKT
@@ -88,6 +116,11 @@ export Airstrike_Defense_Autogen_Economic is Template_Airstrike
     AnnulerSupportSiAttaqueEchoue = false
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Defense // pas d'attaque du tout
     PoolModel = ~/Pool_Airstrike_AA
+    AdditionnalParameter =
+    [
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
+        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
+    ]
 )
 //-------------------------------------------------------------------------
 export Airstrike_Offense_Autogen is Template_Airstrike
@@ -96,6 +129,11 @@ export Airstrike_Offense_Autogen is Template_Airstrike
     AnnulerSupportSiAttaqueEchoue = false
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Attack | ~/EAirStrikeRequestType/OpportunisticTargetInGroup
     PoolModel = ~/Pool_Airstrike_Offense
+    AdditionnalParameter =
+    [
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
+        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
+    ]
 )
 //-------------------------------------------------------------------------
 export Airstrike_Assault_Autogen is Template_Airstrike
@@ -104,6 +142,11 @@ export Airstrike_Assault_Autogen is Template_Airstrike
     AnnulerSupportSiAttaqueEchoue = true
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/OpportunisticSingleTarget
     PoolModel = ~/Pool_Airstrike_Assault
+    AdditionnalParameter =
+    [
+        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
+        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
+    ]
 )
 
 // Pool Models

@@ -11,6 +11,5 @@ WorldInterfaceTactical is TWorldInterfaceDescriptor
         ~/zoneManagerForIAStratDescriptor,
     ]
 
-    PathDrawingManager = ~/PathDrawingManager
     SoundAndMusicSwitchDescriptor = soundAndMusic
 )

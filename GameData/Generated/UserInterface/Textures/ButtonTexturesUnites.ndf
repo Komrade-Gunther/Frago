@@ -1873,6 +1873,12 @@ Texture_Button_Unit_M1025_Humvee_scout_US is TUIResourceTextureWithUsefulnessMas
     CivMask  = CivMask/Common
     FileName = 'Assets/2D/Interface/Common/UnitsIcons/EU/M1025_Humvee_scout_US.png'
 )
+Texture_Button_Unit_M1025_Humvee_scout_tuto_US is TUIResourceTextureWithUsefulnessMask
+(
+    TypeMask = TypeMask/BuildMenu
+    CivMask  = CivMask/Common
+    FileName = 'Assets/2D/Interface/Common/UnitsIcons/EU/M1025_Humvee_scout_US.png'
+)
 Texture_Button_Unit_M1038_Humvee_US is TUIResourceTextureWithUsefulnessMask
 (
     TypeMask = TypeMask/BuildMenu
@@ -2118,6 +2124,12 @@ Texture_Button_Unit_M35_trans_US is TUIResourceTextureWithUsefulnessMask
     TypeMask = TypeMask/BuildMenu
     CivMask  = CivMask/Common
     FileName = 'Assets/2D/Interface/Common/UnitsIcons/EU/M35_trans_US.png'
+)
+Texture_Button_Unit_M35_trans_tuto_US is TUIResourceTextureWithUsefulnessMask
+(
+    TypeMask = TypeMask/BuildMenu
+    CivMask  = CivMask/Common
+    FileName = 'Assets/2D/Interface/Common/UnitsIcons/EU/default.png'
 )
 Texture_Button_Unit_M3A1_Bradley_CFV_US is TUIResourceTextureWithUsefulnessMask
 (
@@ -2702,6 +2714,12 @@ Texture_Button_Unit_RMP_UK is TUIResourceTextureWithUsefulnessMask
     FileName = 'Assets/2D/Interface/Common/UnitsIcons/EU/RMP_UK.png'
 )
 Texture_Button_Unit_Ranger_US is TUIResourceTextureWithUsefulnessMask
+(
+    TypeMask = TypeMask/BuildMenu
+    CivMask  = CivMask/Common
+    FileName = 'Assets/2D/Interface/Common/UnitsIcons/EU/Ranger_US.png'
+)
+Texture_Button_Unit_Ranger_tuto_US is TUIResourceTextureWithUsefulnessMask
 (
     TypeMask = TypeMask/BuildMenu
     CivMask  = CivMask/Common
@@ -5381,6 +5399,7 @@ UnitButtonTextureAdditionalBank is TBUCKToolAdditionalTextureBank
         ("Texture_Button_Unit_M1025_Humvee_TOW_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M1025_Humvee_TOW_US), ]),
         ("Texture_Button_Unit_M1025_Humvee_TOW_para_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M1025_Humvee_TOW_para_US), ]),
         ("Texture_Button_Unit_M1025_Humvee_scout_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M1025_Humvee_scout_US), ]),
+        ("Texture_Button_Unit_M1025_Humvee_scout_tuto_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M1025_Humvee_scout_tuto_US), ]),
         ("Texture_Button_Unit_M1038_Humvee_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M1038_Humvee_US), ]),
         ("Texture_Button_Unit_M106A2_HOWZ_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M106A2_HOWZ_US), ]),
         ("Texture_Button_Unit_M107A2_175mm_UK", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M107A2_175mm_UK), ]),
@@ -5422,6 +5441,7 @@ UnitButtonTextureAdditionalBank is TBUCKToolAdditionalTextureBank
         ("Texture_Button_Unit_M2A2_Bradley_Leader_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M2A2_Bradley_Leader_US), ]),
         ("Texture_Button_Unit_M35_supply_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M35_supply_US), ]),
         ("Texture_Button_Unit_M35_trans_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M35_trans_US), ]),
+        ("Texture_Button_Unit_M35_trans_tuto_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M35_trans_tuto_US), ]),
         ("Texture_Button_Unit_M3A1_Bradley_CFV_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M3A1_Bradley_CFV_US), ]),
         ("Texture_Button_Unit_M48A2C_RFA", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M48A2C_RFA), ]),
         ("Texture_Button_Unit_M48A2GA2_CMD_RFA", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_M48A2GA2_CMD_RFA), ]),
@@ -5520,6 +5540,7 @@ UnitButtonTextureAdditionalBank is TBUCKToolAdditionalTextureBank
         ("Texture_Button_Unit_RCL_L6_Wombat_UK", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_RCL_L6_Wombat_UK), ]),
         ("Texture_Button_Unit_RMP_UK", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_RMP_UK), ]),
         ("Texture_Button_Unit_Ranger_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_Ranger_US), ]),
+        ("Texture_Button_Unit_Ranger_tuto_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_Ranger_tuto_US), ]),
         ("Texture_Button_Unit_Rangers_CMD_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_Rangers_CMD_US), ]),
         ("Texture_Button_Unit_Reserve_DDR", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_Reserve_DDR), ]),
         ("Texture_Button_Unit_Reserve_Polizei_RFA", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_Reserve_Polizei_RFA), ]),

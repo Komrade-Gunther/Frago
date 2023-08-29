@@ -5,11 +5,8 @@ export AutoDeployStrategy is TIAGeneralStrategy
 (
     StrategyName = "AutoDepAI"
     FirstGenerator = AutoDeploy_DoNothing
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-        ("DoNotCancelProduction", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
+    DoNotCancelProduction = true
     TransitionList =
     [
         AutoDeploy_Transition_DoNothingToDeploy,

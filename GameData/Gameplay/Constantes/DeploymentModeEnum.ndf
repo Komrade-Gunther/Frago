@@ -4,8 +4,6 @@ EDeploymentMode is TBaseClass
 (
     NotSpecified            is 0
     ConquestGameMode        is 1
-    CloseQuarter            is 2
-    Strategic               is 3
-    Breakthrough            is 4
-    NoDeployment            is 5
+    Strategic               is 2
+    Breakthrough            is 3
 )

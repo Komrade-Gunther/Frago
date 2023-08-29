@@ -5,9 +5,6 @@ export ChallengeGenericAttackStrategy is TIAGeneralStrategy
 (
     StrategyName = "ChalAtkAI"
     FirstGenerator = ChalAttackGeneric_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [

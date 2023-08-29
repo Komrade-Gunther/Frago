@@ -5,9 +5,6 @@ export ChallengeHoldUntilRelieved is TIAGeneralStrategy
 (
     StrategyName = "ChalHolAI"
     FirstGenerator = ChalHoldUntilRelieved_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [

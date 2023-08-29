@@ -271,43 +271,6 @@ CubeAction_Capacity_Infanterie_Dissimulee is TCubeActionCapacityButtonInformatio
     Descriptor                   = ~/Capacite_Infanterie_Dissimulee
 )
 
-CubeAction_Capacity_Infanterie_Retraite is TCubeActionCapacityButtonInformationsDescriptor
-(
-    CubeActionName               = "CubeAction_Capacity_Infanterie_Retraite"
-    CubeActionFunctionType       = ~/TacticCubeActionFunctionType/Orders
-    BackgroundTexture            = "Texture_Button_Capacity_Infanterie_Retraite"
-    HoverSound                   = CubeActionButtonHoverSound_IfEnabled
-    ClickSound                   = CubeActionButtonClickSound_IfEnabled
-    ButtonTextToken              = "ht_Repli"
-    HintDico                     = ~/LocalisationConstantes/dico_interface_ingame
-    HintTitleToken               = "ht_Repli"
-    HintBodyToken                = "hd_Repli"
-    HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
-    Descriptor                   = ~/Capacite_Infanterie_Retraite
-    Mapping                      = $/KeyboardOption/Mapping_Retreat
-)
-
-CubeAction_Capacity_Infanterie_Retraite_Auto is TCubeActionCapacityButtonInformationsDescriptor
-(
-    CubeActionName               = "CubeAction_Capacity_Infanterie_Retraite_Auto"
-    CubeActionFunctionType       = ~/TacticCubeActionFunctionType/Orders
-    BackgroundTexture            = "Texture_Button_Capacity_Infanterie_Retraite_Auto"
-    HoverSound                   = CubeActionButtonHoverSound_IfEnabled
-    ClickSound                   = CubeActionButtonClickSound_IfEnabled
-    ButtonTextToken              = "ht_Repli"
-    HintDico                     = ~/LocalisationConstantes/dico_interface_ingame
-    HintTitleToken               = "ht_Repli"
-    HintBodyToken                = "hd_Repli"
-    HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
-    Descriptor                   = ~/Capacite_Infanterie_Retraite_Auto
-)
-
 CubeAction_Capacity_Infanterie_Retranchee is TCubeActionCapacityButtonInformationsDescriptor
 (
     CubeActionName               = "CubeAction_Capacity_Infanterie_Retranchee"

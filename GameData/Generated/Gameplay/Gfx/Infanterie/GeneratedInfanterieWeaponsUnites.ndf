@@ -2309,7 +2309,7 @@ fx_traine_grenade_Satchem_2_False_00_00 is InfantryProjectileHappening
     WithoutPhysics  = False
     FluidFriction   = 0.0
     InitialSpeed    = 0.0
-    WaitBetweenShot = 15.0
+    WaitBetweenShot = 8.0
 )
 fx_tir_missile_AA_petit_5 is InfantryFiringHappening
 (

@@ -639,7 +639,7 @@ export Capacite_IFV is TCapaciteDescriptor
     InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
     ActionRadiusWithBoundingBox = False
     Radius              = 500.00 * Metre
-    Range               = 1450.00 * Metre
+    Range               = 900.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
     CastTime            = 0.00
@@ -663,7 +663,7 @@ export Capacite_IFV is TCapaciteDescriptor
     TargetInSelf           = True
     TargetMySelf           = False
     FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_soloselected | ~/CapaciteFeedbackActivationMask_anyalliance
-    DisplayRangeColor      = RGBA[111,118,50,255]
+    DisplayRangeColor      = RGBA[255,255,255,255]
     DisplayRangeThickness  = 0.80
     Price = MAP[]
     TagsCiblePossible = [
@@ -718,111 +718,6 @@ export Capacite_Infanterie_Dissimulee is TCapaciteDescriptor
         "Unite_transportable",
     ]
 
-)
-export Capacite_Infanterie_Retraite is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{aa44e698-2912-4f90-a9b6-4ccf23afb35d}
-    Name             = "Infanterie_Retraite"
-    NameToken        = "ht_Repli"
-    CumulEffect          = ~/CapaciteCumulEffect_jamais
-    Declenchement        = ~/CapaciteDeclenchementType_ordre_cibles_une_seule_fois
-    TypeCible            = ~/CapaciteTypeCible_soi
-    TargetTeamFilter     = ~/CapaciteTargetFilter_joueur
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_soi
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 1.00 * Metre
-    Range               = 1.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.00
-    Cooldown            = 30.00
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = True
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Autoprotection
-    TargetEffectDuration = 30.00
-    SelfEffectDuration   = 30.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = True
-    MaxTargetNb            = 1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = False
-    TargetInSelf           = False
-    TargetMySelf           = True
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
-    DisplayRangeColor      = RGBA[0,0,0,0]
-    DisplayRangeThickness  = 0.00
-    FeedbackOnTarget = "FeedbackMessage_OnWithdrawOrder"
-    FeedbackOnSelf = "FeedbackMessage_OnWithdrawOrder"
-    FeedbackOnCastByPlayer = "FeedbackMessage_OnWithdrawOrder"
-    FeedbackOnCastOnPlayer = "FeedbackMessage_OnWithdrawOrder"
-    Price = MAP[]
-    TagsCiblePossible = [
-    ]
-    Conditions = [
-        ~/ConditionTagRaisedInUnit_Infanterie_Engaged_1,
-    ]
-)
-export Capacite_Infanterie_Retraite_Auto is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{575aa8f0-4a44-406c-bcde-5d59de80cb09}
-    Name             = "Infanterie_Retraite_Auto"
-    NameToken        = "ht_Repli"
-    CumulEffect          = ~/CapaciteCumulEffect_jamais
-    Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible            = ~/CapaciteTypeCible_soi
-    TargetTeamFilter     = ~/CapaciteTargetFilter_joueur
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_soi
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 1.00 * Metre
-    Range               = 1.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.00
-    Cooldown            = 30.00
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = True
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Autoprotection
-    TargetEffectDuration = 30.00
-    SelfEffectDuration   = 30.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = False
-    MaxTargetNb            = 1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = False
-    TargetInSelf           = False
-    TargetMySelf           = True
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
-    DisplayRangeColor      = RGBA[0,0,0,0]
-    DisplayRangeThickness  = 0.00
-    FeedbackOnTarget = "FeedbackMessage_OnWithdrawOrder"
-    FeedbackOnSelf = "FeedbackMessage_OnWithdrawOrder"
-    FeedbackOnCastByPlayer = "FeedbackMessage_OnWithdrawOrder"
-    FeedbackOnCastOnPlayer = "FeedbackMessage_OnWithdrawOrder"
-    Price = MAP[]
-    TagsCiblePossible = [
-    ]
-    Conditions = [
-        ~/ConditionTagNotRaisedInUnit_Discipline_1,
-        ~/ConditionTagRaisedInUnit_Infanterie_Cowering_1,
-    ]
 )
 export Capacite_Infanterie_Retranchee is TCapaciteDescriptor
 (
@@ -1025,8 +920,8 @@ export Capacite_MilitaryPolice is TCapaciteDescriptor
     AreaShape            = ~/CapaciteAreaShape_circulaire
     InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
     ActionRadiusWithBoundingBox = False
-    Radius              = 1700.00 * Metre
-    Range               = 1700.00 * Metre
+    Radius              = 750.00 * Metre
+    Range               = 750.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
     CastTime            = 0.00
@@ -1050,8 +945,8 @@ export Capacite_MilitaryPolice is TCapaciteDescriptor
     TargetInSelf           = False
     TargetMySelf           = False
     FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_soloselected | ~/CapaciteFeedbackActivationMask_anyalliance
-    DisplayRangeColor      = RGBA[105,61,0,255]
-    DisplayRangeThickness  = 0.30
+    DisplayRangeColor      = RGBA[255,255,255,255]
+    DisplayRangeThickness  = 0.40
     Price = MAP[]
     TagsCiblePossible = [
         "GroundUnits",
@@ -1588,7 +1483,7 @@ export Capacite_electronic_warfare is TCapaciteDescriptor
     NameToken        = "None"
     CumulEffect          = ~/CapaciteCumulEffect_jamais
     Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible               = ~/CapaciteTypeCible_unite
+    TypeCible            = ~/CapaciteTypeCible_unite
     TargetTeamFilter     = ~/CapaciteTargetFilter_ennemi
     InfluenceMapAlliance = ~/AllianceRelation/vide
     TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
@@ -1600,7 +1495,7 @@ export Capacite_electronic_warfare is TCapaciteDescriptor
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
     CastTime            = 0.00
-    Cooldown            = 0.1
+    Cooldown            = 1.00
     CheckVisibility     = False
     AllowReflexDuringCast   = True
     AllowMovementDuringCast = True
@@ -1621,7 +1516,7 @@ export Capacite_electronic_warfare is TCapaciteDescriptor
     TargetMySelf           = True
     FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_selected | ~/CapaciteFeedbackActivationMask_anyalliance
     DisplayRangeColor      = RGBA[0,255,255,255]
-    DisplayRangeThickness  = 0.1
+    DisplayRangeThickness  = 0.40
     Price = MAP[]
     TagsCiblePossible = [
         "AA_radar",
@@ -1910,479 +1805,6 @@ export Capacite_sniper_no_snipe is TCapaciteDescriptor
     ]
 
 )
-export Capacite_Choc_FRL_missile_3 is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{b1029b69-2a79-4e78-ad45-189025f046ec}
-    Name             = "Choc"
-    NameToken        = "None"
-    CumulEffect          = ~/CapaciteCumulEffect_oui
-    Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible            = ~/CapaciteTypeCible_unite
-    TargetTeamFilter     = ~/CapaciteTargetFilter_ennemi
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_circulaire
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 990.00 * Metre
-    Range               = 990.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.01
-    Cooldown            = 0.01
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = True
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Choc_FRL_missile_3
-    TargetEffectDuration = 0.01
-    SelfEffectDuration   = 0.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = False
-    MaxTargetNb            = -1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = True
-    TargetInSelf           = True
-    TargetMySelf           = True
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
-    DisplayRangeColor      = RGBA[0,0,0,0]
-    DisplayRangeThickness  = 0.00
-    Price = MAP[]
-    TagsCiblePossible = ["Helo" ,
-        "Air"
-    ]
-)
-export Capacite_Choc_FRL_missile_4 is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{50f40357-fe6a-4c0b-9d67-1fbfa835b750}
-    Name             = "Choc"
-    NameToken        = "None"
-    CumulEffect          = ~/CapaciteCumulEffect_oui
-    Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible            = ~/CapaciteTypeCible_unite
-    TargetTeamFilter     = ~/CapaciteTargetFilter_ennemi
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_circulaire
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 490.00 * Metre
-    Range               = 490.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.01
-    Cooldown            = 0.01
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = True
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Choc_FRL_missile_4
-    TargetEffectDuration = 0.01
-    SelfEffectDuration   = 0.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = False
-    MaxTargetNb            = -1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = True
-    TargetInSelf           = True
-    TargetMySelf           = True
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
-    DisplayRangeColor      = RGBA[0,0,0,0]
-    DisplayRangeThickness  = 0.00
-    Price = MAP[]
-    TagsCiblePossible = ["Helo" ,
-        "Air"
-    ]
-)
-export Capacite_Choc_FRL_missile_5 is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{1a4e8576-4bd2-4c98-b73d-d351f81ac02c}
-    Name             = "Choc"
-    NameToken        = "None"
-    CumulEffect          = ~/CapaciteCumulEffect_oui
-    Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible            = ~/CapaciteTypeCible_unite
-    TargetTeamFilter     = ~/CapaciteTargetFilter_ennemi
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_circulaire
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 590.00 * Metre
-    Range               = 590.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.01
-    Cooldown            = 0.01
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = True
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Choc_FRL_missile_5
-    TargetEffectDuration = 0.01
-    SelfEffectDuration   = 0.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = False
-    MaxTargetNb            = -1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = True
-    TargetInSelf           = True
-    TargetMySelf           = True
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
-    DisplayRangeColor      = RGBA[0,0,0,0]
-    DisplayRangeThickness  = 0.00
-    Price = MAP[]
-    TagsCiblePossible = ["Helo" ,
-        "Air"
-    ]
-)
-export Capacite_Choc_FRL_missile_6 is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{53087171-310c-4472-9937-3ee145851ca4}
-    Name             = "Choc"
-    NameToken        = "None"
-    CumulEffect          = ~/CapaciteCumulEffect_oui
-    Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible            = ~/CapaciteTypeCible_unite
-    TargetTeamFilter     = ~/CapaciteTargetFilter_ennemi
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_circulaire
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 690.00 * Metre
-    Range               = 690.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.01
-    Cooldown            = 0.01
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = True
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Choc_FRL_missile_6
-    TargetEffectDuration = 0.01
-    SelfEffectDuration   = 0.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = False
-    MaxTargetNb            = -1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = True
-    TargetInSelf           = True
-    TargetMySelf           = True
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
-    DisplayRangeColor      = RGBA[0,0,0,0]
-    DisplayRangeThickness  = 0.00
-    Price = MAP[]
-    TagsCiblePossible = ["Helo" ,
-        "Air"
-    ]
-)
-export Capacite_Choc_FRL_missile_7 is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{367fafb4-2c7a-4357-abba-ce79eaac68da}
-    Name             = "Choc"
-    NameToken        = "None"
-    CumulEffect          = ~/CapaciteCumulEffect_oui
-    Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible            = ~/CapaciteTypeCible_unite
-    TargetTeamFilter     = ~/CapaciteTargetFilter_ennemi
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_circulaire
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 790.00 * Metre
-    Range               = 790.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.01
-    Cooldown            = 0.01
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = True
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Choc_FRL_missile_7
-    TargetEffectDuration = 0.01
-    SelfEffectDuration   = 0.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = False
-    MaxTargetNb            = -1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = True
-    TargetInSelf           = True
-    TargetMySelf           = True
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
-    DisplayRangeColor      = RGBA[0,0,0,0]
-    DisplayRangeThickness  = 0.00
-    Price = MAP[]
-    TagsCiblePossible = ["Helo" ,
-        "Air"
-    ]
-)
-export Capacite_Choc_FRL_missile_8 is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{c3fff590-94d2-42a0-aa7e-4dc3f8a39a0e}
-    Name             = "Choc"
-    NameToken        = "None"
-    CumulEffect          = ~/CapaciteCumulEffect_oui
-    Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible            = ~/CapaciteTypeCible_unite
-    TargetTeamFilter     = ~/CapaciteTargetFilter_ennemi
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_circulaire
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 890.00 * Metre
-    Range               = 890.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.01
-    Cooldown            = 0.01
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = True
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Choc_FRL_missile_8
-    TargetEffectDuration = 0.01
-    SelfEffectDuration   = 0.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = False
-    MaxTargetNb            = -1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = True
-    TargetInSelf           = True
-    TargetMySelf           = True
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
-    DisplayRangeColor      = RGBA[0,0,0,0]
-    DisplayRangeThickness  = 0.00
-    Price = MAP[]
-    TagsCiblePossible = ["Helo" ,
-        "Air"
-    ]
-)
-export Capacite_Choc_FRL_missile_9 is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{1fc2f9a4-12dd-4112-b6d3-3e0460634a22}
-    Name             = "Choc"
-    NameToken        = "None"
-    CumulEffect          = ~/CapaciteCumulEffect_oui
-    Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible            = ~/CapaciteTypeCible_unite
-    TargetTeamFilter     = ~/CapaciteTargetFilter_ennemi
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_circulaire
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 990.00 * Metre
-    Range               = 990.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.01
-    Cooldown            = 0.01
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = True
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Choc_FRL_missile_9
-    TargetEffectDuration = 0.01
-    SelfEffectDuration   = 0.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = False
-    MaxTargetNb            = -1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = True
-    TargetInSelf           = True
-    TargetMySelf           = True
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
-    DisplayRangeColor      = RGBA[0,0,0,0]
-    DisplayRangeThickness  = 0.00
-    Price = MAP[]
-    TagsCiblePossible = ["Helo" ,
-        "Air"
-    ]
-)//
-//
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //

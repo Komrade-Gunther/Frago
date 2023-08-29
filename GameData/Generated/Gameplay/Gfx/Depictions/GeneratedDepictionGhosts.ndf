@@ -1111,6 +1111,11 @@ GhostDepiction_M1025_Humvee_scout_US is GhostVehicleDepictionTemplate
     Selector = Selector_M1025_Humvee_scout_US
     Alternatives = Alternatives_M1025_Humvee_scout_US
 )
+GhostDepiction_M1025_Humvee_scout_tuto_US is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_M1025_Humvee_scout_tuto_US
+    Alternatives = Alternatives_M1025_Humvee_scout_tuto_US
+)
 GhostDepiction_M1038_Humvee_US is GhostVehicleDepictionTemplate
 (
     Selector = Selector_M1038_Humvee_US
@@ -1315,6 +1320,11 @@ GhostDepiction_M35_trans_US is GhostVehicleDepictionTemplate
 (
     Selector = Selector_M35_trans_US
     Alternatives = Alternatives_M35_trans_US
+)
+GhostDepiction_M35_trans_tuto_US is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_M35_trans_tuto_US
+    Alternatives = Alternatives_M35_trans_tuto_US
 )
 GhostDepiction_M3A1_Bradley_CFV_US is GhostVehicleDepictionTemplate
 (
@@ -2319,6 +2329,7 @@ VehicleMimeticGhost is MAP[
   ( 'M1025_Humvee_TOW_US', GhostDepiction_M1025_Humvee_TOW_US ),
   ( 'M1025_Humvee_TOW_para_US', GhostDepiction_M1025_Humvee_TOW_para_US ),
   ( 'M1025_Humvee_scout_US', GhostDepiction_M1025_Humvee_scout_US ),
+  ( 'M1025_Humvee_scout_tuto_US', GhostDepiction_M1025_Humvee_scout_tuto_US ),
   ( 'M1038_Humvee_US', GhostDepiction_M1038_Humvee_US ),
   ( 'M106A2_HOWZ_US', GhostDepiction_M106A2_HOWZ_US ),
   ( 'M107A2_175mm_UK', GhostDepiction_M107A2_175mm_UK ),
@@ -2360,6 +2371,7 @@ VehicleMimeticGhost is MAP[
   ( 'M2A2_Bradley_Leader_US', GhostDepiction_M2A2_Bradley_Leader_US ),
   ( 'M35_supply_US', GhostDepiction_M35_supply_US ),
   ( 'M35_trans_US', GhostDepiction_M35_trans_US ),
+  ( 'M35_trans_tuto_US', GhostDepiction_M35_trans_tuto_US ),
   ( 'M3A1_Bradley_CFV_US', GhostDepiction_M3A1_Bradley_CFV_US ),
   ( 'M48A2C_RFA', GhostDepiction_M48A2C_RFA ),
   ( 'M48A2GA2_CMD_RFA', GhostDepiction_M48A2GA2_CMD_RFA ),

@@ -1,10 +1,3 @@
-// Liste d'icones à afficher à coté du label
-UnitLabelIcon_Defense       is 0
-UnitLabelIcon_Fortified     is 1
-UnitLabelIcon_NoSupplied    is 2
-UnitLabelIcon_Boxing        is 3
-UnitLabelIcon_DenyArea      is 4
-
 // L'etiquette d'un pion
 // -----------------------------------------------
 
@@ -14,13 +7,15 @@ PawnLabelMainComponentDescriptor is BUCKSensibleAreaDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableOffset = [0.0, 20]
+        MagnifiableWidthHeight = [40,35]
+        MagnifiableOffset = [0.0, -60.0]
         AlignementToAnchor = [0.5,0.5]
         AlignementToFather = [0.5,0.5]
     )
 
-    FitStyle = ~/ContainerFitStyle/FitToContent
-    MagnifierMultiplication = 1.1
+
+    // FitStyle = ~/ContainerFitStyle/FitToContent
+    MagnifierMultiplication = 1.3
     Components =
     [
         ~/UpperLabelList,
@@ -46,7 +41,6 @@ UnitLabelIconList is BUCKListDescriptor
     Axis = ~/ListAxis/Horizontal
     Elements =
     [
-
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKTextureDescriptor
@@ -61,7 +55,6 @@ UnitLabelIconList is BUCKListDescriptor
                 TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
             )
         ),
-
 
         BUCKListElementDescriptor
         (
@@ -93,20 +86,6 @@ UnitLabelIconList is BUCKListDescriptor
             )
         ),
 
-        // BUCKListElementDescriptor
-        // (
-        //     ComponentDescriptor = BUCKTextureDescriptor
-        //     (
-        //         ElementName = 'FortifyAntiAirIcon'
-        //         ComponentFrame = TUIFramePropertyRTTI
-        //         (
-        //             MagnifiableWidthHeight = [IconeSize, IconeSize]
-        //         )
-
-        //         TextureToken = "UseStrategic_Labels_FortificationAntiAir"
-        //         TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
-        //     )
-        // ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKTextureDescriptor
@@ -176,7 +155,7 @@ MainLabelList is TBUCKLocalLayerContainerDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [60.0, 40.0]
-        MagnifiableOffset = [-10.0, 0.0]
+        MagnifiableOffset = [-20.0, 15.0] // 0
     )
 
     NbLayersToLock = 3
@@ -205,7 +184,7 @@ MainLabelList is TBUCKLocalLayerContainerDescriptor
                 ~/Fatigue,
                 ~/UnitLabelIconList,
             ]
-        )
+        ),
     ]
 )
 
@@ -217,7 +196,7 @@ UpperLabelList is BUCKListDescriptor
     (
         AlignementToFather = [0.5, 0.0]
         AlignementToAnchor = [0.5, 1.0]
-        MagnifiableOffset = [0.0, -10.0]
+        MagnifiableOffset = [0.0, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
@@ -226,7 +205,6 @@ UpperLabelList is BUCKListDescriptor
 
     Elements =
     [
-
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKTextDescriptor
@@ -320,47 +298,76 @@ UpperLabelList is BUCKListDescriptor
                 TextSize = "12"
             )
         ),
-
-
-
     ]
 )
 
 // Under label List
 // -----------------------------------------------
+private IconeUnit_and_PA is BUCKContainerDescriptor
+(
+    ElementName = 'IconeUnit_and_PA'
 
-private IconeUnit_and_PA is BUCKTextureDescriptor
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+         MagnifiableWidthHeight = [40.0, 35.0]
+         MagnifiableOffset = [20.0, -15.0]
+    )
+
+    Components =
+    [
+        PanelRoundedCorner
+        (
+            ElementName = "UnitTextureBackground"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                 MagnifiableWidthHeight = [40.0, 25.0]
+                 AlignementToFather = [0.0, 1.0]
+                 AlignementToAnchor = [0.0, 1.0]
+            )
+            BorderLineColorToken = 'Transparent'
+            RoundedVertexes = [true,false,false,true]
+        ),
+        ~/PANumber,
+        ~/IconeUnit,
+        PanelRoundedCorner
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                 RelativeWidthHeight = [1,1]
+            )
+            BorderLineColorToken = 'SM_Noir'
+            BorderThicknessToken = '2'
+            BackgroundBlockColorToken = 'Transparent'
+
+        )
+    ]
+
+)
+// -----------------------------------------------
+private IconeUnit is BUCKTextureDescriptor
 (
     ElementName = 'UnitTexture'
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-         MagnifiableWidthHeight = [40.0, 20.0]
-         // MagnifiableOffset = [20.0, 20.0]
-         MagnifiableOffset = [20.0, -15.0]
+        MagnifiableWidthHeight = [40.0, 35.0]
     )
-
-    HasBackground = true
 
     TextureFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [20.0, 20.0]
+        MagnifiableWidthHeight = [25.0, 25.0]
+        AlignementToAnchor = [0.5, 0.4]
+        AlignementToFather = [0.5, 0.4]
     )
-
-    Components =
-    [
-        ~/PANumber
-    ]
-
 )
+// -----------------------------------------------
 private FortifyAntiAirIcon is BUCKTextureDescriptor
 (
     ElementName = 'FortifyAntiAirIcon'
     ComponentFrame = TUIFramePropertyRTTI
     (
          MagnifiableWidthHeight = [40.0, 20.0]
-         // MagnifiableOffset = [20.0, 20.0]
-         MagnifiableOffset = [20.0, -15.0]
+         MagnifiableOffset = [30.0, -10.0]
     )
 
     TextureToken = "UseStrategic_Labels_FortificationAntiAir"
@@ -373,33 +380,16 @@ private CombatValue is BUCKListDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        AlignementToFather = [1.0, 1.0]
-        AlignementToAnchor = [1.0, 0.5]
-
-        // MagnifiableOffset = [0.0, -30.0]
-        MagnifiableOffset = [0.0, -26.0]
-
-
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
+        MagnifiableOffset = [10.0, 8.0]
     )
 
     Axis = ~/ListAxis/Horizontal
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-
+    InterItemMargin = TRTTILength ( Magnifiable = 8.0)
     Elements =
     [
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ElementName = "TerrainIcon"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [13.0, 13.0]
-                )
-
-                TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
-            )
-        ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = PowerValueContainer
@@ -418,16 +408,6 @@ private CombatValue is BUCKListDescriptor
                 TextColorToken = "PureBlack"
             )
         ),
-        // BUCKListElementDescriptor
-        // (
-        //     ComponentDescriptor = PowerValueContainer
-        //     (
-        //         ElementName = "Bonus"
-        //         BackgroundBlockColorToken = "Noir"
-        //         TextColorToken = "Cyan"
-        //         TextToken = "FRM_PLUS"
-        //     )
-        // ),
     ]
 
     BackgroundComponents =
@@ -455,37 +435,23 @@ private CombatValue is BUCKListDescriptor
 
 //-------------------------------------------------------------------------------------
 
-private Fatigue is BUCKContainerDescriptor
+private Fatigue is BUCKTextureDescriptor
 (
-    // ElementName = 'FatigueIcon'
+    ElementName = "FatigueIcon"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [40.0, 5.0]
-        // MagnifiableOffset = [20.0, 16.0]
-        MagnifiableOffset = [20.0, 3.0]
+        MagnifiableOffset = [20.0, -13.0]
     )
-    HasBackground = true
-    BackgroundBlockColorToken = 'Noir'
-    Components =
-    [
-        BUCKTextureDescriptor
-        (
-            ElementName = 'FatigueIcon'
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                RelativeWidthHeight = [1.0, 1.0]
-            )
 
-            TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
-        )
-    ]
+    TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
 )
 
 //-------------------------------------------------------------------------------------
 
 private NoSupplied is BUCKTextureDescriptor
 (
-    ElementName = 'NoSuppliedIcon'
+    ElementName = "NoSuppliedIcon"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [30.0, 30.0]
@@ -500,7 +466,7 @@ private NoSupplied is BUCKTextureDescriptor
 
 private DivisionLabel is BUCKTextureDescriptor
 (
-    ElementName = 'DivisionIcon'
+    ElementName = "DivisionIcon"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [20.0, 20.0]
@@ -515,6 +481,7 @@ private DivisionLabel is BUCKTextureDescriptor
 
 private ArrowTexture is BUCKTextureDescriptor
 (
+    ElementName = "ArrowTexture"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [10.0, 10.0]
@@ -526,7 +493,6 @@ private ArrowTexture is BUCKTextureDescriptor
     TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
 )
 
-
 // -----------------------------------------------
 
 private PANumber is BUCKTextDescriptor
@@ -534,37 +500,43 @@ private PANumber is BUCKTextDescriptor
     ElementName = "ActionPoints"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [20.0, 20.0]
-        MagnifiableOffset = [20.0, 0.0]
+        MagnifiableWidthHeight = [40.0, 10.0]
     )
 
     ParagraphStyle = TParagraphStyleRTTI
     (
-        Alignment = UIText_Center
+        Alignment = UIText_Right
         VerticalAlignment = UIText_VerticalCenter
     )
-
-    HasBackground = false
-    BackgroundBlockColorToken = "Red"
 
     HasBorder = false
     BorderLineColorToken = "PawnLabel/ActionPoints"
     BorderThicknessToken = "PawnLabel/ActionPoints"
 
-    TextStyle = "ActionPoint"
+    TextStyle = "Default"
     TextPadding = TRTTILength4(Magnifiable = [1.0, 1.0, 1.0, 1.0])
 
     HorizontalFitStyle = ~/FitStyle/UserDefined
     VerticalFitStyle = ~/FitStyle/UserDefined
 
-    TypefaceToken = "UIMainFont"
+    TypefaceToken = "Eurostyle_Medium"
     BigLineAction = ~/BigLineAction/ResizeFont
 
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
     TextColor = "SD2_Blanc184"
-    TextSize = "17"
-    // TextSize = "1"
+    TextSize = "10"
+
+    Components =
+    [
+        PanelRoundedCorner
+        (
+            ElementName = "ActionPointsBackground"
+            BackgroundBlockColorToken = "Red"
+            BorderLineColorToken = 'Transparent'
+            RoundedVertexes = [false,true,true,false]
+        ),
+    ]
 )
 
 // -----------------------------------------------
@@ -580,13 +552,10 @@ is BUCKTextDescriptor
 (
     ElementName = 'PowerValueText_' + <ElementName>
 
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableWidthHeight = [20.0, 13.0]
-    )
+    ComponentFrame = TUIFramePropertyRTTI()
 
-    HorizontalFitStyle = ~/FitStyle/UserDefined
-    VerticalFitStyle = ~/FitStyle/UserDefined
+    HorizontalFitStyle = ~/FitStyle/FitToContent
+    VerticalFitStyle = ~/FitStyle/FitToContent
 
     HasBackground = true
     BackgroundBlockColorToken = <BackgroundBlockColorToken>
@@ -601,7 +570,7 @@ is BUCKTextDescriptor
         VerticalAlignment = UIText_VerticalCenter
     )
 
-    TextPadding = TRTTILength4(Magnifiable = [1.0, 1.0, 1.0, 1.0])
+    TextPadding = TRTTILength4(Magnifiable = [2.0, 0.0, 2.0, 0.0])
 
     TextStyle = "Default"
     TypefaceToken = "UIMainFont"
@@ -610,7 +579,7 @@ is BUCKTextDescriptor
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
     TextColor = <TextColorToken>
-    TextSize = "13"
+    TextSize = "12"
 
     TextToken = <TextToken>
 )
@@ -623,11 +592,11 @@ LowerLabelList is BUCKListDescriptor
     (
         AlignementToFather = [0.5, 1.0]
         AlignementToAnchor = [0.5, 0.0]
-        MagnifiableOffset = [0,-25]
+        MagnifiableOffset = [0.0, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
-    FirstMargin = TRTTILength(Pixel = 4.0)
+    FirstMargin = TRTTILength(Pixel = 4)
 
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
@@ -649,6 +618,7 @@ LowerLabelList is BUCKListDescriptor
                     Alignment = UIText_Center
                     VerticalAlignment = UIText_VerticalCenter
                 )
+
                 HasBackground = true
                 BackgroundBlockColorToken = "Gris_leaderboard"
                 TextStyle = "Engagement"

@@ -18,12 +18,6 @@ ConditionTagRaisedInUnit_Infanterie_Cowering_1 is TConditionTagRaisedInUnit
     Tag             = "Infanterie_Cowering"
     Amount          = 1
 )
-ConditionTagRaisedInUnit_Infanterie_Engaged_1 is TConditionTagRaisedInUnit
-(
-    DescriptorId    = GUID:{00869483-bfcc-4e90-b883-7e32ca257cbe}
-    Tag             = "Infanterie_Engaged"
-    Amount          = 1
-)
 ConditionTagRaisedInUnit_snipe_ok_1 is TConditionTagRaisedInUnit
 (
     DescriptorId    = GUID:{3e134a50-58f9-4c92-8aea-10a407fc1e2e}
@@ -46,12 +40,6 @@ ConditionTagRaisedInUnit_xp_veteran_1 is TConditionTagRaisedInUnit
 (
     DescriptorId    = GUID:{f6e3a7b7-473a-40e2-8e67-a99e8c68d0a8}
     Tag             = "xp_veteran"
-    Amount          = 1
-)
-ConditionTagNotRaisedInUnit_Discipline_1 is TConditionTagNotRaisedInUnit
-(
-    DescriptorId    = GUID:{643948b5-6db0-4ca1-8b28-20b6c6b61518}
-    Tag             = "Discipline"
     Amount          = 1
 )
 ConditionTagNotRaisedInUnit_Panique_1 is TConditionTagNotRaisedInUnit

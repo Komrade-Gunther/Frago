@@ -5,9 +5,6 @@ export ChallengeTheDieburgSalientStrategy is TIAGeneralStrategy
 (
     StrategyName = "ChalLMSAI"
     FirstGenerator = ChalTheDieburgSalient_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [

@@ -22,6 +22,7 @@ private DivisionList is TDeckDivisionList
         ~/Descriptor_Deck_Division_RFA_TerrKdo_Sud_challenge_IA,
         ~/Descriptor_Deck_Division_RDA_7_Panzer_multi,
         ~/Descriptor_Deck_Division_RFA_5_Panzer_multi,
+        ~/Descriptor_Deck_Division_UK_Blues_Royals_challenge,
         ~/Descriptor_Deck_Division_RFA_TerrKdo_Sud_multi,
         ~/Descriptor_Deck_Division_RDA_KdA_Bezirk_Erfurt_multi,
         ~/Descriptor_Deck_Division_UK_1st_Armoured_multi,
@@ -33,12 +34,11 @@ private DivisionList is TDeckDivisionList
         ~/Descriptor_Deck_Division_FR_11e_Para_multi,
         ~/Descriptor_Deck_Division_RDA_11MSD_challenge,
         ~/Descriptor_Deck_Division_SOV_35_AirAslt_Brig_challenge,
+        ~/Descriptor_Deck_Division_SOV_35_AirAslt_Brig_challenge_IA,
         ~/Descriptor_Deck_Division_SOV_39_Gds_Rifle_challenge,
         ~/Descriptor_Deck_Division_SOV_39_Gds_Rifle_challenge_IA,
         ~/Descriptor_Deck_Division_SOV_79_Gds_Tank_challenge,
         ~/Descriptor_Deck_Division_SOV_79_Gds_Tank_challenge_IA,
         ~/Descriptor_Deck_Division_US_11ACR_multi_HB,
-        ~/Descriptor_Deck_Division_101st,
-        ~/Descriptor_Deck_Division_SOV_Afganski,
     ]
 )

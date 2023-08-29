@@ -5,9 +5,6 @@ export VeryHardStrategy is TIAGeneralStrategy
 (
     StrategyName = "GenericAI"
     FirstGenerator = VHard_Choose_Strategy
-    ConstantesMap = MAP[
-        ("ForceTacticalMoveAndAttack", TEugBBoolean(Value = true)),
-    ]
     AllowToByPassNbMacroActionAllowedToProduceSimultaneous = true
     TransitionList =
     [
@@ -84,7 +81,6 @@ export VHard_Phase_Deploiement is TSequenceGeneratorDescriptor
     NbMacroActionAllowedToProduceSimultaneous = 4
     GeneratorList =
     [
-        ~/FOB_Skirmish,
 
         //------------------------------
         // Support & Supply
@@ -95,8 +91,9 @@ export VHard_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/CaptureOneObjectif,
 
-        ~/Attack_Objectives,
+        ~/FOB_Skirmish,
 
+        ~/Attack_Objectives,
 
         ~/Airstrike_Offensive_AA,
 
@@ -112,7 +109,7 @@ export VHard_Phase_Deploiement is TSequenceGeneratorDescriptor
         ~/Defense_Static_AA,
         ~/Defense_Dynamic_AA,
 
-        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Artillery_TriggerHappy,        // Artillerie pas chère                 //  80
 
         // Reste du front
         ~/Attack_Adaptive,          // ~100
@@ -192,7 +189,7 @@ export VHard_Phase_Command is TSequenceGeneratorDescriptor
         //Cet mission lance les objectifs restant
         ~/Defense_Objectif,
 
-        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Artillery_TriggerHappy,        // Artillerie pas chère                 //  80
 
         ~/Attack_Adaptive,  // Faire du code pour adapater le budget en fonction de l'income
         ~/Attack_Adaptive,
@@ -275,7 +272,7 @@ export VHard_Phase_LastHope is TSequenceGeneratorDescriptor
         //------------------------------
         ~/Attack_Main,              // Plusieurs tanks pour un budget donné // 200
         ~/Attack_Helo,
-        ~/Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Artillery_TriggerHappy,        // Artillerie pas chère                 //  80
 
         ~/Attack_Adaptive,  // Faire du code pour adapater le budget en fonction de l'income
         ~/Attack_Adaptive,

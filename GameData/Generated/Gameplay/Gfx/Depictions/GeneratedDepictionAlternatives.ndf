@@ -1111,6 +1111,11 @@ Alternatives_M1025_Humvee_scout_US is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M1025_Humvee_scout_US_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_M1025_Humvee_scout_US_LOW DisabledOperators = [ 'tourelle1' ] ),
 ]
+Alternatives_M1025_Humvee_scout_tuto_US is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M1025_Humvee_scout_tuto_US ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M1025_Humvee_scout_tuto_US_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_M1025_Humvee_scout_tuto_US_LOW DisabledOperators = [ 'tourelle1' ] ),
+]
 Alternatives_M1038_Humvee_US is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M1038_Humvee_US ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M1038_Humvee_US_MID ),
@@ -1315,6 +1320,11 @@ Alternatives_M35_trans_US is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M35_trans_US ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M35_trans_US_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_M35_trans_US_LOW ),
+]
+Alternatives_M35_trans_tuto_US is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M35_trans_tuto_US ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M35_trans_tuto_US_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_M35_trans_tuto_US_LOW ),
 ]
 Alternatives_M3A1_Bradley_CFV_US is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M3A1_Bradley_CFV_US ),

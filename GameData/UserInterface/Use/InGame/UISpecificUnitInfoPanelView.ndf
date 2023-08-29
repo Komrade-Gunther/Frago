@@ -29,34 +29,13 @@ is BUCKContainerDescriptor
         MagnifiableWidthHeight = [largeurPanelInfo, 25.0]
         AlignementToAnchor = [0.5, 0.0]
         AlignementToFather = [0.5, 0.0]
-        MagnifiableOffset = [20, 0.0]
+        MagnifiableOffset = [0.0, 0.0]
     )
-    BackgroundBlockColorToken = 'MarronPanel_fonce'
-    //HasBorder = true
-    //BorderLineColorToken = 'MarronPanel_noir'
-    //BorderThicknessToken = '2'
-    //BordersToDraw = 2 | 4
+
     MagnifierMultiplication = <Scale>
-    //FirstMargin = TRTTILength (Magnifiable = 20)
-    //LastMargin = TRTTILength (Magnifiable = 20)
 
     Components =
-    [         {BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKContainerDescriptor
-            (
-                ElementName = "Spacer2"
-                HasBorder = false
-
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 0.0]
-                    MagnifiableWidthHeight = [20, 0]
-                    //AlignementToFather = [-10, 0.5]
-                    //AlignementToAnchor = [-10, 0.5]
-                )
-            )
-        ),}
+    [
         BUCKTextDescriptor
         (
             ElementName = 'UnitName'
@@ -498,16 +477,9 @@ is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 500.0]
-        //MagnifiableOffset = [20, 0.0]
-        //AlignementToAnchor = [0.5, 0.0]
-        //AlignementToFather = [0.5, 0.0]
-
     )
 
     Axis = ~/ListAxis/Horizontal
-    FirstMargin = TRTTILength(Magnifiable = 30)
-    LastMargin = TRTTILength(Magnifiable = 10)
-
     InterItemMargin = TRTTILength( Magnifiable = (WeaponsColumnTotalWidth - (3.0 * SingleWeaponColumnWidth)) div 2.0 )
 
     // envoie en code : BUCKSpecificUnitInfoSingleWeaponPanelMainComponentDescriptor
@@ -942,7 +914,6 @@ is BUCKListDescriptor
     BackgroundBlockColorToken = "Fulda_BleuNoir"
 
     Axis = ~/ListAxis/Horizontal
-    FirstMargin = TRTTILength(Magnifiable = 20.0)
 
     Elements =
     (<UseForStrategic> ?
@@ -974,16 +945,7 @@ is BUCKListDescriptor
 private AffichageDuBlindage is BUCKListDescriptor
 (
     ElementName = 'AffichageDuBlindage'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        //AlignementToAnchor = [0.275, 0.0]
-        //AlignementToFather = [0.275, 0.0]
-        MagnifiableOffset = [30, 0]
-
-    )
-
-
-    //FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
+    ComponentFrame = TUIFramePropertyRTTI()
 
     Axis = ~/ListAxis/Horizontal
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
@@ -991,26 +953,9 @@ private AffichageDuBlindage is BUCKListDescriptor
     HasBorder = true
     BorderLineColorToken = 'MarronPanel_noir'
     BorderThicknessToken = '2'
-    //FirstMargin = TRTTILength(Magnifiable = 20.0)
 
     Elements =
-[       {BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKContainerDescriptor
-            (
-                ElementName = "Spacer2"
-                HasBorder = false
-                BorderLineColorToken = 'MarronPanel_noir'
-                BorderThicknessToken = '2'
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 0.0]
-                    MagnifiableWidthHeight = [20, 0]
-                    //AlignementToFather = [-10, 0.5]
-                    //AlignementToAnchor = [-10, 0.5]
-                )
-            )
-        ),}
+    [
         BUCKListElementDescriptor
         (
             ComponentDescriptor = WeaponDamageTypeAttribute
@@ -1095,27 +1040,10 @@ private AffichageDuBlindage is BUCKListDescriptor
                 Token = 'UIP_PLATTP'
                 ValueToken = "UIPW_MILLI"
                 HintToken = "HIP_PLAT"
-                HasBorder = false
+                HasBorder = true
                 BackgroundBlockColorTokenFondJauge = 'MarronPanel_Tresfonce'
             )
-        ),{
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKContainerDescriptor
-            (
-                ElementName = "Spacer2"
-                HasBorder = false
-                BorderLineColorToken = 'MarronPanel_noir'
-                BorderThicknessToken = '2'
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 0.0]
-                    MagnifiableWidthHeight = [0, 0]
-                    //AlignementToFather = [-10, 0.5]
-                    //AlignementToAnchor = [-10, 0.5]
-                )
-            )
-        ),}
+        ),
     ]
 )
 
@@ -1251,63 +1179,30 @@ private UnitInfoPanelSpecialtiesSubPanel is BUCKListDescriptor
 (
     ElementName = "UnitInfoPanelSpecialtiesSubPanel"
 
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        //MagnifiableWidthHeight = [largeurPanelInfo, 25.0]
-        //AlignementToAnchor = [0.5, 0.0]
-        //AlignementToFather = [0.5, 0.0]
-        //MagnifiableOffset = [20, 0.0]
-        MagnifiableOffset = [0, 0]
+    ComponentFrame = TUIFramePropertyRTTI()
 
-    )
     Axis = ~/ListAxis/Horizontal
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
     HasBackground = true
     BackgroundBlockColorToken = 'MarronPanel_fonce'
-    HasBorder = True
+    HasBorder = true
     BorderLineColorToken = 'MarronPanel_noir'
     BorderThicknessToken = '2'
-    BordersToDraw = 1 | 2
-    //FirstMargin = TRTTILength(Magnifiable = 30)
-    //LastMargin = TRTTILength(Magnifiable = 20)
+
     Elements =
     [
         BUCKListElementDescriptor
         (
+            ExtendWeight = 0.5
             ComponentDescriptor = ~/UnitInfoPanelSubSpecialtiesDescriptor
-            ExtendWeight=0.5
         ),
 
         BUCKListElementDescriptor
         (
+            ExtendWeight = 0.5
             ComponentDescriptor = ~/UnitInfoPanelRoleDescriptor
-            ExtendWeight=0.5
         ),
-        {BUCKListElementDescriptor
-        (
-
-            ExtendWeight=0.1
-
-            HasBorder = true
-            BorderLineColorToken = 'MarronPanel_noir'
-            BorderThicknessToken = '2'
-            BordersToDraw = ~/TBorderSide/Left
-            HasBackground = true
-            BackgroundBlockColorToken = 'MarronPanel_base'
-            ComponentDescriptor = BUCKContainerDescriptor
-            (
-                ElementName = "Spacer2"
-
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 0.0]
-                    MagnifiableWidthHeight = [20, 0]
-                    //AlignementToFather = [-10, 0.5]
-                    //AlignementToAnchor = [-10, 0.5]
-                )
-            )
-        ),}
     ]
 )
 
@@ -1316,18 +1211,11 @@ private UnitInfoPanelSpecialtiesSubPanel is BUCKListDescriptor
 private UnitInfoPanelAttributesSubPanel is BUCKGridDescriptor
 (
     ElementName = "UnitAttributeContainer"
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        //AlignementToAnchor = [0.25, 0.0]
-        //AlignementToFather = [0.25, 0.0]
-        
-        MagnifiableOffset = [30, 0]
-    )
 
     BackgroundBlockColorToken = 'White'
-    //FirstElementMargin = TRTTILength2( Magnifiable = [20, 0.0] )
-    //InterElementMargin = TRTTILength2( Magnifiable = [0.0, 0.0] )
-    //LastElementMargin = TRTTILength2( Magnifiable = [20, 0.0] )
+    FirstElementMargin = TRTTILength2(Magnifiable = [0.0, 0.0])
+    InterElementMargin = TRTTILength2( Magnifiable = [0.0, 0.0] )
+    LastElementMargin = TRTTILength2( Magnifiable = [0.0, 0.0] )
 
     MaxElementsPerDimension = [3, 0]
 
@@ -1403,17 +1291,16 @@ is PanelRoundedCorner
 
     Radius = 30
     NbOfPoints = 7
-    BackgroundBlockColorToken = 'MarronPanel_base'
+    BackgroundBlockColorToken = 'Transparent'
     BorderLineColorToken = 'MarronPanel_noir'
     BorderThicknessToken = '2'
     RoundedVertexes = [false,false,true,true]
-    FitStyle = ~/ContainerFitStyle/FitToContent
 
 
     Components =
     [
         // texture fond
-        {BUCKTextureDescriptor
+        BUCKTextureDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
@@ -1421,92 +1308,28 @@ is PanelRoundedCorner
                 MagnifiableOffset = [-15.0, -5.0]
             )
             TextureToken = 'UseInGame_UnitInfoPanel_fond_panel2'
-            Axis = ~/ListAxis/Vertical
-            BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-
-        ),}
+        ),
 
         BUCKListDescriptor
         (
             ElementName = 'MainListePanelInfo'
 
-            {ComponentFrame = TUIFramePropertyRTTI
+            ComponentFrame = TUIFramePropertyRTTI
             (
                 MagnifiableWidthHeight = [440.0, 0.0]
                 AlignementToAnchor = [0.5, 0.0]
                 AlignementToFather = [0.5, 0.0]
                 MagnifiableOffset = [15.0, 25.0]
-            )}
-          
+            )
+
             Axis = ~/ListAxis/Vertical
-            BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-
             InterItemMargin = TRTTILength (Magnifiable = 0.0)
-            BackgroundComponents=[
-
-
-
-
-            ]
-
 
             Elements =
             [
-            BUCKListElementDescriptor
-            (               
-                ComponentDescriptor =  BUCKContainerDescriptor
-                (
-                    ElementName = "Spacer2"
-
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [530.0, 0]
-                        //MagnifiableOffset = [-15.0, -5.0]
-                    )
-                )
-            ),
-                
-                {BUCKListElementDescriptor
-                (
-                    ComponentDescriptor =  BUCKTextureDescriptor
-                    (
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            MagnifiableWidthHeight = [800.0, <IsShowRoom> ? 800.0 : 800.0]
-                            //MagnifiableOffset = [-105.0, -5.0]
-                            //AlignementToFather = [0.5, 0.5]
-
-                        )
-                        TextureToken = 'UseInGame_UnitInfoPanel_fond_panel2'
-                        ResizeMode = ~/TextureResizeMode/FitToParent
-                        TextureFrame = TUIFramePropertyRTTI
-                        (
-                            AlignementToFather = [-200, 0.5]
-                            AlignementToAnchor = [0.5, 0.5]
-                    )
-                    )
-                ),}
-
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKContainerDescriptor
-                    (
-                        ElementName = "Spacer2"
-
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [0.0, 0.0]
-                            MagnifiableWidthHeight = [400, 20]
-                            //AlignementToFather = [-10, 0.5]
-                            //AlignementToAnchor = [-10, 0.5]
-                        )
-                    )
-                ),
                 BUCKListElementDescriptor
                 (
                     ComponentDescriptor = AffichageTitrePanelInfo( Scale = <Scale>)
-
-
                 ),
                 BUCKListElementSpacer( Magnifiable = 5.0*<Scale>),
                 BUCKListElementDescriptor
@@ -1545,7 +1368,8 @@ is PanelRoundedCorner
                         TextSize = '12'
                         Scale = <Scale>
                     )
-                ),
+                )
+                ,
                 BUCKListElementDescriptor
                 (
                     ComponentDescriptor = AffichagePanelDesArmes(Scale = <Scale>)
@@ -1565,8 +1389,6 @@ is PanelRoundedCorner
                 (
                     ComponentDescriptor = ~/UnitInfoPanelAttributesSubPanel
                 ),
-
-
             ]
             + (<IsShowRoom> ? [
                 BUCKListElementDescriptor
@@ -1574,26 +1396,8 @@ is PanelRoundedCorner
                     ComponentDescriptor = ~/PanelInfoDivision
                 ),
             ] : [])
-            +  [
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKContainerDescriptor
-                    (
-                        ElementName = "Spacer2"
-
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [0.0, 0.0]
-                            MagnifiableWidthHeight = [400, 50]
-                            //AlignementToFather = [-10, 0.5]
-                            //AlignementToAnchor = [-10, 0.5]
-                        )
-                    )
-                ),
-            ] 
-
         ),
-        {// fake text 1
+        // fake text 1
         BUCKTextDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
@@ -1638,9 +1442,8 @@ is PanelRoundedCorner
             TextDico = ~/LocalisationConstantes/dico_interface_ingame
             TextColor = "MarronPanel_noir"
             TextSize = "8"
-        ),}
+        ),
     ]
-    //BackgroundComponents=[]
 )
 
 //-------------------------------------------------------------------------------------
@@ -1650,14 +1453,14 @@ private UnitInfoPanelRoleDescriptor is BUCKListDescriptor
     ElementName = "RoleContainer"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0, 45]
+        MagnifiableWidthHeight = [0.0, 45.0]
     )
 
     Axis = ~/ListAxis/Horizontal
     FirstMargin = TRTTILength (Magnifiable = 7.0)
     InterItemMargin = TRTTILength (Magnifiable = 3.0)
     LastMargin = TRTTILength (Magnifiable = 7.0)
-    HasBorder = false
+    HasBorder = true
     BorderLineColorToken = 'MarronPanel_noir'
     BorderThicknessToken = '2'
     BordersToDraw = ~/TBorderSide/Right
@@ -1787,11 +1590,11 @@ private UnitInfoPanelSubSpecialtiesDescriptor is BUCKListDescriptor
     ElementName = "SubSpecialtiesContainer"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0, 45.0]
+        MagnifiableWidthHeight = [0.0, 45.0]
     )
 
     Axis = ~/ListAxis/Horizontal
-    FirstMargin = TRTTILength (Magnifiable = 27)
+    FirstMargin = TRTTILength (Magnifiable = 7.0)
     InterItemMargin = TRTTILength (Magnifiable = 3.0)
     LastMargin = TRTTILength (Magnifiable = 7.0)
     HasBorder = true
@@ -1940,7 +1743,7 @@ is TUISpecificUnitInfoPanelViewDescriptor
     MainComponentDescriptor = BUCKSpecificUnitInfoPanelMainComponentDescriptor( MainComponentFrame = <MainComponentFrame> UseForStrategic = <UseForStrategic> IsShowRoom = <IsShowRoom> Scale = Scale)
     MainComponentContainerUniqueName = <MainComponentContainerUniqueName>
 
-    NbWeaponsToShow = 5
+    NbWeaponsToShow = 3
     WeaponViewDescriptor = UISpecificUnitInfoSingleWeaponPanelViewDescriptor( Scale = Scale)
 
     VehiculeToken = "UIP_VEHIC"
@@ -2010,8 +1813,6 @@ is TUISpecificUnitInfoPanelViewDescriptor
         ("HelicoTransporter", listeAffichageInfoUnit_HelicoTransport),
 
         ("HelicoSupplier", listeAffichageInfoUnit_HelicoSupply),
-
-        ("Supply_ifv_FRL", listeAffichageInfoUnit_Supply_IFV_FRL),
     ]
 
     DivisionEmblemDescriptor = BUCKTextureDescriptor
@@ -2109,11 +1910,4 @@ listeAffichageInfoUnit_HelicoSupply is
     "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
     "AttributeECM","AttributeSpeed",  "AttributeRoadSpeed",
     "AttributeAdvanceDeployment", "AttributeSupply", "EMPTY_SLOT1",
-]
-listeAffichageInfoUnit_Supply_IFV_FRL is
-[
-    "AttributeMaxDamages","AttributeOptics", "AttributeStealth",
-    "AttributeAmphibious","AttributeSpeed",  "AttributeRoadSpeed",
-    "AttributeAutonomy","AttributeFuel","AttributeAdvanceDeployment",
-    "AttributeTransportSize", "AttributeSupply","EMPTY_SLOT2",
 ]

@@ -121,6 +121,7 @@ BUCKSpecificOutGameHostPanelMainComponentDescriptor is SpecificModalWindow
                 TextToken = "gameName"
                 HasText = true
                 EditableTextElementName = "GameNameEditable"
+                MaxChars = 50
             )
         ),
         BUCKListElementDescriptor

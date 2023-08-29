@@ -2,6 +2,7 @@
 IngameObjectivesResources is TUIObjectivesResources
 (
     Layer = $/UserInterface/UILayer_Labels
+    WorldFloorProxy = $/M3D/Scene/WorldFloorForIAProxy
 
     ObjectiveLabelMagnificationMultiplier = 1
 
