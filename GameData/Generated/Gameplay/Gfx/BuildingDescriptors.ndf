@@ -41,7 +41,7 @@ export Descriptor_Unit_FOB_DDR is TEntityDescriptor
         ~/CapturableModuleDescriptor,
         TBaseDamageModuleDescriptor
         (
-            MaxPhysicalDamages = 10
+            MaxPhysicalDamages = 25
             MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
             MaxStunDamages = ~/Building_MaxStunDamages
             PhysicalDamageLevelsPack = ~/DamageLevelsPackDescriptor_Default_pack_paliers_degats_phy
@@ -132,7 +132,7 @@ export Descriptor_Unit_FOB_DDR is TEntityDescriptor
             Factory            = EDefaultFactories/Logistic
             ProductionTime     = -1
             ProductionRessourcesNeeded = MAP [
-                (~/Resource_CommandPoints, 235),
+                (~/Resource_CommandPoints, 150),
             ]
         ),
         ~/EffectApplierModuleDescriptor,
@@ -185,6 +185,10 @@ export Descriptor_Unit_FOB_DDR is TEntityDescriptor
             CountryTexture = 'CommonTexture_MotherCountryFlag_DDR'
             TypeStrategicCount = ETypeStrategicCount/NotCounted
         ),
+        TDeploymentShiftModuleDescriptor
+        (
+            DeploymentShift = 7000.0 * Metre
+        ),
     ]
 )
 export Descriptor_Unit_FOB_FR is TEntityDescriptor
@@ -227,7 +231,7 @@ export Descriptor_Unit_FOB_FR is TEntityDescriptor
         ~/CapturableModuleDescriptor,
         TBaseDamageModuleDescriptor
         (
-            MaxPhysicalDamages = 10
+            MaxPhysicalDamages = 25
             MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
             MaxStunDamages = ~/Building_MaxStunDamages
             PhysicalDamageLevelsPack = ~/DamageLevelsPackDescriptor_Default_pack_paliers_degats_phy
@@ -318,7 +322,7 @@ export Descriptor_Unit_FOB_FR is TEntityDescriptor
             Factory            = EDefaultFactories/Logistic
             ProductionTime     = -1
             ProductionRessourcesNeeded = MAP [
-                (~/Resource_CommandPoints, 235),
+                (~/Resource_CommandPoints, 150),
             ]
         ),
         ~/EffectApplierModuleDescriptor,
@@ -371,6 +375,10 @@ export Descriptor_Unit_FOB_FR is TEntityDescriptor
             CountryTexture = 'CommonTexture_MotherCountryFlag_FR'
             TypeStrategicCount = ETypeStrategicCount/NotCounted
         ),
+        TDeploymentShiftModuleDescriptor
+        (
+            DeploymentShift = 7000.0 * Metre
+        ),
     ]
 )
 export Descriptor_Unit_FOB_RFA is TEntityDescriptor
@@ -413,7 +421,7 @@ export Descriptor_Unit_FOB_RFA is TEntityDescriptor
         ~/CapturableModuleDescriptor,
         TBaseDamageModuleDescriptor
         (
-            MaxPhysicalDamages = 10
+            MaxPhysicalDamages = 25
             MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
             MaxStunDamages = ~/Building_MaxStunDamages
             PhysicalDamageLevelsPack = ~/DamageLevelsPackDescriptor_Default_pack_paliers_degats_phy
@@ -504,7 +512,7 @@ export Descriptor_Unit_FOB_RFA is TEntityDescriptor
             Factory            = EDefaultFactories/Logistic
             ProductionTime     = -1
             ProductionRessourcesNeeded = MAP [
-                (~/Resource_CommandPoints, 235),
+                (~/Resource_CommandPoints, 150),
             ]
         ),
         ~/EffectApplierModuleDescriptor,
@@ -557,6 +565,10 @@ export Descriptor_Unit_FOB_RFA is TEntityDescriptor
             CountryTexture = 'CommonTexture_MotherCountryFlag_RFA'
             TypeStrategicCount = ETypeStrategicCount/NotCounted
         ),
+        TDeploymentShiftModuleDescriptor
+        (
+            DeploymentShift = 7000.0 * Metre
+        ),
     ]
 )
 export Descriptor_Unit_FOB_SOV is TEntityDescriptor
@@ -599,7 +611,7 @@ export Descriptor_Unit_FOB_SOV is TEntityDescriptor
         ~/CapturableModuleDescriptor,
         TBaseDamageModuleDescriptor
         (
-            MaxPhysicalDamages = 10
+            MaxPhysicalDamages = 25
             MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
             MaxStunDamages = ~/Building_MaxStunDamages
             PhysicalDamageLevelsPack = ~/DamageLevelsPackDescriptor_Default_pack_paliers_degats_phy
@@ -690,7 +702,7 @@ export Descriptor_Unit_FOB_SOV is TEntityDescriptor
             Factory            = EDefaultFactories/Logistic
             ProductionTime     = -1
             ProductionRessourcesNeeded = MAP [
-                (~/Resource_CommandPoints, 235),
+                (~/Resource_CommandPoints, 150),
             ]
         ),
         ~/EffectApplierModuleDescriptor,
@@ -743,6 +755,10 @@ export Descriptor_Unit_FOB_SOV is TEntityDescriptor
             CountryTexture = 'CommonTexture_MotherCountryFlag_SOV'
             TypeStrategicCount = ETypeStrategicCount/NotCounted
         ),
+        TDeploymentShiftModuleDescriptor
+        (
+            DeploymentShift = 7000.0 * Metre
+        ),
     ]
 )
 export Descriptor_Unit_FOB_UK is TEntityDescriptor
@@ -785,7 +801,7 @@ export Descriptor_Unit_FOB_UK is TEntityDescriptor
         ~/CapturableModuleDescriptor,
         TBaseDamageModuleDescriptor
         (
-            MaxPhysicalDamages = 10
+            MaxPhysicalDamages = 25
             MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
             MaxStunDamages = ~/Building_MaxStunDamages
             PhysicalDamageLevelsPack = ~/DamageLevelsPackDescriptor_Default_pack_paliers_degats_phy
@@ -876,7 +892,7 @@ export Descriptor_Unit_FOB_UK is TEntityDescriptor
             Factory            = EDefaultFactories/Logistic
             ProductionTime     = -1
             ProductionRessourcesNeeded = MAP [
-                (~/Resource_CommandPoints, 235),
+                (~/Resource_CommandPoints, 150),
             ]
         ),
         ~/EffectApplierModuleDescriptor,
@@ -929,6 +945,10 @@ export Descriptor_Unit_FOB_UK is TEntityDescriptor
             CountryTexture = 'CommonTexture_MotherCountryFlag_UK'
             TypeStrategicCount = ETypeStrategicCount/NotCounted
         ),
+        TDeploymentShiftModuleDescriptor
+        (
+            DeploymentShift = 7000.0 * Metre
+        ),
     ]
 )
 export Descriptor_Unit_FOB_US is TEntityDescriptor
@@ -971,7 +991,7 @@ export Descriptor_Unit_FOB_US is TEntityDescriptor
         ~/CapturableModuleDescriptor,
         TBaseDamageModuleDescriptor
         (
-            MaxPhysicalDamages = 10
+            MaxPhysicalDamages = 25
             MaxSuppressionDamages = ~/Building_MaxSuppressionDamages
             MaxStunDamages = ~/Building_MaxStunDamages
             PhysicalDamageLevelsPack = ~/DamageLevelsPackDescriptor_Default_pack_paliers_degats_phy
@@ -1062,7 +1082,7 @@ export Descriptor_Unit_FOB_US is TEntityDescriptor
             Factory            = EDefaultFactories/Logistic
             ProductionTime     = -1
             ProductionRessourcesNeeded = MAP [
-                (~/Resource_CommandPoints, 235),
+                (~/Resource_CommandPoints, 150),
             ]
         ),
         ~/EffectApplierModuleDescriptor,
@@ -1114,6 +1134,10 @@ export Descriptor_Unit_FOB_US is TEntityDescriptor
             ButtonTexture = 'Texture_Button_Unit_FOB_US'
             CountryTexture = 'CommonTexture_MotherCountryFlag_US'
             TypeStrategicCount = ETypeStrategicCount/NotCounted
+        ),
+        TDeploymentShiftModuleDescriptor
+        (
+            DeploymentShift = 7000.0 * Metre
         ),
     ]
 )
