@@ -51,7 +51,7 @@ export Descriptor_District_Quartier_Gros is TEntityDescriptor(
                 ArmorDescriptorRear = ArmorDescriptor_Batiment_1
                 ArmorDescriptorTop = ArmorDescriptor_Batiment_1
             )
-            KillWhenDamagesReachMax = True
+            KillWhenDamagesReachMax = False
             HitRollSize = 5.0
             HitRollECM = 0.0
             AutoOrientation = False
@@ -203,7 +203,7 @@ export Descriptor_District_Quartier_Moyen is TEntityDescriptor(
                 ArmorDescriptorRear = ArmorDescriptor_Batiment_1
                 ArmorDescriptorTop = ArmorDescriptor_Batiment_1
             )
-            KillWhenDamagesReachMax = True
+            KillWhenDamagesReachMax = False
             HitRollSize = 5.0
             HitRollECM = 0.0
             AutoOrientation = False
@@ -279,7 +279,7 @@ export Descriptor_District_Quartier_Moyen_resistant_mieux is TEntityDescriptor(
                 ArmorDescriptorRear = ArmorDescriptor_Batiment_1
                 ArmorDescriptorTop = ArmorDescriptor_Batiment_1
             )
-            KillWhenDamagesReachMax = True
+            KillWhenDamagesReachMax = False
             HitRollSize = 5.0
             HitRollECM = 0.0
             AutoOrientation = False
@@ -305,3 +305,4 @@ export Descriptor_District_Quartier_Moyen_resistant_mieux is TEntityDescriptor(
         ~/TargetDataModuleDescriptor,
     ]
 )
+//

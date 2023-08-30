@@ -719,11 +719,6 @@ export UnitEffect_Choc is TEffectsPackDescriptor
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 0.8
         ),
-        TUnitEffectIncreaseWeaponPhysicalDamagesDescriptor
-        (
-            ModifierType               = ~/ModifierType_Pourcentage
-            ModifierValue = 20
-        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType                     = ~/ModifierType_Pourcentage
@@ -2989,7 +2984,7 @@ export UnitEffect_sniper is TEffectsPackDescriptor
         TUnitEffectIncreaseWeaponPhysicalDamagesDescriptor
         (
             ModifierType               = ~/ModifierType_Pourcentage
-            ModifierValue = 500
+            ModifierValue = 250
         ),
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (

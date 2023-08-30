@@ -304,8 +304,8 @@ export Capacite_Choc is TCapaciteDescriptor
     AreaShape            = ~/CapaciteAreaShape_circulaire
     InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
     ActionRadiusWithBoundingBox = False
-    Radius              = 150.00 * Metre
-    Range               = 400.00 * Metre
+    Radius              = 990.00 * Metre
+    Range               = 990.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
     CastTime            = 0.00
@@ -639,7 +639,7 @@ export Capacite_IFV is TCapaciteDescriptor
     InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
     ActionRadiusWithBoundingBox = False
     Radius              = 500.00 * Metre
-    Range               = 900.00 * Metre
+    Range               = 1450.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
     CastTime            = 0.00
@@ -920,8 +920,8 @@ export Capacite_MilitaryPolice is TCapaciteDescriptor
     AreaShape            = ~/CapaciteAreaShape_circulaire
     InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
     ActionRadiusWithBoundingBox = False
-    Radius              = 750.00 * Metre
-    Range               = 750.00 * Metre
+    Radius              = 1700.00 * Metre
+    Range               = 1700.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
     CastTime            = 0.00
@@ -1805,6 +1805,18 @@ export Capacite_sniper_no_snipe is TCapaciteDescriptor
     ]
 
 )
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //

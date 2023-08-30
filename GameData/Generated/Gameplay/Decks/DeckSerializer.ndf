@@ -42,6 +42,9 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Deck_Division_SOV_35_AirAslt_Brig_challenge_IA, 193),
         (Descriptor_Deck_Division_UK_Blues_Royals_challenge, 194),
         (Descriptor_Deck_Division_SOV_119IndTkBrig_multi, 195),
+
+
+
     ]
 
     PackIds = MAP
@@ -603,6 +606,7 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_MiG_23ML_SOV, 1132),
         (Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_MiG_25BM_SOV, 1133),
         (Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_MiG_25RBF_SOV, 1134),
+		(Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_MiG_31M_SOV, 696969),
         (Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_MiG_27M_bombe_SOV, 1135),
         (Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_MiG_27M_napalm_SOV, 1136),
         (Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_MiG_27M_rkt_SOV, 1137),

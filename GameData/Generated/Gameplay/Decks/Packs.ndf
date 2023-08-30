@@ -29185,3 +29185,51 @@ Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_ZSU_23_Shilka_SOV is TDeck
         ),
     ]
 )
+Descriptor_Deck_Pack_TOE_SOV_35_AirAslt_Brig_multi_MiG_31M_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{23e71a11-97d4-4e37-bcba-b003bcf47c64}
+    CfgName = 'TOE_SOV_35_AirAslt_Brig_multi_MiG_31M_SOV'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_MiG_31M_SOV
+        ),
+    ]
+)
+Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_MiG_27M_sead_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{4f0da17b-a34d-412d-abdd-7d08c1ee5496}
+    CfgName = 'TOE_SOV_39_Gds_Rifle_multi_MiG_27M_sead_SOV'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_MiG_27M_sead_SOV
+        ),
+    ]
+)
+Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_MiG_29_AA_SOV is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{040d1856-f989-49c5-85a6-27f40a2fca10}
+    CfgName = 'TOE_SOV_79_Gds_Tank_multi_MiG_29_AA_SOV'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_MiG_29_AA_SOV
+        ),
+    ]
+)
+Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Su_22_SEAD_DDR is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{8973ce0b-b7c6-47a1-923f-9d547ba3a54d}
+    CfgName = 'TOE_WP_Unternehmen_Zentrum_multi_Su_22_SEAD_DDR'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_Su_22_SEAD_DDR
+        ),
+    ]
+)
