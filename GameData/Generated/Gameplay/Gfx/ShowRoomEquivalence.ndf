@@ -846,6 +846,7 @@ export ShowRoomEquivalenceManager is TShowRoomEquivalenceManager
         ( ~/Descriptor_Unit_Tornado_IDS_HE1_RFA, ~/Descriptor_ShowRoomUnit_Tornado_IDS_HE1_RFA ),
         ( ~/Descriptor_Unit_Tornado_IDS_MW1_RFA, ~/Descriptor_ShowRoomUnit_Tornado_IDS_MW1_RFA ),
         ( ~/Descriptor_Unit_Tornado_IDS_RFA, ~/Descriptor_ShowRoomUnit_Tornado_IDS_RFA ),
+        ( ~/Descriptor_Unit_Su_25_Multirole_FRL, ~/Descriptor_ShowRoomUnit_Su_25_Multirole_FRL ),
 
     ]
 )

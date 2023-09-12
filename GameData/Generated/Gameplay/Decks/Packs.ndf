@@ -29233,3 +29233,15 @@ Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Su_22_SEAD_DDR is TDeckPac
         ),
     ]
 )
+Descriptor_Deck_Pack_Unit_Su_25_Multirole_FRL is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{c5ace8d1-58ae-400a-a50e-8bcccfc18581}
+    CfgName = 'Unit_Su_25_Multirole_FRL'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_Su_25_Multirole_FRL
+        ),
+    ]
+)

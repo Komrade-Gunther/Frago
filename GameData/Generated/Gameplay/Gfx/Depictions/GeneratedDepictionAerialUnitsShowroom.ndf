@@ -4053,3 +4053,18 @@ Gfx_UH60A_Supply_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         ),
     ]
 )
+Gfx_Su_25_Multirole_FRL_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_25_Multirole_FRL,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_SOV_train
+        ),
+    ]
+)

@@ -9548,3 +9548,58 @@ MissileCarriage_Tornado_IDS_RFA_Showroom is TMissileCarriageConnoisseur
     ]
 )
 
+// Su_25_SOV : ['AGM Kh25ML'] ['AA R60M Vympel']
+MissileCarriage_Su_25_Multirole_FRL is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_SOV
+    PylonSet = ~/DepictionPylonSet_Airplane_SOV
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 40
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 4
+        ),
+    ]
+)
+MissileCarriage_Su_25_Multirole_FRL_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_SOV
+    PylonSet = ~/DepictionPylonSet_Airplane_SOV_Showroom
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 40
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 4
+        ),
+    ]
+)

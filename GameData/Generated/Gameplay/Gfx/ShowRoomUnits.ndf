@@ -35135,3 +35135,39 @@ export Descriptor_ShowRoomUnit_Tornado_IDS_RFA is TEntityDescriptor
         ),
     ]
 )
+export Descriptor_ShowRoomUnit_Su_25_Multirole_FRL is TEntityDescriptor
+(
+    DescriptorId        = GUID:{d1501aaf-65b8-4f6f-bf0e-d8984f57e4be}
+    ClassNameForDebug   = "ShowRoomUnit_Su_25_SOV_Multirole_FRL"
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Nationalite                      = ENationalite/Axis
+            MotherCountry                    = 'SOV'
+            AcknowUnitType                   = ~/TAcknowUnitType_GroundAtk
+            TypeUnitFormation                = 'None'
+        ),
+        ~/ShowroomPositionModuleDescriptor,
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject                     = True
+            Depiction                          = ~/Gfx_Su_25_Multirole_FRL_Showroom_Autogen
+            GameplayBBoxBoneName               = ''
+        ),
+        $/GFX/Everything/WeaponDescriptor_Su_25_Multirole_SOV_FRL,
+        ~/LinkTeamModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TExperienceModuleDescriptor
+        (
+            ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple_v2
+            CanWinExperience = True
+            ExperienceGainBySecond = ~/ExperienceGainBySecond
+            ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+        ),
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'BigVehicle'
+            SpawnType = EShowroomSpawnType/Airplane
+        ),
+    ]
+)

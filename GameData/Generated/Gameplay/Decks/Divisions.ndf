@@ -1352,6 +1352,7 @@ Descriptor_Deck_Division_SOV_119IndTkBrig_multi is TDeckDivisionDescriptor
     DescriptionHintExtendedToken = ''
     PackList = MAP
     [
+        (~/Descriptor_Deck_Pack_Unit_Su_25_Multirole_FRL, 1),
         (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_2S1_Gvozdika_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_AT_T12_Rapira_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_BMP_1_CMD_SOV, 3),
@@ -1735,6 +1736,7 @@ Descriptor_Deck_Division_SOV_39_Gds_Rifle_challenge is TDeckDivisionDescriptor
     DescriptionHintExtendedToken = ''
     PackList = MAP
     [
+
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_challenge_2K12_KUB_SOV, 999),
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_challenge_2S1_Gvozdika_SOV, 999),
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_challenge_2S3M_Akatsiya_SOV, 999),

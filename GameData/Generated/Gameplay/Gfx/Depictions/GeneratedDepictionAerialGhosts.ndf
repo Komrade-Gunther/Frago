@@ -1076,6 +1076,11 @@ GhostDepiction_UH60A_Supply_US is GhostAerialDepictionTemplate
     Alternatives = Alternatives_UH60A_Supply_US
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_Su_25_Multirole_FRL is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Su_25_Multirole_FRL
+    Selector = SpecificAirplaneDepictionSelector
+)
 AerialMimeticGhost is MAP[
   ( 'A10_Thunderbolt_II_ATGM_US', GhostDepiction_A10_Thunderbolt_II_ATGM_US ),
   ( 'A10_Thunderbolt_II_Rkt_US', GhostDepiction_A10_Thunderbolt_II_Rkt_US ),
@@ -1086,6 +1091,7 @@ AerialMimeticGhost is MAP[
   ( 'AH1F_HeavyHog_US', GhostDepiction_AH1F_HeavyHog_US ),
   ( 'AH1S_Cobra_US', GhostDepiction_AH1S_Cobra_US ),
   ( 'AH64_Apache_US', GhostDepiction_AH64_Apache_US ),
+
   ( 'AH64_Apache_emp1_US', GhostDepiction_AH64_Apache_emp1_US ),
   ( 'AH64_Apache_emp2_US', GhostDepiction_AH64_Apache_emp2_US ),
   ( 'AH6C_Little_Bird_US', GhostDepiction_AH6C_Little_Bird_US ),
@@ -1292,5 +1298,7 @@ AerialMimeticGhost is MAP[
   ( 'UH60A_Black_Hawk_US', GhostDepiction_UH60A_Black_Hawk_US ),
   ( 'UH60A_CO_US', GhostDepiction_UH60A_CO_US ),
   ( 'UH60A_Supply_US', GhostDepiction_UH60A_Supply_US ),
+	( 'Su_25_Multirole_FRL', GhostDepiction_Su_25_Multirole_FRL ),
+
 ]
 
