@@ -11,10 +11,12 @@ export Modele_M72_LAW   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/
 export Modele_M47_DRAGON   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M47_Dragon_II.Ase2NdfBin' )
 export Modele_Test_missile_AA_inf   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M72A4.Ase2NdfBin' )
 export Modele_MANPAD_FIM92   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/FIM-92_Stinger.Ase2NdfBin' )
+export Modele_MANPAD_FIM92_A   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/FIM-92_Stinger.Ase2NdfBin' )
 
 export Modele_GrenUS is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Grenades/Pineapple_grenade.fbx' )
 
-export Modele_M14_Sniper is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M14_Sniper_Rifle/M14_Sniper_Rifle.Ase2NdfBin' )
+export Modele_M14_Sniper is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M14_Sniper_Rifle/M14_Sniper_Rifle.fbx' )
+export Modele_M14 is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M14_Sniper_Rifle/M14_Rifle.fbx' )
 export Modele_M16A1_Carbine is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M16A1_Carbine.Ase2NdfBin' )
 export Modele_M16A2   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M16A2.fbx' )
 export Modele_M16A1 is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M16A1.fbx' )
@@ -25,9 +27,8 @@ export Modele_M60   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/U
 export Modele_M72A4 is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M72A4.Ase2NdfBin' )
 export Modele_M202_Flash is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M202_Flash.Ase2NdfBin' )
 export Modele_M249 is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M249.Ase2NdfBin' )
-
+export Modele_M240B              is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/UK/M240B.fbx' )
 export Modele_M47_DRAGON_II   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M47_Dragon_II.Ase2NdfBin' )
-
 export Modele_M67_RCL   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/M67_RCL.Ase2NdfBin' )
 export Modele_AT_4   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/USA/AT_4.Ase2NdfBin' )
 
@@ -50,6 +51,7 @@ export Modele_RPG7VR   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3
 export Modele_RPG18   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/SOV/RPG_18.Ase2NdfBin' )
 export Modele_RPG22   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/SOV/RPG_22.Ase2NdfBin' )
 export Modele_RPG26   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/SOV/RPG_26.Ase2NdfBin' )
+export Modele_RPG27   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/SOV/RPG_27.Ase2NdfBin' )
 export Modele_RPO_A_Shmel   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/SOV/RPO_A_Shmel.Ase2NdfBin' )
 export Modele_AGI_3x40   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/SOV/AGI_3x40.fbx' )
 export Modele_Dragunov   is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/SOV/SVD_Dragunov/SVD_Dragunov.Ase2NdfBin' )
@@ -96,7 +98,7 @@ export Modele_L85A1              is TemplateMeshDescriptor( FileName = 'GameData
 export Modele_L86A1_LSW          is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L86A1_LSW.Ase2NdfBin' )
 export Modele_LAW_80             is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/UK/LAW_80.Ase2NdfBin' )
 export Modele_L4A4_Bren          is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/UK/Bren.Ase2NdfBin' )
-export Modele_L96A1          is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L96A1/L96A1.Ase2NdfBin' )
+export Modele_L96A1              is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/Ammo/Armes/UK/L96A1/L96A1.Ase2NdfBin' )
 
 //------------------------------------------------------------------------------
 //------------------------------------ARMES FR----------------------------------
@@ -143,6 +145,13 @@ SOV_VDV_spe is 'GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_spe.Ase2NdfBin
 SOV_VDV_1_LOW is 'GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_1.Ase2NdfBin'
 
 Komendatura is 'GameData:/Assets/3D/Units/URSS/Infanterie/Komendatura/Komendatura.Ase2NdfBin'
+
+SOV_MotoStrelki_1_TTsko is       'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_1_TTsko.Ase2NdfBin'
+SOV_MotoStrelki_2_TTsko is       'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_2_TTsko.Ase2NdfBin'
+SOV_MotoStrelki_TTsko_NCO is     'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_TTsko_NCO.Ase2NdfBin'
+SOV_MotoStrelki_TTsko_Officer is 'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_TTsko_Officer.Ase2NdfBin'
+SOV_MotoStrelki_TTsko_spe is     'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_TTsko_spe.Ase2NdfBin'
+
 //------------------------------------------------------------------------------
 //Motostrelki_sov
 // export Modele_Motostrelki_sov is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki/MotoStrelki_1.Ase2NdfBin' )
@@ -175,6 +184,15 @@ export Modele_ATGM_Konkurs_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_Mot
 export Modele_Engineers_paras_Flam_POL is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_Engineers_paras_Flam_POL_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
 
+//Engineers_Flam_TTsko_SOV
+export Modele_Engineers_Flam_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Engineers_Flam_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Engineers_Flam_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_Engineers_Flam_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Engineers_Flam_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_Engineers_Flam_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Engineers_Flam_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+
 //Engineers_Flam_SOV
 export Modele_Engineers_Flam_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_Engineers_Flam_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2 )
@@ -193,6 +211,15 @@ export Modele_HMG_NSV_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrel
 export Modele_HMG_NSV_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_HMG_NSV_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
 
+//Engineers_TTsko_SOV
+export Modele_Engineers_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Engineers_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Engineers_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Engineers_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_Engineers_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_Engineers_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Engineers_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+
 //Engineers_SOV
 export Modele_Engineers_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_Engineers_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2 )
@@ -201,6 +228,15 @@ export Modele_Engineers_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStr
 export Modele_Engineers_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_Sniper )
 export Modele_Engineers_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_Engineers_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
+
+//Engineers_Scout_TTsko_SOV
+export Modele_Engineers_Scout_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Engineers_Scout_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Engineers_Scout_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Engineers_Scout_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_Engineers_Scout_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_Engineers_Scout_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Engineers_Scout_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
 
 //Engineers_Scout_SOV
 export Modele_Engineers_Scout_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
@@ -212,6 +248,15 @@ export Modele_Engineers_Scout_SOV_06 is TemplateMeshDescriptor( FileName = SOV_M
 export Modele_Engineers_Scout_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
 
 
+//MANPAD_Igla_TTsko_SOV
+export Modele_MANPAD_Igla_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MANPAD_Igla_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MANPAD_Igla_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MANPAD_Igla_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_MANPAD_Igla_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_MANPAD_Igla_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MANPAD_Igla_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+
 //MANPAD_Igla_SOV
 export Modele_MANPAD_Igla_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_MANPAD_Igla_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2 )
@@ -221,6 +266,15 @@ export Modele_MANPAD_Igla_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoS
 export Modele_MANPAD_Igla_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_MANPAD_Igla_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
 
+
+//FireSupport_TTsko_SOV
+export Modele_FireSupport_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_FireSupport_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_FireSupport_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_FireSupport_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_FireSupport_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_FireSupport_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_FireSupport_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
 
 //FireSupport_SOV
 export Modele_FireSupport_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
@@ -235,6 +289,15 @@ export Modele_Reserve_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrel
 export Modele_Reserve_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_Reserve_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
 
+//MotRifles_BTR_TTsko_SOV
+export Modele_MotRifles_BTR_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MotRifles_BTR_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_BTR_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_BTR_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_MotRifles_BTR_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_MotRifles_BTR_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MotRifles_BTR_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+
 //MotRifles_BTR_SOV
 export Modele_MotRifles_BTR_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_MotRifles_BTR_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2 )
@@ -244,6 +307,15 @@ export Modele_MotRifles_BTR_SOV_05 is TemplateMeshDescriptor( FileName = SOV_Mot
 export Modele_MotRifles_BTR_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_MotRifles_BTR_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
 
+//MotRifles_Metis_TTsko_SOV
+export Modele_MotRifles_Metis_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MotRifles_Metis_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_Metis_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_Metis_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_MotRifles_Metis_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_MotRifles_Metis_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MotRifles_Metis_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+
 //MotRifles_Metis_SOV
 export Modele_MotRifles_Metis_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_MotRifles_Metis_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2 )
@@ -252,6 +324,15 @@ export Modele_MotRifles_Metis_SOV_04 is TemplateMeshDescriptor( FileName = SOV_M
 export Modele_MotRifles_Metis_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_Sniper )
 export Modele_MotRifles_Metis_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_MotRifles_Metis_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
+
+//MotRifles_HMG_TTsko_SOV
+export Modele_MotRifles_HMG_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MotRifles_HMG_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_HMG_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_HMG_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_MotRifles_HMG_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_MotRifles_HMG_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MotRifles_HMG_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
 
 //MotRifles_HMG_SOV
 export Modele_MotRifles_HMG_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
@@ -271,6 +352,15 @@ export Modele_Tuto_MotRifles_SOV_05 is TemplateMeshDescriptor( FileName = SOV_Mo
 export Modele_Tuto_MotRifles_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_Tuto_MotRifles_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
 
+//MotRifles_TTsko_SOV
+export Modele_MotRifles_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MotRifles_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_MotRifles_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_MotRifles_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MotRifles_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+
 //MotRifles_SOV
 export Modele_MotRifles_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_MotRifles_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2 )
@@ -280,14 +370,32 @@ export Modele_MotRifles_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStr
 export Modele_MotRifles_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_MotRifles_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
 
+//Scout_Spetsnaz_SOV
+export Modele_Scout_Spetsnaz_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Scout_Spetsnaz_SOV_02 is TemplateMeshDescriptor( FileName = SOV_VDV_Sniper )
+export Modele_Scout_Spetsnaz_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_Sniper )
+export Modele_Scout_Spetsnaz_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_Officer )
+export Modele_Scout_Spetsnaz_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_Sniper )
+export Modele_Scout_Spetsnaz_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Scout_Spetsnaz_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+
 //Scout_LRRP_SOV
 export Modele_Scout_LRRP_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
-export Modele_Scout_LRRP_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2 )
+export Modele_Scout_LRRP_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
 export Modele_Scout_LRRP_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_NCO )
 export Modele_Scout_LRRP_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_Officer )
 export Modele_Scout_LRRP_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_Sniper )
 export Modele_Scout_LRRP_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_Scout_LRRP_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
+
+//Scout_TTsko_SOV
+export Modele_Scout_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Scout_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Scout_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Scout_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_Scout_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_Scout_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Scout_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
 
 //Scout_SOV
 export Modele_Scout_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
@@ -307,6 +415,15 @@ export Modele_MotoStrelki_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoS
 export Modele_MotoStrelki_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_MotoStrelki_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
 
+//Engineers_CMD_TTsko_SOV
+export Modele_Engineers_CMD_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_Officer )
+export Modele_Engineers_CMD_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Engineers_CMD_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_Engineers_CMD_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_Engineers_CMD_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_Engineers_CMD_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_Engineers_CMD_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_Officer )
+
 //Engineers_CMD_SOV
 export Modele_Engineers_CMD_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_Engineers_CMD_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2 )
@@ -315,6 +432,15 @@ export Modele_Engineers_CMD_SOV_04 is TemplateMeshDescriptor( FileName = SOV_Mot
 export Modele_Engineers_CMD_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_Sniper )
 export Modele_Engineers_CMD_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_spe )
 export Modele_Engineers_CMD_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_LOW )
+
+//MotRifles_CMD_TTsko_SOV
+export Modele_MotRifles_CMD_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_Officer )
+export Modele_MotRifles_CMD_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_CMD_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_MotRifles_CMD_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_MotRifles_CMD_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_MotRifles_CMD_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_MotRifles_CMD_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_Officer )
 
 //MotRifles_CMD_SOV
 export Modele_MotRifles_CMD_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
@@ -479,6 +605,15 @@ export Modele_VDV_Mech_SOV_05 is TemplateMeshDescriptor( FileName = SOV_VDV_Snip
 export Modele_VDV_Mech_SOV_06 is TemplateMeshDescriptor( FileName = SOV_VDV_spe )
 export Modele_VDV_Mech_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_VDV_1_LOW )
 
+//HvyScout_TTsko_SOV
+export Modele_HvyScout_TTsko_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_HvyScout_TTsko_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_HvyScout_TTsko_SOV_03 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2_TTsko )
+export Modele_HvyScout_TTsko_SOV_04 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_NCO )
+export Modele_HvyScout_TTsko_SOV_05 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+export Modele_HvyScout_TTsko_SOV_06 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1_TTsko )
+export Modele_HvyScout_TTsko_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_TTsko_spe )
+
 //HvyScout_SOV
 export Modele_HvyScout_SOV is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_1 )
 export Modele_HvyScout_SOV_02 is TemplateMeshDescriptor( FileName = SOV_MotoStrelki_2 )
@@ -520,6 +655,11 @@ US_Rangers_NCO is  'GameData:/Assets/3D/Units/US/Infanterie/Rangers/Ranger_NCO.A
 
 US_GB_1 is 'GameData:/Assets/3D/Units/US/Infanterie/GreenBerets/GreenBeret_1.Ase2NdfBin'
 US_GB_NCO is 'GameData:/Assets/3D/Units/US/Infanterie/GreenBerets/GreenBeret_NCO.Ase2NdfBin'
+
+NatGuard_1 is       'GameData:/Assets/3D/Units/US/Infanterie/NationalGuard/NatGuard_1.Ase2NdfBin'
+NatGuard_2 is       'GameData:/Assets/3D/Units/US/Infanterie/NationalGuard/NatGuard_2.Ase2NdfBin'
+NatGuard_3 is       'GameData:/Assets/3D/Units/US/Infanterie/NationalGuard/NatGuard_3.Ase2NdfBin'
+NatGuard_NCO is       'GameData:/Assets/3D/Units/US/Infanterie/NationalGuard/NatGuard_NCO.Ase2NdfBin'
 
 //------------------------------------------------------------------------------
 //Airborne_half_Dragon_US
@@ -801,6 +941,14 @@ export Modele_MP_RCL_US_09 is TemplateMeshDescriptor( FileName = US_GI_1 )
 export Modele_MP_RCL_US_10 is TemplateMeshDescriptor( FileName = US_GI_Officer )
 export Modele_MP_RCL_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
 
+//MP_CMD_US
+export Modele_MP_CMD_US is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_MP_CMD_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
+
+//MP_Combat_US
+export Modele_MP_Combat_US is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_MP_Combat_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
+
 //MP_US
 export Modele_MP_US is TemplateMeshDescriptor( FileName = US_GI_1 )
 export Modele_MP_US_02 is TemplateMeshDescriptor( FileName = US_GI_1 )
@@ -815,8 +963,31 @@ export Modele_MP_US_10 is TemplateMeshDescriptor( FileName = US_GI_Officer )
 export Modele_MP_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
 
 //NatGuard_CMD_US
-export Modele_NatGuard_CMD_US is TemplateMeshDescriptor( FileName = US_GI_1 )
-export Modele_NatGuard_CMD_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_NatGuard_CMD_US is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_NatGuard_CMD_US_02 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_NatGuard_CMD_US_03 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_NatGuard_CMD_US_04 is TemplateMeshDescriptor( FileName = NatGuard_NCO )
+export Modele_NatGuard_CMD_US_05 is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_NatGuard_CMD_US_06 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_NatGuard_CMD_US_LOW is TemplateMeshDescriptor( FileName = NatGuard_1 )
+
+//NatGuard_Dragon_US
+export Modele_NatGuard_Dragon_US is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_NatGuard_Dragon_US_02 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_NatGuard_Dragon_US_03 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_NatGuard_Dragon_US_04 is TemplateMeshDescriptor( FileName = NatGuard_NCO )
+export Modele_NatGuard_Dragon_US_05 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_NatGuard_Dragon_US_06 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_NatGuard_Dragon_US_LOW is TemplateMeshDescriptor( FileName = NatGuard_1 )
+
+//NatGuard_LAW_US
+export Modele_NatGuard_LAW_US is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_NatGuard_LAW_US_02 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_NatGuard_LAW_US_03 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_NatGuard_LAW_US_04 is TemplateMeshDescriptor( FileName = NatGuard_NCO )
+export Modele_NatGuard_LAW_US_05 is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_NatGuard_LAW_US_06 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_NatGuard_LAW_US_LOW is TemplateMeshDescriptor( FileName = NatGuard_1 )
 
 //Rifles_CMD_US
 export Modele_Rifles_CMD_US is TemplateMeshDescriptor( FileName = US_GI_1 )
@@ -946,14 +1117,6 @@ export Modele_Rifles_Mot_HMG_US_LOW is TemplateMeshDescriptor( FileName = US_GI_
 export Modele_Rifles_Mot_US is TemplateMeshDescriptor( FileName = US_GI_1 )
 export Modele_Rifles_Mot_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
 
-//NatGuard_Dragon_US
-export Modele_NatGuard_Dragon_US is TemplateMeshDescriptor( FileName = US_GI_1 )
-export Modele_NatGuard_Dragon_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
-
-//NatGuard_LAW_US
-export Modele_NatGuard_LAW_US is TemplateMeshDescriptor( FileName = US_GI_1 )
-export Modele_NatGuard_LAW_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
-
 //Rifles_Cavalry_US
 export Modele_Rifles_Cavalry_US is TemplateMeshDescriptor( FileName = US_GI_1 )
 export Modele_Rifles_Cavalry_US_02 is TemplateMeshDescriptor( FileName = US_GI_1 )
@@ -1018,6 +1181,13 @@ export Modele_Rifles_half_AT4_US_09 is TemplateMeshDescriptor( FileName = US_GI_
 export Modele_Rifles_half_AT4_US_10 is TemplateMeshDescriptor( FileName = US_GI_Officer )
 export Modele_Rifles_half_AT4_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
 
+//Rifles_half_Dragon_NG_US
+export Modele_Rifles_half_Dragon_NG_US is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_Rifles_half_Dragon_NG_US_02 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_Rifles_half_Dragon_NG_US_03 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_Rifles_half_Dragon_NG_US_04 is TemplateMeshDescriptor( FileName = NatGuard_NCO )
+export Modele_Rifles_half_Dragon_NG_US_LOW is TemplateMeshDescriptor( FileName = NatGuard_1 )
+
 //Rifles_half_Dragon_US
 export Modele_Rifles_half_Dragon_US is TemplateMeshDescriptor( FileName = US_GI_1 )
 export Modele_Rifles_half_Dragon_US_02 is TemplateMeshDescriptor( FileName = US_GI_1 )
@@ -1044,6 +1214,13 @@ export Modele_Rifles_half_M60_US_09 is TemplateMeshDescriptor( FileName = US_GI_
 export Modele_Rifles_half_M60_US_10 is TemplateMeshDescriptor( FileName = US_GI_Officer )
 export Modele_Rifles_half_M60_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
 
+//Rifles_half_CMD_NG_US
+export Modele_Rifles_half_CMD_NG_US is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_Rifles_half_CMD_NG_US_02 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_Rifles_half_CMD_NG_US_03 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_Rifles_half_CMD_NG_US_04 is TemplateMeshDescriptor( FileName = NatGuard_NCO )
+export Modele_Rifles_half_CMD_NG_US_LOW is TemplateMeshDescriptor( FileName = NatGuard_1 )
+
 //Rifles_half_CMD_US
 export Modele_Rifles_half_CMD_US is TemplateMeshDescriptor( FileName = US_GI_1 )
 export Modele_Rifles_half_CMD_US_02 is TemplateMeshDescriptor( FileName = US_GI_1 )
@@ -1056,6 +1233,27 @@ export Modele_Rifles_half_CMD_US_08 is TemplateMeshDescriptor( FileName = US_GI_
 export Modele_Rifles_half_CMD_US_09 is TemplateMeshDescriptor( FileName = US_GI_Sniper )
 export Modele_Rifles_half_CMD_US_10 is TemplateMeshDescriptor( FileName = US_GI_Officer )
 export Modele_Rifles_half_CMD_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
+
+//Scout_NG_US
+export Modele_Scout_NG_US is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_Scout_NG_US_02 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_Scout_NG_US_03 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_Scout_NG_US_04 is TemplateMeshDescriptor( FileName = NatGuard_NCO )
+export Modele_Scout_NG_US_LOW is TemplateMeshDescriptor( FileName = NatGuard_1 )
+
+//MANPAD_Stinger_NG_US
+export Modele_MANPAD_Stinger_NG_US is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_MANPAD_Stinger_NG_US_02 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_MANPAD_Stinger_NG_US_03 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_MANPAD_Stinger_NG_US_04 is TemplateMeshDescriptor( FileName = NatGuard_NCO )
+export Modele_MANPAD_Stinger_NG_US_LOW is TemplateMeshDescriptor( FileName = NatGuard_1 )
+
+//Rifles_half_LAW_NG_US
+export Modele_Rifles_half_LAW_NG_US is TemplateMeshDescriptor( FileName = NatGuard_1 )
+export Modele_Rifles_half_LAW_NG_US_02 is TemplateMeshDescriptor( FileName = NatGuard_2 )
+export Modele_Rifles_half_LAW_NG_US_03 is TemplateMeshDescriptor( FileName = NatGuard_3 )
+export Modele_Rifles_half_LAW_NG_US_04 is TemplateMeshDescriptor( FileName = NatGuard_NCO )
+export Modele_Rifles_half_LAW_NG_US_LOW is TemplateMeshDescriptor( FileName = NatGuard_1 )
 
 //Rifles_half_LAW_US
 export Modele_Rifles_half_LAW_US is TemplateMeshDescriptor( FileName = US_GI_1 )

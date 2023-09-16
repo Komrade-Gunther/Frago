@@ -21,6 +21,10 @@ Texture_Speciality_Icon_shock is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/shock.png"
 )
+Texture_Speciality_Icon_electronic_warfare is TUIResourceTexture_Common
+(
+    FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/electronic_warfare.png"
+)
 Texture_Speciality_Icon_era is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/era.png"
@@ -32,6 +36,10 @@ Texture_Speciality_Icon_gsr is TUIResourceTexture_Common
 Texture_Speciality_Icon_ifv_2 is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/ifv_2.png"
+)
+Texture_Speciality_Icon_jammer is TUIResourceTexture_Common
+(
+    FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/jammer.png"
 )
 Texture_Speciality_Icon_cmd is TUIResourceTexture_Common
 (
@@ -64,6 +72,10 @@ Texture_Speciality_Icon_security is TUIResourceTexture_Common
 Texture_Speciality_Icon_sf is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/sf.png"
+)
+Texture_Speciality_Icon_smoke_launcher is TUIResourceTexture_Common
+(
+    FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/smoke_launcher.png"
 )
 Texture_Speciality_Icon_sniper is TUIResourceTexture_Common
 (
@@ -199,9 +211,11 @@ UnitSpecialityAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Speciality_Icon_infantry_half", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_infantry_half)]),
         ("Texture_Speciality_Icon_amphibie", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_amphibie)]),
         ("Texture_Speciality_Icon_shock", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_shock)]),
+        ("Texture_Speciality_Icon_electronic_warfare", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_electronic_warfare)]),
         ("Texture_Speciality_Icon_era", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_era)]),
         ("Texture_Speciality_Icon_gsr", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_gsr)]),
         ("Texture_Speciality_Icon_ifv_2", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_ifv_2)]),
+        ("Texture_Speciality_Icon_jammer", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_jammer)]),
         ("Texture_Speciality_Icon_cmd", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_cmd)]),
         ("Texture_Speciality_Icon_mp", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_mp)]),
         ("Texture_Speciality_Icon_para", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_para)]),
@@ -210,6 +224,7 @@ UnitSpecialityAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Speciality_Icon_resolute", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_resolute)]),
         ("Texture_Speciality_Icon_security", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_security)]),
         ("Texture_Speciality_Icon_sf", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_sf)]),
+        ("Texture_Speciality_Icon_smoke_launcher", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_smoke_launcher)]),
         ("Texture_Speciality_Icon_sniper", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_sniper)]),
         ("Texture_Speciality_Icon_transport1", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_transport1)]),
         ("Texture_Speciality_Icon_transport2", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_transport2)]),

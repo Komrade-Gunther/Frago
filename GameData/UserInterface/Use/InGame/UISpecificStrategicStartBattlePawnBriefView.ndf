@@ -211,6 +211,7 @@ BUCKSpecificStrategicStartBattlePawnBriefMainComponentDescriptor is BUCKButtonDe
                             ExtendWeight = 1.0
                             ComponentDescriptor = PanelRoundedCorner
                             (
+                                ElementName = "AttackTextPanel"
                                 ComponentFrame = TUIFramePropertyRTTI
                                 (
                                     RelativeWidthHeight = [1.0, 1.0]
@@ -236,6 +237,7 @@ BUCKSpecificStrategicStartBattlePawnBriefMainComponentDescriptor is BUCKButtonDe
                             ExtendWeight = 1.0
                             ComponentDescriptor = PanelRoundedCorner
                             (
+                                ElementName = "DefenseTextPanel"
                                 ComponentFrame = TUIFramePropertyRTTI
                                 (
                                     RelativeWidthHeight = [1.0, 1.0]
@@ -254,6 +256,38 @@ BUCKSpecificStrategicStartBattlePawnBriefMainComponentDescriptor is BUCKButtonDe
                                         TextureSize = 14
                                     )
                                 ]
+                            )
+                        ),
+                        BUCKListElementDescriptor
+                        (
+                            ExtendWeight = 1.0
+                            ComponentDescriptor = BUCKTextDescriptor
+                            (
+                                ElementName = 'BattlePlanIncapacitatedFeedback'
+                                ComponentFrame = TUIFramePropertyRTTI()
+
+                                ParagraphStyle = TParagraphStyleRTTI
+                                (
+                                    Alignment = UIText_Center
+                                    VerticalAlignment = UIText_VerticalCenter
+                                )
+
+                                HasBackground = true
+                                BackgroundBlockColorToken = "SD2_Routed"
+
+                                TextStyle = "Default"
+                                HorizontalFitStyle = ~/FitStyle/FitToContent
+                                VerticalFitStyle = ~/FitStyle/FitToContent
+                                TextPadding = TRTTILength4(Magnifiable = [2.0, 2.0, 2.0, 2.0])
+
+                                TypefaceToken = "UIMainFont"
+                                BigLineAction = ~/BigLineAction/CutByDots
+
+                                TextToken = "LBS_OOC"
+                                TextDico = ~/LocalisationConstantes/dico_interface_ingame
+
+                                TextColor = "SD2_Blanc184"
+                                TextSize = "12"
                             )
                         ),
                     ]

@@ -26,8 +26,8 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
     Axis = ~/ListAxis/Vertical
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
-    FirstMargin = TRTTILength( Magnifiable = 8.0 )
-    InterItemMargin = TRTTILength( Magnifiable = 10.0 )
+    // FirstMargin = TRTTILength( Magnifiable = 8.0 )
+    InterItemMargin = TRTTILength( Magnifiable = 8.0 )
 
     Elements =
     [
@@ -54,6 +54,40 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
         (
             ComponentDescriptor = PanelRenfortsEtDate
         ),
+    ]
+
+    BackgroundComponents =
+    [
+        BUCKTextDescriptor
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableOffset = [16,-44]
+                    MagnifiableWidthHeight = [0,40]
+                    // RelativeWidthHeight = [0.0, 1.0]
+                    AlignementToFather = [0.0, 0]
+                    AlignementToAnchor = [0.0, 0]
+                )
+
+
+            ParagraphStyle = TParagraphStyleRTTI
+            (
+                Alignment = UIText_Left
+                VerticalAlignment = UIText_Bottom
+                InterLine = 0
+            )
+            TextStyle = "Default"
+            TextPadding = TRTTILength4 (Magnifiable = [0,0,0,4])
+            HorizontalFitStyle = ~/FitStyle/FitToContent
+            VerticalFitStyle = ~/FitStyle/UserDefined
+            TypefaceToken = "Eurostyle_Italic"
+            BigLineAction = ~/BigLineAction/MultiLine
+            TextToken = 'StAP_sreif'
+            TextDico = ~/LocalisationConstantes/dico_interface_ingame
+            TextColor = "SM_paleSilver"
+            TextSize = "16"
+        )
+
     ]
 )
 
@@ -277,7 +311,7 @@ UISpecificStrategicHUDHeaderOptionViewDescriptor is TUISpecificStrategicHUDHeade
     MainComponentDescriptor = BoutonAccelerationDuTemps
     MainComponentContainerUniqueName = "SpecificStrategicHUDHeaderOptionViewMainContainer"
 
-    PawnQuickMoveSpeedValue = 10.0
+    PawnQuickMoveSpeedValue = 20.0
     PawnStandardMoveSpeedValue = 8.0
 
     DefaultForceShowPowerGauges = true
@@ -290,18 +324,18 @@ private ReinforcementButton is BUCKSpecificButton
     ElementName = 'BtnReinforcement'
 
     RoundedCorner = true
-    PanelRoundedCorner_BackgroundBlockColorToken  = "SM_RifleGreen_75"
+    PanelRoundedCorner_BackgroundBlockColorToken  = "SM_Feldgrau"
     PanelRoundedCorner_BorderLineColorToken = 'SM_Grullo'
 
 
     ButtonRelativeWidthHeight = [0.0, 0.0]
-    ButtonMagnifiableWidthHeight = [400.0, 30.0]
+    ButtonMagnifiableWidthHeight = [240.0, 32.0]
 
     TextParagraphStyle = ~/paragraphStyleTextCenter //paragraphStyleTextLeftAlign
     HasText = true
-    TextTypefaceToken = "Eurostyle_Heavy"
+    TextTypefaceToken = "Eurostyle"
     TextColorToken = "SM_paleSilver"
-    TextSizeToken = "18"
+    TextSizeToken = "16"
     TextToken = ""
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
     HidePointerEvents = true

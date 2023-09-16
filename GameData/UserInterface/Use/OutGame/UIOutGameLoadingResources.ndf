@@ -56,6 +56,7 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
         "HNT_DT010",
         "HNT_DT011",
         "HNT_DT012",
+        "HNT_DT013",
     ]
 
     CommonHints = [

@@ -5,9 +5,13 @@ private EffectsPacksList is TGameplayEffectsPacksList
     EffectsPacks = [
 
         ~/UnitEffect_A_BonusType_Calcul,
+        ~/UnitEffect_AirUnit_Cohesion_Low,
+        ~/UnitEffect_AirUnit_Cohesion_Mediocre,
+        ~/UnitEffect_AirUnit_Cohesion_Normal,
         ~/UnitEffect_Ajoute_Tag_Allie_Proche,
         ~/UnitEffect_Ajoute_Tag_Allie_Proche_Discipline,
         ~/UnitEffect_Ajoute_Tag_Ennemi_Proche,
+        ~/UnitEffect_Ajoute_Tag_GSR_ok,
         ~/UnitEffect_Ajoute_Tag_Hors_Transport,
         ~/UnitEffect_Ajoute_Tag_no_snipe,
         ~/UnitEffect_Ajoute_Tag_snipe_ok,

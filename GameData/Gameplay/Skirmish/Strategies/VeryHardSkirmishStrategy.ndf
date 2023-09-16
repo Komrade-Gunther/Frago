@@ -315,6 +315,7 @@ export VHard_Phase_LastHope is TSequenceGeneratorDescriptor
 
 VeryHardScaling is
 [
+    ~/Supply_Skirmish_Autogen,
     ~/Reco_Autogen,
     ~/Attack_Objectives_Autogen,
 

@@ -4,7 +4,7 @@ BUCKSpecificStrategicObjectiveScoreMainComponentDescriptor is BUCKRackDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, 25.0]
+        MagnifiableWidthHeight = [0.0, 24.0]
         AlignementToFather = [0.0, 0.5]
         AlignementToAnchor = [0.0, 0.5]
     )
@@ -15,7 +15,7 @@ BUCKSpecificStrategicObjectiveScoreMainComponentDescriptor is BUCKRackDescriptor
     (
         ComponentFrame = TUIFramePropertyRTTI
         (
-            MagnifiableWidthHeight = [0.0, 25.0]
+            MagnifiableWidthHeight = [0.0, 24.0]
 
         )
         Axis = ~/ListAxis/Horizontal
@@ -24,12 +24,20 @@ BUCKSpecificStrategicObjectiveScoreMainComponentDescriptor is BUCKRackDescriptor
         [
             BUCKListElementDescriptor
             (
+            MinSize = TRTTILength( Magnifiable = 4.0 )
+                ComponentDescriptor = BUCKContainerDescriptor
+                (
+                    ComponentFrame = TUIFramePropertyRTTI()
+                )
+            ),
+            BUCKListElementDescriptor
+            (
                 ComponentDescriptor = BUCKTextureDescriptor
                 (
                     ElementName = 'Flag'
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        MagnifiableWidthHeight = [40, 25]
+                        MagnifiableWidthHeight = [42, 22]
                         AlignementToFather = [0.0, 0.5]
                         AlignementToAnchor = [0.0, 0.5]
 
@@ -50,7 +58,7 @@ BUCKSpecificStrategicObjectiveScoreMainComponentDescriptor is BUCKRackDescriptor
                     ElementName = 'Score'
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        MagnifiableWidthHeight = [43.0, 25.0]
+                        MagnifiableWidthHeight = [66.0, 20.0]
                         AlignementToFather = [0.0, 0.5]
                         AlignementToAnchor = [0.0, 0.5]
                     )
@@ -87,7 +95,7 @@ UISpecificStrategicObjectiveScoreViewDescriptor is TUISpecificStrategicObjective
 
     NationaliteTextureTokens = MAP
     [
-        (ENationalite/OTAN, "CommonTexture_MotherCountryFlag_NATO"),
-        (ENationalite/PACT, "CommonTexture_MotherCountryFlag_PACT"),
+        (ENationalite/OTAN, "CommonTexture_MotherCountryFlag_NATO_small"),
+        (ENationalite/PACT, "CommonTexture_MotherCountryFlag_PACT_small"),
     ]
 )

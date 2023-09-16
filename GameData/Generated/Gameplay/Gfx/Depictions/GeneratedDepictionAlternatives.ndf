@@ -846,6 +846,11 @@ Alternatives_HMGteam_M60_AB_US is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_HMGteam_M60_AB_US_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_HMGteam_M60_AB_US_LOW ),
 ]
+Alternatives_HMGteam_M60_NG_US is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_HMGteam_M60_NG_US ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_HMGteam_M60_NG_US_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_HMGteam_M60_NG_US_LOW ),
+]
 Alternatives_HMGteam_M60_US is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_HMGteam_M60_US ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_HMGteam_M60_US_MID ),

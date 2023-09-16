@@ -1,5 +1,11 @@
 // Ne pas éditer, ce fichier est auto-généré !
 
+ConditionTagRaisedInUnit_GSR_ok_1 is TConditionTagRaisedInUnit
+(
+    DescriptorId    = GUID:{2d545288-878c-43ce-8c67-a61bccc9a4ad}
+    Tag             = "GSR_ok"
+    Amount          = 1
+)
 ConditionTagRaisedInUnit_GroundUnit_Engaged_1 is TConditionTagRaisedInUnit
 (
     DescriptorId    = GUID:{b98c3452-5d42-4a45-be78-c51ffda30814}

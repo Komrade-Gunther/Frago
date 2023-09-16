@@ -25,52 +25,52 @@ BUCKSpecificStrategicDateMainComponentDescriptor is BUCKListDescriptor
                     Axis = ~/ListAxis/Vertical
 
                     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-
+                    FirstMargin = TRTTILength (Magnifiable = 40)
 
                     Elements =
                     [
-                        BUCKListElementDescriptor
-                        (
-                            ComponentDescriptor = BUCKTextDescriptor
-                            (
-                                ElementName = "StratMorningOrAfternoon"
+                        // BUCKListElementDescriptor
+                        // (
+                        //     ComponentDescriptor = BUCKTextDescriptor
+                        //     (
+                        //         ElementName = "StratMorningOrAfternoon"
 
-                                ComponentFrame = TUIFramePropertyRTTI
-                                (
-                                    MagnifiableWidthHeight = [165,38]
+                        //         ComponentFrame = TUIFramePropertyRTTI
+                        //         (
+                        //             MagnifiableWidthHeight = [165,38]
 
-                                )
-                                ParagraphStyle = CenteredParagraphStyle
+                        //         )
+                        //         ParagraphStyle = CenteredParagraphStyle
 
-                                TextStyle = "Default"
+                        //         TextStyle = "Default"
 
-                                HasBackground = true
-                                BackgroundBlockColorToken = 'SM_Feldgrau'
-                                //TextPadding = TRTTILength4( Magnifiable = [10.0, 0.0, 10.0, 0.0] )
+                        //         HasBackground = true
+                        //         BackgroundBlockColorToken = 'SM_Feldgrau'
+                        //         //TextPadding = TRTTILength4( Magnifiable = [10.0, 0.0, 10.0, 0.0] )
 
-                                HorizontalFitStyle = ~/FitStyle/UserDefined
-                                VerticalFitStyle = ~/FitStyle/UserDefined
+                        //         HorizontalFitStyle = ~/FitStyle/UserDefined
+                        //         VerticalFitStyle = ~/FitStyle/UserDefined
 
-                                TextColor = "BlancEquipe"
-                                TextSize = "14"
-                                TextDico = ~/LocalisationConstantes/dico_interface_ingame
+                        //         TextColor = "BlancEquipe"
+                        //         TextSize = "14"
+                        //         TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
-                                TypefaceToken = "Eurostyle_Medium"
+                        //         TypefaceToken = "Eurostyle_Medium"
 
-                                Hint = BUCKSpecificHintableArea
-                                (
-                                    DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                                    HintTitleToken = "nextT_apt"
-                                    HintBodyToken = "nextT_apb"
-                                    HintExtendedToken = "nextT_ape"
-                                )
+                        //         Hint = BUCKSpecificHintableArea
+                        //         (
+                        //             DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                        //             HintTitleToken = "nextT_apt"
+                        //             HintBodyToken = "nextT_apb"
+                        //             HintExtendedToken = "nextT_ape"
+                        //         )
 
-                                HasBorder = true
-                                BorderThicknessToken = "1"
-                                BorderLineColorToken = "SM_Grullo"
-                                BordersToDraw =  ~/TBorderSide/Bottom
-                            )
-                        ),
+                        //         HasBorder = true
+                        //         BorderThicknessToken = "1"
+                        //         BorderLineColorToken = "SM_Grullo"
+                        //         BordersToDraw =  ~/TBorderSide/Bottom
+                        //     )
+                        // ),
 
                         BUCKListElementDescriptor
                         (
@@ -79,7 +79,7 @@ BUCKSpecificStrategicDateMainComponentDescriptor is BUCKListDescriptor
                                 ElementName = 'NbTurns'
                                 ComponentFrame = TUIFramePropertyRTTI
                                 (
-                                    MagnifiableWidthHeight = [165,25]
+                                    MagnifiableWidthHeight = [70*2+42*2,24]
 
                                 )
 
@@ -88,7 +88,7 @@ BUCKSpecificStrategicDateMainComponentDescriptor is BUCKListDescriptor
                                 VerticalFitStyle = ~/FitStyle/UserDefined
 
                                 HasBackground = true
-                                BackgroundBlockColorToken = 'SM_Ebony'
+                                BackgroundBlockColorToken = 'SM_RifleGreen_75'
                                 //TextPadding = TRTTILength4( Magnifiable = [10.0, 0.0, 10.0, 0.0] )
 
                                 TextStyle = 'Default'
@@ -98,7 +98,7 @@ BUCKSpecificStrategicDateMainComponentDescriptor is BUCKListDescriptor
 
                                 TypefaceToken = "Eurostyle_Italic"
                                 TextColor = "SM_paleSilver"
-                                TextSize = "15"
+                                TextSize = "16"
 
                             )
                         ),
@@ -149,6 +149,42 @@ private PanelDate is BUCKContainerDescriptor
             HintTitleToken = "nextT_dat"
             HintBodyToken = "nextT_dab"
             HintExtendedToken = "nextT_dae"
+        )
+    ),
+    BUCKTextDescriptor
+    (
+        ElementName = "StratMorningOrAfternoon"
+
+        ComponentFrame = TUIFramePropertyRTTI
+        (
+            RelativeWidthHeight = [1,1]
+            MagnifiableOffset = [0,20]
+
+
+        )
+        ParagraphStyle = CenteredParagraphStyle
+
+        TextStyle = "Default"
+
+        // HasBackground = true
+        // BackgroundBlockColorToken = 'SM_Feldgrau'
+        //TextPadding = TRTTILength4( Magnifiable = [10.0, 0.0, 10.0, 0.0] )
+
+        HorizontalFitStyle = ~/FitStyle/UserDefined
+        VerticalFitStyle = ~/FitStyle/UserDefined
+
+        TextColor = "Noir"
+        TextSize = "8"
+        TextDico = ~/LocalisationConstantes/dico_interface_ingame
+
+        TypefaceToken = "Eurostyle_Medium"
+
+        Hint = BUCKSpecificHintableArea
+        (
+            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+            HintTitleToken = "nextT_apt"
+            HintBodyToken = "nextT_apb"
+            HintExtendedToken = "nextT_ape"
         )
     )
     ]

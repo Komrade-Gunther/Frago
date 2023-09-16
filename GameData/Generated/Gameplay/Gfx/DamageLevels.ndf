@@ -41,6 +41,7 @@ export DamageLevelsPackDescriptor_Airplanes_packSupp is TDamageLevelsPackDescrip
             TextColor = RGBA[255,225,125,255]
             AnimationType = ESoldierSuppressStatus/Suppressed
             EffectsPacks = [
+                ~/UnitEffect_AirUnit_Cohesion_Normal,
             ]
             NameForDebug = "Airplanes_packSupp_palier_3"
         ),
@@ -54,6 +55,7 @@ export DamageLevelsPackDescriptor_Airplanes_packSupp is TDamageLevelsPackDescrip
             TextColor = RGBA[255,255,0,255]
             AnimationType = ESoldierSuppressStatus/Suppressed
             EffectsPacks = [
+                ~/UnitEffect_AirUnit_Cohesion_Mediocre,
             ]
             NameForDebug = "Airplanes_packSupp_palier_4"
         ),
@@ -67,6 +69,7 @@ export DamageLevelsPackDescriptor_Airplanes_packSupp is TDamageLevelsPackDescrip
             TextColor = RGBA[255,100,0,255]
             AnimationType = ESoldierSuppressStatus/Pinned
             EffectsPacks = [
+                ~/UnitEffect_AirUnit_Cohesion_Low,
             ]
             NameForDebug = "Airplanes_packSupp_palier_5"
         ),
@@ -83,6 +86,7 @@ export DamageLevelsPackDescriptor_Airplanes_packSupp is TDamageLevelsPackDescrip
             EffectsPacks = [
                 ~/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
                 ~/UnitEffect_evac_avion,
+                ~/UnitEffect_AirUnit_Cohesion_Low,
             ]
             NameForDebug = "Airplanes_packSupp_palier_6"
         ),
@@ -778,7 +782,6 @@ export DamageLevelsPackDescriptor_GroundUnits_packSupp is TDamageLevelsPackDescr
             AnimationType = ESoldierSuppressStatus/Suppressed
             EffectsPacks = [
                 ~/UnitEffect_GroundUnit_Cohesion_Mediocre,
-                ~/UnitEffect_Tps_entre_salve_125pourcent,
             ]
             NameForDebug = "GroundUnits_packSupp_palier_4"
         ),
@@ -793,7 +796,6 @@ export DamageLevelsPackDescriptor_GroundUnits_packSupp is TDamageLevelsPackDescr
             AnimationType = ESoldierSuppressStatus/Pinned
             EffectsPacks = [
                 ~/UnitEffect_GroundUnit_Cohesion_Low,
-                ~/UnitEffect_Tps_entre_salve_150pourcent,
             ]
             NameForDebug = "GroundUnits_packSupp_palier_5"
         ),
@@ -808,7 +810,6 @@ export DamageLevelsPackDescriptor_GroundUnits_packSupp is TDamageLevelsPackDescr
             FeedbackOnSelf = "OnUnitPanicking"
             EffectsPacks = [
                 ~/UnitEffect_GroundUnit_Cohesion_Low,
-                ~/UnitEffect_Tps_entre_salve_150pourcent,
                 ~/UnitEffect_Baisse_Dangerosite_et_Transport_0_Effet,
             ]
             NameForDebug = "GroundUnits_packSupp_palier_6"
@@ -1277,7 +1278,6 @@ export DamageLevelsPackDescriptor_helo_packSupp is TDamageLevelsPackDescriptor
             AnimationType = ESoldierSuppressStatus/Suppressed
             EffectsPacks = [
                 ~/UnitEffect_GroundUnit_Cohesion_Mediocre,
-                ~/UnitEffect_Tps_entre_salve_125pourcent,
             ]
             NameForDebug = "GroundUnits_packSupp_palier_4"
         ),
@@ -1292,7 +1292,6 @@ export DamageLevelsPackDescriptor_helo_packSupp is TDamageLevelsPackDescriptor
             AnimationType = ESoldierSuppressStatus/Pinned
             EffectsPacks = [
                 ~/UnitEffect_GroundUnit_Cohesion_Low,
-                ~/UnitEffect_Tps_entre_salve_150pourcent,
             ]
             NameForDebug = "GroundUnits_packSupp_palier_5"
         ),

@@ -115,6 +115,13 @@ DamageTypeComponentConfigurations is
     ),
     TDamageComponentConfiguration
     (
+        DamageType = "clu_sol_ap"
+        Button = "ClusterAPButton"
+        AmmoText = "WeaponClusterAPAmmoText"
+        CalibreText = "WeaponClusterAPCalibreText"
+    ),
+    TDamageComponentConfiguration
+    (
         DamageType = "cluster"
         Button = "ClusterHEButton"
         AmmoText = "WeaponClusterHEAmmoText"

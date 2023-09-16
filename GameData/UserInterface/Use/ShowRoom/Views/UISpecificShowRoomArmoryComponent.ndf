@@ -653,7 +653,7 @@ private ShowroomTopFiltersList is BUCKListDescriptor
             ComponentDescriptor = ShowroomTogglableFilterButton
             (
                 ElementName = "AllianceFilterAllies"
-                TextureToken = "CommonTexture_MotherCountryFlag_NATO"
+                TextureToken = "CommonTexture_MotherCountryFlag_NATO_small"
                 SubComponentRelativeWidthHeight = [0.7, 0.7]
             )
         ),
@@ -663,7 +663,7 @@ private ShowroomTopFiltersList is BUCKListDescriptor
             ComponentDescriptor = ShowroomTogglableFilterButton
             (
                 ElementName = "AllianceFilterAxis"
-                TextureToken = "CommonTexture_MotherCountryFlag_WP"
+                TextureToken = "CommonTexture_MotherCountryFlag_PACT_small"
                 SubComponentRelativeWidthHeight = [0.7, 0.7]
             )
         ),

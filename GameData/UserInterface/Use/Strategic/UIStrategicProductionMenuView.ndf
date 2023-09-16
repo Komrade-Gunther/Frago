@@ -8,7 +8,7 @@ BUCKSpecificStrategicProductionMenuMainComponentDescriptor is BUCKListDescriptor
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableOffset = [0,20]
+        // MagnifiableOffset = [0,400]
         MagnifiableWidthHeight = [0.0, 100.0]
     )
 
@@ -32,9 +32,7 @@ BUCKSpecificStrategicProductionMenuMainComponentDescriptor is BUCKListDescriptor
 
                 FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
                 FitToMaximumSize = TRTTILength2(Magnifiable = [1200.0, 0.0] )
-                //ExternalScrollbar = true
-                //HasBackground = true
-                BackgroundBlockColorToken = 'Orange'
+
                 Components =
                 [
                     ~/StrategicProductionMenuCategoryList
@@ -71,10 +69,11 @@ private StrategicProductionMenuCategoryList is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0,100]
+
     )
 
     Axis = ~/ListAxis/Horizontal
-    FirstMargin = TRTTILength (Magnifiable = 5)
+    FirstMargin = TRTTILength (Magnifiable = 8)
     InterItemMargin = TRTTILength (Magnifiable = 0)
     LastMargin = TRTTILength(Magnifiable = 0.0)
 
@@ -94,7 +93,8 @@ template StrategicProductionMenuCategoryButton
 [
     TextureToken : string = 'renfort_mid',
     HintBodyToken : string = 'mpro_nexb',
-    TextureColorToken : string = 'SM_renfort_nonAvailable',
+    TextureColorToken : string = 'SM_RifleGreen_75',
+    // TextureColorToken : string = 'SM_renfort_nonAvailable',
     TextColor : string = 'SM_paleSilver',
     TypefaceToken : string = 'Eurostyle_Italic'
 ]
@@ -103,7 +103,7 @@ template StrategicProductionMenuCategoryButton
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [180,60]
+        MagnifiableWidthHeight = [160+16,80]
     )
 
     IsTogglable = true
@@ -115,9 +115,9 @@ template StrategicProductionMenuCategoryButton
             Axis = ~/ListAxis/Vertical
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableWidthHeight = [180.0, 0.0]
+                MagnifiableWidthHeight = [160+16.0, 0.0]
             )
-            InterItemMargin = TRTTILength( Magnifiable = 6.0 )
+            InterItemMargin = TRTTILength( Magnifiable = 4.0 )
             LastMargin = TRTTILength( Magnifiable = 0.0 )
 
             Elements =
@@ -128,12 +128,13 @@ template StrategicProductionMenuCategoryButton
                     (
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                                MagnifiableWidthHeight = [180.0, 21.0]
+                                MagnifiableWidthHeight = [160.0+16, 21.0]
                                 AlignementToAnchor = [0.5, 0.0]
                                 AlignementToFather = [0.5, 0.0]
                             )
                         TextureToken = <TextureToken>
                         TextureColorToken = 'SM_renfort_fleche'
+
                     )
                 ),
                 BUCKListElementDescriptor
@@ -142,16 +143,20 @@ template StrategicProductionMenuCategoryButton
                     (
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                                MagnifiableWidthHeight = [180.0, 44.0]
+                                MagnifiableWidthHeight = [160.0, 48.0]
+                                MagnifiableOffset = [5,0]
                         )
-                        TextureFrame = TUIFramePropertyRTTI
-                        (
-                            MagnifiableWidthHeight = [170,44]
-                            AlignementToAnchor = [0.5, 0.0]
-                            AlignementToFather = [0.5, 0.0]
-                        )
+                        // TextureFrame = TUIFramePropertyRTTI
+                        // (
+                        //     MagnifiableWidthHeight = [170,44]
+                        //     AlignementToAnchor = [0.5, 0.0]
+                        //     AlignementToFather = [0.5, 0.0]
+                        // )
                         TextureToken = 'renfort_date'
                         TextureColorToken = <TextureColorToken>
+
+
+
                         Components =
                         [
                             BUCKTextDescriptor
@@ -159,7 +164,7 @@ template StrategicProductionMenuCategoryButton
                                 ElementName = "TextElement"
                                 ComponentFrame = TUIFramePropertyRTTI
                                 (
-                                    MagnifiableWidthHeight = [180,37]
+                                    MagnifiableWidthHeight = [160,40]
                                     MagnifiableOffset = [0,8]
                                 )
 
@@ -186,6 +191,9 @@ template StrategicProductionMenuCategoryButton
                                     DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                                     HintBodyToken = <HintBodyToken>
                                 )
+                                HasBorder = true
+                                BorderThicknessToken = '1'
+                                BorderLineColorToken = 'SM_Grullo'
                             )
                         ]
                     )
@@ -205,7 +213,7 @@ private StrategicProductionUnitContainerListScrollingContainer is BUCKSpecificSc
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [0.9, 0.0]
-        MagnifiableOffset = [10.0, 0.0]
+        MagnifiableOffset = [22.0, 0.0]
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContentVertically
@@ -227,7 +235,7 @@ private StrategicProductionUnitContainerListScrollingContainer is BUCKSpecificSc
             BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
             // FirstMargin = TRTTILength( Magnifiable = 15.0 )
             //LastMargin = TRTTILength( Magnifiable = 20.0 )
-            InterItemMargin = TRTTILength( Magnifiable = 10.0 )
+            InterItemMargin = TRTTILength( Magnifiable = 16.0 )
         )
     ]
 )
@@ -274,6 +282,7 @@ private StrategicProductionBattalionRackScrollingContainer is BUCKSpecificScroll
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 195.0] //h 171
+        MagnifiableOffset = [12,0]
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
@@ -298,7 +307,7 @@ private StrategicProductionBattalionRackScrollingContainer is BUCKSpecificScroll
             BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
             Axis = ~/ListAxis/Horizontal
-            InterItemMargin = TRTTILength(Magnifiable = 2.0)
+            InterItemMargin = TRTTILength(Magnifiable = 8.0)
 
             BladeDescriptor = PawnReinforcementButton
         )
@@ -368,7 +377,8 @@ PawnReinforcementButton is BUCKButtonDescriptor
             TypefaceToken = "UISecondFont"
 
             VerticalFitStyle = ~/FitStyle/UserDefined
-            BigLineAction = ~/BigLineAction/MultiLine
+            BigLineAction = ~/BigLineAction/CutByDots
+
 
             TextDico = ~/LocalisationConstantes/dico_unites
             TextSize = '12'
@@ -476,7 +486,7 @@ UIStrategicProductionMenuViewDescriptor is TUIStrategicProductionMenuViewDescrip
 
     ShortcutUILayer = $/M3D/Input/UserInputLayerHandler/InputLayer_InGameShortcuts
 
-    AvailableCategoryButtonDescriptor = StrategicProductionMenuCategoryButton( TypefaceToken = 'Eurostyle' TextureToken = 'renfort_start' HintBodyToken = 'mpro_avab' TextureColorToken = 'SM_Grullo' TextColor = 'SM_Noir')
+    AvailableCategoryButtonDescriptor = StrategicProductionMenuCategoryButton( TypefaceToken = 'Eurostyle' TextureToken = 'renfort_start' HintBodyToken = 'mpro_avab' TextureColorToken = 'SM_Feldgrau' TextColor = 'BlancEquipe')
     CategoryButtonDescriptor = StrategicProductionMenuCategoryButton()
     CategoryRadioButtonManager = ~/StrategicProductionMenuCategoryButtonRadioButtonManager
 

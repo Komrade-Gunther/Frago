@@ -78,6 +78,16 @@ UnitSpecialties is TUnitSpecialtiesContainer
             )
         ),
         (
+            "_electronic_warfare",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_electronic_warfare"
+                SpecialtyHintTitleToken    = "TSVZPHOVBU"
+                SpecialtyHintBodyToken     = "WNBCASMQQC"
+                SpecialtyHintExtendedToken = "GWMUGGFPRZ"
+            )
+        ),
+        (
             "_era",
             TUnitSpecialtyDescriptor
             (
@@ -114,6 +124,16 @@ UnitSpecialties is TUnitSpecialtiesContainer
                 SpecialtyHintTitleToken    = "SKBEKQUOWJ"
                 SpecialtyHintBodyToken     = "VBIRXDYEPR"
                 SpecialtyHintExtendedToken = "XKAFYZLHWN"
+            )
+        ),
+        (
+            "_jammer",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_jammer"
+                SpecialtyHintTitleToken    = "HNVPJAYHUW"
+                SpecialtyHintBodyToken     = "ALBKAPAUKL"
+                SpecialtyHintExtendedToken = "OMRDTDBYQW"
             )
         ),
         (
@@ -203,6 +223,16 @@ UnitSpecialties is TUnitSpecialtiesContainer
                 SpecialtyHintTitleToken    = "KFSLDLHQES"
                 SpecialtyHintBodyToken     = "BYWHTUHHIT"
                 SpecialtyHintExtendedToken = "LXHBLLQUDL"
+            )
+        ),
+        (
+            "_smoke_launcher",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_smoke_launcher"
+                SpecialtyHintTitleToken    = "XQSJEKJCWA"
+                SpecialtyHintBodyToken     = "PPQXITMDXU"
+                SpecialtyHintExtendedToken = "VLYGCDSRHV"
             )
         ),
         (

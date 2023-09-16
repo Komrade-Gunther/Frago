@@ -360,16 +360,6 @@ Texture_RTS_H_Support_air is TUIResourceTexture_Common
     FileName      = 'Assets/2D/Interface/UseInGame/LabelIcons/RTS/Support_air.png'
 )
 
-Texture_AA_air is TUIResourceTexture_Common
-(
-    FileName      = 'Assets/2D/Interface/UseInGame/LabelIcons/NATO/AA_air.png'
-)
-
-Texture_RTS_H_AA_air is TUIResourceTexture_Common
-(
-    FileName      = 'Assets/2D/Interface/UseInGame/LabelIcons/RTS/AA_air.png'
-)
-
 Texture_SEAD_air is TUIResourceTexture_Common
 (
     FileName      = 'Assets/2D/Interface/UseInGame/LabelIcons/NATO/SEAD_air.png'
@@ -378,6 +368,16 @@ Texture_SEAD_air is TUIResourceTexture_Common
 Texture_RTS_H_SEAD_air is TUIResourceTexture_Common
 (
     FileName      = 'Assets/2D/Interface/UseInGame/LabelIcons/RTS/SEAD_air.png'
+)
+
+Texture_AA_air is TUIResourceTexture_Common
+(
+    FileName      = 'Assets/2D/Interface/UseInGame/LabelIcons/NATO/AA_air.png'
+)
+
+Texture_RTS_H_AA_air is TUIResourceTexture_Common
+(
+    FileName      = 'Assets/2D/Interface/UseInGame/LabelIcons/RTS/AA_air.png'
 )
 
 Texture_fob is TUIResourceTexture_Common
@@ -467,10 +467,10 @@ NATORTSAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_RTS_H_avion_nonIdentifie", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_avion_nonIdentifie)]),
         ("Texture_Support_air", MAP [(~/ComponentState/Normal, ~/Texture_Support_air)]),
         ("Texture_RTS_H_Support_air", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_Support_air)]),
-        ("Texture_AA_air", MAP [(~/ComponentState/Normal, ~/Texture_AA_air)]),
-        ("Texture_RTS_H_AA_air", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_AA_air)]),
         ("Texture_SEAD_air", MAP [(~/ComponentState/Normal, ~/Texture_SEAD_air)]),
         ("Texture_RTS_H_SEAD_air", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_SEAD_air)]),
+        ("Texture_AA_air", MAP [(~/ComponentState/Normal, ~/Texture_AA_air)]),
+        ("Texture_RTS_H_AA_air", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_AA_air)]),
         ("Texture_fob", MAP [(~/ComponentState/Normal, ~/Texture_fob)]),
         ("Texture_RTS_H_fob", MAP [(~/ComponentState/Normal, ~/Texture_RTS_H_fob)]),
     ]

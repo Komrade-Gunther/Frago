@@ -421,7 +421,7 @@ template LDHintInfoIngameScore_Steelman
     ComponentFrame : TUIFramePropertyRTTI = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [340.0, 0.0]
-        MagnifiableOffset = [0.0, 40.0]
+        MagnifiableOffset = [0.0, 40.0+30]
         AlignementToFather = [0.5, 0.0]
         AlignementToAnchor = [0.5, 0.0]
     ),
@@ -1287,7 +1287,7 @@ is BUCKContainerDescriptor
                                         ComponentDescriptor = LDHintDefaultButtonList
                                         (
                                             InterItemMarginAsFloat = ~/LDHintMagnifiableInterButtonMargin
-                                            BladeDescriptor = LDHintBlueButton
+                                            BladeDescriptor = LDHintGreenButton
                                         )
                                     ),
                                 ] : [] )
@@ -2711,6 +2711,17 @@ is BUCKSpotlightDescriptor
     )
 )
 
+SpotLight_StartGame is BUCKSpotlightDescriptor
+(
+    UniqueName = "Spotlight_StartGame"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1, 1]
+        AlignementToAnchor = [0, 0]
+        AlignementToFather = [0, 0]
+    )
+)
+
 //-------------------------------------------------------------------------------------
 Spotlight_mortier is BUCKSpotlightDescriptor
 (
@@ -2732,7 +2743,7 @@ Spotlight_mortier is BUCKSpotlightDescriptor
 template SuperHint
 [
     alignementGauche : boolean = true,
-    challenge : boolean = false
+    challenge : boolean = false,
 ]
  is BUCKListDescriptor
 (
@@ -3487,6 +3498,17 @@ private LDHintBlueButton is LDHintBaseButton
     BorderLineColorToken = "LDHintSolo_texte"
     TextSize = "18"
     TextColor = "LDHintSolo_texte"
+)
+private LDHintGreenButton is LDHintBaseButton
+(
+    ElementName = ""
+    HasBackground = true
+    BackgroundBlockColorToken = "SM_Feldgrau"
+    HasBorder = true
+    BorderThicknessToken = "2"
+    BorderLineColorToken = "SM_paleSilver"
+    TextSize = "18"
+    TextColor = "SM_paleSilver"
 )
 
 private template LDHintDefaultButtonList

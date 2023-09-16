@@ -704,7 +704,7 @@ MissileCarriage_ATteam_TOW2_para_US_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
-// ATteam_TOW_US : ['ATGM BGM71D TOW 2']
+// ATteam_TOW_US : ['ATGM BGM71 TOW']
 MissileCarriage_ATteam_TOW_US is TMissileCarriageConnoisseur
 (
     MeshDescriptor = $/GFX/DepictionResources/Modele_ATteam_TOW_US
@@ -1168,7 +1168,7 @@ MissileCarriage_BRDM_Konkurs_DDR_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
-// BRDM_Malyu_P_DDR : ['ATGM 9M14 MalyutkaP']
+// BRDM_Malyu_P_DDR : ['ATGM 9M14 MalyutkaP x6']
 MissileCarriage_BRDM_Malyu_P_DDR is TMissileCarriageConnoisseur
 (
     MeshDescriptor = $/GFX/DepictionResources/Modele_BRDM_Malyu_P_DDR
@@ -1177,7 +1177,7 @@ MissileCarriage_BRDM_Malyu_P_DDR is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 8
+            Count = 48
             MissileType = eAGM
             WeaponIndex = 1
         ),
@@ -1191,7 +1191,7 @@ MissileCarriage_BRDM_Malyu_P_DDR_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 8
+            Count = 48
             MissileType = eAGM
             WeaponIndex = 1
         ),
@@ -9600,6 +9600,92 @@ MissileCarriage_Su_25_Multirole_FRL_Showroom is TMissileCarriageConnoisseur
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 4
+        ),
+    ]
+)
+// AH64_Apache_US_101st_FRL : ['RocketAir Hydra 70mm x19'] ['ATAS x4']
+MissileCarriage_AH64_Apache_US_ATAS_101st_FRL is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_AH64_Apache_US
+    PylonSet = ~/DepictionPylonSet_Helico_Default
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 38
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            WeaponIndex = 3
+        ),
+    ]
+)
+MissileCarriage_AH64_Apache_US_ATAS_101st_FRL_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_AH64_Apache_US
+    PylonSet = ~/DepictionPylonSet_Helico_Default_Showroom
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 38
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            WeaponIndex = 3
+        ),
+    ]
+)
+// F16E_AA_US : ['AA AIM9M Sidewinder'] ['AA AIM7M Sparrow']
+MissileCarriage_F16E_AA_US_101st_FRL is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_F16E_AA_US
+    PylonSet = ~/DepictionPylonSet_Airplane_Default
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 38
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
+        ),
+    ]
+)
+MissileCarriage_F16E_AA_US_101st_FRL_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_F16E_AA_US
+    PylonSet = ~/DepictionPylonSet_Airplane_Default_Showroom
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 38
+            MissileType = eAGM
+            MountingType = eMountingPod
+            WeaponIndex = 3
         ),
     ]
 )

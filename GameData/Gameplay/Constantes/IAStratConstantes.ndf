@@ -219,7 +219,6 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     NumberOfDangerousIndiceAlwaysIgnoredForTacticalPathInCover = 1  // X | Dans le TacticalPathInCover, nombre de cases dangereuses à éviter :
     SecondsToIgnoreDangerousIndiceForTacticalPathInCover = 10.0     // Y | (X + (1 toutes les Y secondes)) * (Z si on est en Blitzkireg)
     BlitzkriegMultiplierForTacticalPathInCover = 4.0                // Z |
-    ForceTacticalMoveAndAttack = true
 
     //--------------- Regroup Point ---------------------------------------//
     NumberOfDangerousIndicesToIgnoreForRegroupPoint = 1

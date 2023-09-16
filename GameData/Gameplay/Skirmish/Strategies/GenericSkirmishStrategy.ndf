@@ -307,6 +307,7 @@ Airstrike_Arti_Shuffle is
 
 Medium_Scaling is
 [
+    ~/Supply_Skirmish_Autogen,
     ~/Reco_Autogen,
     ~/Attack_Main_Autogen,
     ~/Attack_Helo_Autogen,

@@ -39,6 +39,8 @@ UIInGameResource is TUISpecificInGameResources
         ("UISpecificHUDScorePlayerViewDescriptor", ~/UISpecificHUDScorePlayerViewDescriptor),
         ("UIDisplayStartingInformationViewDescriptor", ~/UISpecificDisplayStartingInformationViewDescriptor),
         ("UIAutoDeployViewDescriptor", ~/UISpecificAutoDeployViewDescriptor),
+        ("UILaunchBattleViewDescriptor", ~/UILaunchBattleViewDescriptor),
+        ("UIIdleUnitViewDescriptor", ~/UIIdleUnitViewDescriptor),
         ("UIReinforcementLabelViewDescriptor", ~/UISpecificReinforcementLabelViewDescriptor),
         ("UICommandZoneLabelViewDescriptor", ~/UISpecificCommandZoneLabelViewDescriptor),
         ("ObjectiveViewDescriptor", ~/UISpecificInGameObjectiveBriefViewDescriptor),
@@ -240,19 +242,18 @@ InGameMainContainerResource is TUICommonMainContainerResource
                     ),
                 ]
             ),
-
             BUCKContainerDescriptor
             (
-                UniqueName = "SpecificAutoDeployMainComponentDescriptor"
+                UniqueName = "SpecificLaunchBattleMainComponentDescriptor"
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     AlignementToFather = [0.5, 0.0]
                     AlignementToAnchor = [0.5, 0.0]
+
+                    MagnifiableOffset = [0.0, 78.0]
+                    MagnifiableWidthHeight = [DeploymentPhasePanelWidth, DeploymentPhasePanelHeight]
                 )
-
-                FitStyle = ~/ContainerFitStyle/FitToContent
             ),
-
             BUCKContainerDescriptor
             (
                 UniqueName = "SpecificDisplayStartingInformationMainComponentDescriptor"

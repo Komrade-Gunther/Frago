@@ -1237,6 +1237,8 @@ is TUISpecificInGameUnitLabelDebugViewDescriptor
 (
     MainComponentDescriptor =  <MainComponentDescriptor>
 
+    ExperienceTexturesResources     = ~/ExperienceTexturesResources
+
     // Animation Stealthed
     // Temps de durée d'un blink
     AnimStealthedBlinkDuration = 2.0

@@ -37,6 +37,8 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "shint", SuperHint() ),
         ( "shint_droit", SuperHint( alignementGauche = false) ),
         ( "shint_op", SuperHint( alignementGauche = false challenge = true) ),
+        ( "shint_st_right", SuperHint( alignementGauche = false challenge = false) ),
+        ( "shint_st_left", SuperHint( alignementGauche = true challenge = false) ),
 
         //-------------------------------------------------------------------------------------
         // spotlight pour tuto
@@ -94,15 +96,6 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
                 MagnifiableOffset = [82.0-16, 2.0]
                 AlignementToAnchor = [0.0, 0.0]
                 AlignementToFather = [0.0, 0.0]
-            )
-        ),
-        ( "Spotlight_StarDeploy",         Spotlight_LD
-            (
-                UniqueName = "Spotlight_StarDeploy"
-                MagnifiableWidthHeight = [193.0, 34.0]
-                MagnifiableOffset = [-94.0, 163.0+13]
-                AlignementToAnchor = [0.5, 0.0]
-                AlignementToFather = [0.5, 0.0]
             )
         ),
         ("Spotlight_sellButton",         Spotlight_LD
@@ -338,6 +331,8 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "BH_otan_4",             Steelman_newLDHINT (Texture = 'BH_otan_4' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_5",             Steelman_newLDHINT (Texture = 'BH_otan_5' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_6",             Steelman_newLDHINT (Texture = 'BH_otan_6' HasButtons = true portrait_name = 'rfa_maj_1' )),
+        ( "Steelman_Hawthorne",             Steelman_newLDHINT (Texture = 'Steelman_Hawthorne' HasButtons = true portrait_name = 'rfa_maj_1' )),
+        ( "Steelman_Sulivan",             Steelman_newLDHINT (Texture = 'Steelman_Sulivan' HasButtons = true portrait_name = 'rfa_maj_1' )),
 
         ( "BH_otan_popup_1",             Steelman_newLDHINT (Texture = 'BH_otan_popup_1' HasButtons = true text_laius = 'bh_o1' text1_title = 'bh_o1_1t' text1_body = 'bh_o1_1b' text2_title = 'bh_o1_2t' text2_body = 'bh_o1_2b')),
         ( "BH_otan_popup_2",             Steelman_newLDHINT (Texture = 'BH_otan_popup_2' HasButtons = true text_laius = 'bh_o2' text1_title = 'bh_o2_1t' text1_body = 'bh_o2_1b' text2_title = 'bh_o2_2t' text2_body = 'bh_o2_2b')),
@@ -540,6 +535,8 @@ UseInGame_AdditionalLDHintTextureBank is TBUCKToolAdditionalTextureBank
     ( "BH_otan_4",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_4.png' ))] ),
     ( "BH_otan_5",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_5.png' ))] ),
     ( "BH_otan_6",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_6.png' ))] ),
+    ( "Steelman_Hawthorne",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/Hawthorne.png' ))] ),
+    ( "Steelman_Sulivan",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/Sulivan.png' ))] ),
 
     ( "BH_otan_popup_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_popup_1.png' ))] ),
     ( "BH_otan_popup_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_popup_2.png' ))] ),

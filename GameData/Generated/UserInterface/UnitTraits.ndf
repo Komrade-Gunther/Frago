@@ -15,6 +15,15 @@ UnitTraits is TUnitTraitsContainer
             )
         ),
         (
+            "CLGP",
+            TUnitTraitDescriptor
+            (
+                TraitTextureName       = "Texture_Trait_Icon_indirect_CLGP"
+                TraitHintTitleToken    = "YLOZVWCYJF"
+                TraitHintBodyToken     = "DYTVXJJXIQ"
+            )
+        ),
+        (
             "F&F",
             TUnitTraitDescriptor
             (

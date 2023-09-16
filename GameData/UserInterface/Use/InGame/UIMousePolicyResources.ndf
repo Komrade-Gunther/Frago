@@ -89,6 +89,7 @@ MouseWidgetSelector_Attack is TUIMouseWidgetSelector_Attack
         ("bombe"        , "TC_HE"),
         ("cluster"      , "TC_HE"),
         ("cluster_ap"   , "TC_AP"),
+        ("clu_sol_ap"   , "TC_AP"),
         ("flamme"       , "TC_FLAMES"),
         ("frag"         , "TC_HE"),
         ("he"           , "TC_HE"),
@@ -1085,7 +1086,7 @@ private TextureToutVert is TResourceTextureFromFile
 // Flèche pour l'envoi d'un avion en mission
 private AirplaneMissionArrowDescriptor is TUIPathDescriptor
 (
-    Color                 = [255, 255, 255, 128] // BGRA
+    Color                 = [255, 255, 255, 255] // BGRA
     PlaqueSurLeSol        = true
     RenderLayerSelector = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
     Material              = $/M3D/Shader/MaterialBezierLine_Bichrome
@@ -1099,7 +1100,7 @@ private AirplaneMissionArrowDescriptor is TUIPathDescriptor
 // Flèche pour une unité de renfort
 private SpawnUnitArrowDescriptor is TUIPathDescriptor
 (
-    Color                 = [255, 255, 255, 128] // BGRA
+    Color                 = [255, 255, 255, 255] // BGRA
     PlaqueSurLeSol        = true
     RenderLayerSelector = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
     Material              = $/M3D/Shader/MaterialBezierLine_Bichrome

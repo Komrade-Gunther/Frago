@@ -75,7 +75,7 @@ private UnitNameAndRightListNameOnly is BUCKContainerDescriptor
      ComponentFrame = TUIFramePropertyRTTI
      (
         AlignementToFather = [0.5, 0.0]
-        AlignementToAnchor = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 1.0]
      )
 
     FitStyle = ~/ContainerFitStyle/FitToContent
@@ -135,10 +135,6 @@ private UpperLabelNameOnly is BUCKListDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = ~/UnitNameAndRightListNameOnly
-        ),
-        BUCKListElementDescriptor
-        (
             ComponentDescriptor = UnitLabelUnitMoraleGaugeBUCKComponent
             (
                 ElementName = "MoraleGauge"
@@ -153,6 +149,11 @@ private UpperLabelNameOnly is BUCKListDescriptor
                 LocalRenderLayer = 1
             )
         ),
+    ]
+
+    ForegroundComponents =
+    [
+        ~/UnitNameAndRightListNameOnly
     ]
 )
 

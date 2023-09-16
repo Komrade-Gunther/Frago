@@ -512,8 +512,8 @@ template UISpecificDivisionBriefViewDescriptor
     MainComponentDescriptor = <MainComponentDescriptor>
     MainComponentContainerUniqueName = <UniqueName>
 
-    AlliesTextureToken = "CommonTexture_MotherCountryFlag_NATO"
-    AxisTextureToken = "CommonTexture_MotherCountryFlag_WP"
+    AlliesTextureToken = "CommonTexture_MotherCountryFlag_NATO_small"
+    AxisTextureToken = "CommonTexture_MotherCountryFlag_PACT_small"
 
     PremadeBattlegroupTextColor = <PremadeBattlegroupTextColor>
     HasBattlegroup = <HasBattlegroup>

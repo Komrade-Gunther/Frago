@@ -4948,6 +4948,25 @@ Descriptor_OrderAvailability_HMGteam_M60_AB_US is [
     "AIAttack",
     "AIStop",
 ]
+Descriptor_OrderAvailability_HMGteam_M60_NG_US is [
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "Attack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop",
+]
 Descriptor_OrderAvailability_HMGteam_M60_US is [
     "Stop",
     "Move",

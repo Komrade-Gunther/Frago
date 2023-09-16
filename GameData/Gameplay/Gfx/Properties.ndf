@@ -3,7 +3,7 @@ export GfxProperties is TGfxProperties
     World                     = $/M3D/Scene/DefaultWorld
     InfantryMimetic = ~/InfantryMimetic + MAP[('TestUnit_ModelInfantry', TacticDepiction_TestUnit_ModelInfantry_Squad)]
     InfantryMimeticGhost = ~/InfantryMimeticGhost
-    UnitMimeticGhost = ~/VehicleMimeticGhost + ~/AerialMimeticGhost + MAP[
+    UnitMimeticGhost = ~/VehicleMimeticGhost + ~/AerialMimeticGhost + ~/PawnGhost + ~/AerialPawnGhost + MAP[
         ("dummy", TDepictionTemplate
             (
                 Scaler = TIdentityScaler()

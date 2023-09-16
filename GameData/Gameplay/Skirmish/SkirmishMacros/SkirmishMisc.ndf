@@ -7,36 +7,44 @@ MinimumResourceForLaunch_Economic is 1000
 //-------------------------------------------------------------------------
 //------------------------------ SUPPLY -----------------------------------
 //-------------------------------------------------------------------------
-
 // Missions
 //-------------------------------------------------------------------------
-export Supply_Skirmish is TMacroActionDescriptor_Supply_Specific
+
+private template Template_Supply
+[
+    MinimumResourceForLaunch:int = 0,
+    AdditionnalParameter = []
+]
+is TMacroActionDescriptor_Supply_Specific
 (
     ParametresDeMission =
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_BasedOnNumberOfCorridors NumberLaunchBasedOnGenerationType = 2),
         TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Supply_Skirmish]),
+        TMacroActionLifetimeSettingHolder(MinimumResourceForLaunch = <MinimumResourceForLaunch>),
         TSupplySettingHolder(SupplyableMinimumRatio = MAP[
             (ESupplyableType_Fuel, 0.3),
             (ESupplyableType_Weapons, 0.3),
             (ESupplyableType_Life, 0.5),
         ]),
     ]
+    +
+    <AdditionnalParameter>
+)
+
+//-------------------------------------------------------------------------
+export Supply_Skirmish is Template_Supply
+(
 )
 //-------------------------------------------------------------------------
-export Supply_Skirmish_Allied is TMacroActionDescriptor_Supply_Specific
+export Supply_Skirmish_Autogen is Template_Supply
 (
-    ParametresDeMission =
-    [
-        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
-        TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Supply_Skirmish] DisableReinforcement = true),
-        TSupplySettingHolder(SupplyableMinimumRatio = MAP[
-            (ESupplyableType_Fuel, 0.2),
-            (ESupplyableType_Weapons, 0.2),
-            (ESupplyableType_Life, 0.4),
-        ]),
-        TCanTargetAlliedSettingHolder(),
-    ]
+    MinimumResourceForLaunch = ~/MinimumResourceForLaunch_Stage_1
+)
+//-------------------------------------------------------------------------
+export Supply_Skirmish_Allied is Template_Supply
+(
+    AdditionnalParameter = [ TCanTargetAlliedSettingHolder(),]
 )
 
 //-------------------------------------------------------------------------
@@ -49,6 +57,7 @@ export Pool_Supply_Skirmish is TPoolModel
         DescriptorId = GUID:{e902f9de-d39e-11e8-8c68-88d7f642f58e}
         Required = true
         Nb = 1
+        PriceComparisonMethod = EPriceComparatorType/Random
         TagsPriority = [
             "Vehicule_Logistique",
             "Helo_Logistique",

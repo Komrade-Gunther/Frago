@@ -846,6 +846,11 @@ GhostDepiction_HMGteam_M60_AB_US is GhostVehicleDepictionTemplate
     Selector = Selector_HMGteam_M60_AB_US
     Alternatives = Alternatives_HMGteam_M60_AB_US
 )
+GhostDepiction_HMGteam_M60_NG_US is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_HMGteam_M60_NG_US
+    Alternatives = Alternatives_HMGteam_M60_NG_US
+)
 GhostDepiction_HMGteam_M60_US is GhostVehicleDepictionTemplate
 (
     Selector = Selector_HMGteam_M60_US
@@ -2276,6 +2281,7 @@ VehicleMimeticGhost is MAP[
   ( 'HMGteam_M2HB_US', GhostDepiction_HMGteam_M2HB_US ),
   ( 'HMGteam_M2HB_para_FR', GhostDepiction_HMGteam_M2HB_para_FR ),
   ( 'HMGteam_M60_AB_US', GhostDepiction_HMGteam_M60_AB_US ),
+  ( 'HMGteam_M60_NG_US', GhostDepiction_HMGteam_M60_NG_US ),
   ( 'HMGteam_M60_US', GhostDepiction_HMGteam_M60_US ),
   ( 'HMGteam_MAG_UK', GhostDepiction_HMGteam_MAG_UK ),
   ( 'HMGteam_MG3_FJ_RFA', GhostDepiction_HMGteam_MG3_FJ_RFA ),

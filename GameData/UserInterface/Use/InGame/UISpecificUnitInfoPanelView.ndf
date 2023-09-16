@@ -1803,6 +1803,9 @@ is TUISpecificUnitInfoPanelViewDescriptor
         ("helico_1","UIP_vehl"),
         ("helico_2","UIP_hel2"),
         ("helico_3","UIP_hel3"),
+        ("avion_1","UIP_vehl"),
+        ("avion_2","UIP_hel2"),
+        ("avion_3","UIP_hel3"),
 
     ]
 
@@ -1888,7 +1891,7 @@ is TUISpecificUnitInfoPanelViewDescriptor
     HidePlatingPanelForResistance =
     [
         "batiment",
-        "avion",
+        // "avion",
         "infanterie_1"
     ]
 )

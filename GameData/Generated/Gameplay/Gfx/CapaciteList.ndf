@@ -622,6 +622,54 @@ export Capacite_GSR is TCapaciteDescriptor
     Price = MAP[]
     TagsCiblePossible = [
     ]
+    Conditions = [
+        ~/ConditionTagRaisedInUnit_GSR_ok_1,
+    ]
+)
+export Capacite_GSR_no_GSR is TCapaciteDescriptor
+(
+    DescriptorId     = GUID:{73e98a18-b95e-436a-a9c7-b581f1e26e97}
+    Name             = "GSR_no_GSR"
+    NameToken        = "None"
+    CumulEffect          = ~/CapaciteCumulEffect_jamais
+    Declenchement        = ~/CapaciteDeclenchementType_automatique
+    TypeCible            = ~/CapaciteTypeCible_soi
+    TargetTeamFilter     = ~/CapaciteTargetFilter_joueur
+    InfluenceMapAlliance = ~/AllianceRelation/vide
+    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
+    AreaShape            = ~/CapaciteAreaShape_soi
+    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
+    ActionRadiusWithBoundingBox = False
+    Radius              = 1.00 * Metre
+    Range               = 1.00 * Metre
+    AutomaticOrderRange = 0.00 * Metre
+    CastRangeTolerance  = 0.00 * Metre
+    CastTime            = 8.00
+    Cooldown            = 0.00
+    CheckVisibility     = True
+    AllowReflexDuringCast   = True
+    AllowMovementDuringCast = False
+    CanBeCastFromTransport  = True
+    CastEffectDuration = -1.00
+    CastEffectBound    = True
+    TargetEffect         = ~/UnitEffect_Ajoute_Tag_GSR_ok
+    TargetEffectDuration = 1.00
+    SelfEffectDuration   = 0.00
+    MinVirtualUnits         = 1
+    OrderMustSpreadTargets = False
+    MaxTargetNb            = 1
+    DivideEffect           = False
+    MultiplyCost           = False
+    TargetInBuilding       = True
+    TargetInTransport      = True
+    TargetInSelf           = True
+    TargetMySelf           = True
+    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_never
+    DisplayRangeColor      = RGBA[0,0,0,0]
+    DisplayRangeThickness  = 0.00
+    Price = MAP[]
+    TagsCiblePossible = [
+    ]
 
 )
 export Capacite_IFV is TCapaciteDescriptor
@@ -1805,6 +1853,31 @@ export Capacite_sniper_no_snipe is TCapaciteDescriptor
     ]
 
 )
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //

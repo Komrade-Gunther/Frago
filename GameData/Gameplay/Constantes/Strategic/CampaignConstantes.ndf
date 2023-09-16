@@ -4,6 +4,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
 (
     MovementSmoothingMaxAngle = 45. // entre 10° (si vraiment besoin de moins, venir en discuter avec un dev) et 180° (équivaut à "pas d'angle max")
     MaxSubMovementLength = 1 * ~/ActionPointConsumptionRefs/CaseSize
+    MovementSpeedMutiplierForNotVisiblePawn = 30.0
 
     FatigueGainOnMove = ~/StrategicFatigueGainOnMove
     FatigueLossOnNextTurn = ~/StrategicFatigueLossOnNextTurn
@@ -66,7 +67,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     ShowDeathTextFeedback = false
 
     // Règles de multisélection
-    MultiSelectionLimit = 5
+    MultiSelectionLimit = 10
 
     // Ecoulement du temps
     TurnTimeOfDay = ["StrMorn", "StrAftn"] // un tour de jeu a 8h, le suivant a 14h etc...

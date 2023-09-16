@@ -7,7 +7,8 @@ StrategicObjectivesResources is TUIObjectivesResources
 
     ObjectiveLabelDescriptors =
     [
-        ~/PrimaryObjectiveLabel,        // Primary
+        // ~/PrimaryObjectiveLabel,        // Primary
+        InfoStrategicObjectiveLabel,     // Primary
         BonusStrategicObjectiveLabel,   // Bonus
         InfoStrategicObjectiveLabel,    // Hint
         CaptureStrategicObjectiveLabel, // CapturePoint
@@ -20,8 +21,8 @@ StrategicObjectivesResources is TUIObjectivesResources
 
     NationaliteTextureTokens = MAP
     [
-        (ENationalite/OTAN, "CommonTexture_MotherCountryFlag_NATO"),
-        (ENationalite/PACT, "CommonTexture_MotherCountryFlag_PACT"),
+        (ENationalite/OTAN, "CommonTexture_MotherCountryFlag_NATO_small"),
+        (ENationalite/PACT, "CommonTexture_MotherCountryFlag_PACT_small"),
     ]
 )
 
@@ -65,7 +66,7 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
         ComponentFrame = TUIFramePropertyRTTI
         (
             MagnifiableWidthHeight = [0, 0]
-            MagnifiableOffset = [0, -50]
+            MagnifiableOffset = [0, -100]
         )
         Elements =
         [
@@ -107,9 +108,9 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
                                 AlignementToAnchor = [0.5, 0.5]
                             )
 
-                            TypefaceToken = "UIMainFont"
-                            TextSize = "16"
-                            TextColor = "Orange"
+                            TypefaceToken = "Eurostyle_Medium"
+                            TextSize = "20"
+                            TextColor = "ObjectiveLabel/Primary/Title"
 
                             Alignment = UIText_Center
 
@@ -122,54 +123,16 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
             ),
 
             BUCKListElementDescriptor
-                    (
-                        ComponentDescriptor = BUCKContainerDescriptor
-                        (
-                            ComponentFrame = TUIFramePropertyRTTI
-                            (
-                                PixelWidthHeight = [DistanceBetweenExternalAndInternalBorder * 2.0 + 1.0, DistanceBetweenExternalAndInternalBorder + 1.0]
-                                MagnifiableWidthHeight = [50, 0]
-                            )
-                        )
-                    ),
-
-            BUCKListElementDescriptor
             (
                 ComponentDescriptor = BUCKContainerDescriptor
                 (
-                    ElementName = "ContentContainer"
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        MagnifiableWidthHeight = [32.0, 8.0]
-
+                        PixelWidthHeight = [DistanceBetweenExternalAndInternalBorder * 2.0 + 1.0, DistanceBetweenExternalAndInternalBorder + 1.0]
+                        MagnifiableWidthHeight = [50, 0]
                     )
-
-                    FitStyle = ~/ContainerFitStyle/FitToContent
-
-                    Components =
-                    [
-                        ObjectiveLabelText
-                        (
-                            ElementName = "Content"
-
-                            ComponentFrame = TUIFramePropertyRTTI
-                            (
-                                MagnifiableWidthHeight = [100, 0.0]
-                                AlignementToFather = [0.5, 0.0]
-                                AlignementToAnchor = [0.5, 0.0]
-                            )
-                            TextPadding = TRTTILength4( Magnifiable = [5,0,5,5] )
-                            TypefaceToken = "UIMainFont"
-                            TextSize = "12"
-                            TextColor = "VertLogin"
-
-
-
-                            HorizontalFitStyle = ~/FitStyle/MinBetweenUserDefinedAndContent
-                        )
-                    ]
                 )
-            ),
+            )
         ]
 
         BackgroundComponents =
@@ -177,15 +140,15 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
             //<BackgroundComponent>
             PanelRoundedCorner
                 (
-                    BackgroundBlockColorToken = 'LDHintSolo_fond'
-                            BorderLineColorToken = 'LDHintSolo_texte'
+                    BackgroundBlockColorToken = 'SM_LDhint_texte_gen'
+                            BorderLineColorToken = 'SM_LDhint_texte'
                             BorderThicknessToken = '2'
                 ),
                 BUCKContainerDescriptor
                 (
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        MagnifiableWidthHeight = [ 2.0, 40.0 ]
+                        MagnifiableWidthHeight = [ 2.0, 100.0 ]
                         AlignementToAnchor = [ 0.0, 0.0 ]
                         AlignementToFather = [ 0.0, 0.0 ]
                         MagnifiableOffset = [-4,0]
@@ -194,7 +157,7 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
                     ElementName = "Pole"
 
                     HasBackground = true
-                    BackgroundBlockColorToken = 'Orange' //SD2_Blanc184'
+                    BackgroundBlockColorToken = 'SM_LDhint_texte'
                 ),
         ]
 

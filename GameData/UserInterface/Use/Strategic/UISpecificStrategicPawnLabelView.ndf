@@ -209,37 +209,6 @@ UpperLabelList is BUCKListDescriptor
         (
             ComponentDescriptor = BUCKTextDescriptor
             (
-                ElementName = 'BombardedFeedback'
-                ComponentFrame = TUIFramePropertyRTTI()
-
-                ParagraphStyle = TParagraphStyleRTTI
-                (
-                    Alignment = UIText_Center
-                    VerticalAlignment = UIText_VerticalCenter
-                )
-
-                HasBackground = true
-                BackgroundBlockColorToken = "SD2_Bombarded"
-
-                TextStyle = "Default"
-                HorizontalFitStyle = ~/FitStyle/FitToContent
-                VerticalFitStyle = ~/FitStyle/FitToContent
-                TextPadding = TRTTILength4(Magnifiable = [2.0, 2.0, 2.0, 2.0])
-
-                TypefaceToken = "UIMainFont"
-                BigLineAction = ~/BigLineAction/CutByDots
-
-                TextToken = "LBS_BOMBED"
-                TextDico = ~/LocalisationConstantes/dico_interface_ingame
-
-                TextColor = "SD2_Noir"
-                TextSize = "12"
-            )
-        ),
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextDescriptor
-            (
                 ElementName = 'InOrderFeedback'
                 ComponentFrame = TUIFramePropertyRTTI()
 
@@ -734,7 +703,8 @@ template PawnLabelViewDescriptor
     EngagementAnimDuration = 10 // Durée de l'animation de grossissement, en secondes
     EngagementAnimScale = 0.5 // L'échelle va varier de 1 à (1+EngagementPhaseAnimScale). Négatif autorisé
     EngagementAnimRandomStart = 0.5 // Décalage aléatoire max en secondes au démarrage.
-    LabelTransparencyIfNoEngagement = 0.2 //Transparence de l'étiquette des unités qui ne peuvent pas participer au combat (cf. CantFightUnitAlpha)
+    LabelOpacityIfNoEngagement = 0.2 // Opacité de l'étiquette des unités qui ne peuvent pas participer au combat (cf. CantFightUnitAlpha)
+    LabelOpacityIfNoActionPoints = 0.4 // Opacité de l'étiquette des unités qui n'ont plus de PA
 
     BonusBackgroundColorTokenByTerrainType = MAP
     [

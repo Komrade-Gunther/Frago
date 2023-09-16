@@ -1699,11 +1699,11 @@ is TUISpecificBattlegroupsListViewDescriptor
     [
         (
             ENationalite/OTAN,
-            "CommonTexture_MotherCountryFlag_NATO"
+            "CommonTexture_MotherCountryFlag_NATO_small"
         ),
         (
             ENationalite/PACT,
-            "CommonTexture_MotherCountryFlag_WP"
+            "CommonTexture_MotherCountryFlag_PACT_small"
         ),
     ]
 

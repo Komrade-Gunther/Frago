@@ -194,6 +194,7 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("icone_leader",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/leader.png' )), ] ),
         ("icone_mp",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/mp.png' )), ] ),
         ("icone_gsr",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/gsr.png' )), ] ),
+        ("icone_electronic_warfare",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/electronic_warfare.png' )), ] ),
         ("icone_shock",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/shock.png' )), ] ),
         ("icone_security",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/security.png' )), ] ),
         ("icone_sniper",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/sniper.png' )), ] ),
@@ -213,7 +214,8 @@ UseInGame_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("icone_reticule_vide",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/reticule_vide.png' )), ] ),
         ("icone_chrono_district",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/chrono_district.png' )), ] ),
         ("icone_chrono_simple",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/chrono_simple.png' )), ] ),
-
+        ("icone_idle_unit",      MAP [ (~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/IdleUnit.png' )),
+                                       (~/ComponentState/Grayed, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseInGame/Icones/IdleUnitGrayed.png' )), ] ),
 
         //-------------------------------------------------------------------------------------// unit comparator
         ("unitComparatorDisabled", MAP [

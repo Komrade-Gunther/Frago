@@ -74,6 +74,8 @@ StrategicResource is TUISpecificStrategicResources
     StrategicBattleResources    = ~/StrategicBattleResources
 
     PlayerTurnCheckerResources = ~/StrategicPlayerTurnCheckerResources
+
+    WorldFloorRegistry = $/M3D/Scene/FloorRegistry
 )
 
 //------------------------------------------------------------------------------------
@@ -199,10 +201,10 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
                         UniqueName = "StrategicInfoPlayerAndScore"
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            MagnifiableWidthHeight = [400,0]
+                            MagnifiableWidthHeight = [320,0]
                             AlignementToFather = [1.0, 0.0]
                             AlignementToAnchor = [1.0, 0.0]
-                            MagnifiableOffset = [5.0, 5.0]
+                            MagnifiableOffset = [0.0, 44.0]
                         )
 
                         LastMargin = TRTTILength( Magnifiable = 0.0 )
@@ -264,7 +266,8 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
 
                         Axis = ~/ListAxis/Vertical
                         BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
-                        InterItemMargin = TRTTILength( Magnifiable = 5.0 )
+                        FirstMargin = TRTTILength( Magnifiable = 44.0 )
+                        InterItemMargin = TRTTILength( Magnifiable = 4.0 )
 
                         Elements =
                         [
@@ -276,7 +279,7 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
                                     ComponentFrame = TUIFramePropertyRTTI
                                     (
                                         RelativeWidthHeight = [1.0, 0.0]
-                                        MagnifiableWidthHeight = [0,150]
+                                        MagnifiableWidthHeight = [0,120]
                                     )
 
                                     //FitStyle = ~/ContainerFitStyle/FitToContentVertically
@@ -433,7 +436,6 @@ private StrategicOrderDisplayDrawer is TStrategicOrderDisplayDrawer
         ArrowWidth = 3000*2
         ArrowLineWidth = 1200*2
         ArrowFadeLength = 10000*2
-        ArrowColor = [19,85,106,170]
     )
 )
 

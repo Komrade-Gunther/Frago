@@ -1,10 +1,8 @@
 InterfaceLayers is [
     $/M3D/Scene/ShadingScene/Calque_OpaqueLevelBuild_Depiction_SelectionMask,
     $/M3D/Scene/ShadingScene/Calque_Opaque_Depiction_SelectionMask,
-    $/M3D/Scene/ShadingScene/Calque_Fleche_GD,
     $/M3D/Scene/ShadingSceneStrategic/Calque_OpaqueLevelBuild_Depiction_SelectionMask,
     $/M3D/Scene/ShadingSceneStrategic/Calque_Opaque_Depiction_SelectionMask,
-    $/M3D/Scene/ShadingSceneStrategic/Calque_Fleche_GD,
 
     $/M3D/Scene/Scene_2D_Interface/Calque_Interface,
     $/M3D/Scene/Scene_2D_Interface/Calque_Interface_Text,
@@ -16,6 +14,7 @@ InterfaceLayers is [
     $/M3D/Scene/Scene3D_AfterPostProcess/influenceMapFeedback/DrawOnMap,
     $/M3D/Scene/Scene3D_AfterPostProcess/Calque_Area,
     $/M3D/Scene/Scene3D_AfterPostProcess/Calque_Area_Border,
+    $/M3D/Scene/Scene3D_AfterPostProcess/Calque_Fleche_GD,
 
     $/M3D/Scene/Scene3D_AfterPostProcess/pictograph/Render/Calque_FeedbackRenderToolbox_Solid,
     $/M3D/Scene/Scene3D_AfterPostProcess/pictograph/Render/Calque_FeedbackRenderToolbox_Circle,

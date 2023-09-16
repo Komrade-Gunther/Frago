@@ -81,28 +81,28 @@ Weapon_Howz_Canon_2A44_Howitzer_203mm_late_SMOKE is TCompositeHappening
         SFXWeapon_Howz_Canon_2A44_Howitzer_203mm_late_SMOKE,
     ]
 )
-Weapon_Howz_Canon_2A60_Howitzer_120mm is TCompositeHappening
+Weapon_Howz_Canon_2A51_Howitzer_120mm is TCompositeHappening
 (
     SubHappenings = 
     [
-        FXWeapon_Howz_Canon_2A60_Howitzer_120mm,
-        SFXWeapon_Howz_Canon_2A60_Howitzer_120mm,
+        FXWeapon_Howz_Canon_2A51_Howitzer_120mm,
+        SFXWeapon_Howz_Canon_2A51_Howitzer_120mm,
     ]
 )
-Weapon_Howz_Canon_2A60_Howitzer_120mm_SMOKE is TCompositeHappening
+Weapon_Howz_Canon_2A51_Howitzer_120mm_SMOKE is TCompositeHappening
 (
     SubHappenings = 
     [
-        FXWeapon_Howz_Canon_2A60_Howitzer_120mm_SMOKE,
-        SFXWeapon_Howz_Canon_2A60_Howitzer_120mm_SMOKE,
+        FXWeapon_Howz_Canon_2A51_Howitzer_120mm_SMOKE,
+        SFXWeapon_Howz_Canon_2A51_Howitzer_120mm_SMOKE,
     ]
 )
-Weapon_Canon_AP_2A60_120mm is TCompositeHappening
+Weapon_Canon_AP_2A51_120mm is TCompositeHappening
 (
     SubHappenings = 
     [
-        FXWeapon_Canon_AP_2A60_120mm,
-        SFXWeapon_Canon_AP_2A60_120mm,
+        FXWeapon_Canon_AP_2A51_120mm,
+        SFXWeapon_Canon_AP_2A51_120mm,
     ]
 )
 Weapon_Mortier_81mm_TOWED is TCompositeHappening
@@ -473,6 +473,14 @@ Weapon_ATGM_BGM71D_TOW_2 is TCompositeHappening
         SFXWeapon_ATGM_BGM71D_TOW_2,
     ]
 )
+Weapon_ATGM_BGM71_TOW is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_ATGM_BGM71_TOW,
+        SFXWeapon_ATGM_BGM71_TOW,
+    ]
+)
 Weapon_RocketArt_M21OF_122mm_x12 is TCompositeHappening
 (
     SubHappenings = 
@@ -607,6 +615,14 @@ Weapon_ATGM_9M113_Konkurs_x5 is TCompositeHappening
     [
         FXWeapon_ATGM_9M113_Konkurs_x5,
         SFXWeapon_ATGM_9M113_Konkurs_x5,
+    ]
+)
+Weapon_ATGM_9M14_MalyutkaP_x6 is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_ATGM_9M14_MalyutkaP_x6,
+        SFXWeapon_ATGM_9M14_MalyutkaP_x6,
     ]
 )
 Weapon_SAM_Strela1_x4 is TCompositeHappening
@@ -1401,14 +1417,6 @@ Weapon_Howz_Canon_M201A1_Howitzer_203mm_late_SMOKE is TCompositeHappening
         SFXWeapon_Howz_Canon_M201A1_Howitzer_203mm_late_SMOKE,
     ]
 )
-Weapon_ATGM_BGM71_TOW is TCompositeHappening
-(
-    SubHappenings = 
-    [
-        FXWeapon_ATGM_BGM71_TOW,
-        SFXWeapon_ATGM_BGM71_TOW,
-    ]
-)
 Weapon_RocketInf_M40A1_RCL_106mm is TCompositeHappening
 (
     SubHappenings = 
@@ -2137,7 +2145,14 @@ Weapon_Mortier_81mm_SMOKE is TCompositeHappening
         SFXWeapon_Mortier_81mm_SMOKE,
     ]
 )
-Weapon_DCA_1_canon_T20_20mm is FXWeapon_DCA_1_canon_T20_20mm
+Weapon_DCA_1_canon_T20_20mm is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_DCA_1_canon_T20_20mm,
+        SFXWeapon_DCA_1_canon_T20_20mm,
+    ]
+)
 Weapon_Mistral is TCompositeHappening
 (
     SubHappenings = 
@@ -2539,14 +2554,6 @@ Weapon_RocketAir_S13_122mm_x10 is TCompositeHappening
         SFXWeapon_RocketAir_S13_122mm_x10,
     ]
 )
-Weapon_ATGM_9M14_MalyutkaP_x6 is TCompositeHappening
-(
-    SubHappenings = 
-    [
-        FXWeapon_ATGM_9M14_MalyutkaP_x6,
-        SFXWeapon_ATGM_9M14_MalyutkaP_x6,
-    ]
-)
 Weapon_Pod_GUV_AGS17_2x is TCompositeHappening
 (
     SubHappenings = 
@@ -2916,7 +2923,14 @@ Weapon_AA_R550_Magic_II is TCompositeHappening
         SFXWeapon_AA_R550_Magic_II,
     ]
 )
-Weapon_RocketAir_Hydra_70mm_x19_avion is FXWeapon_RocketAir_Hydra_70mm_x19_avion
+Weapon_RocketAir_Hydra_70mm_x19_avion is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_RocketAir_Hydra_70mm_x19_avion,
+        SFXWeapon_RocketAir_Hydra_70mm_x19_avion,
+    ]
+)
 Weapon_AGM_ARMAT is TCompositeHappening
 (
     SubHappenings = 

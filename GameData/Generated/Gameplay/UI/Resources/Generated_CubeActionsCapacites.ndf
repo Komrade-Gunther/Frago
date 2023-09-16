@@ -235,6 +235,24 @@ CubeAction_Capacity_GSR is TCubeActionCapacityButtonInformationsDescriptor
     Descriptor                   = ~/Capacite_GSR
 )
 
+CubeAction_Capacity_GSR_no_GSR is TCubeActionCapacityButtonInformationsDescriptor
+(
+    CubeActionName               = "CubeAction_Capacity_GSR_no_GSR"
+    CubeActionFunctionType       = ~/TacticCubeActionFunctionType/Orders
+    BackgroundTexture            = "Texture_Button_Capacity_GSR_no_GSR"
+    HoverSound                   = CubeActionButtonHoverSound_IfEnabled
+    ClickSound                   = CubeActionButtonClickSound_IfEnabled
+    ButtonTextToken              = ""
+    HintDico                     = ~/LocalisationConstantes/dico_interface_ingame
+    HintTitleToken               = ""
+    HintBodyToken                = ""
+    HintExtendedToken            = ""
+    DependanciesToIgnore         =
+    [
+    ]
+    Descriptor                   = ~/Capacite_GSR_no_GSR
+)
+
 CubeAction_Capacity_IFV is TCubeActionCapacityButtonInformationsDescriptor
 (
     CubeActionName               = "CubeAction_Capacity_IFV"

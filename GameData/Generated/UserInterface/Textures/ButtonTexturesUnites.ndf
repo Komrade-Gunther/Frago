@@ -1465,6 +1465,12 @@ Texture_Button_Unit_HMGteam_M60_AB_US is TUIResourceTextureWithUsefulnessMask
     CivMask  = CivMask/Common
     FileName = 'Assets/2D/Interface/Common/UnitsIcons/EU/HMGteam_M60_AB_US.png'
 )
+Texture_Button_Unit_HMGteam_M60_NG_US is TUIResourceTextureWithUsefulnessMask
+(
+    TypeMask = TypeMask/BuildMenu
+    CivMask  = CivMask/Common
+    FileName = 'Assets/2D/Interface/Common/UnitsIcons/EU/default.png'
+)
 Texture_Button_Unit_HMGteam_M60_US is TUIResourceTextureWithUsefulnessMask
 (
     TypeMask = TypeMask/BuildMenu
@@ -2471,13 +2477,13 @@ Texture_Button_Unit_Mortier_2B9_Vasilek_SOV is TUIResourceTextureWithUsefulnessM
 (
     TypeMask = TypeMask/BuildMenu
     CivMask  = CivMask/Common
-    FileName = 'Assets/2D/Interface/Common/UnitsIcons/Allemagne/Mortier_2B9_Vasilek_SOV.png'
+    FileName = 'Assets/2D/Interface/Common/UnitsIcons/Allemagne/default.png'
 )
 Texture_Button_Unit_Mortier_2B9_Vasilek_nonPara_SOV is TUIResourceTextureWithUsefulnessMask
 (
     TypeMask = TypeMask/BuildMenu
     CivMask  = CivMask/Common
-    FileName = 'Assets/2D/Interface/Common/UnitsIcons/Allemagne/Mortier_2B9_Vasilek_SOV.png'
+    FileName = 'Assets/2D/Interface/Common/UnitsIcons/Allemagne/Mortier_2B9_Vasilek_nonPara_SOV.png'
 )
 Texture_Button_Unit_Mortier_2S12_120mm_SOV is TUIResourceTextureWithUsefulnessMask
 (
@@ -3071,7 +3077,7 @@ Texture_Button_Unit_Sniper_Spetsnaz_SOV is TUIResourceTextureWithUsefulnessMask
 (
     TypeMask = TypeMask/BuildMenu
     CivMask  = CivMask/Common
-    FileName = 'Assets/2D/Interface/Common/UnitsIcons/Allemagne/Scout_LRRP_SOV.png'
+    FileName = 'Assets/2D/Interface/Common/UnitsIcons/Allemagne/Scout_SOV.png'
 )
 Texture_Button_Unit_Sniper_UK is TUIResourceTextureWithUsefulnessMask
 (
@@ -5331,6 +5337,7 @@ UnitButtonTextureAdditionalBank is TBUCKToolAdditionalTextureBank
         ("Texture_Button_Unit_HMGteam_M2HB_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_HMGteam_M2HB_US), ]),
         ("Texture_Button_Unit_HMGteam_M2HB_para_FR", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_HMGteam_M2HB_para_FR), ]),
         ("Texture_Button_Unit_HMGteam_M60_AB_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_HMGteam_M60_AB_US), ]),
+        ("Texture_Button_Unit_HMGteam_M60_NG_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_HMGteam_M60_NG_US), ]),
         ("Texture_Button_Unit_HMGteam_M60_US", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_HMGteam_M60_US), ]),
         ("Texture_Button_Unit_HMGteam_MAG_UK", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_HMGteam_MAG_UK), ]),
         ("Texture_Button_Unit_HMGteam_MG3_FJ_RFA", MAP [( ~/ComponentState/Normal, ~/Texture_Button_Unit_HMGteam_MG3_FJ_RFA), ]),

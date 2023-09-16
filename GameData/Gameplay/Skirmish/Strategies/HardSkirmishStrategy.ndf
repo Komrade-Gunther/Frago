@@ -312,6 +312,7 @@ export Hard_Phase_LastHope is TSequenceGeneratorDescriptor
 
 HardScaling is
 [
+    ~/Supply_Skirmish_Autogen,
     ~/Reco_Autogen,
     ~/Attack_Objectives_Autogen,
 

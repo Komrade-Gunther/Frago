@@ -13,7 +13,7 @@ private LandReinforcementArrowDescriptor is TUIPathDescriptor
 
 private AerialReinforcementArrowDescriptor is TUIPathDescriptor
 (
-    Color                 = [  0, 0, 0, 0]
+    Color                 = [0, 0, 0, 0]
     PlaqueSurLeSol        = true
     RenderLayerSelector   = TRenderLayerSelector(RenderLayerName='Calque_Fleche_GD')
     Material              = $/M3D/Shader/MaterialBezierLine_Bichrome

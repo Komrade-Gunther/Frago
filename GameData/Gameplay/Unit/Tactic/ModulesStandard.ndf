@@ -46,7 +46,7 @@ template AirplaneMovementDescriptor
     RollSpeed,
     EvacAngle,
     EvacToStartingPoint,
-    AttackStrategyDescriptors,
+    OrderedAttackStrategies,
 ] is TModuleSelector
 (
     Default        = TAirplaneMovementModuleDescriptor
@@ -69,7 +69,7 @@ template AirplaneMovementDescriptor
         ElevatorRotationMax = $/GFX/Everything/ElevatorRotationMax
         AileronRotationMax = $/GFX/Everything/AileronRotationMax
         RudderRotationMax = $/GFX/Everything/RudderRotationMax
-        AttackStrategyDescriptors = <AttackStrategyDescriptors>
+        OrderedAttackStrategies = <OrderedAttackStrategies>
     )
     Selection = [~/NilDescriptorIfCadavre]
 )
@@ -296,47 +296,6 @@ InflammableModuleDescriptorDistrict  is TInflammableModuleDescriptor
 (
     FireFxStateId                   = ~/FXState/OnFire
     IdleFxStateId                   = ~/FXState/Idle
-)
-
-BombAttackStrategyDescriptor is TBombAttackStrategyDescriptor()
-
-DiveAttackStrategyDescriptor is TDiveAttackStrategyDescriptor
-(
-    MinPitchForDive = $/GFX/Everything/MinPitchForDive
-    MaxPitchForDive = $/GFX/Everything/MaxPitchForDive
-    MinDiveAlignmentDuration = $/GFX/Everything/MinDiveAlignmentDuration
-)
-
-DiveBombAttackStrategyDescriptor is TDiveBombAttackStrategyDescriptor
-(
-    MinPitchForDiveBomb = $/GFX/Everything/MinPitchForDiveBomb
-    PitchForDiveBomb = $/GFX/Everything/PitchForDiveBomb
-    MaxPitchForDiveBomb = $/GFX/Everything/MaxPitchForDiveBomb
-    DiveBombRecoveryDuration = $/GFX/Everything/DiveBombRecoveryDuration
-)
-
-DogfightAttackStrategyDescriptor is TDogfightAttackStrategyDescriptor
-(
-    MinDistanceBetweenFighterAndTargetForAttackOnSlowAirplaneStrategy = $/GFX/Everything/MinDistanceBetweenFighterAndTargetForAttackOnSlowAirplaneStrategy
-    MaxDistanceBetweenFighterAndTargetForLateralMoveOnSlowAirplaneStrategy = $/GFX/Everything/MaxDistanceBetweenFighterAndTargetForLateralMoveOnSlowAirplaneStrategy
-    SpeedRatioForAttackOnSlowAirplaneStrategy = $/GFX/Everything/SpeedRatioForAttackOnSlowAirplaneStrategy
-    SpeedRatioForAttackOnVerySlowAirplaneStrategy = $/GFX/Everything/SpeedRatioForAttackOnVerySlowAirplaneStrategy
-    MaxAngleDifferenceWithTarget = $/GFX/Everything/MaxAngleDifferenceWithTarget
-    MaxAngleToConsiderTargetAhead = $/GFX/Everything/MaxAngleToConsiderTargetAhead
-    AngleToFakeTargetPosition = $/GFX/Everything/AngleToFakeTargetPosition
-    FactorForTargetAltitudeOffset = $/GFX/Everything/FactorForTargetAltitudeOffset
-)
-
-StukaNosediveAttackStrategyDescriptor is TStukaNosediveAttackStrategyDescriptor
-(
-    DistanceNosedive = $/GFX/Everything/StukaDistanceNosedive
-    WaypointDistanceFromTarget = $/GFX/Everything/StukaDistanceContournementCible
-    AgilityMultiplicator = $/GFX/Everything/StukaAgilityMultiplicator
-)
-
-AirGroundMissileAttackStrategyDescriptor is TAirGroundMissileAttackStrategyDescriptor
-(
-    AirGroundMissileRangeRatioForCruiseAltitude = $/GFX/Everything/AirGroundMissileRangeRatioForCruiseAltitude
 )
 
 template BuildingCadavreModuleDescriptor [

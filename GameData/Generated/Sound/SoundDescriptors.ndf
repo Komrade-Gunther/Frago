@@ -494,6 +494,26 @@ export SoundHappening_DestructionHelicoPetit is TSoundHappening
     )
     Volume = 1
 )
+export SoundHappening_DestructionHelico_Eau is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Mort_Unite_Grosse
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Morts/Crash_Helico_Eau.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
 export SoundHappening_DestructionUnite is TSoundHappening
 (
     SoundDescList = TSoundDescriptorList
@@ -811,6 +831,26 @@ export SoundHappening_DestructionUnite_Avion is TSoundHappening
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Morts/Crash_Avion_7.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 1
+)
+export SoundHappening_DestructionUnite_Avion_Eau is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Gros_Impact_HE
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Morts/Crash_Avion_Eau_1.wav"
                 )
                 UseSpecialLoop = False
             ),
@@ -8971,6 +9011,35 @@ export SoundHappening_FULDA_Stinger_Firing is TSoundHappening
                 TheSoundStream = TSoundStream
                 (
                     FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Stinger_5.wav"
+                )
+                UseSpecialLoop = False
+            ),
+        ]
+        PlayInRandomOrder = True
+    )
+    Volume = 2
+)
+export SoundHappening_FULDA_TOR_Firing is TSoundHappening
+(
+    SoundDescList = TSoundDescriptorList
+    (
+        Items = 
+        [
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOR_1.wav"
+                )
+                UseSpecialLoop = False
+            ),
+            TSoundDescriptor
+            (
+                SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Gros
+                TheSoundStream = TSoundStream
+                (
+                    FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_TOR_2.wav"
                 )
                 UseSpecialLoop = False
             ),

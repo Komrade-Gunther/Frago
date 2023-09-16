@@ -1364,6 +1364,8 @@ is TUISpecificInGameUnitLabelViewDescriptor
 (
     MainComponentDescriptor = <MainComponentDescriptor>
 
+    ExperienceTexturesResources     = ~/ExperienceTexturesResources
+
     DebugViewName = <DebugViewName>
 
     // Animation Stealthed

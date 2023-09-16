@@ -8,6 +8,42 @@ export UnitEffect_A_BonusType_Calcul is TEffectsPackDescriptor
     EffectsDescriptors = [
     ]
 )
+export UnitEffect_AirUnit_Cohesion_Low is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{9e4a17c5-6dbe-4233-82ae-7f4c04e3320b}
+    NameForDebug       = 'AirUnit_Cohesion_Low'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseWeaponDispersionMaxRangeDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.20
+        ),
+    ]
+)
+export UnitEffect_AirUnit_Cohesion_Mediocre is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{db8eb827-206a-4425-b5b8-12c49dacc716}
+    NameForDebug       = 'AirUnit_Cohesion_Mediocre'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseWeaponDispersionMaxRangeDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.15
+        ),
+    ]
+)
+export UnitEffect_AirUnit_Cohesion_Normal is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{1dd39425-d1ec-4db6-9694-73e85053dbdc}
+    NameForDebug       = 'AirUnit_Cohesion_Normal'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseWeaponDispersionMaxRangeDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.10
+        ),
+    ]
+)
 export UnitEffect_Ajoute_Tag_Allie_Proche is TEffectsPackDescriptor
 (
     DescriptorId       = GUID:{9b68e42d-f937-40d0-9f67-00531506780f}
@@ -44,6 +80,19 @@ export UnitEffect_Ajoute_Tag_Ennemi_Proche is TEffectsPackDescriptor
         (
             TagListToRaise = [
                  "Ennemi_Proche",
+            ]
+        ),
+    ]
+)
+export UnitEffect_Ajoute_Tag_GSR_ok is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{fc3f2bf6-df0f-4481-97c6-e3ef7dcc0be2}
+    NameForDebug       = 'Ajoute_Tag_GSR_ok'
+    EffectsDescriptors = [
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "GSR_ok",
             ]
         ),
     ]
@@ -1551,6 +1600,12 @@ export UnitEffect_GSR is TEffectsPackDescriptor
             ModifierType         = ~/ModifierType_Additionnel
             BonusOpticalStrength = 43
         ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "GSR_ok",
+            ]
+        ),
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_gsr"
@@ -1622,16 +1677,6 @@ export UnitEffect_GroundUnit_Cohesion_High is TEffectsPackDescriptor
     DescriptorId       = GUID:{16aa7006-5dcd-4cae-92d1-7ebeb6d1123c}
     NameForDebug       = 'GroundUnit_Cohesion_High'
     EffectsDescriptors = [
-        TUnitEffectIncreaseChassisRotationSpeedDescriptor
-        (
-            ModifierType       = ~/ModifierType_Pourcentage
-            BonusChassisRotationSpeed  = 10
-        ),
-        TUnitEffectIncreaseTurretRotationSpeedDescriptor
-        (
-            ModifierType       = ~/ModifierType_Pourcentage
-            BonusTurretRotationSpeed  = 10
-        ),
         TUnitEffectRaiseTagDescriptor
         (
             TagListToRaise = [
@@ -1658,12 +1703,17 @@ export UnitEffect_GroundUnit_Cohesion_Low is TEffectsPackDescriptor
         TUnitEffectIncreaseSpeedDescriptor
         (
             ModifierType             = ~/ModifierType_Pourcentage
-            BonusSpeedBaseInPercent  = -50
+            BonusSpeedBaseInPercent  = -15
         ),
         TBonusWeaponAimtimeEffectDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 1.5
+            ModifierValue = 1.18
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.40
         ),
         TUnitEffectRaiseTagDescriptor
         (
@@ -1694,12 +1744,17 @@ export UnitEffect_GroundUnit_Cohesion_Mediocre is TEffectsPackDescriptor
         TUnitEffectIncreaseSpeedDescriptor
         (
             ModifierType             = ~/ModifierType_Pourcentage
-            BonusSpeedBaseInPercent  = -25
+            BonusSpeedBaseInPercent  = -10
         ),
         TBonusWeaponAimtimeEffectDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
-            ModifierValue = 1.25
+            ModifierValue = 1.12
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.20
         ),
         TUnitEffectRaiseTagDescriptor
         (
@@ -1716,6 +1771,31 @@ export UnitEffect_GroundUnit_Cohesion_Normal is TEffectsPackDescriptor
     DescriptorId       = GUID:{1f643782-e1bb-4f37-885b-4d275206688c}
     NameForDebug       = 'GroundUnit_Cohesion_Normal'
     EffectsDescriptors = [
+        TUnitEffectIncreaseChassisRotationSpeedDescriptor
+        (
+            ModifierType       = ~/ModifierType_Pourcentage
+            BonusChassisRotationSpeed  = -10
+        ),
+        TUnitEffectIncreaseTurretRotationSpeedDescriptor
+        (
+            ModifierType       = ~/ModifierType_Pourcentage
+            BonusTurretRotationSpeed  = -10
+        ),
+        TUnitEffectIncreaseSpeedDescriptor
+        (
+            ModifierType             = ~/ModifierType_Pourcentage
+            BonusSpeedBaseInPercent  = -5
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.08
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.10
+        ),
         TUnitEffectRaiseTagDescriptor
         (
             TagListToRaise = [
@@ -2860,16 +2940,16 @@ export UnitEffect_electronic_warfare is TEffectsPackDescriptor
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (
             ModifierType                  = ~/ModifierType_Pourcentage
-            ModifierValue = -30
+            ModifierValue = -20
         ),
         TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
         (
             ModifierType                  = ~/ModifierType_Pourcentage
-            ModifierValue = -30
+            ModifierValue = -20
         ),
         TUnitEffectShowLabelIconDescriptor
         (
-            TextureToken         = "icone_gsr"
+            TextureToken         = "icone_electronic_warfare"
             CanBeSeenByEnemy         = false
         ),
     ]
@@ -2894,7 +2974,7 @@ export UnitEffect_jammer is TEffectsPackDescriptor
         ),
         TUnitEffectShowLabelIconDescriptor
         (
-            TextureToken         = "icone_gsr"
+            TextureToken         = "icone_electronic_warfare"
             CanBeSeenByEnemy         = false
         ),
     ]
@@ -2934,6 +3014,21 @@ export UnitEffect_reserviste is TEffectsPackDescriptor
             BonusDamage         = 1.5
             DamageType          = EDamageType/Suppress
         ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.1
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Pourcentage
+            ModifierValue = -5
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Pourcentage
+            ModifierValue = -5
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
             ModifierType                     = ~/ModifierType_Multiplicatif
@@ -2948,8 +3043,8 @@ export UnitEffect_resolute is TEffectsPackDescriptor
     EffectsDescriptors = [
         TUnitEffectIncreaseDamageTakenDescriptor
         (
-            ModifierType        = ~/ModifierType_Multiplicatif
-            BonusDamage         = 0.85
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -15
             DamageType          = EDamageType/Suppress
         ),
     ]

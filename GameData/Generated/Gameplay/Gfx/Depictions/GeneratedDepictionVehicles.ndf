@@ -400,9 +400,9 @@ Gfx_2S9_Nona_SOV_Autogen is TacticVehicleDepictionTemplate
     ]
 
     Actions = MAP[
-                ( [ "weapon_effet_tag1" ], Weapon_Howz_Canon_2A60_Howitzer_120mm ),
-                ( [ "weapon_effet_tag2" ], Weapon_Howz_Canon_2A60_Howitzer_120mm_SMOKE ),
-                ( [ "weapon_effet_tag3" ], Weapon_Canon_AP_2A60_120mm ),
+                ( [ "weapon_effet_tag1" ], Weapon_Howz_Canon_2A51_Howitzer_120mm ),
+                ( [ "weapon_effet_tag2" ], Weapon_Howz_Canon_2A51_Howitzer_120mm_SMOKE ),
+                ( [ "weapon_effet_tag3" ], Weapon_Canon_AP_2A51_120mm ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -2876,7 +2876,7 @@ Gfx_ATteam_TOW_US_Autogen is TacticVehicleDepictionTemplate
     ]
 
     Actions = MAP[
-                ( [ "weapon_effet_tag1" ], Weapon_ATGM_BGM71D_TOW_2 ),
+                ( [ "weapon_effet_tag1" ], Weapon_ATGM_BGM71_TOW ),
             ]
             + DepictionAction_CriticalFX_ATGM
 
@@ -4519,7 +4519,7 @@ Gfx_BRDM_Malyu_P_DDR_Autogen is TacticVehicleDepictionTemplate
     ]
 
     Actions = MAP[
-                ( [ "weapon_effet_tag1" ], Weapon_ATGM_9M14_MalyutkaP ),
+                ( [ "weapon_effet_tag1" ], Weapon_ATGM_9M14_MalyutkaP_x6 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Wheeled
@@ -8320,6 +8320,40 @@ Gfx_HMGteam_M60_AB_US_Autogen is TacticVehicleDepictionTemplate
 
     SubDepictions = [
     ] + HumanSubDepictions_HMGteam_M60_AB_US
+)
+// Dépiction de l'unité HMGteam_M60_NG_US
+DepictionOperator_HMGteam_M60_NG_US_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    NbFX = 1
+)
+Gfx_HMGteam_M60_NG_US_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'HMGteam_M60_NG_US'
+    Selector = Selector_HMGteam_M60_NG_US
+    Alternatives = Alternatives_HMGteam_M60_NG_US
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_Infanterie_US,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_Turret_1_HydraulicRecoil,
+        DepictionOperator_HMGteam_M60_NG_US_Weapon1,
+        DepictionOperator_Carriable_ATGM,
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_MMG_team_7_62mm_M60 ),
+            ]
+            + DepictionAction_CriticalFX_ATGM
+
+    SubDepictions = [
+    ] + HumanSubDepictions_HMGteam_M60_NG_US
 )
 // Dépiction de l'unité HMGteam_M60_US
 DepictionOperator_HMGteam_M60_US_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -14027,17 +14061,6 @@ Gfx_M60A3_CMD_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M60A3_CMD_US_Weapon5,
         DepictionOperator_M60A3_CMD_US_Weapon6,
         DepictionOperator_Heat,
-        DepictionOperator_EjectableProps_Vehicle
-        (
-            AdditionalEjectableNodes = 
-            [
-                "tourelle_01",
-                "tourelle_02",
-            ]
-            ArmorPlateCount = 0
-            PropCount = 7
-            TrapdoorCount = 2
-        ),
     ]
 
     Actions = MAP[
@@ -14050,7 +14073,6 @@ Gfx_M60A3_CMD_US_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
-            + Eject_Actions_M60A3_CMD_US
 )
 // Dépiction de l'unité M60A3_Patton_US
 DepictionOperator_M60A3_Patton_US_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -14115,17 +14137,6 @@ Gfx_M60A3_Patton_US_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_M60A3_Patton_US_Weapon5,
         DepictionOperator_M60A3_Patton_US_Weapon6,
         DepictionOperator_Heat,
-        DepictionOperator_EjectableProps_Vehicle
-        (
-            AdditionalEjectableNodes = 
-            [
-                "tourelle_01",
-                "tourelle_02",
-            ]
-            ArmorPlateCount = 0
-            PropCount = 7
-            TrapdoorCount = 2
-        ),
     ]
 
     Actions = MAP[
@@ -14138,7 +14149,6 @@ Gfx_M60A3_Patton_US_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
-            + Eject_Actions_M60A3_Patton_US
 )
 // Dépiction de l'unité M728_CEV_US
 DepictionOperator_M728_CEV_US_Weapon1 is DepictionOperator_WeaponInstantFire

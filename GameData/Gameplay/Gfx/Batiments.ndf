@@ -22,7 +22,7 @@ template template_UnitLevelBuildViewDescriptor
 
     MaskDestroyed = SDMask_Destroy
     Mode = SDMode_AllLod + <AdditionalMode>
-    LodManager = $/M3D/GraphicSettings/LodManager
+    LodManager = $/SceneryDB/LodManager
     UseAutoBatcher = <UseAutoBatcher>
     JobPriority = 500
     ImposteurSystemProxy = $/M3D/Shader/ImposteurSystemProxy

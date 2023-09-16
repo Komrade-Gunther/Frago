@@ -20,38 +20,47 @@ private TexturePack_ModdingTextureGFX is TResourceDescriptorTexturePack
 //-----------------------------------------------------------------------------
 //*****************************************************************************
 //-----------------------------------------------------------------------------
-export clusterLoadResourceTexturePackCommon is TClusterLoadResource
+export clusterLoadResourceTexturePackCommon is TClusterInitialisation_OnlyInResourceLoad
 (
-    Packs =
-    [
-        ~/TexturePack_ModdingTexture,
-        ~/TexturePack_ModdingTextureGFX,
-        $/Clusters/TexturePack_CommonComponents,
-        TResourceDescriptorTexturePack
-        (
-            PackName = "Pack/OutGameTextures.ppk"
-            UsefulnessMask = CivMask/Common + TypeMask/OutGameInterface
-            TransactionFiles = [ 'UI/Components.ndfbin', ]
-        ),
-        TResourceDescriptorTexturePack
-        (
-            PackName = "Pack/InGameTextures.ppk"
-            UsefulnessMask = CivMask/Common + TypeMask/InGameInterface
-            TransactionFiles = [ 'UI/Components.ndfbin', 'GFX/Everything.ndfbin', 'GFX/UI.ndfbin', 'SystemColor.ndfbin',]
-        ),
-        TResourceDescriptorTexturePack
-        (
-            PackName = "Pack/OutgameMap.ppk"
-            UsefulnessMask = CivMask/Common + TypeMask/OutGameMap
-            TransactionFiles = [ 'Misc/MapConfiguration.ndfbin', 'Misc/Globals.ndfbin', ]
-        ),
-        TResourceDescriptorTexturePack
-        (
-            PackName = "Pack/CommonMap.ppk"
-            UsefulnessMask = CivMask/Common + TypeMask/CommonMap
-            TransactionFiles = [ 'MapInfo.ndfbin', 'Misc/Globals.ndfbin', ]
-        ),
-    ]
+    SubCluster = TClusterLoadResource
+    (
+        Packs =
+        [
+            ~/TexturePack_ModdingTexture,
+            ~/TexturePack_ModdingTextureGFX,
+            $/Clusters/TexturePack_CommonComponents,
+            TResourceDescriptorTexturePack
+            (
+                PackName = "Pack/OutGameTextures.ppk"
+                UsefulnessMask = CivMask/Common + TypeMask/OutGameInterface
+                TransactionFiles = [ 'UI/Components.ndfbin', ]
+            ),
+            TResourceDescriptorTexturePack
+            (
+                PackName = "Pack/InGameTextures.ppk"
+                UsefulnessMask = CivMask/Common + TypeMask/InGameInterface
+                TransactionFiles = [ 'UI/Components.ndfbin', 'GFX/Everything.ndfbin', 'GFX/UI.ndfbin', 'SystemColor.ndfbin',]
+            ),
+            TResourceDescriptorTexturePack
+            (
+                PackName = "Pack/BuildMenuTextures.ppk"
+                UsefulnessMask = CivMask/Common + TypeMask/BuildMenu
+                TransactionFiles = [ 'UI/Components.ndfbin', ]
+            ),
+            TResourceDescriptorTexturePack
+            (
+                PackName = "Pack/OutgameMap.ppk"
+                UsefulnessMask = CivMask/Common + TypeMask/OutGameMap
+                TransactionFiles = [ 'Misc/MapConfiguration.ndfbin', 'Misc/Globals.ndfbin', ]
+            ),
+            TResourceDescriptorTexturePack
+            (
+                PackName = "Pack/CommonMap.ppk"
+                UsefulnessMask = CivMask/Common + TypeMask/CommonMap
+                TransactionFiles = [ 'MapInfo.ndfbin', 'Misc/Globals.ndfbin', ]
+            ),
+        ]
+    )
 )
 //-----------------------------------------------------------------------------
 //*****************************************************************************

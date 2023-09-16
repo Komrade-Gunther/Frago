@@ -5,9 +5,8 @@ export StandardSupply is TSupplyDescriptor
     // aucun rayon n'est défini dans l'ODS
     DefaultSupplyRange = SpecificDefaultSupplyRange
 
-    // Tous les ravitaillement sont découpé en deux variable
+    // Tous les ravitaillement sont découpé en deux variables
     // 1 -> SupplyBySecond => Nombre de point de la ressource concerné ravitaillé par seconde
-    // 2 -> SupplyCostBySecond => Le nombre de point de ravitaillement que coûte le ravitaillement ci dessus.
     // 2 -> SupplyCostBySecond => Le nombre de point de ravitaillement que coûte le ravitaillement ci dessus.
     //
     // Exemple :
@@ -20,7 +19,7 @@ export StandardSupply is TSupplyDescriptor
     // Point d'essence ravitaillés par seconde
     FuelSupplyBySecond = 30
     // Cout du ravitaillement d'essence par seconde
-    FuelSupplyCostBySecond =  5
+    FuelSupplyCostBySecond =  2.5
 
     // Point de vie ravitaillés par seconde
     HealthSupplyBySecond = 0.15 //0.00001
@@ -56,6 +55,31 @@ SupplyFeedbackDescriptor is TSupplyFeedbackDescriptor
     FeedbackScreenResilienceDuration = 3.0
     FeedbackFadeOutTime = 1.0
 )
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //

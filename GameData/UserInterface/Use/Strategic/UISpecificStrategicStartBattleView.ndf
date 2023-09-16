@@ -1083,8 +1083,12 @@ private OutcomePrediction is BUCKListDescriptor
         ),
         BUCKListElementDescriptor
         (
+            ComponentDescriptor = ~/OutcomePredictionSide
+        ),
+        BUCKListElementDescriptor
+        (
             ComponentDescriptor = ~/OutcomePredictionValues
-        )
+        ),
     ]
 )
 
@@ -1093,21 +1097,23 @@ private OutcomePrediction is BUCKListDescriptor
 private template OutcomePredictionText
 [
     ElementName : string = "",
+    ComponentFrame : TUIFramePropertyRTTI = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, ~/OutcomePredictionLineHeight]
+    ),
     HasBackground : bool = false,
     BackgroundBlockColorToken : string = "",
     TextToken : string = "",
     TextColor : string = "BlancEquipe",
+    TextSize :string = "18",
     ParagraphStyle : TParagraphStyleRTTI = ~/paragraphStyleTextLeftAlign,
 
 ] is BUCKTextDescriptor
 (
     ElementName = <ElementName>
 
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        RelativeWidthHeight = [1.0, 0.0]
-        MagnifiableWidthHeight = [0.0, ~/OutcomePredictionLineHeight]
-    )
+    ComponentFrame = <ComponentFrame>
 
     HasBackground = <HasBackground>
     BackgroundBlockColorToken = <BackgroundBlockColorToken>
@@ -1125,7 +1131,7 @@ private template OutcomePredictionText
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
     TextColor = <TextColor>
-    TextSize = "18"
+    TextSize = <TextSize>
 )
 
 //------------------------------------------------------------------------------
@@ -1145,15 +1151,53 @@ OutcomePredictionTitles is BUCKListDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = OutcomePredictionText(TextToken = "BP_ATTK")
+            ComponentDescriptor = OutcomePredictionText(TextToken = "BP_PLR")
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = OutcomePredictionText(TextToken = "BP_DEFDR")
+            ComponentDescriptor = OutcomePredictionText(TextToken = "BP_ENM")
         ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = OutcomePredictionText(TextToken = "BP_OUTCOM")
+        ),
+    ]
+)
+
+//------------------------------------------------------------------------------
+
+OutcomePredictionSide is BUCKListDescriptor
+(
+    ElementName = "OutcomePredictionSide"
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [100.0, 0.0]
+    )
+
+    Axis = ~/ListAxis/Vertical
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = OutcomePredictionText
+            (
+                ElementName = "OutcomePredictionPlayerSideText"
+                TextToken = "AR_ATQ"
+                ParagraphStyle = ~/paragraphStyleTextRightAlign
+                TextSize = "14"
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = OutcomePredictionText
+            (
+                ElementName = "OutcomePredictionEnemySideText"
+                TextToken = "AR_DEF"
+                ParagraphStyle = ~/paragraphStyleTextRightAlign
+                TextSize = "14"
+            )
         ),
     ]
 )
@@ -1177,7 +1221,7 @@ OutcomePredictionValues is BUCKListDescriptor
         (
             ComponentDescriptor = OutcomePredictionText
             (
-                ElementName = "ProbableOutcomeAttackValue"
+                ElementName = "ProbableOutcomePlayerValue"
                 HasBackground = true
                 BackgroundBlockColorToken = "Noir"
                 TextColor = "BlancEquipe"
@@ -1188,7 +1232,7 @@ OutcomePredictionValues is BUCKListDescriptor
         (
             ComponentDescriptor = OutcomePredictionText
             (
-                ElementName = "ProbableOutcomeDefenseValue"
+                ElementName = "ProbableOutcomeEnemyValue"
                 HasBackground = true
                 BackgroundBlockColorToken = "BlancEquipe"
                 TextColor = "PureBlack"
@@ -1402,5 +1446,17 @@ UISpecificStrategicStartBattleViewDescriptor is TUISpecificStrategicStartBattleV
     [
         (LocalPlayerAttacking, "BPB_LPAG"),
         (LocalPlayerAttacked, "BPB_LPAD"),
+    ]
+
+    BattlePreparationTextBySide = MAP
+    [
+        (LocalPlayerAttacking, "AR_ATQ"),
+        (LocalPlayerAttacked, "AR_DEF"),
+    ]
+
+    BattlePreparationColorBySide = MAP
+    [
+        (LocalPlayerAttacking, "Noir"),
+        (LocalPlayerAttacked, "BlancEquipe"),
     ]
 )

@@ -116,7 +116,7 @@ InfantryWeapon_RocketInf_M72_LAW_66mm is TIntroduceMobileHappening
     )
 )
 
-InfantryWeapon_MMG_M60_7_62mm is TIntroduceMobileHappening
+InfantryWeapon_MMG_inf_M240B_7_62mm is TIntroduceMobileHappening
 (
     Happening = TCompositeHappening
     (
@@ -141,7 +141,7 @@ InfantryWeapon_MMG_M60_7_62mm is TIntroduceMobileHappening
                     fx_traine_MMG_Inf_4_2_False_00_00,
                 ]
             ),
-            SFXWeapon_MMG_M60_7_62mm,
+            SFXWeapon_MMG_inf_M240B_7_62mm,
         ]
     )
 )
@@ -1125,6 +1125,36 @@ InfantryWeapon_SAW_Bren_L4A4 is TIntroduceMobileHappening
                 ]
             ),
             SFXWeapon_SAW_Bren_L4A4,
+        ]
+    )
+)
+
+InfantryWeapon_MMG_M60_7_62mm is TIntroduceMobileHappening
+(
+    Happening = TCompositeHappening
+    (
+        SubHappenings = 
+        [
+            TRandomHappening
+            (
+                Alternatives = 
+                [
+                    fx_tir_mitrailleuse_M60_douilles_eject_1_2,
+                    fx_tir_mitrailleuse_M60_douilles_eject_2_2,
+                    fx_tir_mitrailleuse_M60_douilles_eject_3_2,
+                ]
+            ),
+            TRandomHappening
+            (
+                Alternatives = 
+                [
+                    fx_traine_MMG_Inf_1_2_False_00_00,
+                    fx_traine_MMG_Inf_2_2_False_00_00,
+                    fx_traine_MMG_Inf_3_2_False_00_00,
+                    fx_traine_MMG_Inf_4_2_False_00_00,
+                ]
+            ),
+            SFXWeapon_MMG_M60_7_62mm,
         ]
     )
 )
@@ -2542,6 +2572,7 @@ InfantryHappenings is MAP[
   ( ['FireEffect_MMG_PKM_7_62mm'], InfantryWeapon_MMG_PKM_7_62mm ),
   ( ['FireEffect_MMG_inf_AA52_7_5mm'], InfantryWeapon_MMG_inf_AA52_7_5mm ),
   ( ['FireEffect_MMG_inf_AANF1_7_62mm'], InfantryWeapon_MMG_inf_AANF1_7_62mm ),
+  ( ['FireEffect_MMG_inf_M240B_7_62mm'], InfantryWeapon_MMG_inf_M240B_7_62mm ),
   ( ['FireEffect_MMG_inf_MAG_7_62mm'], InfantryWeapon_MMG_inf_MAG_7_62mm ),
   ( ['FireEffect_MMG_inf__MG3_7_62mm'], InfantryWeapon_MMG_inf__MG3_7_62mm ),
   ( ['FireEffect_Mistral'], InfantryWeapon_Mistral ),

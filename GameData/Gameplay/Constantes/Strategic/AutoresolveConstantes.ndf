@@ -12,6 +12,7 @@ private NoRecoAdvantage is TCombatAdvantageDefinition
     AdvantageValue = 0.5
     // Alexis test à remplacer quand NoInfantryAdvantage fonctionnera
     TextToken = 'CA_RECO'
+    HintToken = 'CAH_RECO'
     ShowTextForAdvantageWinner = false
     TagToCheck = ['Char_Reco', 'Helo_Reco', 'Infanterie_Reco', 'Vehicule_Reco']
     TagToCheckAgainst = ['Char_Reco', 'Helo_Reco', 'Infanterie_Reco', 'Vehicule_Reco']
@@ -21,14 +22,16 @@ private NoAAAdvantage is TCombatAdvantageDefinition
 (
     AdvantageValue = 1
     TextToken = 'CA_AA'
+    HintToken = 'CAH_AA'
     ShowTextForAdvantageWinner = false
     TagToCheck = [ 'Helo', 'Avion' ]
-    TagToCheckAgainst = [ 'Canon_AA', 'Avion_Chasseur','Canon_AA_Standard', 'Avion' ]
+    TagToCheckAgainst = [ 'Canon_AA', 'Avion_Chasseur','Canon_AA_Standard', 'Avion','Helo_AA' ]
 )
 private NoHeavyTank_advantage is TCombatAdvantageDefinition
 (
     AdvantageValue = 0.5
     TextToken = 'CA_HT'
+    HintToken = 'CAH_HT'
     ShowTextForAdvantageWinner = false
     TagToCheck = [ 'SM_charLourd' ]
     TagToCheckAgainst = [ 'SM_charLourd' ]
@@ -38,22 +41,25 @@ private NoATAdvantage is TCombatAdvantageDefinition
 (
     AdvantageValue = 1
     TextToken = 'CA_AT'
+    HintToken = 'CAH_AT'
     ShowTextForAdvantageWinner = false
-    TagToCheck = [ 'Char', 'ChasseurDeChar','Avion_AT',]
-    TagToCheckAgainst = [ 'Char', 'ChasseurDeChar','Avion_AT',]
+    TagToCheck = [ 'Char', 'ChasseurDeChar','Avion_AT','Helo_Gunship','Helo_AT']
+    TagToCheckAgainst = [ 'Char', 'ChasseurDeChar','Avion_AT','Helo_Gunship','Helo_AT']
 )
 private NoCMD_Advantage is TCombatAdvantageDefinition
 (
     AdvantageValue = 2
     TextToken = 'CA_CMD'
+    HintToken = 'CAH_CMD'
     ShowTextForAdvantageWinner = false
-    TagToCheck = [ 'Commandant']
-    TagToCheckAgainst = [ 'Commandant']
+    TagToCheck = [ 'Commandant','Helo_CMD']
+    TagToCheckAgainst = [ 'Commandant','Helo_CMD']
 )
 private NoInfantryAdvantage is TCombatAdvantageDefinition
 (
-    AdvantageValue = 2
+    AdvantageValue = 2.5
     TextToken = 'CA_INF'
+    HintToken = 'CAH_INF'
     ShowTextForAdvantageWinner = false
     TagToCheck = [ 'Infanterie' ]
     TagToCheckAgainst = [ 'Infanterie']
@@ -62,6 +68,7 @@ private NoSupply_Advantage is TCombatAdvantageDefinition
 (
     AdvantageValue = 0.5
     TextToken = 'CA_supply'
+    HintToken = 'CAH_supply'
     ShowTextForAdvantageWinner = false
     TagToCheck = [ 'Helo_Logistique', 'Vehicule_Logistique']
     TagToCheckAgainst = [ 'Helo_Logistique', 'Vehicule_Logistique']
@@ -70,14 +77,25 @@ private NoAirSupport_Advantage is TCombatAdvantageDefinition
 (
     AdvantageValue = 0.5
     TextToken = 'CA_airsup'
+    HintToken = 'CAH_airsup'
     ShowTextForAdvantageWinner = false
     TagToCheck = [ 'Avion']
     TagToCheckAgainst = [ 'Avion']
+)
+private NoHeloSupport_Advantage is TCombatAdvantageDefinition
+(
+    AdvantageValue = 0.5
+    TextToken = 'CA_HELO'
+    HintToken = 'CAH_helosu'
+    ShowTextForAdvantageWinner = false
+    TagToCheck = [ 'Helo']
+    TagToCheckAgainst = [ 'Helo']
 )
 private DCA_air is TCombatAdvantageDefinition
 (
     AdvantageValue = 15
     TextToken = 'CA_DCA'
+    HintToken = 'CAH_DCA'
     ShowTextForAdvantageWinner = true
     TagToCheck = [ 'Canon_AA' ]
     TagToCheckAgainst = [ 'Avion_SEAD']
@@ -86,6 +104,7 @@ private interception_air_air is TCombatAdvantageDefinition
 (
     AdvantageValue = 15
     TextToken = 'CA_intAA'
+    HintToken = 'CAH_intAA'
     ShowTextForAdvantageWinner = true
     TagToCheck = [ 'Avion_Chasseur' ]
     TagToCheckAgainst = [ 'Avion_Chasseur']
@@ -189,14 +208,15 @@ StrategicAutoresolveConstantes is TStrategicAutoResolveConstantes
     [
         ( EStrategicBattleType_GroundStrategicBattle, MAP
             [
-                ( ~/EAutoresolveAvantage_NoRecoVersusReco,     ~/NoRecoAdvantage ),
-                ( ~/EAutoresolveAvantage_NoAntiAirVersusAir,   ~/NoAAAdvantage ),
-                ( ~/EAutoresolveAvantage_NoAntiTankVersusTank, ~/NoATAdvantage ),
-                ( ~/EAutoresolveAvantage_NoHeavyTank_vs_HeavyTank, ~/NoHeavyTank_advantage ),
-                ( ~/EAutoresolveAvantage_NoInfantry_vs_Infantry, ~/NoInfantryAdvantage ),
-                ( ~/EAutoresolveAvantage_NoCMD_vs_CMD, ~/NoCMD_Advantage ),
-                ( ~/EAutoresolveAvantage_NoSupply_vs_Supply, ~/NoSupply_Advantage ),
-                ( ~/EAutoresolveAvantage_NoAir_vs_Air, ~/NoAirSupport_Advantage ),
+                ( ~/EAutoresolveAvantage_NoRecoVersusReco,          ~/NoRecoAdvantage ),
+                ( ~/EAutoresolveAvantage_NoAntiAirVersusAir,        ~/NoAAAdvantage ),
+                ( ~/EAutoresolveAvantage_NoAntiTankVersusTank,      ~/NoATAdvantage ),
+                ( ~/EAutoresolveAvantage_NoHeavyTank_vs_HeavyTank,  ~/NoHeavyTank_advantage ),
+                ( ~/EAutoresolveAvantage_NoInfantry_vs_Infantry,    ~/NoInfantryAdvantage ),
+                ( ~/EAutoresolveAvantage_NoCMD_vs_CMD,              ~/NoCMD_Advantage ),
+                ( ~/EAutoresolveAvantage_NoSupply_vs_Supply,        ~/NoSupply_Advantage ),
+                ( ~/EAutoresolveAvantage_NoAir_vs_Air,              ~/NoAirSupport_Advantage ),
+                ( ~/EAutoresolveAvantage_NoHelo_vs_Helo,              ~/NoHeloSupport_Advantage ),
             ]
         ),
         ( EStrategicBattleType_AerialStrategicBattle, MAP

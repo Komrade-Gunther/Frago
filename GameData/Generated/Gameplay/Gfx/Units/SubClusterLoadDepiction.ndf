@@ -166,6 +166,7 @@ export TransactionGenerated is TNDFTransactionFileList
         'GameData:/Gameplay/Gfx/Units/US/Towed/HMGteam_M2HB_US.ndf',
         'GameData:/Gameplay/Gfx/Units/FR/Towed/HMGteam_M2HB_para_FR.ndf',
         'GameData:/Gameplay/Gfx/Units/US/Towed/HMGteam_M60_AB_US.ndf',
+        'GameData:/Gameplay/Gfx/Units/US/Towed/HMGteam_M60_NG_US.ndf',
         'GameData:/Gameplay/Gfx/Units/US/Towed/HMGteam_M60_US.ndf',
         'GameData:/Gameplay/Gfx/Units/UK/Towed/HMGteam_MAG_UK.ndf',
         'GameData:/Gameplay/Gfx/Units/RFA/Towed/HMGteam_MG3_FJ_RFA.ndf',

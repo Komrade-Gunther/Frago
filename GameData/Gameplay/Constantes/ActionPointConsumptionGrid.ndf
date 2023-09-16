@@ -16,10 +16,7 @@ export ActionPointConsumptionGridConstants is TActionPointConsumptionGridConstan
     //---------------------------------------------------------------------------------------//
     //--------------------------------- REGLAGES FEEDBACK -----------------------------------//
     //---------------------------------------------------------------------------------------//
-    CouleurDeLaCourbe = RGBA [19,85,106,215]  //[96,57,19,255]
+    CouleurDeLaCourbe = RGBA [19,85,106,0]  //[96,57,19,255]
     EpaisseurDeLaCourbe = 1200
     RemplirLePolygon = true
-    CouleurDuRemplissage = RGBA [19,85,106,85]
-    CouleurDuRemplissageAvecAttaque = RGBA [38,170,212,85]
-    CouleurDuRemplissageAvecZoc = RGBA [212,38,38,85]
 )

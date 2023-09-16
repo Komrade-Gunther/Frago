@@ -2513,6 +2513,8 @@ UISpecificTacticalEndGameViewDescriptor is TUISpecificTacticalEndGameViewDescrip
     MainComponentDescriptor = ~/BUCKSpecificTacticalEndGameMainComponentDescriptor
     MainComponentContainerUniqueName = "" // Permet d'indiquer l'endroit ou le composant doit s'insérer
 
+    ExperienceTexturesResources     = ~/ExperienceTexturesResources
+
     AllianceStyleBlockColors = MAP
     [
         (EAllianceStyle/BLUFOR, "playerHelper/Otan_line_Endgame"),

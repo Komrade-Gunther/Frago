@@ -279,6 +279,23 @@ export MeshDescriptor_Servant_Spe_D_VDV_LOW is TemplateMeshDescriptor
     FileName = 'GameData:/Assets/3D/Units/URSS/Infanterie/VDV/VDV_spe.Ase2NdfBin'
 )
 
+export MeshDescriptor_Servant_G_TTsko is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_1_TTsko.Ase2NdfBin'
+)
+export MeshDescriptor_Servant_D_TTsko is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_TTsko_spe.Ase2NdfBin'
+)
+export MeshDescriptor_Servant_G_TTsko_LOW is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_1_TTsko.Ase2NdfBin'
+)
+export MeshDescriptor_Servant_D_TTsko_LOW is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/URSS/Infanterie/MotoStrelki_TTsko/MotoStrelki_TTsko_spe.Ase2NdfBin'
+)
+
 export MeshDescriptor_Servant_G_DDR is TemplateMeshDescriptor
 (
     FileName = 'GameData:/Assets/3D/Units/DDR/Infanterie/MotSchutzen/MotSchutzen_1.Ase2NdfBin'

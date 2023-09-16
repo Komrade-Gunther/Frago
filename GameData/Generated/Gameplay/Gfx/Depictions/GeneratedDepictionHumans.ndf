@@ -1586,6 +1586,30 @@ HumanSubDepictionsShowroom_HMGteam_M60_AB_US is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Airborne_D_US
     ),
 ]
+HumanSubDepictions_HMGteam_M60_NG_US is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_US
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_US_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_US
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_US_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_M60_NG_US is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_US
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_US
+    ),
+]
 HumanSubDepictions_HMGteam_M60_US is 
 [
     SubDepiction_ATGMServantLeft
@@ -3292,6 +3316,7 @@ MAP[
     ("HMGteam_M2HB_US", 2),
     ("HMGteam_M2HB_para_FR", 2),
     ("HMGteam_M60_AB_US", 2),
+    ("HMGteam_M60_NG_US", 2),
     ("HMGteam_M60_US", 2),
     ("HMGteam_MAG_UK", 2),
     ("HMGteam_MG3_FJ_RFA", 2),
@@ -3547,6 +3572,8 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Para_NCO_D_FR SelectorId = [ "HMGteam_M2HB_para_FR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Airborne_G_US SelectorId = [ "HMGteam_M60_AB_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Airborne_D_US SelectorId = [ "HMGteam_M60_AB_US", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_US SelectorId = [ "HMGteam_M60_NG_US", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_US SelectorId = [ "HMGteam_M60_NG_US", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_US SelectorId = [ "HMGteam_M60_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_US SelectorId = [ "HMGteam_M60_US", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK SelectorId = [ "HMGteam_MAG_UK", "01" ] ),
