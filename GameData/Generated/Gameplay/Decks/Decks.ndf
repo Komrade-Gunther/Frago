@@ -8747,3 +8747,27 @@ private DeckList is TDeckDescriptorList
         ~/Descriptor_Deck_UK_Blues_Royals_challenge_OP_14_HLM_Player,
     ]
 )
+export Descriptor_Pack_Division_SOV_Afganski is TDeckDescriptor
+(
+    DeckName = ''
+    DeckDivision = ~/Descriptor_Deck_Division_SOV_Afganski
+    DeckPackList =
+    [
+    ]
+    DeckCombatGroupList =
+    [
+    ]
+)
+
+export Descriptor_Pack_Division_101st is TDeckDescriptor
+(
+    DeckName = ''
+    DeckDivision = ~/Descriptor_Deck_Division_101st
+    DeckPackList =
+    [
+
+    ]
+    DeckCombatGroupList =
+    [
+    ]
+)

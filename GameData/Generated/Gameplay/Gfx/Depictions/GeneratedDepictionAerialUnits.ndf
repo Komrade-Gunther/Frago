@@ -15950,11 +15950,13 @@ Op_Tornado_IDS_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 (
     Connoisseur = MissileCarriage_Tornado_IDS_RFA
     FireEffectTag = "weapon_effet_tag2"
-    NbProj = 1
+    NbProj = 2
     WeaponIndex = 2
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_2",
+        "WeaponShootData_1_2",
+
     ]
 )
 Op_Tornado_IDS_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
@@ -15966,6 +15968,7 @@ Op_Tornado_IDS_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_3",
+
     ]
 )
 Gfx_Tornado_IDS_RFA_Autogen is TacticAerialDepictionTemplate

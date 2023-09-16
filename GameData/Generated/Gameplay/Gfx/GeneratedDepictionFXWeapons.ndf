@@ -674,8 +674,6 @@ FXWeapon_Bomb_FAB_500kg_x6 is TIntroduceMobileHappening( Happening = FXProjectil
 
 FXWeapon_Bomb_FAB_500kg_x8 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB500 ) )
 
-FXWeapon_Bomb_GBU_24_x2 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_GBU24 ) )
-
 FXWeapon_Bomb_Matra_250kg_x10 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA250 ) )
 
 FXWeapon_Bomb_Matra_250kg_x5 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA250 ) )

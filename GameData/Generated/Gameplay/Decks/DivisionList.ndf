@@ -40,5 +40,7 @@ private DivisionList is TDeckDivisionList
         ~/Descriptor_Deck_Division_SOV_79_Gds_Tank_challenge,
         ~/Descriptor_Deck_Division_SOV_79_Gds_Tank_challenge_IA,
         ~/Descriptor_Deck_Division_US_11ACR_multi_HB,
+		~/Descriptor_Deck_Division_SOV_Afganski,
+		~/Descriptor_Deck_Division_101st,
     ]
 )

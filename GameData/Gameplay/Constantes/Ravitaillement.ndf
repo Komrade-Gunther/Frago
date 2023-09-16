@@ -22,9 +22,9 @@ export StandardSupply is TSupplyDescriptor
     FuelSupplyCostBySecond =  2.5
 
     // Point de vie ravitaillés par seconde
-    HealthSupplyBySecond = 0.15 //0.00001
+    HealthSupplyBySecond = 0.1 //0.00001
     // Cout du ravitaillement de point de vie par seconde
-    HealthSupplyCostBySecond = 3 // 0.00001
+    HealthSupplyCostBySecond = 2 // 0.00001
 
     // Point de ravitaillement ravitaillés par seconde
     SupplySupplyBySecond = 20 //30
@@ -55,6 +55,35 @@ SupplyFeedbackDescriptor is TSupplyFeedbackDescriptor
     FeedbackScreenResilienceDuration = 3.0
     FeedbackFadeOutTime = 1.0
 )
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //

@@ -4802,17 +4802,17 @@ Ammo_Bomb_GBU_24_x2 is TAmmunitionDescriptor
     DescriptorId                      = GUID:{db248621-a27b-4489-99df-842570ede1d6}
     Name                              = 'YASKUWIHQT'
     TypeName                          = 'NA'
-    TypeCategoryName                  = 'ODPPNIUOYS'
+    TypeCategoryName                  = 'EBKQBGCEHE'
     Caliber                           = 'IXLULHWLKB'
     WeaponDescriptionToken            = 'KCDGBXHFKO'
-    TraitsToken                       = [ 'MOTION', 'HE', ]
-    WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
+    TraitsToken                       = [ 'MOTION', 'semiAuto', 'HE', ]
+    WeaponCursorType                  = Weapon_Cursor_GroundMissile
     MinMaxCategory                    = MinMax_Bombe
-    Level                             = 3
+    Level                             = 1
     Arme                              = TDamageTypeRTTI(Family="howz_bombe" Index=1)
-    ProjectileType                    = EProjectileType/Bombe
+    ProjectileType                    = EProjectileType/GuidedMissile
     ImpactHappening                   = [ 'BombeGBU24' ]
-    FxPower                           = EFXPower/Moyen
+    FxPower                           = EFXPower/UltraLourd
     TempsEntreDeuxTirs                = 0.1
     TempsEntreDeuxFx                  = 0.1
     PorteeMaximale                    = ((8985) * Metre)
@@ -4820,33 +4820,30 @@ Ammo_Bomb_GBU_24_x2 is TAmmunitionDescriptor
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((0) * Metre)
-    PorteeMinimale                    = ((0) * Metre)
-    AltitudeAPorteeMinimale           = ((37.5) * Metre)
-    AltitudeAPorteeMaximale           = ((75.0) * Metre)
-    AffecteParNombre                  = False
-    AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((50) * Metre)
-    DispersionAtMinRange              = ((50) * Metre)
+    PorteeMinimale                    = ((500) * Metre)
+    AngleDispersion                   = 0.02
+    DispersionAtMaxRange              = ((1000) * Metre)
+    DispersionAtMinRange              = ((1000) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 314 * Metre
-    PhysicalDamages                   = 12.21
+    RadiusSplashPhysicalDamages       = 188 * Metre
+    PhysicalDamages                   = 16
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 555 * Metre
-    SuppressDamages                   = 1221.0
-    AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    RadiusSplashSuppressDamages       = 278 * Metre
+    SuppressDamages                   = 700.0
+    AllowSuppressDamageWhenNoImpact                = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = True
     TirReflexe                        = False
     InterdireTirReflexe               = False
-    FX_vitesse_de_depart              = 0.0
-    FX_acceleration_max               = 0.0
-    FX_tir_sans_physic                = False
+    FX_vitesse_de_depart              = 2000 * Metre
+    FX_acceleration_max               = 1000 * Metre
+    FX_tir_sans_physic                = True
     FX_frottement                     = 0.4
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
 	IsFireAndForget                   = True
-    TargetsDistricts                  = False
+    TargetsDistricts                  = True
     HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
     (
          DescriptorId          = GUID:{72f44f3d-4976-46f4-b910-d5e0ed3ef0ed}
@@ -4855,42 +4852,41 @@ Ammo_Bomb_GBU_24_x2 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 100),
-             (EBaseHitValueModifier/Moving, 100),
+             (EBaseHitValueModifier/Idling, 70),
+             (EBaseHitValueModifier/Moving, 70),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
          HitModifierList       =
          [
              EDiceHitModifier/Precision,
-             EDiceHitModifier/DistanceToTarget,
              EDiceHitModifier/SuccesiveShots,
              EDiceHitModifier/Suppress,
          ]
     )
-    MaxSuccessiveHitCount             = 1
     TempsDeVisee                      = 0.0
     TempsEntreDeuxSalves              = 1.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
     NbTirParSalves                    = 2
-    SupplyCost                        = 90
+    SupplyCost                        = 380
     NbSalvosShootOnPosition           = 1
     CanShootOnPosition                = True
     CanShootWhileMoving               = True
-    NbrProjectilesSimultanes          = 1
+    NbrProjectilesSimultanes          = 2
     AffichageMunitionParSalve         = 2
-    MissileDescriptor                 = nil
+    MissileTimeBetweenCorrections     = 10.0
+    MissileDescriptor                 = ~/Descriptor_Missile_Bomb_GBU_27_x2
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_GBU_27"
+
+    WeaponForceNote                   = 2
     SmokeDescriptor                   = nil
-    FireDescriptor                    = ~/Descriptor_Fire_Incendie
-    FireTriggeringProbability         = 0.2
-    TargetUnitCenter                  = True
+    FireDescriptor                    = nil
+    TargetUnitCenter                  = False
     CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
-    DistanceForSpeed                      = 0.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
-    UnitWeight                        = 500.0
 )
 Ammo_Bomb_Matra_250kg_x10 is TAmmunitionDescriptor
 (
@@ -46075,7 +46071,7 @@ Ammo_RocketAir_Hydra_70mm_x114 is TAmmunitionDescriptor
     TempsEntreDeuxSalves_Min           = 0.75
     TempsEntreDeuxSalves_Max           = 1.5
     NbTirParSalves                    = 114
-    SupplyCost                        = 1140
+    SupplyCost                        = 456
     NbSalvosShootOnPosition           = 2
     CanShootOnPosition                = True
     CanShootWhileMoving               = True
@@ -46360,7 +46356,7 @@ Ammo_RocketAir_Hydra_70mm_x19_avion is TAmmunitionDescriptor
     TempsEntreDeuxSalves_Min           = 0.75
     TempsEntreDeuxSalves_Max           = 1.5
     NbTirParSalves                    = 19
-    SupplyCost                        = 190
+    SupplyCost                        = 76
     NbSalvosShootOnPosition           = 2
     CanShootOnPosition                = True
     CanShootWhileMoving               = True
@@ -46455,7 +46451,7 @@ Ammo_RocketAir_Hydra_70mm_x38 is TAmmunitionDescriptor
     TempsEntreDeuxSalves_Min           = 0.75
     TempsEntreDeuxSalves_Max           = 1.5
     NbTirParSalves                    = 38
-    SupplyCost                        = 380
+    SupplyCost                        = 152
     NbSalvosShootOnPosition           = 2
     CanShootOnPosition                = True
     CanShootWhileMoving               = True
@@ -46550,7 +46546,7 @@ Ammo_RocketAir_Hydra_70mm_x57 is TAmmunitionDescriptor
     TempsEntreDeuxSalves_Min           = 0.75
     TempsEntreDeuxSalves_Max           = 1.5
     NbTirParSalves                    = 57
-    SupplyCost                        = 570
+    SupplyCost                        = 228
     NbSalvosShootOnPosition           = 2
     CanShootOnPosition                = True
     CanShootWhileMoving               = True
@@ -46645,7 +46641,7 @@ Ammo_RocketAir_Hydra_70mm_x76 is TAmmunitionDescriptor
     TempsEntreDeuxSalves_Min           = 0.75
     TempsEntreDeuxSalves_Max           = 1.5
     NbTirParSalves                    = 76
-    SupplyCost                        = 760
+    SupplyCost                        = 304
     NbSalvosShootOnPosition           = 2
     CanShootOnPosition                = True
     CanShootWhileMoving               = True
@@ -73558,7 +73554,7 @@ Ammo_RocketAir_Hydra_70mm_x76_FRL is TAmmunitionDescriptor
     TempsEntreDeuxSalves_Min           = 0.75
     TempsEntreDeuxSalves_Max           = 1.5
     NbTirParSalves                    = 76
-    SupplyCost                        = 760
+    SupplyCost                        = 304
     NbSalvosShootOnPosition           = 2
     CanShootOnPosition                = True
     CanShootWhileMoving               = True

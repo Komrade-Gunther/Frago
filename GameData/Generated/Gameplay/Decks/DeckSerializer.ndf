@@ -42,7 +42,8 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Deck_Division_SOV_35_AirAslt_Brig_challenge_IA, 193),
         (Descriptor_Deck_Division_UK_Blues_Royals_challenge, 194),
         (Descriptor_Deck_Division_SOV_119IndTkBrig_multi, 195),
-
+        (Descriptor_Deck_Division_101st, 150),
+        (Descriptor_Deck_Division_SOV_Afganski, 151),
 
 
     ]
@@ -3332,8 +3333,37 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Unit_M35_trans_tuto_US, 1999),
         (Descriptor_Unit_Ranger_tuto_US, 2000),
         (Descriptor_Unit_HMGteam_M60_NG_US, 2022),
-        
-        (Descriptor_Unit_Su_25_Multirole_FRL, 25028),
+
+        (Descriptor_Unit_Marder_1A3_MILAN2_RFA_FRL, 5006),
+        (Descriptor_Unit_M2A2_Bradley_TOW1_IFV_US_FRL, 5007),
+        (Descriptor_Unit_M113_ACAV_US_nonrecce_FRL, 5008),
+        //101st
+        (Descriptor_Unit_M1025_Humvee_TOW_para_US_101st_FRL, 20009),
+        (Descriptor_Unit_CH47_Chinook_US_101st_FRL, 20010),
+        (Descriptor_Unit_UH60A_Black_Hawk_US_101st_FRL, 20011),
+        (Descriptor_Unit_UH60A_Black_Hawk_US_Nonarme_101st_FRL, 20012),
+        (Descriptor_Unit_Airborne_Scout_US_101st_FRL, 20013),
+        (Descriptor_Unit_AH6C_Little_Bird_US_unarmed_FRL, 20014),
+        (Descriptor_Unit_M1025_Humvee_AGL_US_101st_FRL, 20015),
+        (Descriptor_Unit_M1025_Humvee_scout_US_101st_FRL, 20016),
+        (Descriptor_Unit_LRRP_US_101st_FRL, 20017),
+        (Descriptor_Unit_GreenBerets_US_101st_FRL, 20018),
+        (Descriptor_Unit_MANPAD_Stinger_C_para_US_101st_FRL, 20019),
+        (Descriptor_Unit_AH64_Apache_US_ATAS_101st_FRL, 20020),
+        (Descriptor_Unit_ATteam_ITOW_US_101st_FRL, 20021),
+        (Descriptor_Unit_F16E_AA_US_101st_FRL, 20022),
+        (Descriptor_Unit_F117_Nighthawk_US_101st_FRL, 20023),
+        //
+        (Descriptor_Unit_Rifles_US_Dualat_FRL, 20024),
+        (Descriptor_Unit_Scout_US_2man_FRL, 20025),
+        (Descriptor_Unit_ATteam_RCL_SPG9_VDV_SOV_af_FRL, 20026),
+        (Descriptor_Unit_BMP_2_SOV_recon_FRL, 20027),
+        (Descriptor_Unit_Sniper_US_101st_FRL, 20028),
+        (Descriptor_Unit_ZU_23_2_SOV_AF_FRL, 20029),
+        (Descriptor_Unit_60mm_mortar_101st_FRL, 20030),
+        //
+        (Descriptor_Unit_Su_25_Multirole_FRL, 25031),
+
 
     ]
 )
