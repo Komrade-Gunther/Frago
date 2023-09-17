@@ -35860,7 +35860,7 @@ export Descriptor_ShowRoomUnit_Scout_US_2man_FRL is TEntityDescriptor
               
         TInfantrySquadModuleDescriptor
         (
-            NbSoldatInGroupeCombat = 4
+            NbSoldatInGroupeCombat = 2
             SquadDataDescriptor = ~/SoldierSquadDataDescriptor
             InfantryMimeticName = 'Scout_US'
             WeaponUnitFXKey     = 'Scout_US'
