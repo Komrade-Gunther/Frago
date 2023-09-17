@@ -2240,6 +2240,7 @@ Descriptor_Deck_Division_SOV_79_Gds_Tank_multi is TDeckDivisionDescriptor
     DescriptionHintExtendedToken = ''
     PackList = MAP
     [
+        (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_T80U_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_2K12_KUB_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_2S1_Gvozdika_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_2S3M_Akatsiya_SOV, 2),

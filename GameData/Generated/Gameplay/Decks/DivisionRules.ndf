@@ -10771,6 +10771,13 @@ private DivisionRules is TDeckDivisionRules
                 [
                     TDeckUniteRule
                     (
+                        UnitDescriptor = ~/Descriptor_Unit_T80U_SOV
+                        AvailableWithoutTransport = True
+                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.33]
+                    ),
+                    TDeckUniteRule
+                    (
                         UnitDescriptor = ~/Descriptor_Unit_2K12_KUB_SOV
                         AvailableWithoutTransport = True
                         NumberOfUnitInPack = 3
