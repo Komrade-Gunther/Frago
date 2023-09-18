@@ -3363,6 +3363,8 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Unit_60mm_mortar_101st_FRL, 20030),
         //
         (Descriptor_Unit_Su_25_Multirole_FRL, 25031),
+        (Descriptor_Unit_PT76B_tank_SOV_FRL, 25032),
+
 
 
     ]

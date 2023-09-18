@@ -3575,6 +3575,8 @@ Descriptor_Deck_Division_SOV_Afganski is TDeckDivisionDescriptor
     DescriptionHintExtendedToken = ''
     PackList = MAP
     [
+        
+        (~/Descriptor_Deck_Pack_PT76B_tank_SOV_FRL, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_FOB_SOV, 1),
         (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_BTR_60_CMD_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_challenge_BMP_1_CMD_SOV, 2),

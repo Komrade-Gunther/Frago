@@ -9623,14 +9623,14 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2A_x2 is TEntityDescriptor
         (
             DefaultConfig = TGuidedMissileMovementConfigDescriptor
             (
-                MaxSpeed        = 1210 * Metre
-                MaxAcceleration = 750 * Metre
+                MaxSpeed        = 1650 * Metre
+                MaxAcceleration = 1050 * Metre
                 AutoGyr         = 1.3962634015954636
             )
             UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
             (
-                MaxSpeed        = 1210 * Metre
-                MaxAcceleration = 750 * Metre
+                MaxSpeed        = 1650 * Metre
+                MaxAcceleration = 1050 * Metre
                 AutoGyr         = 1.3962634015954636
             )
             AscendantPhaseConfig = nil
@@ -9640,8 +9640,8 @@ export Descriptor_Missile_ATGM_BGM71D_TOW_2A_x2 is TEntityDescriptor
             TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
             TimeBetweenChaosUpdates = 0.1
             RangeChaos = 1250
-            AngleMaxForRandomMouvUncontrollable = 6.0
-            RotationSpeedWhenUncontrollable = 30
+            AngleMaxForRandomMouvUncontrollable = 0.0006
+            RotationSpeedWhenUncontrollable = 0.0003
             TempsDemiTour = 0.1
         ),
         TBaseDamageModuleDescriptor

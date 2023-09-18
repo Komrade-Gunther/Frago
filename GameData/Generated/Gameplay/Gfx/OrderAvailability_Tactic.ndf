@@ -9062,6 +9062,8 @@ Descriptor_OrderAvailability_Paratroopers_MILAN_TA_UK is [
     "Shoot",
     "ShootOnPosition",
     "ShootOnPositionWithoutCorrection",
+    "ShootOnPositionSmoke",
+    "ShootOnPositionWithoutCorrectionSmoke",
     "AskForSupply",
     "GoGetSupply",
     "EnterDistrict",

@@ -29475,3 +29475,16 @@ Descriptor_Deck_Pack_Tornado_IDS_RFA is TDeckPackDescriptor
         ),
     ]
 )
+
+Descriptor_Deck_Pack_PT76B_tank_SOV_FRL is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{2fde0d2b-ec31-4eb3-ab4d-f96e88821823}
+    CfgName = 'Descriptor_Deck_Pack_PT76B_tank_SOV_FRL'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_PT76B_tank_SOV_FRL
+        ),
+    ]
+)

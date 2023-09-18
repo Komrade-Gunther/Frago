@@ -11129,7 +11129,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_T80BV_Beast_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 6
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
                     ),
                     TDeckUniteRule
@@ -16891,6 +16891,14 @@ private DivisionRules is TDeckDivisionRules
             (
                 UnitRuleList =
                 [
+
+                    TDeckUniteRule
+                    (
+                        UnitDescriptor = ~/Descriptor_Unit_PT76B_tank_SOV_FRL
+                        AvailableWithoutTransport = True
+                        NumberOfUnitInPack = 12
+                        NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
+                    ),
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_FOB_SOV
