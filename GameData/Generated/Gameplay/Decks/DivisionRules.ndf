@@ -1309,10 +1309,10 @@ private DivisionRules is TDeckDivisionRules
                     ),
                     TDeckUniteRule
                     (
-                        UnitDescriptor = ~/Descriptor_Unit_AML_60_FR
+                        UnitDescriptor = ~/Descriptor_Unit_AML_60_Gendarmerie_FR
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 6
-                        NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
+                        NumberOfUnitInPack = 9
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.33]
                     ),
                     TDeckUniteRule
                     (
