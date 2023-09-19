@@ -45244,15 +45244,15 @@ Ammo_RDG33 is TAmmunitionDescriptor
     DescriptorId                      = GUID:{6999fb66-5dad-4efd-9a1e-0a4114f02b27}
     Name                              = 'GrenSOV'
     TypeName                          = 'NA'
-    TypeCategoryName                  = 'NZWXQNJFDX'
+    TypeCategoryName                  = 'QOYCTTAUEL'
     Caliber                           = 'frag'
     WeaponDescriptionToken            = 'YKOXTNOAFR'
-    TraitsToken                       = [ 'STAT', 'HE', 'HEAT', ]
-    WeaponCursorType                  = Weapon_Cursor_UnguidedMissile
-    MinMaxCategory                    = MinMax_LAW
+    TraitsToken                       = [ 'MOTION', 'HE', 'CAC', ]
+    WeaponCursorType                  = Weapon_Cursor_None
+    MinMaxCategory                    = MinMax_Grenade
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="he" Index=1)
-    ProjectileType                    = EProjectileType/Obus
+    Arme                              = TDamageTypeRTTI(Family="cac" Index=2)
+    ProjectileType                    = EProjectileType/Artillerie
     ImpactHappening                   = [ 'GrenadeStielhandgranate' ]
     FxPower                           = EFXPower/Moyen
     TempsEntreDeuxTirs                = 1.0
@@ -45264,20 +45264,20 @@ Ammo_RDG33 is TAmmunitionDescriptor
     PorteeMaximaleHA                  = ((0) * Metre)
     PorteeMinimale                    = ((0) * Metre)
     AltitudeAPorteeMinimale           = ((0.1) * Metre)
-    AltitudeAPorteeMaximale           = ((75.0) * Metre)
+    AltitudeAPorteeMaximale           = ((60.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((10) * Metre)
-    DispersionAtMinRange              = ((5) * Metre)
+    DispersionAtMaxRange              = ((20) * Metre)
+    DispersionAtMinRange              = ((10) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
-    RadiusSplashPhysicalDamages       = 5 * Metre
-    PhysicalDamages                   = 0.12
+    RadiusSplashPhysicalDamages       = 50 * Metre
+    PhysicalDamages                   = 0.3
     ShowDamageInUI                    = True
-    RadiusSplashSuppressDamages       = 1 * Metre
-    SuppressDamages                   = 7.0
-    AllowSuppressDamageWhenNoImpact                = False
-    DisplaySalveAccuracy              = True
+    RadiusSplashSuppressDamages       = 50 * Metre
+    SuppressDamages                   = 20
+    AllowSuppressDamageWhenNoImpact                = True
+    DisplaySalveAccuracy              = False
     TirIndirect                       = False
     TirReflexe                        = True
     InterdireTirReflexe               = False
@@ -45296,8 +45296,8 @@ Ammo_RDG33 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 0.0),
-             (EBaseHitValueModifier/Moving, 0.0),
+             (EBaseHitValueModifier/Idling, 40),
+             (EBaseHitValueModifier/Moving, 25),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -45310,25 +45310,26 @@ Ammo_RDG33 is TAmmunitionDescriptor
          ]
     )
     TempsDeVisee                      = 2.0
-    TempsEntreDeuxSalves              = 6.0
-    TempsEntreDeuxSalves_Min           = -1.0
-    TempsEntreDeuxSalves_Max           = -1.0
-    NbTirParSalves                    = 1
-    SupplyCost                        = 1
-    CanShootOnPosition                = False
-    CanShootWhileMoving               = False
+    TempsEntreDeuxSalves              = 5.0
+    TempsEntreDeuxSalves_Min           = 2.5
+    TempsEntreDeuxSalves_Max           = 3.5
+    NbTirParSalves                    = 3
+    SupplyCost                        = 12
+    NbSalvosShootOnPosition           = 3
+    CanShootOnPosition                = True
+    CanShootWhileMoving               = True
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 1
+    AffichageMunitionParSalve         = 3
     MissileDescriptor                 = nil
-    SmokeDescriptor                   = ~/Descriptor_Smoke_Fumi81mm
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_mk81"
     FireDescriptor                    = ~/Descriptor_Fire_Incendie
-    FireTriggeringProbability         = 0.05
+    FireTriggeringProbability         = 0.15
     TargetUnitCenter                  = True
     CanHarmAirplanes                  = True
     IsHarmlessForAllies               = False
     PiercingWeapon                    = False
-    FlightTimeForSpeed                    = 1.15
-    DistanceForSpeed                      = 2000.0 * Metre
+    FlightTimeForSpeed                    = 1
+    DistanceForSpeed                      = 425.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
 Ammo_RocketAir__SNEB_68mm is TAmmunitionDescriptor
