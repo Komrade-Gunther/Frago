@@ -29488,3 +29488,28 @@ Descriptor_Deck_Pack_PT76B_tank_SOV_FRL is TDeckPackDescriptor
         ),
     ]
 )
+Descriptor_Deck_Pack_Ranger_US_101st_FRL is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{ab9c01c9-4298-433c-9a5f-f6da66d39340}
+    CfgName = 'Descriptor_Deck_Pack_Ranger_US_101st_FRL'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_Ranger_US_101st_FRL
+        ),
+    ]
+)
+Descriptor_Deck_Pack_Rangers_CMD_US is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{205c13cd-5f50-47a9-9b74-726dd35ceb96}
+    CfgName = 'Descriptor_Deck_Pack_Rangers_CMD_US'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_Rangers_CMD_US
+        ),
+    ]
+)
+

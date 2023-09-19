@@ -3364,6 +3364,8 @@ DeckSerializer is TDeckSerializer
         //
         (Descriptor_Unit_Su_25_Multirole_FRL, 25031),
         (Descriptor_Unit_PT76B_tank_SOV_FRL, 25032),
+        (Descriptor_Unit_Ranger_US_101st_FRL, 25033),
+
 
 
 

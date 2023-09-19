@@ -35375,6 +35375,100 @@ Ammo_MMG_AANF1_7_62mm_x2 is TAmmunitionDescriptor
     DistanceForSpeed                      = 1500.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
+Ammo_MMG_inf_M240B_7_62mm is TAmmunitionDescriptor
+(
+    DescriptorId                      = GUID:{a92cf455-4276-45dc-ac80-f71a841fda69}
+    Name                              = 'CZQPSPLWVI'
+    TypeName                          = 'NA'
+    TypeCategoryName                  = 'BBQBDWUTJX'
+    Caliber                           = 'ZMMBFKRQQR'
+    WeaponDescriptionToken            = 'FUQCRZJUJQ'
+    TraitsToken                       = [ 'STAT', ]
+    WeaponCursorType                  = Weapon_Cursor_MachineGun
+    MinMaxCategory                    = MinMax_inf_MMG
+    Level                             = 3
+    Arme                              = TDamageTypeRTTI(Family="fmballe" Index=1)
+    ProjectileType                    = EProjectileType/Obus
+    ImpactHappening                   = [ 'MitrailleuseMMGInf' ]
+    FxPower                           = EFXPower/Moyen
+    TempsEntreDeuxTirs                = 1.0
+    TempsEntreDeuxFx                  = 1.0
+    PorteeMaximale                    = ((3042) * Metre)
+    PorteeMinimaleTBA                 = ((0) * Metre)
+    PorteeMaximaleTBA                 = ((1486) * Metre)
+    PorteeMinimaleHA                  = ((0) * Metre)
+    PorteeMaximaleHA                  = ((0) * Metre)
+    PorteeMinimale                    = ((200) * Metre)
+    AltitudeAPorteeMinimale           = ((15.0) * Metre)
+    AltitudeAPorteeMaximale           = ((30.0) * Metre)
+    AffecteParNombre                  = True
+    AngleDispersion                   = 0.0
+    DispersionAtMaxRange              = ((15) * Metre)
+    DispersionAtMinRange              = ((5) * Metre)
+    DispersionWithoutSorting          = True
+    CorrectedShotAimtimeMultiplier    = 1.0
+    RadiusSplashPhysicalDamages       = ((var_mmg_splash) * Metre)
+    PhysicalDamages                   = 0.196
+    ShowDamageInUI                    = True
+    RadiusSplashSuppressDamages       = 23 * Metre
+    SuppressDamages                   = 8.0
+    AllowSuppressDamageWhenNoImpact                = False
+    DisplaySalveAccuracy              = True
+    TirIndirect                       = False
+    TirReflexe                        = True
+    InterdireTirReflexe               = False
+    FX_vitesse_de_depart              = 0.0
+    FX_acceleration_max               = 0.0
+    FX_tir_sans_physic                = False
+    FX_frottement                     = 0.0
+    NoiseDissimulationMalus           = 2.0
+    ShotsBeforeMaxNoise               = 3
+    TargetsDistricts                  = True
+    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
+    (
+         DescriptorId          = GUID:{de69df15-545f-4962-9b42-69036ce8e250}
+         BaseCriticModifier = 25
+         BaseEffectModifier = 0
+         BaseHitValueModifiers =
+         [
+             (EBaseHitValueModifier/Base, 0.0),
+             (EBaseHitValueModifier/Idling, 35),
+             (EBaseHitValueModifier/Moving, 0),
+             (EBaseHitValueModifier/SuccessfulShots, 0.0),
+             (EBaseHitValueModifier/Targeted, 0.0),
+         ]
+         HitModifierList       =
+         [
+             EDiceHitModifier/Precision,
+             EDiceHitModifier/DistanceToTarget,
+             EDiceHitModifier/SuccesiveShots,
+             EDiceHitModifier/Suppress,
+         ]
+    )
+    MaxSuccessiveHitCount             = 5
+    TempsDeVisee                      = 1.5
+    TempsEntreDeuxSalves              = 2.0
+    TempsEntreDeuxSalves_Min           = -1.0
+    TempsEntreDeuxSalves_Max           = -1.0
+    NbTirParSalves                    = 1
+    SupplyCost                        = 1
+    NbSalvosShootOnPosition           = 4
+    CanShootOnPosition                = True
+    CanShootWhileMoving               = False
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 10
+    MissileDescriptor                 = nil
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_M240B"
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = nil
+    TargetUnitCenter                  = True
+    CanHarmAirplanes                  = True
+    IsHarmlessForAllies               = True
+    PiercingWeapon                    = False
+    FlightTimeForSpeed                    = 0.8
+    DistanceForSpeed                      = 1500.0 * Metre
+    DamageTypeEvolutionOverRangeDescriptor  = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
+)
 Ammo_MMG_FN_MAG_7_62mm is TAmmunitionDescriptor
 (
     DescriptorId                      = GUID:{43a27d3b-a6ac-4bec-a430-d5515535a675}
@@ -42967,7 +43061,7 @@ Ammo_PM_M4_Carbine is TAmmunitionDescriptor
     CanShootOnPosition                = True
     CanShootWhileMoving               = True
     NbrProjectilesSimultanes          = 1
-    AffichageMunitionParSalve         = 12
+    AffichageMunitionParSalve         = 16
     MissileDescriptor                 = nil
     InterfaceWeaponTexture            = "Texture_Interface_Weapon_M4_carbine"
     SmokeDescriptor                   = nil

@@ -19579,7 +19579,7 @@ export Descriptor_ShowRoomUnit_Ranger_tuto_US is TEntityDescriptor
                 DescriptorId = GUID:{f8c6c1c8-0f01-43ca-b7c5-12b0d501f56d}
                 MimeticName = 'Ranger_tuto_US'
             )
-            BoundingBoxSize     = 8 * Metre
+            BoundingBoxSize     = 11 * Metre
         ),
         ~/LineInfantrySquadSlotPositionsModuleDescriptor,
         TInfantrySquadWeaponAssignmentModuleDescriptor
@@ -19630,7 +19630,7 @@ export Descriptor_ShowRoomUnit_Rangers_CMD_US is TEntityDescriptor
         $/GFX/Everything/WeaponDescriptor_Rangers_CMD_US,
         TInfantrySquadModuleDescriptor
         (
-            NbSoldatInGroupeCombat = 4
+            NbSoldatInGroupeCombat = 12
             SquadDataDescriptor = ~/SoldierSquadDataDescriptor
             InfantryMimeticName = 'Rangers_CMD_US'
             WeaponUnitFXKey     = 'Rangers_CMD_US'
@@ -19639,7 +19639,7 @@ export Descriptor_ShowRoomUnit_Rangers_CMD_US is TEntityDescriptor
                 DescriptorId = GUID:{bb6aa5ce-e4a0-4ec8-a3c2-97e0837f116f}
                 MimeticName = 'Rangers_CMD_US'
             )
-            BoundingBoxSize     = 6 * Metre
+            BoundingBoxSize     = 11 * Metre
         ),
         ~/LineInfantrySquadSlotPositionsModuleDescriptor,
         TInfantrySquadWeaponAssignmentModuleDescriptor
@@ -19648,7 +19648,15 @@ export Descriptor_ShowRoomUnit_Rangers_CMD_US is TEntityDescriptor
                 (0,[0,]),
                 (1,[0,]),
                 (2,[0,]),
-                (3,[0,1,]),
+                (3,[0,]),
+                (4,[0,]),
+                (5,[0,]),
+                (6,[0,]),
+                (7,[0,]),
+                (8,[0,]),
+                (9,[0,]),
+                (10,[0,]),
+                (11,[0,1,]),
             ]
         ),
         ~/LinkTeamModuleDescriptor,
@@ -36022,6 +36030,69 @@ export Descriptor_ShowRoomUnit_Marder_1A3_MILAN2_RFA_FRL is TEntityDescriptor
         (
             Token = 'MBT'
             SpawnType = EShowroomSpawnType/Vehicle
+        ),
+    ]
+)
+export Descriptor_ShowRoomUnit_Ranger_US_101st_FRL is TEntityDescriptor
+(
+    DescriptorId        = GUID:{0ff1c200-8c62-48c8-b9b3-305e21416c87}
+    ClassNameForDebug   = "ShowRoomUnit_Ranger_US_101st_FRL"
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Nationalite                      = ENationalite/Allied
+            MotherCountry                    = 'US'
+            AcknowUnitType                   = ~/TAcknowUnitType_Inf
+            TypeUnitFormation                = 'Char'
+        ),
+        ~/ShowroomPositionModuleDescriptor,
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject       = False
+            Depiction            = ~/InfantryDepictionSquadShowroom
+        ),
+        $/GFX/Everything/WeaponDescriptor_Ranger_US_101st_FRL,
+        TInfantrySquadModuleDescriptor
+        (
+            NbSoldatInGroupeCombat = 9
+            SquadDataDescriptor = ~/SoldierSquadDataDescriptor
+            InfantryMimeticName = 'Ranger_US_101st_FRL'
+            WeaponUnitFXKey     = 'Ranger_US_101st_FRL'
+            MimeticDescriptor   = Descriptor_Unit_MimeticUnit
+            (
+                DescriptorId = GUID:{20c77e32-4f7e-469f-ba79-0c6bf977e76e}
+                MimeticName = 'Ranger_US_101st_FRL'
+            )
+            BoundingBoxSize     = 8 * Metre
+        ),
+        ~/LineInfantrySquadSlotPositionsModuleDescriptor,
+        TInfantrySquadWeaponAssignmentModuleDescriptor
+        (
+            InitialSoldiersToTurretIndexMap = MAP[
+                (0,[1,]),
+                (1,[1,]),
+                (2,[0,]),
+                (3,[0,]),
+                (4,[0,]),
+                (5,[0,]),
+                (6,[0,]),
+                (7,[0,]),
+                (8,[0,2,]),
+            ]
+        ),
+        ~/LinkTeamModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TExperienceModuleDescriptor
+        (
+            ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_SF
+            CanWinExperience = True
+            ExperienceGainBySecond = ~/ExperienceGainBySecond
+            ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+        ),
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'Inf'
+            SpawnType = EShowroomSpawnType/Infantry
         ),
     ]
 )

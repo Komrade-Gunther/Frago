@@ -11067,6 +11067,68 @@ TacticDepiction_Rifles_US_Dualat_FRL_Ghost is TemplateInfantryDepictionFactoryGh
   Surrogates = TacticDepiction_Rifles_US_Dualat_FRL_Surrogates
   Alternatives = TacticDepiction_Rifles_US_Dualat_FRL_Alternatives
 )
+// *****************************[ Ranger_US_101st_FRL ]*********************************
+Gfx_Ranger_US_101st_FRL is TemplateInfantryDepictionSquad
+(
+  SoundOperator = DepictionOperator_MovementSound_SM_Infanterie_US
+)
+AllWeaponAlternatives_Ranger_US_101st_FRL is [
+  TDepictionDescriptor( SelectorId = ['MeshAlternative_1'] MeshDescriptor = $/GFX/DepictionResources/Modele_M16A1_Carbine ),
+  TDepictionDescriptor( SelectorId = ['MeshAlternative_2'] MeshDescriptor = $/GFX/DepictionResources/Modele_M240B ),
+  TDepictionDescriptor( SelectorId = ['MeshAlternative_3'] MeshDescriptor = $/GFX/DepictionResources/Modele_Carl_Gustav_M2 ),
+]
+AllWeaponSubDepiction_Ranger_US_101st_FRL is TemplateAllSubWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_Ranger_US_101st_FRL
+  Operators = [
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_PM_M4_Carbine"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_1"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_MMG_inf_M240B_7_62mm"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_2"
+    ),
+    DepictionOperator_WeaponInstantFireInfantry
+    (
+      FireEffectTag = ["FireEffect_RocketInf_Carl_Gustav"]
+      WeaponShootDataPropertyName = "WeaponShootData_0_3"
+    ),
+  ]
+)
+AllWeaponSubDepictionBackpack_Ranger_US_101st_FRL is TemplateAllSubBackpackWeaponDepiction
+(
+  Alternatives = AllWeaponAlternatives_Ranger_US_101st_FRL
+)
+TacticDepiction_Ranger_US_101st_FRL_Surrogates is [['high', '01'], ['high', '02'], ['high', '03'], ['high', '04'], ['high', '05'], ['high', '06'], ['high', '07'], ['high', '08'], ['high', '09'], ['high', '10']]
+TacticDepiction_Ranger_US_101st_FRL_Alternatives is [
+  TDepictionDescriptor( SelectorId = ['high', '01'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US ),
+  TDepictionDescriptor( SelectorId = ['high', '02'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_02 ),
+  TDepictionDescriptor( SelectorId = ['high', '03'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_03 ),
+  TDepictionDescriptor( SelectorId = ['high', '04'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_04 ),
+  TDepictionDescriptor( SelectorId = ['high', '05'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_05 ),
+  TDepictionDescriptor( SelectorId = ['high', '06'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_06 ),
+  TDepictionDescriptor( SelectorId = ['high', '07'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_07 ),
+  TDepictionDescriptor( SelectorId = ['high', '08'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_08 ),
+  TDepictionDescriptor( SelectorId = ['high', '09'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_09 ),
+  TDepictionDescriptor( SelectorId = ['high', '10'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_10 ),
+  TDepictionDescriptor( SelectorId = ['low']  MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_LOW ),
+]
+TacticDepiction_Ranger_US_101st_FRL_Soldier is TemplateInfantryDepictionFactoryTactic
+(
+  Surrogates = TacticDepiction_Ranger_US_101st_FRL_Surrogates
+  Alternatives = TacticDepiction_Ranger_US_101st_FRL_Alternatives
+  SubDepictions = [AllWeaponSubDepiction_Ranger_US_101st_FRL, AllWeaponSubDepictionBackpack_Ranger_US]
+  Operators = [DepictionOperator_SkeletalAnimation2_Default()]
+)
+TacticDepiction_Ranger_US_101st_FRL_Ghost is TemplateInfantryDepictionFactoryGhost
+(
+  Surrogates = TacticDepiction_Ranger_US_101st_FRL_Surrogates
+  Alternatives = TacticDepiction_Ranger_US_101st_FRL_Alternatives
+)
+
 InfantryMimetic is MAP[
   ( 'AT_Group_TA_UK', TacticDepiction_AT_Group_TA_UK_Soldier ),
   ( 'AeroRifles_CMD_US', TacticDepiction_AeroRifles_CMD_US_Soldier ),
@@ -11274,6 +11336,7 @@ InfantryMimetic is MAP[
   ( 'Wachregiment_SMG_DDR', TacticDepiction_Wachregiment_SMG_DDR_Soldier ),
   ( 'GreenBerets_US_101st_FRL', TacticDepiction_GreenBerets_US_Soldier_101st_FRL ),
   ( 'Rifles_US_Dualat_FRL', TacticDepiction_Rifles_US_Dualat_FRL_Soldier ),
+  ( 'Ranger_US_101st_FRL', TacticDepiction_Ranger_US_101st_FRL_Soldier ),
 
 ]
 
@@ -11482,6 +11545,8 @@ InfantryMimeticGhost is MAP[
   ( 'Wachregiment_CMD_DDR', TacticDepiction_Wachregiment_CMD_DDR_Ghost ),
   ( 'Wachregiment_DDR', TacticDepiction_Wachregiment_DDR_Ghost ),
   ( 'Wachregiment_SMG_DDR', TacticDepiction_Wachregiment_SMG_DDR_Ghost ),
+  ( 'Ranger_US_101st_FRL', TacticDepiction_Ranger_US_101st_FRL_Ghost ),
+
 ]
 
 TransportedInfantryAlternativesCount is MAP[
@@ -11691,6 +11756,7 @@ TransportedInfantryAlternativesCount is MAP[
   ('Wachregiment_SMG_DDR', 6),
   ('GreenBerets_US_101st_FRL', 10),
   ('Rifles_US_Dualat_FRL', 10),
+  ('Ranger_US_101st_FRL', 10),
 
 ]
 
@@ -12890,6 +12956,16 @@ TransportedInfantryAlternatives is [
   TDepictionDescriptor( SelectorId = ['GreenBerets_US_101st_FRL', '08'] MeshDescriptor = $/GFX/DepictionResources/Modele_GreenBerets_US_08 ),
   TDepictionDescriptor( SelectorId = ['GreenBerets_US_101st_FRL', '09'] MeshDescriptor = $/GFX/DepictionResources/Modele_GreenBerets_US_09 ),
   TDepictionDescriptor( SelectorId = ['GreenBerets_US_101st_FRL', '10'] MeshDescriptor = $/GFX/DepictionResources/Modele_GreenBerets_US_10 ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '01'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '02'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_02 ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '03'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_03 ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '04'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_04 ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '05'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_05 ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '06'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_06 ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '07'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_07 ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '08'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_08 ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '09'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_09 ),
+  TDepictionDescriptor( SelectorId = ['Ranger_US_101st_FRL', '10'] MeshDescriptor = $/GFX/DepictionResources/Modele_Ranger_US_10 ),
 ]
 
 template GeneratedTransportedInfantryDepiction [ Index ] is TransportedInfantryDepiction
