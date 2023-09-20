@@ -54372,7 +54372,7 @@ Ammo_SAW_Bren_L4A4 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 5 * Metre
-    PhysicalDamages                   = 0.13
+    PhysicalDamages                   = 0.196
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 23 * Metre
     SuppressDamages                   = 8.0
