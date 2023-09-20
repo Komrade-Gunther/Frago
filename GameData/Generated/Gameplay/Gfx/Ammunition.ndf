@@ -3713,7 +3713,7 @@ Ammo_Bomb_Bidons_Speciaux_Napalm_x4 is TAmmunitionDescriptor
     FX_vitesse_de_depart              = 0.0
     FX_acceleration_max               = 0.0
     FX_tir_sans_physic                = False
-    FX_frottement                     = 0.4
+    FX_frottement                     = 1
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
     TargetsDistricts                  = False
@@ -5598,7 +5598,7 @@ Ammo_Bomb_Mk77_340kg_Napalm_x2 is TAmmunitionDescriptor
     FX_vitesse_de_depart              = 0.0
     FX_acceleration_max               = 0.0
     FX_tir_sans_physic                = False
-    FX_frottement                     = 0.4
+    FX_frottement                     = 1
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
     TargetsDistricts                  = False
@@ -6643,7 +6643,7 @@ Ammo_Bomb_ZB500_500kg_Napalm_x4 is TAmmunitionDescriptor
     FX_vitesse_de_depart              = 0.0
     FX_acceleration_max               = 0.0
     FX_tir_sans_physic                = False
-    FX_frottement                     = 0.4
+    FX_frottement                     = 1
     NoiseDissimulationMalus           = 1.0
     ShotsBeforeMaxNoise               = 3
     TargetsDistricts                  = False
