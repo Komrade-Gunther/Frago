@@ -875,6 +875,7 @@ export ShowRoomEquivalenceManager is TShowRoomEquivalenceManager
         ( ~/Descriptor_Unit_60mm_mortar_101st_FRL, ~/Descriptor_ShowRoomUUnit_60mm_mortar_101st_FRL ),
         ( ~/Descriptor_Unit_PT76B_tank_SOV_FRL, ~/Descriptor_ShowRoomUnit_PT76B_tank_DDR ),
         ( ~/Descriptor_Unit_Ranger_US_101st_FRL, ~/Descriptor_ShowRoomUnit_Ranger_US_101st_FRL ),
+        ( ~/Descriptor_Unit_A10_Thunderbolt_II_US_NAPALM_FRL, ~/Descriptor_ShowRoomUnit_A10_Thunderbolt_II_US_NAPALM_FRL ),
 
     ]
 )

@@ -4128,3 +4128,18 @@ Gfx_F16E_AA_US_101st_FRL_Showroom_Autogen is ShowroomAerialDepictionTemplate
         ),
     ]
 )
+Gfx_A10_Thunderbolt_II_US_NAPALM_FRL_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_A10_Thunderbolt_II_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_A10_Thunderbolt_II_US_NAPALM_FRL,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_A10_Thunderbolt_II_US_train
+        ),
+    ]
+)

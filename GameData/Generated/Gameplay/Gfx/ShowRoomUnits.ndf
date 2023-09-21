@@ -36096,3 +36096,39 @@ export Descriptor_ShowRoomUnit_Ranger_US_101st_FRL is TEntityDescriptor
         ),
     ]
 )
+export Descriptor_ShowRoomUnit_A10_Thunderbolt_II_US_NAPALM_FRL is TEntityDescriptor
+(
+    DescriptorId        = GUID:{ba1f1f40-03b9-4bd7-9bdd-d48fe231494f}
+    ClassNameForDebug   = "ShowRoomUnit_A10_Thunderbolt_II_US_NAPALM_FRL"
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Nationalite                      = ENationalite/Allied
+            MotherCountry                    = 'US'
+            AcknowUnitType                   = ~/TAcknowUnitType_GroundAtk
+            TypeUnitFormation                = 'None'
+        ),
+        ~/ShowroomPositionModuleDescriptor,
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject                     = True
+            Depiction                          = ~/Gfx_A10_Thunderbolt_II_US_NAPALM_FRL_Showroom_Autogen
+            GameplayBBoxBoneName               = ''
+        ),
+        $/GFX/Everything/WeaponDescriptor_A10_Thunderbolt_II_US_NAPALM_FRL,
+        ~/LinkTeamModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TExperienceModuleDescriptor
+        (
+            ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple_v2
+            CanWinExperience = True
+            ExperienceGainBySecond = ~/ExperienceGainBySecond
+            ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+        ),
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'BigVehicle'
+            SpawnType = EShowroomSpawnType/Airplane
+        ),
+    ]
+)

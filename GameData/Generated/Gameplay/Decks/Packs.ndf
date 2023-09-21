@@ -29513,3 +29513,15 @@ Descriptor_Deck_Pack_Rangers_CMD_US is TDeckPackDescriptor
     ]
 )
 
+Descriptor_Deck_Pack_A10_Thunderbolt_II_US_NAPALM_FRL is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{009096f3-d77b-46e7-a33d-40a13ff28df3}
+    CfgName = 'Descriptor_Deck_Pack_A10_Thunderbolt_II_US_NAPALM_FRL'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_A10_Thunderbolt_II_US_NAPALM_FRL
+        ),
+    ]
+)

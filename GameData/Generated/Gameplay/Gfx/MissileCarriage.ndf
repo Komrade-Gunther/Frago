@@ -9689,3 +9689,46 @@ MissileCarriage_F16E_AA_US_101st_FRL_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
+// A10_Thunderbolt_II_US_NAPALM_FRL : ['Bomb Mk82 250kg x8'] ['AA AIM9M Sidewinder']
+MissileCarriage_A10_Thunderbolt_II_US_NAPALM_FRL is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_A10_Thunderbolt_II_US
+    PylonSet = ~/DepictionPylonSet_Airplane_Default
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)
+MissileCarriage_A10_Thunderbolt_II_US_NAPALM_FRL_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_A10_Thunderbolt_II_US
+    PylonSet = ~/DepictionPylonSet_Airplane_Default_Showroom
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 4
+            MissileType = eAGM
+            MountingType = eMountingBomb
+            WeaponIndex = 2
+        ),
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 3
+        ),
+    ]
+)

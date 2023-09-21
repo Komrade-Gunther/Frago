@@ -12211,8 +12211,15 @@ private DivisionRules is TDeckDivisionRules
             (
                 UnitRuleList =
 
-                [        
-                TDeckUniteRule
+                [    
+                    TDeckUniteRule
+                    (
+                        UnitDescriptor = ~/Descriptor_Unit_A10_Thunderbolt_II_US_NAPALM_FRL
+                        AvailableWithoutTransport = True
+                        NumberOfUnitInPack = 2
+                        NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
+                    ),    
+                    TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_F16E_AA_US_101st_FRL
                         AvailableWithoutTransport = True
@@ -14539,6 +14546,13 @@ private DivisionRules is TDeckDivisionRules
             (
                 UnitRuleList =
                 [
+                    TDeckUniteRule
+                    (
+                        UnitDescriptor = ~/Descriptor_Unit_A10_Thunderbolt_II_US_NAPALM_FRL
+                        AvailableWithoutTransport = True
+                        NumberOfUnitInPack = 2
+                        NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
+                    ),   
 					TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_A10_Thunderbolt_II_US
@@ -17399,6 +17413,7 @@ private DivisionRules is TDeckDivisionRules
             (
                 UnitRuleList =
                 [   
+
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Rangers_CMD_US
