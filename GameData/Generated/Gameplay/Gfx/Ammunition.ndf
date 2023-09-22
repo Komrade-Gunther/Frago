@@ -2927,7 +2927,7 @@ Ammo_Bomb_BL755_cluster_264kg_x2 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=12)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -2948,7 +2948,7 @@ Ammo_Bomb_BL755_cluster_264kg_x2 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.64
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -3021,7 +3021,7 @@ Ammo_Bomb_BL755_cluster_264kg_x4 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=12)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -3042,7 +3042,7 @@ Ammo_Bomb_BL755_cluster_264kg_x4 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.64
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -3115,7 +3115,7 @@ Ammo_Bomb_BL755_cluster_264kg_x8 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=12)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -3136,7 +3136,7 @@ Ammo_Bomb_BL755_cluster_264kg_x8 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.64
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -3209,7 +3209,7 @@ Ammo_Bomb_BLG66_Belouga_cluster_305kg_x4 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=13)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeBLG66' ]
     FxPower                           = EFXPower/Moyen
@@ -3230,7 +3230,7 @@ Ammo_Bomb_BLG66_Belouga_cluster_305kg_x4 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 322 * Metre
-    PhysicalDamages                   = 2.544
+    PhysicalDamages                   = 3.05
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 530 * Metre
     SuppressDamages                   = 265.0
@@ -3303,7 +3303,7 @@ Ammo_Bomb_BME_330C_277kg_x2 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=12)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -3324,7 +3324,7 @@ Ammo_Bomb_BME_330C_277kg_x2 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.77
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -3397,7 +3397,7 @@ Ammo_Bomb_BME_330C_277kg_x6 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=12)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -3418,7 +3418,7 @@ Ammo_Bomb_BME_330C_277kg_x6 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.77
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -3775,7 +3775,7 @@ Ammo_Bomb_CBU_Mk20_Rockeye_II_250kg_x2 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=10)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -3796,7 +3796,7 @@ Ammo_Bomb_CBU_Mk20_Rockeye_II_250kg_x2 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.27
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -3869,7 +3869,7 @@ Ammo_Bomb_CBU_Mk20_Rockeye_II_250kg_x5 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=10)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -3890,7 +3890,7 @@ Ammo_Bomb_CBU_Mk20_Rockeye_II_250kg_x5 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.27
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -3963,7 +3963,7 @@ Ammo_Bomb_CBU_Mk20_Rockeye_II_250kg_x8 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=10)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -3984,7 +3984,7 @@ Ammo_Bomb_CBU_Mk20_Rockeye_II_250kg_x8 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.27
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -4057,7 +4057,7 @@ Ammo_Bomb_CLU_RBK_250kg_x6 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=11)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -4078,7 +4078,7 @@ Ammo_Bomb_CLU_RBK_250kg_x6 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.5
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -4151,7 +4151,7 @@ Ammo_Bomb_CLU_RBK_250kg_x8 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=11)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -4172,7 +4172,7 @@ Ammo_Bomb_CLU_RBK_250kg_x8 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
-    PhysicalDamages                   = 2.16
+    PhysicalDamages                   = 2.5
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 450 * Metre
     SuppressDamages                   = 225.0
@@ -4245,7 +4245,7 @@ Ammo_Bomb_CLU_RBK_500kg_x2 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=15)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -4266,7 +4266,7 @@ Ammo_Bomb_CLU_RBK_500kg_x2 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 365 * Metre
-    PhysicalDamages                   = 4.32
+    PhysicalDamages                   = 5.0
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 630 * Metre
     SuppressDamages                   = 450.0
@@ -4339,7 +4339,7 @@ Ammo_Bomb_CLU_RBK_500kg_x8 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_Bombe
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=7)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=15)
     ProjectileType                    = EProjectileType/Bombe
     ImpactHappening                   = [ 'BombeMk20RockeyeII' ]
     FxPower                           = EFXPower/Moyen
@@ -4360,7 +4360,7 @@ Ammo_Bomb_CLU_RBK_500kg_x8 is TAmmunitionDescriptor
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 315 * Metre
-    PhysicalDamages                   = 4.32
+    PhysicalDamages                   = 5.0
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 630 * Metre
     SuppressDamages                   = 450.0
@@ -48952,7 +48952,7 @@ Ammo_RocketArt_9M55K5_300mm is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_MLRS
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="cluster_ap" Index=6)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=8)
     ProjectileType                    = EProjectileType/Artillerie
     ImpactHappening                   = [ 'RoquetteBM30300Mm' ]
     FxPower                           = EFXPower/Moyen
@@ -48973,7 +48973,7 @@ Ammo_RocketArt_9M55K5_300mm is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 430 * Metre
-    PhysicalDamages                   = 1.656
+    PhysicalDamages                   = 3.0
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 330 * Metre
     SuppressDamages                   = 330.0
@@ -49237,7 +49237,7 @@ Ammo_RocketArt_LARS_110mm_cluster is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_MLRS
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="cluster_ap" Index=6)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=3)
     ProjectileType                    = EProjectileType/Artillerie
     ImpactHappening                   = [ 'Roquette110Mm130MmCluster' ]
     FxPower                           = EFXPower/Moyen
@@ -49258,7 +49258,7 @@ Ammo_RocketArt_LARS_110mm_cluster is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 215 * Metre
-    PhysicalDamages                   = 0.758
+    PhysicalDamages                   = 1.1
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 165 * Metre
     SuppressDamages                   = 165.0
@@ -49428,7 +49428,7 @@ Ammo_RocketArt_M21OF_122mm_cluster is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_MLRS
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="cluster_ap" Index=6)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=4)
     ProjectileType                    = EProjectileType/Artillerie
     ImpactHappening                   = [ 'Roquette110Mm130Mm' ]
     FxPower                           = EFXPower/Moyen
@@ -49449,7 +49449,7 @@ Ammo_RocketArt_M21OF_122mm_cluster is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 195 * Metre
-    PhysicalDamages                   = 0.828
+    PhysicalDamages                   = 1.22
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 165 * Metre
     SuppressDamages                   = 165.0
@@ -49906,7 +49906,7 @@ Ammo_RocketArt_M26_227mm_Cluster is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_CorrectedArtillery
     MinMaxCategory                    = MinMax_MLRS
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="cluster_ap" Index=6)
+    Arme                              = TDamageTypeRTTI(Family="clu_sol_ap" Index=6)
     ProjectileType                    = EProjectileType/Artillerie
     ImpactHappening                   = [ 'RoquetteM26M270227MmCluster' ]
     FxPower                           = EFXPower/Moyen
@@ -49927,7 +49927,7 @@ Ammo_RocketArt_M26_227mm_Cluster is TAmmunitionDescriptor
     DispersionWithoutSorting          = True
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 430 * Metre
-    PhysicalDamages                   = 1.556
+    PhysicalDamages                   = 2.27
     ShowDamageInUI                    = True
     RadiusSplashSuppressDamages       = 330 * Metre
     SuppressDamages                   = 330.0
