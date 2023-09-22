@@ -60863,6 +60863,95 @@ Ammo_AGM_AGM114A_x8 is TAmmunitionDescriptor
     PiercingWeapon                    = True
     DamageTypeEvolutionOverRangeDescriptor  = nil
 )
+Ammo_AGM_AGM114A_x8_FRL is TAmmunitionDescriptor
+(
+    DescriptorId                      = GUID:{817cc2ee-1a5a-4177-a216-7e2f781c67aa}
+    Name                              = 'PMPTRGMCKS'
+    TypeName                          = 'SACLOSM'
+    TypeCategoryName                  = 'GAOXFGOOJS'
+    Caliber                           = 'IOUVNPZMZJ'
+    WeaponDescriptionToken            = ''
+    TraitsToken                       = [ 'MOTION', 'semiAuto', 'HEAT', ]
+    WeaponCursorType                  = Weapon_Cursor_GroundMissile
+    MinMaxCategory                    = MinMax_AGM
+    Level                             = 1
+    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=24)
+    ProjectileType                    = EProjectileType/GuidedMissile
+    ImpactHappening                   = [ 'MissileAGMGen4' ]
+    FxPower                           = EFXPower/UltraLourd
+    TempsEntreDeuxTirs                = 1.0
+    TempsEntreDeuxFx                  = 1.0
+    PorteeMaximale                    = ((7924) * Metre)
+    PorteeMinimaleTBA                 = ((0) * Metre)
+    PorteeMaximaleTBA                 = ((0) * Metre)
+    PorteeMinimaleHA                  = ((0) * Metre)
+    PorteeMaximaleHA                  = ((0) * Metre)
+    PorteeMinimale                    = ((1000) * Metre)
+    AngleDispersion                   = 0.02
+    DispersionAtMaxRange              = ((500) * Metre)
+    DispersionAtMinRange              = ((500) * Metre)
+    DispersionWithoutSorting          = False
+    CorrectedShotAimtimeMultiplier    = 1.0
+    RadiusSplashPhysicalDamages       = 14 * Metre
+    PhysicalDamages                   = 1.0
+    ShowDamageInUI                    = True
+    RadiusSplashSuppressDamages       = 119 * Metre
+    SuppressDamages                   = 362.0
+    AllowSuppressDamageWhenNoImpact                = True
+    DisplaySalveAccuracy              = False
+    TirIndirect                       = False
+    TirReflexe                        = True
+    InterdireTirReflexe               = True
+    FX_vitesse_de_depart              = 3000 * Metre
+    FX_acceleration_max               = 1000 * Metre
+    FX_tir_sans_physic                = True
+    FX_frottement                     = 0.0
+    NoiseDissimulationMalus           = 2.0
+    ShotsBeforeMaxNoise               = 2
+    TargetsDistricts                  = True
+    HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
+    (
+         DescriptorId          = GUID:{d9e3599a-186d-4839-82ed-efe93f1f3b77}
+         BaseCriticModifier = 0
+         BaseEffectModifier = 0
+         BaseHitValueModifiers =
+         [
+             (EBaseHitValueModifier/Base, 0.0),
+             (EBaseHitValueModifier/Idling, 70),
+             (EBaseHitValueModifier/Moving, 50),
+             (EBaseHitValueModifier/SuccessfulShots, 0.0),
+             (EBaseHitValueModifier/Targeted, 0.0),
+         ]
+         HitModifierList       =
+         [
+             EDiceHitModifier/Precision,
+             EDiceHitModifier/DistanceToTarget,
+             EDiceHitModifier/SuccesiveShots,
+             EDiceHitModifier/Suppress,
+         ]
+    )
+    TempsDeVisee                      = 1.2
+    TempsEntreDeuxSalves              = 5.0
+    TempsEntreDeuxSalves_Min           = -1.0
+    TempsEntreDeuxSalves_Max           = -1.0
+    NbTirParSalves                    = 8
+    SupplyCost                        = 240
+    CanShootOnPosition                = False
+    CanShootWhileMoving               = True
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 8
+    MissileTimeBetweenCorrections     = 1.0
+    MissileDescriptor                 = ~/Descriptor_Missile_AGM_AGM114A_x8
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_agm114"
+    WeaponForceNote                   = 2
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = nil
+    TargetUnitCenter                  = False
+    CanHarmAirplanes                  = True
+    IsHarmlessForAllies               = False
+    PiercingWeapon                    = True
+    DamageTypeEvolutionOverRangeDescriptor  = nil
+)
 Ammo_AGM_AGM45_Shrike is TAmmunitionDescriptor
 (
     DescriptorId                      = GUID:{c37a658c-4c76-47be-9fe3-a7c10d8a7528}
