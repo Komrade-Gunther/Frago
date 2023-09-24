@@ -2602,7 +2602,6 @@ Descriptor_Deck_Division_US_11ACR_multi is TDeckDivisionDescriptor
     PackList = MAP
     [
         
-        (~/Descriptor_Deck_Pack_A10_Thunderbolt_II_US_NAPALM_FRL, 2),
         (~/Descriptor_Deck_Pack_TOE_US_11ACR_multi_A10_Thunderbolt_II_ATGM_US, 2),
         (~/Descriptor_Deck_Pack_TOE_US_11ACR_multi_A10_Thunderbolt_II_Rkt_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_11ACR_multi_A10_Thunderbolt_II_US, 2),
@@ -3479,6 +3478,7 @@ Descriptor_Deck_Division_101st is TDeckDivisionDescriptor
     PackList = MAP
     [
         
+        (~/Descriptor_Deck_Pack_A10_Thunderbolt_II_US_NAPALM_FRL, 2),
         (~/Descriptor_Deck_Pack_Rangers_CMD_US, 1),
         (~/Descriptor_Deck_Pack_60mm_mortar_101st_FRL, 1),
         (~/Descriptor_Deck_Pack_Ranger_US_101st_FRL, 2),

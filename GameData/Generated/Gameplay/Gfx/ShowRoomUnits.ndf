@@ -35632,7 +35632,7 @@ export Descriptor_ShowRoomUnit_MANPAD_Stinger_C_para_US_101st_FRL is TEntityDesc
               $/GFX/Everything/WeaponDescriptor_MANPAD_Stinger_C_para_US_101st_FRL ,
         TInfantrySquadModuleDescriptor
         (
-            NbSoldatInGroupeCombat = 2
+            NbSoldatInGroupeCombat = 4
             SquadDataDescriptor = ~/SoldierSquadDataDescriptor
             InfantryMimeticName = 'MANPAD_Stinger_C_US'
             WeaponUnitFXKey     = 'MANPAD_Stinger_C_US'
