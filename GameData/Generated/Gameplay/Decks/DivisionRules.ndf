@@ -351,7 +351,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_SAS_Sniper_FR
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_VLTT_P4_FR]
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
                     ),
                     TDeckUniteRule
@@ -429,7 +429,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_VLTT_P4_PC_FR
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 5
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 0.0, 1.0]
                     ),
                 ]
@@ -1287,7 +1287,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_VLTT_P4_PC_FR
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 5
                         NumberOfUnitInPackXPMultiplier = [1.0, 1.0, 1.0, 1.0]
                     ),
                 ]
@@ -1468,7 +1468,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_FV721_Fox_UK
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
                     ),
                     TDeckUniteRule
@@ -1675,7 +1675,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_M1IP_Abrams_CMD_US
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
                     ),
                     TDeckUniteRule
@@ -1947,7 +1947,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_VLTT_P4_PC_FR
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 6
+                        NumberOfUnitInPack = 5
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
                     ),
                 ]
@@ -2486,7 +2486,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_Sniper_FJ_DDR
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_UAZ_469_trans_DDR]
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
                     ),
                     TDeckUniteRule
@@ -4473,7 +4473,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Leopard_2A3_CMD_RFA
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 2
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
                     ),
                     TDeckUniteRule
@@ -4963,7 +4963,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Leopard_2A3_CMD_RFA
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 2
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
                     ),
                     TDeckUniteRule
@@ -5254,7 +5254,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_Engineers_CMD_RFA
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_Iltis_trans_RFA]
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [1.0, 1.0, 1.0, 1.0]
                     ),
                     TDeckUniteRule
@@ -6783,7 +6783,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mi_8K_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
@@ -6881,7 +6881,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_T80BV_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 2
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
@@ -7272,7 +7272,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mi_8K_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [1.0, 1.0, 1.0, 1.0]
                     ),
                     TDeckUniteRule
@@ -8370,7 +8370,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mi_8K_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [1.0, 1.0, 1.0, 1.0]
                     ),
                     TDeckUniteRule
@@ -8559,7 +8559,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_T80BV_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 2
                         NumberOfUnitInPackXPMultiplier = [1.0, 1.0, 1.0, 1.0]
                     ),
                     TDeckUniteRule
@@ -9463,7 +9463,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mi_8K_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
@@ -9652,7 +9652,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_T80BV_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 2
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
@@ -9982,7 +9982,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mi_8K_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [1.0, 1.0, 1.0, 1.0]
                     ),
                     TDeckUniteRule
@@ -10152,7 +10152,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_T80BV_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 2
                         NumberOfUnitInPackXPMultiplier = [1.0, 1.0, 1.0, 1.0]
                     ),
                     TDeckUniteRule
@@ -11023,7 +11023,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mi_8K_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
@@ -11192,7 +11192,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_T80BV_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 2
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
@@ -11310,7 +11310,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Challenger_1_Mk1_CMD_UK
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 2
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
                     ),
                     TDeckUniteRule
@@ -11341,7 +11341,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_Engineers_CMD_UK
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_Bedford_MJ_4t_trans_UK, ~/Descriptor_Unit_FV432_UK]
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
@@ -11447,7 +11447,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_FV721_Fox_UK
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
                     ),
                     TDeckUniteRule
@@ -11771,7 +11771,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Challenger_1_Mk1_CMD_UK
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 2
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
                     ),
                     TDeckUniteRule
@@ -11855,7 +11855,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_FV721_Fox_UK
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
                     ),
                     TDeckUniteRule
@@ -12201,6 +12201,13 @@ private DivisionRules is TDeckDivisionRules
                         AvailableWithoutTransport = True
                         NumberOfUnitInPack = 6
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
+                    ),
+					TDeckUniteRule
+                    (
+                        UnitDescriptor = ~/Descriptor_Unit_Tornado_ADV_SEAD_UK
+                        AvailableWithoutTransport = True
+                        NumberOfUnitInPack = 2
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.5, 0.0]
                     ),
                 ]
             )
@@ -14087,13 +14094,6 @@ private DivisionRules is TDeckDivisionRules
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_AH64_Apache_US
-                        AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 1
-                        NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
-                    ),
-                    TDeckUniteRule
-                    (
-                        UnitDescriptor = ~/Descriptor_Unit_AH64_Apache_emp1_US
                         AvailableWithoutTransport = True
                         NumberOfUnitInPack = 1
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
@@ -16081,7 +16081,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_Sniper_US
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_M998_Humvee_US]
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
                     ),
                     TDeckUniteRule
@@ -16553,7 +16553,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mi_8K_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
@@ -16940,7 +16940,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Mi_8K_CMD_SOV
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
@@ -17498,7 +17498,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_AH64_Apache_emp1_US
                         AvailableWithoutTransport = True
-                        NumberOfUnitInPack = 2
+                        NumberOfUnitInPack = 1
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.5]
                     ),
                     TDeckUniteRule
