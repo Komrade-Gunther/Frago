@@ -1495,7 +1495,7 @@ export DamageLevelsPackDescriptor_Unit_packStun_aa is TDamageLevelsPackDescripto
     ]
     NameForDebug = "Unit_packStun_aa"
 )
-export DamageLevelsPackDescriptor_Inf_FRL is TDamageLevelsPackDescriptor
+export DamageLevelsPackDescriptor_Inf_pinned is TDamageLevelsPackDescriptor
 (
     DescriptorId = GUID:{e6812caa-2e57-4247-9583-3c2518472857}
     DamageLevelsDescriptors = [
