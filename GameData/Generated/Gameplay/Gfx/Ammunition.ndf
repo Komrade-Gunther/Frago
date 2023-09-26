@@ -1,6 +1,10 @@
 // Ne pas éditer, ce fichier est auto-généré !
 var_hmg_splash is 12.5
 var_mmg_splash is 10.0
+var_hmg_acc is 11
+var_hmg_acc_moving is 7
+var_mmg_acc is 10
+var_mmg_acc_moving is 7
 
 var_ac_ap_dispersion is 10
 var_ac_he_sorting is False
@@ -26174,8 +26178,8 @@ Ammo_HMG_12_7_mm_DShKM is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_hmg_acc + 20)),
+             (EBaseHitValueModifier/Moving, (var_hmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -26268,8 +26272,8 @@ Ammo_HMG_12_7_mm_M2HB is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_hmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_hmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -26456,8 +26460,8 @@ Ammo_HMG_12_7_mm_M85 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_hmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_hmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -26550,8 +26554,8 @@ Ammo_HMG_12_7_mm_NSVT is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_hmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_hmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -26738,8 +26742,8 @@ Ammo_HMG_14_5_mm_KPVT is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_hmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_hmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -35245,8 +35249,8 @@ Ammo_MMG_AANF1_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 10),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 20)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 10)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -35338,8 +35342,8 @@ Ammo_MMG_AANF1_7_62mm_x2 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 10),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 20)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 10)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -35525,8 +35529,8 @@ Ammo_MMG_FN_MAG_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 10),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 20)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 10)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -35618,8 +35622,8 @@ Ammo_MMG_HK21_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 7),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 7)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -35711,8 +35715,8 @@ Ammo_MMG_L37A2_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 7),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 7)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -35804,8 +35808,8 @@ Ammo_MMG_L43A1_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 7),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 7)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -35897,8 +35901,8 @@ Ammo_MMG_L8A2_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 7),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 7)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -35990,8 +35994,8 @@ Ammo_MMG_L94A1_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 8),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 8)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -36083,8 +36087,8 @@ Ammo_MMG_M1919 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 10),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 20)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 10)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -36176,8 +36180,8 @@ Ammo_MMG_M240_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -36269,8 +36273,8 @@ Ammo_MMG_M240_abrams_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 10),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 10)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -36362,8 +36366,8 @@ Ammo_MMG_M240d_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 10),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 20)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 10)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -36508,8 +36512,8 @@ Ammo_MMG_MG3_7_62mm is TAmmunitionDescriptor
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'MitrailleuseMG3Interne' ]
     FxPower                           = EFXPower/Moyen
-    TempsEntreDeuxTirs                = 0.2
-    TempsEntreDeuxFx                  = 0.2
+    TempsEntreDeuxTirs                = 0.185
+    TempsEntreDeuxFx                  = 0.185
     PorteeMaximale                    = ((2901) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((1981) * Metre)
@@ -36548,8 +36552,8 @@ Ammo_MMG_MG3_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 20),
-             (EBaseHitValueModifier/Moving, 10),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 20)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 10)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -36734,8 +36738,8 @@ Ammo_MMG_PKT_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -36827,8 +36831,8 @@ Ammo_MMG_PKT_7_62mm_x2 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 10),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 10)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -36920,8 +36924,8 @@ Ammo_MMG_PKT_7_62mm_x4 is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -37013,8 +37017,8 @@ Ammo_MMG_SGMB_7_62mm is TAmmunitionDescriptor
          BaseHitValueModifiers =
          [
              (EBaseHitValueModifier/Base, 0.0),
-             (EBaseHitValueModifier/Idling, 15),
-             (EBaseHitValueModifier/Moving, 5),
+             (EBaseHitValueModifier/Idling, (var_mmg_acc + 15)),
+             (EBaseHitValueModifier/Moving, (var_mmg_acc_moving + 5)),
              (EBaseHitValueModifier/SuccessfulShots, 0.0),
              (EBaseHitValueModifier/Targeted, 0.0),
          ]
@@ -37066,8 +37070,8 @@ Ammo_MMG_inf__MG3_7_62mm is TAmmunitionDescriptor
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'MitrailleuseMG3Inf' ]
     FxPower                           = EFXPower/Moyen
-    TempsEntreDeuxTirs                = 1.0
-    TempsEntreDeuxFx                  = 1.0
+    TempsEntreDeuxTirs                = 0.85
+    TempsEntreDeuxFx                  = 0.85
     PorteeMaximale                    = ((3042) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((1486) * Metre)
@@ -37810,8 +37814,8 @@ Ammo_MMG_team_7_62mm_MG3 is TAmmunitionDescriptor
     ProjectileType                    = EProjectileType/Obus
     ImpactHappening                   = [ 'MitrailleuseMG3Externe' ]
     FxPower                           = EFXPower/Moyen
-    TempsEntreDeuxTirs                = 0.2
-    TempsEntreDeuxFx                  = 0.2
+    TempsEntreDeuxTirs                = 0.15
+    TempsEntreDeuxFx                  = 0.15
     PorteeMaximale                    = ((3396) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((1981) * Metre)
