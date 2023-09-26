@@ -3131,8 +3131,8 @@ Ammo_Bomb_BL755_cluster_264kg_x8 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((75.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((50) * Metre)
-    DispersionAtMinRange              = ((50) * Metre)
+    DispersionAtMaxRange              = ((75) * Metre)
+    DispersionAtMinRange              = ((75) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
@@ -3979,8 +3979,8 @@ Ammo_Bomb_CBU_Mk20_Rockeye_II_250kg_x8 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((75.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((50) * Metre)
-    DispersionAtMinRange              = ((50) * Metre)
+    DispersionAtMaxRange              = ((75) * Metre)
+    DispersionAtMinRange              = ((75) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
@@ -4167,8 +4167,8 @@ Ammo_Bomb_CLU_RBK_250kg_x8 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((75.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((50) * Metre)
-    DispersionAtMinRange              = ((50) * Metre)
+    DispersionAtMaxRange              = ((75) * Metre)
+    DispersionAtMinRange              = ((75) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 335 * Metre
@@ -4355,8 +4355,8 @@ Ammo_Bomb_CLU_RBK_500kg_x8 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((75.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((50) * Metre)
-    DispersionAtMinRange              = ((50) * Metre)
+    DispersionAtMaxRange              = ((75) * Metre)
+    DispersionAtMinRange              = ((75) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 315 * Metre
@@ -4731,8 +4731,8 @@ Ammo_Bomb_FAB_500kg_x8 is TAmmunitionDescriptor
     AltitudeAPorteeMaximale           = ((75.0) * Metre)
     AffecteParNombre                  = False
     AngleDispersion                   = 0.0
-    DispersionAtMaxRange              = ((50) * Metre)
-    DispersionAtMinRange              = ((50) * Metre)
+    DispersionAtMaxRange              = ((75) * Metre)
+    DispersionAtMinRange              = ((75) * Metre)
     DispersionWithoutSorting          = False
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = 460 * Metre

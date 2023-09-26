@@ -319,8 +319,8 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
 //---------------------------- Constantes Mouvement ---------------------------------------//
 
-    MoteurHelicos_TempsArret = 8 * Seconde  // 4
-    MoteurHelicos_TempsDemarrage = 4 * Seconde  // 1
+    MoteurHelicos_TempsArret = 4 * Seconde  // 4
+    MoteurHelicos_TempsDemarrage = 2 * Seconde  // 1
     MultiplicateurConsommationUnitesArretees = 0.0 // Entre 0 et 1
 
 //--------------------------- Constantes SpreadOrder --------------------------------------//
