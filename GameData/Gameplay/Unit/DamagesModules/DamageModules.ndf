@@ -18,7 +18,7 @@ Infanterie_StunDamagesRegen is 1
 // Dégâts de "stun" que l'unité doit atteindre pour être stunned (dégâts augmentant avec les dégâts de suppressions et regénérés avec StunDamagesRegen)
 Infanterie_MaxStunDamages is 250
 
-Infanterie_MaxSuppressionDamages is 500
+Infanterie_MaxSuppressionDamages is 750
 
 
 // -------------------------------------------------------------------------------------------------

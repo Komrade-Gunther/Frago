@@ -3099,3 +3099,173 @@ export UnitEffect_sniper is TEffectsPackDescriptor
         ),
     ]
 )
+export UnitEffect_Pinned_Dangerousness_FRL is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{aa7a47cf-a009-4535-affb-08cb6673811a}
+    NameForDebug       = 'Debug_UnitEffect_pinned_dangerousness_FRL'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDangerousnessDescriptor
+        (
+            ModifierType       = ~/ModifierType_Pourcentage
+            BonusDangerousness    = -110
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "Camion_autodestruction",
+                 "Panique",
+            ]
+        ),
+        TUnitEffectTransportSlotNumberModificationDescriptor
+        (
+            ModifierType                 = ~/ModifierType_Remplacement
+            EffectOnTransportSlotNumber  = 0
+        ),
+    ]
+)
+export UnitEffect_Pinned_FRL is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{6130e396-1824-475b-9e4d-40c53063e4c8}
+    NameForDebug       = 'ArtInf_Pinned'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -50
+            DamageType          = EDamageType/Physical
+        ),
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -80
+            DamageType          = EDamageType/Suppress
+        ),
+        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        (
+            ModifierType         = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
+        (
+            ModifierType           = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
+        (
+            ModifierType                   = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
+        (
+            ModifierType            = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseChassisRotationSpeedDescriptor
+        (
+            ModifierType       = ~/ModifierType_Pourcentage
+            BonusChassisRotationSpeed  = -80
+        ),
+        TUnitEffectIncreaseTurretRotationSpeedDescriptor
+        (
+            ModifierType       = ~/ModifierType_Pourcentage
+            BonusTurretRotationSpeed  = -80
+        ),
+        TUnitEffectIncreaseSpeedDescriptor
+        (
+            ModifierType             = ~/ModifierType_Pourcentage
+            BonusSpeedBaseInPercent  = -80
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "Infanterie_Engaged",
+                 "Infanterie_Stressed",
+                 "Infanterie_Suppressed",
+                 "Infanterie_Cowering",
+            ]
+        ),
+         TUnitEffectIncreaseVisionDescriptor
+        (
+            ModifierType       = ~/ModifierType_Additionnel
+            BonusVisionBase    = -2000
+        ),
+        TUnitEffectIncreaseOpticalStrengthDescriptor
+        (
+            ModifierType         = ~/ModifierType_Additionnel
+            BonusOpticalStrength = -43
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 5
+            DamageType = EDamageType/Suppress
+        ),
+    ]
+)
+
+export UnitEffect_Routed_FRL is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{6130e396-1824-475b-9e4d-40c53063e4c8}
+    NameForDebug       = 'ArtInf_Pinned'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
+        (
+            ModifierType         = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
+        (
+            ModifierType           = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
+        (
+            ModifierType                   = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
+        (
+            ModifierType            = ~/ModifierType_Pourcentage
+            ModifierValue = -100
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "Infanterie_Engaged",
+                 "Infanterie_Stressed",
+                 "Infanterie_Suppressed",
+                 "Retraite",
+
+            ]
+        ),
+        TUnitEffectSetSelectableDescriptor
+        (
+            Selectable = False
+        ),
+        
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 5
+            DamageType = EDamageType/Suppress
+        ),
+    ]
+)
+
+
+export UnitEffect_over_suppressed is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{bc6711a6-b0f3-4e36-9fda-1314df65a631}
+    NameForDebug       = 'ArtInf_Pinned'
+    EffectsDescriptors = [
+
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 500
+            DamageType = EDamageType/Suppress
+        ),
+    ]
+)
+
+
