@@ -3269,3 +3269,31 @@ export UnitEffect_over_suppressed is TEffectsPackDescriptor
 )
 
 
+export UnitEffect_Switch_Team_To_Opfor is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{92314181-271f-4143-b9a7-2122d1aaa8b8}
+    NameForDebug       = 'UnitEffect_Pinn_Nearby'
+    EffectsDescriptors = [
+
+        TUnitEffectChangeTeamDescriptor
+        (
+            FutureTeam = TTeamIdentifierForUnitEffect(
+                TeamType = ~/ETeamTypeForUnitEffect/Number
+                TeamNumber = 1
+            )
+        ),
+    ]
+)
+
+export UnitEffect_Pin_Nearby is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{e10cbbee-167d-4d3b-8f5a-ce98dcd91c24}
+    NameForDebug       = 'UnitEffect_Pin_Nearby'
+    EffectsDescriptors = [
+
+        TUnitEffectAddCapacityDescriptor
+        (
+            CapacityToAdd = [ ~/Capacite_Pin_Nearby_Units ]
+        ),
+    ]
+)

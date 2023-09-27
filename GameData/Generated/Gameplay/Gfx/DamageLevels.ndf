@@ -1600,6 +1600,8 @@ export DamageLevelsPackDescriptor_Inf_pinned is TDamageLevelsPackDescriptor
                 ~/UnitEffect_Tps_entre_salve_150pourcent,
                 ~/UnitEffect_Pinned_Dangerousness_FRL,
                 ~/UnitEffect_Pinned_FRL,
+                ~/UnitEffect_Pin_Nearby,
+
             ]
             NameForDebug = "GroundUnits_packSupp_palier_7"
         ),
