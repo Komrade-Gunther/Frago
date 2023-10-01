@@ -10993,7 +10993,7 @@ TacticDepiction_GreenBerets_US_Soldier_101st_FRL is TemplateInfantryDepictionFac
   SubDepictions = [AllWeaponSubDepiction_GreenBerets_US_101st_FRL , AllWeaponSubDepictionBackpack_GreenBerets_US_101st_FRL ]
   Operators = [DepictionOperator_SkeletalAnimation2_Default()]
 )
-TacticDepiction_GreenBerets_US_Ghost_101st_FRL is TemplateInfantryDepictionFactoryGhost
+TacticDepiction_GreenBerets_US_101st_FRL_Ghost is TemplateInfantryDepictionFactoryGhost
 (
   Surrogates = TacticDepiction_GreenBerets_US_Surrogates_101st_FRL
   Alternatives = TacticDepiction_GreenBerets_US_Alternatives_101st_FRL
@@ -11546,7 +11546,8 @@ InfantryMimeticGhost is MAP[
   ( 'Wachregiment_DDR', TacticDepiction_Wachregiment_DDR_Ghost ),
   ( 'Wachregiment_SMG_DDR', TacticDepiction_Wachregiment_SMG_DDR_Ghost ),
   ( 'Ranger_US_101st_FRL', TacticDepiction_Ranger_US_101st_FRL_Ghost ),
-
+  ( 'GreenBerets_US_101st_FRL', TacticDepiction_GreenBerets_US_101st_FRL_Ghost ),
+  ( 'Rifles_US_Dualat_FRL', TacticDepiction_Rifles_US_Dualat_FRL_Ghost ),
 ]
 
 TransportedInfantryAlternativesCount is MAP[

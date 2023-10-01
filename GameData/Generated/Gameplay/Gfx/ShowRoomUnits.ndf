@@ -35804,12 +35804,12 @@ export Descriptor_ShowRoomUnit_Rifles_US_Dualat_FRL is TEntityDescriptor
         (
             NbSoldatInGroupeCombat = 11
             SquadDataDescriptor = ~/SoldierSquadDataDescriptor
-            InfantryMimeticName = 'Rifles_US'
-            WeaponUnitFXKey     = 'Rifles_US'
+            InfantryMimeticName = 'Rifles_US_Dualat_FRL'
+            WeaponUnitFXKey     = 'Rifles_US_Dualat_FRL'
             MimeticDescriptor   = Descriptor_Unit_MimeticUnit
             (
-                DescriptorId = GUID:{869bd7ae-73e6-4c09-9815-3833bd845238}
-                MimeticName = 'Rifles_US'
+                DescriptorId = GUID:{9843d64d-3853-44e8-a24a-36b93ed69e8f}
+                MimeticName = 'Rifles_US_Dualat_FRL'
             )
             BoundingBoxSize     = 13 * Metre
         ),
@@ -35826,8 +35826,8 @@ export Descriptor_ShowRoomUnit_Rifles_US_Dualat_FRL is TEntityDescriptor
                                         (6,[0,]),
                                         (7,[0,]),
                                         (8,[0,]),
-                                        (9,[0,3]),
-                                        (10,[0,2,]),
+                                        (9,[0,2,]),
+                                        (10,[0,3,]),
                                       ]
         ),
         ~/LinkTeamModuleDescriptor,

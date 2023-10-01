@@ -12237,7 +12237,7 @@ private DivisionRules is TDeckDivisionRules
                     ),
                     TDeckUniteRule
                     (
-                        UnitDescriptor = ~/Descriptor_Unit_Rifles_US_Dualat_FRL
+                        UnitDescriptor = ~/Descriptor_Unit_Rifles_US
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_M113A3_US, ~/Descriptor_Unit_M113_Dragon_US,~/Descriptor_Unit_M113_ACAV_US_nonrecce_FRL]
                         NumberOfUnitInPack = 6
