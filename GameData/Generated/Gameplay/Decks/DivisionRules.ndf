@@ -6597,6 +6597,13 @@ private DivisionRules is TDeckDivisionRules
                     ),
                     TDeckUniteRule
                     (
+                        UnitDescriptor = ~/Descriptor_Unit_Su_25_s24_FRL
+                        AvailableWithoutTransport = True
+                        NumberOfUnitInPack = 2
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.5, 0.0]
+                    ),
+                    TDeckUniteRule
+                    (
                         UnitDescriptor = ~/Descriptor_Unit_2S1_Gvozdika_SOV
                         AvailableWithoutTransport = True
                         NumberOfUnitInPack = 3
@@ -11221,7 +11228,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_TOS1_Buratino_SOV
                         AvailableWithoutTransport = True
                         NumberOfUnitInPack = 1
-                        NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.0, 0.0]
                     ),
                     TDeckUniteRule
                     (
@@ -16806,7 +16813,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_TOS1_Buratino_SOV
                         AvailableWithoutTransport = True
                         NumberOfUnitInPack = 1
-                        NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.0]
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.0, 0.0]
                     ),
                     TDeckUniteRule
                     (

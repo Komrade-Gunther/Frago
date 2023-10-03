@@ -4143,3 +4143,19 @@ Gfx_A10_Thunderbolt_II_US_NAPALM_FRL_Showroom_Autogen is ShowroomAerialDepiction
         ),
     ]
 )
+
+Gfx_Su_25_s24_FRL_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_25_s24_FRL,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_SOV_train
+        ),
+    ]
+)

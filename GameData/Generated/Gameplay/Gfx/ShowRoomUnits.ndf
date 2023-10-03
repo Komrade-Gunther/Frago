@@ -36132,3 +36132,39 @@ export Descriptor_ShowRoomUnit_A10_Thunderbolt_II_US_NAPALM_FRL is TEntityDescri
         ),
     ]
 )
+export Descriptor_ShowRoomUnit_Su_25_s24_FRL is TEntityDescriptor
+(
+    DescriptorId        = GUID:{e61a1754-e24c-4a8e-b54a-e5dbfcad5a68}
+    ClassNameForDebug   = "ShowRoomUnit_Su_25_s24_FRL"
+    ModulesDescriptors = [
+        TTypeUnitModuleDescriptor
+        (
+            Nationalite                      = ENationalite/Axis
+            MotherCountry                    = 'SOV'
+            AcknowUnitType                   = ~/TAcknowUnitType_GroundAtk
+            TypeUnitFormation                = 'None'
+        ),
+        ~/ShowroomPositionModuleDescriptor,
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject                     = True
+            Depiction                          = ~/Gfx_Su_25_s24_FRL_Showroom_Autogen
+            GameplayBBoxBoneName               = ''
+        ),
+        $/GFX/Everything/WeaponDescriptor_Su_25_s24_FRL,
+        ~/LinkTeamModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TExperienceModuleDescriptor
+        (
+            ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple_v2
+            CanWinExperience = True
+            ExperienceGainBySecond = ~/ExperienceGainBySecond
+            ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+        ),
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'BigVehicle'
+            SpawnType = EShowroomSpawnType/Airplane
+        ),
+    ]
+)

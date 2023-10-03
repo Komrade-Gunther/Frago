@@ -29525,3 +29525,15 @@ Descriptor_Deck_Pack_A10_Thunderbolt_II_US_NAPALM_FRL is TDeckPackDescriptor
         ),
     ]
 )
+Descriptor_Deck_Pack_Su_25_s24_FRL is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{d2c54113-d75e-4d8d-8079-7e59e0b30286}
+    CfgName = 'Descriptor_Deck_Pack_Su_25_s24_FRL'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_Su_25_s24_FRL
+        ),
+    ]
+)

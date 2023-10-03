@@ -1354,7 +1354,7 @@ Descriptor_Deck_Division_SOV_119IndTkBrig_multi is TDeckDivisionDescriptor
     PackList = MAP
     [
         (~/Descriptor_Deck_Pack_BMP_2_SOV_recon_FRL, 2),
-
+        (~/Descriptor_Deck_Pack_Su_25_s24_FRL, 1),
         (~/Descriptor_Deck_Pack_Unit_Su_25_Multirole_FRL, 1),
         (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_2S1_Gvozdika_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_AT_T12_Rapira_SOV, 2),
@@ -1400,6 +1400,7 @@ Descriptor_Deck_Division_SOV_119IndTkBrig_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_TO_55_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_Tunguska_2K22_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_119IndTkBrig_multi_Ural_4320_SOV, 2),
+
     ]
     MaxActivationPoints = 50
     CostMatrix = MatrixCostName_SOV_119IndTkBrig_multi
@@ -2300,7 +2301,7 @@ Descriptor_Deck_Division_SOV_79_Gds_Tank_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_SOV, 5),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_CMD_SOV, 1),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_SOV, 1),
-        (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_TOS1_Buratino_SOV, 1),
+        (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_TOS1_Buratino_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_TO_55_SOV, 1),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_Tunguska_2K22_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_UAZ_469_AGL_SOV, 2),
@@ -3436,7 +3437,7 @@ Descriptor_Deck_Division_WP_Unternehmen_Zentrum_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T64BV_SOV, 1),
         (~/Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T80B_SOV, 1),
         (~/Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_T813_DDR, 2),
-        (~/Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_TOS1_Buratino_SOV, 1),
+        (~/Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_TOS1_Buratino_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_UAZ_469_CMD_SOV, 1),
         (~/Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_UAZ_469_SPG9_DDR, 2),
         (~/Descriptor_Deck_Pack_TOE_WP_Unternehmen_Zentrum_multi_Ural_4320_SOV, 1),
@@ -3662,6 +3663,8 @@ Descriptor_Deck_Division_SOV_Afganski is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_af_multi_ATteam_RCL_SPG9_VDV_SOV_af_FRL, 1),
         (~/Descriptor_Deck_Pack_AT_D44_85mm_SOV, 1),
         //(~/Descriptor_Deck_Pack_BMP_2_SOV_recon_FRL, 1),
+
+        
 
         
     ]

@@ -9103,14 +9103,14 @@ MissileCarriage_Su_25_rkt_SOV is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 40
+            Count = 20
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 2
         ),
         TMissileCarriageWeaponInfo
         (
-            Count = 40
+            Count = 20
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 3
@@ -9125,14 +9125,14 @@ MissileCarriage_Su_25_rkt_SOV_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 40
+            Count = 20
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 2
         ),
         TMissileCarriageWeaponInfo
         (
-            Count = 40
+            Count = 20
             MissileType = eAGM
             MountingType = eMountingPod
             WeaponIndex = 3
@@ -9730,5 +9730,36 @@ MissileCarriage_A10_Thunderbolt_II_US_NAPALM_FRL_Showroom is TMissileCarriageCon
             MissileType = eAAM
             WeaponIndex = 3
         ),
+    ]
+)
+
+// Su_25_s24_FRL : 
+MissileCarriage_Su_25_s24_FRL is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_SOV
+    PylonSet = ~/DepictionPylonSet_Airplane_SOV
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 8
+            MissileType = eAGM
+            WeaponIndex = 2
+        ),
+    ]
+)
+MissileCarriage_Su_25_s24_FRL_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25_SOV
+    PylonSet = ~/DepictionPylonSet_Airplane_SOV_Showroom
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 8
+            MissileType = eAGM
+            WeaponIndex = 2
+        ),
+
     ]
 )

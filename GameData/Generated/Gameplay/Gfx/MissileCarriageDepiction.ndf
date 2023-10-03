@@ -18750,3 +18750,179 @@ SubGenerators_Showroom_A10_Thunderbolt_II_US_NAPALM_FRL is TMissileCarriageSubDe
     ]
     Pylons = ~/DepictionPylonSet_Airplane_Default_Showroom
 )
+SubGenerators_Su_25_s24_FRL is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Su_25_s24_FRL
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 0
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 1
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 6
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 7
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_SOV
+)
+SubGenerators_Showroom_Su_25_s24_FRL is TMissileCarriageSubDepictionGenerator
+(
+    MissileCarriageConnoisseur = MissileCarriage_Su_25_s24_FRL_Showroom
+    Missiles = 
+    [
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 1
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_S_24_240mm
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ),
+    ]
+    Pylons = ~/DepictionPylonSet_Airplane_SOV_Showroom
+)
