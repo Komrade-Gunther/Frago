@@ -274,7 +274,7 @@ export Descriptor_Fire_NapalmMoyen_bomb_FRL is TEntityDescriptor
             SpreadProbability              = 1.0
             IsNewFireProbability           = 0.8
             Radius                         = ((400) * Metre)
-            AmmunitionForBurn              = Ammo_Degats_napalm_buratino
+            AmmunitionForBurn              = Ammo_Degats_napalm_FRL
             TimeBetweenBurns               = ((1) * Seconde)
             OverridenSpreadDescriptor      = Descriptor_Fire_Incendie
             SmokeDescriptor                = Descriptor_Smoke_FumiIncendie_bomb_FRL

@@ -5414,7 +5414,7 @@ MissileCarriage_F111E_Aardvark_napalm_US is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 8
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -5429,7 +5429,7 @@ MissileCarriage_F111E_Aardvark_napalm_US_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 8
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -5565,7 +5565,7 @@ MissileCarriage_F111F_Aardvark_napalm_US is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 8
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -5580,7 +5580,7 @@ MissileCarriage_F111F_Aardvark_napalm_US_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 8
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -5948,7 +5948,7 @@ MissileCarriage_F16E_SEAD_US_Showroom is TMissileCarriageConnoisseur
         ),
     ]
 )
-// F16E_napalm_US : ['Bomb Mk77 340kg Napalm x2'] ['AA AIM9M Sidewinder']
+// F16E_napalm_US : ['Bomb Mk77 340kg Napalm x4'] ['AA AIM9M Sidewinder']
 MissileCarriage_F16E_napalm_US is TMissileCarriageConnoisseur
 (
     MeshDescriptor = $/GFX/DepictionResources/Modele_F16E_napalm_US
@@ -5957,7 +5957,7 @@ MissileCarriage_F16E_napalm_US is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 2
+            Count = 4
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -5978,7 +5978,7 @@ MissileCarriage_F16E_napalm_US_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 2
+            Count = 4
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -6127,7 +6127,7 @@ MissileCarriage_F4E_Phantom_II_napalm_US is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 2
+            Count = 4
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -6148,7 +6148,7 @@ MissileCarriage_F4E_Phantom_II_napalm_US_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 2
+            Count = 4
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -7215,7 +7215,7 @@ MissileCarriage_Jaguar_nplm_FR is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 6
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -7236,7 +7236,7 @@ MissileCarriage_Jaguar_nplm_FR_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 6
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -7837,7 +7837,7 @@ MissileCarriage_MiG_27M_napalm_SOV is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 6
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -7852,7 +7852,7 @@ MissileCarriage_MiG_27M_napalm_SOV_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 6
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -8209,7 +8209,7 @@ MissileCarriage_Mirage_5_F_nplm_FR is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 6
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -8224,7 +8224,7 @@ MissileCarriage_Mirage_5_F_nplm_FR_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 6
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -8708,7 +8708,7 @@ MissileCarriage_Su_22_nplm_DDR is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 6
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -8729,7 +8729,7 @@ MissileCarriage_Su_22_nplm_DDR_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 4
+            Count = 6
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 2
@@ -8902,7 +8902,7 @@ MissileCarriage_Su_24M_nplm_SOV is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 6
+            Count = 8
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 1
@@ -8917,7 +8917,7 @@ MissileCarriage_Su_24M_nplm_SOV_Showroom is TMissileCarriageConnoisseur
     [
         TMissileCarriageWeaponInfo
         (
-            Count = 6
+            Count = 8
             MissileType = eAGM
             MountingType = eMountingBomb
             WeaponIndex = 1
