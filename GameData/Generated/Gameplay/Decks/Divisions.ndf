@@ -2654,7 +2654,7 @@ Descriptor_Deck_Division_US_11ACR_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_US_11ACR_multi_UH60A_CO_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_11ACR_multi_UH60A_Supply_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_11ACR_multi_Unimog_S_404_RFA, 2),
-        (~/Descriptor_Deck_Pack_11acr_multi_Rifles_US_Dualat_FRL, 2),
+        (~/Descriptor_Deck_Pack_TOE_US_11ACR_multi_Rifles_LAW_US, 2),
         (~/Descriptor_Deck_Pack_11acr_multi_Scout_US_2man_FRL, 2),
         (~/Descriptor_Deck_Pack_101st_multi_AF16E_AA_US_101st_FRL, 1),
     ]
