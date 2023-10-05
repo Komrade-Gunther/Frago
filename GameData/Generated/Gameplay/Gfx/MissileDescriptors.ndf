@@ -15311,27 +15311,12 @@ export Descriptor_Missile_SAM_9M330_Tor_x8 is TEntityDescriptor
         ~/LinkTeamModuleDescriptor,
         TApparenceModelModuleDescriptor
         (
-            Depiction = Template_DescriptorMissileBase
+            Depiction  = Template_DescriptorMissileBase
             (
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Tunguska
-                Actions = MAP
-                [
-                    
-                    (
-                        ["fx_propulsion_on"],
-                        template_PropulsionActionHappening
-                        (
-                            Action = $/GFX/GameFx/fx_propulsion_missile_AA_TOR
-                        )
-                    ),
-                    
-                    (
-                        ["fx_propulsion_off"],
-                        template_PropulsionActionHappening
-                        (
-                            Action = $/GFX/GameFx/fx_arret_missile_AA_gros
-                        )
-                    )
+                Actions = MAP[
+                    ( ["fx_propulsion_on"], template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_propulsion_missile_AA_TOR )),
+                    ( ["fx_propulsion_off"], template_PropulsionActionHappening( Action = $/GFX/GameFx/fx_arret_missile_AA_gros )),
                 ]
             )
         ),
@@ -15345,15 +15330,15 @@ export Descriptor_Missile_SAM_9M330_Tor_x8 is TEntityDescriptor
         (
             DefaultConfig = TGuidedMissileMovementConfigDescriptor
             (
-                MaxSpeed = 15000 * Metre
-                MaxAcceleration = 750 * Metre
-                AutoGyr = 1.7453292519943295
+                MaxSpeed        = 30000 * Metre
+                MaxAcceleration = 4000 * Metre
+                AutoGyr         = 1.7453292519943295
             )
             UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
             (
-                MaxSpeed = 15000 * Metre
-                MaxAcceleration = 750 * Metre
-                AutoGyr = 0.4363323129985824
+                MaxSpeed        = 30000 * Metre
+                MaxAcceleration = 4000 * Metre
+                AutoGyr         = 0.17453292519943295
             )
             AscendantPhaseConfig = nil
             RecedingPhaseConfig = nil
@@ -15361,9 +15346,9 @@ export Descriptor_Missile_SAM_9M330_Tor_x8 is TEntityDescriptor
             TimeMaxBetweenRandomMoveWhenUncontrollable = 2
             TimeMinBetweenRandomMoveWhenUncontrollable = 1.0
             TimeBetweenChaosUpdates = 0.1
-            RangeChaos = 2000
-            AngleMaxForRandomMouvUncontrollable = 2.5
-            RotationSpeedWhenUncontrollable = 15
+            RangeChaos = 1000
+            AngleMaxForRandomMouvUncontrollable = 1.5
+            RotationSpeedWhenUncontrollable = 10
             TempsDemiTour = 0.1
         ),
         TBaseDamageModuleDescriptor
