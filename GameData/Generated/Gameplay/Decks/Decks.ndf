@@ -1445,7 +1445,7 @@ export Descriptor_Deck_SOV_39_Gds_Rifle_multi is TDeckDescriptor
         TDeckPackDescription
         (
             ExperienceLevel = 2
-            DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_FireSupport_SOV
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_ATteam_RCL_SPG9_SOV
             Transport = ~/Descriptor_Unit_BTR_60_SOV
         ),
         TDeckPackDescription
@@ -1669,13 +1669,13 @@ export Descriptor_Deck_US_3rd_Arm_multi is TDeckDescriptor
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Rifles_half_LAW_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
             ExperienceLevel = 2
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_Rifles_half_AT4_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
@@ -3418,6 +3418,8 @@ export Descriptor_Deck_NATO_Garnison_Berlin_multi is TDeckDescriptor
     ]
 )
 
+
+
 export Descriptor_Deck_RDA_KdA_Bezirk_Erfurt_multi is TDeckDescriptor
 (
     DeckName = 'XHUXDTIZRS'
@@ -4220,7 +4222,7 @@ export Descriptor_Deck_US_3rd_Arm_challenge_IA_OP_03_STR_IA1 is TDeckDescriptor
         (
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_challenge_IA_Rifles_half_Dragon_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
@@ -4267,19 +4269,19 @@ export Descriptor_Deck_US_3rd_Arm_challenge_IA_OP_03_STR_IA1 is TDeckDescriptor
         (
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_challenge_IA_HMGteam_M60_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_challenge_IA_HMGteam_M60_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_challenge_IA_HMGteam_M60_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
@@ -5882,19 +5884,19 @@ export Descriptor_Deck_US_3rd_Arm_challenge_IA_OP_11_RGA_IA2 is TDeckDescriptor
         (
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_challenge_IA_HMGteam_M2HB_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_challenge_IA_HMGteam_M2HB_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_challenge_IA_Rifles_half_Dragon_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
@@ -7052,7 +7054,7 @@ export Descriptor_Deck_US_11ACR_multi_HB_OP_13_SRV_Player is TDeckDescriptor
         (
             ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_US_11ACR_multi_HB_Rifles_half_LAW_US
-            Transport = ~/Descriptor_Unit_M2A2_Bradley_IFV_US
+            Transport = ~/Descriptor_Unit_M2A1_Bradley_IFV_US
         ),
         TDeckPackDescription
         (
@@ -8283,6 +8285,8 @@ export Descriptor_Deck_RFA_TerrKdo_Sud_multi is TDeckDescriptor
     ]
 )
 
+
+
 export Descriptor_Deck_WP_Unternehmen_Zentrum_multi is TDeckDescriptor
 (
     DeckName = 'RZLAXHJMFD'
@@ -8747,6 +8751,7 @@ private DeckList is TDeckDescriptorList
         ~/Descriptor_Deck_UK_Blues_Royals_challenge_OP_14_HLM_Player,
     ]
 )
+
 export Descriptor_Pack_Division_SOV_Afganski is TDeckDescriptor
 (
     DeckName = ''

@@ -41,6 +41,11 @@ GhostDepiction_AH1S_Cobra_US is GhostAerialDepictionTemplate
     Alternatives = Alternatives_AH1S_Cobra_US
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_AH64_Apache_NG_US is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_AH64_Apache_NG_US
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_AH64_Apache_US is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_AH64_Apache_US
@@ -229,6 +234,11 @@ GhostDepiction_F15C_Eagle_AA2_US is GhostAerialDepictionTemplate
 GhostDepiction_F15C_Eagle_AA_US is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_F15C_Eagle_AA_US
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_F15E_StrikeEagle_US is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_F15E_StrikeEagle_US
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_F16C_LGB_US is GhostAerialDepictionTemplate
@@ -539,6 +549,11 @@ GhostDepiction_MiG_23MF_AA_DDR is GhostAerialDepictionTemplate
 GhostDepiction_MiG_23MF_DDR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_MiG_23MF_DDR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_MiG_23MLD_SOV is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_MiG_23MLD_SOV
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_MiG_23ML_DDR is GhostAerialDepictionTemplate
@@ -901,6 +916,11 @@ GhostDepiction_Su_22_AT_DDR is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Su_22_AT_DDR
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_Su_22_AT_SOV is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Su_22_AT_SOV
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Su_22_DDR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Su_22_DDR
@@ -959,6 +979,11 @@ GhostDepiction_Su_24M_clu_SOV is GhostAerialDepictionTemplate
 GhostDepiction_Su_24M_nplm_SOV is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Su_24M_nplm_SOV
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_Su_25T_SOV is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Su_25T_SOV
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_Su_25_SOV is GhostAerialDepictionTemplate
@@ -1041,6 +1066,11 @@ GhostDepiction_Tornado_IDS_RFA is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Tornado_IDS_RFA
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_UH1A_US is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_UH1A_US
+    Selector = SpecificHelicoDepictionSelector
+)
 GhostDepiction_UH1D_RFA is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_UH1D_RFA
@@ -1090,8 +1120,8 @@ AerialMimeticGhost is MAP[
   ( 'AH1F_Cobra_US', GhostDepiction_AH1F_Cobra_US ),
   ( 'AH1F_HeavyHog_US', GhostDepiction_AH1F_HeavyHog_US ),
   ( 'AH1S_Cobra_US', GhostDepiction_AH1S_Cobra_US ),
+  ( 'AH64_Apache_NG_US', GhostDepiction_AH64_Apache_NG_US ),
   ( 'AH64_Apache_US', GhostDepiction_AH64_Apache_US ),
-
   ( 'AH64_Apache_emp1_US', GhostDepiction_AH64_Apache_emp1_US ),
   ( 'AH64_Apache_emp2_US', GhostDepiction_AH64_Apache_emp2_US ),
   ( 'AH6C_Little_Bird_US', GhostDepiction_AH6C_Little_Bird_US ),
@@ -1129,6 +1159,7 @@ AerialMimeticGhost is MAP[
   ( 'F117_Nighthawk_US', GhostDepiction_F117_Nighthawk_US ),
   ( 'F15C_Eagle_AA2_US', GhostDepiction_F15C_Eagle_AA2_US ),
   ( 'F15C_Eagle_AA_US', GhostDepiction_F15C_Eagle_AA_US ),
+  ( 'F15E_StrikeEagle_US', GhostDepiction_F15E_StrikeEagle_US ),
   ( 'F16C_LGB_US', GhostDepiction_F16C_LGB_US ),
   ( 'F16E_AA_US', GhostDepiction_F16E_AA_US ),
   ( 'F16E_AGM_US', GhostDepiction_F16E_AGM_US ),
@@ -1191,6 +1222,7 @@ AerialMimeticGhost is MAP[
   ( 'MiG_23BN_AT_DDR', GhostDepiction_MiG_23BN_AT_DDR ),
   ( 'MiG_23MF_AA_DDR', GhostDepiction_MiG_23MF_AA_DDR ),
   ( 'MiG_23MF_DDR', GhostDepiction_MiG_23MF_DDR ),
+  ( 'MiG_23MLD_SOV', GhostDepiction_MiG_23MLD_SOV ),
   ( 'MiG_23ML_DDR', GhostDepiction_MiG_23ML_DDR ),
   ( 'MiG_23ML_SOV', GhostDepiction_MiG_23ML_SOV ),
   ( 'MiG_23ML_UPK_DDR', GhostDepiction_MiG_23ML_UPK_DDR ),
@@ -1263,6 +1295,7 @@ AerialMimeticGhost is MAP[
   ( 'Puma_UK', GhostDepiction_Puma_UK ),
   ( 'Su_17M4_SOV', GhostDepiction_Su_17M4_SOV ),
   ( 'Su_22_AT_DDR', GhostDepiction_Su_22_AT_DDR ),
+  ( 'Su_22_AT_SOV', GhostDepiction_Su_22_AT_SOV ),
   ( 'Su_22_DDR', GhostDepiction_Su_22_DDR ),
   ( 'Su_22_RKT_DDR', GhostDepiction_Su_22_RKT_DDR ),
   ( 'Su_22_SEAD_DDR', GhostDepiction_Su_22_SEAD_DDR ),
@@ -1275,6 +1308,7 @@ AerialMimeticGhost is MAP[
   ( 'Su_24M_clu2_SOV', GhostDepiction_Su_24M_clu2_SOV ),
   ( 'Su_24M_clu_SOV', GhostDepiction_Su_24M_clu_SOV ),
   ( 'Su_24M_nplm_SOV', GhostDepiction_Su_24M_nplm_SOV ),
+  ( 'Su_25T_SOV', GhostDepiction_Su_25T_SOV ),
   ( 'Su_25_SOV', GhostDepiction_Su_25_SOV ),
   ( 'Su_25_clu_SOV', GhostDepiction_Su_25_clu_SOV ),
   ( 'Su_25_he_SOV', GhostDepiction_Su_25_he_SOV ),
@@ -1291,6 +1325,7 @@ AerialMimeticGhost is MAP[
   ( 'Tornado_IDS_HE1_RFA', GhostDepiction_Tornado_IDS_HE1_RFA ),
   ( 'Tornado_IDS_MW1_RFA', GhostDepiction_Tornado_IDS_MW1_RFA ),
   ( 'Tornado_IDS_RFA', GhostDepiction_Tornado_IDS_RFA ),
+  ( 'UH1A_US', GhostDepiction_UH1A_US ),
   ( 'UH1D_RFA', GhostDepiction_UH1D_RFA ),
   ( 'UH1D_Supply_RFA', GhostDepiction_UH1D_Supply_RFA ),
   ( 'UH1H_Huey_US', GhostDepiction_UH1H_Huey_US ),
@@ -1298,7 +1333,7 @@ AerialMimeticGhost is MAP[
   ( 'UH60A_Black_Hawk_US', GhostDepiction_UH60A_Black_Hawk_US ),
   ( 'UH60A_CO_US', GhostDepiction_UH60A_CO_US ),
   ( 'UH60A_Supply_US', GhostDepiction_UH60A_Supply_US ),
-	( 'Su_25_Multirole_FRL', GhostDepiction_Su_25_Multirole_FRL ),
+  ( 'Su_25_Multirole_FRL', GhostDepiction_Su_25_Multirole_FRL ),
 
 ]
 

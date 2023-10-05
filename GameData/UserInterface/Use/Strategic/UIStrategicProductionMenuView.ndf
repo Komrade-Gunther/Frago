@@ -108,6 +108,8 @@ template StrategicProductionMenuCategoryButton
 
     IsTogglable = true
     RadioButtonManager = StrategicProductionMenuCategoryButtonRadioButtonManager
+    LeftClickSound = ~/SoundEvent_SteelmanReinforcementsDayButton
+
     Components =
     [
         BUCKListDescriptor

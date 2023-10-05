@@ -633,8 +633,16 @@ private UISpecificTacticCubeActionViewDescriptor is TUISpecificCubeActionViewDes
     [
         (~/TacticCubeActionFunctionType/Orders, CubeActionButton(BigLineAction = ~/BigLineAction/BalancedMultiline)),
         (~/TacticCubeActionFunctionType/TogglableOrders, CubeActionToggleButton(TextSize = '18' BigLineAction = ~/BigLineAction/BalancedMultiline)),
-        (~/TacticCubeActionFunctionType/SmartOrders, CubeActionButton( TextSize = '18' BigLineAction = ~/BigLineAction/BalancedMultiline)),
+        (~/TacticCubeActionFunctionType/SmartOrders, CubeActionButton(TextSize = '18' BigLineAction = ~/BigLineAction/BalancedMultiline)),
     ]
 
     EmptyButtonTemplateDescriptor  = ~/CubeActionEmptyButton
+
+    SpotlightDescriptor = BUCKSpotlightDescriptor
+    (
+        ComponentFrame = TUIFramePropertyRTTI
+        (
+            RelativeWidthHeight = [1.0, 1.0]
+        )
+    )
 )

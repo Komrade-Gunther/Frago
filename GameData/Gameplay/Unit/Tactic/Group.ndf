@@ -5,9 +5,8 @@ Tactic_GroupModuleDescriptor is TGroupModuleDescriptor
 )
 
 
-Tactic_GroupStateEngineDescriptor is TStateEngineModuleDescriptor
+Tactic_GroupStateEngineDescriptor is TStateEngineGroupModuleDescriptor
 (
-    InitialStateId = "GroupIdle"
 )
 
 export Tactic_ModularUnitGroupDescriptor is TEntityDescriptor

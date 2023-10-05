@@ -13,7 +13,7 @@ template ShortcutButton
     MagnifiableWidthHeightTexture : = [30.0, 30.0],
     BackgroundBlockColorToken : string = "BoutonTemps",
     BorderLineColorToken : string = "CouleurBordure_boutonShortcuts",
-
+    LeftClickSound : TSoundDescriptor = nil,
 ] is BUCKButtonDescriptor
 (
     ElementName = <ElementName>
@@ -26,6 +26,7 @@ template ShortcutButton
     IsTogglable = true
     DefaultToggleValue = false
     HasBorder = false
+    LeftClickSound = <LeftClickSound>
 
     Components =
     [
@@ -151,6 +152,7 @@ BoutonAffichageStrategicSituation is ShortcutButton
     HintBodyToken = "head_Osb"
     BackgroundBlockColorToken = "SM_Feldgrau"
     BorderLineColorToken = "SM_Grullo"
+    LeftClickSound = SoundEvent_SteelmanCampaignStatus
 )
 
 BoutonAffichageOrdreDeBataille is ShortcutButton
@@ -164,6 +166,7 @@ BoutonAffichageOrdreDeBataille is ShortcutButton
     HintBodyToken = "head_Obb"
     BackgroundBlockColorToken = "SM_Feldgrau"
     BorderLineColorToken = "SM_Grullo"
+    LeftClickSound = SoundEvent_SteelmanOrderOfBattle
 )
 
 BoutonAffichagePertes is ShortcutButton
@@ -177,6 +180,7 @@ BoutonAffichagePertes is ShortcutButton
     HintBodyToken = "head_Lsb"
     BackgroundBlockColorToken = "SM_Feldgrau"
     BorderLineColorToken = "SM_Grullo"
+    LeftClickSound = SoundEvent_SteelmanCasualtiesList
 )
 
 BoutonAccelerationDuTemps is ShortcutButton
@@ -190,6 +194,7 @@ BoutonAccelerationDuTemps is ShortcutButton
     HintBodyToken = "sp_c"
     BackgroundBlockColorToken = "SM_Feldgrau"
     BorderLineColorToken = "SM_Grullo"
+    LeftClickSound = SoundEvent_SteelmanGameSpeed
 )
 //------------------------------------------------------------------------------
 

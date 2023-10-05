@@ -281,7 +281,7 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
         ("AllUnits", [ECollisionPlane/NearGround, ECollisionPlane/LowAltitude, ECollisionPlane/Ground]),
     ]
 
-    IAStratPathCostCacheFilePath = "$/ScenarioPaths/IAStratZonePathCostCache"
+    IAStratPathCostCacheFilePath = "ScenarioData:/IAStratZone/ZonePathCache.ndfbin"
     IAStratDistanceFromNotDefendedCommandZone = 4000 * Metre //Un peu plus que la taille de 1 zone IAStrat
 
     //first moveOutRatio / second CaptureRatio

@@ -1,23 +1,24 @@
-StrategicObjectivesResources is TUIObjectivesResources
+StrategicScriptedLabelResources is TUIScriptedAnimatedLabelResources
 (
     Layer = $/UserInterface/UILayer_Labels
     WorldFloorProxy = $/M3D/Scene/WorldFloorForIAProxy
 
-    ObjectiveLabelMagnificationMultiplier = 1.0
+    LabelMagnificationMultiplier = 1.0
 
-    ObjectiveLabelDescriptors =
+    AnimationDurationInSecond = 2.0
+
+    LabelDescriptors = MAP
     [
-        // ~/PrimaryObjectiveLabel,        // Primary
-        InfoStrategicObjectiveLabel,     // Primary
-        BonusStrategicObjectiveLabel,   // Bonus
-        InfoStrategicObjectiveLabel,    // Hint
-        CaptureStrategicObjectiveLabel, // CapturePoint
-        nil                             //ConquestObjective
+        ("Primary", InfoStrategicObjectiveLabel(AnimPriority = 100)),
+        ("Bonus", BonusStrategicObjectiveLabel),
+        ("InfoObj", InfoStrategicObjectiveLabel(AnimPriority = 25)),
+        ("CapturePoint", CaptureStrategicObjectiveLabel),
     ]
 
-    ObjectiveFlagBorderColor = RGBA[184.0, 184.0, 184.0, 255.0] //La couleur de la bordure autour du drapeau
-    ObjectiveFlagBorderWidth = 2 // La largeur de la bordure autour du drapeau
-    ObjectiveFlagNotchWidth = 0.2 //Par exemple, 0.2 = l'encoche du drapeau fait 20% de la largeur du "FlagContainer"
+    FeedbackThicknessCapture = 700.0
+    FlagBorderColor = RGBA[184.0, 184.0, 184.0, 255.0] //La couleur de la bordure autour du drapeau
+    FlagBorderWidth = 2 // La largeur de la bordure autour du drapeau
+    FlagNotchWidth = 0.2 //Par exemple, 0.2 = l'encoche du drapeau fait 20% de la largeur du "FlagContainer"
 
     NationaliteTextureTokens = MAP
     [
@@ -28,19 +29,25 @@ StrategicObjectivesResources is TUIObjectivesResources
 
 BonusStrategicObjectiveLabel is StrategicObjectiveLabelTemplate
 (
-    NewObjectiveToken = "OBJ_NEWS"
+    NewAnimatedLabelToken = "OBJ_NEWS"
+    AnimPriority = 50
 )
 
-InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
+private template InfoStrategicObjectiveLabel
+[
+    AnimPriority : int,
+]
+is  TUIScriptedAnimatedLabelDescriptor
 (
     ScaleFactor = 0.0
     AltitudeMaxSize = 100.0
     MinScale = 0.0
     MaxScale = 1.0
 
-    NewObjectiveToken = "OBJ_NEWI"
+    NewAnimatedLabelToken = "OBJ_NEWI"
+    AnimPriority = <AnimPriority>
 
-    ObjectiveLabelTransformation = TLabelTransformationComposition
+    LabelTransformation = TLabelTransformationComposition
     (
         Transformations = [
             TLabelTransformFaceCam
@@ -56,7 +63,6 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
             ),
         ]
     )
-    //ObjectiveFeedbackMagnifiableVerticalOffset = HistoricalBattlesObjectiveFeedbackMagnifiableVerticalOffset
 
     ComponentDescriptor = BUCKListDescriptor
     (
@@ -137,28 +143,27 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
 
         BackgroundComponents =
         [
-            //<BackgroundComponent>
             PanelRoundedCorner
+            (
+                BackgroundBlockColorToken = 'SM_LDhint_texte_gen'
+                BorderLineColorToken = 'SM_LDhint_texte'
+                BorderThicknessToken = '2'
+            ),
+            BUCKContainerDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
                 (
-                    BackgroundBlockColorToken = 'SM_LDhint_texte_gen'
-                            BorderLineColorToken = 'SM_LDhint_texte'
-                            BorderThicknessToken = '2'
-                ),
-                BUCKContainerDescriptor
-                (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        MagnifiableWidthHeight = [ 2.0, 100.0 ]
-                        AlignementToAnchor = [ 0.0, 0.0 ]
-                        AlignementToFather = [ 0.0, 0.0 ]
-                        MagnifiableOffset = [-4,0]
-                    )
+                    MagnifiableWidthHeight = [ 2.0, 100.0 ]
+                    AlignementToAnchor = [ 0.0, 0.0 ]
+                    AlignementToFather = [ 0.0, 0.0 ]
+                    MagnifiableOffset = [-4,0]
+                )
 
-                    ElementName = "Pole"
+                ElementName = "Pole"
 
-                    HasBackground = true
-                    BackgroundBlockColorToken = 'SM_LDhint_texte'
-                ),
+                HasBackground = true
+                BackgroundBlockColorToken = 'SM_LDhint_texte'
+            ),
         ]
 
         ForegroundComponents =
@@ -172,7 +177,7 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
                     MagnifiableOffset = [0.0, -5.0]
                     AlignementToAnchor = [0.5, 1.0]
                     AlignementToFather = [0.5, 0.0]
-                    )
+                )
                 ParagraphStyle = paragraphStyleTextCenter
                 TextStyle = "Default"
                 HorizontalFitStyle = ~/FitStyle/FitToContent
@@ -183,8 +188,6 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
                 TextDico = ~/LocalisationConstantes/dico_maps
                 TextColor = "BlancTexte"
                 TextSize = "22"
-
-
             )
         ]
     )
@@ -192,23 +195,26 @@ InfoStrategicObjectiveLabel is TUIObjectiveLabelDescriptor
 
 CaptureStrategicObjectiveLabel is StrategicObjectiveLabelTemplate
 (
-    NewObjectiveToken = "OBJ_NEWCP"
+    NewAnimatedLabelToken = "OBJ_NEWCP"
+    AnimPriority = 50
 )
 
 private template StrategicObjectiveLabelTemplate
 [
-    NewObjectiveToken : string = ""
+    NewAnimatedLabelToken : string = "",
+    AnimPriority : int,
 ]
-is TUIObjectiveLabelDescriptor
+is TUIScriptedAnimatedLabelDescriptor
 (
     ScaleFactor = 0.0
     AltitudeMaxSize = 500000.0
     MinScale = 0.0
     MaxScale = 1.0
 
-    NewObjectiveToken = <NewObjectiveToken>
+    NewAnimatedLabelToken = <NewAnimatedLabelToken>
+    AnimPriority = <AnimPriority>
 
-    ObjectiveLabelTransformation = TLabelTransformationComposition
+    LabelTransformation = TLabelTransformationComposition
     (
         Transformations = [
             TLabelTransformFaceCam

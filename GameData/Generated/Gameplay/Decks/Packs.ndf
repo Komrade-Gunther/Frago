@@ -16465,18 +16465,7 @@ Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_FOB_SOV is TDeckPackDescriptor
         ),
     ]
 )
-Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_FireSupport_SOV is TDeckPackDescriptor
-(
-    DescriptorId = GUID:{29764fb4-3dfd-4c25-ba47-0abe5bfc3481}
-    CfgName = 'TOE_SOV_39_Gds_Rifle_multi_FireSupport_SOV'
-    TransporterAndUnitsList =
-    [
-        TDeckTransporterAndUnitsDescriptor
-        (
-            UnitDescriptor = Descriptor_Unit_FireSupport_SOV
-        ),
-    ]
-)
+
 Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_Grenzer_DDR is TDeckPackDescriptor
 (
     DescriptorId = GUID:{3236a678-f0cc-4024-b86a-e08b397d3268}
@@ -25225,15 +25214,16 @@ Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M270_MLRS_cluster_US is TDeckPackDescr
         ),
     ]
 )
-Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M2A2_Bradley_Leader_US is TDeckPackDescriptor
+
+Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_ATteam_RCL_SPG9_SOV is TDeckPackDescriptor
 (
-    DescriptorId = GUID:{5d4c1281-5d87-4e1c-8b58-fef1aa1fb183}
-    CfgName = 'TOE_US_3rd_Arm_multi_M2A2_Bradley_Leader_US'
+    DescriptorId = GUID:{3b9a9b72-d2b6-4bf3-a092-06301305eabb}
+    CfgName = 'TOE_SOV_39_Gds_Rifle_multi_ATteam_RCL_SPG9_SOV'
     TransporterAndUnitsList =
     [
         TDeckTransporterAndUnitsDescriptor
         (
-            UnitDescriptor = Descriptor_Unit_M2A2_Bradley_Leader_US
+            UnitDescriptor = Descriptor_Unit_ATteam_RCL_SPG9_SOV
         ),
     ]
 )

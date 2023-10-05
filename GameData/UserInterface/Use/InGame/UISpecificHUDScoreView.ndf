@@ -18,8 +18,10 @@ private template AllianceScoreLine
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [225.0, 24.0]
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, 24.0]
     )
+
     ElementName = <ElementName> + "Container"
     HidePointerEvents = true
     Components =
@@ -33,9 +35,7 @@ private template AllianceScoreLine
 
 
             Axis = ~/ListAxis/Horizontal
-            FirstMargin = TRTTILength( Magnifiable = 6.0 )
             InterItemMargin = TRTTILength( Magnifiable = 4.0 )
-            LastMargin = TRTTILength( Magnifiable = 6.0 )
 
             Elements =
             [
@@ -46,7 +46,7 @@ private template AllianceScoreLine
                         ElementName = <ElementName> + "PreGaugeContainer"
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            MagnifiableWidthHeight = [30.0, <GaugeMagnifiableHeight>]
+                            MagnifiableWidthHeight = [32.0, <GaugeMagnifiableHeight>]
                             AlignementToFather = [0.0, 0.5]
                             AlignementToAnchor = [0.0, 0.5]
                         )
@@ -172,7 +172,7 @@ private template AllianceScoreLine
                                                 Alignment = UIText_Left
                                                 VerticalAlignment = UIText_VerticalCenter
                                             )
-
+                                            TextPadding = TRTTILength4 (Magnifiable = [4,0,0,0])
                                             TextSize = <GaugeTextSize>
                                             TextColor = "BlancEquipe"
                                             TextToken = "DES_VALUE"
@@ -492,9 +492,9 @@ ScorePanelPlayerList is BUCKListDescriptor
     Axis = ~/ListAxis/Vertical
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
-    FirstMargin = TRTTILength( Magnifiable = 7.0 )
+    FirstMargin = TRTTILength( Magnifiable = 4.0 )
     InterItemMargin = TRTTILength( Magnifiable = 1.0 )
-    LastMargin = TRTTILength( Magnifiable = 7.0 )
+    LastMargin = TRTTILength( Magnifiable = 4.0 )
     // Filled with BUCKSpecificHUDScorePlayerMainComponentDescriptor
 )
 
@@ -504,7 +504,7 @@ BUCKSpecificHUDScoreAllianceMainComponentDescriptor is BUCKContainerDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [225.0, 0.0]
+        RelativeWidthHeight = [1.0, 0.0]
     )
 
     FitStyle = ~/ContainerFitStyle/FitToContentVertically
@@ -513,13 +513,13 @@ BUCKSpecificHUDScoreAllianceMainComponentDescriptor is BUCKContainerDescriptor
     [
         BUCKListDescriptor
         (
-            ComponentFrame = TUIFramePropertyRTTI()
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 0.0]
+            )
             Axis = ~/ListAxis/Vertical
 
-            BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-
-            FirstMargin = TRTTILength(Magnifiable = 5.0)
-            LastMargin = TRTTILength(Magnifiable = 5.0)
+            FirstMargin = TRTTILength(Magnifiable = 4.0)
 
             Elements =
             [
@@ -534,8 +534,8 @@ BUCKSpecificHUDScoreAllianceMainComponentDescriptor is BUCKContainerDescriptor
                         IconHint = "lr_destrt"
                         IconHintTitle = "lr_destrb"
                         GaugeHint = "LR_team"
-                        GaugeMagnifiableHeight = 18
-                        GaugeIconMagnifiableHeight = 26
+                        GaugeMagnifiableHeight = 16
+                        GaugeIconMagnifiableHeight = 24
                         GaugeTextSize = "20"
                     )
                 ),
@@ -550,8 +550,8 @@ BUCKSpecificHUDScoreAllianceMainComponentDescriptor is BUCKContainerDescriptor
                         IconHintTitle = "lr_conquet"
                         IconHintExtended = "lr_conquee"
                         GaugeHint = "LR_team"
-                        GaugeMagnifiableHeight = 18
-                        GaugeIconMagnifiableHeight = 26
+                        GaugeMagnifiableHeight = 16
+                        GaugeIconMagnifiableHeight = 24
                         GaugeTextSize = "20"
                     )
                 ),
@@ -600,8 +600,10 @@ BUCKSpecificHUDScoreAllianceMainComponentDescriptor is BUCKContainerDescriptor
 private PanelDeScoreParEquipe is BUCKListDescriptor
 (
     ElementName = "AllianceList"
-    ComponentFrame = TUIFramePropertyRTTI()
-    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+    )
     Axis = ~/ListAxis/Vertical
     // rempli avec deux BUCKSpecificHUDScoreAllianceMainComponentDescriptor, une à gauche et une à droite
 )
@@ -609,7 +611,10 @@ private PanelDeScoreParEquipe is BUCKListDescriptor
 //------------------------------------------------------------------------------
 private PlayerScorePanelButton is BUCKContainerDescriptor
 (
-    ComponentFrame = TUIFramePropertyRTTI ( MagnifiableWidthHeight = [22,22+26])
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [56,60]
+    )
 
     Components =
     [
@@ -618,9 +623,9 @@ private PlayerScorePanelButton is BUCKContainerDescriptor
             ElementName = "PlayerScorePanelButton"
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableWidthHeight = [22.0, 22.0]
-                AlignementToAnchor = [0.0, 0.5]
-                AlignementToFather = [0.0, 0.5]
+                MagnifiableWidthHeight = [24.0, 24.0]
+                AlignementToAnchor = [0.5, 0.5]
+                AlignementToFather = [0.5, 0.5]
 
             )
 
@@ -689,13 +694,13 @@ private PanelScoreMax is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [50.0, 0.0]
+        MagnifiableWidthHeight = [40.0+16, 0.0]
     )
 
     Axis = ~/ListAxis/Vertical
-    FirstMargin = TRTTILength( Magnifiable = 5.0 )
-    InterItemMargin = TRTTILength( Magnifiable = 10.0 )
-    LastMargin = TRTTILength( Magnifiable = 10.0 )
+    FirstMargin = TRTTILength( Magnifiable = 4.0 )
+    InterItemMargin = TRTTILength( Magnifiable = 4.0 )
+    LastMargin = TRTTILength( Magnifiable = 4.0 )
 
     Elements =
     [
@@ -706,7 +711,7 @@ private PanelScoreMax is BUCKListDescriptor
                 ElementName = 'IconeScoreMax'
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    MagnifiableWidthHeight = [28.0, 21.0]
+                    MagnifiableWidthHeight = [32.0, 32.0]
 
                     AlignementToFather = [0.5, 0.0]
                     AlignementToAnchor = [0.5, 0.0]
@@ -770,17 +775,12 @@ private PanelScoreMax is BUCKListDescriptor
     ]
 )
 
-//------------------------------------------------------------------------------
-
 private MainScorePanelComponent is BUCKListDescriptor
 (
 
     ElementName = "MainScorePanelComponent"
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        MagnifiableOffset = [-10,0]
-    )
-    FirstMargin = TRTTILength ( Magnifiable = 5)
+    ComponentFrame = TUIFramePropertyRTTI()
+
     Axis = ~/ListAxis/Horizontal
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
     Elements =
@@ -791,9 +791,9 @@ private MainScorePanelComponent is BUCKListDescriptor
         ),
         BUCKListElementDescriptor
         (
+            ExtendWeight = 1.0
             ComponentDescriptor = ~/PanelDeScoreParEquipe
         ),
-
         BUCKListElementDescriptor
         (
             ComponentDescriptor = ~/PanelScoreMax

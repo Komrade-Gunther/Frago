@@ -63,6 +63,7 @@ template BottomPanelButton
     )
 
     HidePointerEvents = true
+    LeftClickSound = ~/SoundEvent_SteelmanPanelButton
 
     Components =
     [

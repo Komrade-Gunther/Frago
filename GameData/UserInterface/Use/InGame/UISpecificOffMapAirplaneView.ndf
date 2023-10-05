@@ -62,7 +62,7 @@ OffMapAirplaneMainContent is BUCKListDescriptor
 
 // -------------------------------------------------------------------------------------------------
 
-OffMapAirplaneComponentDimension is [83.25, 54.0]
+OffMapAirplaneComponentDimension is [111.0, 72.0]
 OffMapAirplaneRadioButton is TBUCKRadioButtonManager()
 
 BUCKSpecificOffMapAirplaneMainComponentDescriptor is BUCKSpecificOffMapButton

@@ -35,6 +35,7 @@ is BUCKListDescriptor
                 ItemsTextColorToken = 'Noir_option'
                 AlignFloatingPanelRight = true
                 ItemMagnifiableHeight = 50.0
+                OpenSound = ~/SoundEvent_SteelmanAddUnitOpenList
 
                 ItemsTextPadding = TRTTILength4( Magnifiable = [50.0, 0.0, 0.0, 0.0] )
                 ItemComponents =
@@ -205,4 +206,7 @@ template UISpecificStrategicStartBattleGroupViewDescriptor
 
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
     PawnItemTextToken = "BTL_pwnpwr"
+
+    AddUnitToBattleSound = ~/SoundEvent_SteelmanAttackPrepareAddUnit
+    RemoveUnitFromBattleSound = ~/SoundEvent_SteelmanAttackPrepareRemoveUnit
 )

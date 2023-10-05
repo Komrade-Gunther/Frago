@@ -142,23 +142,19 @@ HeliApparenceModuleDescriptor is TModuleSelector
 
 UnitStateEngineCompanyModuleDescriptor is TStateEngineCompanyModuleDescriptor
 (
-   InitialStateId = 'CompanyInit'
     StateEngineUpdateMode = WorldControllerAccess_InWorld
 )
-UnitStateEngineModuleDescriptor is TStateEngineModuleDescriptor
+UnitStateEngineModuleDescriptor is TStateEngineUnitModuleDescriptor
 (
-    InitialStateId = 'UnitIdle'
     StateEngineUpdateMode = WorldControllerAccess_InWorld
 )
 
 AirplaneStateEngineCompanyModuleDescriptor is TStateEngineCompanyModuleDescriptor
 (
-    InitialStateId = 'CompanyInit'
     StateEngineUpdateMode = WorldControllerAccess_InOutWorld
 )
-AirplaneStateEngineModuleDescriptor is TStateEngineModuleDescriptor
+AirplaneStateEngineModuleDescriptor is TStateEngineUnitModuleDescriptor
 (
-    InitialStateId = 'UnitIdle'
     StateEngineUpdateMode = WorldControllerAccess_InOutWorld
 )
 

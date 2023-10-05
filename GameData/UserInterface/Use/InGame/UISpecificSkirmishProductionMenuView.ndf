@@ -76,8 +76,9 @@ private PanelInfoPartie is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 32.0]
-        AlignementToFather = [0.5, 0.5]
-        AlignementToAnchor = [0.5, 0.5]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
+        MagnifiableOffset = [0,4]
     )
 
     Axis = ~/ListAxis/Horizontal
@@ -115,9 +116,9 @@ private PointsCommandement is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI (RelativeWidthHeight = [0.0, 1.0])
 
     Axis = ~/ListAxis/Horizontal
-    FirstMargin = TRTTILength( Magnifiable = 10.0 )
-    InterItemMargin = TRTTILength( Magnifiable = 5.0 )
-    LastMargin = TRTTILength( Magnifiable = 10.0 )
+    FirstMargin = TRTTILength( Magnifiable = 16.0 )
+    InterItemMargin = TRTTILength( Magnifiable = 4.0 )
+    LastMargin = TRTTILength( Magnifiable = 16.0 )
 
     HasBorder = true
     BorderThicknessToken = "1"
@@ -134,7 +135,7 @@ private PointsCommandement is BUCKListDescriptor
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    MagnifiableWidthHeight = [20.0, 20.0]
+                    MagnifiableWidthHeight = [16.0, 16.0]
 
                     AlignementToFather = [0.0, 0.5]
                     AlignementToAnchor = [0.0, 0.5]
@@ -241,9 +242,9 @@ private ChronoPointCommandement is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI (RelativeWidthHeight = [0.0, 1.0])
 
     Axis = ~/ListAxis/Horizontal
-    FirstMargin = TRTTILength( Magnifiable = 10.0 )
-    InterItemMargin = TRTTILength( Magnifiable = 5.0 )
-    LastMargin = TRTTILength( Magnifiable = 10.0 )
+    FirstMargin = TRTTILength( Magnifiable = 16.0 )
+    InterItemMargin = TRTTILength( Magnifiable = 4.0 )
+    LastMargin = TRTTILength( Magnifiable = 8.0 )
     HasBorder = true
     BorderThicknessToken = "1"
     BorderLineColorToken = "LigneSeparatricePanelRessources"
@@ -257,7 +258,7 @@ private ChronoPointCommandement is BUCKListDescriptor
             (
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    MagnifiableWidthHeight = [20.0, 20.0]
+                    MagnifiableWidthHeight = [16.0, 16.0]
 
                     AlignementToFather = [0.0,0.5]
                     AlignementToAnchor = [0.0,0.5]
@@ -309,7 +310,7 @@ private ChronoPointCommandement is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [30.0, 0.0]
+                    MagnifiableWidthHeight = [32.0, 0.0]
                     AlignementToFather = [0.0, 0.5]
                     AlignementToAnchor  = [0.0, 0.5]
                 )
@@ -399,10 +400,10 @@ private NombreSecteur is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [0.0, 1.0])
 
     Axis = ~/ListAxis/Horizontal
-    FirstMargin = TRTTILength( Magnifiable = 10.0 )
-    InterItemMargin = TRTTILength( Magnifiable = 5.0 )
-    LastMargin = TRTTILength( Magnifiable = 10.0 )
-    HasBorder = true
+    FirstMargin = TRTTILength( Magnifiable = 8.0 )
+    InterItemMargin = TRTTILength( Magnifiable = 4.0 )
+    LastMargin = TRTTILength( Magnifiable = 16.0 )
+    // HasBorder = true
     BorderThicknessToken = "1"
     BorderLineColorToken = "LigneSeparatricePanelRessources"
     BordersToDraw =  ~/TBorderSide/Right
@@ -417,7 +418,7 @@ private NombreSecteur is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [30.0, 0.0]
+                    MagnifiableWidthHeight = [32.0, 0.0]
                     AlignementToFather = [0.0, 0.5]
                     AlignementToAnchor  = [0.0, 0.5]
                 )
@@ -436,7 +437,7 @@ private NombreSecteur is BUCKListDescriptor
                 TypefaceToken = "Liberator"
 
                 TextColor = "CyanChrono"
-                TextSize = "26"
+                TextSize = "24"
 
                 TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
@@ -607,7 +608,7 @@ private SmartGroupTypeProductionButton is BUCKSpecificButton
     TextColorToken = "BlancEquipe"
     TextSizeToken = "12"
     ButtonRelativeWidthHeight = [0.0, 0.0]
-    ButtonMagnifiableWidthHeight = [85.0, 14]
+    ButtonMagnifiableWidthHeight = [96.0, 16]
 
     RoundedCorner = true
     RoundedVertexes = [true, false, false, true]
@@ -653,7 +654,7 @@ private DeckTypeProductionButton is BUCKSpecificButton
     TextColorToken = "BlancEquipe"
     TextSizeToken = "12"
     ButtonRelativeWidthHeight = [0.0, 0.0]
-    ButtonMagnifiableWidthHeight = [85.0, 14]
+    ButtonMagnifiableWidthHeight = [96.0, 16]
 
     RoundedCorner = true
     RoundedVertexes = [false, true, true, false]
@@ -1025,6 +1026,20 @@ private SkirmishProductionMenuUnitListScrollingContainer is BUCKSpecificScrollin
 )
 
 // -------------------------------------------------------------------------------------------------
+
+template ProductionSpotlight
+[
+    UniqueName = "",
+] is BUCKSpotlightDescriptor
+(
+    UniqueName = <UniqueName>
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 1.0]
+    )
+)
+
+// -------------------------------------------------------------------------------------------------
 // UISpecificSkirmishProductionMenuViewDescriptor
 // -------------------------------------------------------------------------------------------------
 
@@ -1041,7 +1056,7 @@ template UISpecificSkirmishProductionMenuViewDescriptor
 
     ShortcutUILayer = $/M3D/Input/UserInputLayerHandler/InputLayer_InGameShortcuts
 
-    NbMaxPlanes = 16
+    NbMaxPlanes = 9
 
     SquadGroupName = "HPROD_SQD"
     HalfSquadGroupName = "HPROD_HSQD"
@@ -1056,6 +1071,12 @@ template UISpecificSkirmishProductionMenuViewDescriptor
     CombatGroupRadioButtonManager = ~/SkirmishProductionMenuCombatGroupButtonRadioButtonManager
 
     SmartGroupButtonContainerDescriptor = ~/SmartGroupProductionButtonContainerDescriptor
+
+    ProductionMenuButtonSpotlights = MAP
+    [
+        (EDefaultFactories/Infantry, ProductionSpotlight(UniqueName = "Spotlight_logInf")),
+        (EDefaultFactories/Recons, ProductionSpotlight(UniqueName = "Spotlight_logRec"))
+    ]
 
     UnitContainerDescriptor = UISpecificUnitButtonViewDescriptor
     (

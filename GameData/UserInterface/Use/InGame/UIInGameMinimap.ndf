@@ -58,7 +58,7 @@ MinimapPanelDescriptor is TUISpecificBUCKMinimapDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
-        MagnifiableWidthHeight = [-5.0, -5.0]
+        MagnifiableWidthHeight = [-4.0, -4.0]
         AlignementToFather = [0.5, 0.5]
         AlignementToAnchor = [0.5, 0.5]
     )

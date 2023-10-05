@@ -99,6 +99,7 @@ is BUCKButtonDescriptor
     IsTogglable = <IsTogglable>
     CannotDeselect = <CannotDeselect>
     RadioButtonManager = <RadioButtonManager>
+    LeftClickSound = ~/SoundEvent_SteelmanOOBLine
 
     Components =
     [

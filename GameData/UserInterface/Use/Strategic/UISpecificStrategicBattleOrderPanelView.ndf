@@ -26,6 +26,7 @@ is BUCKButtonDescriptor
     CannotDeselect = true
     DefaultToggleValue = <DefaultToggleValue>
     RadioButtonManager = ~/StrategicBattleOrderAllianceFilterRadioButtonManager
+    LeftClickSound = ~/SoundEvent_SteelmanOOBAllianceSwitch
 
     HasBackground = true
     BackgroundBlockColorToken = "SM_SelectPawn_oob"

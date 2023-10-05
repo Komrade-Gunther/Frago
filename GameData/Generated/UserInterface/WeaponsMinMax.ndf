@@ -56,7 +56,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                AccuracyMovement = TMinMaxValue (
                        Min = 0 // SAM 9M336 x3
-                       Max = 60 // SAM FIM92 Stinger CS x4
+                       Max = 60 // SAM Strela10M3 x4
                )
                RateOfFire = TMinMaxValue (
                        Min = 5.217391304347826 // SAM ROLAND 3 x2
@@ -68,11 +68,11 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                NbShotsBySalvo = TMinMaxValue (
                        Min = 1 // MANPAD_Blowpipe
-                       Max = 8 // SAM RAPIER x8
+                       Max = 8 // SAM 9M330 Tor x8
                )
                SupplyCost = TMinMaxValue (
                        Min = 20 // MANPAD_Blowpipe
-                       Max = 240 // SAM RAPIER x8
+                       Max = 240 // SAM 9M330 Tor x8
               )
          )
        ),
@@ -95,7 +95,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 304 * Metre // Howz Canon 2A44 Howitzer 203mm late
                )
                MaxRange = TMinMaxValue (
-                       Min = 24904 // Howz Canon 2A51 Howitzer 120mm
+                       Min = 24904 // Howz Canon 2A60 Howitzer 120mm
                        Max = 109946 // Howz Canon 2A44 Howitzer 203mm late
                )
                MaxRangeTBA = TMinMaxValue (
@@ -108,11 +108,11 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                AimTime = TMinMaxValue (
                        Min = 16.0 // Howz Canon 2A18 Howitzer 122mm
-                       Max = 26.0 // Howz Canon D22 Howitzer 152mm late
+                       Max = 26.0 // Howz Canon D22 Howitzer 152mm late guided
                )
                ReloadTime = TMinMaxValue (
                        Min = 35.0 // Howz Canon 2A18 Howitzer 122mm
-                       Max = 53.0 // Howz Canon D22 Howitzer 152mm late
+                       Max = 53.0 // Howz Canon D22 Howitzer 152mm late guided
                )
                TurretSpeed = TMinMaxValue (
                        Min = 60 // Howz Canon 2A18 Howitzer 122mm
@@ -131,7 +131,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 5.538461538461538 // Howz Canon 2A18 Howitzer 122mm
                )
                TimeBetweenTwoShots = TMinMaxValue (
-                       Min = 5.0 // Howz Canon D22 Howitzer 152mm late
+                       Min = 5.0 // Howz Canon D22 Howitzer 152mm late guided
                        Max = 6.0 // Howz Canon 2A18 Howitzer 122mm
                )
                NbShotsBySalvo = TMinMaxValue (
@@ -254,10 +254,6 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Min = 2.0 // MMG PKT 7 62mm
                        Max = 2.0 // MMG PKT 7 62mm
                )
-               TurretSpeed = TMinMaxValue (
-                       Min = 60 // HMG 12 7 mm M2HB
-                       Max = 360 // MMG PKT 7 62mm
-               )
                Accuracy = TMinMaxValue (
                        Min = 13 // HMG 12 7 mm M2HB
                        Max = 15 // MMG PKT 7 62mm
@@ -285,6 +281,10 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                SupplyCost = TMinMaxValue (
                        Min = 5 // MMG PKT 7 62mm
                        Max = 5 // MMG PKT 7 62mm
+               )
+               TurretSpeed = TMinMaxValue (
+                       Min = 60 // HMG 12 7 mm M2HB
+                       Max = 360 // MMG PKT 7 62mm
               )
          )
        ),
@@ -1195,7 +1195,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 60 // AGM AS30L
                )
                RateOfFire = TMinMaxValue (
-                       Min = 24.0 // AGM AGM65D Maverick
+                       Min = 20.0 // AGM 9K121 Vikhr x16
                        Max = 60.0 // AGM AS30
                )
                Penetration = TMinMaxValue (

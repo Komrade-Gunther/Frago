@@ -26,7 +26,7 @@ BUCKSpecificStrategicSpawnPointMainComponentDescriptor is BUCKContainerDescripto
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableWidthHeight = [95.0, 0.0] //69
+                MagnifiableWidthHeight = [150.0, 0.0] //69
                 AlignementToAnchor = [ 0.5, 1.0 ]
             )
             BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
@@ -99,6 +99,8 @@ BUCKSpecificStrategicSpawnPointMainComponentDescriptor is BUCKContainerDescripto
                     )
                 )
             ]
+
+
         )
     ]
 
@@ -115,6 +117,7 @@ private ReinforcementGroupBlade is BUCKContainerDescriptor
 
     Components =
     [
+
         BUCKTextureDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
@@ -133,7 +136,7 @@ private ReinforcementGroupBlade is BUCKContainerDescriptor
             ElementName = "ReinforcementGroupName"
 
             TextStyle = "Default"
-            TypefaceToken = "UIMainFont"
+            // TypefaceToken = "UIMainFont"
 
             ParagraphStyle = TParagraphStyleRTTI
             (
@@ -142,8 +145,9 @@ private ReinforcementGroupBlade is BUCKContainerDescriptor
             )
 
             ClipContent = true
-            TextSize = '12'
-            TextColor = 'SD2_Blanc184'
+            TypefaceToken = "Eurostyle_Medium"
+            TextSize = "16"
+            TextColor = "ObjectiveLabel/Primary/Title"
         )
     ]
 )
@@ -178,8 +182,15 @@ UISpecificStrategicSpawnPointViewDescriptor is TUISpecificStrategicSpawnPointVie
     //cf. BlockColorsMap dans DefaultStyleGuides.ndf
     ColorTokenSpawnCapturedByEnemy = "BeigeSteelman"
     ColorTokenSpawnCapturedByLocalPlayer = "GrisSteelman"
-    ColorTokenSpawnPointMain = "GrisSteelman"
+    ColorTokenSpawnPointMain = "SM_LDhint_texte_gen" //"GrisSteelman"
 
     //Période d'un cycle de clignotement d'un point de spawn contrôlé bloqué par un ennemi (en seconde)
     BlinkingFlagPeriod = 3
+
+    // PanelRoundedCorner
+    //             (
+    //                 BackgroundBlockColorToken = 'SM_LDhint_texte_gen'
+    //                         BorderLineColorToken = 'SM_LDhint_texte'
+    //                         BorderThicknessToken = '2'
+    //             ),
 )

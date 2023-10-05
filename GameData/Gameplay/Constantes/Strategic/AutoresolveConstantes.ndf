@@ -216,7 +216,7 @@ StrategicAutoresolveConstantes is TStrategicAutoResolveConstantes
                 ( ~/EAutoresolveAvantage_NoCMD_vs_CMD,              ~/NoCMD_Advantage ),
                 ( ~/EAutoresolveAvantage_NoSupply_vs_Supply,        ~/NoSupply_Advantage ),
                 ( ~/EAutoresolveAvantage_NoAir_vs_Air,              ~/NoAirSupport_Advantage ),
-                ( ~/EAutoresolveAvantage_NoHelo_vs_Helo,              ~/NoHeloSupport_Advantage ),
+                ( ~/EAutoresolveAvantage_NoHelo_vs_Helo,            ~/NoHeloSupport_Advantage ),
             ]
         ),
         ( EStrategicBattleType_AerialStrategicBattle, MAP

@@ -57,14 +57,7 @@ is TDepictionDescriptor
     MeshDescriptor = <MeshDescriptor>
     DisabledOperators = DisabledOperatorLow + <DisabledOperators>
 )
-// ****************************************************************************************************************************************
-// *** Avions *****************************************************************************************************************************
-// ****************************************************************************************************************************************
-AirplaneAdditionalMaterialTag is 'Airplane'
-// ****************************************************************************************************************************************
-// *** Hélicos ****************************************************************************************************************************
-// ****************************************************************************************************************************************
-HelicoAdditionalMaterialTag is 'Helico'
+MaterialTagMech is 'Mechanical'
 // ****************************************************************************************************************************************
 // *** infantrie **************************************************************************************************************************
 // ****************************************************************************************************************************************
@@ -111,7 +104,7 @@ template TemplateAllSubWeaponDepiction
     (
         Selector = $/GFX/Everything/SoldierDynamicWeaponSubDepictionSelector
         DepictionAlternatives = <Alternatives> + [ AlternativeNone ]
-        Operators = [ DepictionOperator_Shader_Selection ] + <Operators>
+        Operators = [ DepictionOperator_Shader_Selection, DepictionOperator_Shader_Spotted ] + <Operators>
     )
 )
 
@@ -125,7 +118,7 @@ template TemplateAllSubBackpackWeaponDepiction
     (
         Selector = $/GFX/Everything/SoldierDynamicBackpackWeaponSubDepictionSelector
         DepictionAlternatives = <Alternatives>
-        Operators = [ DepictionOperator_Shader_Selection ]
+        Operators = [ DepictionOperator_Shader_Selection, , DepictionOperator_Shader_Spotted ]
     )
 )
 
@@ -152,16 +145,14 @@ template TemplateWeaponAccessorySubDepiction
     )
 )
 
-template TemplateInfantryDepictionFactory
+template TemplateInfantryDepictionFactoryTactic
 [
     Alternatives,
     SubDepictions = [],
-    ResidentMaterialTags = [],
     Operators,
     Surrogates = [['high', '01']]
 ] is TDepictionTemplate
 (
-        ResidentMaterialTags = <ResidentMaterialTags>
         Scaler = CommonInfantryScaler
         Selector = TInfantryLodSelector
         (
@@ -174,7 +165,7 @@ template TemplateInfantryDepictionFactory
 
         DepictionAlternatives = <Alternatives> + [DepictionDescriptor_LOD_InfantryNone]
         SubDepictions = <SubDepictions>
-        Operators = <Operators>
+        Operators = [ DepictionOperator_Shader_Selection, DepictionOperator_Shader_Spotted, DepictionOperator_Shader_TeamColor, DepictionOperator_Shader_GhostTactic ] + <Operators>
 )
 
 template TemplateInfantryDepictionFactoryGhost
@@ -195,20 +186,6 @@ template TemplateInfantryDepictionFactoryGhost
     )
     DepictionAlternatives = <Alternatives> + [DepictionDescriptor_LOD_InfantryNone]
     Operators = [ DepictionOperator_FreezeAnimation_Ghost, DepictionOperator_Shader_Ghost ]
-)
-
-template TemplateInfantryDepictionFactoryTactic
-[
-    Alternatives,
-    SubDepictions = [],
-    Operators,
-    Surrogates = [['high', '01']]
-] is TemplateInfantryDepictionFactory
-(
-    Alternatives = <Alternatives>
-    SubDepictions = <SubDepictions>
-    Surrogates = <Surrogates>
-    Operators = [ DepictionOperator_Shader_Selection, DepictionOperator_Shader_TeamColor, DepictionOperator_Shader_GhostTactic ] + <Operators>
 )
 
 template TemplateInfantryDepictionSquad
@@ -299,6 +276,8 @@ is TTimelyDepictionReceiverFactory
 (
     DepictionTemplate = TDepictionTemplate
     (
+        ResidentMaterialTags = [ MaterialTagMech ]
+        AdditionalTextures = VehicleDestTextures
         CoatingName = <CoatingName>
         Scaler = CommonVehicleScaler
         Selector = <Selector>
@@ -312,6 +291,7 @@ is TTimelyDepictionReceiverFactory
 
 template TacticAerialDepictionTemplate
 [
+    AdditionalTextures,
     CoatingName,
     Selector,
     Alternatives,
@@ -319,13 +299,13 @@ template TacticAerialDepictionTemplate
     Actions,
     SubDepictions = [],
     SubDepictionGenerators = [],
-    ResidentMaterialTags = []
 ]
 is TTimelyDepictionReceiverFactory
 (
     DepictionTemplate = TDepictionTemplate
     (
-        ResidentMaterialTags = <ResidentMaterialTags>
+        AdditionalTextures = <AdditionalTextures>
+        ResidentMaterialTags = [ MaterialTagMech ]
         CoatingName = <CoatingName>
         Scaler = SpecificFlyingScaler
         Selector = <Selector>
@@ -412,6 +392,8 @@ is TSubDepiction
     Anchor = "remorque_1"
     Depiction = TDepictionTemplate
     (
+        ResidentMaterialTags = [ MaterialTagMech ]
+        AdditionalTextures = VehicleDestTextures
         Selector = ~/TowedUnitSubDepictionSelector
         DepictionAlternatives = <Alternatives>
 

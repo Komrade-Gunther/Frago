@@ -40,6 +40,7 @@ private BoutonNextTurn is BUCKButtonDescriptor
         MagnifiableWidthHeight = [0, 40.0]
     )
 
+    LeftClickSound = SoundEvent_SteelmanNextTurn
     FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
 
     Components =

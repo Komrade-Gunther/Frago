@@ -6,8 +6,8 @@ GameSpeed_Normal       is 2
 GameSpeed_Fast         is 3
 GameSpeed_VeryFast     is 4
 
-private GameSpeedPanelButtonWidth is 25
-private GameSpeedPanelButtonHeight is 25
+private GameSpeedPanelButtonWidth is 24
+private GameSpeedPanelButtonHeight is 24
 
 private GameSpeedPanelOffsetY is 7.5
 
@@ -19,10 +19,16 @@ SpecificInGameHUDTimePanelViewMainComponent is BUCKListDescriptor
 (
     ElementName = "InGameTimePanel"
 
-    Axis = ~/ListAxis/Horizontal
-    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [0.0, 40.0]
+        AlignementToAnchor = [0.5, 0.0]
+        AlignementToFather = [0.5, 0.0]
+    )
 
-    InterItemMargin = TRTTILength(Pixel = 0.0)
+    Axis = ~/ListAxis/Horizontal
+
+    InterItemMargin = TRTTILength(Pixel = 4.0)
 
     Elements =
     [
@@ -43,11 +49,14 @@ private AffichageTempsEtVitesseEnTexte is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [120.0, 0]
+        AlignementToAnchor = [0.0, 0.5]
+        AlignementToFather = [0.0, 0.5]
     )
 
     Axis = ~/ListAxis/Vertical
-    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
+    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+
+
 
     Elements =
     [
@@ -59,7 +68,6 @@ private AffichageTempsEtVitesseEnTexte is BUCKListDescriptor
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    // RelativeWidthHeight = [1.0, 0.0]
                     MagnifiableWidthHeight = [0.0, 16.0]
                     AlignementToFather = [0.5, 0.0]
                     AlignementToAnchor = [0.5, 0.0]
@@ -81,7 +89,7 @@ private AffichageTempsEtVitesseEnTexte is BUCKListDescriptor
                 ParagraphStyle = TParagraphStyleRTTI
                 (
                     Alignment = UIText_Center
-                    VerticalAlignment = UIText_Up
+                    VerticalAlignment = UIText_VerticalCenter
                 )
             )
         ),
@@ -92,8 +100,7 @@ private AffichageTempsEtVitesseEnTexte is BUCKListDescriptor
                 ElementName = "GameSpeedText"
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    // RelativeWidthHeight = [1.0, 0.0]
-                    MagnifiableWidthHeight = [0.0, 14.0]
+                    MagnifiableWidthHeight = [0.0, 16.0]
                     AlignementToFather = [0.5, 0.0]
                     AlignementToAnchor = [0.5, 0.0]
                 )
@@ -114,7 +121,7 @@ private AffichageTempsEtVitesseEnTexte is BUCKListDescriptor
                 ParagraphStyle = TParagraphStyleRTTI
                 (
                     Alignment = UIText_Center
-                    VerticalAlignment = UIText_Up
+                    VerticalAlignment = UIText_VerticalCenter
                 )
             )
         ),
@@ -128,15 +135,19 @@ private TimePanelSpeedButtons is BUCKListDescriptor
     ElementName = "InGameSpeedButtonList"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [0.0, 25.0]
+        MagnifiableWidthHeight = [0.0, 24.0]
+        AlignementToAnchor = [0.0, 0.5]
+        AlignementToFather = [0.0, 0.5]
     )
 
     Axis = ~/ListAxis/Horizontal
 
-    InterItemMargin = TRTTILength(Pixel = 10.0)
+    InterItemMargin = TRTTILength(Pixel = 8.0)
 
     Elements =
     [
+
+        BUCKListElementSpacer(Magnifiable = 15.0),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = HUDButton

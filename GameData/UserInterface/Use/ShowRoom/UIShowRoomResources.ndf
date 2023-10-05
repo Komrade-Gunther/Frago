@@ -41,7 +41,7 @@ ShowRoomResource is TUISpecificShowRoomResources
     ]
 
     GroupSelectionReminderResources = ~/GroupSelectionReminder
-    LabelResource                   = ~/SpecificInGameLabelResource
+    LabelResource                   = ~/CommonLabelResource
     MainContainerResource           = ~/ShowRoomMainContainerResource
     MousePolicyManagerResources     = nil
 

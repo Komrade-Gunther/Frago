@@ -943,10 +943,27 @@ export Modele_MP_RCL_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
 
 //MP_CMD_US
 export Modele_MP_CMD_US is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_MP_CMD_US_02 is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_MP_CMD_US_03 is TemplateMeshDescriptor( FileName = US_GI_2 )
+export Modele_MP_CMD_US_04 is TemplateMeshDescriptor( FileName = US_GI_2 )
+export Modele_MP_CMD_US_05 is TemplateMeshDescriptor( FileName = US_GI_NCO )
+export Modele_MP_CMD_US_06 is TemplateMeshDescriptor( FileName = US_GI_NCO )
+export Modele_MP_CMD_US_07 is TemplateMeshDescriptor( FileName = US_GI_spe )
+export Modele_MP_CMD_US_08 is TemplateMeshDescriptor( FileName = US_GI_spe )
+export Modele_MP_CMD_US_09 is TemplateMeshDescriptor( FileName = US_GI_Sniper )
+export Modele_MP_CMD_US_10 is TemplateMeshDescriptor( FileName = US_GI_Officer )
 export Modele_MP_CMD_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
 
 //MP_Combat_US
 export Modele_MP_Combat_US is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_MP_Combat_US_02 is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_MP_Combat_US_03 is TemplateMeshDescriptor( FileName = US_GI_2 )
+export Modele_MP_Combat_US_04 is TemplateMeshDescriptor( FileName = US_GI_2 )
+export Modele_MP_Combat_US_05 is TemplateMeshDescriptor( FileName = US_GI_NCO )
+export Modele_MP_Combat_US_06 is TemplateMeshDescriptor( FileName = US_GI_NCO )
+export Modele_MP_Combat_US_07 is TemplateMeshDescriptor( FileName = US_GI_spe )
+export Modele_MP_Combat_US_08 is TemplateMeshDescriptor( FileName = US_GI_spe )
+export Modele_MP_Combat_US_09 is TemplateMeshDescriptor( FileName = US_GI_Sniper )
 export Modele_MP_Combat_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1 )
 
 //MP_US

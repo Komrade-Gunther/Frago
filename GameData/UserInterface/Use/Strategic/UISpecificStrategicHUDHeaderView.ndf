@@ -9,7 +9,7 @@ private SpecificStrategicHUDHeaderViewMainComponent is BUCKContainerDescriptor
     UniqueName = 'HUDTopElement'
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1,0]
+        // RelativeWidthHeight = [1,0]
     )
 
     Components =
@@ -27,7 +27,7 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
     // FirstMargin = TRTTILength( Magnifiable = 8.0 )
-    InterItemMargin = TRTTILength( Magnifiable = 8.0 )
+    InterItemMargin = TRTTILength( Magnifiable = 4.0 )
 
     Elements =
     [
@@ -41,7 +41,7 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     MagnifiableWidthHeight = [0.0, 29.0]
-                    MagnifiableOffset = [-10,0]
+                    MagnifiableOffset = [0,0]
                 )
 
                 BladeDescriptor = ~/ReinforcementButton
@@ -85,7 +85,7 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
             TextToken = 'StAP_sreif'
             TextDico = ~/LocalisationConstantes/dico_interface_ingame
             TextColor = "SM_paleSilver"
-            TextSize = "16"
+            TextSize = "12"
         )
 
     ]
@@ -311,7 +311,7 @@ UISpecificStrategicHUDHeaderOptionViewDescriptor is TUISpecificStrategicHUDHeade
     MainComponentDescriptor = BoutonAccelerationDuTemps
     MainComponentContainerUniqueName = "SpecificStrategicHUDHeaderOptionViewMainContainer"
 
-    PawnQuickMoveSpeedValue = 20.0
+    PawnQuickMoveSpeedValue = 200.0
     PawnStandardMoveSpeedValue = 8.0
 
     DefaultForceShowPowerGauges = true
@@ -327,9 +327,10 @@ private ReinforcementButton is BUCKSpecificButton
     PanelRoundedCorner_BackgroundBlockColorToken  = "SM_Feldgrau"
     PanelRoundedCorner_BorderLineColorToken = 'SM_Grullo'
 
+    LeftClickSound = ~/SoundEvent_SteelmanReinforcementsButton
 
     ButtonRelativeWidthHeight = [0.0, 0.0]
-    ButtonMagnifiableWidthHeight = [240.0, 32.0]
+    ButtonMagnifiableWidthHeight = [160.0, 32.0]
 
     TextParagraphStyle = ~/paragraphStyleTextCenter //paragraphStyleTextLeftAlign
     HasText = true

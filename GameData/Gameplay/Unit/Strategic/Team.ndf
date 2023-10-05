@@ -66,5 +66,8 @@ export Strategic_TeamUnitDescriptor is TEntityDescriptor
         TStrategicSuppliableCacheModuleDescriptor
         (
         ),
+        TStrategicStatisticModuleDescriptor
+        (
+        ),
     ]
 )

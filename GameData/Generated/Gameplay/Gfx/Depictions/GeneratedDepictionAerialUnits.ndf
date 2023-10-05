@@ -49,9 +49,9 @@ Op_A10_Thunderbolt_II_ATGM_US_Weapon4 is DepictionOperator_WeaponMissileCarriage
 )
 Gfx_A10_Thunderbolt_II_ATGM_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'A10_Thunderbolt_II_ATGM_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_A10_Thunderbolt_II_ATGM_US
 
     Operators = 
@@ -152,9 +152,9 @@ Op_A10_Thunderbolt_II_Rkt_US_Weapon4 is DepictionOperator_WeaponMissileCarriageF
 )
 Gfx_A10_Thunderbolt_II_Rkt_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'A10_Thunderbolt_II_Rkt_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_A10_Thunderbolt_II_Rkt_US
 
     Operators = 
@@ -254,9 +254,9 @@ Op_A10_Thunderbolt_II_US_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_A10_Thunderbolt_II_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'A10_Thunderbolt_II_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_A10_Thunderbolt_II_US
 
     Operators = 
@@ -356,9 +356,9 @@ Op_AH1F_ATAS_US_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_AH1F_ATAS_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'AH1F_ATAS_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_AH1F_ATAS_US
 
     Operators = 
@@ -475,9 +475,9 @@ Op_AH1F_CNITE_US_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_AH1F_CNITE_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'AH1F_CNITE_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_AH1F_CNITE_US
 
     Operators = 
@@ -596,9 +596,9 @@ Op_AH1F_Cobra_US_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_AH1F_Cobra_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'AH1F_Cobra_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_AH1F_Cobra_US
 
     Operators = 
@@ -715,9 +715,9 @@ Op_AH1F_HeavyHog_US_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_AH1F_HeavyHog_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'AH1F_HeavyHog_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_AH1F_HeavyHog_US
 
     Operators = 
@@ -834,9 +834,9 @@ Op_AH1S_Cobra_US_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_AH1S_Cobra_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'AH1S_Cobra_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_AH1S_Cobra_US
 
     Operators = 
@@ -906,6 +906,145 @@ Gfx_AH1S_Cobra_US_Autogen is TacticAerialDepictionTemplate
 
         SubDepictionGenerators = [ SubGenerators_AH1S_Cobra_US ]
 )
+// Dépiction de l'unité AH64_Apache_NG_US
+Op_AH64_Apache_NG_US_Weapon1 is DepictionOperator_WeaponInstantFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbProj = 1
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_1",
+    ]
+)
+Op_AH64_Apache_NG_US_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_AH64_Apache_NG_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_AH64_Apache_NG_US
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+Op_AH64_Apache_NG_US_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_AH64_Apache_NG_US
+    FireEffectTag = "weapon_effet_tag4"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_4",
+    ]
+)
+Gfx_AH64_Apache_NG_US_Autogen is TacticAerialDepictionTemplate
+(
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
+    CoatingName = 'AH64_Apache_NG_US'
+    Alternatives = Alternatives_AH64_Apache_NG_US
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_Helico_Apache,
+            DepictionOperator_Turret_1_Aim,
+            Op_AH64_Apache_NG_US_Weapon1,
+            Op_AH64_Apache_NG_US_Weapon2,
+            Op_AH64_Apache_NG_US_Weapon3,
+            Op_AH64_Apache_NG_US_Weapon4,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_HelicopterLanding,
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = 
+                [
+                    TRotor
+                    (
+                        BladesBoneName = "helice_ls_1"
+                        BlurActionId = 
+                        [
+                            "FX_Helice_1",
+                        ]
+                        Clockwise = False
+                        NbBlade = 4
+                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationSpeed = 242
+                        RotorBoneName = "bloc_moteur_1"
+                    ),
+                    TRotor
+                    (
+                        BladesBoneName = "helice_ls_2"
+                        BlurActionId = 
+                        [
+                            "FX_Helice_2",
+                        ]
+                        Clockwise = False
+                        NbBlade = 4
+                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationSpeed = 242
+                        RotorBoneName = "bloc_moteur_2"
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_EjectableProps_Helico
+            (
+                AdditionalEjectableNodes = 
+                [
+                    "queue",
+                    "reacteur_droite",
+                    "reacteur_gauche",
+                    "helice_ls_1_pale1",
+                    "helice_ls_1_pale2",
+                    "helice_ls_1_pale3",
+                    "helice_ls_1_pale4",
+                    "helice_ls_2",
+                ]
+            ),
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( [ "weapon_effet_tag1" ], Weapon_AutoCanon_AP_30mm_M230 ),
+                    ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_30mm_M230 ),
+                    ( [ "weapon_effet_tag3" ], Weapon_AGM_AGM114A_x8 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_RocketAir_Hydra_70mm_x19 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1500 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 340 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+                + DepictionAction_Flare_Double
+                + Eject_Actions_AH64_Apache_NG_US
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_US_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_US_LOW),
+        ]
+
+        SubDepictionGenerators = [ SubGenerators_AH64_Apache_NG_US ]
+)
 // Dépiction de l'unité AH64_Apache_US
 Op_AH64_Apache_US_Weapon1 is DepictionOperator_WeaponInstantFire
 (
@@ -957,9 +1096,9 @@ Op_AH64_Apache_US_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_AH64_Apache_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'AH64_Apache_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_AH64_Apache_US
 
     Operators = 
@@ -1085,9 +1224,9 @@ Op_AH64_Apache_emp1_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_AH64_Apache_emp1_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'AH64_Apache_emp1_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_AH64_Apache_emp1_US
 
     Operators = 
@@ -1222,9 +1361,9 @@ Op_AH64_Apache_emp2_US_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_AH64_Apache_emp2_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'AH64_Apache_emp2_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_AH64_Apache_emp2_US
 
     Operators = 
@@ -1336,9 +1475,9 @@ Op_AH6C_Little_Bird_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_AH6C_Little_Bird_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'AH6C_Little_Bird_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_AH6C_Little_Bird_US
 
     Operators = 
@@ -1405,9 +1544,9 @@ Gfx_AH6C_Little_Bird_US_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Alouette_III_FR
 Gfx_Alouette_III_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Alouette_III_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Alouette_III_FR
 
     Operators = 
@@ -1468,9 +1607,9 @@ Gfx_Alouette_III_FR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Alouette_III_reco_FR
 Gfx_Alouette_III_reco_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Alouette_III_reco_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Alouette_III_reco_FR
 
     Operators = 
@@ -1531,9 +1670,9 @@ Gfx_Alouette_III_reco_FR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Alouette_II_CMD_RFA
 Gfx_Alouette_II_CMD_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Alouette_II_CMD_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Alouette_II_CMD_RFA
 
     Operators = 
@@ -1594,9 +1733,9 @@ Gfx_Alouette_II_CMD_RFA_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Alouette_II_reco_RFA
 Gfx_Alouette_II_reco_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Alouette_II_reco_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Alouette_II_reco_RFA
 
     Operators = 
@@ -1679,9 +1818,9 @@ Op_Alpha_Jet_A_clu_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Alpha_Jet_A_clu_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Alpha_Jet_A_clu_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Alpha_Jet_A_clu_RFA
 
     Operators = 
@@ -1740,9 +1879,9 @@ Op_Alpha_Jet_A_he_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Alpha_Jet_A_he_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Alpha_Jet_A_he_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Alpha_Jet_A_he_RFA
 
     Operators = 
@@ -1801,9 +1940,9 @@ Op_Alpha_Jet_A_nplm_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Alpha_Jet_A_nplm_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Alpha_Jet_A_nplm_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Alpha_Jet_A_nplm_RFA
 
     Operators = 
@@ -1875,9 +2014,9 @@ Op_Alpha_Jet_A_rkt_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Alpha_Jet_A_rkt_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Alpha_Jet_A_rkt_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Alpha_Jet_A_rkt_RFA
 
     Operators = 
@@ -1916,9 +2055,9 @@ Gfx_Alpha_Jet_A_rkt_RFA_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Bo_105_CMD_RFA
 Gfx_Bo_105_CMD_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Bo_105_CMD_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Bo_105_CMD_RFA
 
     Operators = 
@@ -1990,9 +2129,9 @@ Op_Bo_105_PAH_1A1_RFA_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Bo_105_PAH_1A1_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Bo_105_PAH_1A1_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Bo_105_PAH_1A1_RFA
 
     Operators = 
@@ -2066,9 +2205,9 @@ Op_Bo_105_PAH_1_RFA_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Bo_105_PAH_1_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Bo_105_PAH_1_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Bo_105_PAH_1_RFA
 
     Operators = 
@@ -2131,9 +2270,9 @@ Gfx_Bo_105_PAH_1_RFA_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Bo_105_reco_RFA
 Gfx_Bo_105_reco_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Bo_105_reco_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Bo_105_reco_RFA
 
     Operators = 
@@ -2193,9 +2332,9 @@ Gfx_Bo_105_reco_RFA_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Bo_105_trans_RFA
 Gfx_Bo_105_trans_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Bo_105_trans_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Bo_105_trans_RFA
 
     Operators = 
@@ -2256,9 +2395,9 @@ Gfx_Bo_105_trans_RFA_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité CH47D_Chinook_supply_UK
 Gfx_CH47D_Chinook_supply_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'CH47D_Chinook_supply_UK'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_CH47D_Chinook_supply_UK
 
     Operators = 
@@ -2321,9 +2460,9 @@ Gfx_CH47D_Chinook_supply_UK_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité CH47_Chinook_US
 Gfx_CH47_Chinook_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'CH47_Chinook_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_CH47_Chinook_US
 
     Operators = 
@@ -2386,9 +2525,9 @@ Gfx_CH47_Chinook_US_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité CH47_Super_Chinook_US
 Gfx_CH47_Super_Chinook_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'CH47_Super_Chinook_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_CH47_Super_Chinook_US
 
     Operators = 
@@ -2451,9 +2590,9 @@ Gfx_CH47_Super_Chinook_US_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité CH53G_RFA
 Gfx_CH53G_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'CH53G_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_CH53G_RFA
 
     Operators = 
@@ -2516,9 +2655,9 @@ Gfx_CH53G_RFA_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité CH53G_trans_RFA
 Gfx_CH53G_trans_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'CH53G_trans_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_CH53G_trans_RFA
 
     Operators = 
@@ -2581,9 +2720,9 @@ Gfx_CH53G_trans_RFA_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité CH53_Sea_Stallion_US
 Gfx_CH53_Sea_Stallion_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'CH53_Sea_Stallion_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_CH53_Sea_Stallion_US
 
     Operators = 
@@ -2646,9 +2785,9 @@ Gfx_CH53_Sea_Stallion_US_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité EF111_Raven_US
 Gfx_EF111_Raven_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'EF111_Raven_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_EF111_Raven_US
 
     Operators = 
@@ -2700,9 +2839,9 @@ Op_F104G_Starfighter_AT_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFi
 )
 Gfx_F104G_Starfighter_AT_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F104G_Starfighter_AT_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F104G_Starfighter_AT_RFA
 
     Operators = 
@@ -2760,9 +2899,9 @@ Op_F104G_Starfighter_HE_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFi
 )
 Gfx_F104G_Starfighter_HE_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F104G_Starfighter_HE_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F104G_Starfighter_HE_RFA
 
     Operators = 
@@ -2820,9 +2959,9 @@ Op_F104G_Starfighter_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F104G_Starfighter_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F104G_Starfighter_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F104G_Starfighter_RFA
 
     Operators = 
@@ -2869,9 +3008,9 @@ Op_F111E_Aardvark_CBU_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F111E_Aardvark_CBU_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F111E_Aardvark_CBU_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F111E_Aardvark_CBU_US
 
     Operators = 
@@ -2916,9 +3055,9 @@ Op_F111E_Aardvark_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F111E_Aardvark_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F111E_Aardvark_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F111E_Aardvark_US
 
     Operators = 
@@ -2963,9 +3102,9 @@ Op_F111E_Aardvark_napalm_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFi
 )
 Gfx_F111E_Aardvark_napalm_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F111E_Aardvark_napalm_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F111E_Aardvark_napalm_US
 
     Operators = 
@@ -3010,9 +3149,9 @@ Op_F111F_Aardvark_CBU_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F111F_Aardvark_CBU_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F111F_Aardvark_CBU_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F111F_Aardvark_CBU_US
 
     Operators = 
@@ -3058,9 +3197,9 @@ Op_F111F_Aardvark_LGB2_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F111F_Aardvark_LGB2_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F111F_Aardvark_LGB2_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F111F_Aardvark_LGB2_US
 
     Operators = 
@@ -3106,9 +3245,9 @@ Op_F111F_Aardvark_LGB_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F111F_Aardvark_LGB_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F111F_Aardvark_LGB_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F111F_Aardvark_LGB_US
 
     Operators = 
@@ -3153,9 +3292,9 @@ Op_F111F_Aardvark_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F111F_Aardvark_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F111F_Aardvark_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F111F_Aardvark_US
 
     Operators = 
@@ -3200,9 +3339,9 @@ Op_F111F_Aardvark_napalm_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFi
 )
 Gfx_F111F_Aardvark_napalm_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F111F_Aardvark_napalm_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F111F_Aardvark_napalm_US
 
     Operators = 
@@ -3247,9 +3386,9 @@ Op_F117_Nighthawk_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F117_Nighthawk_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F117_Nighthawk_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F117_Nighthawk_US
 
     Operators = 
@@ -3313,9 +3452,9 @@ Op_F15C_Eagle_AA2_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F15C_Eagle_AA2_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F15C_Eagle_AA2_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F15C_Eagle_AA2_US
 
     Operators = 
@@ -3386,9 +3525,9 @@ Op_F15C_Eagle_AA_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F15C_Eagle_AA_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F15C_Eagle_AA_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F15C_Eagle_AA_US
 
     Operators = 
@@ -3422,6 +3561,81 @@ Gfx_F15C_Eagle_AA_US_Autogen is TacticAerialDepictionTemplate
         ]
 
         SubDepictionGenerators = [ SubGenerators_F15C_Eagle_AA_US ]
+)
+// Dépiction de l'unité F15E_StrikeEagle_US
+Op_F15E_StrikeEagle_US_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_F15E_StrikeEagle_US_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_F15E_StrikeEagle_US
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 2
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+        "WeaponShootData_1_2",
+    ]
+)
+Op_F15E_StrikeEagle_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_F15E_StrikeEagle_US
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+Gfx_F15E_StrikeEagle_US_Autogen is TacticAerialDepictionTemplate
+(
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'F15E_StrikeEagle_US'
+    Alternatives = Alternatives_F15E_StrikeEagle_US
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_SD_avion_multirole_F15,
+            DepictionOperator_Turret_1_Aim,
+            Op_F15E_StrikeEagle_US_Weapon1,
+            Op_F15E_StrikeEagle_US_Weapon2,
+            Op_F15E_StrikeEagle_US_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_M61_Vulcan_20mm ),
+                    ( [ "weapon_effet_tag2" ], Weapon_Bomb_GBU_10_x2 ),
+                    ( [ "weapon_effet_tag3" ], Weapon_AA_AIM9M_Sidewinder ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_DoubleReactorAirplane
+                + DepictionAction_Flare_Double
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_US MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_US_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_US MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_US_LOW),
+        ]
+
+        SubDepictionGenerators = [ SubGenerators_F15E_StrikeEagle_US ]
 )
 // Dépiction de l'unité F16C_LGB_US
 Op_F16C_LGB_US_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -3460,9 +3674,9 @@ Op_F16C_LGB_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F16C_LGB_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F16C_LGB_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F16C_LGB_US
 
     Operators = 
@@ -3532,9 +3746,9 @@ Op_F16E_AA_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F16E_AA_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F16E_AA_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F16E_AA_US
 
     Operators = 
@@ -3605,9 +3819,9 @@ Op_F16E_AGM_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F16E_AGM_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F16E_AGM_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F16E_AGM_US
 
     Operators = 
@@ -3677,9 +3891,9 @@ Op_F16E_CBU_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F16E_CBU_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F16E_CBU_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F16E_CBU_US
 
     Operators = 
@@ -3749,9 +3963,9 @@ Op_F16E_HE_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F16E_HE_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F16E_HE_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F16E_HE_US
 
     Operators = 
@@ -3821,9 +4035,9 @@ Op_F16E_SEAD_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F16E_SEAD_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F16E_SEAD_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F16E_SEAD_US
 
     Operators = 
@@ -3893,9 +4107,9 @@ Op_F16E_napalm_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F16E_napalm_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F16E_napalm_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F16E_napalm_US
 
     Operators = 
@@ -3915,7 +4129,7 @@ Gfx_F16E_napalm_US_Autogen is TacticAerialDepictionTemplate
         ]
         Actions = MAP[
                     ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_M61_Vulcan_20mm ),
-                    ( [ "weapon_effet_tag2" ], Weapon_Bomb_Mk77_340kg_Napalm_x4 ),
+                    ( [ "weapon_effet_tag2" ], Weapon_Bomb_Mk77_340kg_Napalm_x2 ),
                     ( [ "weapon_effet_tag3" ], Weapon_AA_AIM9M_Sidewinder ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Avion
@@ -3965,9 +4179,9 @@ Op_F4E_Phantom_II_AA_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F4E_Phantom_II_AA_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4E_Phantom_II_AA_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4E_Phantom_II_AA_US
 
     Operators = 
@@ -4038,9 +4252,9 @@ Op_F4E_Phantom_II_CBU_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F4E_Phantom_II_CBU_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4E_Phantom_II_CBU_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4E_Phantom_II_CBU_US
 
     Operators = 
@@ -4111,9 +4325,9 @@ Op_F4E_Phantom_II_HE_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F4E_Phantom_II_HE_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4E_Phantom_II_HE_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4E_Phantom_II_HE_US
 
     Operators = 
@@ -4184,9 +4398,9 @@ Op_F4E_Phantom_II_napalm_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFi
 )
 Gfx_F4E_Phantom_II_napalm_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4E_Phantom_II_napalm_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4E_Phantom_II_napalm_US
 
     Operators = 
@@ -4246,9 +4460,9 @@ Op_F4F_Phantom_II_AA_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F4F_Phantom_II_AA_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4F_Phantom_II_AA_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4F_Phantom_II_AA_RFA
 
     Operators = 
@@ -4307,9 +4521,9 @@ Op_F4F_Phantom_II_AT_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F4F_Phantom_II_AT_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4F_Phantom_II_AT_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4F_Phantom_II_AT_RFA
 
     Operators = 
@@ -4378,9 +4592,9 @@ Op_F4F_Phantom_II_HE1_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F4F_Phantom_II_HE1_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4F_Phantom_II_HE1_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4F_Phantom_II_HE1_RFA
 
     Operators = 
@@ -4451,9 +4665,9 @@ Op_F4F_Phantom_II_HE2_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F4F_Phantom_II_HE2_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4F_Phantom_II_HE2_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4F_Phantom_II_HE2_RFA
 
     Operators = 
@@ -4514,9 +4728,9 @@ Op_F4F_Phantom_II_RKT1_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFir
 )
 Gfx_F4F_Phantom_II_RKT1_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4F_Phantom_II_RKT1_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4F_Phantom_II_RKT1_RFA
 
     Operators = 
@@ -4575,9 +4789,9 @@ Op_F4F_Phantom_II_RKT2_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFir
 )
 Gfx_F4F_Phantom_II_RKT2_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4F_Phantom_II_RKT2_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4F_Phantom_II_RKT2_RFA
 
     Operators = 
@@ -4635,9 +4849,9 @@ Op_F4_Phantom_AA_F3_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F4_Phantom_AA_F3_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4_Phantom_AA_F3_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4_Phantom_AA_F3_UK
 
     Operators = 
@@ -4694,9 +4908,9 @@ Op_F4_Wild_Weasel_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_F4_Wild_Weasel_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'F4_Wild_Weasel_US'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_F4_Wild_Weasel_US
 
     Operators = 
@@ -4754,9 +4968,9 @@ Op_G91_R3_Gina_HE_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_G91_R3_Gina_HE_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'G91_R3_Gina_HE_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_G91_R3_Gina_HE_RFA
 
     Operators = 
@@ -4826,9 +5040,9 @@ Op_G91_R3_Gina_NPL_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_G91_R3_Gina_NPL_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'G91_R3_Gina_NPL_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_G91_R3_Gina_NPL_RFA
 
     Operators = 
@@ -4901,9 +5115,9 @@ Op_G91_R3_Gina_RKT_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_G91_R3_Gina_RKT_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'G91_R3_Gina_RKT_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_G91_R3_Gina_RKT_RFA
 
     Operators = 
@@ -4967,9 +5181,9 @@ Op_Gazelle_20mm_FR_Weapon2 is DepictionOperator_WeaponInstantFire
 )
 Gfx_Gazelle_20mm_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_20mm_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_20mm_FR
 
     Operators = 
@@ -5062,9 +5276,9 @@ Op_Gazelle_20mm_reco_FR_Weapon2 is DepictionOperator_WeaponInstantFire
 )
 Gfx_Gazelle_20mm_reco_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_20mm_reco_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_20mm_reco_FR
 
     Operators = 
@@ -5130,9 +5344,9 @@ Gfx_Gazelle_20mm_reco_FR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Gazelle_CMD_UK
 Gfx_Gazelle_CMD_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_CMD_UK'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_CMD_UK
 
     Operators = 
@@ -5204,9 +5418,9 @@ Op_Gazelle_HOT_2_FR_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Gazelle_HOT_2_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_HOT_2_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_HOT_2_FR
 
     Operators = 
@@ -5281,9 +5495,9 @@ Op_Gazelle_HOT_FR_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Gazelle_HOT_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_HOT_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_HOT_FR
 
     Operators = 
@@ -5358,9 +5572,9 @@ Op_Gazelle_Mistral_FR_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Gazelle_Mistral_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_Mistral_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_Mistral_FR
 
     Operators = 
@@ -5435,9 +5649,9 @@ Op_Gazelle_SNEB_UK_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Gazelle_SNEB_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_SNEB_UK'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_SNEB_UK
 
     Operators = 
@@ -5501,9 +5715,9 @@ Gfx_Gazelle_SNEB_UK_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Gazelle_UK
 Gfx_Gazelle_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_UK'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_UK
 
     Operators = 
@@ -5564,9 +5778,9 @@ Gfx_Gazelle_UK_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Gazelle_reco_FR
 Gfx_Gazelle_reco_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_reco_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_reco_FR
 
     Operators = 
@@ -5627,9 +5841,9 @@ Gfx_Gazelle_reco_FR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Gazelle_trans_UK
 Gfx_Gazelle_trans_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Gazelle_trans_UK'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Gazelle_trans_UK
 
     Operators = 
@@ -5723,9 +5937,9 @@ Op_Harrier_CLU_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Harrier_CLU_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Harrier_CLU_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Harrier_CLU_UK
 
     Operators = 
@@ -5796,9 +6010,9 @@ Op_Harrier_HE1_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Harrier_HE1_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Harrier_HE1_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Harrier_HE1_UK
 
     Operators = 
@@ -5858,9 +6072,9 @@ Op_Harrier_HE2_UK_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Harrier_HE2_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Harrier_HE2_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Harrier_HE2_UK
 
     Operators = 
@@ -5930,9 +6144,9 @@ Op_Harrier_RKT1_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Harrier_RKT1_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Harrier_RKT1_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Harrier_RKT1_UK
 
     Operators = 
@@ -6005,9 +6219,9 @@ Op_Harrier_RKT2_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Harrier_RKT2_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Harrier_RKT2_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Harrier_RKT2_UK
 
     Operators = 
@@ -6067,9 +6281,9 @@ Op_Harrier_UK_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Harrier_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Harrier_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Harrier_UK
 
     Operators = 
@@ -6127,9 +6341,9 @@ Op_Jaguar_ATGM_FR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_ATGM_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_ATGM_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_ATGM_FR
 
     Operators = 
@@ -6198,9 +6412,9 @@ Op_Jaguar_CLU_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_CLU_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_CLU_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_CLU_UK
 
     Operators = 
@@ -6271,9 +6485,9 @@ Op_Jaguar_HE1_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_HE1_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_HE1_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_HE1_UK
 
     Operators = 
@@ -6344,9 +6558,9 @@ Op_Jaguar_HE2_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_HE2_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_HE2_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_HE2_UK
 
     Operators = 
@@ -6417,9 +6631,9 @@ Op_Jaguar_HE_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_HE_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_HE_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_HE_FR
 
     Operators = 
@@ -6492,9 +6706,9 @@ Op_Jaguar_RKT_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_RKT_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_RKT_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_RKT_FR
 
     Operators = 
@@ -6566,9 +6780,9 @@ Op_Jaguar_RKT_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_RKT_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_RKT_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_RKT_UK
 
     Operators = 
@@ -6640,9 +6854,9 @@ Op_Jaguar_SEAD2_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_SEAD2_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_SEAD2_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_SEAD2_FR
 
     Operators = 
@@ -6702,9 +6916,9 @@ Op_Jaguar_SEAD_FR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_SEAD_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_SEAD_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_SEAD_FR
 
     Operators = 
@@ -6773,9 +6987,9 @@ Op_Jaguar_clu_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_clu_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_clu_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_clu_FR
 
     Operators = 
@@ -6846,9 +7060,9 @@ Op_Jaguar_nplm_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Jaguar_nplm_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Jaguar_nplm_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Jaguar_nplm_FR
 
     Operators = 
@@ -6935,9 +7149,9 @@ Op_Ka_50_AA_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
 )
 Gfx_Ka_50_AA_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Ka_50_AA_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Ka_50_AA_SOV
 
     Operators = 
@@ -7058,9 +7272,9 @@ Op_Ka_50_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Ka_50_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Ka_50_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Ka_50_SOV
 
     Operators = 
@@ -7144,9 +7358,9 @@ Op_Lynx_AH_Mk1_TOW_UK_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Lynx_AH_Mk1_TOW_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Lynx_AH_Mk1_TOW_UK'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Lynx_AH_Mk1_TOW_UK
 
     Operators = 
@@ -7220,9 +7434,9 @@ Op_Lynx_AH_Mk1_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
 )
 Gfx_Lynx_AH_Mk1_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Lynx_AH_Mk1_UK'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Lynx_AH_Mk1_UK
 
     Operators = 
@@ -7285,6 +7499,8 @@ Gfx_Lynx_AH_Mk1_UK_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Lynx_AH_Mk1_UK_turret1"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Lynx_AH_Mk1_UK_Tourelle_01 )
@@ -7314,9 +7530,9 @@ Op_Lynx_AH_Mk7_I_TOW_UK_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Lynx_AH_Mk7_I_TOW_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Lynx_AH_Mk7_I_TOW_UK'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Lynx_AH_Mk7_I_TOW_UK
 
     Operators = 
@@ -7401,9 +7617,9 @@ Op_MiG_21PFM_AA_DDR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_21PFM_AA_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_21PFM_AA_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_21PFM_AA_DDR
 
     Operators = 
@@ -7473,9 +7689,9 @@ Op_MiG_21PFM_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_21PFM_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_21PFM_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_21PFM_DDR
 
     Operators = 
@@ -7545,9 +7761,9 @@ Op_MiG_21bis_AA2_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_21bis_AA2_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_21bis_AA2_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_21bis_AA2_DDR
 
     Operators = 
@@ -7606,9 +7822,9 @@ Op_MiG_21bis_HE_DDR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_21bis_HE_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_21bis_HE_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_21bis_HE_DDR
 
     Operators = 
@@ -7666,9 +7882,9 @@ Op_MiG_21bis_RKT2_DDR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_21bis_RKT2_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_21bis_RKT2_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_21bis_RKT2_DDR
 
     Operators = 
@@ -7725,9 +7941,9 @@ Op_MiG_23BN_AT_DDR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_23BN_AT_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_23BN_AT_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_23BN_AT_DDR
 
     Operators = 
@@ -7796,9 +8012,9 @@ Op_MiG_23MF_AA_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_23MF_AA_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_23MF_AA_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_23MF_AA_DDR
 
     Operators = 
@@ -7857,9 +8073,9 @@ Op_MiG_23MF_DDR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_23MF_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_23MF_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_23MF_DDR
 
     Operators = 
@@ -7891,6 +8107,78 @@ Gfx_MiG_23MF_DDR_Autogen is TacticAerialDepictionTemplate
         ]
 
         SubDepictionGenerators = [ SubGenerators_MiG_23MF_DDR ]
+)
+// Dépiction de l'unité MiG_23MLD_SOV
+Op_MiG_23MLD_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_MiG_23MLD_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_MiG_23MLD_SOV
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_MiG_23MLD_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_MiG_23MLD_SOV
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+Gfx_MiG_23MLD_SOV_Autogen is TacticAerialDepictionTemplate
+(
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'MiG_23MLD_SOV'
+    Alternatives = Alternatives_MiG_23MLD_SOV
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_SD_avion_multirole_MiG23,
+            DepictionOperator_Turret_1_Aim,
+            Op_MiG_23MLD_SOV_Weapon1,
+            Op_MiG_23MLD_SOV_Weapon2,
+            Op_MiG_23MLD_SOV_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_GSh_23_23mm ),
+                    ( [ "weapon_effet_tag2" ], Weapon_AA_R24MR_Vympel ),
+                    ( [ "weapon_effet_tag3" ], Weapon_AA_R73_Vympel ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_SOV MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_SOV_LOW),
+        ]
+
+        SubDepictionGenerators = [ SubGenerators_MiG_23MLD_SOV ]
 )
 // Dépiction de l'unité MiG_23ML_DDR
 Op_MiG_23ML_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -7928,9 +8216,9 @@ Op_MiG_23ML_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_23ML_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_23ML_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_23ML_DDR
 
     Operators = 
@@ -7989,9 +8277,9 @@ Op_MiG_23ML_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_23ML_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_23ML_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_23ML_SOV
 
     Operators = 
@@ -8071,9 +8359,9 @@ Op_MiG_23ML_UPK_DDR_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_23ML_UPK_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_23ML_UPK_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_23ML_UPK_DDR
 
     Operators = 
@@ -8108,6 +8396,8 @@ Gfx_MiG_23ML_UPK_DDR_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "MiG_23ML_UPK_DDR_turret2"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = AirplaneDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23ML_UPK_DDR_Tourelle_02 )
@@ -8162,9 +8452,9 @@ Op_MiG_23P_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_23P_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_23P_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_23P_SOV
 
     Operators = 
@@ -8212,9 +8502,9 @@ Op_MiG_25BM_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_25BM_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_25BM_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_25BM_SOV
 
     Operators = 
@@ -8257,9 +8547,9 @@ Op_MiG_25RBF_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_25RBF_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_25RBF_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_25RBF_SOV
 
     Operators = 
@@ -8336,9 +8626,9 @@ Op_MiG_27K_LGB_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_27K_LGB_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_27K_LGB_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_27K_LGB_SOV
 
     Operators = 
@@ -8412,9 +8702,9 @@ Op_MiG_27M_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_27M_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_27M_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_27M_SOV
 
     Operators = 
@@ -8486,9 +8776,9 @@ Op_MiG_27M_bombe_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_27M_bombe_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_27M_bombe_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_27M_bombe_SOV
 
     Operators = 
@@ -8560,9 +8850,9 @@ Op_MiG_27M_napalm_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_27M_napalm_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_27M_napalm_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_27M_napalm_SOV
 
     Operators = 
@@ -8645,9 +8935,9 @@ Op_MiG_27M_rkt_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_27M_rkt_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_27M_rkt_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_27M_rkt_SOV
 
     Operators = 
@@ -8721,9 +9011,9 @@ Op_MiG_27M_sead_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_27M_sead_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_27M_sead_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_27M_sead_SOV
 
     Operators = 
@@ -8795,9 +9085,9 @@ Op_MiG_29_AA2_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_29_AA2_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_29_AA2_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_29_AA2_SOV
 
     Operators = 
@@ -8867,9 +9157,9 @@ Op_MiG_29_AA_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_29_AA_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_29_AA_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_29_AA_DDR
 
     Operators = 
@@ -8939,9 +9229,9 @@ Op_MiG_29_AA_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_29_AA_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_29_AA_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_29_AA_SOV
 
     Operators = 
@@ -8989,9 +9279,9 @@ Op_MiG_31M_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_MiG_31M_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'MiG_31M_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_MiG_31M_SOV
 
     Operators = 
@@ -9057,9 +9347,9 @@ Op_Mi_24D_AA_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24D_AA_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24D_AA_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24D_AA_DDR
 
     Operators = 
@@ -9163,9 +9453,9 @@ Op_Mi_24D_s5_AT_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24D_s5_AT_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24D_s5_AT_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24D_s5_AT_DDR
 
     Operators = 
@@ -9269,9 +9559,9 @@ Op_Mi_24D_s8_AT_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24D_s8_AT_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24D_s8_AT_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24D_s8_AT_DDR
 
     Operators = 
@@ -9392,9 +9682,9 @@ Op_Mi_24K_reco_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24K_reco_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24K_reco_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24K_reco_SOV
 
     Operators = 
@@ -9463,6 +9753,8 @@ Gfx_Mi_24K_reco_SOV_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_24K_reco_SOV_turret2_as_2_1"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_24K_reco_SOV_Tourelle_02 )
@@ -9484,6 +9776,8 @@ Gfx_Mi_24K_reco_SOV_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_24K_reco_SOV_turret2_as_2_2"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_24K_reco_SOV_Tourelle_02 )
@@ -9555,9 +9849,9 @@ Op_Mi_24P_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24P_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24P_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24P_SOV
 
     Operators = 
@@ -9681,9 +9975,9 @@ Op_Mi_24P_s8_AT2_DDR_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24P_s8_AT2_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24P_s8_AT2_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24P_s8_AT2_DDR
 
     Operators = 
@@ -9807,9 +10101,9 @@ Op_Mi_24P_s8_AT_DDR_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24P_s8_AT_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24P_s8_AT_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24P_s8_AT_DDR
 
     Operators = 
@@ -9933,9 +10227,9 @@ Op_Mi_24VP_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24VP_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24VP_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24VP_SOV
 
     Operators = 
@@ -10042,9 +10336,9 @@ Op_Mi_24V_AA_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24V_AA_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24V_AA_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24V_AA_SOV
 
     Operators = 
@@ -10148,9 +10442,9 @@ Op_Mi_24V_AT_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24V_AT_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24V_AT_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24V_AT_SOV
 
     Operators = 
@@ -10254,9 +10548,9 @@ Op_Mi_24V_RKT_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24V_RKT_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24V_RKT_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24V_RKT_SOV
 
     Operators = 
@@ -10360,9 +10654,9 @@ Op_Mi_24V_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_24V_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_24V_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_24V_SOV
 
     Operators = 
@@ -10433,9 +10727,9 @@ Gfx_Mi_24V_SOV_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_26_SOV
 Gfx_Mi_26_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_26_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_26_SOV
 
     Operators = 
@@ -10498,9 +10792,9 @@ Gfx_Mi_26_SOV_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_2_reco_DDR
 Gfx_Mi_2_reco_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_2_reco_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_2_reco_DDR
 
     Operators = 
@@ -10561,9 +10855,9 @@ Gfx_Mi_2_reco_DDR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_2_reco_SOV
 Gfx_Mi_2_reco_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_2_reco_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_2_reco_SOV
 
     Operators = 
@@ -10624,9 +10918,9 @@ Gfx_Mi_2_reco_SOV_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_2_trans_DDR
 Gfx_Mi_2_trans_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_2_trans_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_2_trans_DDR
 
     Operators = 
@@ -10688,9 +10982,9 @@ Gfx_Mi_2_trans_DDR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_2_trans_SOV
 Gfx_Mi_2_trans_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_2_trans_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_2_trans_SOV
 
     Operators = 
@@ -10752,9 +11046,9 @@ Gfx_Mi_2_trans_SOV_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_8K_CMD_SOV
 Gfx_Mi_8K_CMD_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8K_CMD_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8K_CMD_SOV
 
     Operators = 
@@ -10839,9 +11133,9 @@ Op_Mi_8MTV_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8MTV_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8MTV_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8MTV_SOV
 
     Operators = 
@@ -10910,9 +11204,9 @@ Gfx_Mi_8MTV_SOV_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_8R_SOV
 Gfx_Mi_8R_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8R_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8R_SOV
 
     Operators = 
@@ -11006,9 +11300,9 @@ Op_Mi_8TB_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8TB_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TB_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TB_DDR
 
     Operators = 
@@ -11111,9 +11405,9 @@ Op_Mi_8TV_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8TV_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_DDR
 
     Operators = 
@@ -11217,9 +11511,9 @@ Op_Mi_8TV_PodGatling_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8TV_PodGatling_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_PodGatling_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_PodGatling_DDR
 
     Operators = 
@@ -11284,6 +11578,8 @@ Gfx_Mi_8TV_PodGatling_DDR_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_PodGatling_DDR_turret1_guv_gatling_d1"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_PodGatling_DDR_Tourelle_01 )
@@ -11303,6 +11599,8 @@ Gfx_Mi_8TV_PodGatling_DDR_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_PodGatling_DDR_turret1_guv_gatling_g1"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_PodGatling_DDR_Tourelle_01 )
@@ -11322,6 +11620,8 @@ Gfx_Mi_8TV_PodGatling_DDR_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_PodGatling_DDR_turret2_guv_gatling_d2"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_PodGatling_DDR_Tourelle_02 )
@@ -11341,6 +11641,8 @@ Gfx_Mi_8TV_PodGatling_DDR_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_PodGatling_DDR_turret2_guv_gatling_g2"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_PodGatling_DDR_Tourelle_02 )
@@ -11396,9 +11698,9 @@ Op_Mi_8TV_PodGatling_PodAGL_SOV_Weapon3 is DepictionOperator_WeaponMissileCarria
 )
 Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_PodGatling_PodAGL_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_PodGatling_PodAGL_SOV
 
     Operators = 
@@ -11463,6 +11765,8 @@ Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_PodGatling_PodAGL_SOV_turret1_guv_gatling_d"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_PodGatling_PodAGL_SOV_Tourelle_01 )
@@ -11482,6 +11786,8 @@ Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_PodGatling_PodAGL_SOV_turret1_guv_gatling_g"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_PodGatling_PodAGL_SOV_Tourelle_01 )
@@ -11501,6 +11807,8 @@ Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_PodGatling_PodAGL_SOV_turret2_guv_agl_d"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_PodGatling_PodAGL_SOV_Tourelle_02 )
@@ -11520,6 +11828,8 @@ Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_PodGatling_PodAGL_SOV_turret2_guv_agl_g"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_PodGatling_PodAGL_SOV_Tourelle_02 )
@@ -11561,9 +11871,9 @@ Op_Mi_8TV_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8TV_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_SOV
 
     Operators = 
@@ -11669,9 +11979,9 @@ Op_Mi_8TV_UPK_DDR_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8TV_UPK_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_UPK_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_UPK_DDR
 
     Operators = 
@@ -11736,6 +12046,8 @@ Gfx_Mi_8TV_UPK_DDR_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_UPK_DDR_turret2_base_tourelle_02_d"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_UPK_DDR_Tourelle_02 )
@@ -11757,6 +12069,8 @@ Gfx_Mi_8TV_UPK_DDR_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Mi_8TV_UPK_DDR_turret2_base_tourelle_02_g"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = HelicoDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_UPK_DDR_Tourelle_02 )
@@ -11778,9 +12092,9 @@ Gfx_Mi_8TV_UPK_DDR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_8TV_non_arme_SOV
 Gfx_Mi_8TV_non_arme_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_non_arme_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_non_arme_SOV
 
     Operators = 
@@ -11874,9 +12188,9 @@ Op_Mi_8TV_s57_16_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8TV_s57_16_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_s57_16_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_s57_16_SOV
 
     Operators = 
@@ -11978,9 +12292,9 @@ Op_Mi_8TV_s57_32_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8TV_s57_32_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_s57_32_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_s57_32_DDR
 
     Operators = 
@@ -12082,9 +12396,9 @@ Op_Mi_8TV_s57_32_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8TV_s57_32_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_s57_32_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_s57_32_SOV
 
     Operators = 
@@ -12175,9 +12489,9 @@ Op_Mi_8TV_s80_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8TV_s80_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TV_s80_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TV_s80_SOV
 
     Operators = 
@@ -12244,9 +12558,9 @@ Gfx_Mi_8TV_s80_SOV_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_8TZ_SOV
 Gfx_Mi_8TZ_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8TZ_SOV'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8TZ_SOV
 
     Operators = 
@@ -12329,9 +12643,9 @@ Op_Mi_8T_DDR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mi_8T_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8T_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8T_DDR
 
     Operators = 
@@ -12398,9 +12712,9 @@ Gfx_Mi_8T_DDR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_8T_non_arme_DDR
 Gfx_Mi_8T_non_arme_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8T_non_arme_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8T_non_arme_DDR
 
     Operators = 
@@ -12461,9 +12775,9 @@ Gfx_Mi_8T_non_arme_DDR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_8_supply_DDR
 Gfx_Mi_8_supply_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_8_supply_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_8_supply_DDR
 
     Operators = 
@@ -12524,9 +12838,9 @@ Gfx_Mi_8_supply_DDR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Mi_9_DDR
 Gfx_Mi_9_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Mi_9_DDR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Mi_9_DDR
 
     Operators = 
@@ -12623,9 +12937,9 @@ Op_Mirage_2000_C_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mirage_2000_C_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Mirage_2000_C_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Mirage_2000_C_FR
 
     Operators = 
@@ -12697,9 +13011,9 @@ Op_Mirage_5_F_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mirage_5_F_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Mirage_5_F_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Mirage_5_F_FR
 
     Operators = 
@@ -12760,9 +13074,9 @@ Op_Mirage_5_F_clu_FR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mirage_5_F_clu_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Mirage_5_F_clu_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Mirage_5_F_clu_FR
 
     Operators = 
@@ -12821,9 +13135,9 @@ Op_Mirage_5_F_nplm_FR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mirage_5_F_nplm_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Mirage_5_F_nplm_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Mirage_5_F_nplm_FR
 
     Operators = 
@@ -12894,9 +13208,9 @@ Op_Mirage_F1_CT_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mirage_F1_CT_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Mirage_F1_CT_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Mirage_F1_CT_FR
 
     Operators = 
@@ -12968,9 +13282,9 @@ Op_Mirage_F1_C_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mirage_F1_C_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Mirage_F1_C_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Mirage_F1_C_FR
 
     Operators = 
@@ -13042,9 +13356,9 @@ Op_Mirage_III_E_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mirage_III_E_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Mirage_III_E_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Mirage_III_E_FR
 
     Operators = 
@@ -13093,9 +13407,9 @@ Op_Mirage_IV_FR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mirage_IV_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Mirage_IV_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Mirage_IV_FR
 
     Operators = 
@@ -13150,9 +13464,9 @@ Op_Mirage_IV_SEAD_FR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Mirage_IV_SEAD_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Mirage_IV_SEAD_FR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Mirage_IV_SEAD_FR
 
     Operators = 
@@ -13187,9 +13501,9 @@ Gfx_Mirage_IV_SEAD_FR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité OH58C_CMD_US
 Gfx_OH58C_CMD_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'OH58C_CMD_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_OH58C_CMD_US
 
     Operators = 
@@ -13262,9 +13576,9 @@ Op_OH58C_Scout_US_Weapon1 is DepictionOperator_WeaponContinuousFire
 )
 Gfx_OH58C_Scout_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'OH58C_Scout_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_OH58C_Scout_US
 
     Operators = 
@@ -13339,9 +13653,9 @@ Op_OH58D_Combat_Scout_US_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_OH58D_Combat_Scout_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'OH58D_Combat_Scout_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_OH58D_Combat_Scout_US
 
     Operators = 
@@ -13417,9 +13731,9 @@ Op_OH58D_Kiowa_Warrior_US_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_OH58D_Kiowa_Warrior_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'OH58D_Kiowa_Warrior_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_OH58D_Kiowa_Warrior_US
 
     Operators = 
@@ -13496,9 +13810,9 @@ Op_OH58_CS_US_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_OH58_CS_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'OH58_CS_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_OH58_CS_US
 
     Operators = 
@@ -13562,9 +13876,9 @@ Gfx_OH58_CS_US_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Puma_FR
 Gfx_Puma_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Puma_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Puma_FR
 
     Operators = 
@@ -13625,9 +13939,9 @@ Gfx_Puma_FR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Puma_PC_FR
 Gfx_Puma_PC_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Puma_PC_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Puma_PC_FR
 
     Operators = 
@@ -13716,9 +14030,9 @@ Op_Puma_Pirate_FR_Weapon2 is DepictionOperator_WeaponInstantFire
 )
 Gfx_Puma_Pirate_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Puma_Pirate_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Puma_Pirate_FR
 
     Operators = 
@@ -13786,9 +14100,9 @@ Gfx_Puma_Pirate_FR_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Puma_UK
 Gfx_Puma_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Puma_UK'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Puma_UK
 
     Operators = 
@@ -13884,9 +14198,9 @@ Op_Su_17M4_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_17M4_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_17M4_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_17M4_SOV
 
     Operators = 
@@ -13958,9 +14272,9 @@ Op_Su_22_AT_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_22_AT_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_22_AT_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_22_AT_DDR
 
     Operators = 
@@ -13994,6 +14308,80 @@ Gfx_Su_22_AT_DDR_Autogen is TacticAerialDepictionTemplate
         ]
 
         SubDepictionGenerators = [ SubGenerators_Su_22_AT_DDR ]
+)
+// Dépiction de l'unité Su_22_AT_SOV
+Op_Su_22_AT_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+        "fx_tourelle1_tir_02",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 2
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Su_22_AT_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_AT_SOV
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_Su_22_AT_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_22_AT_SOV
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+Gfx_Su_22_AT_SOV_Autogen is TacticAerialDepictionTemplate
+(
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Su_22_AT_SOV'
+    Alternatives = Alternatives_Su_22_AT_SOV
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_SD_avion_bombardier_SU22,
+            DepictionOperator_Turret_1_Aim,
+            Op_Su_22_AT_SOV_Weapon1,
+            Op_Su_22_AT_SOV_Weapon2,
+            Op_Su_22_AT_SOV_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_NR30_30mm_x2 ),
+                    ( [ "weapon_effet_tag2" ], Weapon_AA_R60M_Vympel ),
+                    ( [ "weapon_effet_tag3" ], Weapon_AGM_Kh29T ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_VerySmoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_DDR MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_DDR_LOW),
+        ]
+
+        SubDepictionGenerators = [ SubGenerators_Su_22_AT_SOV ]
 )
 // Dépiction de l'unité Su_22_DDR
 Op_Su_22_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -14032,9 +14420,9 @@ Op_Su_22_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_22_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_22_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_22_DDR
 
     Operators = 
@@ -14096,9 +14484,9 @@ Op_Su_22_RKT_DDR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_22_RKT_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_22_RKT_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_22_RKT_DDR
 
     Operators = 
@@ -14168,9 +14556,9 @@ Op_Su_22_SEAD_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_22_SEAD_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_22_SEAD_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_22_SEAD_DDR
 
     Operators = 
@@ -14256,9 +14644,9 @@ Op_Su_22_UPK_DDR_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_22_UPK_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_22_UPK_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_22_UPK_DDR
 
     Operators = 
@@ -14294,6 +14682,8 @@ Gfx_Su_22_UPK_DDR_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Su_22_UPK_DDR_turret2_pod_upk_d"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = AirplaneDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_UPK_DDR_Tourelle_02 )
@@ -14315,6 +14705,8 @@ Gfx_Su_22_UPK_DDR_Autogen is TacticAerialDepictionTemplate
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Su_22_UPK_DDR_turret2_pod_upk_g"
+                ResidentMaterialTags = [ MaterialTagMech ]
+                AdditionalTextures = AirplaneDestTextures
                 Selector = ~/OnlyHighDepictionSelector
                 DepictionAlternatives = [
                     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_UPK_DDR_Tourelle_02 )
@@ -14370,9 +14762,9 @@ Op_Su_22_clu_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_22_clu_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_22_clu_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_22_clu_DDR
 
     Operators = 
@@ -14444,9 +14836,9 @@ Op_Su_22_nplm_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_22_nplm_DDR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_22_nplm_DDR'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_22_nplm_DDR
 
     Operators = 
@@ -14506,9 +14898,9 @@ Op_Su_24MP_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_24MP_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_24MP_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_24MP_SOV
 
     Operators = 
@@ -14556,9 +14948,9 @@ Op_Su_24M_LGB_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_24M_LGB_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_24M_LGB_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_24M_LGB_SOV
 
     Operators = 
@@ -14602,9 +14994,9 @@ Op_Su_24M_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_24M_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_24M_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_24M_SOV
 
     Operators = 
@@ -14648,9 +15040,9 @@ Op_Su_24M_clu2_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_24M_clu2_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_24M_clu2_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_24M_clu2_SOV
 
     Operators = 
@@ -14694,9 +15086,9 @@ Op_Su_24M_clu_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_24M_clu_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_24M_clu_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_24M_clu_SOV
 
     Operators = 
@@ -14740,9 +15132,9 @@ Op_Su_24M_nplm_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_24M_nplm_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_24M_nplm_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_24M_nplm_SOV
 
     Operators = 
@@ -14771,6 +15163,92 @@ Gfx_Su_24M_nplm_SOV_Autogen is TacticAerialDepictionTemplate
         ]
 
         SubDepictionGenerators = [ SubGenerators_Su_24M_nplm_SOV ]
+)
+// Dépiction de l'unité Su_25T_SOV
+Op_Su_25T_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_Su_25T_SOV_Weapon2 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+    WeaponShootDataPropertyName = "WeaponShootData_0_2"
+)
+Op_Su_25T_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_25T_SOV
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 2
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+        "WeaponShootData_1_3",
+    ]
+)
+Op_Su_25T_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_25T_SOV
+    FireEffectTag = "weapon_effet_tag4"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_4",
+    ]
+)
+Gfx_Su_25T_SOV_Autogen is TacticAerialDepictionTemplate
+(
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'Su_25T_SOV'
+    Alternatives = Alternatives_Su_25T_SOV
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_SD_avion_SU25,
+            DepictionOperator_Turret_1_Aim,
+            Op_Su_25T_SOV_Weapon1,
+            Op_Su_25T_SOV_Weapon2,
+            Op_Su_25T_SOV_Weapon3,
+            Op_Su_25T_SOV_Weapon4,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_Gsh_30_2_30mm_x2 ),
+                    ( [ "weapon_effet_tag2" ], Weapon_GatlingAir_AP_Gsh_30_2_30mm_x2 ),
+                    ( [ "weapon_effet_tag3" ], Weapon_AGM_9K121_Vikhr_x16 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_AA_R73_Vympel ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_SOV MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_SOV_LOW),
+        ]
+
+        SubDepictionGenerators = [ SubGenerators_Su_25T_SOV ]
 )
 // Dépiction de l'unité Su_25_SOV
 Op_Su_25_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -14819,9 +15297,9 @@ Op_Su_25_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_25_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_25_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_25_SOV
 
     Operators = 
@@ -14904,9 +15382,9 @@ Op_Su_25_clu_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_25_clu_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_25_clu_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_25_clu_SOV
 
     Operators = 
@@ -14989,9 +15467,9 @@ Op_Su_25_he_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_25_he_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_25_he_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_25_he_SOV
 
     Operators = 
@@ -15074,9 +15552,9 @@ Op_Su_25_nplm_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_25_nplm_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_25_nplm_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_25_nplm_SOV
 
     Operators = 
@@ -15161,9 +15639,9 @@ Op_Su_25_rkt_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_25_rkt_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_25_rkt_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_25_rkt_SOV
 
     Operators = 
@@ -15235,9 +15713,9 @@ Op_Su_27S_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_27S_SOV_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Su_27S_SOV'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_27S_SOV
 
     Operators = 
@@ -15274,9 +15752,9 @@ Gfx_Su_27S_SOV_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité Super_Puma_FR
 Gfx_Super_Puma_FR_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'Super_Puma_FR'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_Super_Puma_FR
 
     Operators = 
@@ -15370,9 +15848,9 @@ Op_Tornado_ADV_HE_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Tornado_ADV_HE_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Tornado_ADV_HE_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Tornado_ADV_HE_UK
 
     Operators = 
@@ -15444,9 +15922,9 @@ Op_Tornado_ADV_SEAD_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Tornado_ADV_SEAD_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Tornado_ADV_SEAD_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Tornado_ADV_SEAD_UK
 
     Operators = 
@@ -15518,9 +15996,9 @@ Op_Tornado_ADV_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Tornado_ADV_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Tornado_ADV_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Tornado_ADV_UK
 
     Operators = 
@@ -15592,9 +16070,9 @@ Op_Tornado_ADV_clu_UK_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Tornado_ADV_clu_UK_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Tornado_ADV_clu_UK'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Tornado_ADV_clu_UK
 
     Operators = 
@@ -15668,9 +16146,9 @@ Op_Tornado_IDS_AT1_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Tornado_IDS_AT1_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Tornado_IDS_AT1_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Tornado_IDS_AT1_RFA
 
     Operators = 
@@ -15743,9 +16221,9 @@ Op_Tornado_IDS_CLUS_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Tornado_IDS_CLUS_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Tornado_IDS_CLUS_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Tornado_IDS_CLUS_RFA
 
     Operators = 
@@ -15818,9 +16296,9 @@ Op_Tornado_IDS_HE1_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Tornado_IDS_HE1_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Tornado_IDS_HE1_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Tornado_IDS_HE1_RFA
 
     Operators = 
@@ -15895,9 +16373,9 @@ Op_Tornado_IDS_MW1_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Tornado_IDS_MW1_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Tornado_IDS_MW1_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Tornado_IDS_MW1_RFA
 
     Operators = 
@@ -15950,13 +16428,11 @@ Op_Tornado_IDS_RFA_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
 (
     Connoisseur = MissileCarriage_Tornado_IDS_RFA
     FireEffectTag = "weapon_effet_tag2"
-    NbProj = 2
+    NbProj = 1
     WeaponIndex = 2
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_2",
-        "WeaponShootData_1_2",
-
     ]
 )
 Op_Tornado_IDS_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
@@ -15968,14 +16444,13 @@ Op_Tornado_IDS_RFA_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_3",
-
     ]
 )
 Gfx_Tornado_IDS_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
     CoatingName = 'Tornado_IDS_RFA'
-        Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Tornado_IDS_RFA
 
     Operators = 
@@ -16011,6 +16486,69 @@ Gfx_Tornado_IDS_RFA_Autogen is TacticAerialDepictionTemplate
 
         SubDepictionGenerators = [ SubGenerators_Tornado_IDS_RFA ]
 )
+// Dépiction de l'unité UH1A_US
+Gfx_UH1A_US_Autogen is TacticAerialDepictionTemplate
+(
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
+    CoatingName = 'UH1A_US'
+    Alternatives = Alternatives_UH1A_US
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_Helico_Huey,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_HelicopterLanding,
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = 
+                [
+                    TRotor
+                    (
+                        BladesBoneName = "helice_ls_1"
+                        BlurActionId = 
+                        [
+                            "FX_Helice_1",
+                        ]
+                        Clockwise = False
+                        NbBlade = 2
+                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationSpeed = 242
+                        RotorBoneName = "bloc_moteur_1"
+                    ),
+                    TRotor
+                    (
+                        BladesBoneName = "helice_ls_2"
+                        BlurActionId = 
+                        [
+                            "FX_Helice_2",
+                        ]
+                        Clockwise = False
+                        NbBlade = 2
+                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationSpeed = 242
+                        RotorBoneName = "bloc_moteur_2"
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+        ]
+        Actions = MAP[
+                ]
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+
+        SubDepictions = [
+            SubDepiction_Pilote1(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_US_LOW),
+            SubDepiction_Pilote2(MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_US MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Pilote_Helico_US_LOW),
+        ]
+)
 // Dépiction de l'unité UH1D_RFA
 Op_UH1D_RFA_Weapon1 is DepictionOperator_WeaponContinuousFire
 (
@@ -16025,9 +16563,9 @@ Op_UH1D_RFA_Weapon1 is DepictionOperator_WeaponContinuousFire
 )
 Gfx_UH1D_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'UH1D_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_UH1D_RFA
 
     Operators = 
@@ -16091,9 +16629,9 @@ Gfx_UH1D_RFA_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité UH1D_Supply_RFA
 Gfx_UH1D_Supply_RFA_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'UH1D_Supply_RFA'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_UH1D_Supply_RFA
 
     Operators = 
@@ -16167,9 +16705,9 @@ Op_UH1H_Huey_US_Weapon1 is DepictionOperator_WeaponInstantFire
 )
 Gfx_UH1H_Huey_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'UH1H_Huey_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_UH1H_Huey_US
 
     Operators = 
@@ -16233,9 +16771,9 @@ Gfx_UH1H_Huey_US_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité UH1H_supply_US
 Gfx_UH1H_supply_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'UH1H_supply_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_UH1H_supply_US
 
     Operators = 
@@ -16318,9 +16856,9 @@ Op_UH60A_Black_Hawk_US_Weapon2 is DepictionOperator_WeaponContinuousFire
 )
 Gfx_UH60A_Black_Hawk_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'UH60A_Black_Hawk_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_UH60A_Black_Hawk_US
 
     Operators = 
@@ -16411,9 +16949,9 @@ Op_UH60A_CO_US_Weapon2 is DepictionOperator_WeaponContinuousFire
 )
 Gfx_UH60A_CO_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'UH60A_CO_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_UH60A_CO_US
 
     Operators = 
@@ -16483,9 +17021,9 @@ Gfx_UH60A_CO_US_Autogen is TacticAerialDepictionTemplate
 // Dépiction de l'unité UH60A_Supply_US
 Gfx_UH60A_Supply_US_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ HelicoAdditionalMaterialTag ]
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
     CoatingName = 'UH60A_Supply_US'
-        Selector = SpecificHelicoDepictionSelector
     Alternatives = Alternatives_UH60A_Supply_US
 
     Operators = 
@@ -16604,7 +17142,7 @@ Op_Su_25_Multirole_FRL_Weapon5 is DepictionOperator_WeaponMissileCarriageFire
 )
 Gfx_Su_25_Multirole_FRL_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
     CoatingName = 'Su_25_SOV'
         Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_25_Multirole_FRL
@@ -16650,6 +17188,7 @@ Gfx_AH6C_Little_Bird_US_unarmed_FRL_Autogen is TacticAerialDepictionTemplate
         CoatingName = 'AH6C_Little_Bird_US'
         Selector = SpecificHelicoDepictionSelector
         Alternatives = Alternatives_AH6C_Little_Bird_US
+        AdditionalTextures = HelicoDestTextures
 
         Operators = 
         [
@@ -16717,6 +17256,7 @@ Gfx_AH64_Apache_US_ATAS_101st_FRL_Autogen is TacticAerialDepictionTemplate
         CoatingName = 'AH64_Apache_US'
         Selector = SpecificHelicoDepictionSelector
         Alternatives = Alternatives_AH64_Apache_US
+        AdditionalTextures = HelicoDestTextures
 
         Operators = 
         [
@@ -16803,6 +17343,7 @@ Gfx_AH64_Apache_US_ATAS_101st_FRL_Autogen is TacticAerialDepictionTemplate
 )
 Gfx_F16E_AA_US_101st_FRL_Autogen is TacticAerialDepictionTemplate
 (
+        AdditionalTextures = AirplaneDestTextures
         CoatingName = 'F16E_AA_US'
         Selector = SpecificAirplaneDepictionSelector
         Alternatives = Alternatives_F16E_AA_US
@@ -16885,7 +17426,7 @@ Op_A10_Thunderbolt_II_US_NAPALM_FRL_Weapon4 is DepictionOperator_WeaponMissileCa
 )
 Gfx_A10_Thunderbolt_II_US_NAPALM_FRL_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
     CoatingName = 'A10_Thunderbolt_II_US'
         Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_A10_Thunderbolt_II_US
@@ -16979,7 +17520,7 @@ Op_Su_25_s24_FRL_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 
 Gfx_Su_25_s24_FRL_Autogen is TacticAerialDepictionTemplate
 (
-    ResidentMaterialTags = [ AirplaneAdditionalMaterialTag ]
+    AdditionalTextures = AirplaneDestTextures
     CoatingName = 'Su_25_SOV'
         Selector = SpecificAirplaneDepictionSelector
     Alternatives = Alternatives_Su_25_SOV

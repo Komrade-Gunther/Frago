@@ -457,3 +457,9 @@ Feldgrau is [73,91,69,255]
 RifleGreen is [64,77,64,255]
 Grullo is [159,156,135,255]
 DarkLava is [85,77,65,255]
+
+
+bleuNavy is [81,134,145,220]
+bleuNavy_clair is [146,208,222,220]
+bleuNavy_superclair is [194,244,255,240]
+bleuNavy_fonce is [32,62,69,215]

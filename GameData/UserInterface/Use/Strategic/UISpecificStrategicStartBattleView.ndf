@@ -67,6 +67,7 @@ template BoutonStartBattle
 
         HidePointerEvents = true
         Mapping  = <Mapping>
+        LeftClickSound = ~/SoundEvent_SteelmanAttackPreparationButton
 
         Components =
         [

@@ -48,6 +48,7 @@ NoSound is InterfaceSound( FileName = "GameData:/Assets/Sons/InGame/Silence.ogg"
 // General
 SoundEvent_CheckBoxTick                     is ButtonClickSound
 SoundEvent_OpenCloseWarchat                 is ClickSound_RadioBlip
+SoundEvent_TreeLineButtonSound              is NoSound // Currently used for steelman Order of battle tree view
 
 // Main menu
 SoundEvent_EnterArmory                      is HoverSound_hub_armory
@@ -135,6 +136,32 @@ SoundEvent_OpenNewSlot                      is HoverSound_hub_Enter_multi
 SoundEvent_OpenOptionDropdown               is ClickSound_Change_Selector
 SoundEvent_SelectOption                     is ClickSound_Change_Selector
 
+// Steelman
+SoundEvent_SteelmanNextTurn                 is NoSound
+SoundEvent_SteelmanCampaignStatus           is NoSound
+SoundEvent_SteelmanOrderOfBattle            is NoSound
+SoundEvent_SteelmanCasualtiesList           is NoSound
+SoundEvent_SteelmanGameSpeed                is NoSound
+SoundEvent_SteelmanPawnCombatGroup          is ClickSound_page
+SoundEvent_SteelmanPanelButton              is NoSound
+SoundEvent_SteelmanReinforcementsButton     is NoSound
+SoundEvent_SteelmanReinforcementsDayButton  is NoSound
+SoundEvent_SteelmanOOBLine                  is NoSound // See 'SoundEvent_TreeLineButtonSound' as well
+SoundEvent_SteelmanOOBAllianceSwitch        is NoSound
+SoundEvent_SteelmanAirDeny                  is HoverSound_hub_Enter_multi
+
+// Steelman - Attack preparation
+SoundEvent_SteelmanAttackPreparationButton  is NoSound
+SoundEvent_SteelmanAddUnitOpenList          is NoSound
+SoundEvent_SteelmanAttackPrepareAddUnit     is NoSound
+SoundEvent_SteelmanAttackPrepareRemoveUnit  is NoSound
+SoundEvent_SteelmanTacticPrepChangeTeam     is ClickSound_page
+SoundEvent_SteelmanTacticPrepBack           is ClickSound_folder
+SoundEvent_SteelmanTacticPrepStart          is ClickSound_keyboard
+
+// Steelman - Unit actions "cube action" (like 'Deploy AA')
+// -> For button click, modify directly CubeActionStrategicButtonDescriptor.ndf
+// -> For action validation (like clicking somewhere on the map for Air interdiction confirmation), we'll se later if we do it
 
 //=======================================================================================================================
 

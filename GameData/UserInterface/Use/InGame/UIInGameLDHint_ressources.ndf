@@ -41,74 +41,6 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "shint_st_left", SuperHint( alignementGauche = true challenge = false) ),
 
         //-------------------------------------------------------------------------------------
-        // spotlight pour tuto
-        ( "Spotlight_mortier", Spotlight_mortier),
-        ( "Spotlight_sellUnit", Spotlight_mortier),
-        ( "Spotlight_movefast",     Spotlight_LD
-            (
-                UniqueName = "Spotlight_movefast"
-                MagnifiableWidthHeight = [115.0, 36.0]
-                MagnifiableOffset = [-138-129-5,-140+14]
-                AlignementToAnchor = [1.0, 1.0]
-                AlignementToFather = [1.0, 1.0]
-            )
-        ),
-        ( "Spotlight_move",         Spotlight_LD
-            (
-                UniqueName = "Spotlight_move"
-                MagnifiableWidthHeight = [115.0, 36.0]
-                MagnifiableOffset = [-14.0-252-6, -90.0+2]
-                AlignementToAnchor = [1.0, 1.0]
-                AlignementToFather = [1.0, 1.0]
-            )
-        ),
-        ( "Spotlight_FirePos",         Spotlight_LD
-            (
-                UniqueName = "Spotlight_FirePos"
-                MagnifiableWidthHeight = [115.0, 36.0]
-                MagnifiableOffset = [-7.0-137, -135.0-19-10]
-                AlignementToAnchor = [1.0, 1.0]
-                AlignementToFather = [1.0, 1.0]
-            )
-        ),
-        ( "Spotlight_CB",         Spotlight_LD
-            (
-                UniqueName = "Spotlight_CB"
-                MagnifiableWidthHeight = [115.0, 36.0]
-                MagnifiableOffset = [-7.0-137-128, -135.0-19-10-78]
-                AlignementToAnchor = [1.0, 1.0]
-                AlignementToFather = [1.0, 1.0]
-            )
-        ),
-        ( "Spotlight_logInf",         Spotlight_LD
-            (
-                UniqueName = "Spotlight_logInf"
-                MagnifiableWidthHeight = [57.0, 36.0]
-                MagnifiableOffset = [23.0-15, 2.0]
-                AlignementToAnchor = [0.0, 0.0]
-                AlignementToFather = [0.0, 0.0]
-            )
-        ),
-        ( "Spotlight_logRec",         Spotlight_LD
-            (
-                UniqueName = "Spotlight_logRec"
-                MagnifiableWidthHeight = [57.0, 36.0]
-                MagnifiableOffset = [82.0-16, 2.0]
-                AlignementToAnchor = [0.0, 0.0]
-                AlignementToFather = [0.0, 0.0]
-            )
-        ),
-        ("Spotlight_sellButton",         Spotlight_LD
-            (
-            UniqueName = "Spotlight_sellButton"
-            MagnifiableWidthHeight = [124.0, 46.0]
-            MagnifiableOffset =  [-12, -45]
-            AlignementToAnchor = [1.0, 1.0]
-            AlignementToFather = [1.0, 1.0]
-            )
-        ),
-
-        //-------------------------------------------------------------------------------------
         // ajouter ici le composant
         //-------------------------------------------------------------------------------------
         // testTuto
@@ -124,6 +56,10 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "hint", PORTRAIT_PauseAndTexture (TextureToken = "") ),
         ( "cutscene_10", LDHint_cutscene_10 ),
         ( "hint_noPause", PORTRAIT_PauseAndTexture (TextureToken = "" HasButtons = false) ),
+        // ( "green_hint", PORTRAIT_PauseAndTexture_Steelman (TextureToken = "" HasButtons = false)),
+        // ( "green_hint_choice", PORTRAIT_PauseAndTexture_Steelman (TextureToken = "")),
+        ( "green_hint_choice",      Steelman_newLDHINT ( HasButtons = true width = 1120)),
+        ( "green_hint",             Steelman_newLDHINT ( HasButtons = false width = 1120)),
 
         //-------------------------------------------------------------------------------------
         // test_tuto_5
@@ -301,6 +237,8 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "general_RFA_2",             PORTRAIT_Steelman (Texture = 'general_RFA_2' HasButtons = true  )),
         ( "general_US",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'general_US' )),
         // tuto_1
+        ( "unit_panel",                 Steelman_newLDHINT (Texture = 'unit_panel' HasButtons = true)),
+        ( "order_of_battle",            Steelman_newLDHINT (Texture = 'order_of_battle' HasButtons = true)),
         ( "Steelman_tuto_0",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman = 'Steelman_tuto_0' )),
         ( "Steelman_tuto_1",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman = 'Steelman_tuto_1' )),
         ( "Steelman_tuto_2",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman = 'Steelman_tuto_2' )),
@@ -331,15 +269,18 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "BH_otan_4",             Steelman_newLDHINT (Texture = 'BH_otan_4' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_5",             Steelman_newLDHINT (Texture = 'BH_otan_5' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_6",             Steelman_newLDHINT (Texture = 'BH_otan_6' HasButtons = true portrait_name = 'rfa_maj_1' )),
-        ( "Steelman_Hawthorne",             Steelman_newLDHINT (Texture = 'Steelman_Hawthorne' HasButtons = true portrait_name = 'rfa_maj_1' )),
+        ( "BH_otan_aide",    Steelman_newLDHINT (Texture = 'Steelman_Hawthorne' HasButtons = true portrait_name = 'rfa_maj_1' )),
+
+
+        ( "Steelman_Hawthorne",    Steelman_newLDHINT (Texture = 'Steelman_Hawthorne' HasButtons = true portrait_name = 'rfa_maj_1' width = 1120)),
         ( "Steelman_Sulivan",             Steelman_newLDHINT (Texture = 'Steelman_Sulivan' HasButtons = true portrait_name = 'rfa_maj_1' )),
 
-        ( "BH_otan_popup_1",             Steelman_newLDHINT (Texture = 'BH_otan_popup_1' HasButtons = true text_laius = 'bh_o1' text1_title = 'bh_o1_1t' text1_body = 'bh_o1_1b' text2_title = 'bh_o1_2t' text2_body = 'bh_o1_2b')),
-        ( "BH_otan_popup_2",             Steelman_newLDHINT (Texture = 'BH_otan_popup_2' HasButtons = true text_laius = 'bh_o2' text1_title = 'bh_o2_1t' text1_body = 'bh_o2_1b' text2_title = 'bh_o2_2t' text2_body = 'bh_o2_2b')),
-        ( "BH_otan_popup_3",             Steelman_newLDHINT (Texture = 'BH_otan_popup_3' HasButtons = true text_laius = 'bh_o3' text1_title = 'bh_o3_1t' text1_body = 'bh_o3_1b' text2_title = 'bh_o3_2t' text2_body = 'bh_o3_2b')),
+        ( "BH_otan_popup_1",             Steelman_newLDHINT (Texture = 'BH_otan_popup_1' HasButtons = false text_laius = 'bh_o1' text1_title = 'bh_o1_1t' text1_body = 'bh_o1_1b' text2_title = 'bh_o1_2t' text2_body = 'bh_o1_2b')),
+        ( "BH_otan_popup_2",             Steelman_newLDHINT (Texture = 'BH_otan_popup_2' HasButtons = false text_laius = 'bh_o2' text1_title = 'bh_o2_1t' text1_body = 'bh_o2_1b' text2_title = 'bh_o2_2t' text2_body = 'bh_o2_2b')),
+        ( "BH_otan_popup_3",             Steelman_newLDHINT (Texture = 'BH_otan_popup_3' HasButtons = false text_laius = 'bh_o3' text1_title = 'bh_o3_1t' text1_body = 'bh_o3_1b' text2_title = 'bh_o3_2t' text2_body = 'bh_o3_2b')),
 
-        ( "BH_pact_popup_1",             Steelman_newLDHINT (Texture = 'BH_pact_popup_1' HasButtons = true text_laius = 'bh_p1' text1_title = 'bh_p1_1t' text1_body = 'bh_p1_1b' text2_title = 'bh_p1_2t' text2_body = 'bh_p1_2b')),
-        ( "BH_pact_popup_2",             Steelman_newLDHINT (Texture = 'BH_pact_popup_2' HasButtons = true text_laius = 'bh_p2' text1_title = 'bh_p2_1t' text1_body = 'bh_p2_1b' text2_title = 'bh_p2_2t' text2_body = 'bh_p2_2b')),
+        ( "BH_pact_popup_1",             Steelman_newLDHINT (Texture = 'BH_pact_popup_1' HasButtons = false text_laius = 'bh_p1' text1_title = 'bh_p1_1t' text1_body = 'bh_p1_1b' text2_title = 'bh_p1_2t' text2_body = 'bh_p1_2b')),
+        ( "BH_pact_popup_2",             Steelman_newLDHINT (Texture = 'BH_pact_popup_2' HasButtons = false text_laius = 'bh_p2' text1_title = 'bh_p2_1t' text1_body = 'bh_p2_1b' text2_title = 'bh_p2_2t' text2_body = 'bh_p2_2b')),
 
         ( "BH_otan_renfort_13_brigade",             Steelman_newLDHINT (Texture = 'BH_otan_renfort_13_brigade' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "BH_otan_renfort_14_brigade",             Steelman_newLDHINT (Texture = 'BH_otan_renfort_14_brigade' HasButtons = true portrait_name = 'rfa_maj_1' )),
@@ -494,6 +435,8 @@ UseInGame_AdditionalLDHintTextureBank is TBUCKToolAdditionalTextureBank
 
 
     // tuto 1
+    ( "unit_panel",           MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/unit_panel.png' ))] ),
+    ( "order_of_battle",           MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/order_of_battle.png' ))] ),
     ( "Steelman_tuto_0",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto_1/tuto_0.png' ))] ),
     ( "Steelman_tuto_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto_1/tuto_1.png' ))] ),
     ( "Steelman_tuto_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto_1/tuto_2.png' ))] ),

@@ -41,6 +41,14 @@ CommonTexture_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("CommonTexture_MotherCountryFlag_ROU",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_ROU)]),
         ("CommonTexture_MotherCountryFlag_DDR",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/Common/Flags/Normal/RDA_FLAG.png"))]),
         ("CommonTexture_MotherCountryFlag_ESP",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_ESP)]),
+
+        // division
+        ("CommonTexture_division_US_3AD",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/3rd_Armored_Division.png"))]),
+        ("CommonTexture_division_RFA_5PZ",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/5_Panzerdivision_RFA.png"))]),
+        ("CommonTexture_division_RFA_terrkdo",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/RFA_TerrKdo_Sud.png"))]),
+        ("CommonTexture_division_SOV_57_GVMSD",  MAP [(~/ComponentState/Normal, TUIResourceTexture_Common(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Divisions/Blazon57th_gtd.png"))]),
+
+
         // fulda
         ("CommonTexture_MotherCountryFlag_PACT",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_PACT)]),
         ("CommonTexture_MotherCountryFlag_NATO",  MAP [(~/ComponentState/Normal, ~/CommonTexture_MotherCountryFlag_NATO)]),
@@ -105,18 +113,14 @@ CommonTexture_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("CommonTexture_Etoile_Grande",          MAP [(~/ComponentState/Normal, ~/CommonTexture_Etoile_Grande)]),
         ("CommonTexture_Fond_AP",                MAP [(~/ComponentState/Normal, ~/CommonTexture_Fond_AP)]),
 
-        ("CommonTexture_Chevron_0",              MAP [
-                                                (~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/chevron0.png')),
-                                                ]),
-        ("CommonTexture_Chevron_1",              MAP [
-                                                (~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/chevron1.png')),
-                                                ]),
-        ("CommonTexture_Chevron_2",              MAP [
-                                                (~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/chevron2.png')),
-                                                ]),
-        ("CommonTexture_Chevron_3",              MAP [
-                                                (~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/chevron3.png')),
-                                                ]),
+        ("CommonTexture_Chevron_0",              MAP [(~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/chevron0.png')),]),
+        ("CommonTexture_Chevron_1",              MAP [(~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/chevron1.png')),]),
+        ("CommonTexture_Chevron_2",              MAP [(~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/chevron2.png')),]),
+        ("CommonTexture_Chevron_3",              MAP [(~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/chevron3.png')),]),
+
+        ("CommonTexture_Deck_Chevron_1",              MAP [(~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/Deck_chevron1.png')),]),
+        ("CommonTexture_Deck_Chevron_2",              MAP [(~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/Deck_chevron2.png')),]),
+        ("CommonTexture_Deck_Chevron_3",              MAP [(~/ComponentState/Normal,   TUIResourceTexture_Common(FileName = 'GameData:/Assets/2D/Interface/Common/UnitsIcons/Experience/Deck_chevron3.png')),]),
 
         ("CommonTexture_Camo",              MAP [
                                                 (~/ComponentState/Normal,   CommonTexture_Camo),

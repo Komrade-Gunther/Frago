@@ -1,6 +1,6 @@
 
 private FlaresButtonDims is [25.0, 25.0]
-private dimensionBoutonFlare is 25
+private dimensionBoutonFlare is 24
 
 //-------------------------------------------------------------------------------------
 template FlareButtonSupport
@@ -145,9 +145,9 @@ is BUCKEditableTextDescriptor
     ElementName = "FlareCustomEditableText"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [200.0, 20.0]
-        AlignementToFather = [0.0, 0.5]
-        AlignementToAnchor = [0.0, 0.5]
+        MagnifiableWidthHeight = [240.0, 24.0]
+        // AlignementToFather = [0.0, 0.5]
+        // AlignementToAnchor = [0.0, 0.5]
     )
 
     HasBackground = true

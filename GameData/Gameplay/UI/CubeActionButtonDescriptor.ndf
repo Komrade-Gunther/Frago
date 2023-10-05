@@ -30,6 +30,8 @@ template Template_CubeActionOrderButtonInformationsDescriptor_WithSound
     DebugName,
     CubeActionFunctionType,
 
+    SpotlightUniqueName = "",
+
     ButtonTextToken,
     HintTitleToken,
     HintBodyToken,
@@ -60,6 +62,8 @@ is TCubeActionOrderButtonInformationsDescriptor
     CubeActionName           = <CubeActionName>
     DebugName                = <DebugName>
     CubeActionFunctionType   = <CubeActionFunctionType>
+
+    SpotlightUniqueName      = <SpotlightUniqueName>
 
     OrderToken               = <OrderToken>
     ActionType               = <ActionType>
@@ -217,6 +221,8 @@ export CubeAction_Order_AIManageArtillery_CounterBattery is Template_CubeActionO
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
+    SpotlightUniqueName      = "Spotlight_CB"
+
     OrderToken               = "AIManageArtillery_CounterBattery"
     ActionType               = OrderInstant
     Mapping                  = $/KeyboardOption/Mapping_AIManageArtillery_CounterBattery
@@ -343,6 +349,8 @@ export CubeAction_Order_ShootOnPosition is Template_CubeActionOrderButtonInforma
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
+    SpotlightUniqueName      = "Spotlight_FirePos"
+
     OrderToken               = "ShootOnPosition"
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALPOS'
@@ -361,6 +369,8 @@ export CubeAction_Order_ShootOnPositionSmoke is Template_CubeActionOrderButtonIn
     HintBodyToken            = 'HNT_SMOKE'
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
+
+    SpotlightUniqueName      = "Spotlight_SmokePos"
 
     OrderToken               = "ShootOnPositionSmoke"
     ActionType               = OrderWithClickValidation
@@ -400,6 +410,8 @@ export CubeAction_Order_Move is Template_CubeActionOrderButtonInformationsDescri
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
 
+    SpotlightUniqueName      = "Spotlight_move"
+
     OrderToken               = "Move"
     ActionType               = OrderWithClickValidation
     ValidationTargetToken    = 'CA_VALPOS'
@@ -418,6 +430,8 @@ export CubeAction_Order_QuickMove is Template_CubeActionOrderButtonInformationsD
     HintBodyToken            = 'HNT_QKMOVE'
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
+
+    SpotlightUniqueName      = "Spotlight_movefast"
 
     OrderToken               = "QuickMove"
     ActionType               = OrderWithClickValidation
@@ -586,6 +600,8 @@ export CubeAction_Order_Sell is Template_CubeActionOrderButtonInformationsDescri
     HintBodyToken            = 'HNT_SELL'
     HintExtendedToken        = ''
     HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
+
+    SpotlightUniqueName      = "Spotlight_sellButton"
 
     OrderToken               = "Sell"
     ActionType               = OrderInstant

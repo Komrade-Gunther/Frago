@@ -9,6 +9,17 @@ template TemplateTFS_Flag
     ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
 )
 
+template TemplateTFS_Division
+[
+    TextureToken     : string
+] is TTFSCommand_UISymbol
+(
+    TextureToken = <TextureToken>
+    BBMin=[0, -1, 0]
+    BBMax=[1.5, 0.5, 0]
+    ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
+)
+
 template TFSCommand_ChangeColor
 [
     Color = [255, 255, 255, 255]
@@ -189,11 +200,8 @@ DefaultStyleGuide is TUIStyleGuide
 
 
         ("ObjectiveLabel/Primary/Title",                    MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Moyen2 ) ), ]),
-        ("ObjectiveLabel/Primary/Content",                  MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Petit3 ) ), ]),
         ("ObjectiveLabel/Bonus/Title",                      MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Grand1 ) ), ]),
-        ("ObjectiveLabel/Bonus/Content",                    MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Petit3 ) ), ]),
         ("ObjectiveLabel/Info/Title",                       MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Grand1 ) ), ]),
-        ("ObjectiveLabel/Info/Content",                     MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Petit3 ) ), ]),
         ("ObjectiveLabel/Heading",                          MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Moyen1 ) ), ]),
         ("ObjectiveLabel/CapturePoint/Title",               MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Grand1 ) ), ]),
         ("ObjectiveLabel/CapturePoint/Content",             MAP [ ( ~/ComponentState/Normal, TFloatRTTI( Value = Petit3 ) ), ]),
@@ -478,14 +486,7 @@ DefaultStyleGuide is TUIStyleGuide
         // bleu standard
         ("H2_bleu_2",                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [19,85,106,191] ) ), ]),
         ("H2_bleu_2_235",                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [19,85,106,235] ) ), ]),
-        ("ArmoryUnitButtonName",        MAP [
-                                                   ( ~/ComponentState/Normal,                TColorRTTI( Color = [19,85,106,191]  ) ),
-                                                   ( ~/ComponentState/Highlighted,           TColorRTTI( Color = BleuSelection ) ),
-                                                   ( ~/ComponentState/Clicked,               TColorRTTI( Color = BleuSelectionClicked ) ),
-                                                   ( ~/ComponentState/Toggled,               TColorRTTI( Color = BleuSelection ) ),
-                                                   ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = BleuSelection ) ),
-                                                   ( ~/ComponentState/Grayed,                TColorRTTI( Color = [25,25,25,150] ) ),
-                                               ]),
+
         ("OffMapUnitButtonName",        MAP [
                                                    ( ~/ComponentState/Normal,                TColorRTTI( Color = [19,85,106,255]  ) ),
                                                    ( ~/ComponentState/Highlighted,           TColorRTTI( Color = BleuSelection ) ),
@@ -949,7 +950,7 @@ DefaultStyleGuide is TUIStyleGuide
                                         ]),
 
         ("UnitButton/Availability",     MAP [
-                                            ( ~/ComponentState/Grayed,      TColorRTTI( Color = NoirPur20 ) ),
+                                            ( ~/ComponentState/Grayed,      TColorRTTI( Color = bleuNavy_fonce ) ),
                                             ( ~/ComponentState/Normal,      TColorRTTI( Color = Transparent ) ),
                                         ]),
         ("Underline",            MAP [
@@ -1306,24 +1307,6 @@ DefaultStyleGuide is TUIStyleGuide
         ("UIPlayerSpecific/Orange/ObjectiveContent",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = RougeSovietique ) ), ]),
         ("UIPlayerSpecific/Grey/ObjectiveContent",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisBleu ) ), ]),
 
-        ("UIPlayerSpecific/Blue/ConquestObjective",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = JauneOrange2 ) ), ]),
-        ("UIPlayerSpecific/Green/ConquestObjective",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BleuMoyen2 ) ), ]),
-        ("UIPlayerSpecific/Red/ConquestObjective",                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = JauneOrange2 ) ), ]),
-        ("UIPlayerSpecific/Orange/ConquestObjective",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = RougeSovietique ) ), ]),
-        ("UIPlayerSpecific/Grey/ConquestObjective",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisBleu ) ), ]),
-
-        ("UIPlayerSpecific/Blue/ConquestObjectiveBorder",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BlancPur ) ), ]),
-        ("UIPlayerSpecific/Green/ConquestObjectiveBorder",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BlancPur ) ), ]),
-        ("UIPlayerSpecific/Red/ConquestObjectiveBorder",                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BlancPur ) ), ]),
-        ("UIPlayerSpecific/Orange/ConquestObjectiveBorder",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BlancPur ) ), ]),
-        ("UIPlayerSpecific/Grey/ConquestObjectiveBorder",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BlancPur ) ), ]),
-
-        ("UIPlayerSpecific/Blue/ConquestObjectivePole",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisAllemand_Objectif ) ), ]),
-        ("UIPlayerSpecific/Green/ConquestObjectivePole",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BleuMoyen2 ) ), ]),
-        ("UIPlayerSpecific/Red/ConquestObjectivePole",                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = RougeSovietique_Objectif ) ), ]),
-        ("UIPlayerSpecific/Orange/ConquestObjectivePole",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = RougeSovietique ) ), ]),
-        ("UIPlayerSpecific/Grey/ConquestObjectivePole",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisBleu ) ), ]),
-
         ("Strategic/PawnPower/AttackTop",                              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = OrangeClair ) ), ]),
         ("Strategic/PawnPower/DefenseTop",                             MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc ) ), ]),
 
@@ -1650,29 +1633,53 @@ DefaultStyleGuide is TUIStyleGuide
                                                                         ( ~/ComponentState/ToggleClicked,         TColorRTTI( Color = [19,85,106,191] ) ),
                                                                         ( ~/ComponentState/Grayed,                TColorRTTI( Color = Transparent ) ),
                                                                    ]),
+        ("NbUnitsInPackContainer_color",        MAP [
+                                                   ( ~/ComponentState/Normal,                TColorRTTI( Color = [81,134,145,150]  ) ),
+                                                   // ( ~/ComponentState/Highlighted,           TColorRTTI( Color = bleuNavy_superclair ) ),
+                                                   // ( ~/ComponentState/Clicked,               TColorRTTI( Color = BleuSelectionClicked ) ),
+                                                   // ( ~/ComponentState/Toggled,               TColorRTTI( Color = bleuNavy_clair ) ),
+                                                   // ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = bleuNavy_superclair ) ),
+                                                   // ( ~/ComponentState/Grayed,                TColorRTTI( Color = [25,25,25,150] ) ),
+                                               ]),
+        ("ArmoryUnitButtonName",        MAP [
+                                                   ( ~/ComponentState/Normal,                TColorRTTI( Color = bleuNavy  ) ),
+                                                   ( ~/ComponentState/Highlighted,           TColorRTTI( Color = bleuNavy_superclair ) ),
+                                                   ( ~/ComponentState/Clicked,               TColorRTTI( Color = BleuSelectionClicked ) ),
+                                                   ( ~/ComponentState/Toggled,               TColorRTTI( Color = bleuNavy_clair ) ),
+                                                   ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = bleuNavy_superclair ) ),
+                                                   ( ~/ComponentState/Grayed,                TColorRTTI( Color = [25,25,25,150] ) ),
+                                               ]),
+
+
+        ("bleuNavy",                           MAP [( ~/ComponentState/Normal,                TColorRTTI( Color = bleuNavy  ) ),]),
+        ("bleuNavy_clair",                           MAP [( ~/ComponentState/Normal,                TColorRTTI( Color = bleuNavy_clair  ) ),]),
+        ("bleuNavy_fonce",                           MAP [( ~/ComponentState/Normal,                TColorRTTI( Color = bleuNavy_fonce  ) ),]),
+
+
+
         ("BoutonVignetteAchatArmory",                           MAP [
                                                                         ( ~/ComponentState/Normal,                TColorRTTI( Color = Transparent  ) ),
-                                                                        (~/ComponentState/Highlighted,            TColorRTTI( Color = BleuSelection ) ),
+                                                                        (~/ComponentState/Highlighted,            TColorRTTI( Color = bleuNavy_superclair ) ),
                                                                         ( ~/ComponentState/Clicked,               TColorRTTI( Color = BleuSelectionClicked ) ),
-                                                                        ( ~/ComponentState/Toggled,               TColorRTTI( Color = BleuSelectionHighlighted ) ),
-                                                                        ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = BleuSelectionHighlighted ) ),
+                                                                        ( ~/ComponentState/Toggled,               TColorRTTI( Color = bleuNavy_clair ) ),
+                                                                        ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = bleuNavy_superclair ) ),
                                                                         ( ~/ComponentState/ToggleClicked,         TColorRTTI( Color = BleuSelectionClicked ) ),
                                                                         ( ~/ComponentState/Grayed,                TColorRTTI( Color = Transparent ) ),
                                                                    ]),
         ("DeckCreator/AddUnitToDeck",                           MAP [
-                                                                        ( ~/ComponentState/Normal,                TColorRTTI( Color = BleuSelection ) ),
-                                                                        (~/ComponentState/Highlighted,            TColorRTTI( Color = BleuSelectionHighlighted ) ),
+                                                                        ( ~/ComponentState/Normal,                TColorRTTI( Color = bleuNavy_clair ) ),
+                                                                        (~/ComponentState/Highlighted,            TColorRTTI( Color = bleuNavy_superclair ) ),
                                                                         ( ~/ComponentState/Clicked,               TColorRTTI( Color = BleuSelectionClicked ) ),
                                                                         ( ~/ComponentState/Grayed,                TColorRTTI( Color = BleuSelectionGrayed ) ),
                                                                    ]),
         ("DeckCreator/RemoveUnitFromDeck",                      MAP [
-                                                                        ( ~/ComponentState/Normal,                TColorRTTI( Color = [0, 0, 0,240] ) ),
+                                                                        ( ~/ComponentState/Normal,                TColorRTTI( Color = bleuNavy_fonce ) ),
                                                                         ( ~/ComponentState/Clicked,               TColorRTTI( Color = [80,80,80,240] ) ),
                                                                         ( ~/ComponentState/Highlighted,           TColorRTTI( Color = [50,50,50,240] ) ),
                                                                         ( ~/ComponentState/Grayed,                TColorRTTI( Color = [0, 0, 0,20] ) ),
                                                                    ]),
-        ("DeckCreator/SlotLibre",                               MAP [ ( ~/ComponentState/Normal,      TColorRTTI( Color = [43,35,36,80] ) ), ]),
-        ("DeckCreator/SlotSelectionne",                         MAP [ ( ~/ComponentState/Normal,      TColorRTTI( Color = BleuSelection ) ), ]),
+        ("DeckCreator/SlotLibre",                               MAP [ ( ~/ComponentState/Normal,      TColorRTTI( Color = bleuNavy ) ), ]),
+        ("DeckCreator/SlotSelectionne",                         MAP [ ( ~/ComponentState/Normal,      TColorRTTI( Color = bleuNavy_clair ) ), ]),
         ("Cyan",                                                MAP [
                                                                         ( ~/ComponentState/Normal,      TColorRTTI( Color = [0,255,255,240] ) ),
                                                                         ( ~/ComponentState/Grayed,      TColorRTTI( Color = [80, 80, 80,160] ) ),
@@ -1903,7 +1910,7 @@ DefaultStyleGuide is TUIStyleGuide
 
         ("CheckBox",                                                MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BeigeSombre ) ), ]), //ancien composant
 
-        ("ObjectiveEtiquetteManager",                               MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Gris ) ), ]), //ancien composant
+        ("ScriptedLabelPole",                                       MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Gris ) ), ]), //ancien composant
 
         ("PanelScore/SoulignageRevenusJoueur",                      MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisMoyen ) ), ]),
         ("TimePanel/ButtonBorder",                                  MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = LightGray ) ), ]),
@@ -2027,6 +2034,8 @@ DefaultStyleGuide is TUIStyleGuide
 
         ("SovDivision1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [134,37,4,180] ) ), ]),
         ("SovDivision2",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [116,90,35,180] ) ), ]),
+        ("SovDivision3",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [201,59,12,180] ) ), ]),
+        ("SovDivision4",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [0,201,155,180] ) ), ]),
 
 
         ("AutoResolve/Title",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc ) ), ]),
@@ -2468,6 +2477,8 @@ DefaultStyleGuide is TUIStyleGuide
         ("division_US_5",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [84, 96, 76,255] ) ),]),
         ("division_US_6",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [114,126,106,255] ) ),]),
 
+        ("division_US_air",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = bleuNavy_clair ) ),]),
+
         // RFA
         ("division_RFA_1",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [172,184,184,255] ) ),]),
         ("division_RFA_2",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [86,93,94,255] ) ),]),
@@ -2478,8 +2489,11 @@ DefaultStyleGuide is TUIStyleGuide
 
         ("division_SOV_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [134,37,4,180] ) ), ]),
         ("division_SOV_2",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [116,90,35,180] ) ), ]),
+        ("division_SOV_3",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [201,59,12,180] ) ), ]),
 
-        ("division_DDR_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [139,65,5,220] ) ), ]),
+        // ("division_DDR_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [139,65,5,220] ) ), ]),
+        ("division_DDR_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [15,5,5,210] ) ), ]),
+        ("division_DDR_hq",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [91,80,80,210] ) ), ]),
 
         // OTAN DIVERS
         ("corps_otan",                            MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [19,42,19,255] ) ),]),
@@ -2557,13 +2571,52 @@ DefaultStyleGuide is TUIStyleGuide
         ("FondsmartGroupe",            MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [236,227,216,255] ) ),]),
         ("FondOnglet_new",            MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [176,178,152,255] ) ),]),
 
+        ("bouton_strategic_choice",                              MAP [
+                                                            ( ~/ComponentState/Normal,                TColorRTTI( Color = Transparent ) ),
+                                                            ( ~/ComponentState/Highlighted,           TColorRTTI( Color = [255,255,255,255] ) ),
+                                                            ( ~/ComponentState/Clicked,               TColorRTTI( Color = BlancPur ) ),
+                                                        ]),
+
         ("BoutonXP_deck",                              MAP [
-                                                            ( ~/ComponentState/Grayed,                TColorRTTI( Color = [50, 50, 50, 220] ) ),
-                                                            ( ~/ComponentState/Normal,                TColorRTTI( Color = Blanc184 ) ),
+                                                            ( ~/ComponentState/Grayed,                TColorRTTI( Color = bleuNavy_fonce ) ),
+                                                            ( ~/ComponentState/Normal,                TColorRTTI( Color = bleuNavy ) ),
                                                             ( ~/ComponentState/Highlighted,           TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Clicked,               TColorRTTI( Color = BlancPur ) ),
-                                                            ( ~/ComponentState/Toggled,               TColorRTTI( Color = [156,210,226,255] ) ),
-                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = [156,210,226,255] ) ),
+                                                            ( ~/ComponentState/Toggled,               TColorRTTI( Color = bleuNavy_clair ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = Blanc7 ) ),
+                                                        ]),
+        ("BoutonXP_deck_border",                              MAP [
+                                                            ( ~/ComponentState/Grayed,                TColorRTTI( Color = Transparent ) ),
+                                                            ( ~/ComponentState/Normal,                TColorRTTI( Color = Transparent ) ),
+                                                            ( ~/ComponentState/Highlighted,           TColorRTTI( Color = BlancPur ) ),
+                                                            ( ~/ComponentState/Clicked,               TColorRTTI( Color = BlancPur ) ),
+                                                            ( ~/ComponentState/Toggled,               TColorRTTI( Color = Transparent ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = Blanc7 ) ),
+                                                        ]),
+        ("BoutonXP_deck_chevron",                              MAP [
+                                                            ( ~/ComponentState/Grayed,                TColorRTTI( Color = bleuNavy_fonce ) ),
+                                                            ( ~/ComponentState/Normal,                TColorRTTI( Color = BlancPur ) ),
+                                                            ( ~/ComponentState/Highlighted,           TColorRTTI( Color = [14,28,31,255] ) ),
+                                                            ( ~/ComponentState/Clicked,               TColorRTTI( Color = BlancPur ) ),
+                                                            ( ~/ComponentState/Toggled,               TColorRTTI( Color = [14,28,31,255] ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = [14,28,31,255] ) ),
+                                                        ]),
+
+        ("text_couleur_bleunavy_standard",                              MAP [
+                                                            ( ~/ComponentState/Grayed,                TColorRTTI( Color = bleuNavy_fonce ) ),
+                                                            ( ~/ComponentState/Normal,                TColorRTTI( Color = BlancPur ) ),
+                                                            ( ~/ComponentState/Highlighted,           TColorRTTI( Color = [14,28,31,255] ) ),
+                                                            ( ~/ComponentState/Clicked,               TColorRTTI( Color = BlancPur ) ),
+                                                            ( ~/ComponentState/Toggled,               TColorRTTI( Color = [14,28,31,255] ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = [14,28,31,255] ) ),
+                                                        ]),
+        ("text_couleur_bleunavy_secondaire",                              MAP [
+                                                            ( ~/ComponentState/Grayed,                TColorRTTI( Color = bleuNavy_fonce ) ),
+                                                            ( ~/ComponentState/Normal,                TColorRTTI( Color = Blanc184 ) ),
+                                                            ( ~/ComponentState/Highlighted,           TColorRTTI( Color = [14,28,31,255] ) ),
+                                                            ( ~/ComponentState/Clicked,               TColorRTTI( Color = BlancPur ) ),
+                                                            ( ~/ComponentState/Toggled,               TColorRTTI( Color = [14,28,31,255] ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = [14,28,31,255] ) ),
                                                         ]),
         ("BoutonTransport_deck",                              MAP [
                                                             ( ~/ComponentState/Grayed,                TColorRTTI( Color = [20,20,20,20] ) ),
@@ -3226,12 +3279,9 @@ DefaultStyleGuide is TUIStyleGuide
         ("ObjectiveEtiquetteManager/FlareText",         MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc7 ) ), ]),
         ("ObjectiveEtiquetteManager/Text",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BeigeSombre ) ), ]),
         ("ObjectiveLabel/Primary/Title",                MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = JauneOrange2 ) ), ]),
-        ("ObjectiveLabel/Primary/Content",              MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = JauneOrangeClair ) ), ]),
         ("ObjectiveLabel/Bonus/Title",                  MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc7 ) ), ]),
-        ("ObjectiveLabel/Bonus/Content",                MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisClair ) ), ]),
         ("ObjectiveLabel/Info/Title",                   MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisMoyen2 ) ), ]),
-        ("ObjectiveLabel/Info/Content",                 MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = GrisClair9 ) ), ]),
-        ("ObjectiveLabel/New",                          MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BlancPur ) ), ]),
+        ("ScriptedLabel/New",                           MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = BlancPur ) ), ]),
         ("ObjectiveLabel/Failed",                       MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = RougeVif ) ), ]),
         ("ObjectiveLabel/Completed",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Vert4 ) ), ]),
         ("PanneauPhase/TextePhase",                     MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = Blanc ) ), ]),

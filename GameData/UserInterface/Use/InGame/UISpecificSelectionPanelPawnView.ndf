@@ -203,7 +203,7 @@ CombatGroupsTabInStrategic is BUCKDraggableContainerDescriptor
 
             RadioButtonManager = ~/GroupsTabManager
             IsTogglable = true
-            LeftClickSound = ~/ClickSound_page
+            LeftClickSound = SoundEvent_SteelmanPawnCombatGroup
             HidePointerEvents = false
             MaskEvents = false
 

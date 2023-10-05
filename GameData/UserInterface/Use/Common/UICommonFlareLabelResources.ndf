@@ -5,6 +5,7 @@ CommonFlareLabelResources is TUISpecificFlareLabelResources
     Layer = $/UserInterface/UILayer_Labels
 
     FlareLabelMagnificationMultiplier = 1.0
+    FadeTime        = 0.5
 
     FlareAttackLabelDescriptor = FlareLabelDescriptor
     (

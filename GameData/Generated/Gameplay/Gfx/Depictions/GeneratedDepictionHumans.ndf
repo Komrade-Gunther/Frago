@@ -25,6 +25,30 @@ HumanSubDepictionsShowroom_81mm_mortar_UK is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK
     ),
 ]
+HumanSubDepictions_AT_2A45_SprutB_SOV is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_AT_2A45_SprutB_SOV is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
 HumanSubDepictions_AT_D44_85mm_DDR is 
 [
     SubDepiction_ServantLeft
@@ -265,6 +289,30 @@ HumanSubDepictionsShowroom_ATteam_ITOW_US is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_GI_spe_D_US
     ),
 ]
+HumanSubDepictions_ATteam_KonkursM_TTsko_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_ATteam_KonkursM_TTsko_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+    ),
+]
 HumanSubDepictions_ATteam_Konkurs_DDR is 
 [
     SubDepiction_ATGMServantLeft
@@ -311,6 +359,30 @@ HumanSubDepictionsShowroom_ATteam_Konkurs_SOV is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
+HumanSubDepictions_ATteam_Konkurs_TTsko_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_ATteam_Konkurs_TTsko_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
     ),
 ]
 HumanSubDepictions_ATteam_Milan_1_FR is 
@@ -623,6 +695,30 @@ HumanSubDepictionsShowroom_ATteam_RCL_SPG9_FJ_DDR is
     ShowroomSubDepiction_ServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FJ_DDR
+    ),
+]
+HumanSubDepictions_ATteam_RCL_SPG9_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_ATteam_RCL_SPG9_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
     ),
 ]
 HumanSubDepictions_ATteam_RCL_SPG9_VDV_SOV is 
@@ -1224,6 +1320,40 @@ HumanSubDepictionsShowroom_DCA_ZU_23_2_SOV is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV
     ),
 ]
+HumanSubDepictions_DCA_ZU_23_2_TTsko_SOV is 
+[
+    SubDepiction_ServantWalkOnlyLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_GunnerIdleOnlyLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ServantWalkOnlyRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+    SubDepiction_GunnerIdleOnlyRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_DCA_ZU_23_2_TTsko_SOV is 
+[
+    ShowroomSubDepiction_GunnerLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_GunnerRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+    ),
+]
 HumanSubDepictions_FH70_155mm_RFA is 
 [
     SubDepiction_ServantWalkOnlyLeft
@@ -1440,6 +1570,30 @@ HumanSubDepictionsShowroom_HMGteam_AGS17_SOV is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
+HumanSubDepictions_HMGteam_AGS17_TTsko_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_AGS17_TTsko_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
     ),
 ]
 HumanSubDepictions_HMGteam_AGS17_VDV_SOV is 
@@ -1778,6 +1932,30 @@ HumanSubDepictionsShowroom_HMGteam_NSV_SOV is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
     ),
 ]
+HumanSubDepictions_HMGteam_NSV_TTsko_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_NSV_TTsko_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+    ),
+]
 HumanSubDepictions_HMGteam_PKM_DDR is 
 [
     SubDepiction_ATGMServantLeft
@@ -1850,6 +2028,30 @@ HumanSubDepictionsShowroom_HMGteam_PKM_SOV is
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
     ),
 ]
+HumanSubDepictions_HMGteam_PKM_TTsko_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_HMGteam_PKM_TTsko_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+    ),
+]
 HumanSubDepictions_HMGteam_PKM_VDV_SOV is 
 [
     SubDepiction_ATGMServantLeft
@@ -1872,6 +2074,30 @@ HumanSubDepictionsShowroom_HMGteam_PKM_VDV_SOV is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV
+    ),
+]
+HumanSubDepictions_Howz_2A36_Giatsint_B_SOV is 
+[
+    SubDepiction_ServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV_LOW
+    ),
+    SubDepiction_ServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Howz_2A36_Giatsint_B_SOV is 
+[
+    ShowroomSubDepiction_ServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV
+    ),
+    ShowroomSubDepiction_ServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
     ),
 ]
 HumanSubDepictions_Howz_D20_152mm_DDR is 
@@ -2222,6 +2448,15 @@ HumanSubDepictions_Iltis_trans_RFA is
     ),
 ]
 HumanSubDepictionsShowroom_Iltis_trans_RFA is []
+HumanSubDepictions_KrAZ_255B_SOV is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_RFA
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_RFA_LOW
+    ),
+]
+HumanSubDepictionsShowroom_KrAZ_255B_SOV is []
 HumanSubDepictions_LandRover_CMD_UK is 
 [
     SubDepiction_Driver
@@ -2357,6 +2592,15 @@ HumanSubDepictions_M1038_Humvee_US is
     ),
 ]
 HumanSubDepictionsShowroom_M1038_Humvee_US is []
+HumanSubDepictions_M151A2_TOW_NG_US is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_US
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_US_LOW
+    ),
+]
+HumanSubDepictionsShowroom_M151A2_TOW_NG_US is []
 HumanSubDepictions_M151A2_scout_US is 
 [
     SubDepiction_Driver
@@ -2420,6 +2664,15 @@ HumanSubDepictions_M35_trans_tuto_US is
     ),
 ]
 HumanSubDepictionsShowroom_M35_trans_tuto_US is []
+HumanSubDepictions_M548A2_supply_US is 
+[
+    SubDepiction_Driver
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Driver_US
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Driver_US_LOW
+    ),
+]
+HumanSubDepictionsShowroom_M548A2_supply_US is []
 HumanSubDepictions_M998_Avenger_US is 
 [
     SubDepiction_Driver
@@ -2579,6 +2832,30 @@ HumanSubDepictionsShowroom_Mortier_2S12_120mm_SOV is
     ShowroomSubDepiction_ATGMServantRight
     (
         MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV
+    ),
+]
+HumanSubDepictions_Mortier_2S12_120mm_TTsko_SOV is 
+[
+    SubDepiction_ATGMServantLeft
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko_LOW
+    ),
+    SubDepiction_ATGMServantRight
+    (
+        MeshDescriptorHigh = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
+        MeshDescriptorLow = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko_LOW
+    ),
+]
+HumanSubDepictionsShowroom_Mortier_2S12_120mm_TTsko_SOV is 
+[
+    ShowroomSubDepiction_ATGMServantLeft
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko
+    ),
+    ShowroomSubDepiction_ATGMServantRight
+    (
+        MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko
     ),
 ]
 HumanSubDepictions_Mortier_2S12_120mm_VDV_SOV is 
@@ -3247,6 +3524,7 @@ HumanSubDepictionsShowroom_ZSU_57_2_DDR is []
 TransportedServantAlternativesCount is 
 MAP[
     ("81mm_mortar_UK", 2),
+    ("AT_2A45_SprutB_SOV", 2),
     ("AT_D44_85mm_DDR", 2),
     ("AT_D44_85mm_SOV", 2),
     ("AT_D44_85mm_VDV_SOV", 2),
@@ -3257,8 +3535,10 @@ MAP[
     ("ATteam_Fagot_FJ_DDR", 2),
     ("ATteam_Fagot_SOV", 2),
     ("ATteam_ITOW_US", 2),
+    ("ATteam_KonkursM_TTsko_SOV", 2),
     ("ATteam_Konkurs_DDR", 2),
     ("ATteam_Konkurs_SOV", 2),
+    ("ATteam_Konkurs_TTsko_SOV", 2),
     ("ATteam_Milan_1_FR", 2),
     ("ATteam_Milan_1_RFA", 2),
     ("ATteam_Milan_1_UK", 2),
@@ -3272,6 +3552,7 @@ MAP[
     ("ATteam_RCL_M40A1_RFA", 2),
     ("ATteam_RCL_SPG9_DDR", 2),
     ("ATteam_RCL_SPG9_FJ_DDR", 2),
+    ("ATteam_RCL_SPG9_SOV", 2),
     ("ATteam_RCL_SPG9_VDV_SOV", 2),
     ("ATteam_TOW2_US", 2),
     ("ATteam_TOW2_para_US", 2),
@@ -3298,6 +3579,7 @@ MAP[
     ("DCA_Rapier_UK", 2),
     ("DCA_ZU_23_2_DDR", 2),
     ("DCA_ZU_23_2_SOV", 2),
+    ("DCA_ZU_23_2_TTsko_SOV", 2),
     ("FH70_155mm_RFA", 2),
     ("FH70_155mm_UK", 2),
     ("Faun_kraka_RFA", 1),
@@ -3310,6 +3592,7 @@ MAP[
     ("HMGteam_AANF1_para_FR", 2),
     ("HMGteam_AGS17_DDR", 2),
     ("HMGteam_AGS17_SOV", 2),
+    ("HMGteam_AGS17_TTsko_SOV", 2),
     ("HMGteam_AGS17_VDV_SOV", 2),
     ("HMGteam_M2HB_AB_US", 2),
     ("HMGteam_M2HB_FR", 2),
@@ -3324,10 +3607,13 @@ MAP[
     ("HMGteam_Mk19_AB_US", 2),
     ("HMGteam_NSV_DDR", 2),
     ("HMGteam_NSV_SOV", 2),
+    ("HMGteam_NSV_TTsko_SOV", 2),
     ("HMGteam_PKM_DDR", 2),
     ("HMGteam_PKM_FJ_DDR", 2),
     ("HMGteam_PKM_SOV", 2),
+    ("HMGteam_PKM_TTsko_SOV", 2),
     ("HMGteam_PKM_VDV_SOV", 2),
+    ("Howz_2A36_Giatsint_B_SOV", 2),
     ("Howz_D20_152mm_DDR", 2),
     ("Howz_D20_152mm_SOV", 2),
     ("Howz_D30_122mm_DDR", 2),
@@ -3345,6 +3631,7 @@ MAP[
     ("Iltis_RFA", 1),
     ("Iltis_reco_RFA", 1),
     ("Iltis_trans_RFA", 1),
+    ("KrAZ_255B_SOV", 1),
     ("LandRover_CMD_UK", 1),
     ("LandRover_MILAN_Para_UK", 1),
     ("LandRover_MILAN_UK", 1),
@@ -3360,6 +3647,7 @@ MAP[
     ("M1025_Humvee_scout_US", 1),
     ("M1025_Humvee_scout_tuto_US", 1),
     ("M1038_Humvee_US", 1),
+    ("M151A2_TOW_NG_US", 1),
     ("M151A2_scout_US", 1),
     ("M151_MUTT_CMD_US", 1),
     ("M151_MUTT_RCL_DDR", 1),
@@ -3367,6 +3655,7 @@ MAP[
     ("M35_supply_US", 1),
     ("M35_trans_US", 1),
     ("M35_trans_tuto_US", 1),
+    ("M548A2_supply_US", 1),
     ("M998_Avenger_US", 2),
     ("M998_Humvee_US", 1),
     ("MAN_Kat_6x6_RFA", 1),
@@ -3376,6 +3665,7 @@ MAP[
     ("Mortier_2B9_Vasilek_SOV", 2),
     ("Mortier_2B9_Vasilek_nonPara_SOV", 2),
     ("Mortier_2S12_120mm_SOV", 2),
+    ("Mortier_2S12_120mm_TTsko_SOV", 2),
     ("Mortier_2S12_120mm_VDV_SOV", 2),
     ("Mortier_MORT61_120mm_FR", 2),
     ("Mortier_MORT61_120mm_para_FR", 2),
@@ -3443,6 +3733,8 @@ TransportedServantAlternatives is
 [
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK SelectorId = [ "81mm_mortar_UK", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_UK SelectorId = [ "81mm_mortar_UK", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "AT_2A45_SprutB_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "AT_2A45_SprutB_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_DDR SelectorId = [ "AT_D44_85mm_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_DDR SelectorId = [ "AT_D44_85mm_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "AT_D44_85mm_SOV", "01" ] ),
@@ -3463,10 +3755,14 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "ATteam_Fagot_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_US SelectorId = [ "ATteam_ITOW_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_GI_spe_D_US SelectorId = [ "ATteam_ITOW_US", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko SelectorId = [ "ATteam_KonkursM_TTsko_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko SelectorId = [ "ATteam_KonkursM_TTsko_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_DDR SelectorId = [ "ATteam_Konkurs_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_DDR SelectorId = [ "ATteam_Konkurs_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "ATteam_Konkurs_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "ATteam_Konkurs_SOV", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko SelectorId = [ "ATteam_Konkurs_TTsko_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko SelectorId = [ "ATteam_Konkurs_TTsko_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR SelectorId = [ "ATteam_Milan_1_FR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FR SelectorId = [ "ATteam_Milan_1_FR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_RFA SelectorId = [ "ATteam_Milan_1_RFA", "01" ] ),
@@ -3493,6 +3789,8 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FJ_DDR SelectorId = [ "ATteam_RCL_SPG9_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FJ_DDR SelectorId = [ "ATteam_RCL_SPG9_FJ_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FJ_DDR SelectorId = [ "ATteam_RCL_SPG9_FJ_DDR", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "ATteam_RCL_SPG9_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "ATteam_RCL_SPG9_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_VDV SelectorId = [ "ATteam_RCL_SPG9_VDV_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_VDV SelectorId = [ "ATteam_RCL_SPG9_VDV_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_US SelectorId = [ "ATteam_TOW2_US", "01" ] ),
@@ -3540,6 +3838,8 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_DDR SelectorId = [ "DCA_ZU_23_2_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_VDV SelectorId = [ "DCA_ZU_23_2_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV SelectorId = [ "DCA_ZU_23_2_SOV", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko SelectorId = [ "DCA_ZU_23_2_TTsko_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko SelectorId = [ "DCA_ZU_23_2_TTsko_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_RFA SelectorId = [ "FH70_155mm_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_PzGrenadier_Officer_D_RFA SelectorId = [ "FH70_155mm_RFA", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_UK SelectorId = [ "FH70_155mm_UK", "01" ] ),
@@ -3560,6 +3860,8 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_DDR SelectorId = [ "HMGteam_AGS17_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "HMGteam_AGS17_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "HMGteam_AGS17_SOV", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko SelectorId = [ "HMGteam_AGS17_TTsko_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko SelectorId = [ "HMGteam_AGS17_TTsko_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_VDV SelectorId = [ "HMGteam_AGS17_VDV_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV SelectorId = [ "HMGteam_AGS17_VDV_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Airborne_G_US SelectorId = [ "HMGteam_M2HB_AB_US", "01" ] ),
@@ -3588,14 +3890,20 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_DDR SelectorId = [ "HMGteam_NSV_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "HMGteam_NSV_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "HMGteam_NSV_SOV", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko SelectorId = [ "HMGteam_NSV_TTsko_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko SelectorId = [ "HMGteam_NSV_TTsko_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_DDR SelectorId = [ "HMGteam_PKM_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_DDR SelectorId = [ "HMGteam_PKM_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FJ_DDR SelectorId = [ "HMGteam_PKM_FJ_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_FJ_DDR SelectorId = [ "HMGteam_PKM_FJ_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "HMGteam_PKM_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "HMGteam_PKM_SOV", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko SelectorId = [ "HMGteam_PKM_TTsko_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko SelectorId = [ "HMGteam_PKM_TTsko_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_VDV SelectorId = [ "HMGteam_PKM_VDV_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV SelectorId = [ "HMGteam_PKM_VDV_SOV", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "Howz_2A36_Giatsint_B_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "Howz_2A36_Giatsint_B_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_DDR SelectorId = [ "Howz_D20_152mm_DDR", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_DDR SelectorId = [ "Howz_D20_152mm_DDR", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "Howz_D20_152mm_SOV", "01" ] ),
@@ -3626,6 +3934,7 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_reco_RFA", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_RFA SelectorId = [ "Iltis_trans_RFA", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_RFA SelectorId = [ "KrAZ_255B_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_UK SelectorId = [ "LandRover_CMD_UK", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_Para_UK SelectorId = [ "LandRover_MILAN_Para_UK", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_UK SelectorId = [ "LandRover_MILAN_UK", "01" ] ),
@@ -3641,6 +3950,7 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M1025_Humvee_scout_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M1025_Humvee_scout_tuto_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M1038_Humvee_US", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M151A2_TOW_NG_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M151A2_scout_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M151_MUTT_CMD_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_SOV SelectorId = [ "M151_MUTT_RCL_DDR", "01" ] ),
@@ -3648,6 +3958,7 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M35_supply_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M35_trans_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M35_trans_tuto_US", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M548A2_supply_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Airborne_G_US SelectorId = [ "M998_Avenger_US", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Airborne_D_US SelectorId = [ "M998_Avenger_US", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Driver_US SelectorId = [ "M998_Humvee_US", "01" ] ),
@@ -3663,6 +3974,8 @@ TransportedServantAlternatives is
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "Mortier_2B9_Vasilek_nonPara_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_SOV SelectorId = [ "Mortier_2S12_120mm_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_SOV SelectorId = [ "Mortier_2S12_120mm_SOV", "02" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_TTsko SelectorId = [ "Mortier_2S12_120mm_TTsko_SOV", "01" ] ),
+    TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_D_TTsko SelectorId = [ "Mortier_2S12_120mm_TTsko_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_VDV SelectorId = [ "Mortier_2S12_120mm_VDV_SOV", "01" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_Spe_D_VDV SelectorId = [ "Mortier_2S12_120mm_VDV_SOV", "02" ] ),
     TDepictionDescriptor( MeshDescriptor = $/GFX/DepictionResources/MeshDescriptor_Servant_G_FR SelectorId = [ "Mortier_MORT61_120mm_FR", "01" ] ),

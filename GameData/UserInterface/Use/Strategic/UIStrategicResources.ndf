@@ -40,13 +40,13 @@ StrategicResource is TUISpecificStrategicResources
     MainContainerResource       = ~/StrategicMainContainerResource
 
     CommonHUDResources          = ~/InGameHUDResource
-    LabelResource               = ~/SpecificInGameLabelResource
+    LabelResource               = ~/CommonLabelResource
     LDHintResource              = ~/SpecificInGameLDHintResource
     GabaritResources            = ~/StrategicGabaritResources
     ZoCResources                = ~/StrategicZoCResources
     WarningPanelResources       = ~/WarningPanelResources
     LabelsOnMapResources        = ~/StrategicLabelsOnMapResources
-    ObjectivesResource          = ~/StrategicObjectivesResources
+    ScriptedLabelResources      = ~/StrategicScriptedLabelResources
     FeedbackManagerDescriptor   = ~/StrategicFeedbackMessageManagerDescriptor
     UnitLabelResource           = ~/SpecificStrategicUnitLabelResources
     FlareLabelResources         = ~/CommonFlareLabelResources

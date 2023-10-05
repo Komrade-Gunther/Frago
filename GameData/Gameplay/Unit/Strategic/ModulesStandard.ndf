@@ -29,9 +29,8 @@ PawnPositionModuleDescriptor is TPositionModuleDescriptor
     NearGroundFlyingAltitude   = 0
 )
 
-StrategicStateEngineModuleDescriptor is TStateEngineModuleDescriptor
+StrategicStateEngineModuleDescriptor is TStateEngineUnitModuleDescriptor
 (
-    InitialStateId = 'UnitIdle'
     StateEngineUpdateMode = WorldControllerAccess_InWorld
 )
 

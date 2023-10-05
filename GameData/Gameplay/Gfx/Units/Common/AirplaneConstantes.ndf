@@ -18,6 +18,13 @@ DiveAttackStrategyDescriptor is TDiveAttackStrategyDescriptor
     MinDiveAlignmentDuration = 0.5 // Durée minimale d'alignement lors d'un Dive, en secondes
 )
 
+DiveMissileAttackStrategyDescriptor is TDiveMissileAttackStrategyDescriptor
+(
+    MinPitchForDive = 5 * Degre // Pitch minimal autorisé pour un Dive
+    MaxPitchForDive = 65 * Degre  // Pitch maximal autorisé pour un Dive
+    MinDiveAlignmentDuration = 0.5 // Durée minimale d'alignement lors d'un Dive, en secondes
+)
+
 DiveBombAttackStrategyDescriptor is TDiveBombAttackStrategyDescriptor
 (
     MinPitchForDiveBomb = 10 * Degre // Pitch minimal autorisé pour un DiveBomb
@@ -44,8 +51,4 @@ StukaNosediveAttackStrategyDescriptor is TStukaNosediveAttackStrategyDescriptor
     AgilityMultiplicator = 2.5
 )
 
-AirGroundMissileAttackStrategyDescriptor is TAirGroundMissileAttackStrategyDescriptor
-(
-    // Un avion qui veut lancer un missile air-sol ne remonte à son altitude de croisière que s'il est plus loin que X fois la portée du missile
-    AirGroundMissileRangeRatioForCruiseAltitude = 2.0
-)
+AirGroundMissileAttackStrategyDescriptor is TAirGroundMissileAttackStrategyDescriptor()

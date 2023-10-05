@@ -166,6 +166,30 @@ Gfx_AH1S_Cobra_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         SubGenerators_Showroom_AH1S_Cobra_US,
     ]
 )
+Gfx_AH64_Apache_NG_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_AH64_Apache_NG_US
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = VECTOR[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = VECTOR[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_AH64_Apache_NG_US,
+    ]
+)
 Gfx_AH64_Apache_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
 (
     MeshDescriptor = $/GFX/DepictionResources/Modele_AH64_Apache_US
@@ -840,6 +864,21 @@ Gfx_F15C_Eagle_AA_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_F15C_Eagle_AA_US_train
+        ),
+    ]
+)
+Gfx_F15E_StrikeEagle_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_F15E_StrikeEagle_US
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F15E_StrikeEagle_US,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_F15E_StrikeEagle_US_train
         ),
     ]
 )
@@ -1869,6 +1908,21 @@ Gfx_MiG_23MF_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_DDR_train
+        ),
+    ]
+)
+Gfx_MiG_23MLD_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MLD_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_23MLD_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MLD_SOV_train
         ),
     ]
 )
@@ -3462,6 +3516,21 @@ Gfx_Su_22_AT_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         ),
     ]
 )
+Gfx_Su_22_AT_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_AT_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_22_AT_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_AT_SOV_train
+        ),
+    ]
+)
 Gfx_Su_22_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
 (
     MeshDescriptor = $/GFX/DepictionResources/Modele_Su_22_DDR
@@ -3665,6 +3734,21 @@ Gfx_Su_24M_nplm_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_Su_24M_nplm_SOV_train
+        ),
+    ]
+)
+Gfx_Su_25T_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25T_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Su_25T_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_Su_25T_SOV_train
         ),
     ]
 )
@@ -3910,6 +3994,26 @@ Gfx_Tornado_IDS_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_Tornado_IDS_RFA_train
+        ),
+    ]
+)
+Gfx_UH1A_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_UH1A_US
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = VECTOR[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = VECTOR[0, 1, 0]
+            RotationInDegree = -30
         ),
     ]
 )

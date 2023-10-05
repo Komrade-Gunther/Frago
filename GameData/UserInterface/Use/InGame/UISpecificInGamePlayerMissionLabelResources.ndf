@@ -7,6 +7,8 @@ SpecificInGamePlayerMissionLabelResources is TUISpecificPlayerMissionLabelResour
     PlayerMissionLabelMagnificationMultiplier = 1.0
     PlayerMissionUserInputLayer  = $/M3D/Input/UserInputLayerHandler/InputLayer_PlayerMission
 
+    FadeTime        = 0.5
+
     // Faire le lien avec PlayerMissionConstantes.ndf
     PlayerMissionLabelDescriptor = MAP
     [

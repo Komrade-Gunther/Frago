@@ -385,21 +385,21 @@ DeckEditorPackXPSelector is BUCKListDescriptor
         BoutonXp
         (
             ElementName = "Veterancy/3"
-            TextureToken = "CommonTexture_Chevron_3"
+            TextureToken = "CommonTexture_Deck_Chevron_3"
             HintTitle = "DES_UE_VE3"
             HintBody = "pi_ve3"
         ),
         BoutonXp
         (
             ElementName = "Veterancy/2"
-            TextureToken = "CommonTexture_Chevron_2"
+            TextureToken = "CommonTexture_Deck_Chevron_2"
             HintTitle = "DES_UE_VE2"
             HintBody = "pi_ve2"
         ),
         BoutonXp
         (
             ElementName = "Veterancy/1"
-            TextureToken = "CommonTexture_Chevron_1"
+            TextureToken = "CommonTexture_Deck_Chevron_1"
             HintTitle = "DES_UE_VE1"
             HintBody = "pi_ve1"
         ),
@@ -423,6 +423,9 @@ template UnitCornerButton
     TextToken : string,
     TextSizeToken : string,
     TextTypefaceToken : string,
+    TextColorToken : string = "BoutonUnitPatternClair",
+    HasBorder : bool = true,
+
 ] is ConfirmButton
 (
     ElementName = <ElementName>
@@ -434,8 +437,9 @@ template UnitCornerButton
     BackgroundBlockColorToken = <BackgroundBlockColorToken>
     BorderThicknessToken = "1"
     BorderLineColorToken = "BoutonUnitPatternFixe"
+    HasBorder = <HasBorder>
 
-    TextColorToken = "BoutonUnitPatternClair"
+    TextColorToken = <TextColorToken>
     TextToken = <TextToken>
     TextSizeToken = <TextSizeToken>
     TextTypefaceToken = <TextTypefaceToken>
@@ -457,6 +461,8 @@ AddUnitButton is UnitCornerButton
     TextToken = "ARADDU"
     TextSizeToken = "30"
     TextTypefaceToken = "Liberator"
+    TextColorToken = 'BoutonXP_deck_chevron'
+    HasBorder = false
 )
 
 //-------------------------------------------------------------------------------------
@@ -655,8 +661,8 @@ private UnitButtonUnitNameText is BUCKSpecificTextWithHint
 
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
-    TextColor = "White"
-    TextSize = "11"
+    TextColor = "BoutonXP_deck_chevron"
+    TextSize = "13"
 
     ClipContent = true
 )
@@ -864,8 +870,8 @@ private UnitButtonAdditionalUnitNameText is BUCKTextDescriptor
 
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
-    TextColor = "SD2_Blanc184"
-    TextSize = "SD2_Petit"
+    TextColor = "text_couleur_bleunavy_secondaire"
+    TextSize = "13"
 
     ClipContent = true
 
@@ -1151,7 +1157,7 @@ XPUnit is BUCKContainerDescriptor
     )
 
     HasBackground = true
-    BackgroundBlockColorToken = "H2_bleu_2"
+    BackgroundBlockColorToken = "bleuNavy_fonce"
 
     Components =
     [
@@ -1333,8 +1339,8 @@ NbUnitInThePack is BUCKContainerDescriptor
                 PanelRoundedCorner
                 (
                     Radius = 2
-                    BackgroundBlockColorToken = "BoutonTemps"
-                    BorderLineColorToken = "BoutonTemps"
+                    BackgroundBlockColorToken = "NbUnitsInPackContainer_color"
+                    BorderLineColorToken = "NbUnitsInPackContainer_color"
                 )
             ]
         )
@@ -1359,7 +1365,8 @@ NombreDePack is BUCKTextDescriptor
         InterLine = 0
     )
 
-    TextStyle = "LabelUnitNameStroke"
+    // TextStyle = "LabelUnitNameStroke"
+    TextStyle = "Default"
 
     HorizontalFitStyle = ~/FitStyle/FitToContent
     VerticalFitStyle = ~/FitStyle/UserDefined
@@ -1370,10 +1377,12 @@ NombreDePack is BUCKTextDescriptor
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
     TextToken = "HPROD_NBUB"
 
+    HasBackground = true
+    BackgroundBlockColorToken = 'bleuNavy_fonce'
     TextColor = "Cyan"
     TextSize = "14"
 
-    TextPadding = TRTTILength4( Magnifiable = [5.0, 0.0, 0.0, 0.0] )
+    TextPadding = TRTTILength4( Magnifiable = [5.0, 0.0, 5.0, 0.0] )
 
     Hint = BUCKSpecificHintableArea
    (

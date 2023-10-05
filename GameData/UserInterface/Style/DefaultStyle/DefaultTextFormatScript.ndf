@@ -2062,6 +2062,24 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
         ),
         //-------------------------------------------------------------------------------------
 
+        (
+            "US_3AD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_US_3AD")
+        ),
+        (
+            "RFA_5PZ",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_5PZ")
+        ),
+        (
+            "RFA_terrkdo",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_terrkdo")
+        ),
+        (
+            "SOV_57_GVMSD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_57_GVMSD")
+        ),
+        //-------------------------------------------------------------------------------------
+
 
         (
             "TCH",

@@ -5,7 +5,16 @@
 FXWeapon_AutoCanon_AP_20mm_M621_GIAT is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -26,7 +35,20 @@ FXWeapon_AutoCanon_AP_20mm_M621_GIAT is FiringAndProjectile
 FXWeapon_AutoCanon_AP_20mm_M621_GIAT_AMX30 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -47,7 +69,20 @@ FXWeapon_AutoCanon_AP_20mm_M621_GIAT_AMX30 is FiringAndProjectile
 FXWeapon_AutoCanon_AP_20mm_MK_20_Rh_202 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -68,7 +103,16 @@ FXWeapon_AutoCanon_AP_20mm_MK_20_Rh_202 is FiringAndProjectile
 FXWeapon_AutoCanon_AP_23mm_Bitube_Gsh23L is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -89,7 +133,20 @@ FXWeapon_AutoCanon_AP_23mm_Bitube_Gsh23L is FiringAndProjectile
 FXWeapon_AutoCanon_AP_23mm_NS23 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -110,7 +167,20 @@ FXWeapon_AutoCanon_AP_23mm_NS23 is FiringAndProjectile
 FXWeapon_AutoCanon_AP_25mm_KBA is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -131,7 +201,20 @@ FXWeapon_AutoCanon_AP_25mm_KBA is FiringAndProjectile
 FXWeapon_AutoCanon_AP_25mm_M242_Bushmaster_Late is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -173,7 +256,20 @@ FXWeapon_AutoCanon_AP_30mm_24A2 is FiringAndProjectile
 FXWeapon_AutoCanon_AP_30mm_24A2_BMP2 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -194,7 +290,20 @@ FXWeapon_AutoCanon_AP_30mm_24A2_BMP2 is FiringAndProjectile
 FXWeapon_AutoCanon_AP_30mm_2A72_BMP3 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -215,7 +324,16 @@ FXWeapon_AutoCanon_AP_30mm_2A72_BMP3 is FiringAndProjectile
 FXWeapon_AutoCanon_AP_30mm_Bitube_Gsh30k is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -236,7 +354,20 @@ FXWeapon_AutoCanon_AP_30mm_Bitube_Gsh30k is FiringAndProjectile
 FXWeapon_AutoCanon_AP_30mm_L21A1_RARDEN is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -257,7 +388,16 @@ FXWeapon_AutoCanon_AP_30mm_L21A1_RARDEN is FiringAndProjectile
 FXWeapon_AutoCanon_AP_30mm_M230 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -278,7 +418,20 @@ FXWeapon_AutoCanon_AP_30mm_M230 is FiringAndProjectile
 FXWeapon_AutoCanon_AP_M693_F1_20mm is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -299,7 +452,20 @@ FXWeapon_AutoCanon_AP_M693_F1_20mm is FiringAndProjectile
 FXWeapon_AutoCanon_AP_T20_20mm is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -320,7 +486,16 @@ FXWeapon_AutoCanon_AP_T20_20mm is FiringAndProjectile
 FXWeapon_AutoCanon_HE_20mm_M621_GIAT is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -341,7 +516,20 @@ FXWeapon_AutoCanon_HE_20mm_M621_GIAT is FiringAndProjectile
 FXWeapon_AutoCanon_HE_20mm_M621_GIAT_AMX30 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -362,7 +550,20 @@ FXWeapon_AutoCanon_HE_20mm_M621_GIAT_AMX30 is FiringAndProjectile
 FXWeapon_AutoCanon_HE_20mm_MK_20_Rh_202 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -383,7 +584,16 @@ FXWeapon_AutoCanon_HE_20mm_MK_20_Rh_202 is FiringAndProjectile
 FXWeapon_AutoCanon_HE_23mm_Bitube_Gsh23L is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -404,7 +614,20 @@ FXWeapon_AutoCanon_HE_23mm_Bitube_Gsh23L is FiringAndProjectile
 FXWeapon_AutoCanon_HE_23mm_NS23 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -425,7 +648,20 @@ FXWeapon_AutoCanon_HE_23mm_NS23 is FiringAndProjectile
 FXWeapon_AutoCanon_HE_25mm_KBA is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -446,7 +682,20 @@ FXWeapon_AutoCanon_HE_25mm_KBA is FiringAndProjectile
 FXWeapon_AutoCanon_HE_25mm_M242_Bushmaster_Late is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -488,7 +737,20 @@ FXWeapon_AutoCanon_HE_30mm_24A2 is FiringAndProjectile
 FXWeapon_AutoCanon_HE_30mm_24A2_BMP2 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_M242_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -509,7 +771,20 @@ FXWeapon_AutoCanon_HE_30mm_24A2_BMP2 is FiringAndProjectile
 FXWeapon_AutoCanon_HE_30mm_2A72_BMP3 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -530,7 +805,16 @@ FXWeapon_AutoCanon_HE_30mm_2A72_BMP3 is FiringAndProjectile
 FXWeapon_AutoCanon_HE_30mm_Bitube_Gsh30k is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_2( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -551,7 +835,20 @@ FXWeapon_AutoCanon_HE_30mm_Bitube_Gsh30k is FiringAndProjectile
 FXWeapon_AutoCanon_HE_30mm_L21A1_RARDEN is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -572,7 +869,16 @@ FXWeapon_AutoCanon_HE_30mm_L21A1_RARDEN is FiringAndProjectile
 FXWeapon_AutoCanon_HE_30mm_M230 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -593,7 +899,20 @@ FXWeapon_AutoCanon_HE_30mm_M230 is FiringAndProjectile
 FXWeapon_AutoCanon_HE_M693_F1_20mm is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -614,7 +933,20 @@ FXWeapon_AutoCanon_HE_M693_F1_20mm is FiringAndProjectile
 FXWeapon_AutoCanon_HE_T20_20mm is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_1( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -673,6 +1005,8 @@ FXWeapon_Bomb_FAB_500kg_x4 is TIntroduceMobileHappening( Happening = FXProjectil
 FXWeapon_Bomb_FAB_500kg_x6 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB500 ) )
 
 FXWeapon_Bomb_FAB_500kg_x8 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_FAB500 ) )
+
+FXWeapon_Bomb_GBU_24_x2 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_GBU24 ) )
 
 FXWeapon_Bomb_Matra_250kg_x10 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA250 ) )
 
@@ -5803,6 +6137,22 @@ FXWeapon_Howz_Canon_D22_Howitzer_152mm_late_guided is FiringAndProjectile
     ]
 )
 
+FXWeapon_Howz_Canon_D22_Howitzer_152mm_late_guided_SMOKE is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_13( Action = $/GFX/GameFx/fx_tir_obus_155mm_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXProjectile_17( Action = $/GFX/GameFx/fx_traine_obus_155mm_1 ),
+                FXProjectile_17( Action = $/GFX/GameFx/fx_traine_obus_155mm_2 ),
+                FXProjectile_17( Action = $/GFX/GameFx/fx_traine_obus_155mm_3 ),
+            ]
+        ),
+    ]
+)
+
 FXWeapon_Howz_Canon_D30_Howitzer_122mm is FiringAndProjectile
 (
     Happenings = [
@@ -8735,7 +9085,20 @@ FXWeapon_PM_uzi is FiringAndProjectile
 FXWeapon_Pave_Claw_30mm is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -8788,7 +9151,20 @@ FXWeapon_Pod_GUV_Gatling_7_62mm_12_7mm_x2 is FiringAndProjectile
 FXWeapon_Pod_UPK_23_250_AP_23mm is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -8809,7 +9185,20 @@ FXWeapon_Pod_UPK_23_250_AP_23mm is FiringAndProjectile
 FXWeapon_Pod_UPK_23_250_AP_23mm_avion is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -8830,7 +9219,20 @@ FXWeapon_Pod_UPK_23_250_AP_23mm_avion is FiringAndProjectile
 FXWeapon_Pod_UPK_23_250_AP_23mm_x2 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -8851,7 +9253,20 @@ FXWeapon_Pod_UPK_23_250_AP_23mm_x2 is FiringAndProjectile
 FXWeapon_Pod_UPK_23_250_AP_23mm_x2_avion is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_1 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_2 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_3 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_4 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_5 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_6 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_7 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_2A72_petit_douille_8 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -8872,7 +9287,16 @@ FXWeapon_Pod_UPK_23_250_AP_23mm_x2_avion is FiringAndProjectile
 FXWeapon_Pod_UPK_23_250_HE_23mm is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -8893,7 +9317,16 @@ FXWeapon_Pod_UPK_23_250_HE_23mm is FiringAndProjectile
 FXWeapon_Pod_UPK_23_250_HE_23mm_avion is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -8914,7 +9347,16 @@ FXWeapon_Pod_UPK_23_250_HE_23mm_avion is FiringAndProjectile
 FXWeapon_Pod_UPK_23_250_HE_23mm_x2 is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_0( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =
@@ -8935,7 +9377,16 @@ FXWeapon_Pod_UPK_23_250_HE_23mm_x2 is FiringAndProjectile
 FXWeapon_Pod_UPK_23_250_HE_23mm_x2_avion is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_1 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_2 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_3 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_obus_M230_petit_douille_4 ),
+            ]
+        ),
         TRandomHappening
         (
             Alternatives =

@@ -200,6 +200,7 @@ is BUCKContainerDescriptor
             ElementName = "DummyButtonTexture"
             ComponentFrame = TUIFramePropertyRTTI ( RelativeWidthHeight = [1.0, 1.0] )
             TextureToken = "ShowRoomTexture_DeckCreation_fondUniteLibre"
+            // TextureColorToken = "Orange"
             TextureColorToken = "DeckCreator/SlotLibre"
         ),
 
@@ -372,7 +373,7 @@ is BUCKListElementDescriptor
         LeftClickSound = SoundEvent_DeckEditorSetUnitXP
 
         HasBorder = true
-        BorderLineColorToken = "BoutonXP_deck"
+        BorderLineColorToken = "BoutonXP_deck_border"
         BorderThicknessToken = "1"
 
         HasBackground = true
@@ -393,7 +394,7 @@ is BUCKListElementDescriptor
                     AlignementToAnchor = [0.5, 0.5]
                 )
                 TextureToken = <TextureToken>
-                TextureColorToken = "BoutonXP_deck"
+                TextureColorToken = "BoutonXP_deck_chevron"
             ),
             BUCKSpecificHintableArea
             (
@@ -673,7 +674,7 @@ ListeDesUnitesDuDeck is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, UnitListHeight]
-        MagnifiableOffset = [50.0, 0.0]
+        MagnifiableOffset = [50.0, 8.0]
     )
 
     Axis = ~/ListAxis/Horizontal
@@ -794,7 +795,7 @@ AffichageNomDuDeck is BUCKListDescriptor
 
                 Flags = ~/EditableTextFlag/V_TOP | ~/EditableTextFlag/H_CENTER | ~/EditableTextFlag/ONE_LINE
                 HasBackground = true
-                BackgroundBlockColorToken = "H2_bleu_2"
+                BackgroundBlockColorToken = "bleuNavy_fonce"
                 TextStyle = "Default"
                 TextSizeToken = "20"
                 TypefaceToken = "Liberator"
@@ -902,7 +903,8 @@ template DeckEditorNavigationButton
     DefaultToggleValue = <IsToggled>
 
     HasBackground = true
-    BackgroundBlockColorToken = "MarronPanel_base"
+    BackgroundBlockColorToken = "bleuNavy_clair"
+    // BackgroundBlockColorToken = "MarronPanel_base"
 
     Components =
     [
@@ -931,7 +933,7 @@ template DeckEditorNavigationButton
             BigLineAction = ~/BigLineAction/BalancedMultiline
             TextToken = <TextToken>
             TextDico = ~/LocalisationConstantes/dico_interface_ingame
-            TextColor = <IsToggled> ? "noir_deckSmartGroups_onglets" : "noir_deckSmartGroups_onglets_selectable"
+            TextColor = <IsToggled> ? "BoutonXP_deck_chevron" : "BoutonXP_deck_chevron"
             TextSize = "18"
             TextPadding = TRTTILength4( Magnifiable = [5.0, 0.0, 5.0, 0.0] )
         )
@@ -1037,59 +1039,60 @@ private DeckPanelContentList is BUCKListDescriptor
 
                         Components =
                         [
-                            BUCKListDescriptor
-                            (
-                                ComponentFrame = TUIFramePropertyRTTI
-                                (
-                                    RelativeWidthHeight = [1.0, 0.0]
-                                    MagnifiableWidthHeight = [-1*MargePanneaux, 0.0]
-                                    AlignementToAnchor = [0.0, 0.5]
-                                    AlignementToFather = [0.0, 0.5]
-                                )
+                            ListeDesUnitesDuDeck
+                            // BUCKListDescriptor
+                            // (
+                            //     ComponentFrame = TUIFramePropertyRTTI
+                            //     (
+                            //         RelativeWidthHeight = [1.0, 0.0]
+                            //         MagnifiableWidthHeight = [-1*MargePanneaux, 0.0]
+                            //         AlignementToAnchor = [0.0, 0.5]
+                            //         AlignementToFather = [0.0, 0.5]
+                            //     )
 
-                                Axis = ~/ListAxis/Vertical
-                                BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
-                                FirstMargin = TRTTILength(Magnifiable = 10.0)
+                            //     Axis = ~/ListAxis/Vertical
+                            //     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
+                            //     FirstMargin = TRTTILength(Magnifiable = 10.0)
 
-                                Elements =
-                                [
-                                    BUCKListElementDescriptor
-                                    (
-                                        ComponentDescriptor = BUCKTextDescriptor
-                                        (
-                                            ComponentFrame = TUIFramePropertyRTTI
-                                            (
-                                                MagnifiableWidthHeight = [137.0, 0.0]
-                                            )
+                            //     Elements =
+                            //     [
+                            //         BUCKListElementDescriptor
+                            //         (
+                            //             ComponentDescriptor = BUCKTextDescriptor
+                            //             (
+                            //                 ComponentFrame = TUIFramePropertyRTTI
+                            //                 (
+                            //                     MagnifiableWidthHeight = [137.0, 0.0]
+                            //                 )
 
-                                            ParagraphStyle = TParagraphStyleRTTI
-                                            (
-                                                Alignment = UIText_Center
-                                                VerticalAlignment = UIText_VerticalCenter
-                                            )
+                            //                 ParagraphStyle = TParagraphStyleRTTI
+                            //                 (
+                            //                     Alignment = UIText_Center
+                            //                     VerticalAlignment = UIText_VerticalCenter
+                            //                 )
 
-                                            TextStyle = "Default"
+                            //                 TextStyle = "Default"
 
-                                            HorizontalFitStyle = ~/FitStyle/UserDefined
-                                            VerticalFitStyle = ~/FitStyle/FitToContent
+                            //                 HorizontalFitStyle = ~/FitStyle/UserDefined
+                            //                 VerticalFitStyle = ~/FitStyle/FitToContent
 
-                                            TypefaceToken = "Liberator"
-                                            BigLineAction = ~/BigLineAction/MultiLine
+                            //                 TypefaceToken = "Liberator"
+                            //                 BigLineAction = ~/BigLineAction/MultiLine
 
-                                            TextToken = "deck_pa"
-                                            TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                            //                 TextToken = "deck_pa"
+                            //                 TextDico = ~/LocalisationConstantes/dico_interface_outgame
 
-                                            TextColor = "Gris_unitConfig_Experience"
-                                            TextSize = "10"
-                                        )
-                                    ),
-                                    BUCKListElementDescriptor
-                                    (
-                                        ExtendWeight = 1.0
-                                        ComponentDescriptor = ~/ListeDesUnitesDuDeck
-                                    )
-                                ]
-                            ),
+                            //                 TextColor = "Gris_unitConfig_Experience"
+                            //                 TextSize = "10"
+                            //             )
+                            //         ),
+                            //         BUCKListElementDescriptor
+                            //         (
+                            //             ExtendWeight = 1.0
+                            //             ComponentDescriptor = ~/ListeDesUnitesDuDeck
+                            //         )
+                            //     ]
+                            // ),
                         ]
                     ),
                     PanelRoundedCorner
@@ -1129,10 +1132,11 @@ DeckEditorTopBarGreenBackground is BUCKContainerDescriptor
     )
 
     HasBackground = true
-    BackgroundBlockColorToken = "VertMilitaire"
+    BackgroundBlockColorToken = "bleuNavy_fonce"
+    // BackgroundBlockColorToken = "VertMilitaire"
     HasBorder = true
     BorderThicknessToken = "2"
-    BorderLineColorToken = "VertLogin"
+    BorderLineColorToken = "bleuNavy"
     BordersToDraw = ~/TBorderSide/Bottom
     HidePointerEvents = true
 

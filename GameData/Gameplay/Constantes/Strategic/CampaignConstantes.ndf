@@ -70,7 +70,9 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     MultiSelectionLimit = 10
 
     // Ecoulement du temps
-    TurnTimeOfDay = ["StrMorn", "StrAftn"] // un tour de jeu a 8h, le suivant a 14h etc...
+    // ATTENTION cet enum est utilisé en Python pour la brique DescriptorSetInitialDate.
+    // Toute modifications du nombre d'éléments dans le tableau doit être fait conjointement avec un dev afin de modifier la brique
+    TurnTimeOfDay = ["StrMorn", "StrAftn", "StrNite"] // un tour de jeu a 8h, le suivant a 14h puis 20h etc...
 
     SteelmanCombatFX = $/GFX/GameFx/FX_Steelman_Combat_Binder
     SteelmanFxDuration = 1

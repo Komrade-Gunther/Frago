@@ -15,6 +15,7 @@ FXWeapon_AA_Matra_Super_530D is FXWeapon_0
 FXWeapon_AA_Matra_Super_530F is FXWeapon_0
 FXWeapon_AA_R13M is FXWeapon_1
 FXWeapon_AA_R23R_Vympel is FXWeapon_0
+FXWeapon_AA_R24MR_Vympel is FXWeapon_0
 FXWeapon_AA_R24R_Vympel is FXWeapon_0
 FXWeapon_AA_R27R_Vympel is FXWeapon_0
 FXWeapon_AA_R33_Vympel is FXWeapon_0
@@ -136,7 +137,6 @@ FXWeapon_Bomb_KAB_1500Kr_x1 is FXWeapon_8
 FXWeapon_Bomb_KAB_1500Kr_x2 is FXWeapon_8
 FXWeapon_Bomb_KAB_500Kr_x1 is FXWeapon_8
 FXWeapon_Bomb_KAB_500Kr_x2 is FXWeapon_8
-FXWeapon_Bomb_GBU_24_x2 is FXWeapon_8
 FXWeapon_FakeRoquette_S_24 is FXWeapon_9
 FXWeapon_Javelin is FXWeapon_9
 FXWeapon_Javelin_LML is FXWeapon_9
