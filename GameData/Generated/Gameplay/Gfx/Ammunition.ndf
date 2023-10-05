@@ -73330,92 +73330,93 @@ Ammo_SAM_9M33 is TAmmunitionDescriptor
 
 Ammo_SAM_9M330_Tor_x8 is TAmmunitionDescriptor
 (
-    DescriptorId = GUID:{855d872e-bc77-44a8-899c-6f6bf4144260}
-    Name = 'XDAOPEOAWP'
-    TypeName = 'SACLOSM'
-    TypeCategoryName = 'RGUHEGFUDW'
-    Caliber = 'QIHXTMTQAA'
-    WeaponDescriptionToken = ''
-    TraitsToken = ['STAT', 'RADAR']
-    WeaponCursorType = Weapon_Cursor_AirMissile
-    MinMaxCategory = MinMax_SAM
-    Level = 1
-    Arme = TDamageTypeRTTI
-    (
-        Family = "missile_he"
-        Index = 1
-    )
-    ProjectileType = EProjectileType/GuidedMissile
-    ImpactHappening = ['MIssileAAMIM72C']
-    FxPower = EFXPower/UltraLourd
-    TempsEntreDeuxTirs = 3.0
-    TempsEntreDeuxFx = 3.0
-    PorteeMaximale = ((0) * Metre)
-    PorteeMinimaleTBA = ((0) * Metre)
-    PorteeMaximaleTBA = ((7995) * Metre)
-    PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((9976) * Metre)
-    PorteeMinimale = ((0) * Metre)
-    AngleDispersion = 0.02
-    DispersionWithoutSorting = False
-    CorrectedShotAimtimeMultiplier = 1.0
-    RadiusSplashPhysicalDamages = 322 * Metre
-    PhysicalDamages = 7.0
-    ShowDamageInUI = True
-    RadiusSplashSuppressDamages = 322 * Metre
-    SuppressDamages = 644.0
-    AllowSuppressDamageWhenNoImpact = True
-    DisplaySalveAccuracy = False
-    TirIndirect = False
-    TirReflexe = True
-    InterdireTirReflexe = True
-    FX_vitesse_de_depart = 15000 * Metre
-    FX_acceleration_max = 8000 * Metre
-    FX_tir_sans_physic = True
-    FX_frottement = 0.0
-    NoiseDissimulationMalus = 2.0
-    ShotsBeforeMaxNoise = 2
-    TargetsDistricts = True
-    IsFireAndForget = True
+    DescriptorId                      = GUID:{855d872e-bc77-44a8-899c-6f6bf4144260}
+    Name                              = 'XDAOPEOAWP'
+    TypeName                          = 'SACLOSM'
+    TypeCategoryName                  = 'RGUHEGFUDW'
+    Caliber                           = 'QIHXTMTQAA'
+    WeaponDescriptionToken            = ''
+    TraitsToken                       = [ 'STAT', 'RADAR', ]
+    WeaponCursorType                  = Weapon_Cursor_AirMissile
+    MinMaxCategory                    = MinMax_SAM
+    Level                             = 1
+    Arme                              = TDamageTypeRTTI(Family="missile_he" Index=1)
+    ProjectileType                    = EProjectileType/GuidedMissile
+    ImpactHappening                   = [ 'MIssileAATOR' ]
+    FxPower                           = EFXPower/UltraLourd
+    TempsEntreDeuxTirs                = 3.0
+    TempsEntreDeuxFx                  = 3.0
+    PorteeMaximale                    = ((0) * Metre)
+    PorteeMinimaleTBA                 = ((0) * Metre)
+    PorteeMaximaleTBA                 = ((8490) * Metre)
+    PorteeMinimaleHA                  = ((0) * Metre)
+    PorteeMaximaleHA                  = ((9976) * Metre)
+    PorteeMinimale                    = ((0) * Metre)
+    AngleDispersion                   = 0.02
+    DispersionWithoutSorting          = False
+    CorrectedShotAimtimeMultiplier    = 1.0
+    RadiusSplashPhysicalDamages       = 322 * Metre
+    PhysicalDamages                   = 7.0
+    ShowDamageInUI                    = True
+    RadiusSplashSuppressDamages       = 322 * Metre
+    SuppressDamages                   = 644.0
+    AllowSuppressDamageWhenNoImpact                = True
+    DisplaySalveAccuracy              = False
+    TirIndirect                       = False
+    TirReflexe                        = True
+    InterdireTirReflexe               = True
+    FX_vitesse_de_depart              = 30000 * Metre
+    FX_acceleration_max               = 4000 * Metre
+    FX_tir_sans_physic                = True
+    FX_frottement                     = 0.0
+    NoiseDissimulationMalus           = 2.0
+    ShotsBeforeMaxNoise               = 2
+    TargetsDistricts                  = True
+    IsFireAndForget                   = True
     HitRollRuleDescriptor = TDiceHitRollRuleDescriptor
     (
-        DescriptorId = GUID:{b97acac8-22bf-461e-be80-320caf8a7cc8}
-        BaseCriticModifier = 25
-        BaseEffectModifier = 0
-        BaseHitValueModifiers = 
-        [
-            (EBaseHitValueModifier/Base, 0.0),
-            (EBaseHitValueModifier/Idling, 55),
-            (EBaseHitValueModifier/Moving, 0),
-            (EBaseHitValueModifier/SuccessfulShots, 0.0),
-            (EBaseHitValueModifier/Targeted, 0.0)
-        ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
+         DescriptorId          = GUID:{b97acac8-22bf-461e-be80-320caf8a7cc8}
+         BaseCriticModifier = 25
+         BaseEffectModifier = 0
+         BaseHitValueModifiers =
+         [
+             (EBaseHitValueModifier/Base, 0.0),
+             (EBaseHitValueModifier/Idling, 65),
+             (EBaseHitValueModifier/Moving, 0),
+             (EBaseHitValueModifier/SuccessfulShots, 0.0),
+             (EBaseHitValueModifier/Targeted, 0.0),
+         ]
+         HitModifierList       =
+         [
+             EDiceHitModifier/Precision,
+             EDiceHitModifier/SuccesiveShots,
+             EDiceHitModifier/Suppress,
+         ]
     )
-    Guidance = Guidance_Radar
-    TempsDeVisee = 1.0
-    TempsEntreDeuxSalves = 20.0
-    TempsEntreDeuxSalves_Min = -1.0
-    TempsEntreDeuxSalves_Max = -1.0
-    NbTirParSalves = 8
-    SupplyCost = 240
-    CanShootOnPosition = False
-    CanShootWhileMoving = False
-    NbrProjectilesSimultanes = 1
-    AffichageMunitionParSalve = 6
-    MissileTimeBetweenCorrections = 1.0
-    MissileDescriptor = ~/Descriptor_Missile_SAM_9M330_Tor_x8
-    InterfaceWeaponTexture = "Texture_Interface_Weapon_9M33_Osa"
-    WeaponForceNote = 2
-    SmokeDescriptor = nil
-    FireDescriptor = nil
-    TargetUnitCenter = False
-    CanHarmAirplanes = True
-    IsHarmlessForAllies = False
-    PiercingWeapon = False
-    DamageTypeEvolutionOverRangeDescriptor = nil
+    MaxSuccessiveHitCount             = 3
+    Guidance                          = Guidance_Radar
+    TempsDeVisee                      = 1.0
+    TempsEntreDeuxSalves              = 20.0
+    TempsEntreDeuxSalves_Min           = -1.0
+    TempsEntreDeuxSalves_Max           = -1.0
+    NbTirParSalves                    = 8
+    SupplyCost                        = 240
+    CanShootOnPosition                = False
+    CanShootWhileMoving               = False
+    NbrProjectilesSimultanes          = 1
+    AffichageMunitionParSalve         = 8
+    MissileTimeBetweenCorrections     = 1.0
+    MissileDescriptor                 = ~/Descriptor_Missile_SAM_9M330_Tor_x8
+    InterfaceWeaponTexture            = "Texture_Interface_Weapon_9M33_Osa"
+    WeaponForceNote                   = 2
+    SmokeDescriptor                   = nil
+    FireDescriptor                    = nil
+    TargetUnitCenter                  = False
+    CanHarmAirplanes                  = True
+    IsHarmlessForAllies               = False
+    PiercingWeapon                    = False
+    DamageTypeEvolutionOverRangeDescriptor  = nil
 )
-
 Ammo_SAM_9M336_x3 is TAmmunitionDescriptor
 (
     DescriptorId = GUID:{17901c23-b14c-403b-bda3-e19ffae47275}
@@ -81801,10 +81802,10 @@ Ammo_FM_M14 is TAmmunitionDescriptor
     DispersionAtMaxRange = ((18) * Metre)
     DispersionWithoutSorting = False
     CorrectedShotAimtimeMultiplier = 1.0
-    RadiusSplashPhysicalDamages = 5 * Metre
-    PhysicalDamages = 0.05
+    RadiusSplashPhysicalDamages = 6 * Metre
+    PhysicalDamages = 0.074
     ShowDamageInUI = True
-    RadiusSplashSuppressDamages = 23 * Metre
+    RadiusSplashSuppressDamages = 60 * Metre
     SuppressDamages = 4.0
     AllowSuppressDamageWhenNoImpact = False
     DisplaySalveAccuracy = True
@@ -81901,10 +81902,9 @@ Ammo_Howz_Canon_2A44_Howitzer_203mm is TAmmunitionDescriptor
     DispersionWithoutSorting = True
     CorrectedShotDispersionMultiplier = 0.7
     CorrectedShotAimtimeMultiplier = 1.0
-    RadiusSplashPhysicalDamages = 304 * Metre
-    PhysicalDamages = 4.466
+    PhysicalDamages = 4.966
     ShowDamageInUI = True
-    RadiusSplashSuppressDamages = 467 * Metre
+    RadiusSplashSuppressDamages = 608 * Metre
     SuppressDamages = 264.0
     AllowSuppressDamageWhenNoImpact = False
     DisplaySalveAccuracy = True
@@ -82101,11 +82101,11 @@ Ammo_Howz_Canon_2A51_Howitzer_120mm is TAmmunitionDescriptor
     DispersionWithoutSorting = True
     CorrectedShotDispersionMultiplier = 0.7
     CorrectedShotAimtimeMultiplier = 1.0
-    RadiusSplashPhysicalDamages = 183 * Metre
+    RadiusSplashPhysicalDamages = 152 * Metre
     PhysicalDamages = 2.074
     ShowDamageInUI = True
-    RadiusSplashSuppressDamages = 281 * Metre
-    SuppressDamages = 159.0
+    RadiusSplashSuppressDamages = 305 * Metre
+    SuppressDamages = 146.0
     AllowSuppressDamageWhenNoImpact = False
     DisplaySalveAccuracy = True
     TirIndirect = True
@@ -82301,11 +82301,11 @@ Ammo_Howz_Canon_2A64_152mm is TAmmunitionDescriptor
     DispersionWithoutSorting = True
     CorrectedShotDispersionMultiplier = 0.7
     CorrectedShotAimtimeMultiplier = 1.0
-    RadiusSplashPhysicalDamages = 228 * Metre
-    PhysicalDamages = 3.04
+    RadiusSplashPhysicalDamages = 274 * Metre
+    PhysicalDamages = 3.7
     ShowDamageInUI = True
-    RadiusSplashSuppressDamages = 350 * Metre
-    SuppressDamages = 209.0
+    RadiusSplashSuppressDamages = 388 * Metre
+    SuppressDamages = 194.0
     AllowSuppressDamageWhenNoImpact = False
     DisplaySalveAccuracy = True
     TirIndirect = True
@@ -82600,11 +82600,11 @@ Ammo_Howz_Canon_D22_Howitzer_152mm_late_guided is TAmmunitionDescriptor
     DispersionWithoutSorting = True
     CorrectedShotDispersionMultiplier = 0.25
     CorrectedShotAimtimeMultiplier = 1.0
-    RadiusSplashPhysicalDamages = 228 * Metre
-    PhysicalDamages = 3.04
+    RadiusSplashPhysicalDamages = 274 * Metre
+    PhysicalDamages = 3.7
     ShowDamageInUI = True
-    RadiusSplashSuppressDamages = 350 * Metre
-    SuppressDamages = 209.0
+    RadiusSplashSuppressDamages = 388 * Metre
+    SuppressDamages = 194.0
     AllowSuppressDamageWhenNoImpact = False
     DisplaySalveAccuracy = True
     TirIndirect = True
@@ -82643,7 +82643,7 @@ Ammo_Howz_Canon_D22_Howitzer_152mm_late_guided is TAmmunitionDescriptor
     TempsEntreDeuxSalves_Min = -1.0
     TempsEntreDeuxSalves_Max = -1.0
     NbTirParSalves = 4
-    SupplyCost = 120
+    SupplyCost = 720
     NbSalvosShootOnPosition = 1
     CanShootOnPosition = True
     CanShootWhileMoving = False
@@ -84181,7 +84181,7 @@ Ammo_ATGM_9M113_KonkursM_late is TAmmunitionDescriptor
     )
     MaxSuccessiveHitCount = 3
     TempsDeVisee = 2.2
-    TempsEntreDeuxSalves = 8.0
+    TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
     TempsEntreDeuxSalves_Max = -1.0
     NbTirParSalves = 1
