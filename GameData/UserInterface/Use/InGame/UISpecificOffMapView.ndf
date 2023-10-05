@@ -333,7 +333,7 @@ BUCKSpecificOffMapMainComponentDescriptor is BUCKContainerDescriptor
                                 FirstElementMargin = TRTTILength2(Magnifiable = [10.0, 0.0])
                                 InterElementMargin = TRTTILength2(Magnifiable = [3.0, 3.0])
 
-                                MaxElementsPerDimension = [3, 3]
+                                MaxElementsPerDimension = [4, 4]
 
                                 // => On insert les TUISpecificOffMapAirplaneViewDescriptor à l'intérieur de ces dummies
                                 // Doit contenir NbMaxPlanes (dans UISpecificSkirmishProductionMenuView) slots
@@ -342,12 +342,22 @@ BUCKSpecificOffMapMainComponentDescriptor is BUCKContainerDescriptor
                                     ( [0, 0], ~/DummyOffMapPanel ),
                                     ( [0, 1], ~/DummyOffMapPanel ),
                                     ( [0, 2], ~/DummyOffMapPanel ),
+									( [0, 3], ~/DummyOffMapPanel ),
+									
                                     ( [1, 0], ~/DummyOffMapPanel ),
                                     ( [1, 1], ~/DummyOffMapPanel ),
                                     ( [1, 2], ~/DummyOffMapPanel ),
+									( [1, 3], ~/DummyOffMapPanel ),									
+									
                                     ( [2, 0], ~/DummyOffMapPanel ),
                                     ( [2, 1], ~/DummyOffMapPanel ),
                                     ( [2, 2], ~/DummyOffMapPanel ),
+									( [2, 3], ~/DummyOffMapPanel ),
+									
+									( [3, 0], ~/DummyOffMapPanel ),
+                                    ( [3, 1], ~/DummyOffMapPanel ),
+                                    ( [3, 2], ~/DummyOffMapPanel ),
+									( [3, 3], ~/DummyOffMapPanel )
                                 ]
                             )
                         ]
