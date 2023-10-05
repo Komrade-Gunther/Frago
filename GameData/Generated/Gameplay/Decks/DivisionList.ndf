@@ -42,5 +42,7 @@ private DivisionList is TDeckDivisionList
         ~/Descriptor_Deck_Division_US_11ACR_multi_HB,
 		~/Descriptor_Deck_Division_SOV_Afganski,
 		~/Descriptor_Deck_Division_101st,
+        ~/Descriptor_Deck_Division_US_24th_Inf_multi,
+        ~/Descriptor_Deck_Division_SOV_27_Gds_Rifle_multi,
     ]
 )
