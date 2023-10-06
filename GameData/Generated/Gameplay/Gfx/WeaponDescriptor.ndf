@@ -5931,13 +5931,13 @@ export WeaponDescriptor_ATteam_TOW_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_ATGM_BGM71D_TOW_2
+                    Ammunition = ~/Ammo_ATGM_BGM71_TOW
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_ATGM_BGM71D_TOW_2'
+                    EffectTag = 'FireEffect_ATGM_BGM71_TOW'
                     HandheldEquipmentKey = 'MeshAlternative_1'
                     NbWeapons = 1
                     SalvoStockIndex = 0
@@ -18059,8 +18059,8 @@ export WeaponDescriptor_FV102_Striker_BEL is TWeaponManagerModuleDescriptor
                 )
             ]
             NbFX = 2
-            Tag = 'tourelle5'
-            YulBoneOrdinal = 5
+            Tag = 'tourelle2'
+            YulBoneOrdinal = 2
         )
     ]
 )
@@ -86321,7 +86321,7 @@ export WeaponDescriptor_Engineers_Scout_TTsko_SOV is TWeaponManagerModuleDescrip
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
     DefaultHoldFireState = False
     DefaultRiposteStance = False
-    Salves = [182, 92, 5, -1, -1, -1]
+    Salves = [182, 92, 15, -1, -1, -1]
     HasMainSalvo = False
     SalvoIsMainSalvo = [False, False, False, False, False, False, False]
     AlwaysOrientArmorTowardsThreat = False

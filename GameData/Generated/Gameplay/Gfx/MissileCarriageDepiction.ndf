@@ -4964,6 +4964,50 @@ SubGenerators_F111E_Aardvark_napalm_US is TMissileCarriageSubDepictionGenerator
             MissileIndex = 4
             WeaponIndex = 2
         ),
+             TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 6
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 7
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ),   
     ]
     Pylons = ~/DepictionPylonSet_Airplane_Default
 )
@@ -5008,6 +5052,42 @@ SubGenerators_Showroom_F111E_Aardvark_napalm_US is TMissileCarriageSubDepictionG
             MissileIndex = 4
             WeaponIndex = 2
         ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ), 
     ]
     Pylons = ~/DepictionPylonSet_Airplane_Default_Showroom
 )
@@ -5684,6 +5764,50 @@ SubGenerators_F111F_Aardvark_napalm_US is TMissileCarriageSubDepictionGenerator
             MissileIndex = 4
             WeaponIndex = 2
         ),
+             TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 6
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 7
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ),  
     ]
     Pylons = ~/DepictionPylonSet_Airplane_Default
 )
@@ -5728,6 +5852,42 @@ SubGenerators_Showroom_F111F_Aardvark_napalm_US is TMissileCarriageSubDepictionG
             MissileIndex = 4
             WeaponIndex = 2
         ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 7
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 8
+            WeaponIndex = 2
+        ), 
     ]
     Pylons = ~/DepictionPylonSet_Airplane_Default_Showroom
 )
@@ -7002,6 +7162,28 @@ SubGenerators_F16E_napalm_US is TMissileCarriageSubDepictionGenerator
         (
             Depiction = TemplateDepictionMissileAirUnit
             (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
                 MissileNumber = 0
                 PhysicalProperty = "Tourelle3_MissileCount"
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_SideWinder
@@ -7044,6 +7226,24 @@ SubGenerators_Showroom_F16E_napalm_US is TMissileCarriageSubDepictionGenerator
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
             )
             MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 4
             WeaponIndex = 2
         ),
         TMissileCarriageSubDepictionMissileInfo
@@ -7486,6 +7686,28 @@ SubGenerators_F4E_Phantom_II_napalm_US is TMissileCarriageSubDepictionGenerator
         (
             Depiction = TemplateDepictionMissileAirUnit
             (
+                MissileNumber = 2
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 3
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
                 MissileNumber = 0
                 PhysicalProperty = "Tourelle3_MissileCount"
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_AIM_9J_SideWinder
@@ -7528,6 +7750,24 @@ SubGenerators_Showroom_F4E_Phantom_II_napalm_US is TMissileCarriageSubDepictionG
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
             )
             MissileIndex = 2
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 3
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 4
             WeaponIndex = 2
         ),
         TMissileCarriageSubDepictionMissileInfo
@@ -10246,6 +10486,28 @@ SubGenerators_Jaguar_nplm_FR is TMissileCarriageSubDepictionGenerator
         (
             Depiction = TemplateDepictionMissileAirUnit
             (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
                 MissileNumber = 0
                 PhysicalProperty = "Tourelle3_MissileCount"
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Matra_R550_Magic_II
@@ -10306,6 +10568,24 @@ SubGenerators_Showroom_Jaguar_nplm_FR is TMissileCarriageSubDepictionGenerator
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
             )
             MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 6
             WeaponIndex = 2
         ),
         TMissileCarriageSubDepictionMissileInfo
@@ -12214,6 +12494,28 @@ SubGenerators_MiG_27M_napalm_SOV is TMissileCarriageSubDepictionGenerator
             MissileIndex = 4
             WeaponIndex = 2
         ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
     ]
     Pylons = ~/DepictionPylonSet_Airplane_SOV
 )
@@ -12256,6 +12558,24 @@ SubGenerators_Showroom_MiG_27M_napalm_SOV is TMissileCarriageSubDepictionGenerat
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
             )
             MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 6
             WeaponIndex = 2
         ),
     ]
@@ -13328,6 +13648,28 @@ SubGenerators_Mirage_5_F_nplm_FR is TMissileCarriageSubDepictionGenerator
             MissileIndex = 4
             WeaponIndex = 2
         ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
     ]
     Pylons = ~/DepictionPylonSet_Airplane_FR
 )
@@ -13370,6 +13712,24 @@ SubGenerators_Showroom_Mirage_5_F_nplm_FR is TMissileCarriageSubDepictionGenerat
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
             )
             MissileIndex = 4
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_Mk_77
+            )
+            MissileIndex = 6
             WeaponIndex = 2
         ),
     ]
@@ -14908,6 +15268,28 @@ SubGenerators_Su_22_nplm_DDR is TMissileCarriageSubDepictionGenerator
             MissileIndex = 4
             WeaponIndex = 2
         ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 4
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 5
+                PhysicalProperty = "Tourelle2_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 6
+            WeaponIndex = 2
+        ),
     ]
     Pylons = ~/DepictionPylonSet_Airplane_Default
 )
@@ -14968,6 +15350,24 @@ SubGenerators_Showroom_Su_22_nplm_DDR is TMissileCarriageSubDepictionGenerator
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
             )
             MissileIndex = 4
+            WeaponIndex = 2
+        ),
+                TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 5
+            WeaponIndex = 2
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 6
             WeaponIndex = 2
         ),
     ]
@@ -15684,6 +16084,28 @@ SubGenerators_Su_24M_nplm_SOV is TMissileCarriageSubDepictionGenerator
             MissileIndex = 6
             WeaponIndex = 1
         ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 6
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 7
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileAirUnit
+            (
+                MissileNumber = 7
+                PhysicalProperty = "Tourelle1_MissileCount"
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 8
+            WeaponIndex = 1
+        ),
     ]
     Pylons = ~/DepictionPylonSet_Airplane_SOV
 )
@@ -15744,6 +16166,24 @@ SubGenerators_Showroom_Su_24M_nplm_SOV is TMissileCarriageSubDepictionGenerator
                 ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
             )
             MissileIndex = 6
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 7
+            WeaponIndex = 1
+        ),
+        TMissileCarriageSubDepictionMissileInfo
+        (
+            Depiction = TemplateDepictionMissileShowroom
+            (
+                ProjectileModelResource = $/GFX/DepictionResources/Modele_Missile_ZB_500
+            )
+            MissileIndex = 8
             WeaponIndex = 1
         ),
     ]
