@@ -933,5 +933,7 @@ export ShowRoomEquivalenceManager is TShowRoomEquivalenceManager
         ( ~/Descriptor_Unit_Ranger_US_101st_FRL, ~/Descriptor_ShowRoomUnit_Ranger_US_101st_FRL ),
         ( ~/Descriptor_Unit_A10_Thunderbolt_II_US_NAPALM_FRL, ~/Descriptor_ShowRoomUnit_A10_Thunderbolt_II_US_NAPALM_FRL ),
         ( ~/Descriptor_Unit_Su_25_s24_FRL, ~/Descriptor_ShowRoomUnit_Su_25_s24_FRL),
+        ( ~/Descriptor_Unit_MotRifles_Metis_DDR_FRL, ~/Descriptor_ShowRoomUnit_MotRifles_Metis_DDR_FRL ),
+
     ]
 )

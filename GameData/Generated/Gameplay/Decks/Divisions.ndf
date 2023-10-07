@@ -553,6 +553,7 @@ Descriptor_Deck_Division_RDA_4_MSD_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_RDA_4_MSD_multi_MotRifles_CMD_DDR, 4),
         (~/Descriptor_Deck_Pack_TOE_RDA_4_MSD_multi_MotRifles_DDR, 2),
         (~/Descriptor_Deck_Pack_TOE_RDA_4_MSD_multi_MotRifles_HMG_DDR, 4),
+        (~/Descriptor_Deck_Pack_MotRifles_Metis_DDR_FRL, 1),
         (~/Descriptor_Deck_Pack_TOE_RDA_4_MSD_multi_MotSchutzen_DDR, 1),
         (~/Descriptor_Deck_Pack_TOE_RDA_4_MSD_multi_PT76B_DDR, 1),
         (~/Descriptor_Deck_Pack_TOE_RDA_4_MSD_multi_Scout_DDR, 2),
@@ -572,6 +573,7 @@ Descriptor_Deck_Division_RDA_4_MSD_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_RDA_4_MSD_multi_TO_55_DDR, 1),
         (~/Descriptor_Deck_Pack_TOE_RDA_4_MSD_multi_UAZ_469_SPG9_DDR, 2),
         (~/Descriptor_Deck_Pack_TOE_RDA_4_MSD_multi_ZSU_23_Shilka_DDR, 1),
+
     ]
     MaxActivationPoints = 50
     CostMatrix = MatrixCostName_RDA_4_MSD_multi
@@ -645,6 +647,7 @@ Descriptor_Deck_Division_RDA_7_Panzer_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_MotRifles_CMD_DDR, 2),
         (~/Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_MotRifles_DDR, 4),
         (~/Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_MotRifles_HMG_DDR, 4),
+        (~/Descriptor_Deck_Pack_MotRifles_Metis_DDR_FRL, 1),
         (~/Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_MotSchutzen_DDR, 1),
         (~/Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_Scout_DDR, 2),
         (~/Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_Scout_LRRP_DDR, 1),
@@ -667,6 +670,7 @@ Descriptor_Deck_Division_RDA_7_Panzer_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_TO_55_DDR, 1),
         (~/Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_UAZ_469_SPG9_DDR, 2),
         (~/Descriptor_Deck_Pack_TOE_RDA_7_Panzer_multi_ZSU_23_Shilka_DDR, 1),
+
     ]
     MaxActivationPoints = 50
     CostMatrix = MatrixCostName_RDA_7_Panzer_multi

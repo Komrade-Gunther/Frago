@@ -59934,7 +59934,7 @@ Ammo_AA_AIM120A_AMRAAM is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((22003) * Metre)
+    PorteeMaximaleHA = ((24203) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -60107,7 +60107,7 @@ Ammo_AA_AIM7F_Sparrow is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((22003) * Metre)
+    PorteeMaximaleHA = ((24203) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -60193,7 +60193,7 @@ Ammo_AA_AIM7M_Sparrow is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((22003) * Metre)
+    PorteeMaximaleHA = ((24203) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -60714,7 +60714,7 @@ Ammo_AA_Matra_R530 is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((20022) * Metre)
+    PorteeMaximaleHA = ((22024) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -60800,7 +60800,7 @@ Ammo_AA_Matra_Super_530D is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((22003) * Metre)
+    PorteeMaximaleHA = ((24203) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -60886,7 +60886,7 @@ Ammo_AA_Matra_Super_530F is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((19527) * Metre)
+    PorteeMaximaleHA = ((21479) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -61059,7 +61059,7 @@ Ammo_AA_R23R_Vympel is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((20022) * Metre)
+    PorteeMaximaleHA = ((22024) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -61145,7 +61145,7 @@ Ammo_AA_R24R_Vympel is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((22003) * Metre)
+    PorteeMaximaleHA = ((24203) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -61231,7 +61231,7 @@ Ammo_AA_R27R_Vympel is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((23984) * Metre)
+    PorteeMaximaleHA = ((26382) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -61403,7 +61403,7 @@ Ammo_AA_R37_Vympel is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((36012) * Metre)
+    PorteeMaximaleHA = ((39000) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -62012,7 +62012,7 @@ Ammo_AA_R77_Vympel is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((22003) * Metre)
+    PorteeMaximaleHA = ((24203) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -62099,7 +62099,7 @@ Ammo_AA_Skyflash is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((20022) * Metre)
+    PorteeMaximaleHA = ((22024) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -62185,7 +62185,7 @@ Ammo_AA_Skyflash_SuperTEMP is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((22003) * Metre)
+    PorteeMaximaleHA = ((24203) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False
@@ -83867,7 +83867,7 @@ Ammo_AA_R24MR_Vympel is TAmmunitionDescriptor
     PorteeMinimaleTBA = ((0) * Metre)
     PorteeMaximaleTBA = ((0) * Metre)
     PorteeMinimaleHA = ((0) * Metre)
-    PorteeMaximaleHA = ((22003) * Metre)
+    PorteeMaximaleHA = ((24203) * Metre)
     PorteeMinimale = ((0) * Metre)
     AngleDispersion = 0.02
     DispersionWithoutSorting = False

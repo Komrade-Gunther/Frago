@@ -46692,4 +46692,94 @@ export Descriptor_ShowRoomUnit_Su_25T_SOV is TEntityDescriptor
         )
     ]
 )
-
+export Descriptor_ShowRoomUnit_MotRifles_Metis_DDR_FRL is TEntityDescriptor
+(
+    DescriptorId = GUID:{6aa00038-031d-40d3-8b2a-acb9249037bc}
+    ClassNameForDebug = "ShowRoomUnit_MotRifles_Metis_DDR_FRL"
+    ModulesDescriptors = 
+    [
+        TTypeUnitModuleDescriptor
+        (
+            Nationalite = ENationalite/Axis
+            MotherCountry = 'DDR'
+            AcknowUnitType = ~/TAcknowUnitType_Inf
+            TypeUnitFormation = 'Char'
+        ),
+        ~/ShowroomPositionModuleDescriptor,
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject = False
+            Depiction = ~/InfantryDepictionSquadShowroom
+        ),
+        $/GFX/Everything/WeaponDescriptor_MotRifles_Metis_DDR_FRL,
+        TInfantrySquadModuleDescriptor
+        (
+            NbSoldatInGroupeCombat = 7
+            SquadDataDescriptor = ~/SoldierSquadDataDescriptor
+            InfantryMimeticName = 'MotRifles_Metis_DDR'
+            WeaponUnitFXKey = 'MotRifles_Metis_DDR'
+            MimeticDescriptor = Descriptor_Unit_MimeticUnit
+            (
+                DescriptorId = GUID:{663f9217-cc0e-4864-ac3c-51b9b7a90aa5}
+                MimeticName = 'MotRifles_Metis_DDR'
+            )
+            BoundingBoxSize = 9 * Metre
+        ),
+        ~/ColumnInfantrySquadSlotPositionsModuleDescriptor,
+        TInfantrySquadWeaponAssignmentModuleDescriptor
+        (
+            InitialSoldiersToTurretIndexMap = MAP
+            [
+                
+                (
+                    0,
+                    [1]
+                ),
+                
+                (
+                    1,
+                    [0]
+                ),
+                
+                (
+                    2,
+                    [0]
+                ),
+                
+                (
+                    3,
+                    [0]
+                ),
+                
+                (
+                    4,
+                    [0]
+                ),
+                
+                (
+                    5,
+                    [0]
+                ),
+                
+                (
+                    6,
+                    [0, 2]
+                )
+            ]
+        ),
+        ~/LinkTeamModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TExperienceModuleDescriptor
+        (
+            ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple_v2
+            CanWinExperience = True
+            ExperienceGainBySecond = ~/ExperienceGainBySecond
+            ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+        ),
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'Inf'
+            SpawnType = EShowroomSpawnType/Infantry
+        )
+    ]
+)

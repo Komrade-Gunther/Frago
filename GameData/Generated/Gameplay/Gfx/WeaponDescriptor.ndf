@@ -90384,3 +90384,112 @@ export WeaponDescriptor_Su_25T_SOV is TWeaponManagerModuleDescriptor
     ]
 )
 
+export WeaponDescriptor_MotRifles_Metis_DDR_FRL is TWeaponManagerModuleDescriptor
+(
+    DelayIdleAmmoSorting = DelayIdleAmmoSorting
+    DefaultHoldFireState = False
+    DefaultRiposteStance = False
+    Salves = [120, 80, 6, -1, -1, -1]
+    HasMainSalvo = False
+    SalvoIsMainSalvo = [False, False, False, False, False, False, False]
+    AlwaysOrientArmorTowardsThreat = False
+    TurretDescriptorList = 
+    [
+        TTurretInfanterieDescriptor
+        (
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_FM_Mpi_AK_74N
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_FM_Mpi_AK_74N'
+                    HandheldEquipmentKey = 'MeshAlternative_1'
+                    NbWeapons = 6
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_1'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_1"]
+                )
+            ]
+            NbFX = 1
+            YulBoneOrdinal = 1
+        ),
+        TTurretInfanterieDescriptor
+        (
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_SAW_lMG_K_7_62mm
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_SAW_lMG_K_7_62mm'
+                    HandheldEquipmentKey = 'MeshAlternative_2'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_2"]
+                )
+            ]
+            NbFX = 1
+            YulBoneOrdinal = 2
+        ),
+        TTurretInfanterieDescriptor
+        (
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_ATGM_9K115_Metis_M
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_ATGM_9K115_Metis_M'
+                    HandheldEquipmentKey = 'MeshAlternative_3'
+                    NbWeapons = 1
+                    SalvoStockIndex = 2
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_3'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_3"]
+                )
+            ]
+            NbFX = 1
+            YulBoneOrdinal = 3
+        )
+    ]
+)

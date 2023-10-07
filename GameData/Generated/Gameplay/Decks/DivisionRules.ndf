@@ -2893,6 +2893,14 @@ private DivisionRules is TDeckDivisionRules
                 [
                     TDeckUniteRule
                     (
+                        UnitDescriptor = ~/Descriptor_Unit_MotRifles_Metis_DDR_FRL
+                        AvailableWithoutTransport = False
+                        AvailableTransportList = [ ~/Descriptor_Unit_BTR_70_DDR, ~/Descriptor_Unit_UAZ_469_trans_DDR]
+                        NumberOfUnitInPack = 8
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.33]
+                    ),
+                    TDeckUniteRule
+                    (
                         UnitDescriptor = ~/Descriptor_Unit_2K12_KUB_DDR
                         AvailableWithoutTransport = True
                         NumberOfUnitInPack = 3
@@ -3528,6 +3536,14 @@ private DivisionRules is TDeckDivisionRules
             (
                 UnitRuleList =
                 [
+                    TDeckUniteRule
+                    (
+                        UnitDescriptor = ~/Descriptor_Unit_MotRifles_Metis_DDR_FRL
+                        AvailableWithoutTransport = False
+                        AvailableTransportList = [ ~/Descriptor_Unit_BTR_70_DDR, ~/Descriptor_Unit_UAZ_469_trans_DDR]
+                        NumberOfUnitInPack = 8
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.33]
+                    ),
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_2K12_KUB_DDR

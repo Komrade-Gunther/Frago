@@ -31015,3 +31015,16 @@ Descriptor_Deck_Pack_Su_25_s24_FRL is TDeckPackDescriptor
         ),
     ]
 )
+
+Descriptor_Deck_Pack_MotRifles_Metis_DDR_FRL is TDeckPackDescriptor
+(
+    DescriptorId = GUID:{6cd322a2-c527-426e-9632-0dbdac1c1d97}
+    CfgName = 'Descriptor_Deck_Pack_MotRifles_Metis_DDR_FRL'
+    TransporterAndUnitsList =
+    [
+        TDeckTransporterAndUnitsDescriptor
+        (
+            UnitDescriptor = Descriptor_Unit_MotRifles_Metis_DDR_FRL
+        ),
+    ]
+)
