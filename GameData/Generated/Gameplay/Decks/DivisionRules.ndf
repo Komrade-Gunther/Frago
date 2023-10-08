@@ -7531,7 +7531,7 @@ private DivisionRules is TDeckDivisionRules
                 [
                     TDeckUniteRule
                     (
-                        UnitDescriptor = ~/Descriptor_Unit_BMP_2_SOV_recon_FRL
+                        UnitDescriptor = ~/Descriptor_Unit_BMP_2_reco_SOV
                         AvailableWithoutTransport = True
                         NumberOfUnitInPack = 9
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.5]
@@ -17939,7 +17939,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_MotRifles_CMD_SOV
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_BMP_1P_SOV,~/Descriptor_Unit_BMP_1PG_SOV, ~/Descriptor_Unit_BTR_60_SOV,~/Descriptor_Unit_BMP_2_SOV]
+                        AvailableTransportList = [~/Descriptor_Unit_BMP_1P_SOV,~/Descriptor_Unit_BMP_1PG_SOV, ~/Descriptor_Unit_BTR_60_SOV,~/Descriptor_Unit_BMP_2D_SOV]
                         NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [0, 0, 0, 1]
                     ),
@@ -17947,7 +17947,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_MotRifles_SOV
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_BMP_1P_SOV, ~/Descriptor_Unit_BMP_1PG_SOV, ~/Descriptor_Unit_BMP_2_SOV]
+                        AvailableTransportList = [~/Descriptor_Unit_BMP_1P_SOV, ~/Descriptor_Unit_BMP_1PG_SOV, ~/Descriptor_Unit_BMP_2D_SOV]
                         NumberOfUnitInPack = 9
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
                     ),
@@ -17963,7 +17963,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_MotRifles_HMG_SOV
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_BMP_1P_SOV,~/Descriptor_Unit_BMP_1PG_SOV, ~/Descriptor_Unit_BTR_60_SOV,~/Descriptor_Unit_BMP_2_SOV]
+                        AvailableTransportList = [~/Descriptor_Unit_BMP_1P_SOV,~/Descriptor_Unit_BMP_1PG_SOV, ~/Descriptor_Unit_BTR_60_SOV,~/Descriptor_Unit_BMP_2D_SOV]
                         NumberOfUnitInPack = 6
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
                     ),
@@ -18153,7 +18153,7 @@ private DivisionRules is TDeckDivisionRules
                     (
                         UnitDescriptor = ~/Descriptor_Unit_Scout_SOV
                         AvailableWithoutTransport = False
-                        AvailableTransportList = [~/Descriptor_Unit_UAZ_469_SOV, ~/Descriptor_Unit_Mi_2_trans_SOV, ~/Descriptor_Unit_Mi_8TV_non_arme_SOV, ~/Descriptor_Unit_BTR_60_SOV, ~/Descriptor_Unit_BMP_2_SOV_recon_FRL]
+                        AvailableTransportList = [~/Descriptor_Unit_UAZ_469_SOV, ~/Descriptor_Unit_Mi_2_trans_SOV, ~/Descriptor_Unit_Mi_8TV_non_arme_SOV, ~/Descriptor_Unit_BTR_60_SOV, ~/Descriptor_Unit_BMP_2_reco_SOV]
                         NumberOfUnitInPack = 9
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
                     ),

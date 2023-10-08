@@ -82643,7 +82643,7 @@ Ammo_Howz_Canon_D22_Howitzer_152mm_late_guided is TAmmunitionDescriptor
     TempsEntreDeuxSalves_Min = -1.0
     TempsEntreDeuxSalves_Max = -1.0
     NbTirParSalves = 4
-    SupplyCost = 720
+    SupplyCost = 360
     NbSalvosShootOnPosition = 1
     CanShootOnPosition = True
     CanShootWhileMoving = False
