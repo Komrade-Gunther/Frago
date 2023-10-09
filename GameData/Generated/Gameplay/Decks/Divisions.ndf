@@ -3144,6 +3144,7 @@ Descriptor_Deck_Division_US_3rd_Arm_multi is TDeckDivisionDescriptor
     DescriptionHintExtendedToken = ''
     PackList = MAP
     [
+        (~/Descriptor_Deck_Pack_TOE_US_24th_Inf_multi_M2A1_Bradley_Leader_US, 2),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_A10_Thunderbolt_II_ATGM_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_A10_Thunderbolt_II_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_AH1F_Cobra_US, 4),
