@@ -644,7 +644,7 @@ export Capacite_GSR_no_GSR is TCapaciteDescriptor
     Range               = 1.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 8.00
+    CastTime            = 10.00
     Cooldown            = 0.00
     CheckVisibility     = True
     AllowReflexDuringCast   = True

@@ -73348,7 +73348,7 @@ Ammo_SAM_9M330_Tor_x8 is TAmmunitionDescriptor
     TempsEntreDeuxFx                  = 3.0
     PorteeMaximale                    = ((0) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
-    PorteeMaximaleTBA                 = ((8490) * Metre)
+    PorteeMaximaleTBA                 = ((8985) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
     PorteeMaximaleHA                  = ((9976) * Metre)
     PorteeMinimale                    = ((0) * Metre)
