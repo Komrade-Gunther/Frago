@@ -3191,7 +3191,7 @@ export Descriptor_Missile_AGM_9K121_Vikhr_x16 is TEntityDescriptor
                         ["fx_propulsion_on"],
                         template_PropulsionActionHappening
                         (
-                            Action = $/GFX/GameFx/fx_propulsion_missile_generation3
+                            Action = $/GFX/GameFx/fx_propulsion_AGM_gros
                         )
                     )
                 ]
@@ -3207,14 +3207,14 @@ export Descriptor_Missile_AGM_9K121_Vikhr_x16 is TEntityDescriptor
         (
             DefaultConfig = TGuidedMissileMovementConfigDescriptor
             (
-                MaxSpeed = 2200 * Metre
-                MaxAcceleration = 1000 * Metre
+                MaxSpeed = 4000 * Metre
+                MaxAcceleration = 10000 * Metre
                 AutoGyr = 0.8726646259971648
             )
             UncontrollableConfig = TGuidedMissileMovementConfigDescriptor
             (
-                MaxSpeed = 2200 * Metre
-                MaxAcceleration = 1000 * Metre
+                MaxSpeed = 4000 * Metre
+                MaxAcceleration = 10000 * Metre
                 AutoGyr = 0.8726646259971648
             )
             AscendantPhaseConfig = nil
