@@ -3208,6 +3208,8 @@ Descriptor_Deck_Division_US_3rd_Arm_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_UH60A_CO_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_UH60A_Supply_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M270_MLRS_cluster_US, 1),
+
+        
         
     ]
     MaxActivationPoints = 50
@@ -3502,6 +3504,8 @@ Descriptor_Deck_Division_US_8th_Inf_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_UH60A_CO_US, 1),
         (~/Descriptor_Deck_Pack_TOE_US_8th_Inf_multi_UH60A_Supply_US, 1),
 		(~/Descriptor_Deck_Pack_TOE_US_3rd_Arm_multi_M270_MLRS_cluster_US, 1),
+        (~/Descriptor_Deck_Pack_M270_MLRS_USA_ATACMS_FRL, 1),
+
     ]
     MaxActivationPoints = 50
     CostMatrix = MatrixCostName_US_8th_Inf_multi

@@ -22838,3 +22838,40 @@ Gfx_ZSU_57_2_DDR_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
     ] + HumanSubDepictions_ZSU_57_2_DDR
 )
+// Dépiction de l'unité M270_MLRS_US_ATACMS_FRL
+DepictionOperator_M270_MLRS_US_ATACMS_FRL_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Connoisseur = MissileCarriage_ATACMS
+    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+    NbProj = 1
+    WeaponIndex = 1
+
+)
+Gfx_M270_MLRS_US_ATACMS_FRL_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'M270_MLRS_US'
+    Selector = Selector_M270_MLRS_US
+    Alternatives = Alternatives_M270_MLRS_US
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_M270_MLRS,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_HeavyTank,
+        DepictionOperator_Propulsion_ContinuousTrack,
+        DepictionOperator_MovementFX_Standard,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_TurretSound_ST_MLRS_US,
+        DepictionOperator_Turret_1_HydraulicRecoil,
+        DepictionOperator_M270_MLRS_US_ATACMS_FRL_Weapon1,
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_RocketArt_ATACMS_FRL ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Tracked
+            + DepictionAction_CriticalFX_Tank
+)

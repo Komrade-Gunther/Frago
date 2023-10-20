@@ -3545,6 +3545,8 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Unit_A10_Thunderbolt_II_US_NAPALM_FRL, 25034),
         (Descriptor_Unit_Su_25_s24_FRL, 25035),
         (Descriptor_Unit_MotRifles_Metis_DDR_FRL, 25036),
+        
+        (Descriptor_Unit_M270_MLRS_US_ATACMS_FRL, 25037),
 
 
 

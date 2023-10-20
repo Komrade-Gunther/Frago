@@ -2891,3 +2891,8 @@ Gfx_60mm_mortar_101st_FRL_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Selector = Selector_81mm_mortar_UK
     SubDepictions = HumanSubDepictionsShowroom_Mortier_107mm_Airborne_US
 )
+Gfx_M270_MLRS_US_ATACMS_FRL_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_M270_MLRS_US
+    Selector = Selector_M270_MLRS_US
+)

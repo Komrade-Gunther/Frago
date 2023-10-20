@@ -90493,3 +90493,97 @@ export WeaponDescriptor_MotRifles_Metis_DDR_FRL is TWeaponManagerModuleDescripto
         )
     ]
 )
+
+export WeaponDescriptor_M270_MLRS_US_ATACMS_FRL is TWeaponManagerModuleDescriptor
+(
+    DelayIdleAmmoSorting = DelayIdleAmmoSorting
+    DefaultHoldFireState = False
+    DefaultRiposteStance = False
+    Salves = [2, 2, -1, -1, -1, -1]
+    HasMainSalvo = False
+    SalvoIsMainSalvo = [False, False, False, False, False, False, False]
+    AlwaysOrientArmorTowardsThreat = True
+    TurretDescriptorList = 
+    [
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.17453292519943275
+            AngleRotationMax = 3.141592653589793
+            AngleRotationMaxPitch = 2.5
+            AngleRotationMinPitch = 0.0
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_RocketArt_ATACMS_FRL
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[255, 0, 0, 0]
+                    DispersionRadiusOffThickness = 0.0
+                    DispersionRadiusOnColor = RGBA[90, 180, 180, 255]
+                    DispersionRadiusOnThickness = 0.8
+                    EffectTag = 'FireEffect_SAM_9M33M2_x6'
+                    HandheldEquipmentKey = 'MeshAlternative_1'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = True
+                    ShowInInterface = True
+                    ShowSplashRadius = True
+                    SplashRadiusOffColor = RGBA[255, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[255, 100, 0, 255]
+                    SplashRadiusOnThickness = 1.0
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_1'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_1"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle1'
+            VitesseRotation = 30
+            YulBoneOrdinal = 1
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.17453292519943275
+            AngleRotationMax = 3.141592653589793
+            AngleRotationMaxPitch = 2.5
+            AngleRotationMinPitch = 0.0
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_RocketArt_ATACMS_ADDITIONAL_FRL
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[255, 0, 0, 0]
+                    DispersionRadiusOffThickness = 0.0
+                    DispersionRadiusOnColor = RGBA[90, 180, 180, 255]
+                    DispersionRadiusOnThickness = 0.8
+                    EffectTag = ''
+                    HandheldEquipmentKey = 'MeshAlternative_2'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = False
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[255, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[255, 100, 0, 255]
+                    SplashRadiusOnThickness = 1.0
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_2"]
+                )
+            ]
+            NbFX = 12
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle2'
+            VitesseRotation = 30
+            YulBoneOrdinal = 2
+        )
+    ]
+)

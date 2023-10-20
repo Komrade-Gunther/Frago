@@ -16436,6 +16436,7 @@ private DivisionRules is TDeckDivisionRules
                         NumberOfUnitInPack = 1
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.5, 0.0]
                     ),
+
                     TDeckUniteRule
                     (
                         UnitDescriptor = ~/Descriptor_Unit_M270_MLRS_cluster_US
@@ -17752,6 +17753,13 @@ private DivisionRules is TDeckDivisionRules
                         AvailableTransportList = [~/Descriptor_Unit_M113A3_US, ~/Descriptor_Unit_M151_MUTT_trans_US]
                         NumberOfUnitInPack = 3
                         NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.66, 0.3]
+                    ),
+                    TDeckUniteRule
+                    (
+                        UnitDescriptor = ~/Descriptor_Unit_M270_MLRS_US_ATACMS_FRL
+                        AvailableWithoutTransport = True
+                        NumberOfUnitInPack = 1
+                        NumberOfUnitInPackXPMultiplier = [0.0, 1.0, 0.0, 0.0]
                     ),
                     TDeckUniteRule
                     (

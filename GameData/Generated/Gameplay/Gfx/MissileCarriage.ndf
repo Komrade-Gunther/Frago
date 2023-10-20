@@ -10347,3 +10347,32 @@ MissileCarriage_Su_25_s24_FRL_Showroom is TMissileCarriageConnoisseur
 
     ]
 )
+// Osa_9K33M3_SOV : ['SAM 9M33M2 x6']
+MissileCarriage_ATACMS is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Osa_9K33M3_SOV
+    PylonSet = ~/DepictionPylonSet_Vehicle_Default
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 1
+        ),
+    ]
+)
+MissileCarriage_ATACMS_Showroom is TMissileCarriageConnoisseur
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Osa_9K33M3_SOV
+    PylonSet = ~/DepictionPylonSet_Vehicle_Default_Showroom
+    WeaponInfos = 
+    [
+        TMissileCarriageWeaponInfo
+        (
+            Count = 2
+            MissileType = eAAM
+            WeaponIndex = 1
+        ),
+    ]
+)

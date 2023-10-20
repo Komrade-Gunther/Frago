@@ -11611,3 +11611,18 @@ template FXProjectile_24  [ Action ] is FXWeaponProjectileHappeningSingle
     Power           = EFXPower/Moyen
     WaitBetweenShot = 0.75
 )
+FXWeapon_RocketArt_ATACMS_FRL is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_10( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_1 ),
+                FXFiring_10( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_2 ),
+                FXFiring_10( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_3 ),
+                FXFiring_10( Action = $/GFX/GameFx/fx_tir_roquette_MLRS_4 ),
+            ]
+        ),
+    ]
+)

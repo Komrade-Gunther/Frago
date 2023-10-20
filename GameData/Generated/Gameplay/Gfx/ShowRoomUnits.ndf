@@ -46783,3 +46783,41 @@ export Descriptor_ShowRoomUnit_MotRifles_Metis_DDR_FRL is TEntityDescriptor
         )
     ]
 )
+
+export Descriptor_ShowRoomUnit_M270_MLRS_US_ATACMS_FRL is TEntityDescriptor
+(
+    DescriptorId = GUID:{45ffb0a3-ad2f-45af-964a-b24c183a95d8}
+    ClassNameForDebug = "ShowRoomUnit_M270_MLRS_US_ATACMS_FRL"
+    ModulesDescriptors = 
+    [
+        TTypeUnitModuleDescriptor
+        (
+            Nationalite = ENationalite/Allied
+            MotherCountry = 'US'
+            AcknowUnitType = ~/TAcknowUnitType_ArtShell
+            TypeUnitFormation = 'Artillerie'
+        ),
+        ~/ShowroomPositionModuleDescriptor,
+        TApparenceModelModuleDescriptor
+        (
+            PickableObject = True
+            Depiction = ~/Gfx_M270_MLRS_US_ATACMS_FRL_Showroom_Autogen
+            GameplayBBoxBoneName = 'chassis'
+        ),
+        $/GFX/Everything/WeaponDescriptor_M270_MLRS_US_ATACMS_FRL,
+        ~/LinkTeamModuleDescriptor,
+        ~/EffectApplierModuleDescriptor,
+        TExperienceModuleDescriptor
+        (
+            ExperienceLevelsPackDescriptor = ~/ExperienceLevelsPackDescriptor_XP_pack_simple_v2
+            CanWinExperience = True
+            ExperienceGainBySecond = ~/ExperienceGainBySecond
+            ExperienceMultiplierBonusOnKill = ~/ExperienceMultiplierBonusOnKill
+        ),
+        TCameraShowroomModuleDescriptor
+        (
+            Token = 'BigVehicle'
+            SpawnType = EShowroomSpawnType/Vehicle
+        )
+    ]
+)

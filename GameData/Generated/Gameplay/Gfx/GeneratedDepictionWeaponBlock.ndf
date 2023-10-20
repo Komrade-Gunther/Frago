@@ -3535,3 +3535,11 @@ Weapon_Bomb_GBU_24_x2 is TCompositeHappening
     ]
 )
 
+Weapon_RocketArt_ATACMS_FRL is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_RocketArt_ATACMS_FRL,
+        SFXWeapon_RocketArt_M26_227mm,
+    ]
+)
