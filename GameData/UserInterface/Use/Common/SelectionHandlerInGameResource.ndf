@@ -25,6 +25,7 @@ SelectionResources is TSelectionHandlerInGameResources
             $/GameplayOption/StickySelectionStrategicValue
         ),
     ]
+    UseInvertedHotkeysForUniformSelection  = $/GameplayOption/UseInvertedHotkeysForUniformSelection
     KeyboardPresetUpdater = $/KeyboardPreset/KeyboardPresetUpdater
     SquareSelectionActive = true
 )

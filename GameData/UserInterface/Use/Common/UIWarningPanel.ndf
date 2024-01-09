@@ -9,9 +9,30 @@ WarningNegativeComponent is WarningStandardComponent
     TextColor = "WarningPanel/Negative"
 )
 
+StrategicWarningPositiveComponent is WarningStandardComponent
+(
+    TextColor = "SM_paleSilver"
+    BackgroundBlockColorToken = 'SM_RifleGreen_75'
+    BorderLineColorToken = 'SM_Grullo'
+    TypefaceToken = 'Eurostyle'
+)
+
+StrategicWarningNegativeComponent is WarningStandardComponent
+(
+    TextColor = "WarningPanel/Negative"
+    BackgroundBlockColorToken = 'SM_RifleGreen_75'
+    BorderLineColorToken = 'SM_Grullo'
+    TypefaceToken = 'Eurostyle'
+)
+//-------------------------------------------------------------------------------------
 template WarningStandardComponent
 [
-    TextColor : string
+    TextColor : string,
+    BackgroundBlockColorToken : string = 'H2_bleu_2',
+    BorderLineColorToken : string = 'H2_bleu_2',
+    TypefaceToken : string = "UIMainFont",
+
+
 ] is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI(
@@ -52,7 +73,7 @@ template WarningStandardComponent
                 HorizontalFitStyle = ~/FitStyle/UserDefined
                 VerticalFitStyle = ~/FitStyle/FitToContent
 
-                TypefaceToken = "UIMainFont"
+                TypefaceToken = <TypefaceToken>
                 BigLineAction = ~/BigLineAction/MultiLine
 
                 TextColor = <TextColor>
@@ -73,8 +94,8 @@ template WarningStandardComponent
     [
         PanelRoundedCorner
         (
-            BackgroundBlockColorToken = 'H2_bleu_2'
-            BorderLineColorToken = 'H2_bleu_2'
+            BackgroundBlockColorToken = <BackgroundBlockColorToken>
+            BorderLineColorToken = <BorderLineColorToken>
         )
     ]
 )

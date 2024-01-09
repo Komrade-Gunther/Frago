@@ -136,29 +136,24 @@ IsFromStrategic : bool = false
 //-------------------------------------------------------------------------------------
 template FlareCustomEditableText
 [
-
     IsFromStrategic : bool = false
-]
-
-is BUCKEditableTextDescriptor
+] is BUCKEditableTextDescriptor
 (
     ElementName = "FlareCustomEditableText"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [240.0, 24.0]
-        // AlignementToFather = [0.0, 0.5]
-        // AlignementToAnchor = [0.0, 0.5]
+        AlignementToAnchor = [0.5, 1.0]
+        AlignementToFather = [0.5, 0.0]
+        MagnifiableOffset = [0.0, -4.0]
     )
 
     HasBackground = true
-    BackgroundBlockColorToken = (<IsFromStrategic> == true ? "SM_RifleGreen_75" : "BoutonTemps")
+    BackgroundBlockColorToken = (<IsFromStrategic> == true ? "SM_RifleGreen_75" : "CustomFlareText")
 
     ClippingContainerFrameProperty = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
-        MagnifiableWidthHeight = [-6.0, -6.0]
-        AlignementToFather = [0.5, 0.5]
-        AlignementToAnchor = [0.5, 0.5]
     )
 
     TextSizeToken = "FlaresPanel/CustomFlare/EditableText"
