@@ -155,10 +155,14 @@ SubDepictionTowedUnit is TacticTowedSubDepictionTemplate
         ('Mortier_2B9_Vasilek_SOV', TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_2B9_Vasilek_SOV Angle = 0.5235987755982988 )),
         ('Mortier_2B9_Vasilek_nonPara_SOV', TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_2B9_Vasilek_nonPara_SOV Angle = 0.5235987755982988 )),
     ]
-    SubDepictionGenerators = [
-        SubGeneratorsTowed_DCA_I_Hawk_RFA,
-        SubGeneratorsTowed_DCA_I_Hawk_US,
-        SubGeneratorsTowed_DCA_Rapier_FSA_UK,
-        SubGeneratorsTowed_DCA_Rapier_UK,
+    MissileAlternatives = MissileAlternatives_DCA_I_Hawk_RFA
+                        + MissileAlternatives_DCA_I_Hawk_US
+                        + MissileAlternatives_DCA_Rapier_FSA_UK
+                        + MissileAlternatives_DCA_Rapier_UK
+    AllowedUnits = [
+        'DCA_I_Hawk_RFA',
+        'DCA_I_Hawk_US',
+        'DCA_Rapier_FSA_UK',
+        'DCA_Rapier_UK',
     ]
 )

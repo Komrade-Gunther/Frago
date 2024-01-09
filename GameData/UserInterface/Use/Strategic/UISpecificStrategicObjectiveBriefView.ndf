@@ -16,31 +16,24 @@ BUCKSpecificStrategicObjectiveBriefMainComponentDescriptor is BUCKListDescriptor
 
     Elements =
     [
-
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = BUCKTextDescriptor
+            ComponentDescriptor = BUCKRackDescriptor
             (
-                ElementName = 'ObjectivesText'
+                ElementName = "ObjectiveListRack"
+
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [1.0, 0.0]
                 )
 
-                ParagraphStyle = ~/LDHintParagraphStyleLeftAlignedExact
-                TextPadding = TRTTILength4(Magnifiable = [10.0, 0.0, 10.0, 0.0])
-                TextStyle = "Default"
+                Axis = ~/ListAxis/Vertical
 
-                HorizontalFitStyle = ~/FitStyle/MinBetweenUserDefinedAndContent
-                VerticalFitStyle = ~/FitStyle/FitToContent
+                InterItemMargin = TRTTILength (Magnifiable = 6.0)
 
-                TypefaceToken = "Eurostyle"
-                BigLineAction = ~/BigLineAction/MultiLine
-
-                TextColor = "SM_paleSilver"
-                TextSize = "14"
+                BladeDescriptor = ~/StrategicObjectivePanelOneObjectiveContent
             )
-        ),
+        )
     ]
     BackgroundComponents =
     [
@@ -76,18 +69,119 @@ BUCKSpecificStrategicObjectiveBriefMainComponentDescriptor is BUCKListDescriptor
             VerticalFitStyle = ~/FitStyle/UserDefined
             TypefaceToken = "Eurostyle_Italic"
             BigLineAction = ~/BigLineAction/MultiLine
-            TextToken = 'Obj_ti2'
+            TextToken = 'Obj_ti'
             TextDico = ~/LocalisationConstantes/dico_interface_ingame
             TextColor = "SM_paleSilver"
-            TextSize = "16"
+            TextSize = "12"
         )
     ]
-
-
 )
+
+private StrategicObjectivePanelOneObjectiveContent is BUCKListDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [0.0, 0.0]
+    )
+
+    FirstMargin = TRTTILength(Magnifiable = ~/OneObjectiveWidthMarginLeft)
+    InterItemMargin = TRTTILength(Magnifiable = ~/OneObjectiveSpaceBetwenCheckboxAndText)
+    LastMargin = TRTTILength(Magnifiable = ~/OneObjectiveWidthMarginRight)
+    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
+
+    Axis = ~/ListAxis/Horizontal
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKListDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [~/OneObjectiveTextContentWidth, 0.0]
+                )
+
+                FirstMargin = TRTTILength(Magnifiable = 2)
+                InterItemMargin = TRTTILength(Magnifiable = 2.0)
+
+                Axis = ~/ListAxis/Vertical
+
+                Elements =
+                [
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = BUCKTextDescriptor
+                        (
+                            ElementName = "ObjectiveTitle"
+
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                            )
+
+                            ParagraphStyle = ~/LDHintParagraphStyleLeftAlignedExact
+                            HorizontalFitStyle = ~/FitStyle/UserDefined
+                            VerticalFitStyle = ~/FitStyle/FitToContent
+
+                            TextStyle = 'Default'
+                            TypefaceToken = "Eurostyle_Medium"
+
+                            TextSize = '14'
+                            TextColor = 'SM_paleSilver'
+                        )
+                    ),
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = BUCKTextDescriptor
+                        (
+                            ElementName = "ObjectiveDescription"
+
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                            )
+
+                            ParagraphStyle = ~/LDHintParagraphStyleLeftAlignedExact
+                            HorizontalFitStyle = ~/FitStyle/UserDefined
+                            VerticalFitStyle = ~/FitStyle/FitToContent
+                            BigLineAction = ~/BigLineAction/MultiLine
+                            TextStyle = 'Default'
+                            TypefaceToken = "Eurostyle_Italic"
+
+                            TextSize = '14'
+                            TextColor = 'SM_paleSilver'
+                        )
+                    ),
+                ]
+            )
+        ),
+    ]
+)
+
 
 UISpecificStrategicObjectiveBriefViewDescriptor is TUISpecificObjectiveBriefViewDescriptor
 (
     MainComponentDescriptor = ~/BUCKSpecificStrategicObjectiveBriefMainComponentDescriptor
     MainComponentContainerUniqueName = "StrategicGlobalObjectivesContainer" // Permet d'indiquer l'endroit ou le composant doit s'insérer
+
+    TextColorByObjectiveState = MAP
+    [
+        (
+            EStateObjective/Incomplete,
+            "SM_paleSilver"
+        ),
+        (
+            EStateObjective/Failed,
+            "score_05"
+        ),
+        (
+            EStateObjective/Succes,
+            "score_02"
+        ),
+        (
+            EStateObjective/Ended,
+            "Objective/Failed"
+        ),
+    ]
 )

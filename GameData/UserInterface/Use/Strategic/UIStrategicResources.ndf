@@ -19,9 +19,8 @@ StrategicResource is TUISpecificStrategicResources
         ("UISpecificLossesStateViewDescriptor", ~/UISpecificLossesStateViewDescriptor),
         ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor(MainComponentContainerUniqueName = "BUCKSpecificUnitInfoPanelMainComponentContainer" UseForStrategic = True)),
         ("UISpecificStrategicDateViewDescriptor", ~/UISpecificStrategicDateViewDescriptor),
-        ("UISpecificSelectionPanelPawnViewDescriptor", UISpecificSelectionPanelPawnViewDescriptorTemplate(MainComponentContainerUniqueName = "BUCKSpecificSelectionPanelPawnMainComponentContainer" ContainsCubeAction = true)),
+        ("UISpecificSelectionPanelPawnViewDescriptor", UISpecificSelectionPanelPawnViewDescriptorTemplate(MainComponentContainerUniqueName = "BUCKSpecificSelectionPanelPawnMainComponentContainer" ContainsCubeAction = true HasSpotlight = true)),
         ("UISpecificStrategicSpawnPointViewDescriptor", ~/UISpecificStrategicSpawnPointViewDescriptor),
-        ("MenuButtonDescriptor", ~/UISpecificMenuButtonViewDescriptor),
         ("ScorePanelDescriptor", ~/UISpecificStrategicScorePanelViewDescriptor),
         ("UISpecificStrategicCubeActionViewDescriptor", ~/UISpecificStrategicCubeActionViewDescriptor),
         ("UISpecificStrategicBattleOrderPanelViewDescriptor", ~/UISpecificStrategicBattleOrderPanelViewDescriptor),
@@ -44,7 +43,7 @@ StrategicResource is TUISpecificStrategicResources
     LDHintResource              = ~/SpecificInGameLDHintResource
     GabaritResources            = ~/StrategicGabaritResources
     ZoCResources                = ~/StrategicZoCResources
-    WarningPanelResources       = ~/WarningPanelResources
+    WarningPanelResources       = ~/WarningPanelStrategicResources
     LabelsOnMapResources        = ~/StrategicLabelsOnMapResources
     ScriptedLabelResources      = ~/StrategicScriptedLabelResources
     FeedbackManagerDescriptor   = ~/StrategicFeedbackMessageManagerDescriptor
@@ -83,7 +82,8 @@ StrategicResource is TUISpecificStrategicResources
 private StrategicBottomScreen is BUCKListDescriptor
 (
     ElementName = 'StrategicBottomScreen'
-    UniqueName = 'StrategicBottomScreenUniqueName'
+    UniqueName = 'StrategicBottomScreen'
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         AlignementToAnchor = [0.0, 1.0]
@@ -102,7 +102,7 @@ private StrategicBottomScreen is BUCKListDescriptor
             ComponentDescriptor = BUCKListDescriptor
             (
                 ElementName = 'PanneauInfoPion'
-                UniqueName = 'PanneauInfoPionUniqueName'
+
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     AlignementToAnchor = [0.0, 1.0]
@@ -124,9 +124,6 @@ private StrategicBottomScreen is BUCKListDescriptor
                             ComponentFrame = TUIFramePropertyRTTI
                             (
                                 MagnifiableWidthHeight = [337.0, 78.0]
-                                // AlignementToAnchor = [1.0, 1.0]
-                                // AlignementToFather = [1.0, 1.0]
-                                // MagnifiableOffset = [20.0, 0.0]
                             )
                         )
                     ),
@@ -171,6 +168,8 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
 
     ForegroundComponents = BUCKContainerDescriptor
     (
+        ElementName = "StrategicMainContainerForeground"
+
         ComponentFrame = TUIFramePropertyRTTI
         (
             RelativeWidthHeight = [1.0, 1.0]
@@ -178,206 +177,179 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
 
         Components =
         [
+            BUCKListDescriptor
+            (
+                UniqueName = "StrategicInfoPlayerAndScore"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [320.0, 0.0]
+                    AlignementToFather = [1.0, 0.0]
+                    AlignementToAnchor = [1.0, 0.0]
+                    MagnifiableOffset = [0.0, 44.0]
+                )
+
+                LastMargin = TRTTILength( Magnifiable = 0.0 )
+                Axis = ~/ListAxis/Vertical
+                HidePointerEvents = true
+                Elements =
+                [
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = BUCKContainerDescriptor
+                        (
+                            UniqueName = "StrategicGlobalObjectivesContainer"
+
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                            )
+
+                            FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                        )
+                    ),
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = FlarePanelChatContainer is BUCKContainerDescriptor
+                        (
+                            UniqueName = "UICommonFlarePanelViewMainContainer"
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                                AlignementToAnchor = [1.0, 0.0]
+                                AlignementToFather = [1.0, 0.0]
+                            )
+
+                            FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                        )
+                    )
+                ]
+            ),
+
             BUCKContainerDescriptor
             (
+                UniqueName = "BUCKSpecificConnectedPlayersPanel"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    AlignementToAnchor = [1.0, 0.0]
+                    AlignementToFather = [1.0, 0.0]
+                    MagnifiableOffset = [-5.0, 125.0]
+                )
+
+                FitStyle = ~/ContainerFitStyle/FitToContent
+            ),
+            BUCKListDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 0.0]
+                )
+
+                Axis = ~/ListAxis/Vertical
+                BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
+                FirstMargin = TRTTILength( Magnifiable = 44.0 )
+                InterItemMargin = TRTTILength( Magnifiable = 4.0 )
+
+                Elements =
+                [
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = BUCKContainerDescriptor
+                        (
+                            UniqueName = "SpecificStrategicHUDHeaderViewMainContainer"
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                                MagnifiableWidthHeight = [0,120]
+                            )
+
+                            //FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                        )
+                    ),
+
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = BUCKContainerDescriptor
+                        (
+                            UniqueName = "StrategicProductionUnitContainerListScrollingContainer"
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                            )
+                            FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                        )
+                    ),
+
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = BUCKContainerDescriptor
+                        (
+                            UniqueName = "StrategicProductionBattalionRackScrollingContainer"
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                MagnifiableOffset = [10.0, 0.0]
+                            )
+
+                        )
+                    ),
+                    BUCKListElementDescriptor
+                    (
+                        ExtendWeight = 1.0
+                        ComponentDescriptor = BUCKContainerDescriptor(ComponentFrame = TUIFramePropertyRTTI())
+                    ),
+                ]
+            ),
+
+            //-------------------------------------------------------------------------------------
+
+            BUCKContainerDescriptor
+            (
+                UniqueName = "BUCKMainComponentScreenWideContainer"
+
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [1.0, 1.0]
                 )
+            ),
 
-                Components =
-                [
-                    BUCKContainerDescriptor
-                    (
-                        UniqueName = "PourPlacerPanneauPreparationCombat"
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [1.0, 1.0]
-                        )
-                    ),
-                    //
-                    BUCKListDescriptor
-                    (
-                        UniqueName = "StrategicInfoPlayerAndScore"
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            MagnifiableWidthHeight = [320,0]
-                            AlignementToFather = [1.0, 0.0]
-                            AlignementToAnchor = [1.0, 0.0]
-                            MagnifiableOffset = [0.0, 44.0]
-                        )
+            BUCKContainerDescriptor
+            (
+                UniqueName = "BUCKSpecificAutoresolveUnitSelectorViewContainer"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    AlignementToAnchor = [1.0, 0.0]
+                    AlignementToFather = [1.0, 0.0]
+                )
 
-                        LastMargin = TRTTILength( Magnifiable = 0.0 )
-                        Axis = ~/ListAxis/Vertical
-                        HidePointerEvents = true
-                        Elements =
-                        [
-                            BUCKListElementDescriptor
-                            (
-                                ComponentDescriptor = BUCKContainerDescriptor
-                                (
-                                    UniqueName = "StrategicGlobalObjectivesContainer"
+                FitStyle = ~/ContainerFitStyle/FitToContent
+            ),
+            BUCKContainerDescriptor
+            (
+                UniqueName = "SpecificAutoresolveViewDescriptor"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 1.0]
+                    AlignementToAnchor = [0.5, 0.5]
+                    AlignementToFather = [0.5, 0.5]
+                )
+            ),
+            BUCKContainerDescriptor
+            (
+                UniqueName = "PourPlacerPanneauPreparationCombat"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 1.0]
+                )
+            ),
 
-                                    ComponentFrame = TUIFramePropertyRTTI
-                                    (
-                                        RelativeWidthHeight = [1,0]
-                                    )
+            //-------------------------------------------------------------------------------------
 
-                                    FitStyle = ~/ContainerFitStyle/FitToContentVertically
-                                )
-                            ),
-                            BUCKListElementDescriptor
-                            (
-                                ComponentDescriptor = FlarePanelChatContainer is BUCKContainerDescriptor
-                                (
-                                    UniqueName = "UICommonFlarePanelViewMainContainer"
-                                    ComponentFrame = TUIFramePropertyRTTI
-                                    (
-                                        MagnifiableWidthHeight = [0,40]
-                                        AlignementToAnchor = [1.0, 0.0]
-                                        AlignementToFather = [1.0, 0.0]
-                                    )
-
-                                    FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
-
-                                )
-                            )
-                        ]
-                    ),
-
-                    BUCKContainerDescriptor
-                    (
-                        UniqueName = "BUCKSpecificConnectedPlayersPanel"
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            AlignementToAnchor = [1.0, 0.0]
-                            AlignementToFather = [1.0, 0.0]
-                            MagnifiableOffset = [-5.0, 125.0]
-                        )
-
-                        FitStyle = ~/ContainerFitStyle/FitToContent
-                    ),
-                    BUCKListDescriptor
-                    (
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [1.0, 0.0]
-                        )
-
-                        Axis = ~/ListAxis/Vertical
-                        BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
-                        FirstMargin = TRTTILength( Magnifiable = 44.0 )
-                        InterItemMargin = TRTTILength( Magnifiable = 4.0 )
-
-                        Elements =
-                        [
-                            BUCKListElementDescriptor
-                            (
-                                ComponentDescriptor = BUCKContainerDescriptor
-                                (
-                                    UniqueName = "SpecificStrategicHUDHeaderViewMainContainer"
-                                    ComponentFrame = TUIFramePropertyRTTI
-                                    (
-                                        RelativeWidthHeight = [1.0, 0.0]
-                                        MagnifiableWidthHeight = [0,120]
-                                    )
-
-                                    //FitStyle = ~/ContainerFitStyle/FitToContentVertically
-                                )
-                            ),
-
-                            BUCKListElementDescriptor
-                            (
-                                ComponentDescriptor = BUCKContainerDescriptor
-                                (
-                                    UniqueName = "StrategicProductionUnitContainerListScrollingContainer"
-                                    ComponentFrame = TUIFramePropertyRTTI
-                                    (
-                                        RelativeWidthHeight = [1.0, 0.0]
-                                    )
-                                    FitStyle = ~/ContainerFitStyle/FitToContentVertically
-                                )
-                            ),
-
-                            BUCKListElementDescriptor
-                            (
-                                ComponentDescriptor = BUCKContainerDescriptor
-                                (
-                                    UniqueName = "StrategicProductionBattalionRackScrollingContainer"
-                                    ComponentFrame = TUIFramePropertyRTTI
-                                    (
-                                        MagnifiableOffset = [10.0, 0.0]
-                                    )
-
-                                )
-                            ),
-                            BUCKListElementDescriptor
-                            (
-                                ExtendWeight = 1.0
-                                ComponentDescriptor = BUCKContainerDescriptor(ComponentFrame = TUIFramePropertyRTTI())
-                            ),
-                        ]
-                    ),
-
-                    //-------------------------------------------------------------------------------------
-
-                    BUCKContainerDescriptor
-                    (
-                        UniqueName = "BUCKMainComponentScreenWideContainer"
-
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [1.0, 1.0]
-                        )
-
-                        // Components =
-                        // [
-                        //     BUCKContainerDescriptor
-                        //     (
-                        //         UniqueName = "SpecificSignpostViewMainContainer"
-
-                        //         ComponentFrame = TUIFramePropertyRTTI
-                        //         (
-                        //             MagnifiableWidthHeight = [337.0, 78.0]
-                        //             AlignementToAnchor = [1.0, 1.0]
-                        //             AlignementToFather = [1.0, 1.0]
-                        //             MagnifiableOffset = [0.0, -150.0]
-                        //         )
-                        //     )
-                        // ]
-                    ),
-
-                    BUCKContainerDescriptor
-                    (
-                        UniqueName = "BUCKSpecificAutoresolveUnitSelectorViewContainer"
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            AlignementToAnchor = [1.0, 0.0]
-                            AlignementToFather = [1.0, 0.0]
-                        )
-
-                        FitStyle = ~/ContainerFitStyle/FitToContent
-                    ),
-                    BUCKContainerDescriptor
-                    (
-                        UniqueName = "SpecificAutoresolveViewDescriptor"
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [1.0, 1.0]
-                            AlignementToAnchor = [0.5, 0.5]
-                            AlignementToFather = [0.5, 0.5]
-                        )
-                    ),
-
-                    //-------------------------------------------------------------------------------------
-
-                    ~/StrategicBottomScreen,
-                    StrategicBoutonsMenus,
-                ]
-            )
+            ~/StrategicBottomScreen,
+            ~/StrategicBoutonsMenus,
         ]
     )
 )
+
+//-------------------------------------------------------------------------------------
 
 private StrategicOrderDisplayResources is TStrategicOrderDisplayResources
 (
@@ -388,44 +360,38 @@ private StrategicOrderDisplayResources is TStrategicOrderDisplayResources
     PhaseLabelDescriptor = ~/StrategicLabelDescriptor
 )
 
-private StrategicLabelDescriptor is BUCKContainerDescriptor
+//-------------------------------------------------------------------------------------
+
+private StrategicLabelDescriptor is BUCKTextDescriptor
 (
-    ComponentFrame = TUIFramePropertyRTTI()
+    ElementName = 'PhaseText'
 
-    FitStyle = ~/ContainerFitStyle/FitToContent
+    ParagraphStyle = TParagraphStyleRTTI
+    (
+        Alignment = UIText_Center
+        VerticalAlignment = UIText_VerticalCenter
+    )
 
-    Components =
-    [
-        BUCKTextDescriptor
-        (
-            ElementName = 'PhaseText'
+    HasBorder = true
+    BorderLineColorToken = "PawnLabel/ActionPoints"
+    BorderThicknessToken = "PawnLabel/ActionPoints"
 
-            ParagraphStyle = TParagraphStyleRTTI
-            (
-                Alignment = UIText_Center
-                VerticalAlignment = UIText_VerticalCenter
-            )
+    TextStyle = "Default"
+    TextPadding = TRTTILength4(Magnifiable = [5.0, 5.0, 5.0, 5.0])
 
-            HasBorder = true
-            BorderLineColorToken = "PawnLabel/ActionPoints"
-            BorderThicknessToken = "PawnLabel/ActionPoints"
+    HorizontalFitStyle = ~/FitStyle/FitToContent
+    VerticalFitStyle = ~/FitStyle/FitToContent
 
-            TextStyle = "Default"
-            TextPadding = TRTTILength4(Magnifiable = [5, 5, 5, 5])
+    TypefaceToken = "UIMainFont"
+    BigLineAction = ~/BigLineAction/CutByDots
 
-            HorizontalFitStyle = ~/FitStyle/FitToContent
-            VerticalFitStyle = ~/FitStyle/FitToContent
+    TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
-            TypefaceToken = "UIMainFont"
-            BigLineAction = ~/BigLineAction/CutByDots
-
-            TextDico = ~/LocalisationConstantes/dico_interface_ingame
-
-            TextColor = "PawnLabel/ActionPoints"
-            TextSize = "PawnLabel/ActionPoints"
-        )
-    ]
+    TextColor = "PawnLabel/ActionPoints"
+    TextSize = "PawnLabel/ActionPoints"
 )
+
+                    //-------------------------------------------------------------------------------------
 
 private StrategicOrderDisplayDrawer is TStrategicOrderDisplayDrawer
 (
@@ -438,6 +404,8 @@ private StrategicOrderDisplayDrawer is TStrategicOrderDisplayDrawer
         ArrowFadeLength = 10000*2
     )
 )
+
+                    //-------------------------------------------------------------------------------------
 
 private UISpecificStrategicCubeActionViewDescriptor is TUISpecificCubeActionViewDescriptor
 (

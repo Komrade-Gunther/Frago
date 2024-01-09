@@ -68,6 +68,7 @@ FXWeapon_AGM_HOT2 is FXWeapon_3
 FXWeapon_AGM_HOT2_x4 is FXWeapon_3
 FXWeapon_AGM_Kh23M is FXWeapon_6
 FXWeapon_AGM_Kh25ML is FXWeapon_6
+FXWeapon_AGM_Kh25MP is FXWeapon_6
 FXWeapon_AGM_Kh25MPU is FXWeapon_6
 FXWeapon_AGM_Kh28_X28 is FXWeapon_6
 FXWeapon_AGM_Kh29D is FXWeapon_6
@@ -188,6 +189,7 @@ FXWeapon_SAM_Strela10_x4 is FXWeapon_10
 FXWeapon_SAM_Strela10_x4_FASTA is FXWeapon_10
 FXWeapon_SAM_Strela10M3_x4 is FXWeapon_10
 FXWeapon_SAM_Strela2_x12 is FXWeapon_9
+FXWeapon_SAM_Strela2_x2 is FXWeapon_9
 FXWeapon_SAM_Strela2_x4 is FXWeapon_9
 FXWeapon_0 is FXMissileFiring( Action = $/GFX/GameFx/fx_tir_missile_AA_gros )
 FXWeapon_1 is FXMissileFiring( Action = $/GFX/GameFx/fx_tir_missile_AA_moyen )

@@ -162,25 +162,28 @@ StrategicIAStratConstantes is TIAStratStrategicConstantesDescriptor
         ( "Char", 0.5 ),
     ]
 
-    //Pour comparer les points on exprime le bonus de terrain en fonction de la distance diagonale de la map.
+    //Pour comparer les points on exprime le bonus de terrain en fonction de la distance diagonale de la map.(tous deux scoré sur 1.0)
     //Pour un bonus de 0.1 on acceptera donc d'aller 10% plus loin par rapport à la diagonale de la map pour ne pas prendre un bonus
     DefenseBonusByTerrainType = MAP
     [
         (~/ETerrainType/StrategicForest, 0.1),
         (~/ETerrainType/StrategicSemiUrban, 0.25),
+        (~/ETerrainType/StrategicUrban, 0.25),
     ]
 
-    TerrainThatGenerateDefensePointOfRank = MAP
+    TerrainThatGenerateDefensePoint =
     [
-        (~/ETerrainType/StrategicSemiUrban, 0), //0 rang disponible tout le temps
+        (~/ETerrainType/StrategicSemiUrban),
+        (~/ETerrainType/StrategicUrban),
     ]
+    DefaultRankForPrioritaryDefensePoint = 0
 
     NumberPositionRankToPlaceUnits = 3
-    MinimumRankForWeakestBattleUnitDefensePoint = 1 //Attention, ça commence à 1
-    MinimumRankForStrongestBattleUnitDefensePoint = 2 //Attention, ça commence à 1
-    MinimumRankForWeakestBattleUnitAttackPoint = 1 //Attention, ça commence à 1
-    MinimumRankForStrongestBattleUnitAttackPoint = 1 //Attention, ça commence à 1
-    MinimumRankForSupportUnit = 3 //Attention, ça commence à 1
+    MinimumRankForWeakestBattleUnitDefensePoint = 0 //Attention, ça commence à 0
+    MinimumRankForStrongestBattleUnitDefensePoint = 1 //Attention, ça commence à 0
+    MinimumRankForWeakestBattleUnitAttackPoint = 0 //Attention, ça commence à 0
+    MinimumRankForStrongestBattleUnitAttackPoint = 0 //Attention, ça commence à 0
+    MinimumRankForSupportUnit = 2 //Attention, ça commence à 0
 
     GroupPoolsSortedByPriority =
     [

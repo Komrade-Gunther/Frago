@@ -474,11 +474,6 @@ is BUCKContainerDescriptor
                 (
                     ComponentDescriptor = WeaponPanelAPCRButton(IsSelection = <IsSelection>)
                 ),
-                // HEAT
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = WeaponPanelHEATButton(IsSelection = <IsSelection>)
-                ),
                 // AP
                 BUCKListElementDescriptor
                 (
@@ -493,12 +488,6 @@ is BUCKContainerDescriptor
                 BUCKListElementDescriptor
                 (
                     ComponentDescriptor = WeaponPanelAPHEButton(IsSelection = <IsSelection>)
-                ),
-
-                // HE/SAP
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = WeaponPanelHESAPButton(IsSelection = <IsSelection>)
                 ),
 
                 // HE OR SUPPLY
@@ -567,16 +556,16 @@ is BUCKContainerDescriptor
                     ComponentDescriptor = WeaponPanelClusterAPButton(IsSelection = <IsSelection>)
                 ),
 
+                // ClusterSolAP
+                BUCKListElementDescriptor
+                (
+                    ComponentDescriptor = WeaponPanelClusterSolAPButton(IsSelection = <IsSelection>)
+                ),
+
                 // ClusterHE
                 BUCKListElementDescriptor
                 (
                     ComponentDescriptor = WeaponPanelClusterHEButton(IsSelection = <IsSelection>)
-                ),
-
-                // Napalm
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = WeaponPanelNapalmButton(IsSelection = <IsSelection>)
                 ),
 
                 // Flame
@@ -906,47 +895,6 @@ is WeaponPanelButton
 )
 
 // -------------------------------------------------------------------------------------------------
-// WeaponPanelHEATButton
-// -------------------------------------------------------------------------------------------------
-
-// HEAT button
-template WeaponPanelHEATButton
-[
-    IsSelection : bool = true,
-] is WeaponPanelButton
-(
-    ElementName = 'HEATButton'
-    ElementNameText = 'WeaponHEATAmmoText'
-    ElementNameCalibre = 'WeaponHEATCalibreText'
-    BackgroundBlockColorToken = "WeaponButton/APButton"
-    TextToken = "AMMOB_HEAT"
-    HintTitleToken = <IsSelection>  ? "HWP_ACTT"  : "HIP_AFINFT"
-    HintBodyToken = <IsSelection>  ? "HWP_ACT"   : "HIP_AFINF"
-    HintExtendedToken = ""
-    IsSelection = <IsSelection>
-)
-// -------------------------------------------------------------------------------------------------
-// WeaponPanelHESAPButton
-// -------------------------------------------------------------------------------------------------
-
-// HE Button
-template WeaponPanelHESAPButton
-[
-    IsSelection : bool = true,
-] is WeaponPanelButton
-(
-    ElementName = 'HESAPButton'
-    ElementNameText = 'WeaponHESAPAmmoText'
-    ElementNameCalibre = 'WeaponHESAPCalibreText'
-    BackgroundBlockColorToken = "WeaponButton/HEButton"
-    TextToken = "AMMOB_HESA"
-    HintTitleToken = <IsSelection>  ? "HWP_ACTT"  : "HIP_AFINFT"
-    HintBodyToken = <IsSelection>  ? "HWP_ACT"   : "HIP_AFINF"
-    HintExtendedToken = ""
-    IsSelection = <IsSelection>
-)
-
-// -------------------------------------------------------------------------------------------------
 // WeaponPanelHEButton
 // -------------------------------------------------------------------------------------------------
 
@@ -1228,16 +1176,16 @@ template WeaponPanelClusterAPButton
 
 // -------------------------------------------------------------------------------------------------
 
-template WeaponPanelNapalmButton
+template WeaponPanelClusterSolAPButton
 [
     IsSelection : bool = true,
 ] is WeaponPanelButton
 (
-    ElementName = 'NapalmButton'
-    ElementNameText = 'WeaponNapalmAmmoText'
-    ElementNameCalibre = 'WeaponNapalmCalibreText'
+    ElementName = 'ClusterSolAPButton'
+    ElementNameText = 'WeaponClusterSolAPAmmoText'
+    ElementNameCalibre = 'WeaponClusterSolAPCalibreText'
     BackgroundBlockColorToken = "WeaponButton/HEButton"
-    TextToken = "AMMOB_NAPA"
+    TextToken = "AMMOB_CLAP"
     HintTitleToken = <IsSelection>  ? "HWP_ACTT"  : "HIP_AFINFT"
     HintBodyToken = <IsSelection>  ? "HWP_ACT"   : "HIP_AFINF"
     HintExtendedToken = ""
@@ -1245,6 +1193,7 @@ template WeaponPanelNapalmButton
 )
 
 // -------------------------------------------------------------------------------------------------
+
 // WeaponPanelFlameButton
 // -------------------------------------------------------------------------------------------------
 
@@ -1318,7 +1267,7 @@ UISpecificUnitSelectionWeaponPanelViewDescriptor is TUISpecificUnitSelectionWeap
     MainComponentContainerUniqueName = "" // Permet d'indiquer l'endroit ou le composant doit s'insérer
 
     DamageTypeComponents = ~/DamageTypeComponentConfigurations
-    DamageTypeToModifyForSupply = "he" // Voir WeaponPanelHEButton en mode supply
+    DamageTypeToModifyForSupply = DamageFamily_he // Voir WeaponPanelHEButton en mode supply
 
     WeaponNameAndAmountToken = "UIPW_NUM"
 

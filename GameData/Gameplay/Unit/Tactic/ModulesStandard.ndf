@@ -97,7 +97,7 @@ DistrictApparenceModelModuleDescriptor is TModuleSelector
     Default = TApparenceModelModuleDescriptor
     (
         PickableObject = True
-        Depiction = TimelyDescriptorMapBuilding_OnlyLevelBuild
+        Depiction = TTimelyModifyLevelBuildReceiverFactory()
     )
     Selection = [ ~/NilDescriptorIfCadavre ]
 )
@@ -111,6 +111,7 @@ template InfantryApparenceModelModuleDescriptor [
     PickableObject = False
     Depiction = <Depiction>
     SkinWardrobe = <SkinWardrobe>
+    ReferenceMesh = $/GFX/DepictionResources/Rien
 )
 
 template VehicleApparenceModelModuleDescriptor [
@@ -118,6 +119,7 @@ template VehicleApparenceModelModuleDescriptor [
     BlackHoleIdentifier,
     GameplayBBoxBoneName,
     SkinWardrobe = nil,
+    ReferenceMesh,
 ] is TModuleSelector
 (
     Default = TApparenceModelModuleDescriptor
@@ -125,6 +127,7 @@ template VehicleApparenceModelModuleDescriptor [
         UseFollowCam = True
         PickableObject = True
         Depiction = <Depiction>
+        ReferenceMesh = <ReferenceMesh>
         BlackHoleIdentifier = <BlackHoleIdentifier>
         GameplayBBoxBoneName = <GameplayBBoxBoneName>
         SkinWardrobe = <SkinWardrobe>

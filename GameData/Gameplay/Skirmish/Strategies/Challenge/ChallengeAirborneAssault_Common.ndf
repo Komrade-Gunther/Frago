@@ -22,7 +22,7 @@ export ChalAirborneAssault_DestroyPlayer is TSequenceGeneratorDescriptor
         ~/Artillery_TriggerHappy_1for2Corridors,
         ~/Artillery_Expensive,
 
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
     ]
     ScalingGeneratorList = ~/ChalAirborneAssault_DestroyPlayer_Scaling
 )

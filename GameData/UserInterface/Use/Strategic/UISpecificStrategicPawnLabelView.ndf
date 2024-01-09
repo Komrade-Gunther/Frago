@@ -85,23 +85,6 @@ UnitLabelIconList is BUCKListDescriptor
                 TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
             )
         ),
-
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = BUCKTextureDescriptor
-            (
-                ElementName = 'StationaryIcon'
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    MagnifiableWidthHeight = [1.0, 1.0]
-                    AlignementToFather = [0.0, 0.5]
-                    AlignementToAnchor = [0.0, 0.5]
-                )
-
-                TextureToken = "UseStrategic_Labels_Stationary"
-                TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
-            )
-        ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKTextureDescriptor
@@ -116,7 +99,6 @@ UnitLabelIconList is BUCKListDescriptor
                 TextureFrame = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0] )
             )
         ),
-
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKTextureDescriptor
@@ -704,19 +686,19 @@ template PawnLabelViewDescriptor
     EngagementAnimScale = 0.5 // L'échelle va varier de 1 à (1+EngagementPhaseAnimScale). Négatif autorisé
     EngagementAnimRandomStart = 0.5 // Décalage aléatoire max en secondes au démarrage.
     LabelOpacityIfNoEngagement = 0.2 // Opacité de l'étiquette des unités qui ne peuvent pas participer au combat (cf. CantFightUnitAlpha)
-    LabelOpacityIfNoActionPoints = 0.4 // Opacité de l'étiquette des unités qui n'ont plus de PA
+    LabelOpacityIfLocked = 0.4 // Opacity of locked pawn. A pawn can be locked by the scenario when it will be available in the future.
 
     BonusBackgroundColorTokenByTerrainType = MAP
     [
         (~/ETerrainType/StrategicForest,    "Vert"),
         (~/ETerrainType/StrategicSemiUrban, "Red"),
-        (~/ETerrainType/Urbain,             "Red"),
+        (~/ETerrainType/StrategicUrban,     "Red"),
     ]
     BonusTextColorTokenByTerrainType = MAP
     [
         (~/ETerrainType/StrategicForest,    "Noir"),
         (~/ETerrainType/StrategicSemiUrban, "BlancEquipe"),
-        (~/ETerrainType/Urbain,             "BlancEquipe"),
+        (~/ETerrainType/StrategicUrban,     "BlancEquipe"),
     ]
     NbDigitToDisplayForBonus = 1
 
@@ -733,7 +715,7 @@ template PawnLabelViewDescriptor
 
     StrategicTerrainTypeIcons = MAP
     [
-        ( ~/ETerrainType/Urbain, "UseStrategic_Labels_Terrain_TerrainUrbain" ),
+        ( ~/ETerrainType/StrategicUrban, "UseStrategic_Labels_Terrain_TerrainUrbain" ),
         ( ~/ETerrainType/StrategicSemiUrban, "UseStrategic_Labels_Terrain_TerrainUrbain" ),
         ( ~/ETerrainType/StrategicPlain, "UseStrategic_Labels_Terrain_TerrainPlaine" ),
         ( ~/ETerrainType/StrategicForest, "UseStrategic_Labels_Terrain_TerrainForet" ),
@@ -741,7 +723,7 @@ template PawnLabelViewDescriptor
 
     StrategicTerrainTypeIconColors = MAP
     [
-        ( ~/ETerrainType/Urbain, "Gris_leaderboard" ),
+        ( ~/ETerrainType/StrategicUrban, "Gris_leaderboard" ),
         ( ~/ETerrainType/StrategicSemiUrban, "Gris_leaderboard" ),
         ( ~/ETerrainType/StrategicPlain, "Vert" ),
         ( ~/ETerrainType/StrategicForest, "Vert" ),

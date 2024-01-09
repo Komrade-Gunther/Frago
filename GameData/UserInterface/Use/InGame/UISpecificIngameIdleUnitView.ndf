@@ -18,6 +18,7 @@ IdleUnitButton is BUCKSpecificButton
     RoundedVertexes = [true, true, false, false]
 
     Components = [ ~/IdleUnitNumberText ]
+    Mapping = $/KeyboardOption/Mapping_NextIdleUnit
 )
 
 IdleUnitNumberText is BUCKTextDescriptor

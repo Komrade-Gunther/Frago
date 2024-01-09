@@ -17,8 +17,6 @@ export DefaultTerrain is TGameplayTerrain
     SpeedModifierTrack = 1
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/Default
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -33,9 +31,9 @@ export ForetDense is TGameplayTerrain
     CriticalEffectProbability = 0.05
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.6)]),
-            ("fmballe", MAP [("infanterie",0.5)]),
-            ("balledca", MAP [("infanterie",0.5)]),
+            (DamageFamily_he, MAP [(ResistanceFamily_infanterie,0.6)]),
+            (DamageFamily_fmballe, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_balledca, MAP [(ResistanceFamily_infanterie,0.5)]),
         ]
     DebugColor = rgba[2, 106, 2, 255]
     DissimulationModifierGroundAir = 20
@@ -48,8 +46,6 @@ export ForetDense is TGameplayTerrain
     SpeedModifierTrack = 0
     StealthBonus = 6
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/ForetDense
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = false
@@ -64,15 +60,15 @@ export ForetLegere is TGameplayTerrain
     CriticalEffectProbability = 0.025
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.65)]),
-            ("he_autocanon", MAP [("infanterie",0.65)]),
-            ("superhe", MAP [("infanterie",0.65)]),
-            ("balle", MAP [("infanterie",0.65)]),
-            ("balledca", MAP [("infanterie",0.65)]),
-            ("howz", MAP [("infanterie",0.65)]),
-            ("howz_bombe", MAP [("infanterie",0.65)]),
-            ("fmballe", MAP [("infanterie",0.65)]),
-            ("roquette_ap", MAP [("infanterie",0.65)]),
+            (DamageFamily_he, MAP [(ResistanceFamily_infanterie,0.65)]),
+            (DamageFamily_he_autocanon, MAP [(ResistanceFamily_infanterie,0.65)]),
+            (DamageFamily_superhe, MAP [(ResistanceFamily_infanterie,0.65)]),
+            (DamageFamily_balle, MAP [(ResistanceFamily_infanterie,0.65)]),
+            (DamageFamily_balledca, MAP [(ResistanceFamily_infanterie,0.65)]),
+            (DamageFamily_howz, MAP [(ResistanceFamily_infanterie,0.65)]),
+            (DamageFamily_howz_bombe, MAP [(ResistanceFamily_infanterie,0.65)]),
+            (DamageFamily_fmballe, MAP [(ResistanceFamily_infanterie,0.65)]),
+            (DamageFamily_roquette_ap, MAP [(ResistanceFamily_infanterie,0.65)]),
         ]
     DebugColor = rgba[70, 252, 70, 255]
     DissimulationModifierGroundAir = 12
@@ -81,13 +77,11 @@ export ForetLegere is TGameplayTerrain
     InflammabilityProbability = 0.6
     Name = 'ForetLegere'
     SpeedModifierAllTerrainWheel = 0.45
-    SpeedModifierBoats = 0
     SpeedModifierInfantry = 0.75
     SpeedModifierTrack = 0.55
     StealthBonus = 2.50
     //~~~~~~~~
 
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/ForetLegere
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = false
@@ -102,16 +96,16 @@ export PetitBatiment is TGameplayTerrain
     CriticalEffectProbability = 0
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.5)]),
-            ("he_autocanon", MAP [("infanterie",0.5)]),
-            ("superhe", MAP [("infanterie",0.5)]),
-            ("balle", MAP [("infanterie",0.5)]),
-            ("balledca", MAP [("infanterie",0.5)]),
-            ("howz", MAP [("infanterie",0.5)]),
-            ("howz_bombe", MAP [("infanterie",0.5)]),
-            ("fmballe", MAP [("infanterie",0.5)]),
-            // ("cac", MAP [("infanterie",0.85)]),
-            ("roquette_ap", MAP [("infanterie",0.5)]),
+            (DamageFamily_he, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_he_autocanon, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_superhe, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_balle, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_balledca, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_howz, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_howz_bombe, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_fmballe, MAP [(ResistanceFamily_infanterie,0.5)]),
+            // (DamageFamily_cac, MAP [(ResistanceFamily_infanterie,0.85)]),
+            (DamageFamily_roquette_ap, MAP [(ResistanceFamily_infanterie,0.5)]),
         ]
     DebugColor = rgba[0, 0, 0, 255]
     DissimulationModifierGroundAir = 10.5
@@ -124,8 +118,6 @@ export PetitBatiment is TGameplayTerrain
     SpeedModifierTrack = 0
     StealthBonus = 3.75
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/PetitBatiment
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -140,16 +132,16 @@ export Batiment is TGameplayTerrain
     CriticalEffectProbability = 0
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.5)]),
-            ("he_autocanon", MAP [("infanterie",0.5)]),
-            ("superhe", MAP [("infanterie",0.5)]),
-            ("balle", MAP [("infanterie",0.5)]),
-            ("balledca", MAP [("infanterie",0.5)]),
-            ("howz", MAP [("infanterie",0.5)]),
-            ("howz_bombe", MAP [("infanterie",0.5)]),
-            ("fmballe", MAP [("infanterie",0.5)]),
-            // ("cac", MAP [("infanterie",0.85)]),
-            ("roquette_ap", MAP [("infanterie",0.5)]),
+            (DamageFamily_he, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_he_autocanon, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_superhe, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_balle, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_balledca, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_howz, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_howz_bombe, MAP [(ResistanceFamily_infanterie,0.5)]),
+            (DamageFamily_fmballe, MAP [(ResistanceFamily_infanterie,0.5)]),
+            // (DamageFamily_cac, MAP [(ResistanceFamily_infanterie,0.85)]),
+            (DamageFamily_roquette_ap, MAP [(ResistanceFamily_infanterie,0.5)]),
         ]
     DebugColor = rgba[0, 0, 0, 255]
     DissimulationModifierGroundAir = 10.5
@@ -162,8 +154,6 @@ export Batiment is TGameplayTerrain
     SpeedModifierTrack = 0
     StealthBonus = 3.75
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/Batiment
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -178,16 +168,16 @@ export Ruin is TGameplayTerrain
     CriticalEffectProbability = 0
     DamageModifierPerFamilyAndResistance =
     MAP [
-            ("he", MAP [("infanterie",0.60)]),
-            ("he_autocanon", MAP [("infanterie",0.45)]),
-            ("superhe", MAP [("infanterie",0.45)]),
-            ("balle", MAP [("infanterie",0.50)]),
-            ("balledca", MAP [("infanterie",0.50)]),
-            ("howz", MAP [("infanterie",0.35)]),
-            ("howz_bombe", MAP [("infanterie",0.35)]),
-            ("cac", MAP [("infanterie",0.85)]),
-            ("fmballe", MAP [("infanterie",0.35)]),
-            ("roquette_ap", MAP [("infanterie",0.55)]),
+            (DamageFamily_he, MAP [(ResistanceFamily_infanterie,0.60)]),
+            (DamageFamily_he_autocanon, MAP [(ResistanceFamily_infanterie,0.45)]),
+            (DamageFamily_superhe, MAP [(ResistanceFamily_infanterie,0.45)]),
+            (DamageFamily_balle, MAP [(ResistanceFamily_infanterie,0.50)]),
+            (DamageFamily_balledca, MAP [(ResistanceFamily_infanterie,0.50)]),
+            (DamageFamily_howz, MAP [(ResistanceFamily_infanterie,0.35)]),
+            (DamageFamily_howz_bombe, MAP [(ResistanceFamily_infanterie,0.35)]),
+            (DamageFamily_cac, MAP [(ResistanceFamily_infanterie,0.85)]),
+            (DamageFamily_fmballe, MAP [(ResistanceFamily_infanterie,0.35)]),
+            (DamageFamily_roquette_ap, MAP [(ResistanceFamily_infanterie,0.55)]),
         ]
     DebugColor = rgba[0, 6, 200, 255]
     DissimulationModifierGroundAir = 10.5
@@ -200,149 +190,11 @@ export Ruin is TGameplayTerrain
     SpeedModifierTrack = 0
     StealthBonus = 3.75
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/Ruin
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
 )
 
-//-------------------------------------------------------------------------------------
-export Tranchee is TGameplayTerrain
-(
-    BloqueAmphibie = false
-    BloqueAtterrissage = true
-    BloqueInfanterie = false
-    BloqueVehicule = false
-    BloqueVision = false
-    CriticalEffectProbability = 0
-    DamageModifierPerFamilyAndResistance = MAP [
-        (
-            "balle",
-            MAP [
-                (
-                    "infanterie",
-                    0.3
-                ),
-            ]
-        ),
-        (
-            "he",
-            MAP [
-                (
-                    "infanterie",
-                    0.1
-                ),
-            ]
-        ),
-    ]
-    DebugColor = rgba[192, 61, 0, 255]
-    DissimulationModifierGroundAir = 1
-    DissimulationModifierGroundGround = 1
-    HeightInMeters = 1
-    InflammabilityProbability = 0
-    Name = 'Trench'
-    SpeedModifierAllTerrainWheel = 0.9
-    SpeedModifierInfantry = 1
-    SpeedModifierTrack = 0.9
-    StealthBonus = 9
-    //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
-    TerrainType = ~/ETerrainType/Tranchee
-    WorldLayerActiveMask = 255
-    AuthorizeNearGroundFlying = true
-)
-export Barbeles is TGameplayTerrain
-(
-    BloqueAmphibie = false
-    BloqueAtterrissage = false
-    BloqueInfanterie = true
-    BloqueVehicule = false
-    BloqueVision = false
-    CriticalEffectProbability = 0.6
-        DamageModifierPerFamilyAndResistance = MAP [
-        (
-            "balle",
-            MAP [
-                (
-                    "infanterie",
-                    1.5
-                ),
-            ]
-        ),
-        (
-            "he",
-            MAP [
-                (
-                    "infanterie",
-                    1.5
-                ),
-            ]
-        ),
-    ]
-    DebugColor = rgba[0, 0, 0, 255]
-    DissimulationModifierGroundAir = 0
-    DissimulationModifierGroundGround = 0
-    HeightInMeters = 8
-    InflammabilityProbability = 0
-    Name = 'TerrainBarbeles'
-    SpeedModifierAllTerrainWheel = 0.25
-    SpeedModifierInfantry = 0.25
-    SpeedModifierTrack = 0.25
-    StealthBonus = 1
-    //~~~~~~~~
-    SpeedModifierBoats = 1
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
-    TerrainType = ~/ETerrainType/Barbeles
-    WorldLayerActiveMask = 255
-    AuthorizeNearGroundFlying = true
-)
-export NidMitrailleuse is TGameplayTerrain
-(
-    BloqueAmphibie = true
-    BloqueAtterrissage = true
-    BloqueInfanterie = true
-    BloqueVehicule = true
-    BloqueVision = false
-    CriticalEffectProbability = 0
-    DamageModifierPerFamilyAndResistance = MAP [
-        (
-            "balle",
-            MAP [
-                (
-                    "infanterie",
-                    0.8
-                ),
-            ]
-        ),
-        (
-            "he",
-            MAP [
-                (
-                    "infanterie",
-                    0.5
-                ),
-            ]
-        ),
-    ]
-    DebugColor = rgba[0, 0, 0, 255]
-    DissimulationModifierGroundAir = 1
-    DissimulationModifierGroundGround = 1
-    HeightInMeters = 1
-    InflammabilityProbability = 0
-    Name = 'GunnerNest'
-    SpeedModifierAllTerrainWheel = 1
-    SpeedModifierInfantry = 1
-    SpeedModifierTrack = 1
-    StealthBonus = 7
-    //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
-    TerrainType = ~/ETerrainType/NidMitrailleuse
-    WorldLayerActiveMask = 255
-    AuthorizeNearGroundFlying = true
-)
 export Bloqueur is TGameplayTerrain
 (
     BloqueAmphibie = true
@@ -362,8 +214,6 @@ export Bloqueur is TGameplayTerrain
     SpeedModifierTrack = 1
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 0.3
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/Bloqueur
     WorldLayerActiveMask = 3
     AuthorizeNearGroundFlying = true
@@ -387,8 +237,6 @@ export StrategicForest is TGameplayTerrain
     SpeedModifierTrack = 0.9
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/StrategicForest
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -412,8 +260,6 @@ export StrategicPlain is TGameplayTerrain
     SpeedModifierTrack = 0.9
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/StrategicPlain
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -437,9 +283,30 @@ export StrategicSemiUrban is TGameplayTerrain
     SpeedModifierTrack = 0.9
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/StrategicSemiUrban
+    WorldLayerActiveMask = 255
+    AuthorizeNearGroundFlying = true
+)
+export StrategicUrban is TGameplayTerrain
+(
+    BloqueAmphibie = false
+    BloqueAtterrissage = false
+    BloqueInfanterie = false
+    BloqueVehicule = false
+    BloqueVision = false
+    CriticalEffectProbability = 0
+    DebugColor = rgba[128, 128, 25, 255]
+    DissimulationModifierGroundAir = 0
+    DissimulationModifierGroundGround = 0
+    HeightInMeters = 0
+    InflammabilityProbability = 0.1
+    Name = 'StrategicUrban'
+    SpeedModifierAllTerrainWheel = 0.8
+    SpeedModifierInfantry = 1
+    SpeedModifierTrack = 0.9
+    StealthBonus = 1
+    //~~~~~~~~
+    TerrainType = ~/ETerrainType/StrategicUrban
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
 )
@@ -462,8 +329,6 @@ export StrategicRiver is TGameplayTerrain
     SpeedModifierTrack = 0.9
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/StrategicRiver
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -488,8 +353,6 @@ export EauPeuProfonde is TGameplayTerrain
     SpeedModifierTrack = 0.3
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 0.3
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/EauPeuProfonde
     WorldLayerActiveMask = 3
     AuthorizeNearGroundFlying = true
@@ -505,19 +368,19 @@ export Urbain is TGameplayTerrain
     CriticalEffectProbability = 0.05
     DamageModifierPerFamilyAndResistance = MAP [
         (
-            "balle",
+            DamageFamily_balle,
             MAP [
                 (
-                    "infanterie",
+                    ResistanceFamily_infanterie,
                     0.8
                 ),
             ]
         ),
         (
-            "he",
+            DamageFamily_he,
             MAP [
                 (
-                    "infanterie",
+                    ResistanceFamily_infanterie,
                     0.8
                 ),
             ]
@@ -534,8 +397,6 @@ export Urbain is TGameplayTerrain
     SpeedModifierTrack = 1
     StealthBonus = 4 //7
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/Urbain
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -559,8 +420,6 @@ export Rocher is TGameplayTerrain
     SpeedModifierTrack = 0
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/Rocher
     WorldLayerActiveMask = 3
     AuthorizeNearGroundFlying = true
@@ -584,8 +443,6 @@ export SmokeHeavy is TGameplayTerrain
     SpeedModifierTrack = 1
     StealthBonus = 5
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/HeavySmoke
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -609,8 +466,6 @@ export SmokeLight is TGameplayTerrain
     SpeedModifierTrack = 1
     StealthBonus = 4
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/LightSmoke
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -634,8 +489,6 @@ export SmokeMedium is TGameplayTerrain
     SpeedModifierTrack = 1
     StealthBonus = 4.5
     //~~~~~~~~
-    SpeedModifierBoats = 0
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/MediumSmoke
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true
@@ -659,8 +512,6 @@ export EauProfonde is TGameplayTerrain
     SpeedModifierTrack = 0.375
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 1
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/EauProfonde
     WorldLayerActiveMask = 3
     AuthorizeNearGroundFlying = true
@@ -684,8 +535,6 @@ export BloqueConstruction is TGameplayTerrain
     SpeedModifierTrack = 1
     StealthBonus = 1
     //~~~~~~~~
-    SpeedModifierBoats = 1
-    DissimulationSliceSizeInGameUnits = ~/DissimulationUnitSlice
     TerrainType = ~/ETerrainType/BloqueConstruction
     WorldLayerActiveMask = 255
     AuthorizeNearGroundFlying = true

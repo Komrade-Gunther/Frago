@@ -75,7 +75,7 @@ private UnitLabelAggregationViewDescriptor is BUCKSensibleAreaDescriptor
                         ),
                     ]
                 ),
-                UnitLabelCoverIcon
+                UnitLabelTerrainIcon
                 (
                     LocalRenderLayer = 5
                 ),
@@ -146,7 +146,7 @@ private UnitLabelAggregationViewNameOnlyDescriptor is BUCKLocalLayerContainerDes
                 )
             ]
         ),
-        UnitLabelCoverIcon
+        UnitLabelTerrainIcon
         (
             LocalRenderLayer = 3
         ),

@@ -3,6 +3,8 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
 (
     LoadingText = BUCKTypingTextDescriptor
     (
+        ElementName = "SpecificOutGameLoadingPanelTypingText"
+
         ComponentFrame = TUIFramePropertyRTTI
         (
             MagnifiableWidthHeight = [0.0, 40.0]
@@ -45,7 +47,6 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
 
     DevHints = [
         "HNT_DT001",
-        "HNT_DT002",
         "HNT_DT003",
         "HNT_DT004",
         "HNT_DT005",
@@ -110,6 +111,11 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
                     TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_22_.webm"  DicoVideo =  ~/DicoVideoOutGame),
                     TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_23_.webm"  DicoVideo =  ~/DicoVideoOutGame),
                     TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_24_.webm"  DicoVideo =  ~/DicoVideoOutGame),
+                    TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_25_.webm"  DicoVideo =  ~/DicoVideoOutGame),
+                    TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_26_.webm"  DicoVideo =  ~/DicoVideoOutGame),
+                    TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_27_.webm"  DicoVideo =  ~/DicoVideoOutGame),
+                    TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_28_.webm"  DicoVideo =  ~/DicoVideoOutGame),
+                    TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_29_.webm"  DicoVideo =  ~/DicoVideoOutGame),
                 ]
             ),
 

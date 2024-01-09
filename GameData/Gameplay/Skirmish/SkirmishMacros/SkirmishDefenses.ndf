@@ -40,7 +40,7 @@ export Maintain_CorridorDynamicDefenses is TMacroActionDescriptor_CorridorDynami
 private template Template_Defense_Corridor
 [
     NumberLaunchBasedOnGenerationType:int = 1,
-    MinimumResourceForLaunch:int = 0,
+    MinimumResourceForLaunch = MAP[],
     PoolModelList = [~/Pool_AT_Defense, Pool_HMG_Defense],
     UseTaggedPool:bool = true
 ]
@@ -71,7 +71,7 @@ is TMacroActionDescriptor_CorridorDefense_Specific
 private template Template_Dynamic_Defense_Corridor
 [
     NumberLaunchBasedOnGenerationType:int = 1,
-    MinimumResourceForLaunch:int = 0,
+    MinimumResourceForLaunch = MAP[],
     PoolModelList = [~/Pool_AT_Defense, Pool_HMG_Defense],
     UseTaggedPool:bool = true
 ]

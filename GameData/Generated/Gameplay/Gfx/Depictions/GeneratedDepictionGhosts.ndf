@@ -361,6 +361,16 @@ GhostDepiction_BM30_Smerch_SOV is GhostVehicleDepictionTemplate
     Selector = Selector_BM30_Smerch_SOV
     Alternatives = Alternatives_BM30_Smerch_SOV
 )
+GhostDepiction_BMD_1K_CMD_SOV is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_BMD_1K_CMD_SOV
+    Alternatives = Alternatives_BMD_1K_CMD_SOV
+)
+GhostDepiction_BMD_1P_SOV is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_BMD_1P_SOV
+    Alternatives = Alternatives_BMD_1P_SOV
+)
 GhostDepiction_BMD_1_CMD_SOV is GhostVehicleDepictionTemplate
 (
     Selector = Selector_BMD_1_CMD_SOV
@@ -375,6 +385,11 @@ GhostDepiction_BMD_1_SOV is GhostVehicleDepictionTemplate
 (
     Selector = Selector_BMD_1_SOV
     Alternatives = Alternatives_BMD_1_SOV
+)
+GhostDepiction_BMD_2_CMD_SOV is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_BMD_2_CMD_SOV
+    Alternatives = Alternatives_BMD_2_CMD_SOV
 )
 GhostDepiction_BMD_2_SOV is GhostVehicleDepictionTemplate
 (
@@ -615,6 +630,11 @@ GhostDepiction_Challenger_1_Mk1_UK is GhostVehicleDepictionTemplate
 (
     Selector = Selector_Challenger_1_Mk1_UK
     Alternatives = Alternatives_Challenger_1_Mk1_UK
+)
+GhostDepiction_Challenger_1_Mk3_UK is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_Challenger_1_Mk3_UK
+    Alternatives = Alternatives_Challenger_1_Mk3_UK
 )
 GhostDepiction_DCA_53T2_20mm_FR is GhostVehicleDepictionTemplate
 (
@@ -1455,6 +1475,11 @@ GhostDepiction_M3A1_Bradley_CFV_US is GhostVehicleDepictionTemplate
 (
     Selector = Selector_M3A1_Bradley_CFV_US
     Alternatives = Alternatives_M3A1_Bradley_CFV_US
+)
+GhostDepiction_M3A2_Bradley_CFV_US is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_M3A2_Bradley_CFV_US
+    Alternatives = Alternatives_M3A2_Bradley_CFV_US
 )
 GhostDepiction_M48A2C_RFA is GhostVehicleDepictionTemplate
 (
@@ -2324,9 +2349,12 @@ VehicleMimeticGhost is MAP[
   ( 'BM21_Grad_SOV', GhostDepiction_BM21_Grad_SOV ),
   ( 'BM27_Uragan_SOV', GhostDepiction_BM27_Uragan_SOV ),
   ( 'BM30_Smerch_SOV', GhostDepiction_BM30_Smerch_SOV ),
+  ( 'BMD_1K_CMD_SOV', GhostDepiction_BMD_1K_CMD_SOV ),
+  ( 'BMD_1P_SOV', GhostDepiction_BMD_1P_SOV ),
   ( 'BMD_1_CMD_SOV', GhostDepiction_BMD_1_CMD_SOV ),
   ( 'BMD_1_Reostat_SOV', GhostDepiction_BMD_1_Reostat_SOV ),
   ( 'BMD_1_SOV', GhostDepiction_BMD_1_SOV ),
+  ( 'BMD_2_CMD_SOV', GhostDepiction_BMD_2_CMD_SOV ),
   ( 'BMD_2_SOV', GhostDepiction_BMD_2_SOV ),
   ( 'BMP_1PG_SOV', GhostDepiction_BMP_1PG_SOV ),
   ( 'BMP_1P_DDR', GhostDepiction_BMP_1P_DDR ),
@@ -2375,6 +2403,7 @@ VehicleMimeticGhost is MAP[
   ( 'Buk_9K37M_SOV', GhostDepiction_Buk_9K37M_SOV ),
   ( 'Challenger_1_Mk1_CMD_UK', GhostDepiction_Challenger_1_Mk1_CMD_UK ),
   ( 'Challenger_1_Mk1_UK', GhostDepiction_Challenger_1_Mk1_UK ),
+  ( 'Challenger_1_Mk3_UK', GhostDepiction_Challenger_1_Mk3_UK ),
   ( 'DCA_53T2_20mm_FR', GhostDepiction_DCA_53T2_20mm_FR ),
   ( 'DCA_53T2_20mm_Para_FR', GhostDepiction_DCA_53T2_20mm_Para_FR ),
   ( 'DCA_FK20_2_20mm_RFA', GhostDepiction_DCA_FK20_2_20mm_RFA ),
@@ -2543,6 +2572,7 @@ VehicleMimeticGhost is MAP[
   ( 'M35_trans_US', GhostDepiction_M35_trans_US ),
   ( 'M35_trans_tuto_US', GhostDepiction_M35_trans_tuto_US ),
   ( 'M3A1_Bradley_CFV_US', GhostDepiction_M3A1_Bradley_CFV_US ),
+  ( 'M3A2_Bradley_CFV_US', GhostDepiction_M3A2_Bradley_CFV_US ),
   ( 'M48A2C_RFA', GhostDepiction_M48A2C_RFA ),
   ( 'M48A2GA2_CMD_RFA', GhostDepiction_M48A2GA2_CMD_RFA ),
   ( 'M48A2GA2_RFA', GhostDepiction_M48A2GA2_RFA ),

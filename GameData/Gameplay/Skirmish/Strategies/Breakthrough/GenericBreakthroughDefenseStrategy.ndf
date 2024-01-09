@@ -86,7 +86,7 @@ export GenBTDef_Deploiement is TSequenceGeneratorDescriptor
         ~/Airstrike_SEAD,
         ~/Artillery_Expensive,
         ~/Airstrike_Assault,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
         ~/Artillery_TriggerHappy_1for4Corridors,
     ]
 
@@ -119,7 +119,7 @@ export GenBTDef_Command is TSequenceGeneratorDescriptor
         ~/Airstrike_SEAD,
         ~/Artillery_Expensive,
         ~/Airstrike_Assault,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
         ~/Artillery_TriggerHappy_1for4Corridors,
     ]
 

@@ -45,10 +45,10 @@ SpecificInGameUnitLabelResources is TUISpecificUnitLabelResources
 
     DamageTypeNameToFeedbackType = MAP
     [
-        ("balle", ~/InGameUnitLabelUpdateFeedbackType/Bullets),
-        ("balleaa", ~/InGameUnitLabelUpdateFeedbackType/Bullets),
-        ("balledca", ~/InGameUnitLabelUpdateFeedbackType/Bullets),
-        ("ap_missile", ~/InGameUnitLabelUpdateFeedbackType/Missile),
+        (DamageFamily_balle, ~/InGameUnitLabelUpdateFeedbackType/Bullets),
+        (DamageFamily_balleaa, ~/InGameUnitLabelUpdateFeedbackType/Bullets),
+        (DamageFamily_balledca, ~/InGameUnitLabelUpdateFeedbackType/Bullets),
+        (DamageFamily_ap_missile, ~/InGameUnitLabelUpdateFeedbackType/Missile),
     ]
 )
 

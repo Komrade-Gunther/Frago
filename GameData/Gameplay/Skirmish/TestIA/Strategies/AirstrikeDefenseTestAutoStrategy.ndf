@@ -13,6 +13,6 @@ export TestAuto_Airstrike_Defense is TSequenceGeneratorDescriptor
     NbMacroActionAllowedToProduceSimultaneous = 9001
     GeneratorList =
     [
-        ~/Airstrike_Defense_TestAutoOnly,
+        ~/Airstrike_AA_TestAutoOnly,
     ]
 )

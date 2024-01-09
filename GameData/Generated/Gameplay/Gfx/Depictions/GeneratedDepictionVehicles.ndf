@@ -894,7 +894,7 @@ Gfx_AMX_10_P_FR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_AMX_10_P_FR) ]
 )
 // Dépiction de l'unité AMX_10_P_MILAN_FR
 DepictionOperator_AMX_10_P_MILAN_FR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -962,7 +962,7 @@ Gfx_AMX_10_P_MILAN_FR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_AMX_10_P_MILAN_FR) ]
 )
 // Dépiction de l'unité AMX_10_P_VOA_FR
 DepictionOperator_AMX_10_P_VOA_FR_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -1143,7 +1143,7 @@ Gfx_AMX_10_RC_FR_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "AMX_10_RC_FR_turret2"
@@ -1155,7 +1155,6 @@ Gfx_AMX_10_RC_FR_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_AMX_10_RC_FR_Weapon3,
@@ -1260,7 +1259,7 @@ Gfx_AMX_13_DCA_FR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_AMX_13_DCA_FR_Weapon1,
         DepictionOperator_Carousel_Radar
         (
-            RevolutionsPerMinute = 10
+            RevolutionsPerMinute = 30
             WaitTimeInSeconds = 0
             WeaponIgnoredProperties = 
             [
@@ -1310,7 +1309,7 @@ Gfx_AMX_13_VCI_12_7mm_FR_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "AMX_13_VCI_12_7mm_FR_turret1"
@@ -1322,7 +1321,6 @@ Gfx_AMX_13_VCI_12_7mm_FR_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_AMX_13_VCI_12_7mm_FR_Weapon1,
@@ -1334,7 +1332,7 @@ Gfx_AMX_13_VCI_12_7mm_FR_Autogen is TacticVehicleDepictionTemplate
         ),
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_AMX_13_VCI_12_7mm_FR) ]
 )
 // Dépiction de l'unité AMX_13_VCI_20mm_FR
 DepictionOperator_AMX_13_VCI_20mm_FR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -1380,7 +1378,7 @@ Gfx_AMX_13_VCI_20mm_FR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_AMX_13_VCI_20mm_FR) ]
 )
 // Dépiction de l'unité AMX_30_AuF1_FR
 DepictionOperator_AMX_30_AuF1_FR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -3416,6 +3414,156 @@ Gfx_BM30_Smerch_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Wheeled
             + DepictionAction_CriticalFX_Tank
 )
+// Dépiction de l'unité BMD_1K_CMD_SOV
+DepictionOperator_BMD_1K_CMD_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+    NbProj = 1
+)
+DepictionOperator_BMD_1K_CMD_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+    NbProj = 1
+)
+DepictionOperator_BMD_1K_CMD_SOV_Weapon3 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag3"
+    Anchors = ["fx_tourelle2_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_3"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
+    NbFX = 1
+)
+DepictionOperator_BMD_1K_CMD_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_BMD_1K_CMD_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle3_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_5"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
+    NbFX = 1
+)
+Gfx_BMD_1K_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'BMD_1K_CMD_SOV'
+    Selector = Selector_BMD_1K_CMD_SOV
+    Alternatives = Alternatives_BMD_1K_CMD_SOV
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_BMD,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_SmallTank,
+        DepictionOperator_Propulsion_ContinuousTrack,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_TurretSound_ST_BMP,
+        DepictionOperator_Turret_1_HydraulicRecoil,
+        DepictionOperator_Turret_2_Aim,
+        DepictionOperator_Turret_3_Aim,
+        DepictionOperator_Turret_4_Aim,
+        DepictionOperator_Turret_4_TurretRockingRecoil_LightMachineGun,
+        DepictionOperator_BMD_1K_CMD_SOV_Weapon1,
+        DepictionOperator_BMD_1K_CMD_SOV_Weapon2,
+        DepictionOperator_BMD_1K_CMD_SOV_Weapon3,
+        DepictionOperator_BMD_1K_CMD_SOV_Weapon4,
+        DepictionOperator_BMD_1K_CMD_SOV_Weapon5,
+        DepictionOperator_Heat,
+        DepictionOperator_MovementFX_Amphibious,
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_73_mm_2A28_Grom ),
+                ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_73_mm_2A28_Grom ),
+                ( [ "weapon_effet_tag3" ], Weapon_MMG_PKT_7_62mm ),
+                ( [ "weapon_effet_tag4" ], Weapon_MMG_PKT_7_62mm ),
+                ( [ "weapon_effet_tag5" ], Weapon_MMG_PKT_7_62mm ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Tracked
+            + DepictionAction_CriticalFX_Tank
+            + DepictionAction_FX_Amphibious_NoPropulsion
+)
+// Dépiction de l'unité BMD_1P_SOV
+DepictionOperator_BMD_1P_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+    NbProj = 1
+)
+DepictionOperator_BMD_1P_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+    NbProj = 1
+)
+DepictionOperator_BMD_1P_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    FireEffectTag = "weapon_effet_tag3"
+    Connoisseur = MissileCarriage_BMD_1P_SOV
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_BMD_1P_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Anchors = ["fx_tourelle3_tir_01", "fx_tourelle3_tir_02"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 2
+)
+Gfx_BMD_1P_SOV_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'BMD_1P_SOV'
+    Selector = Selector_BMD_1P_SOV
+    Alternatives = Alternatives_BMD_1P_SOV
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_Bmp1,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_SmallTank,
+        DepictionOperator_Propulsion_ContinuousTrack,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_TurretSound_ST_BMP,
+        DepictionOperator_Turret_1_HydraulicRecoil,
+        DepictionOperator_Turret_2_Aim,
+        DepictionOperator_Turret_3_Aim,
+        DepictionOperator_BMD_1P_SOV_Weapon1,
+        DepictionOperator_BMD_1P_SOV_Weapon2,
+        DepictionOperator_BMD_1P_SOV_Weapon3,
+        DepictionOperator_BMD_1P_SOV_Weapon4,
+        DepictionOperator_Heat,
+        DepictionOperator_MovementFX_Amphibious,
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_73_mm_2A28_Grom ),
+                ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_73_mm_2A28_Grom ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_9k111M_Faktoriya ),
+                ( [ "weapon_effet_tag4" ], Weapon_MMG_PKT_7_62mm_x2 ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Tracked
+            + DepictionAction_CriticalFX_Tank
+            + DepictionAction_FX_Amphibious_NoPropulsion
+
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMD_1P_SOV) ]
+)
 // Dépiction de l'unité BMD_1_CMD_SOV
 DepictionOperator_BMD_1_CMD_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
 (
@@ -3503,7 +3651,7 @@ Gfx_BMD_1_Reostat_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_MovementFX_Amphibious,
         DepictionOperator_Carousel_Radar
         (
-            RevolutionsPerMinute = 6
+            RevolutionsPerMinute = 2
             WaitTimeInSeconds = 0
             WeaponIgnoredProperties = 
             [
@@ -3602,7 +3750,87 @@ Gfx_BMD_1_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMD_1_SOV) ]
+)
+// Dépiction de l'unité BMD_2_CMD_SOV
+DepictionOperator_BMD_2_CMD_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+    NbProj = 1
+)
+DepictionOperator_BMD_2_CMD_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+    NbProj = 1
+)
+DepictionOperator_BMD_2_CMD_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    FireEffectTag = "weapon_effet_tag3"
+    Connoisseur = MissileCarriage_BMD_2_CMD_SOV
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_BMD_2_CMD_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Anchors = ["fx_tourelle3_tir_01", "fx_tourelle3_tir_02"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 2
+)
+Gfx_BMD_2_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'BMD_2_CMD_SOV'
+    Selector = Selector_BMD_2_CMD_SOV
+    Alternatives = Alternatives_BMD_2_CMD_SOV
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_BMD,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_SmallTank,
+        DepictionOperator_Propulsion_ContinuousTrack,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_TurretSound_ST_BMP,
+        DepictionOperator_Turret_1_HydraulicRecoil,
+        DepictionOperator_Turret_2_Aim,
+        DepictionOperator_Turret_3_Aim,
+        DepictionOperator_BMD_2_CMD_SOV_Weapon1,
+        DepictionOperator_BMD_2_CMD_SOV_Weapon2,
+        DepictionOperator_BMD_2_CMD_SOV_Weapon3,
+        DepictionOperator_BMD_2_CMD_SOV_Weapon4,
+        DepictionOperator_Heat,
+        DepictionOperator_MovementFX_Amphibious,
+        DepictionOperator_EjectableProps_Vehicle
+        (
+            AdditionalEjectableNodes = 
+            [
+                "tourelle_01",
+                "tourelle_02",
+            ]
+            ArmorPlateCount = 4
+            PropCount = 1
+            TrapdoorCount = 0
+        ),
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_AutoCanon_AP_30mm_24A2_BMP2 ),
+                ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_30mm_24A2_BMP2 ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_9M113_Konkurs_BMP2 ),
+                ( [ "weapon_effet_tag4" ], Weapon_MMG_PKT_7_62mm_x2 ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Tracked
+            + DepictionAction_CriticalFX_Tank
+            + DepictionAction_FX_Amphibious_NoPropulsion
+            + Eject_Actions_BMD_2_CMD_SOV
 )
 // Dépiction de l'unité BMD_2_SOV
 DepictionOperator_BMD_2_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -3619,29 +3847,21 @@ DepictionOperator_BMD_2_SOV_Weapon2 is DepictionOperator_WeaponInstantFire
     WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
     NbProj = 1
 )
-DepictionOperator_BMD_2_SOV_Weapon3 is DepictionOperator_WeaponContinuousFire
+DepictionOperator_BMD_2_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle2_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_3"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
-    NbFX = 1
+    Connoisseur = MissileCarriage_BMD_2_SOV
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
 )
 DepictionOperator_BMD_2_SOV_Weapon4 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag4"
-    Anchors = ["fx_tourelle4_tir_01"]
+    Anchors = ["fx_tourelle3_tir_01", "fx_tourelle3_tir_02"]
     WeaponShootDataPropertyName = "WeaponShootData_0_4"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
-    NbFX = 1
-)
-DepictionOperator_BMD_2_SOV_Weapon5 is DepictionOperator_WeaponContinuousFire
-(
-    FireEffectTag = "weapon_effet_tag5"
-    Anchors = ["fx_tourelle3_tir_01"]
-    WeaponShootDataPropertyName = "WeaponShootData_0_5"
-    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_5"
-    NbFX = 1
+    NbFX = 2
 )
 Gfx_BMD_2_SOV_Autogen is TacticVehicleDepictionTemplate
 (
@@ -3661,13 +3881,10 @@ Gfx_BMD_2_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_1_HydraulicRecoil,
         DepictionOperator_Turret_2_Aim,
         DepictionOperator_Turret_3_Aim,
-        DepictionOperator_Turret_4_Aim,
-        DepictionOperator_Turret_4_TurretRockingRecoil_LightMachineGun,
         DepictionOperator_BMD_2_SOV_Weapon1,
         DepictionOperator_BMD_2_SOV_Weapon2,
         DepictionOperator_BMD_2_SOV_Weapon3,
         DepictionOperator_BMD_2_SOV_Weapon4,
-        DepictionOperator_BMD_2_SOV_Weapon5,
         DepictionOperator_Heat,
         DepictionOperator_MovementFX_Amphibious,
         DepictionOperator_EjectableProps_Vehicle
@@ -3686,9 +3903,8 @@ Gfx_BMD_2_SOV_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_AutoCanon_AP_30mm_24A2_BMP2 ),
                 ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_30mm_24A2_BMP2 ),
-                ( [ "weapon_effet_tag3" ], Weapon_MMG_PKT_7_62mm ),
-                ( [ "weapon_effet_tag4" ], Weapon_MMG_PKT_7_62mm ),
-                ( [ "weapon_effet_tag5" ], Weapon_MMG_PKT_7_62mm ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_9M113_Konkurs_BMP2 ),
+                ( [ "weapon_effet_tag4" ], Weapon_MMG_PKT_7_62mm_x2 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -3696,7 +3912,7 @@ Gfx_BMD_2_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_FX_Amphibious_NoPropulsion
             + Eject_Actions_BMD_2_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMD_2_SOV) ]
 )
 // Dépiction de l'unité BMP_1PG_SOV
 DepictionOperator_BMP_1PG_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -3765,7 +3981,7 @@ Gfx_BMP_1PG_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_1PG_SOV) ]
 )
 // Dépiction de l'unité BMP_1P_DDR
 DepictionOperator_BMP_1P_DDR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -3843,7 +4059,7 @@ Gfx_BMP_1P_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_1P_DDR) ]
 )
 // Dépiction de l'unité BMP_1P_SOV
 DepictionOperator_BMP_1P_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -3922,7 +4138,7 @@ Gfx_BMP_1P_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_1P_SOV) ]
 )
 // Dépiction de l'unité BMP_1P_reco_DDR
 DepictionOperator_BMP_1P_reco_DDR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -3991,7 +4207,7 @@ Gfx_BMP_1P_reco_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ SubGenerators_BMP_1P_reco_DDR, TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ SubGenerators_BMP_1P_reco_DDR, TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_1P_reco_DDR) ]
 )
 // Dépiction de l'unité BMP_1P_reco_SOV
 DepictionOperator_BMP_1P_reco_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -4070,7 +4286,7 @@ Gfx_BMP_1P_reco_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_1P_reco_SOV) ]
 )
 // Dépiction de l'unité BMP_1_CMD_DDR
 DepictionOperator_BMP_1_CMD_DDR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -4276,7 +4492,7 @@ Gfx_BMP_1_SP1_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_1_SP1_DDR) ]
 )
 // Dépiction de l'unité BMP_1_SP2_DDR
 DepictionOperator_BMP_1_SP2_DDR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -4354,7 +4570,7 @@ Gfx_BMP_1_SP2_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ SubGenerators_BMP_1_SP2_DDR, TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ SubGenerators_BMP_1_SP2_DDR, TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_1_SP2_DDR) ]
 )
 // Dépiction de l'unité BMP_2AG_SOV
 DepictionOperator_BMP_2AG_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -4444,7 +4660,7 @@ Gfx_BMP_2AG_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_FX_Amphibious_NoPropulsion
             + Eject_Actions_BMP_2AG_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_2AG_SOV) ]
 )
 // Dépiction de l'unité BMP_2D_SOV
 DepictionOperator_BMP_2D_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -4535,7 +4751,7 @@ Gfx_BMP_2D_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + Eject_Actions_BMP_2D_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_2D_SOV) ]
 )
 // Dépiction de l'unité BMP_2_CMD_SOV
 DepictionOperator_BMP_2_CMD_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -4627,7 +4843,7 @@ Gfx_BMP_2_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_FX_Amphibious_NoPropulsion
             + Eject_Actions_BMP_2_CMD_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_2_CMD_SOV) ]
 )
 // Dépiction de l'unité BMP_2_SOV
 DepictionOperator_BMP_2_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -4719,7 +4935,7 @@ Gfx_BMP_2_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_FX_Amphibious_NoPropulsion
             + Eject_Actions_BMP_2_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_2_SOV) ]
 )
 // Dépiction de l'unité BMP_2_reco_SOV
 DepictionOperator_BMP_2_reco_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -4811,7 +5027,7 @@ Gfx_BMP_2_reco_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_FX_Amphibious_NoPropulsion
             + Eject_Actions_BMP_2_reco_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_2_reco_SOV) ]
 )
 // Dépiction de l'unité BMP_3_SOV
 DepictionOperator_BMP_3_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -4889,7 +5105,7 @@ Gfx_BMP_3_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BMP_3_SOV) ]
 )
 // Dépiction de l'unité BRDM_2_CMD_DDR
 Gfx_BRDM_2_CMD_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -5481,7 +5697,7 @@ Gfx_BTR_50_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_50_DDR) ]
 )
 // Dépiction de l'unité BTR_60_CMD_DDR
 DepictionOperator_BTR_60_CMD_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -5618,7 +5834,7 @@ Gfx_BTR_60_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_60_DDR) ]
 )
 // Dépiction de l'unité BTR_60_SOV
 DepictionOperator_BTR_60_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -5669,7 +5885,7 @@ Gfx_BTR_60_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_60_SOV) ]
 )
 // Dépiction de l'unité BTR_70_DDR
 DepictionOperator_BTR_70_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -5720,7 +5936,7 @@ Gfx_BTR_70_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_70_DDR) ]
 )
 // Dépiction de l'unité BTR_70_SOV
 DepictionOperator_BTR_70_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -5771,7 +5987,7 @@ Gfx_BTR_70_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_70_SOV) ]
 )
 // Dépiction de l'unité BTR_80_CMD_SOV
 DepictionOperator_BTR_80_CMD_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -5831,7 +6047,7 @@ Gfx_BTR_80_CMD_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_80_CMD_SOV) ]
 )
 // Dépiction de l'unité BTR_80_SOV
 DepictionOperator_BTR_80_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -5891,7 +6107,7 @@ Gfx_BTR_80_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_80_SOV) ]
 )
 // Dépiction de l'unité BTR_D_Robot_SOV
 DepictionOperator_BTR_D_Robot_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -5959,7 +6175,7 @@ Gfx_BTR_D_Robot_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_D_Robot_SOV) ]
 )
 // Dépiction de l'unité BTR_D_SOV
 DepictionOperator_BTR_D_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -6028,7 +6244,7 @@ Gfx_BTR_D_SOV_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_D_SOV) ]
 )
 // Dépiction de l'unité BTR_ZD_Skrezhet_SOV
 DepictionOperator_BTR_ZD_Skrezhet_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -6093,7 +6309,7 @@ Gfx_BTR_ZD_Skrezhet_SOV_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
     ] + HumanSubDepictions_BTR_ZD_Skrezhet_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_BTR_ZD_Skrezhet_SOV) ]
 )
 // Dépiction de l'unité Bedford_MJ_4t_UK
 Gfx_Bedford_MJ_4t_UK_Autogen is TacticVehicleDepictionTemplate
@@ -6148,7 +6364,7 @@ Gfx_Bedford_MJ_4t_trans_UK_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_Bedford_MJ_4t_trans_UK
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Bedford_MJ_4t_trans_UK) ]
 )
 // Dépiction de l'unité Bofors_40mm_RFA
 DepictionOperator_Bofors_40mm_RFA_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -6339,6 +6555,71 @@ Gfx_Challenger_1_Mk1_UK_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Challenger_1_Mk1_UK_Weapon2,
         DepictionOperator_Challenger_1_Mk1_UK_Weapon4,
         DepictionOperator_Challenger_1_Mk1_UK_Weapon5,
+        DepictionOperator_Heat,
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_Canon_AP_120_mm_L11A5_Challenger ),
+                ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_120_mm_L11A5_Challenger ),
+                ( [ "weapon_effet_tag4" ], Weapon_MMG_L8A2_7_62mm ),
+                ( [ "weapon_effet_tag5" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Tracked
+            + DepictionAction_CriticalFX_Tank
+)
+// Dépiction de l'unité Challenger_1_Mk3_UK
+DepictionOperator_Challenger_1_Mk3_UK_Weapon1 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+    NbProj = 1
+)
+DepictionOperator_Challenger_1_Mk3_UK_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+    NbProj = 1
+)
+DepictionOperator_Challenger_1_Mk3_UK_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_Challenger_1_Mk3_UK_Weapon5 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle5_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
+)
+Gfx_Challenger_1_Mk3_UK_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'Challenger_1_Mk3_UK'
+    Selector = Selector_Challenger_1_Mk3_UK
+    Alternatives = Alternatives_Challenger_1_Mk3_UK
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_Challenger_1,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_HeavyTank,
+        DepictionOperator_Propulsion_ContinuousTrack,
+        DepictionOperator_MovementFX_Standard,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_TurretSound_ST_Challenger,
+        DepictionOperator_Turret_1_HydraulicRecoil,
+        DepictionOperator_Turret_4_Aim,
+        DepictionOperator_Challenger_1_Mk3_UK_Weapon1,
+        DepictionOperator_Challenger_1_Mk3_UK_Weapon2,
+        DepictionOperator_Challenger_1_Mk3_UK_Weapon4,
+        DepictionOperator_Challenger_1_Mk3_UK_Weapon5,
         DepictionOperator_Heat,
     ]
 
@@ -7269,7 +7550,7 @@ Gfx_FV103_Spartan_BEL_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "FV103_Spartan_BEL_turret1"
@@ -7281,7 +7562,6 @@ Gfx_FV103_Spartan_BEL_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_FV103_Spartan_BEL_Weapon1,
@@ -7293,7 +7573,7 @@ Gfx_FV103_Spartan_BEL_Autogen is TacticVehicleDepictionTemplate
         ),
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_FV103_Spartan_BEL) ]
 )
 // Dépiction de l'unité FV103_Spartan_UK
 DepictionOperator_FV103_Spartan_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -7339,7 +7619,7 @@ Gfx_FV103_Spartan_UK_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "FV103_Spartan_UK_turret1"
@@ -7351,7 +7631,6 @@ Gfx_FV103_Spartan_UK_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_FV103_Spartan_UK_Weapon1,
@@ -7363,7 +7642,7 @@ Gfx_FV103_Spartan_UK_Autogen is TacticVehicleDepictionTemplate
         ),
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_FV103_Spartan_UK) ]
 )
 // Dépiction de l'unité FV105_Sultan_BEL
 DepictionOperator_FV105_Sultan_BEL_Weapon5 is DepictionOperator_WeaponInstantFire
@@ -7616,7 +7895,7 @@ Gfx_FV120_Spartan_MCT_UK_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_FV120_Spartan_MCT_UK) ]
 )
 // Dépiction de l'unité FV4003_Centurion_AVRE_UK
 DepictionOperator_FV4003_Centurion_AVRE_UK_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -8152,7 +8431,7 @@ Gfx_FV432_Mortar_UK_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "FV432_Mortar_UK_turret2"
@@ -8164,7 +8443,6 @@ Gfx_FV432_Mortar_UK_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_FV432_Mortar_UK_Weapon3,
@@ -8274,7 +8552,7 @@ Gfx_FV432_UK_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "FV432_UK_turret1"
@@ -8286,7 +8564,6 @@ Gfx_FV432_UK_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_FV432_UK_Weapon1,
@@ -8298,7 +8575,7 @@ Gfx_FV432_UK_Autogen is TacticVehicleDepictionTemplate
         ),
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_FV432_UK) ]
 )
 // Dépiction de l'unité FV433_Abbot_UK
 DepictionOperator_FV433_Abbot_UK_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -8426,7 +8703,7 @@ DepictionOperator_FV721_Fox_UK_Weapon2 is DepictionOperator_WeaponInstantFire
 DepictionOperator_FV721_Fox_UK_Weapon3 is DepictionOperator_WeaponContinuousFire
 (
     FireEffectTag = "weapon_effet_tag3"
-    Anchors = ["fx_tourelle1_tir_01"]
+    Anchors = ["fx_tourelle4_tir_01"]
     WeaponShootDataPropertyName = "WeaponShootData_0_3"
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_3"
     NbFX = 1
@@ -8454,6 +8731,8 @@ Gfx_FV721_Fox_UK_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_1_Aim,
         DepictionOperator_TurretSound_ST_Luchs,
         DepictionOperator_Turret_1_HydraulicRecoil_AutoCannon,
+        DepictionOperator_Turret_4_Aim,
+        DepictionOperator_Turret_4_TurretRockingRecoil_LightMachineGun,
         DepictionOperator_FV721_Fox_UK_Weapon1,
         DepictionOperator_FV721_Fox_UK_Weapon2,
         DepictionOperator_FV721_Fox_UK_Weapon3,
@@ -8500,7 +8779,7 @@ Gfx_Faun_kraka_RFA_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_Faun_kraka_RFA
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Faun_kraka_RFA) ]
 )
 // Dépiction de l'unité Ferret_Mk2_UK
 DepictionOperator_Ferret_Mk2_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -8574,7 +8853,7 @@ Gfx_GAZ_66B_SOV_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_GAZ_66B_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_GAZ_66B_SOV) ]
 )
 // Dépiction de l'unité GAZ_66B_ZU_SOV
 DepictionOperator_GAZ_66B_ZU_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -8642,7 +8921,7 @@ Gfx_GAZ_66_SOV_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_GAZ_66_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_GAZ_66_SOV) ]
 )
 // Dépiction de l'unité GAZ_66_supply_SOV
 Gfx_GAZ_66_supply_SOV_Autogen is TacticVehicleDepictionTemplate
@@ -8707,7 +8986,7 @@ Gfx_Gepard_1A2_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Gepard_1A2_RFA_Weapon5,
         DepictionOperator_Carousel_Radar
         (
-            RevolutionsPerMinute = 10
+            RevolutionsPerMinute = 30
             WaitTimeInSeconds = 0
             WeaponIgnoredProperties = 
             [
@@ -10331,7 +10610,7 @@ Gfx_Iltis_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Iltis_MILAN_RFA_turret1"
@@ -10343,7 +10622,6 @@ Gfx_Iltis_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Iltis_MILAN_RFA_Weapon1,
                 ]
@@ -10414,7 +10692,7 @@ Gfx_Iltis_reco_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Iltis_reco_RFA_turret1"
@@ -10426,7 +10704,6 @@ Gfx_Iltis_reco_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_Iltis_reco_RFA_Weapon1,
@@ -10465,7 +10742,7 @@ Gfx_Iltis_trans_RFA_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_Iltis_trans_RFA
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Iltis_trans_RFA) ]
 )
 // Dépiction de l'unité Jaguar_1_RFA
 DepictionOperator_Jaguar_1_RFA_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -10510,7 +10787,7 @@ Gfx_Jaguar_1_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Jaguar_1_RFA_turret1"
@@ -10522,7 +10799,6 @@ Gfx_Jaguar_1_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Jaguar_1_RFA_Weapon1,
                 ]
@@ -10576,7 +10852,7 @@ Gfx_Jaguar_2_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Jaguar_2_RFA_turret1"
@@ -10588,7 +10864,6 @@ Gfx_Jaguar_2_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Jaguar_2_RFA_Weapon1,
                 ]
@@ -10690,7 +10965,7 @@ Gfx_KrAZ_255B_SOV_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_KrAZ_255B_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_KrAZ_255B_SOV) ]
 )
 // Dépiction de l'unité LandRover_CMD_UK
 Gfx_LandRover_CMD_UK_Autogen is TacticVehicleDepictionTemplate
@@ -10819,7 +11094,7 @@ Gfx_LandRover_UK_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_LandRover_UK
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_LandRover_UK) ]
 )
 // Dépiction de l'unité LandRover_WOMBAT_UK
 DepictionOperator_LandRover_WOMBAT_UK_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -10912,7 +11187,7 @@ Gfx_Lars_2_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Lars_2_RFA_turret2"
@@ -10924,7 +11199,6 @@ Gfx_Lars_2_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_Lars_2_RFA_Weapon2,
@@ -11012,7 +11286,7 @@ Gfx_Leopard_1A1_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Leopard_1A1_CMD_RFA_turret2"
@@ -11024,7 +11298,6 @@ Gfx_Leopard_1A1_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_Leopard_1A1_CMD_RFA_Weapon3,
@@ -11112,7 +11385,7 @@ Gfx_Leopard_1A1_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Leopard_1A1_RFA_turret2"
@@ -11124,7 +11397,6 @@ Gfx_Leopard_1A1_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_Leopard_1A1_RFA_Weapon3,
@@ -11212,7 +11484,7 @@ Gfx_Leopard_1A5_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Leopard_1A5_CMD_RFA_turret2"
@@ -11224,7 +11496,6 @@ Gfx_Leopard_1A5_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_Leopard_1A5_CMD_RFA_Weapon3,
@@ -11312,7 +11583,7 @@ Gfx_Leopard_1A5_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "Leopard_1A5_RFA_turret2"
@@ -11324,7 +11595,6 @@ Gfx_Leopard_1A5_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_Leopard_1A5_RFA_Weapon3,
@@ -11860,7 +12130,7 @@ Gfx_M1025_Humvee_scout_US_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
     ] + HumanSubDepictions_M1025_Humvee_scout_US
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M1025_Humvee_scout_US) ]
 )
 // Dépiction de l'unité M1025_Humvee_scout_tuto_US
 DepictionOperator_M1025_Humvee_scout_tuto_US_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -11900,7 +12170,7 @@ Gfx_M1025_Humvee_scout_tuto_US_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
     ] + HumanSubDepictions_M1025_Humvee_scout_tuto_US
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M1025_Humvee_scout_tuto_US) ]
 )
 // Dépiction de l'unité M1038_Humvee_US
 Gfx_M1038_Humvee_US_Autogen is TacticVehicleDepictionTemplate
@@ -11929,7 +12199,7 @@ Gfx_M1038_Humvee_US_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_M1038_Humvee_US
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M1038_Humvee_US) ]
 )
 // Dépiction de l'unité M106A2_HOWZ_US
 DepictionOperator_M106A2_HOWZ_US_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -12085,7 +12355,7 @@ Gfx_M109A2_HOWZ_US_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M109A2_HOWZ_US_turret2"
@@ -12097,7 +12367,6 @@ Gfx_M109A2_HOWZ_US_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_M109A2_HOWZ_US_Weapon3,
@@ -12165,7 +12434,7 @@ Gfx_M109A2_NG_US_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M109A2_NG_US_turret2"
@@ -12177,7 +12446,6 @@ Gfx_M109A2_NG_US_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_M109A2_NG_US_Weapon3,
@@ -12309,7 +12577,7 @@ Gfx_M109A3G_HOWZ_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M109A3G_HOWZ_RFA_turret2"
@@ -12321,7 +12589,6 @@ Gfx_M109A3G_HOWZ_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_Turret_2_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_M109A3G_HOWZ_RFA_Weapon3,
@@ -12465,7 +12732,7 @@ Gfx_M113A1G_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M113A1G_RFA_turret1"
@@ -12477,7 +12744,6 @@ Gfx_M113A1G_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_M113A1G_RFA_Weapon1,
@@ -12489,7 +12755,7 @@ Gfx_M113A1G_RFA_Autogen is TacticVehicleDepictionTemplate
         ),
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M113A1G_RFA) ]
 )
 // Dépiction de l'unité M113A1G_reco_RFA
 DepictionOperator_M113A1G_reco_RFA_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -12535,7 +12801,7 @@ Gfx_M113A1G_reco_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M113A1G_reco_RFA_turret1"
@@ -12547,7 +12813,6 @@ Gfx_M113A1G_reco_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_M113A1G_reco_RFA_Weapon1,
@@ -12559,7 +12824,7 @@ Gfx_M113A1G_reco_RFA_Autogen is TacticVehicleDepictionTemplate
         ),
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M113A1G_reco_RFA) ]
 )
 // Dépiction de l'unité M113A1G_supply_RFA
 Gfx_M113A1G_supply_RFA_Autogen is TacticVehicleDepictionTemplate
@@ -12631,7 +12896,7 @@ Gfx_M113A1_TOW_US_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M113A1_TOW_US_turret2"
@@ -12643,7 +12908,6 @@ Gfx_M113A1_TOW_US_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_M113A1_TOW_US_Weapon2,
                 ]
                 Actions = MAP[
@@ -12715,7 +12979,7 @@ Gfx_M113A3_US_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M113A3_US) ]
 )
 // Dépiction de l'unité M113_ACAV_US
 DepictionOperator_M113_ACAV_US_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -12783,7 +13047,7 @@ Gfx_M113_ACAV_US_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M113_ACAV_US) ]
 )
 // Dépiction de l'unité M113_Dragon_US
 DepictionOperator_M113_Dragon_US_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -12831,7 +13095,7 @@ Gfx_M113_Dragon_US_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M113_Dragon_US_turret2"
@@ -12843,7 +13107,6 @@ Gfx_M113_Dragon_US_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_M113_Dragon_US_Weapon2,
                 ]
@@ -12854,7 +13117,7 @@ Gfx_M113_Dragon_US_Autogen is TacticVehicleDepictionTemplate
         ),
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M113_Dragon_US) ]
 )
 // Dépiction de l'unité M113_GreenArcher_RFA
 DepictionOperator_M113_GreenArcher_RFA_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -12890,7 +13153,7 @@ Gfx_M113_GreenArcher_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Carousel_Radar
         (
             RevolutionsPerMinute = 5
-            WaitTimeInSeconds = 0
+            WaitTimeInSeconds = 10
             WeaponIgnoredProperties = 
             [
                 "WeaponIgnored_1",
@@ -12909,7 +13172,7 @@ Gfx_M113_GreenArcher_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M113_GreenArcher_RFA_turret1"
@@ -12921,7 +13184,6 @@ Gfx_M113_GreenArcher_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_M113_GreenArcher_RFA_Weapon1,
@@ -12967,7 +13229,7 @@ Gfx_M113_GreenArcher_UK_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Carousel_Radar
         (
             RevolutionsPerMinute = 5
-            WaitTimeInSeconds = 0
+            WaitTimeInSeconds = 10
             WeaponIgnoredProperties = 
             [
                 "WeaponIgnored_1",
@@ -12986,7 +13248,7 @@ Gfx_M113_GreenArcher_UK_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M113_GreenArcher_UK_turret1"
@@ -12998,7 +13260,6 @@ Gfx_M113_GreenArcher_UK_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_M113_GreenArcher_UK_Weapon1,
@@ -13063,7 +13324,7 @@ Gfx_M113_PzMorser_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M113_PzMorser_RFA_turret1"
@@ -13075,7 +13336,6 @@ Gfx_M113_PzMorser_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_M113_PzMorser_RFA_Weapon2,
@@ -13175,7 +13435,7 @@ Gfx_M151A2_TOW_NG_US_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M151A2_TOW_NG_US_turret1"
@@ -13187,7 +13447,6 @@ Gfx_M151A2_TOW_NG_US_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_HydraulicRecoil,
                     DepictionOperator_M151A2_TOW_NG_US_Weapon1,
@@ -13233,7 +13492,7 @@ Gfx_M151A2_scout_US_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "M151A2_scout_US_turret1"
@@ -13245,7 +13504,6 @@ Gfx_M151A2_scout_US_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_M151A2_scout_US_Weapon1,
@@ -13257,7 +13515,7 @@ Gfx_M151A2_scout_US_Autogen is TacticVehicleDepictionTemplate
         ),
     ] + HumanSubDepictions_M151A2_scout_US
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M151A2_scout_US) ]
 )
 // Dépiction de l'unité M151_MUTT_CMD_US
 Gfx_M151_MUTT_CMD_US_Autogen is TacticVehicleDepictionTemplate
@@ -13358,7 +13616,7 @@ Gfx_M151_MUTT_trans_US_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_M151_MUTT_trans_US
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M151_MUTT_trans_US) ]
 )
 // Dépiction de l'unité M163_PIVADS_US
 DepictionOperator_M163_PIVADS_US_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -14526,7 +14784,7 @@ Gfx_M2A1_Bradley_IFV_US_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M2A1_Bradley_IFV_US) ]
 )
 // Dépiction de l'unité M2A1_Bradley_Leader_US
 DepictionOperator_M2A1_Bradley_Leader_US_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -14670,7 +14928,7 @@ Gfx_M2A2_Bradley_IFV_US_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_AutoCanon_AP_25mm_M242_Bushmaster_Late ),
                 ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_25mm_M242_Bushmaster_Late ),
-                ( [ "weapon_effet_tag3" ], Weapon_ATGM_BGM71D_TOW_2_x2 ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_BGM71D_TOW_2A_x2 ),
                 ( [ "weapon_effet_tag4" ], Weapon_MMG_M240_7_62mm ),
                 ( [ "weapon_effet_tag5" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
@@ -14678,7 +14936,7 @@ Gfx_M2A2_Bradley_IFV_US_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M2A2_Bradley_IFV_US) ]
 )
 // Dépiction de l'unité M2A2_Bradley_Leader_US
 DepictionOperator_M2A2_Bradley_Leader_US_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -14747,7 +15005,7 @@ Gfx_M2A2_Bradley_Leader_US_Autogen is TacticVehicleDepictionTemplate
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_AutoCanon_AP_25mm_M242_Bushmaster_Late ),
                 ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_25mm_M242_Bushmaster_Late ),
-                ( [ "weapon_effet_tag3" ], Weapon_ATGM_BGM71D_TOW_2_x2 ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_BGM71D_TOW_2A_x2 ),
                 ( [ "weapon_effet_tag4" ], Weapon_MMG_M240_7_62mm ),
                 ( [ "weapon_effet_tag5" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
@@ -14830,7 +15088,7 @@ Gfx_M2_Bradley_IFV_NG_US_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M2_Bradley_IFV_NG_US) ]
 )
 // Dépiction de l'unité M35_supply_US
 Gfx_M35_supply_US_Autogen is TacticVehicleDepictionTemplate
@@ -14885,7 +15143,7 @@ Gfx_M35_trans_US_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_M35_trans_US
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M35_trans_US) ]
 )
 // Dépiction de l'unité M35_trans_tuto_US
 Gfx_M35_trans_tuto_US_Autogen is TacticVehicleDepictionTemplate
@@ -14914,7 +15172,7 @@ Gfx_M35_trans_tuto_US_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_M35_trans_tuto_US
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M35_trans_tuto_US) ]
 )
 // Dépiction de l'unité M3A1_Bradley_CFV_US
 DepictionOperator_M3A1_Bradley_CFV_US_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -14984,6 +15242,81 @@ Gfx_M3A1_Bradley_CFV_US_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag1" ], Weapon_AutoCanon_AP_25mm_M242_Bushmaster_Late ),
                 ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_25mm_M242_Bushmaster_Late ),
                 ( [ "weapon_effet_tag3" ], Weapon_ATGM_BGM71D_TOW_2_x2 ),
+                ( [ "weapon_effet_tag4" ], Weapon_MMG_M240_7_62mm ),
+                ( [ "weapon_effet_tag5" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
+            ]
+            + DepictionAction_Stress_And_Wrecked
+            + DepictionAction_MovementFX_Tracked
+            + DepictionAction_CriticalFX_Tank
+)
+// Dépiction de l'unité M3A2_Bradley_CFV_US
+DepictionOperator_M3A2_Bradley_CFV_US_Weapon1 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag1"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
+    NbProj = 1
+)
+DepictionOperator_M3A2_Bradley_CFV_US_Weapon2 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag2"
+    Anchors = ["fx_tourelle1_tir_01"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_2", ]
+    NbProj = 1
+)
+DepictionOperator_M3A2_Bradley_CFV_US_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    FireEffectTag = "weapon_effet_tag3"
+    Connoisseur = MissileCarriage_M3A2_Bradley_CFV_US
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = ["WeaponShootData_0_3", ]
+    NbProj = 1
+)
+DepictionOperator_M3A2_Bradley_CFV_US_Weapon4 is DepictionOperator_WeaponContinuousFire
+(
+    FireEffectTag = "weapon_effet_tag4"
+    Anchors = ["fx_tourelle4_tir_01"]
+    WeaponShootDataPropertyName = "WeaponShootData_0_4"
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
+    NbFX = 1
+)
+DepictionOperator_M3A2_Bradley_CFV_US_Weapon5 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", "WeaponShootData_1_5", "WeaponShootData_2_5", "WeaponShootData_3_5", ]
+    NbProj = 4
+)
+Gfx_M3A2_Bradley_CFV_US_Autogen is TacticVehicleDepictionTemplate
+(
+    CoatingName = 'M3A2_Bradley_CFV_US'
+    Selector = Selector_M3A2_Bradley_CFV_US
+    Alternatives = Alternatives_M3A2_Bradley_CFV_US
+
+    Operators = 
+    [
+        DepictionOperator_CropFlattening,
+        DepictionOperator_MovementSound_SM_Bradley,
+        DepictionOperator_CriticalEffects,
+        DepictionOperator_Chassis_MediumTank_AutoCanon,
+        DepictionOperator_Propulsion_ContinuousTrack,
+        DepictionOperator_MovementFX_Standard,
+        DepictionOperator_Turret_1_Aim,
+        DepictionOperator_TurretSound_ST_Bradley,
+        DepictionOperator_Turret_1_HydraulicRecoil_AutoCannon,
+        DepictionOperator_Turret_2_Aim,
+        DepictionOperator_Turret_4_Aim,
+        DepictionOperator_M3A2_Bradley_CFV_US_Weapon1,
+        DepictionOperator_M3A2_Bradley_CFV_US_Weapon2,
+        DepictionOperator_M3A2_Bradley_CFV_US_Weapon3,
+        DepictionOperator_M3A2_Bradley_CFV_US_Weapon4,
+        DepictionOperator_M3A2_Bradley_CFV_US_Weapon5,
+    ]
+
+    Actions = MAP[
+                ( [ "weapon_effet_tag1" ], Weapon_AutoCanon_AP_25mm_M242_Bushmaster_Late ),
+                ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_25mm_M242_Bushmaster_Late ),
+                ( [ "weapon_effet_tag3" ], Weapon_ATGM_BGM71D_TOW_2A_x2 ),
                 ( [ "weapon_effet_tag4" ], Weapon_MMG_M240_7_62mm ),
                 ( [ "weapon_effet_tag5" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
@@ -15242,6 +15575,9 @@ Gfx_M48_Chaparral_MIM72F_US_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
             + Eject_Actions_M48_Chaparral_MIM72F_US
+
+    SubDepictions = [
+    ] + HumanSubDepictions_M48_Chaparral_MIM72F_US
 
     SubDepictionGenerators = [ SubGenerators_M48_Chaparral_MIM72F_US ]
 )
@@ -15855,7 +16191,7 @@ Gfx_M998_Humvee_US_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_M998_Humvee_US
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_M998_Humvee_US) ]
 )
 // Dépiction de l'unité MAN_Kat_6x6_RFA
 Gfx_MAN_Kat_6x6_RFA_Autogen is TacticVehicleDepictionTemplate
@@ -15910,7 +16246,7 @@ Gfx_MAN_Kat_6x6_trans_RFA_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_MAN_Kat_6x6_trans_RFA
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_MAN_Kat_6x6_trans_RFA) ]
 )
 // Dépiction de l'unité MCV_80_Warrior_MILAN_UK
 DepictionOperator_MCV_80_Warrior_MILAN_UK_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -15987,7 +16323,7 @@ Gfx_MCV_80_Warrior_MILAN_UK_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "MCV_80_Warrior_MILAN_UK_turret2"
@@ -15999,7 +16335,6 @@ Gfx_MCV_80_Warrior_MILAN_UK_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_MCV_80_Warrior_MILAN_UK_Weapon3,
                 ]
@@ -16010,7 +16345,7 @@ Gfx_MCV_80_Warrior_MILAN_UK_Autogen is TacticVehicleDepictionTemplate
         ),
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_MCV_80_Warrior_MILAN_UK) ]
 )
 // Dépiction de l'unité MCV_80_Warrior_UK
 DepictionOperator_MCV_80_Warrior_UK_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -16076,7 +16411,7 @@ Gfx_MCV_80_Warrior_UK_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_MCV_80_Warrior_UK) ]
 )
 // Dépiction de l'unité MFRW_RM70_DDR
 DepictionOperator_MFRW_RM70_DDR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -16366,7 +16701,7 @@ Gfx_MTLB_Vasilek_SOV_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "MTLB_Vasilek_SOV_turret1"
@@ -16378,7 +16713,6 @@ Gfx_MTLB_Vasilek_SOV_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_MTLB_Vasilek_SOV_Weapon1,
                     DepictionOperator_MTLB_Vasilek_SOV_Weapon2,
@@ -16478,7 +16812,7 @@ Gfx_MTLB_trans_DDR_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_MTLB_trans_DDR) ]
 )
 // Dépiction de l'unité MTLB_transp_SOV
 DepictionOperator_MTLB_transp_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -16519,7 +16853,7 @@ Gfx_MTLB_transp_SOV_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_MTLB_transp_SOV) ]
 )
 // Dépiction de l'unité Marder_1A2_MILAN_RFA
 DepictionOperator_Marder_1A2_MILAN_RFA_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -16597,7 +16931,7 @@ Gfx_Marder_1A2_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Marder_1A2_MILAN_RFA) ]
 )
 // Dépiction de l'unité Marder_1A2_RFA
 DepictionOperator_Marder_1A2_RFA_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -16664,7 +16998,7 @@ Gfx_Marder_1A2_RFA_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Marder_1A2_RFA) ]
 )
 // Dépiction de l'unité Marder_1A3_MILAN_RFA
 DepictionOperator_Marder_1A3_MILAN_RFA_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -16742,7 +17076,7 @@ Gfx_Marder_1A3_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Marder_1A3_MILAN_RFA) ]
 )
 // Dépiction de l'unité Marder_1A3_RFA
 DepictionOperator_Marder_1A3_RFA_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -16809,7 +17143,7 @@ Gfx_Marder_1A3_RFA_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Tracked
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Marder_1A3_RFA) ]
 )
 // Dépiction de l'unité Marder_Roland_2_RFA
 DepictionOperator_Marder_Roland_2_RFA_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -16840,7 +17174,7 @@ Gfx_Marder_Roland_2_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Heat,
         DepictionOperator_Carousel_Radar
         (
-            RevolutionsPerMinute = 10
+            RevolutionsPerMinute = 60
             WaitTimeInSeconds = 0
             WeaponIgnoredProperties = 
             [
@@ -16885,7 +17219,7 @@ Gfx_Marder_Roland_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Heat,
         DepictionOperator_Carousel_Radar
         (
-            RevolutionsPerMinute = 10
+            RevolutionsPerMinute = 60
             WaitTimeInSeconds = 0
             WeaponIgnoredProperties = 
             [
@@ -17382,7 +17716,7 @@ Gfx_OT_65_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_OT_65_DDR) ]
 )
 // Dépiction de l'unité Osa_9K33M3_DDR
 DepictionOperator_Osa_9K33M3_DDR_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -17523,7 +17857,7 @@ Gfx_PSzH_IV_DDR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_PSzH_IV_DDR) ]
 )
 // Dépiction de l'unité PT76B_CMD_DDR
 DepictionOperator_PT76B_CMD_DDR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -17770,7 +18104,7 @@ Gfx_Roland_2_FR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Heat,
         DepictionOperator_Carousel_Radar
         (
-            RevolutionsPerMinute = 10
+            RevolutionsPerMinute = 60
             WaitTimeInSeconds = 0
             WeaponIgnoredProperties = 
             [
@@ -17826,7 +18160,7 @@ Gfx_Roland_3_FR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Heat,
         DepictionOperator_Carousel_Radar
         (
-            RevolutionsPerMinute = 10
+            RevolutionsPerMinute = 60
             WaitTimeInSeconds = 0
             WeaponIgnoredProperties = 
             [
@@ -17877,7 +18211,7 @@ Gfx_SPW_152K_DDR_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "SPW_152K_DDR_turret1"
@@ -17889,7 +18223,6 @@ Gfx_SPW_152K_DDR_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_SPW_152K_DDR_Weapon1,
@@ -17901,7 +18234,7 @@ Gfx_SPW_152K_DDR_Autogen is TacticVehicleDepictionTemplate
         ),
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_SPW_152K_DDR) ]
 )
 // Dépiction de l'unité Saxon_CMD_UK
 DepictionOperator_Saxon_CMD_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -17991,7 +18324,7 @@ Gfx_Saxon_UK_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_MovementFX_Wheeled
             + DepictionAction_CriticalFX_Tank
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Saxon_UK) ]
 )
 // Dépiction de l'unité Sonderwagen_4_RFA
 DepictionOperator_Sonderwagen_4_RFA_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -18031,7 +18364,7 @@ Gfx_Sonderwagen_4_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
     ] + HumanSubDepictions_Sonderwagen_4_RFA
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Sonderwagen_4_RFA) ]
 )
 // Dépiction de l'unité Sonderwagen_4_recon_RFA
 Gfx_Sonderwagen_4_recon_RFA_Autogen is TacticVehicleDepictionTemplate
@@ -20176,7 +20509,7 @@ Gfx_T813_trans_DDR_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_T813_trans_DDR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_T813_trans_DDR) ]
 )
 // Dépiction de l'unité TOS1_Buratino_SOV
 DepictionOperator_TOS1_Buratino_SOV_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -20390,7 +20723,7 @@ Gfx_TPZ_Fuchs_1_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "TPZ_Fuchs_1_RFA_turret1"
@@ -20402,7 +20735,6 @@ Gfx_TPZ_Fuchs_1_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_TPZ_Fuchs_1_RFA_Weapon1,
@@ -20414,7 +20746,7 @@ Gfx_TPZ_Fuchs_1_RFA_Autogen is TacticVehicleDepictionTemplate
         ),
     ] + HumanSubDepictions_TPZ_Fuchs_1_RFA
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_TPZ_Fuchs_1_RFA) ]
 )
 // Dépiction de l'unité TPZ_Fuchs_CMD_RFA
 DepictionOperator_TPZ_Fuchs_CMD_RFA_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -20460,7 +20792,7 @@ Gfx_TPZ_Fuchs_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "TPZ_Fuchs_CMD_RFA_turret1"
@@ -20472,7 +20804,6 @@ Gfx_TPZ_Fuchs_CMD_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_TPZ_Fuchs_CMD_RFA_Weapon1,
@@ -20536,7 +20867,7 @@ Gfx_TPZ_Fuchs_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "TPZ_Fuchs_MILAN_RFA_turret1"
@@ -20548,7 +20879,6 @@ Gfx_TPZ_Fuchs_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_TPZ_Fuchs_MILAN_RFA_Weapon1,
@@ -20560,7 +20890,7 @@ Gfx_TPZ_Fuchs_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
         ),
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "TPZ_Fuchs_MILAN_RFA_turret2"
@@ -20572,7 +20902,6 @@ Gfx_TPZ_Fuchs_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_TPZ_Fuchs_MILAN_RFA_Weapon2,
                 ]
@@ -20583,7 +20912,7 @@ Gfx_TPZ_Fuchs_MILAN_RFA_Autogen is TacticVehicleDepictionTemplate
         ),
     ] + HumanSubDepictions_TPZ_Fuchs_MILAN_RFA
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_TPZ_Fuchs_MILAN_RFA) ]
 )
 // Dépiction de l'unité TPZ_Fuchs_RASIT_RFA
 DepictionOperator_TPZ_Fuchs_RASIT_RFA_Weapon5 is DepictionOperator_WeaponInstantFire
@@ -20608,9 +20937,10 @@ Gfx_TPZ_Fuchs_RASIT_RFA_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Propulsion_Wheels_Generic,
         DepictionOperator_TPZ_Fuchs_RASIT_RFA_Weapon5,
         DepictionOperator_MovementFX_Amphibious,
-        DepictionOperator_Carousel_Radar
+        DepictionOperator_CarouselWithSpecificAngle_Radar
         (
-            RevolutionsPerMinute = 10
+            CoveragePercentage = 60
+            RevolutionsPerMinute = 15
             WaitTimeInSeconds = 0
             WeaponIgnoredProperties = 
             [
@@ -20695,7 +21025,7 @@ Gfx_TRM_2000_FR_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_TRM_2000_FR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_TRM_2000_FR) ]
 )
 // Dépiction de l'unité TRM_2000_supply_FR
 Gfx_TRM_2000_supply_FR_Autogen is TacticVehicleDepictionTemplate
@@ -20761,7 +21091,7 @@ Gfx_TUTO_M1025_Humvee_US_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
     ] + HumanSubDepictions_TUTO_M1025_Humvee_US
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_TUTO_M1025_Humvee_US) ]
 )
 // Dépiction de l'unité Tor_SOV
 DepictionOperator_Tor_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -21209,7 +21539,7 @@ Gfx_UAZ_469_MP_SOV_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_UAZ_469_MP_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_UAZ_469_MP_SOV) ]
 )
 // Dépiction de l'unité UAZ_469_Reco_DDR
 DepictionOperator_UAZ_469_Reco_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -21245,7 +21575,7 @@ Gfx_UAZ_469_Reco_DDR_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "UAZ_469_Reco_DDR_turret1"
@@ -21257,7 +21587,6 @@ Gfx_UAZ_469_Reco_DDR_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_UAZ_469_Reco_DDR_Weapon1,
@@ -21269,7 +21598,7 @@ Gfx_UAZ_469_Reco_DDR_Autogen is TacticVehicleDepictionTemplate
         ),
     ] + HumanSubDepictions_UAZ_469_Reco_DDR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_UAZ_469_Reco_DDR) ]
 )
 // Dépiction de l'unité UAZ_469_Reco_SOV
 DepictionOperator_UAZ_469_Reco_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -21305,7 +21634,7 @@ Gfx_UAZ_469_Reco_SOV_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "UAZ_469_Reco_SOV_turret1"
@@ -21317,7 +21646,6 @@ Gfx_UAZ_469_Reco_SOV_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_UAZ_469_Reco_SOV_Weapon1,
@@ -21329,7 +21657,7 @@ Gfx_UAZ_469_Reco_SOV_Autogen is TacticVehicleDepictionTemplate
         ),
     ] + HumanSubDepictions_UAZ_469_Reco_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_UAZ_469_Reco_SOV) ]
 )
 // Dépiction de l'unité UAZ_469_SOV
 Gfx_UAZ_469_SOV_Autogen is TacticVehicleDepictionTemplate
@@ -21358,7 +21686,7 @@ Gfx_UAZ_469_SOV_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_UAZ_469_SOV
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_UAZ_469_SOV) ]
 )
 // Dépiction de l'unité UAZ_469_SPG9_DDR
 DepictionOperator_UAZ_469_SPG9_DDR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -21623,7 +21951,7 @@ Gfx_UAZ_469_trans_DDR_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_UAZ_469_trans_DDR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_UAZ_469_trans_DDR) ]
 )
 // Dépiction de l'unité Unimog_S_404_RFA
 Gfx_Unimog_S_404_RFA_Autogen is TacticVehicleDepictionTemplate
@@ -21678,7 +22006,7 @@ Gfx_Unimog_trans_RFA_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_Unimog_trans_RFA
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Unimog_trans_RFA) ]
 )
 // Dépiction de l'unité Ural_4320_DDR
 Gfx_Ural_4320_DDR_Autogen is TacticVehicleDepictionTemplate
@@ -21753,7 +22081,7 @@ Gfx_Ural_4320_trans_SOV_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ]
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_Ural_4320_trans_SOV) ]
 )
 // Dépiction de l'unité VAB_CMD_FR
 DepictionOperator_VAB_CMD_FR_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -21790,7 +22118,7 @@ Gfx_VAB_CMD_FR_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "VAB_CMD_FR_turret1"
@@ -21802,7 +22130,6 @@ Gfx_VAB_CMD_FR_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_VAB_CMD_FR_Weapon1,
@@ -21850,7 +22177,7 @@ Gfx_VAB_FR_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = ["base_tourelle_01"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "VAB_FR_turret1"
@@ -21862,7 +22189,6 @@ Gfx_VAB_FR_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_1_Aim,
                     DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
                     DepictionOperator_VAB_FR_Weapon1,
@@ -21874,7 +22200,7 @@ Gfx_VAB_FR_Autogen is TacticVehicleDepictionTemplate
         ),
     ] + HumanSubDepictions_VAB_FR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_VAB_FR) ]
 )
 // Dépiction de l'unité VAB_HOT_FR
 DepictionOperator_VAB_HOT_FR_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -21963,7 +22289,7 @@ Gfx_VAB_MILAN_FR_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = ["base_tourelle_02"]
             Depiction = TDepictionTemplate
             (
                 CoatingName = "VAB_MILAN_FR_turret2"
@@ -21975,7 +22301,6 @@ Gfx_VAB_MILAN_FR_Autogen is TacticVehicleDepictionTemplate
                 ]
                 Operators = [
                     DepictionOperator_Reset_Generic,
-                    DepictionOperator_Shader_GhostTactic,
                     DepictionOperator_Turret_2_Aim,
                     DepictionOperator_VAB_MILAN_FR_Weapon2,
                 ]
@@ -21986,7 +22311,7 @@ Gfx_VAB_MILAN_FR_Autogen is TacticVehicleDepictionTemplate
         ),
     ] + HumanSubDepictions_VAB_MILAN_FR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_VAB_MILAN_FR) ]
 )
 // Dépiction de l'unité VAB_Mortar_81_FR
 DepictionOperator_VAB_Mortar_81_FR_Weapon1 is DepictionOperator_WeaponInstantFire
@@ -22059,9 +22384,10 @@ Gfx_VAB_RASIT_FR_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Chassis_Vehicle,
         DepictionOperator_Propulsion_Wheels_Generic,
         DepictionOperator_MovementFX_Amphibious,
-        DepictionOperator_Carousel_Radar
+        DepictionOperator_CarouselWithSpecificAngle_Radar
         (
-            RevolutionsPerMinute = 10
+            CoveragePercentage = 60
+            RevolutionsPerMinute = 15
             WaitTimeInSeconds = 0
             WeaponIgnoredProperties = []
         ),
@@ -22135,7 +22461,7 @@ Gfx_VAB_T20_FR_Autogen is TacticVehicleDepictionTemplate
             + DepictionAction_CriticalFX_Tank
             + DepictionAction_FX_Amphibious_NoPropulsion
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_VAB_T20_FR) ]
 )
 // Dépiction de l'unité VBL_MILAN_FR
 DepictionOperator_VBL_MILAN_FR_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -22339,7 +22665,7 @@ Gfx_VLRA_HMG_FR_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
     ] + HumanSubDepictions_VLRA_HMG_FR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_VLRA_HMG_FR) ]
 )
 // Dépiction de l'unité VLRA_MILAN_FR
 DepictionOperator_VLRA_MILAN_FR_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -22513,7 +22839,7 @@ Gfx_VLRA_trans_FR_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_VLRA_trans_FR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_VLRA_trans_FR) ]
 )
 // Dépiction de l'unité VLTT_P4_FR
 Gfx_VLTT_P4_FR_Autogen is TacticVehicleDepictionTemplate
@@ -22541,7 +22867,7 @@ Gfx_VLTT_P4_FR_Autogen is TacticVehicleDepictionTemplate
     SubDepictions = [
     ] + HumanSubDepictions_VLTT_P4_FR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_VLTT_P4_FR) ]
 )
 // Dépiction de l'unité VLTT_P4_MILAN_FR
 DepictionOperator_VLTT_P4_MILAN_FR_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -22670,7 +22996,7 @@ Gfx_W50_LA_A_DDR_Autogen is TacticVehicleDepictionTemplate
         SubDepictionTowedUnit,
     ] + HumanSubDepictions_W50_LA_A_DDR
 
-    SubDepictionGenerators = [ TransportedInfantrySubGenerator ]
+    SubDepictionGenerators = [ TransportedInfantrySubGenerator(Mesh = $/GFX/DepictionResources/Modele_W50_LA_A_DDR) ]
 )
 // Dépiction de l'unité ZSU_23_Shilka_Afghan_SOV
 DepictionOperator_ZSU_23_Shilka_Afghan_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -22837,41 +23163,4 @@ Gfx_ZSU_57_2_DDR_Autogen is TacticVehicleDepictionTemplate
 
     SubDepictions = [
     ] + HumanSubDepictions_ZSU_57_2_DDR
-)
-// Dépiction de l'unité M270_MLRS_US_ATACMS_FRL
-DepictionOperator_M270_MLRS_US_ATACMS_FRL_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
-(
-    FireEffectTag = "weapon_effet_tag1"
-    Connoisseur = MissileCarriage_ATACMS
-    WeaponShootDataPropertyName = ["WeaponShootData_0_1", ]
-    NbProj = 1
-    WeaponIndex = 1
-
-)
-Gfx_M270_MLRS_US_ATACMS_FRL_Autogen is TacticVehicleDepictionTemplate
-(
-    CoatingName = 'M270_MLRS_US'
-    Selector = Selector_M270_MLRS_US
-    Alternatives = Alternatives_M270_MLRS_US
-
-    Operators = 
-    [
-        DepictionOperator_CropFlattening,
-        DepictionOperator_MovementSound_SM_M270_MLRS,
-        DepictionOperator_CriticalEffects,
-        DepictionOperator_Chassis_HeavyTank,
-        DepictionOperator_Propulsion_ContinuousTrack,
-        DepictionOperator_MovementFX_Standard,
-        DepictionOperator_Turret_1_Aim,
-        DepictionOperator_TurretSound_ST_MLRS_US,
-        DepictionOperator_Turret_1_HydraulicRecoil,
-        DepictionOperator_M270_MLRS_US_ATACMS_FRL_Weapon1,
-    ]
-
-    Actions = MAP[
-                ( [ "weapon_effet_tag1" ], Weapon_RocketArt_ATACMS_FRL ),
-            ]
-            + DepictionAction_Stress_And_Wrecked
-            + DepictionAction_MovementFX_Tracked
-            + DepictionAction_CriticalFX_Tank
 )

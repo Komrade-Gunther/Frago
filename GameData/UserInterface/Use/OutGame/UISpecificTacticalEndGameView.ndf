@@ -2652,6 +2652,7 @@ UISpecificTacticalEndGameViewDescriptor is TUISpecificTacticalEndGameViewDescrip
         (ETerrainType/StrategicForest, "FOREST"),
         (ETerrainType/StrategicPlain, "PLAIN"),
         (ETerrainType/StrategicSemiUrban, "SEMIURB"),
+        (ETerrainType/StrategicUrban, "URB"),
     ]
 
     EndgameAnimationTextures = MAP

@@ -1,8 +1,8 @@
 //-------------------------------------------------------------------------
 //----------------------------- MISC ---------------------------------
 //-------------------------------------------------------------------------
-MinimumResourceForLaunch_Stage_1 is 400
-MinimumResourceForLaunch_Economic is 1000
+MinimumResourceForLaunch_Stage_1 is MAP [(~/Resource_CommandPoints, 400) , (~/Resource_Tickets, 10)]
+MinimumResourceForLaunch_Economic is MAP [(~/Resource_CommandPoints, 1000) , (~/Resource_Tickets, 25)]
 
 //-------------------------------------------------------------------------
 //------------------------------ SUPPLY -----------------------------------
@@ -12,7 +12,7 @@ MinimumResourceForLaunch_Economic is 1000
 
 private template Template_Supply
 [
-    MinimumResourceForLaunch:int = 0,
+    MinimumResourceForLaunch = MAP[],
     AdditionnalParameter = []
 ]
 is TMacroActionDescriptor_Supply_Specific
@@ -77,13 +77,14 @@ export Pool_Supply_Skirmish is TPoolModel
 
 private template Template_Reco
 [
-    MinimumResourceForLaunch:int = 0,
+    MinimumResourceForLaunch = MAP[],
+    NumberLaunchBasedOnGenerationType:int = 1
 ]
 is TMacroActionDescriptor_CorridorDefense_Specific
 (
     ParametresDeMission =
     [
-        TGenerationSettingHolder(GenerationType = TGenerationType_BasedOnNumberOfCorridors NumberLaunchBasedOnGenerationType = 2 AlsoConsiderTheseDescriptorsForMaintain = []),
+        TGenerationSettingHolder(GenerationType = TGenerationType_BasedOnNumberOfCorridors NumberLaunchBasedOnGenerationType = <NumberLaunchBasedOnGenerationType> AlsoConsiderTheseDescriptorsForMaintain = []),
         TDefensePositionSettingHolder(IgnoreEnemyDirectionForDefensePosition = true),
         TMacroActionProductionSettingHolder(PoolModelList = [~/Pool_Reco_Skirmish]),
         TMacroActionLifetimeSettingHolder(MinimumResourceForLaunch = <MinimumResourceForLaunch>),
@@ -115,11 +116,18 @@ is TMacroActionDescriptor_CorridorDefense_Specific
 //-------------------------------------------------------------------------
 export Reco is Template_Reco
 (
+    NumberLaunchBasedOnGenerationType = 2
+)
+
+//-------------------------------------------------------------------------
+export Reco_All_Corridor is Template_Reco
+(
 )
 
 //-------------------------------------------------------------------------
 export Reco_Autogen is Template_Reco
 (
+    NumberLaunchBasedOnGenerationType = 2
     MinimumResourceForLaunch = ~/MinimumResourceForLaunch_Stage_1
 )
 

@@ -295,18 +295,17 @@ private template SmartChipList
 
 //----------------------------------------------------------------------
 // Icône de couverture
-template UnitLabelCoverIcon
+template UnitLabelTerrainIcon
 [
     LocalRenderLayer : int,
-    IsForMultiSelection : bool = false,
 ]
 is BUCKTextureDescriptor
 (
-    ElementName = "CoverIcon"
+    ElementName = "TerrainIcon"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [40.0, 40.0]
-        MagnifiableOffset = (<IsForMultiSelection> ? [25.0, 0.0] : [0.0, 0.0])
+        MagnifiableOffset = [0.0, 0.0]
         AlignementToFather = [0.5, 0.5]
         AlignementToAnchor = [0.5, 0.5]
     )
@@ -864,9 +863,8 @@ private StandardLabelList is BUCKListDescriptor
                 Components =
                 [
                     // Icône de couverture
-                    UnitLabelCoverIcon
+                    UnitLabelTerrainIcon
                     (
-                        IsForMultiSelection = false
                         LocalRenderLayer = 4
                     ),
 
@@ -923,9 +921,8 @@ private MultiSelectionLabelList is BUCKContainerDescriptor
             ]
         ),
         ~/UpperLabelMultiSelection,
-        UnitLabelCoverIcon
+        UnitLabelTerrainIcon
         (
-            IsForMultiSelection = false
             LocalRenderLayer = 4
         ),
     ]
@@ -1403,10 +1400,15 @@ is TUISpecificInGameUnitLabelViewDescriptor
     TokenFormatExtraSupplyGaugeWhenOverflow = "FMTSUPOVF"
 
     // Textures
-    CoverTypeToTexture = MAP
+    TerrainTypeToTexture = MAP
     [
-        (ECoverTypeForInterface/Light, "CommonTexture_Couvert_Moyen"),
-        (ECoverTypeForInterface/Batiment, "CommonTexture_Couvert_Lourd"),
+        (ETerrainType/ForetLegere,  "CommonTexture_Couvert_Moyen"),
+        (ETerrainType/ForetDense,   "CommonTexture_Couvert_Moyen"),
+        (ETerrainType/LightSmoke,   "CommonTexture_Couvert_Moyen"),
+        (ETerrainType/MediumSmoke,  "CommonTexture_Couvert_Moyen"),
+        (ETerrainType/PetitBatiment,"CommonTexture_Couvert_Lourd"),
+        (ETerrainType/Batiment,     "CommonTexture_Couvert_Lourd"),
+        (ETerrainType/Ruin,         "CommonTexture_Couvert_Lourd"),
     ]
     DefaultSpecialtyIcon    = "Spec_bombes_1"
     AceBackgroundTexture    = "CommonTexture_Etiquette_Background_Ace"

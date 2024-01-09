@@ -847,8 +847,7 @@ SliderTitles is BUCKListDescriptor
             // ExtendWeight = 0.25
             ComponentDescriptor = BUCKTextDescriptor
             (
-
-                ElementName = "PlayerSliderTitles"
+                ElementName = "LeftPlayerSliderTitle"
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
@@ -871,8 +870,6 @@ SliderTitles is BUCKListDescriptor
 
                 TextStyle = "Default"
                 TypefaceToken = "Eurostyle_Heavy"
-
-                TextToken = "DSI_Plyer"
                 TextDico = ~/LocalisationConstantes/dico_interface_ingame
             )
         ),
@@ -926,7 +923,7 @@ SliderTitles is BUCKListDescriptor
                         (
                             ComponentDescriptor = TitleAndSlider
                             (
-                                ElementName = "AIDeployment"
+                                ElementName = "DeploymentConfig"
                                 TitleToken = "PrC_in1"
                                 ValueToken = "depl_pts"
                             )
@@ -964,7 +961,7 @@ SliderTitles is BUCKListDescriptor
                         (
                             ComponentDescriptor = TitleAndSlider
                             (
-                                ElementName = "AIIncome"
+                                ElementName = "IncomeConfig"
                                 TitleToken = "PrC_in2"
                                 ValueToken = "income"
                             )
@@ -978,7 +975,7 @@ SliderTitles is BUCKListDescriptor
 
             ComponentDescriptor = BUCKTextDescriptor
             (
-                ElementName = "AISliderTitles"
+                ElementName = "RightPlayerSliderTitle"
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
@@ -1116,7 +1113,7 @@ template TitleAndSlider
         (
             ComponentDescriptor = BUCKTextDescriptor
             (
-                ElementName = <ElementName> + "AIValue"
+                ElementName = <ElementName> + "GuestValue"
 
                 ComponentFrame = TUIFramePropertyRTTI
                 (
@@ -1145,9 +1142,9 @@ template TitleAndSlider
 
 //------------------------------------------------------------------------------
 
-AICommandPointsConfiguration is BUCKListDescriptor
+TeamCommandPointsConfiguration is BUCKListDescriptor
 (
-    ElementName = "AICommandPointsConfiguration"
+    ElementName = "TeamCommandPointsConfiguration"
 
     ComponentFrame = TUIFramePropertyRTTI
     (
@@ -1215,7 +1212,7 @@ TacticalPreparationTopContainer is BUCKListDescriptor
         (
 
             ExtendWeight = 0.5
-            ComponentDescriptor = ~/AICommandPointsConfiguration
+            ComponentDescriptor = ~/TeamCommandPointsConfiguration
         ),
     ]
 )
@@ -1378,6 +1375,7 @@ UISpecificStrategicTacticalPreparationViewDescriptor is TUISpecificStrategicTact
     (
         SmartGroupsDisplayerAlignment = [0.5, 0.0]
         ContainsCubeAction = false
+        HasSpotlight = false
         HQBackgroundBlockColorToken = "SM_onyx"
     )
 
@@ -1387,27 +1385,27 @@ UISpecificStrategicTacticalPreparationViewDescriptor is TUISpecificStrategicTact
     [
         // 2 playable pawn
         [
-            50, // 1 AI pawn
+            0.5, // 1 AI pawn
         ],
         // 3 playable pawn
         [
-            33, // 1 AI pawn
-            66, // 2 AI pawns
+            0.33, // 1 AI pawn
+            0.66, // 2 AI pawns
         ],
         // 4 playable pawn
         [
-            25, // 1 AI pawn
-            50, // 2 AI pawns
-            75, // 3 AI pawns
+            0.25, // 1 AI pawn
+            0.50, // 2 AI pawns
+            0.75, // 3 AI pawns
         ],
         // 5 playable pawn
         [
-            20, // 1 AI pawn
-            40, // 2 AI pawns
-            60, // 3 AI pawns
-            80, // 4 AI pawns
+            0.20, // 1 AI pawn
+            0.40, // 2 AI pawns
+            0.60, // 3 AI pawns
+            0.80, // 4 AI pawns
         ],
     ]
 
-    AIConfigurationMinMaxPercentage = [20, 80]
+    GuestConfigurationMinMaxPercentage = [0.2, 0.8]
 )

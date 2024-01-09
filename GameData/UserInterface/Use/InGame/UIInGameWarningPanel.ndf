@@ -1,12 +1,11 @@
 
-WarningPanelResources is TUICommonWarningPanelResource
+WarningPanelInGameResources is TUICommonWarningPanelResource
 (
     ComponentByName = MAP[
         ( "WarningPositive", ~/WarningPositiveComponent ),
         ( "WarningNegative", ~/WarningNegativeComponent ),
         ( "ObservatorMode", ~/WarningPositiveComponent ),
-        ( "StrategicMessage", ~/WarningPositiveComponent ),
-        ( "StrategicProdMessage", ~/WarningPositiveComponent ),
+        ( "WaitingForPlayersMessage", ~/WarningPositiveComponent ),
     ]
 
     LifeAnimDurationForTemporary = 4.0

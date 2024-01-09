@@ -34,4 +34,3 @@ WargameUnitNames is TModernWarfareUnitNamesDico
     ]
     DefaultNameIfNotFound = "John Doe"
 )
-

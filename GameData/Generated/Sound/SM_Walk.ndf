@@ -32,7 +32,7 @@ export DepictionOperator_MovementSound_SM_Infanterie is TCosmeticWalkMovementSou
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -232,7 +232,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_Crew_FR is TCosmeticWalkMov
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -416,7 +416,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_Crew_GER is TCosmeticWalkMo
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -600,7 +600,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_Crew_SOVIET is TCosmeticWal
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -736,7 +736,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_Crew_UK is TCosmeticWalkMov
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -928,7 +928,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_Crew_US is TCosmeticWalkMov
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -1128,7 +1128,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_FR is TCosmeticWalkMovement
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -1312,7 +1312,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_GER is TCosmeticWalkMovemen
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -1496,7 +1496,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_SOVIET is TCosmeticWalkMove
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -1632,7 +1632,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_UK is TCosmeticWalkMovement
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -1824,7 +1824,7 @@ export DepictionOperator_MovementSound_SM_Infanterie_US is TCosmeticWalkMovement
         ),
     ]
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((20.0) * Metre)
+    MaxVolumeSpeed = 20
     MinVolume = 0.1
     OperatorId = "walkSound"
     RunFadeInDuration = 0.5
@@ -2008,7 +2008,7 @@ export DepictionOperator_MovementSound_SM_Walk_Debug is TCosmeticWalkMovementSou
         ),
     ]
     MaxVolume = 1
-    MaxVolumeSpeed = ((1.0) * Metre)
+    MaxVolumeSpeed = 1
     MinVolume = 1
     OperatorId = "walkSound"
     RunFadeInDuration = 0

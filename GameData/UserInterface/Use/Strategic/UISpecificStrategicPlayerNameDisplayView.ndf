@@ -1,12 +1,16 @@
 BUCKSpecificStrategicPlayerNameDisplayMainComponentDescriptor is BUCKContainerDescriptor
 (
+    ElementName = "StrategicPlayerNameDisplayMainComponent"
+
     ComponentFrame = TUIFramePropertyRTTI
     (
-        RelativeWidthHeight = [1,0]
-        MagnifiableWidthHeight = [0,40]
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, 40.0]
     )
+
     HasBackground = true
     BackgroundBlockColorToken = 'SM_Feldgrau_75'
+
     Components =
     [
         OmbrePanel(),
@@ -15,9 +19,10 @@ BUCKSpecificStrategicPlayerNameDisplayMainComponentDescriptor is BUCKContainerDe
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                    AlignementToFather = [0.5, 0.0]
-                    AlignementToAnchor = [0.5, 0.0]
-                )
+                AlignementToFather = [0.5, 0.0]
+                AlignementToAnchor = [0.5, 0.0]
+            )
+
             BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
             Axis = ~/ListAxis/Horizontal
 
@@ -26,60 +31,20 @@ BUCKSpecificStrategicPlayerNameDisplayMainComponentDescriptor is BUCKContainerDe
             [
                 BUCKListElementDescriptor
                 (
-                        ComponentDescriptor = BUCKListDescriptor
+                    ComponentDescriptor = BUCKContainerDescriptor
+                    (
+                        UniqueName = "StrategicGlobalObjectivesScoreContainer"
+                        ComponentFrame = TUIFramePropertyRTTI
                         (
-
-
-                            Axis = ~/ListAxis/Vertical
-
-                            BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-                            FirstMargin = TRTTILength (Magnifiable = 40 )
-
-                            Elements =
-                            [
-                                // BUCKListElementDescriptor
-                                // (
-                                //     ComponentDescriptor = BUCKTextDescriptor
-                                //     (
-                                //         // MagnifierMultiplication = 1.5
-                                //         ElementName = "PlayerName"
-                                //         ComponentFrame = TUIFramePropertyRTTI ( MagnifiableWidthHeight = [70*2+42*2,40])
-
-
-                                //         HorizontalFitStyle = ~/FitStyle/UserDefined
-                                //         VerticalFitStyle = ~/FitStyle/UserDefined
-                                //         // TextPadding = TRTTILength4( Magnifiable = [10,5,10,5] )
-                                //         ParagraphStyle = ~/paragraphStyleTextCenter
-                                //         TextStyle = "Default"
-                                //         TypefaceToken = "Eurostyle_Italic"
-                                //         TextDico = ~/LocalisationConstantes/dico_interface_ingame
-                                //         TextSize = "22"
-                                //         TextColor = "BlancEquipe"
-
-
-                                //     )
-                                // ),
-
-
-                                // objective score
-                                BUCKListElementDescriptor
-                                (
-                                    ComponentDescriptor = BUCKContainerDescriptor
-                                    (
-                                        UniqueName = "StrategicGlobalObjectivesScoreContainer"
-                                        ComponentFrame = TUIFramePropertyRTTI
-                                        (
-                                        )
-
-                                        FitStyle = ~/ContainerFitStyle/FitToContent
-                                        HasBackground = true
-                                        BackgroundBlockColorToken = 'SM_RifleGreen_75'
-                                        // envoie BUCKSpecificStrategicObjectiveScoreMainComponentDescriptor
-                                    )
-                                ),
-
-                            ]
+                            AlignementToFather = [0.0, 1.0]
+                            AlignementToAnchor = [0.0, 1.0]
                         )
+
+                        FitStyle = ~/ContainerFitStyle/FitToContent
+                        HasBackground = true
+                        BackgroundBlockColorToken = 'SM_RifleGreen_75'
+                        // envoie BUCKSpecificStrategicObjectiveScoreMainComponentDescriptor
+                    )
                 ),
 
                 BUCKListElementDescriptor
@@ -87,7 +52,7 @@ BUCKSpecificStrategicPlayerNameDisplayMainComponentDescriptor is BUCKContainerDe
                     ComponentDescriptor = BUCKContainerDescriptor
                     (
                         UniqueName = "StrategicDateContainer"
-                        ComponentFrame = TUIFramePropertyRTTI ()
+                        ComponentFrame = TUIFramePropertyRTTI()
 
                         FitStyle = ~/ContainerFitStyle/FitToContent
                         // envoie BUCKSpecificStrategicDateMainComponentDescriptor
@@ -98,28 +63,25 @@ BUCKSpecificStrategicPlayerNameDisplayMainComponentDescriptor is BUCKContainerDe
         ),
         BUCKTextDescriptor
         (
-            // MagnifierMultiplication = 1.5
             ElementName = "PlayerName"
+
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableWidthHeight = [70*2+42*2,40]
+                MagnifiableWidthHeight = [224.0, 40.0]
                 AlignementToAnchor = [0.5, 0.0]
                 AlignementToFather = [0.5, 0.0]
-                MagnifiableOffset = [33+70+42,0]
+                MagnifiableOffset = [145.0, 0.0]
             )
 
 
             HorizontalFitStyle = ~/FitStyle/UserDefined
             VerticalFitStyle = ~/FitStyle/UserDefined
-            // TextPadding = TRTTILength4( Magnifiable = [10,5,10,5] )
             ParagraphStyle = ~/paragraphStyleTextCenter
             TextStyle = "Default"
             TypefaceToken = "Eurostyle_Italic"
             TextDico = ~/LocalisationConstantes/dico_interface_ingame
             TextSize = "22"
             TextColor = "BlancEquipe"
-
-
         )
     ]
 )

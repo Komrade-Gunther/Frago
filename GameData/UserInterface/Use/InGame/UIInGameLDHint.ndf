@@ -2737,6 +2737,91 @@ template challenge
     ]
 )
 //-------------------------------------------------------------------------------------
+Renfort_strategic_hint  is BUCKListDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI(
+        MagnifiableWidthHeight = [600.0, 0.0]
+        MagnifiableOffset = [0.0, 225.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
+    )
+
+    Axis = ~/ListAxis/Vertical
+    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
+
+    Elements =
+    [
+        //Separateur du haut
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKContainerDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [1.0, 15]
+                )
+            )
+        ),
+
+        //Contenu
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKTextDescriptor
+            (
+                ElementName = 'LDHintText'
+
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 0.0]
+                    MagnifiableWidthHeight = [0.0, 0.0]
+                    MagnifiableOffset = [0.0, 0.0]
+                    AlignementToFather = [0.0, 0.0]
+                    AlignementToAnchor = [0.0, 0.0]
+                )
+
+                ParagraphStyle = ~/WarningParagraphStyleCentered
+                TextStyle = "Default"
+                HorizontalFitStyle = ~/FitStyle/UserDefined
+                VerticalFitStyle = ~/FitStyle/FitToContent
+
+                TypefaceToken = 'Eurostyle'
+
+                BigLineAction = ~/BigLineAction/MultiLine
+
+                TextColor = "SM_paleSilver"
+
+                TextSize = "SD2_Moyen"
+
+                TextDico = ~/LocalisationConstantes/dico_interface_ingame
+            )
+        ),
+
+        //Separateur du bas
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKContainerDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    MagnifiableWidthHeight = [1.0, 15]
+                )
+            )
+        ),
+    ]
+
+    BackgroundComponents =
+    [
+        PanelRoundedCorner
+        (
+
+            BackgroundBlockColorToken = 'SM_RifleGreen_75'
+            BorderLineColorToken = 'SM_Grullo'
+
+        )
+    ]
+)
+
+//-------------------------------------------------------------------------------------
 template SuperHint
 [
     alignementGauche : boolean = true,
@@ -3452,6 +3537,8 @@ private template StrategicChoiceButton
 
     Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ENTER ) )
 
+    LeftClickSound = ~/SoundEvent_SteelmanChoiceButton
+
     HasBackground = false //<HasBackground>
     BackgroundBlockColorToken = <BackgroundBlockColorToken>
 
@@ -3511,6 +3598,8 @@ private template LDHintBaseButton
     FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
 
     Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ENTER ) )
+
+    LeftClickSound = ~/SoundEvent_LDHintButton
 
     HasBackground = <HasBackground>
     BackgroundBlockColorToken = <BackgroundBlockColorToken>

@@ -93,7 +93,7 @@ export ChalHoldUntilRelieved_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/Artillery_Expensive,
 
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
     ]
     ScalingGeneratorList = ~/Challenge_Attack_Scaling
 )
@@ -129,7 +129,7 @@ export ChalHoldUntilRelieved_Phase_Command is TSequenceGeneratorDescriptor
         ~/Artillery_Expensive,
         ~/Attack_Adaptive,          // Environ 200
 
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
 
     ]
     ScalingGeneratorList = ~/Challenge_HoldUntilRelieved_Scaling
@@ -147,7 +147,7 @@ Challenge_HoldUntilRelieved_Scaling is
     ~/Airstrike_Assault_Autogen,
 
     ~/Airstrike_Offense_Autogen,
-    ~/Airstrike_Defense_Autogen,
+    ~/Airstrike_AA_Autogen,
 
     ~/Artillery_TriggerHappy_Autogen,
 ]

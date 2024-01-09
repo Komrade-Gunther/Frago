@@ -1,6 +1,6 @@
 //Correspondance : PlayerMissionRequestType.h
 ///////////////////////////////////////////////////////////////////////////////////////////
-EPlayerMissionRequestType_Unkown                         is 0
+EPlayerMissionRequestType_Unknown                         is 0
 EPlayerMissionRequestType_Seize                          is 1
 EPlayerMissionRequestType_Hold                           is 2
 EPlayerMissionRequestType_Support                        is 3

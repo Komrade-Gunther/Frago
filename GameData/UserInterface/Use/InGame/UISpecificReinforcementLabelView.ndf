@@ -62,6 +62,5 @@ UISpecificReinforcementLabelViewDescriptor is TUISpecificReinforcementLabelViewD
     [
         "REINF_LAND", //Land
         "REINF_AIR", //Air
-        "REINF_SEA", //Maritime
     ]
 )

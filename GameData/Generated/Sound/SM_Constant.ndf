@@ -5,7 +5,7 @@ export DepictionOperator_MovementSound_SM_Avion_Moteur_Reaction is TCosmeticCons
 (
     FadeInDuration = 0.5
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -24,7 +24,7 @@ export DepictionOperator_MovementSound_SM_Jeep is TCosmeticConstantMovementSound
 (
     FadeInDuration = 0.5
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -43,7 +43,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_A10 is TCosmeticConstantMovem
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -62,7 +62,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_AlphaJet is TCosmeticConstant
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -81,7 +81,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_F104 is TCosmeticConstantMove
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -100,7 +100,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_Mirage2000 is TCosmeticConsta
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -119,7 +119,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_MirageF1 is TCosmeticConstant
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -138,7 +138,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_MirageIII is TCosmeticConstan
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -157,7 +157,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_MirageIV is TCosmeticConstant
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -176,7 +176,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_SU25 is TCosmeticConstantMove
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -195,7 +195,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_Super_Etendard is TCosmeticCo
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -214,7 +214,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_bombardier is TCosmeticConsta
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -233,7 +233,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_bombardier_F111 is TCosmeticC
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -252,7 +252,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_bombardier_G91 is TCosmeticCo
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -271,7 +271,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_bombardier_Harrier is TCosmet
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -290,7 +290,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_bombardier_Jaguar is TCosmeti
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -309,7 +309,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_bombardier_SU22 is TCosmeticC
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -328,7 +328,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_bombardier_SU24 is TCosmeticC
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -347,7 +347,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_bombardier_Tornado is TCosmet
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -366,7 +366,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_chasseur is TCosmeticConstant
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -385,7 +385,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_intercepteur_MiG31 is TCosmet
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -404,7 +404,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_multirole_F117 is TCosmeticCo
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -423,7 +423,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_multirole_F15 is TCosmeticCon
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -442,7 +442,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_multirole_F16 is TCosmeticCon
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -461,7 +461,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_multirole_F4 is TCosmeticCons
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -480,7 +480,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_multirole_MiG21 is TCosmeticC
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -499,7 +499,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_multirole_MiG23 is TCosmeticC
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -518,7 +518,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_multirole_MiG29 is TCosmeticC
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -537,7 +537,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_multirole_Su27 is TCosmeticCo
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -556,7 +556,7 @@ export DepictionOperator_MovementSound_SM_SD_avion_reco is TCosmeticConstantMove
 (
     FadeInDuration = 0.5
     MaxVolume = 1
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 
@@ -575,7 +575,7 @@ export DepictionOperator_MovementSound_SM_VehiculeRoueMoyen is TCosmeticConstant
 (
     FadeInDuration = 0.5
     MaxVolume = 0.5
-    MaxVolumeSpeed = ((80.0) * Metre)
+    MaxVolumeSpeed = 80
     MinVolume = 0.1
     OperatorId = "constantSound"
     Sounds = 

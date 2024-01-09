@@ -114,7 +114,7 @@ export Blackhorse_Side_Attack is TMacroActionDescriptor_CorridorAttack_Specific
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible]
         PoolModelList = [ Pool_BlackHorse_Attack, ] LaunchASAP_RatioMin = 0.01),
-        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 1.0 UtiliserMenaceLaPlusProcheAuLieuDeLaPlusFaible = true RatioPourAttaquerPerduAChaqueTick = 0.001),
+        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 1.0 RatioPourAttaquerPerduAChaqueTick = 0.001),
         TAntiStackingSettingHolder(),
         TCorridorPlacementSettingHolder(StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1 ActiveComportementEnBoutDeCouloir = true),
     ]
@@ -219,7 +219,8 @@ export Pool_Main_Attack_Skirmish is TPoolModel
 //-------------------------------------------------------------------------
 export Pool_BlackHorse_Attack is TPoolModel
 (
-    Budget = 300
+    //Ici je ne met volontairement pas de prix en ticket, que ça assert si on utilise cette stratégie en tactic venant du stratégique
+    Budget = MAP [(~/Resource_CommandPoints, 300)]
     ModelList = [
         TPoolElement(
             DescriptorId = GUID:{e0ec700a-6efc-4b8f-9fbe-45758594b17c}

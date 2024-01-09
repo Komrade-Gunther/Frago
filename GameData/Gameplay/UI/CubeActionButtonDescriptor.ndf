@@ -629,86 +629,11 @@ export CubeAction_Order_Reverse is Template_CubeActionOrderButtonInformationsDes
 
 
 // Synchro avec enum Functionalities cf CubeActionModuleDescriptor.h
-Functionality_Back             is 1
-Functionality_MoveProduction   is 3
-Functionality_TrackCam         is 5
-Functionality_AutoAssign       is 6
 Functionality_HoldFire         is 7
 Functionality_RiposteStance    is 9
 Functionality_AutoCover        is 10
-Functionality_Home             is 11
-Functionality_DefaultOrderHunt is 12
-Functionality_DefaultOrderMove is 13
 
 // TODO : à supprimer, Template_CubeAction_Functionality_Back fait le boulot ; gardé uniquement pour faire la transition
-export CubeAction_Functionality_Back is Template_CubeActionFunctionalityButtonInformationsDescriptor_WithSound
-(
-    CubeActionName           = "CubeAction_Order_Back"
-    DebugName                = "InGameCubeAction_ButtonBack"
-
-    CubeActionFunctionType   = TacticCubeActionFunctionType/Orders
-
-    ButtonTextToken          = 'ORD_BACK'
-    HintTitleToken           = 'ORD_BACK'
-    HintBodyToken            = 'HNT_BACK'
-    HintExtendedToken        = ''
-    HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
-
-    FunctionalityType        = Functionality_Back
-    Mapping                  = $/KeyboardOption/Mapping_Back
-)
-
-export CubeAction_Functionality_Home is Template_CubeActionFunctionalityButtonInformationsDescriptor_WithSound
-(
-    CubeActionName           = "CubeAction_Order_Home"
-    DebugName                = "InGameCubeAction_ButtonHome"
-
-    CubeActionFunctionType   = TacticCubeActionFunctionType/Orders
-
-    ButtonTextToken          = 'ORD_HOME'
-    HintTitleToken           = 'ORD_HOME'
-    HintBodyToken            = 'HNT_HOME'
-    HintExtendedToken        = ''
-    HintDico                 = ~/LocalisationConstantes/dico_interface_ingame
-
-    FunctionalityType        = Functionality_Home
-    Mapping                  = $/KeyboardOption/Mapping_Home
-)
-
-export CubeAction_Functionality_TrackCam is Template_CubeActionFunctionalityButtonInformationsDescriptor_WithSound
-(
-    CubeActionName          = "CubeAction_Order_TrackCam"
-    DebugName               = "InGameCubeAction_ButtonTrackCam"
-
-    CubeActionFunctionType = ~/TacticCubeActionFunctionType/TogglableOrders
-
-    ButtonTextToken         = 'ORD_TRKCM'
-    HintTitleToken          = 'ORD_TRKCM'
-    HintBodyToken           = 'HNT_TRKCM'
-    HintExtendedToken       = ''
-    HintDico                = ~/LocalisationConstantes/dico_interface_ingame
-
-    FunctionalityType       = Functionality_TrackCam
-    Mapping                 = $/KeyboardOption/Mapping_TrackCam
-)
-
-export CubeAction_Functionality_AutoAssign is Template_CubeActionFunctionalityButtonInformationsDescriptor_WithSound
-(
-    CubeActionName          = "CubeAction_Order_AutoAssign"
-    DebugName               = "InGameCubeAction_ButtonAutoAssign"
-
-    CubeActionFunctionType = ~/TacticCubeActionFunctionType/TogglableOrders
-
-    ButtonTextToken         = 'ORD_AUTOAS'
-    HintTitleToken          = 'ORD_AUTOAS'
-    HintBodyToken           = 'HNT_AUTOAS'
-    HintExtendedToken       = ''
-    HintDico                = ~/LocalisationConstantes/dico_interface_ingame
-
-    FunctionalityType       = Functionality_AutoAssign
-    Mapping                 = $/KeyboardOption/Mapping_AutoAssign
-)
-
 export CubeAction_Functionality_HoldFire is Template_CubeActionFunctionalityButtonInformationsDescriptor_WithSound
 (
     CubeActionName          = "CubeAction_Order_HoldFire"

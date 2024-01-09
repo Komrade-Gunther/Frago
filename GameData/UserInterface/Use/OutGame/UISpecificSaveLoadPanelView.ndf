@@ -915,7 +915,7 @@ private SaveLoadTabsComponent is BUCKSpecific_Fulda_WithTabsComponentDescriptor
 
                 Components =
                 [
-                    SaveLoadMultiList(Category = "Campaign")
+                    SaveLoadMultiList(Category = "Tutorial")
                 ]
             )
         ),

@@ -60,6 +60,14 @@ private MouseWidget_MultiSelectionStrategic is Template_HardwareMouseWidgetResou
     HardwareMouseCursorAnimation    = ~/MouseCurseur_MultiselectionStrategic
 )
 
+StrategicTerrainTypeToMouseCursorAnimation is MAP
+[
+    (ETerrainType/StrategicForest,      ~/MouseCurseur_strategic_foret),
+    (ETerrainType/StrategicPlain,       ~/MouseCurseur_strategic_plaine),
+    (ETerrainType/StrategicSemiUrban,   ~/MouseCurseur_strategic_semiurbain),
+    (ETerrainType/StrategicUrban,       ~/MouseCurseur_strategic_urbain),
+]
+
 MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_WithTerrainFeedback
 (
     StillTimeBeforeHintAppearance = 2
@@ -79,7 +87,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
 
 
         (
-            ~/ETerrainType/Urbain, // semi urbain pour l'instant
+            ~/ETerrainType/StrategicUrban, // semi urbain pour l'instant
             THintContentHolder
             (
                 TitleToken = "smTer_s"
@@ -115,12 +123,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
 
     ]
 
-    CursorMap = MAP
-    [
-        (ECoverTypeForInterface/Light, ~/MouseCurseur_strategic_foret),
-        (ECoverTypeForInterface/Heavy, ~/MouseCurseur_strategic_plaine),
-        (ECoverTypeForInterface/Batiment,   ~/MouseCurseur_strategic_urbain),
-    ]
+    TerrainTypeToMouseCursorAnimation = ~/StrategicTerrainTypeToMouseCursorAnimation
 )
 
 private PANumberMouseCursor is BUCKTextDescriptor
@@ -205,14 +208,44 @@ PAComponentMouseCursor is BUCKGaugeDescriptor
     ]
 )
 
+//--------------------------------------------------------
+
+template Template_HardwareMouseWidgetResource_WithBUCK
+[
+    BUCKDescriptor : TBUCKContainerDescriptor = nil,
+    PointerFollowingProperties : TPointerFollowingPropertiesRTTI = nil,
+    TerrainTypeToMouseCursorAnimation,
+]
+is TUIMouseWidgetResource
+(
+    ModuleResourceList =
+    MAP
+    [
+        (
+
+            "CursorSetter",
+            TUIMouseWidgetTerrainCursorSetterModuleResource
+            (
+                TerrainTypeToMouseCursorAnimation = <TerrainTypeToMouseCursorAnimation>
+            )
+        ),
+
+        (
+            "BUCKModule",
+            TUIMouseWidgetBUCKModuleResource
+            (
+                BUCKDescriptor = <BUCKDescriptor>
+                PointerFollowingProperties = <PointerFollowingProperties>
+                UILayer = $/UserInterface/UILayer_2DInterface_InGame
+            )
+        ),
+    ]
+    UILayer = $/UserInterface/UILayer_2DInterface_InGame
+)
+
 MouseWidget_StrategicOrderNeutralLand is Template_HardwareMouseWidgetResource_WithBUCK
 (
-    CursorMap = MAP
-    [
-        (ECoverTypeForInterface/Light, ~/MouseCurseur_strategic_foret),
-        (ECoverTypeForInterface/Heavy, ~/MouseCurseur_strategic_plaine),
-        (ECoverTypeForInterface/Batiment,   ~/MouseCurseur_strategic_urbain),
-    ]
+    TerrainTypeToMouseCursorAnimation = ~/StrategicTerrainTypeToMouseCursorAnimation
 
     BUCKDescriptor = BUCKContainerDescriptor
     (

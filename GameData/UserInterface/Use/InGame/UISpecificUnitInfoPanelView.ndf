@@ -1797,16 +1797,15 @@ is TUISpecificUnitInfoPanelViewDescriptor
 
     BlindageToToken = MAP
     [
-        ("infanterie_1", "UIP_INF1"),
-        ("vehicule_1","UIP_vehl"),
-        ("vehicule_2","UIP_hel2"),
-        ("helico_1","UIP_vehl"),
-        ("helico_2","UIP_hel2"),
-        ("helico_3","UIP_hel3"),
-        ("avion_1","UIP_vehl"),
-        ("avion_2","UIP_hel2"),
-        ("avion_3","UIP_hel3"),
-
+        ("ResistanceFamily_infanterie_1", "UIP_INF1"),
+        ("ResistanceFamily_vehicule_1","UIP_vehl"),
+        ("ResistanceFamily_vehicule_2","UIP_hel2"),
+        ("ResistanceFamily_helico_1","UIP_vehl"),
+        ("ResistanceFamily_helico_2","UIP_hel2"),
+        ("ResistanceFamily_helico_3","UIP_hel3"),
+        ("ResistanceFamily_avion_1","UIP_vehl"),
+        ("ResistanceFamily_avion_2","UIP_hel2"),
+        ("ResistanceFamily_avion_3","UIP_hel3"),
     ]
 
     BlindageTextColors = ~/InfoPanelValuesColors
@@ -1890,12 +1889,10 @@ is TUISpecificUnitInfoPanelViewDescriptor
 
     HidePlatingPanelForResistance =
     [
-        "batiment",
-        // "avion",
-        "infanterie_1"
+        ResistanceFamily_batiment,
     ]
 )
-
+//
 //Penser à répliquer les modifications dans listeAffichageInfoUnit_HelicoDefault ci-dessous
 listeAffichageInfoUnit_Default is
 [

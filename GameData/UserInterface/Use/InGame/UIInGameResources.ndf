@@ -18,7 +18,6 @@ UIInGameResource is TUISpecificInGameResources
         ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor( MainComponentFrame = TUIFramePropertyRTTI() )),
         ("SkirmishProductionMenu", UISpecificSkirmishProductionMenuViewDescriptor()),
         ("SkirmishFromStrategicProductionMenu", UISpecificSkirmishProductionMenuViewDescriptor(IsFromStrategic = true)),
-        ("MenuButtonDescriptor", ~/UISpecificMenuButtonViewDescriptor),
         ("UIUnitLabelAggregateViewDescriptor", ~/UISpecificInGameUnitLabelAggregateViewDescriptor),
         ("InGameUnitLabel", UISpecificUnitLabelViewDescriptor(DebugViewName = "InGameUnitLabelDebug")),
         ("InGameUnitLabelDebug", ~/UISpecificUnitLabelDebugViewDescriptor),
@@ -62,7 +61,7 @@ UIInGameResource is TUISpecificInGameResources
     UnitLabelResource           = ~/SpecificInGameUnitLabelResources
     OutmapFeedbackResource      = ~/UISpecificOutmapFeedbackResources
     FeedbackLineOfSightResource = ~/FeedbackLineOfSightResource
-    WarningPanelResources       = ~/WarningPanelResources
+    WarningPanelResources       = ~/WarningPanelInGameResources
     LabelsOnMapResources        = ~/InGameLabelsOnMapResources
     ScriptedLabelResources      = ~/IngameScriptedLabelResources
     FeedbackManagerDescriptor   = ~/IngameFeedbackMessageManagerDescriptor
@@ -75,8 +74,6 @@ UIInGameResource is TUISpecificInGameResources
     PositionEvents              = ~/MainPositionEvents
     MousePolicyManagerResources = ~/InGameMousePolicyManagerResources
     OptionManager               = $/GameOptionsInterface/GameOptionsInterfaceWrapper
-
-    DefenseResources            = ~/DefenseResources
 
     CommanderResources          = ~/CommanderResources
 
@@ -177,25 +174,49 @@ InGameMainContainerResource is TUICommonMainContainerResource
                     ),
                     BUCKListElementDescriptor
                     (
-                        ComponentDescriptor = BUCKContainerDescriptor
+                        ComponentDescriptor = BUCKListDescriptor
                         (
-                            UniqueName = "UISpecificMiniMapInfoViewMainContainer"
-                            ComponentFrame = TUIFramePropertyRTTI()
-
-                            FitStyle = ~/ContainerFitStyle/FitToContent
-                        )
-                    ),
-                    BUCKListElementDescriptor
-                    (
-                        ComponentDescriptor = BUCKContainerDescriptor
-                        (
-                            UniqueName = "UICommonFlarePanelViewMainContainer"
                             ComponentFrame = TUIFramePropertyRTTI
                             (
                                 RelativeWidthHeight = [1.0, 0.0]
                             )
 
-                            FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                            FirstMargin = TRTTILength( Magnifiable = 5.0 )
+                            InterItemMargin = TRTTILength( Magnifiable = 5.0 )
+                            LastMargin = TRTTILength( Magnifiable = 5.0 )
+                            Axis = ~/ListAxis/Vertical
+
+                            BackgroundComponents = [ PanelRoundedCorner() ]
+
+                            Elements =
+                            [
+                                BUCKListElementDescriptor
+                                (
+                                    ComponentDescriptor = BUCKContainerDescriptor
+                                    (
+                                        UniqueName = "UISpecificMiniMapInfoViewMainContainer"
+                                        ComponentFrame = TUIFramePropertyRTTI
+                                        (
+                                            RelativeWidthHeight = [1.0, 0.0]
+                                        )
+
+                                        FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                                    )
+                                ),
+                                BUCKListElementDescriptor
+                                (
+                                    ComponentDescriptor = BUCKContainerDescriptor
+                                    (
+                                        UniqueName = "UICommonFlarePanelViewMainContainer"
+                                        ComponentFrame = TUIFramePropertyRTTI
+                                        (
+                                            RelativeWidthHeight = [1.0, 0.0]
+                                        )
+
+                                        FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                                    )
+                                )
+                            ]
                         )
                     ),
                     BUCKListElementDescriptor
@@ -296,6 +317,7 @@ InGameMainContainerResource is TUICommonMainContainerResource
                 BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
                 LastMargin = TRTTILength(Magnifiable = 5.0)
+                InterItemMargin = TRTTILength(Magnifiable = 2.0)
 
                 Elements =
                 [

@@ -113,7 +113,7 @@ is BUCKListDescriptor
     )
 
     Axis = ~/ListAxis/Vertical
-    HasBackground = true
+    HasBackground = false
     BackgroundBlockColorToken = 'Orange'
 
     Elements =
@@ -796,7 +796,8 @@ is BUCKListDescriptor
 
     Axis = ~/ListAxis/Vertical
     FirstMargin = TRTTILength( Magnifiable = 50.0)
-
+    HasBackground = false
+    BackgroundBlockColorToken = 'Orange'
     Elements =
     [
         BUCKListElementDescriptor

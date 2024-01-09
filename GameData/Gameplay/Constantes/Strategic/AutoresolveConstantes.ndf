@@ -197,9 +197,9 @@ StrategicAutoresolveConstantes is TStrategicAutoResolveConstantes
         // EStrategicBattlePlayerSide::Defender
         MAP
         [
-            (~/ETerrainType/StrategicForest,    0.25),
-            (~/ETerrainType/StrategicSemiUrban, 0.50),
-            (~/ETerrainType/Urbain,             0.75),
+            (~/ETerrainType/StrategicForest,    0.15),
+            (~/ETerrainType/StrategicSemiUrban, 0.30),
+            (~/ETerrainType/StrategicUrban,     0.45),
         ],
     ]
     ApplyPawnPowerBonusOnSupportUnit = true

@@ -1066,35 +1066,6 @@ ListeDesParties_ContentList is BUCKListDescriptor
     ]
 )
 //-------------------------------------------------------------------------------------
-private GameRoomListSecondaryInfo is SecondaryInfos
-(
-)
-
-GameRoomListPanelBorderContainerDescriptor is BUCKContainerDescriptor
-(
-    ElementName = 'MultilistContainer'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        RelativeWidthHeight = [1.0, 1.0]
-        MagnifiableWidthHeight = [0, - TopBorderPadding]
-        MagnifiableOffset = [0, TopBorderPadding]
-    )
-
-    Components =
-    [
-        BUCKContainerDescriptor
-        (
-            ElementName = 'MultilistContainer'
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                RelativeWidthHeight = [1.0, 1.0]
-                MagnifiableWidthHeight = [-2 * MultilistPadding, -2 * MultilistPadding]
-                AlignementToFather  = [0.5, 0.5]
-                AlignementToAnchor  = [0.5, 0.5]
-            )
-        ),
-    ]
-)
 
 private ModaleAskPasswordCancelButton is CancelButton
 (
@@ -1147,9 +1118,6 @@ UISpecificOutGameGameRoomListViewDescriptor is TUISpecificOutGameGameRoomListVie
 (
     MainComponentDescriptor = ~/GameRoomListPanelWindowFrame
     MainComponentContainerUniqueName = "MultiGameRoomListContainer" // Permet d'indiquer l'endroit ou le composant doit s'insérer
-
-    SecondaryInfo = ~/GameRoomListSecondaryInfo
-    PanelBorderContainer = ~/GameRoomListPanelBorderContainerDescriptor
     ModaleAskPassword = ~/ModaleAskPasswordWindowFrame
 
     ChallengeModeComponent = GameModeDecorationComponent( TextureToken = "" ) //La texture et les hints seront settes via le code

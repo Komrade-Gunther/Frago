@@ -1337,27 +1337,22 @@ ArmoryComponentDescriptor is TUISpecificShowRoomArmoryComponentDescriptor
     [
         MAP
         [
-            ("Texture_Speciality_Icon_hq", ["hq", "hq_inf", "hq_tank", "hq_veh"]),
-            ("Texture_Speciality_Icon_supply", ["supply","hel_supply"]),
+            ("Texture_Speciality_Icon_hq", ["hq_helo", "hq_inf", "hq_tank", "hq_veh"]),
+            ("Texture_Speciality_Icon_supply", ["supply"]),
         ],
         MAP
         [
             ("Texture_Speciality_Icon_infantry", ["infantry"]),
             ("Texture_Speciality_Icon_engineer", ["engineer"]),
-
         ],
-
-
         MAP
         [
             ("Texture_Speciality_Icon_mortar", ["mortar"]),
             ("Texture_Speciality_Icon_howitzer", ["howitzer"]),
-
         ],
         MAP
         [
             ("Texture_Speciality_Icon_mlrs", ["mlrs"]),
-
         ],
         MAP
         [
@@ -1366,20 +1361,17 @@ ArmoryComponentDescriptor is TUISpecificShowRoomArmoryComponentDescriptor
         ],
         MAP[
             ("Texture_Speciality_Icon_reco", ["reco","hel_reco"]),
-            ("Texture_Speciality_Icon_transport", ["transport","hel_transport"]),
+            ("Texture_Speciality_Icon_transport", ["transport"]),
         ],
         MAP
         [
-            ("Texture_Speciality_Icon_appui", ["appui","hel_appui"]),
-            ("Texture_Speciality_Icon_AT", ["AT","hel_at"]),
-
+            ("Texture_Speciality_Icon_appui", ["appui"]),
+            ("Texture_Speciality_Icon_AT", ["AT"]),
         ],
         MAP
         [
-            //("Texture_Speciality_Icon_jetIntercept", ["jetIntercept"]),
-            ("Texture_Speciality_Icon_AA", ["AA","hel_aa"]),
+            ("Texture_Speciality_Icon_AA", ["AA"]),
             ("Texture_Speciality_Icon_sead", ["sead"]),
-
         ],
     ]
 

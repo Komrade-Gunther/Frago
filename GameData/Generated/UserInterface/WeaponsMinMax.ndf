@@ -4,7 +4,6 @@
 
 
 
-
 MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
 (
     WeaponsMinMaxValues = MAP
@@ -1056,7 +1055,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                TimeBetweenTwoShots = TMinMaxValue (
                        Min = 0.1 // Gatling M197 20mm
-                       Max = 0.2 // GatlingAir Mauser BK 27mm
+                       Max = 0.2 // Pod UPK 23 250 AP 23mm avion
                )
                NbShotsBySalvo = TMinMaxValue (
                        Min = 5 // GatlingAir GAU8 30mm

@@ -749,7 +749,7 @@ FullPanelLobby is BUCKContainerDescriptor
             )
             TextureToken = 'Texture_dossier_triple_lobby'
         ),
-        ~/LobbyTopTabContent,
+        LobbyTopTabContent(MagnifiableOffset = [290.0, 461.0 - LobbyVerticalOffset]),
         ~/MainListLobby,
         BUCKTextureDescriptor
         (
@@ -790,45 +790,76 @@ FullPanelLobby is BUCKContainerDescriptor
 
 //-------------------------------------------------------------------------------------
 
-LobbyTopTabContent is BUCKButtonDescriptor
+template LobbyTopTabContent
+[
+    MagnifiableOffset : float2 = [0.0, 0.0],
+] is BUCKButtonDescriptor
 (
     ElementName = "ShowHideButton"
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [430.0, 30.0]
-        MagnifiableOffset = [290.0, 461.0 - LobbyVerticalOffset]
+        MagnifiableWidthHeight = [491.0, 36.0]
+        MagnifiableOffset = <MagnifiableOffset>
     )
 
     Components =
     [
-        ShowHideArrow,
-        BUCKTextDescriptor
+        BUCKTextureDescriptor
         (
-            ElementName = "GameNameText"
             ComponentFrame = TUIFramePropertyRTTI
             (
                 RelativeWidthHeight = [1.0, 1.0]
-                MagnifiableWidthHeight = [-50.0, 0.0] // To ensure the game name never overlaps the show/hide arrow
-                AlignementToAnchor = [0.5, 0.0]
-                AlignementToFather = [0.5, 0.0]
             )
-
-            ParagraphStyle = TParagraphStyleRTTI
+            TextureFrame = TUIFramePropertyRTTI
             (
-                Alignment = UIText_Center
-                VerticalAlignment = UIText_VerticalCenter
+                RelativeWidthHeight = [1.0, 1.0]
+            )
+            TextureToken = "mission_dossierVide_Onglet"
+        ),
+        // Inside tab area
+        BUCKContainerDescriptor
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 0.0]
+                MagnifiableWidthHeight = [-60.0, 24.0]
+                MagnifiableOffset = [0.0, -2.0]
+                AlignementToAnchor = [0.5, 1.0]
+                AlignementToFather = [0.5, 1.0]
             )
 
-            TextSize = "20"
-            TextColor = "Blanc_multi"
-            TextDico = ~/LocalisationConstantes/dico_interface_outgame
-            TextStyle = "Default"
-            TypefaceToken = "Courrier"
+            Components =
+            [
+                ShowHideArrow,
+                BUCKTextDescriptor
+                (
+                    ElementName = "GameNameText"
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        RelativeWidthHeight = [1.0, 1.0]
+                        MagnifiableWidthHeight = [-50.0, 0.0] // To ensure the game name never overlaps the show/hide arrow
+                        AlignementToAnchor = [0.5, 0.0]
+                        AlignementToFather = [0.5, 0.0]
+                    )
 
-            BigLineAction = ~/BigLineAction/ResizeFont
-            HorizontalFitStyle = ~/FitStyle/UserDefined
-            VerticalFitStyle = ~/FitStyle/UserDefined
-        )
+                    ParagraphStyle = TParagraphStyleRTTI
+                    (
+                        Alignment = UIText_Center
+                        VerticalAlignment = UIText_VerticalCenter
+                    )
+
+                    TextSize = "20"
+                    TextColor = "Blanc_multi"
+                    TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                    TextStyle = "Default"
+                    TypefaceToken = "Courrier"
+
+                    BigLineAction = ~/BigLineAction/ResizeFont
+                    HorizontalFitStyle = ~/FitStyle/UserDefined
+                    VerticalFitStyle = ~/FitStyle/UserDefined
+                )
+            ]
+        ),
     ]
 )
 

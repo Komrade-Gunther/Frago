@@ -323,6 +323,7 @@ PawnReinforcementButton is BUCKButtonDescriptor
     )
 
     IsTogglable = true
+    LeftClickSound = ~/SoundEvent_SteelmanReinforcementsPawnButton
 
     Components =
     [

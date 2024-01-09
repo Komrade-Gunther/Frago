@@ -361,6 +361,16 @@ Alternatives_BM30_Smerch_SOV is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_BM30_Smerch_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_BM30_Smerch_SOV_LOW ),
 ]
+Alternatives_BMD_1K_CMD_SOV is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1K_CMD_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1K_CMD_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1K_CMD_SOV_LOW DisabledOperators = [ 'tourelle4' ] ),
+]
+Alternatives_BMD_1P_SOV is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1P_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1P_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1P_SOV_LOW ),
+]
 Alternatives_BMD_1_CMD_SOV is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1_CMD_SOV ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1_CMD_SOV_MID ),
@@ -375,6 +385,11 @@ Alternatives_BMD_1_SOV is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1_SOV ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_1_SOV_LOW DisabledOperators = [ 'tourelle4' ] ),
+]
+Alternatives_BMD_2_CMD_SOV is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_2_CMD_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_2_CMD_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_2_CMD_SOV_LOW DisabledOperators = [ 'tourelle4' ] ),
 ]
 Alternatives_BMD_2_SOV is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_BMD_2_SOV ),
@@ -615,6 +630,11 @@ Alternatives_Challenger_1_Mk1_UK is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Challenger_1_Mk1_UK ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_Challenger_1_Mk1_UK_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_Challenger_1_Mk1_UK_LOW DisabledOperators = [ 'tourelle2' ] ),
+]
+Alternatives_Challenger_1_Mk3_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Challenger_1_Mk3_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_Challenger_1_Mk3_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_Challenger_1_Mk3_UK_LOW DisabledOperators = [ 'tourelle2' ] ),
 ]
 Alternatives_DCA_53T2_20mm_FR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_DCA_53T2_20mm_FR ),
@@ -1455,6 +1475,11 @@ Alternatives_M3A1_Bradley_CFV_US is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M3A1_Bradley_CFV_US ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M3A1_Bradley_CFV_US_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_M3A1_Bradley_CFV_US_LOW DisabledOperators = [ 'tourelle4' ] ),
+]
+Alternatives_M3A2_Bradley_CFV_US is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M3A2_Bradley_CFV_US ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M3A2_Bradley_CFV_US_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_M3A2_Bradley_CFV_US_LOW DisabledOperators = [ 'tourelle4' ] ),
 ]
 Alternatives_M48A2C_RFA is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M48A2C_RFA ),

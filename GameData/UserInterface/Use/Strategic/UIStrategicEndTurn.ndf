@@ -26,6 +26,16 @@ private StrategicEndTurnMainComponent is BUCKContainerDescriptor
 )
 //----------------------------------------------------------------------
 
+SpotLight_NextTurn is BUCKSpotlightDescriptor
+(
+    UniqueName = "SpotLight_NextTurn"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 1.0]
+        AlignementToAnchor = [0.0, 0.0]
+        AlignementToFather = [0.0, 0.0]
+    )
+)
 //----------------------------------------------------------------------
 private BoutonNextTurn is BUCKButtonDescriptor
 (
@@ -45,6 +55,9 @@ private BoutonNextTurn is BUCKButtonDescriptor
 
     Components =
     [
+
+        ~/SpotLight_NextTurn,
+
         BUCKListDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI

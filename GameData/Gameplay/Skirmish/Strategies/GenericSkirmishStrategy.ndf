@@ -95,7 +95,7 @@ export Gen_Phase_Deploiement is TSequenceGeneratorDescriptor
         // Capture de zones
         ~/Attack_Objectives,
 
-        ~/Airstrike_Offensive_AA,,
+        ~/Airstrike_AA,
 
         ~/Reco,            // 40 par reco
 
@@ -156,7 +156,7 @@ export Gen_Phase_Command is TSequenceGeneratorDescriptor
         ~/CaptureOneObjectif,
 
         ~/Attack_Objectives,
-        ~/Airstrike_Offensive_AA,
+        ~/Airstrike_AA,
 
         ~/Reco,
 
@@ -194,7 +194,7 @@ export Gen_Phase_Command is TSequenceGeneratorDescriptor
         ~/CaptureAllZoneObjectif,
 
         ~/Airstrike_Offense,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
 
         //Low prio mais peut servir si on n'a pas de zone dans nos couloirs
         ~/CaptureOneObjectifForAlliance,
@@ -258,7 +258,7 @@ export Gen_Phase_LastHope is TSequenceGeneratorDescriptor
         ~/Attack_Adaptive,
 
         ~/Airstrike_Offense,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
 
         //------------------------------
         // Défenses Avions Arti
@@ -291,7 +291,7 @@ Defenses_Airstrike_Arti_Shuffle_Deploy is
     ~/Defense_Dynamic_AA,
     ~/Defense_Static_Adaptive,
     ~/Airstrike_Offense,
-    ~/Airstrike_Defense,
+    ~/Airstrike_AA,
     ~/Artillery_TriggerHappy_1for4Corridors,
 
 ]
@@ -315,7 +315,7 @@ Medium_Scaling is
     ~/Attack_Adaptive_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
-    ~/Airstrike_Defense_Autogen,
+    ~/Airstrike_AA_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Defense_Static_AA_Autogen,
     ~/Defense_Dynamic_AA_Autogen,
@@ -335,7 +335,7 @@ Medium_Scaling_Attack is
     ~/Attack_Helo_Autogen,
     ~/Attack_Adaptive_Autogen,
     ~/Attack_Adaptive_Autogen,
-    ~/Airstrike_Defense_Autogen,
+    ~/Airstrike_AA_Autogen,
     ~/Defense_Dynamic_AA_Autogen,
     ~/Artillery_TriggerHappy_Autogen,
     ~/Airstrike_Offense_Autogen,

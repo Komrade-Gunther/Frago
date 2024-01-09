@@ -4,7 +4,6 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
 (
     MovementSmoothingMaxAngle = 45. // entre 10° (si vraiment besoin de moins, venir en discuter avec un dev) et 180° (équivaut à "pas d'angle max")
     MaxSubMovementLength = 1 * ~/ActionPointConsumptionRefs/CaseSize
-    MovementSpeedMutiplierForNotVisiblePawn = 30.0
 
     FatigueGainOnMove = ~/StrategicFatigueGainOnMove
     FatigueLossOnNextTurn = ~/StrategicFatigueLossOnNextTurn
@@ -72,7 +71,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     // Ecoulement du temps
     // ATTENTION cet enum est utilisé en Python pour la brique DescriptorSetInitialDate.
     // Toute modifications du nombre d'éléments dans le tableau doit être fait conjointement avec un dev afin de modifier la brique
-    TurnTimeOfDay = ["StrMorn", "StrAftn", "StrNite"] // un tour de jeu a 8h, le suivant a 14h puis 20h etc...
+    TurnTimeOfDay = ["StrMorn", "StrNoon","StrAftn", "StrNite"] // un tour de jeu a 8h, le suivant a 14h puis 20h etc...
 
     SteelmanCombatFX = $/GFX/GameFx/FX_Steelman_Combat_Binder
     SteelmanFxDuration = 1
@@ -90,8 +89,6 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     DigitToDisplayForAutoresolveCombatAdvantage = 1
     DigitToDisplayForAutoresolveBattleResult = 1
 
-    SpeedIncreaseBetweenTurns = 20 // vitesse des pions non pdt visibile pendant le tour de l'ia
-
     // Nombre maximal de pions par type de pion (cf. StrategicBattleRole.ndf) qui peuvent rejoindre le combat pour une équipe
     // la position dans le tableau correspond au role défini dans StrategicBattleRole.ndf (NbFighter en position 0 par exemple)
     BattleNbMaxPawnByRole  = [ 2, 1, 1, 1 ]
@@ -107,16 +104,16 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     // doit correspondre au nombre de pion (cf. BattleNbMaxPawnByRole) plus 1 (pour le cas où on n'a pas de pions)
     DefaultStartingTicketsPointsByPawnNumber = MAP
     [
-        (ENationalite/Allied,   [ 0, 50, 65, 70, 70, 70] ),
-        (ENationalite/Axis,     [ 0, 50, 65, 70, 70, 70] ),
+        (ENationalite/Allied,   [ 0, 50, 60, 65, 70, 70] ),
+        (ENationalite/Axis,     [ 0, 50, 60, 65, 70, 70] ),
     ]
 
     // Le tableau de valeur contient l'income disponible en fonction du nombre de pions dans le battle plan, le nombre de cases dans le tableau
     // doit correspondre au nombre de pion (cf. BattleNbMaxPawnByRole) plus 1 (pour le cas où on n'a pas de pions)
     DefaultTicketsPointsIncomeByPawnNumber = MAP // points par minute
     [
-        (ENationalite/Allied,   [ 0, 6, 7, 8, 8, 8]),
-        (ENationalite/Axis,     [ 0, 6, 7, 8, 8, 8]),
+        (ENationalite/Allied,   [ 0, 5, 6, 7, 8, 8]),
+        (ENationalite/Axis,     [ 0, 5, 6, 7, 8, 8]),
     ]
 
     AerialBattleTicketsPoint = MAP
@@ -133,12 +130,12 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
 
     StrategicMapVictoryTypeFromScoreRatio = [
         (0.2   ,        EVictoryType/TotalDefeat),
-        (0.4    ,         EVictoryType/MajorDefeat),
-        (0.666    ,         EVictoryType/MinorDefeat),
+        (0.5    ,         EVictoryType/MajorDefeat),
+        (0.75    ,         EVictoryType/MinorDefeat),
         (1.0    ,         EVictoryType/Draw),
         (1.49    ,         EVictoryType/MinorVictory),
-        (2.49   ,         EVictoryType/MajorVictory),
-        (5      ,         EVictoryType/TotalVictory),
+        (1.99   ,         EVictoryType/MajorVictory),
+        (2.55      ,         EVictoryType/TotalVictory),
     ]
 
     //les tokens doivent être dans : INTERFACE_INGAME.csv
@@ -150,7 +147,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
     // Production des renforts
     ReinforcementSnapCursorRadius = 1200 * Metre
     ReinforcementSpawnNoAlliesRadius = 0.5 * ~/ActionPointConsumptionRefs/CaseSize //Impossible de spawn dans la case d'un allié
-    ReinforcementSpawnNoEnemiesRadius = ZocRadius //Impossible de spawn dans la ZoC d'un ennemi
+    ReinforcementSpawnNoEnemiesRadius = ZocRadius + 500 * Metre //Impossible de spawn dans la ZoC d'un ennemi + 1 case
     ReinforcementSpawnStandardForbiddenTerrainMask = ~/ETerrainType/EauPeuProfonde
     ReinforcementSpawnAirborneForbiddenTerrainMask = ~/ETerrainType/Urbain | ~/ETerrainType/EauPeuProfonde // Modifier PLACE_AIRB dans INTERFACE_INGAME.csv si la règle change
 
@@ -172,7 +169,7 @@ StrategicCampaignConstantes is TStrategicCampaignConstantes
         ("AirplanePatrol",          3.0), // AirplaneReco - reconnaissance aérienne
         ("Bombarder",               5.0), // Bomb - bombardement single target (avion ou arti)
         ("Fortify",                 3.0), // Fortify - action de défense
-        ("FortifyAntiAir",          6.0), // FortifyAntiAir - action de defense Anti aerienne des unites au sol
+        ("FortifyAntiAir",          4.0), // FortifyAntiAir - action de defense Anti aerienne des unites au sol
         ("Move",                    0.0), // Le cout du move est calculé en fonction de la distance parcourue
     ]
 

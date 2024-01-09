@@ -19,13 +19,12 @@ UIInGameFlarePanelViewMainComponent is BUCKListDescriptor
         BUCKListElementDescriptor
         (
             ComponentDescriptor = AllVisibleFlares
-        ),
-        BUCKListElementDescriptor(ComponentDescriptor = FlareCustomEditableText()),
+        )
     ]
 
-    BackgroundComponents =
+    ForegroundComponents =
     [
-        PanelRoundedCorner(),
+        FlareCustomEditableText()
     ]
 )
 
@@ -45,7 +44,6 @@ AllVisibleFlares is BUCKListDescriptor
 
     Elements =
     [
-
         BUCKListElementDescriptor(ComponentDescriptor = FlareButtonNeedHelp()),
         BUCKListElementDescriptor(ComponentDescriptor = FlareButtonStrategyAttack()),
         BUCKListElementDescriptor(ComponentDescriptor = FlareButtonStrategyDefend()),

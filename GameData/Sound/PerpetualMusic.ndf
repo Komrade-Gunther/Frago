@@ -15,6 +15,7 @@ Playlist_Outgame is
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Indifferent.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Into-The-Unknown.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Matrix-One.wav" ),
+    Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Miami-Skies.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Mysteries.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Peace_Within.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Quiet-Discovery.wav" ),
@@ -32,6 +33,7 @@ Playlist_Outgame is
 Playlist_Ingame is
 [
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Canyon.wav" ),
+    Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Born-A-Hero.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Clusters_Of_Desolation.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Depiction_Of_Fear.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Dark_City_Beats.wav" ),
@@ -45,6 +47,7 @@ Playlist_Ingame is
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Lap_Time.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Lets_Go.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Matrix-One.wav" ),
+    Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Miami-Skies.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Midnight_Runaway.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Mysteries.wav" ),
     Music( FileName = "GameData:/Assets/Sons/PerpetualMusic/Quiet-Discovery.wav" ),

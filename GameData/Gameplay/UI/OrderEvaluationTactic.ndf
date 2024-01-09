@@ -62,37 +62,37 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             IgnoreDirectOrder = false
         ),
 
-        TOrderEvaluatorPlayerMission(
+        TOrderEvaluatorAny(
             OrderToken = "AIDefend"
             IgnoreDefaultOrder = true
             IgnoreDirectOrder = false
         ),
 
-        TOrderEvaluatorPlayerMission(
+        TOrderEvaluatorAny(
             OrderToken = "AIManageArtillery_CounterBattery"
             IgnoreDefaultOrder = true
             IgnoreDirectOrder = false
         ),
 
-        TOrderEvaluatorPlayerMission(
+        TOrderEvaluatorAny(
             OrderToken = "AIManageArtillery_Auto"
             IgnoreDefaultOrder = true
             IgnoreDirectOrder = false
         ),
 
-        TOrderEvaluatorPlayerMission(
+        TOrderEvaluatorAny(
             OrderToken = "AIStop"
             IgnoreDefaultOrder = true
             IgnoreDirectOrder = false
         ),
 
-        TOrderEvaluatorPlayerMission(
+        TOrderEvaluatorAny(
             OrderToken = "AIAirplaneAutoManage"
             IgnoreDefaultOrder = true
             IgnoreDirectOrder = false
         ),
 
-        TOrderEvaluatorPlayerMission(
+        TOrderEvaluatorAny(
             OrderToken = "AISupply"
             IgnoreDefaultOrder = true
             IgnoreDirectOrder = false

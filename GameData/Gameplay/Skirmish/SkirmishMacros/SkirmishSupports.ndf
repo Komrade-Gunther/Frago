@@ -15,7 +15,7 @@ export Support_Transports is TMacroActionDescriptor_Support_Specific
 //-------------------------------------------------------------------------
 export Pool_Support_Transports is TPoolModel
 (
-    Budget = 1
+    Budget = MAP [(~/Resource_CommandPoints, 1) , (~/Resource_Tickets, 1)]
     ModelList = [
         TPoolElement(
             DescriptorId = GUID:{e90320f2-d39e-11e8-9b94-88d7f642f58e}

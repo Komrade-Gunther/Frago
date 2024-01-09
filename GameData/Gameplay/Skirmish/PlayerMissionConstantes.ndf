@@ -30,7 +30,7 @@ export colonelAttackDescriptor is TMacroActionDescriptor_Attack_Specific
         TSupportSettingHolder(SettingList = [Renfort_AT, Renfort_TransportsAbandonnes]),
         TArtilleryAmountSettingHolder(ArtilleryAmount = 2),
         TBlitzkriegSettingHolder(RatioFactorToDisableSelfPreservation = 2.0   MinimumCostForSelfPreservation = 100),
-        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 0.001 UtiliserMenaceLaPlusProcheAuLieuDeLaPlusFaible = true),
+        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 0.001),
         TMacroActionProductionSettingHolder(DisableReinforcement = true),
         TMacroActionLifetimeSettingHolder(MaintainForever = true), //IMPORTANT
         TDisableUnitToReleaseSettingHolder(),
@@ -61,7 +61,7 @@ export colonelArtilleryCounterBatteryDescriptor is TMacroActionDescriptor_Artill
         TMacroActionProductionSettingHolder(PoolModelList = [] DistanceToOptimumStartDuringDeployment = 3000*Metre),
         TMacroActionLifetimeSettingHolder(MaintainForever = true), //IMPORTANT
         TArtilleryPlayerMissionSettingHolder(
-            AuthorizedTargetTags = ["Artillerie_MLRS", "Artillerie_Longue_Portee", "Artillerie_Courte_Portee"] TargetFilter = ETargetFilter_HasShot MaxDurationForTargetValidity = 60 MinDurationForTargetValidity = 10),
+            AuthorizedTargetTags = ["Artillerie_MLRS", "Artillerie_Longue_Portee", "Artillerie_Courte_Portee"] TargetFilter = ETargetFilter_HasShot MaxDurationForTargetValidity = 60 MinDurationForTargetValidity = 2),
         TArtilleryStrikeSettingHolder(DelaytBetweenTargetDeathAndNewStrike = 3),
         TDisableUnitToReleaseSettingHolder(),
     ]
@@ -75,7 +75,7 @@ export colonelArtilleryDescriptor is TMacroActionDescriptor_Artillery_PlayerMiss
         TArtilleryPositionningSettingHolder(ArtilleryPositionOffset = 10000 * Metre),
         TMacroActionProductionSettingHolder(PoolModelList = [] DistanceToOptimumStartDuringDeployment = 3000*Metre),
         TMacroActionLifetimeSettingHolder(MaintainForever = true), //IMPORTANT
-        TArtilleryPlayerMissionSettingHolder(AuthorizedTargetTags = ["AllUnits"] TargetFilter = ETargetFilter_UnitSeen MinDurationForTargetValidity = 10),
+        TArtilleryPlayerMissionSettingHolder(AuthorizedTargetTags = ["AllUnits"] TargetFilter = ETargetFilter_UnitSeen MinDurationForTargetValidity = 5),
         TArtilleryStrikeSettingHolder(DelaytBetweenTargetDeathAndNewStrike = 3),
         TDisableUnitToReleaseSettingHolder(),
     ]

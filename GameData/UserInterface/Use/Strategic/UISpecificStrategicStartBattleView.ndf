@@ -21,7 +21,7 @@ private StartBattleBoutonsList is BUCKListDescriptor
             MagnifiableWidthHeight = [160.0, 40.0]
             ElementName = 'AutoresolveButton'
             TextToken = "BtnAutoRes"
-            HintBodyToken = "BtnAutoReH"
+            SpotlightUniqueName = "SpotLight_Autoresolve"
         ),
         // tactical battle
         BoutonStartBattle
@@ -52,6 +52,8 @@ template BoutonStartBattle
     HintBodyToken : string= '',
     MagnifiableWidthHeight : float2 = [160.0, 40.0],
     Mapping : TEugBMutablePBaseClass = nil,
+    SpotlightUniqueName : string = "",
+
 
 ] is BUCKListElementDescriptor
 (
@@ -110,7 +112,19 @@ template BoutonStartBattle
                 DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                 HintBodyToken = <HintBodyToken>
             )
-        ]
+        ]+
+        (<SpotlightUniqueName> == "" ? [] :
+            [
+                BUCKSpotlightDescriptor
+                (
+                    UniqueName = <SpotlightUniqueName>
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        RelativeWidthHeight = [1.0, 1.0]
+                    )
+                )
+            ]
+        )
     )
 )
 //------------------------------------------------------------------------------
@@ -215,44 +229,6 @@ private StartBattleTextInfoTypeDeBataille is BUCKTextDescriptor
 
     TextColor = "SD2_Blanc184"
     TextSize = "11"
-)
-
-//------------------------------------------------------------------------------
-
-private TextStartBattleTextTypeDeBataille is BUCKTextDescriptor
-(
-    ElementName = "panelStartBattleTitre"
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        RelativeWidthHeight = [1.0, 0.0]
-    )
-
-    ParagraphStyle = TParagraphStyleRTTI
-    (
-        Alignment = UIText_Center
-        VerticalAlignment = UIText_VerticalCenter
-    )
-
-    TextStyle = "Default"
-
-    HorizontalFitStyle = ~/FitStyle/UserDefined
-    VerticalFitStyle = ~/FitStyle/FitToContent
-
-    TextToken = "BatPlan"
-    TypefaceToken = "Eurostyle"
-    BigLineAction = ~/BigLineAction/CutByDots
-
-    TextDico = ~/LocalisationConstantes/dico_interface_ingame
-
-    TextColor = "SM_paleSilver"
-    TextSize = "14"
-
-    Hint = BUCKSpecificHintableArea
-    (
-        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-        HintTitleToken = 'mob_tit'
-        HintBodyToken = 'mob_tib'
-    )
 )
 
 //------------------------------------------------------------------------------
@@ -910,6 +886,16 @@ private PanelInfosBataille is BUCKListDescriptor
 
     BackgroundComponents =
     [
+        BUCKSpotlightDescriptor
+        (
+            UniqueName = "SpotLight_BattlePlanning"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+                AlignementToAnchor = [0.0, 0.0]
+                AlignementToFather = [0.0, 0.0]
+            )
+        ),
         PanelRoundedCorner
         (
             Radius = 15
@@ -980,6 +966,7 @@ PanelAide is PanelRoundedCorner
             FirstMargin = TRTTILength (Magnifiable = 15.0)
             InterItemMargin = TRTTILength(Magnifiable = 5.0)
             LastMargin = TRTTILength(Magnifiable = 25.0)
+            ChildFitToContent = true
 
             Elements =
             [
@@ -1054,7 +1041,17 @@ PanelAide is PanelRoundedCorner
                     ComponentDescriptor = ~/StartBattleBoutonsList
                 ),
             ]
-        )
+        ),
+        BUCKSpotlightDescriptor
+        (
+            UniqueName = "SpotLight_Preparation"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+                AlignementToAnchor = [0.0, 0.0]
+                AlignementToFather = [0.0, 0.0]
+            )
+        ),
     ]
 )
 

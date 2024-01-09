@@ -193,6 +193,18 @@ export UnitEffect_AntiBouclier_Suppression_33 is TEffectsPackDescriptor
         ),
     ]
 )
+export UnitEffect_ArmyGen_No_regen_PA is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{8c3f93a7-5d9d-43be-ba0e-dc6a90dc9804}
+    NameForDebug       = 'ArmyGen_No_regen_PA'
+    EffectsDescriptors = [
+        TStrategicSupplyMalusEffectDescriptor
+        (
+            ModifierType       = ~/ModifierType_Multiplicatif
+            SupplyMalus        = 0
+        ),
+    ]
+)
 export UnitEffect_ArtInf_Cowering is TEffectsPackDescriptor
 (
     DescriptorId       = GUID:{eb9591b0-e6c5-40fa-9286-1afa83dd162b}
@@ -758,20 +770,20 @@ export UnitEffect_Choc is TEffectsPackDescriptor
     DescriptorId       = GUID:{e10be162-60bd-4113-8f44-e67daee0191f}
     NameForDebug       = 'Choc'
     EffectsDescriptors = [
-        TUnitEffectIncreaseSpeedDescriptor
-        (
-            ModifierType             = ~/ModifierType_Pourcentage
-            BonusSpeedBaseInPercent  = 15
-        ),
         TBonusWeaponAimtimeEffectDescriptor
         (
             ModifierType  = ~/ModifierType_Multiplicatif
             ModifierValue = 0.8
         ),
+        TUnitEffectIncreaseWeaponPhysicalDamagesDescriptor
+        (
+            ModifierType               = ~/ModifierType_Pourcentage
+            ModifierValue = 20
+        ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
-            ModifierType                     = ~/ModifierType_Pourcentage
-            ModifierValue = -20
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.8
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxTirsDescriptor
         (
@@ -1640,23 +1652,6 @@ export UnitEffect_Gain_un_niveau_XP is TEffectsPackDescriptor
             TextureToken         = "icone_leader"
             CanBeSeenByEnemy         = false
         ),
-        TUnitEffectHealOverTimeDescriptor
-        (
-            NbUpdatePerSecond  = 1
-            HealUnitsPerSecond = 1.25
-            DamageType = EDamageType/Suppress
-        ),
-        TUnitEffectRaiseTagDescriptor
-        (
-            TagListToRaise = [
-                 "reserviste_immune",
-            ]
-        ),
-        TUnitEffectShowLabelIconDescriptor
-        (
-            TextureToken         = "icone_mp"
-            CanBeSeenByEnemy         = false
-        ),
     ]
 )
 export UnitEffect_Global_Cowering is TEffectsPackDescriptor
@@ -1882,22 +1877,22 @@ export UnitEffect_Infanterie_Cowering is TEffectsPackDescriptor
         ),
         TUnitEffectReplaceArmorDescriptor
         (
-            ReplacementBlindage = TResistanceTypeRTTI(Family="infanterie" Index=2)
+            ReplacementBlindage = TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
             BlindageLocation    = ~/EArmorLocation/Front
         ),
         TUnitEffectReplaceArmorDescriptor
         (
-            ReplacementBlindage = TResistanceTypeRTTI(Family="infanterie" Index=2)
+            ReplacementBlindage = TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
             BlindageLocation    = ~/EArmorLocation/Rear
         ),
         TUnitEffectReplaceArmorDescriptor
         (
-            ReplacementBlindage = TResistanceTypeRTTI(Family="infanterie" Index=2)
+            ReplacementBlindage = TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
             BlindageLocation    = ~/EArmorLocation/Sides
         ),
         TUnitEffectReplaceArmorDescriptor
         (
-            ReplacementBlindage = TResistanceTypeRTTI(Family="infanterie" Index=2)
+            ReplacementBlindage = TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
             BlindageLocation    = ~/EArmorLocation/Top
         ),
     ]
@@ -2051,22 +2046,22 @@ export UnitEffect_Infanterie_bonus_defense is TEffectsPackDescriptor
     EffectsDescriptors = [
         TUnitEffectReplaceArmorDescriptor
         (
-            ReplacementBlindage = TResistanceTypeRTTI(Family="infanterie" Index=2)
+            ReplacementBlindage = TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
             BlindageLocation    = ~/EArmorLocation/Front
         ),
         TUnitEffectReplaceArmorDescriptor
         (
-            ReplacementBlindage = TResistanceTypeRTTI(Family="infanterie" Index=2)
+            ReplacementBlindage = TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
             BlindageLocation    = ~/EArmorLocation/Rear
         ),
         TUnitEffectReplaceArmorDescriptor
         (
-            ReplacementBlindage = TResistanceTypeRTTI(Family="infanterie" Index=2)
+            ReplacementBlindage = TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
             BlindageLocation    = ~/EArmorLocation/Sides
         ),
         TUnitEffectReplaceArmorDescriptor
         (
-            ReplacementBlindage = TResistanceTypeRTTI(Family="infanterie" Index=2)
+            ReplacementBlindage = TResistanceTypeRTTI(Family=ResistanceFamily_infanterie Index=2)
             BlindageLocation    = ~/EArmorLocation/Top
         ),
     ]
@@ -3079,7 +3074,7 @@ export UnitEffect_sniper is TEffectsPackDescriptor
         TUnitEffectIncreaseWeaponPhysicalDamagesDescriptor
         (
             ModifierType               = ~/ModifierType_Pourcentage
-            ModifierValue = 250
+            ModifierValue = 500
         ),
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (
@@ -3096,204 +3091,6 @@ export UnitEffect_sniper is TEffectsPackDescriptor
         (
             TextureToken         = "icone_sniper"
             CanBeSeenByEnemy         = false
-        ),
-    ]
-)
-export UnitEffect_Pinned_Dangerousness_FRL is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{aa7a47cf-a009-4535-affb-08cb6673811a}
-    NameForDebug       = 'Debug_UnitEffect_pinned_dangerousness_FRL'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseDangerousnessDescriptor
-        (
-            ModifierType       = ~/ModifierType_Pourcentage
-            BonusDangerousness    = -110
-        ),
-        TUnitEffectRaiseTagDescriptor
-        (
-            TagListToRaise = [
-                 "Camion_autodestruction",
-                 "Panique",
-            ]
-        ),
-        TUnitEffectTransportSlotNumberModificationDescriptor
-        (
-            ModifierType                 = ~/ModifierType_Remplacement
-            EffectOnTransportSlotNumber  = 0
-        ),
-    ]
-)
-export UnitEffect_Pinned_FRL is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{6130e396-1824-475b-9e4d-40c53063e4c8}
-    NameForDebug       = 'ArtInf_Pinned'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseDamageTakenDescriptor
-        (
-            ModifierType        = ~/ModifierType_Pourcentage
-            BonusDamage         = -50
-            DamageType          = EDamageType/Physical
-        ),
-        TUnitEffectIncreaseDamageTakenDescriptor
-        (
-            ModifierType        = ~/ModifierType_Pourcentage
-            BonusDamage         = -80
-            DamageType          = EDamageType/Suppress
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
-        (
-            ModifierType         = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
-        (
-            ModifierType           = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
-        (
-            ModifierType                   = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
-        (
-            ModifierType            = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectIncreaseChassisRotationSpeedDescriptor
-        (
-            ModifierType       = ~/ModifierType_Pourcentage
-            BonusChassisRotationSpeed  = -80
-        ),
-        TUnitEffectIncreaseTurretRotationSpeedDescriptor
-        (
-            ModifierType       = ~/ModifierType_Pourcentage
-            BonusTurretRotationSpeed  = -80
-        ),
-        TUnitEffectIncreaseSpeedDescriptor
-        (
-            ModifierType             = ~/ModifierType_Pourcentage
-            BonusSpeedBaseInPercent  = -80
-        ),
-        TUnitEffectRaiseTagDescriptor
-        (
-            TagListToRaise = [
-                 "Infanterie_Engaged",
-                 "Infanterie_Stressed",
-                 "Infanterie_Suppressed",
-                 "Infanterie_Cowering",
-            ]
-        ),
-         TUnitEffectIncreaseVisionDescriptor
-        (
-            ModifierType       = ~/ModifierType_Additionnel
-            BonusVisionBase    = -2000
-        ),
-        TUnitEffectIncreaseOpticalStrengthDescriptor
-        (
-            ModifierType         = ~/ModifierType_Additionnel
-            BonusOpticalStrength = -43
-        ),
-        TUnitEffectHealOverTimeDescriptor
-        (
-            NbUpdatePerSecond  = 1
-            HealUnitsPerSecond = 5
-            DamageType = EDamageType/Suppress
-        ),
-    ]
-)
-
-export UnitEffect_Routed_FRL is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{6130e396-1824-475b-9e4d-40c53063e4c8}
-    NameForDebug       = 'ArtInf_Pinned'
-    EffectsDescriptors = [
-        TUnitEffectIncreaseWeaponPorteeMaxDescriptor
-        (
-            ModifierType         = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxHADescriptor
-        (
-            ModifierType           = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxProjectileDescriptor
-        (
-            ModifierType                   = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectIncreaseWeaponPorteeMaxTBADescriptor
-        (
-            ModifierType            = ~/ModifierType_Pourcentage
-            ModifierValue = -100
-        ),
-        TUnitEffectRaiseTagDescriptor
-        (
-            TagListToRaise = [
-                 "Infanterie_Engaged",
-                 "Infanterie_Stressed",
-                 "Infanterie_Suppressed",
-                 "Retraite",
-
-            ]
-        ),
-        TUnitEffectSetSelectableDescriptor
-        (
-            Selectable = False
-        ),
-        
-        TUnitEffectHealOverTimeDescriptor
-        (
-            NbUpdatePerSecond  = 1
-            HealUnitsPerSecond = 5
-            DamageType = EDamageType/Suppress
-        ),
-    ]
-)
-
-
-export UnitEffect_over_suppressed is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{bc6711a6-b0f3-4e36-9fda-1314df65a631}
-    NameForDebug       = 'ArtInf_Pinned'
-    EffectsDescriptors = [
-
-        TUnitEffectHealOverTimeDescriptor
-        (
-            NbUpdatePerSecond  = 1
-            HealUnitsPerSecond = 500
-            DamageType = EDamageType/Suppress
-        ),
-    ]
-)
-
-
-export UnitEffect_Switch_Team_To_Opfor is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{92314181-271f-4143-b9a7-2122d1aaa8b8}
-    NameForDebug       = 'UnitEffect_Pinn_Nearby'
-    EffectsDescriptors = [
-
-        TUnitEffectChangeTeamDescriptor
-        (
-            FutureTeam = TTeamIdentifierForUnitEffect(
-                TeamType = ~/ETeamTypeForUnitEffect/Number
-                TeamNumber = 1
-            )
-        ),
-    ]
-)
-
-export UnitEffect_Pin_Nearby is TEffectsPackDescriptor
-(
-    DescriptorId       = GUID:{e10cbbee-167d-4d3b-8f5a-ce98dcd91c24}
-    NameForDebug       = 'UnitEffect_Pin_Nearby'
-    EffectsDescriptors = [
-
-        TUnitEffectAddCapacityDescriptor
-        (
-            CapacityToAdd = [ ~/Capacite_Pin_Nearby_Units ]
         ),
     ]
 )

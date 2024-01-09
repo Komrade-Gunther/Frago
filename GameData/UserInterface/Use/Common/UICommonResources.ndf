@@ -29,6 +29,10 @@ ClickSound_NotepadSweep is InterfaceSound( FileName = "GameData:/Assets/Sons/Out
 ClickSound_PaperSweep is InterfaceSound( FileName = "GameData:/Assets/Sons/OutGame/Paper_sweep.wav" )
 ClickSound_BitchingBetty is InterfaceSound( FileName = "GameData:/Assets/Sons/Hud/AirRaid.wav" )
 ClickSound_Frequency_search is InterfaceSound( FileName = "GameData:/Assets/Sons/OutGame/Frequency_search.wav" )
+ClickSound_Over_And_Out_Radio_Effect is InterfaceSound( FileName = "GameData:/Assets/Sons/OutGame/Over_And_Out.wav" )
+ClickSound_Over_And_Out_Radio_Effect_2 is InterfaceSound( FileName = "GameData:/Assets/Sons/OutGame/Over_And_Out_2.wav" )
+ClickSound_Over_And_Out_Radio_Effect_3 is InterfaceSound( FileName = "GameData:/Assets/Sons/OutGame/Over_And_Out_3.wav" )
+ClickSound_Over_And_Out_Radio_Effect_4 is InterfaceSound( FileName = "GameData:/Assets/Sons/OutGame/Over_And_Out_4.wav" )
 ClickSound_Add_Card is InterfaceSound( FileName = "GameData:/Assets/Sons/OutGame/Add_Card.wav" )
 ClickSound_Remove_Card is InterfaceSound( FileName = "GameData:/Assets/Sons/OutGame/Remove_Card.wav" )
 ClickSound_Change_Selector is InterfaceSound( FileName = "GameData:/Assets/Sons/OutGame/Selector_Change.wav" )
@@ -48,7 +52,8 @@ NoSound is InterfaceSound( FileName = "GameData:/Assets/Sons/InGame/Silence.ogg"
 // General
 SoundEvent_CheckBoxTick                     is ButtonClickSound
 SoundEvent_OpenCloseWarchat                 is ClickSound_RadioBlip
-SoundEvent_TreeLineButtonSound              is NoSound // Currently used for steelman Order of battle tree view
+SoundEvent_TreeLineButtonSound              is ClickSound_Remove_Card // Currently used for steelman Order of battle tree view
+SoundEvent_LDHintButton                     is ClickSound_Over_And_Out_Radio_Effect_3 //ClickSound_boutonCountry //ClickSound_RadioBlip
 
 // Main menu
 SoundEvent_EnterArmory                      is HoverSound_hub_armory
@@ -81,7 +86,7 @@ SoundEvent_EnterSoloChallenge               is ClickSound_NotepadSweep
 SoundEvent_EnterSoloLoad                    is ClickSound_folder
 SoundEvent_SaveLoadSwitchTab                is ClickSound_page
 SoundEvent_SelectTutorialOrChallenge        is ClickSound_PaperSweep
-SoundEvent_SelectCampaign                   is ClickSound_PaperSweep
+SoundEvent_SoloNavigationButton             is ClickSound_Remove_Card //ButtonClickSound //ClickSound_PaperSweep
 
 // Multi menu
 SoundEvent_MultiClickJoinWithCode           is ClickSound_keyboard
@@ -110,8 +115,8 @@ SoundEvent_DeckEditorRemoveUnit             is ClickSound_Remove_Card
 SoundEvent_DeckEditorSetUnitXP              is ClickSound_Change_Selector
 SoundEvent_SmartGroupsSwitchCompany         is ClickSound_PaperSweep
 SoundEvent_SmartGroupsShowHidePanel         is ClickSound_NotepadSweep
-SoundEvent_AddUnitToCombatGroup             is NoSound
-SoundEvent_RemoveUnitFromCombatGroup        is NoSound
+SoundEvent_AddUnitToCombatGroup             is ClickSound_Add_Card
+SoundEvent_RemoveUnitFromCombatGroup        is ClickSound_Remove_Card
 
 // Battlegroups panel
 SoundEvent_OpenBattlegroupsList             is ClickSound_folder
@@ -127,7 +132,7 @@ SoundEvent_ExportDeck                       is ClickSound_computer
 SoundEvent_SaveDeck                         is HoverSound_hub_solo
 SoundEvent_AutofillDeck                     is ClickSound_computer
 SoundEvent_SortDeck                         is ClickSound_computer
-SoundEvent_CombatGroupUnitAmount            is NoSound
+SoundEvent_CombatGroupUnitAmount            is ClickSound_Change_Selector
 
 // Lobby
 SoundEvent_SelectDeck                       is ClickSound_folder3
@@ -137,27 +142,30 @@ SoundEvent_OpenOptionDropdown               is ClickSound_Change_Selector
 SoundEvent_SelectOption                     is ClickSound_Change_Selector
 
 // Steelman
-SoundEvent_SteelmanNextTurn                 is NoSound
-SoundEvent_SteelmanCampaignStatus           is NoSound
-SoundEvent_SteelmanOrderOfBattle            is NoSound
-SoundEvent_SteelmanCasualtiesList           is NoSound
-SoundEvent_SteelmanGameSpeed                is NoSound
-SoundEvent_SteelmanPawnCombatGroup          is ClickSound_page
-SoundEvent_SteelmanPanelButton              is NoSound
-SoundEvent_SteelmanReinforcementsButton     is NoSound
-SoundEvent_SteelmanReinforcementsDayButton  is NoSound
-SoundEvent_SteelmanOOBLine                  is NoSound // See 'SoundEvent_TreeLineButtonSound' as well
-SoundEvent_SteelmanOOBAllianceSwitch        is NoSound
-SoundEvent_SteelmanAirDeny                  is HoverSound_hub_Enter_multi
+SoundEvent_SteelmanNextTurn                 is ClickSound_keyboard //ClickSound_Frequency_search //ClickSound_RadioBlip
+SoundEvent_SteelmanCampaignStatus           is ClickSound_NotepadSweep
+SoundEvent_SteelmanOrderOfBattle            is ClickSound_NotepadSweep
+SoundEvent_SteelmanCasualtiesList           is ClickSound_NotepadSweep
+SoundEvent_SteelmanGameSpeed                is ClickSound_boutonSide //ClickSound_Change_Selector
+SoundEvent_SteelmanPawnCombatGroup          is ClickSound_Add_Card //ClickSound_page
+SoundEvent_SteelmanPanelButton              is ClickSound_PaperSweep //ClickSound_page
+SoundEvent_SteelmanReinforcementsButton     is ClickSound_Change_Selector //ClickSound_NotepadSweep
+SoundEvent_SteelmanReinforcementsDayButton  is ClickSound_Change_Selector
+SoundEvent_SteelmanOOBLine                  is ClickSound_Add_Card // See 'SoundEvent_TreeLineButtonSound' as well
+SoundEvent_SteelmanOOBAllianceSwitch        is ClickSound_Change_Selector
+SoundEvent_SteelmanAirDeny                  is NoSound // Branché dans le vide
+SoundEvent_SteelmanChoiceButton             is ClickSound_Over_And_Out_Radio_Effect_2 // Scenario choice large buttons (e.g. choosing new troops)
+SoundEvent_SteelmanReinforcementsPawnButton is ClickSound_Change_Selector //ClickSound_boutonRole //ClickSound_Add_Card
+
 
 // Steelman - Attack preparation
-SoundEvent_SteelmanAttackPreparationButton  is NoSound
-SoundEvent_SteelmanAddUnitOpenList          is NoSound
-SoundEvent_SteelmanAttackPrepareAddUnit     is NoSound
-SoundEvent_SteelmanAttackPrepareRemoveUnit  is NoSound
-SoundEvent_SteelmanTacticPrepChangeTeam     is ClickSound_page
-SoundEvent_SteelmanTacticPrepBack           is ClickSound_folder
-SoundEvent_SteelmanTacticPrepStart          is ClickSound_keyboard
+SoundEvent_SteelmanAttackPreparationButton  is ClickSound_Over_And_Out_Radio_Effect_2
+SoundEvent_SteelmanAddUnitOpenList          is ClickSound_Add_Card
+SoundEvent_SteelmanAttackPrepareAddUnit     is ClickSound_Over_And_Out_Radio_Effect //ClickSound_Add_Card
+SoundEvent_SteelmanAttackPrepareRemoveUnit  is ClickSound_Remove_Card
+SoundEvent_SteelmanTacticPrepChangeTeam     is ClickSound_Change_Selector //ClickSound_page
+SoundEvent_SteelmanTacticPrepBack           is ClickSound_Back //ClickSound_folder
+SoundEvent_SteelmanTacticPrepStart          is ClickSound_Over_And_Out_Radio_Effect_4 //ClickSound_RadioBlip //ClickSound_keyboard
 
 // Steelman - Unit actions "cube action" (like 'Deploy AA')
 // -> For button click, modify directly CubeActionStrategicButtonDescriptor.ndf

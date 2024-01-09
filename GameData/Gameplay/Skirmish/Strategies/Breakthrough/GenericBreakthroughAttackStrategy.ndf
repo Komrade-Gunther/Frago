@@ -79,23 +79,17 @@ export GenBTAtk_PhaseDeploiement is TSequenceGeneratorDescriptor
 
         ~/Supply_Skirmish,
 
-        ~/Reco,            // 40 par reco
+        ~/Reco_All_Corridor,
 
         //------------------------------
         // Attaques principales
         //------------------------------
         // Grosse attaque
-        ~/Attack_Main,              // Plusieurs tanks pour un budget donné // 200 => un cmd pas cher, une reco pas cher, et le reste de tanks pour fill le budget en random.
-        ~/GenBTAtk_Artillery_Support,        // Artillerie pas chère                 //  80
+        ~/Attack_Main,
+        ~/Attack_Objectives,
+
+        ~/GenBTAtk_Artillery_Support,
         ~/GenBTAtk_Artillery_TriggerHappy_1for4Corridors,
-
-
-        // Reste du front
-        ~/Attack_Adaptive,          // ~100
-        ~/Attack_Adaptive,          // ~100
-        ~/Attack_Adaptive,          // ~100
-        ~/Attack_Filler,            // budget 40
-        ~/Reco,            // 40 par reco
 
         //------------------------------
         // Défenses Avions Arti
@@ -121,46 +115,31 @@ export GenBTAtk_Phase_Command is TSequenceGeneratorDescriptor
         // Capture de zones
         ~/CaptureAllZoneObjectif,
 
-        // Même chose que la phase de déploiement mais avec les Défenses
-        // prioritaires sur les attaques. L'idée est de lancer ses attaques dès
-        // le début, mais de renforcer les backlines avant de récupérer de nos pertes
         //------------------------------
         // Support & Supply
         //------------------------------
         ~/Support_Transports,
 
         ~/Supply_Skirmish,
-        ~/Reco,
+        ~/Reco_All_Corridor,
 
-        ~/Attack_Filler,
-
-        //------------------------------
-        // Défenses prioritaires
-        //------------------------------
-        ~/Defense_Static_AA,
         ~/GenBTAtk_Artillery_TriggerHappy_1for4Corridors,
 
         //------------------------------
         // Attaques principales
         //------------------------------
-        ~/Attack_Main,              // Plusieurs tanks pour un budget donné // 200
-        ~/GenBTAtk_Artillery_Support,        // Artillerie pas chère                 //  80
-        ~/GenBTAtk_Artillery_Expensive,
-
-        ~/Attack_Adaptive,  // Faire du code pour adapater le budget en fonction de l'income
-        ~/Attack_Adaptive,
-        ~/Attack_Adaptive,
-
-        // On insère ici une attaque qui va chercher les objectifs.
+        ~/Attack_Main,
         ~/Attack_Objectives,
 
+        ~/GenBTAtk_Artillery_Support,
+        ~/GenBTAtk_Artillery_Expensive,
+
         ~/Airstrike_Offense,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
 
         //------------------------------
         // Défenses Avions Arti
         //------------------------------
-        ~/Maintain_CorridorDefenses,
         ~/Supply_Skirmish_Allied,
 
     ] + ~/Airstrike_Arti_Shuffle // On sort les défenses d'ici pour les mettre plus haut dans la prio
@@ -185,21 +164,18 @@ GenBTAtk_Defenses_Airstrike_Arti_Shuffle_Deploy is
     ~/GenBTAtk_Artillery_Expensive,
     ~/Defense_Static_AA,
     ~/Airstrike_Offense,
-    ~/Airstrike_Defense,
+    ~/Airstrike_AA,
     ~/GenBTAtk_Artillery_TriggerHappy_1for4Corridors,
 ]
 
 GenBTAtk_Scaling is
 [
-    ~/Reco_Autogen,
     ~/Attack_Main_Autogen,
-    ~/Attack_Adaptive_Autogen,
-    ~/GenBTAtk_Artillery_Expensive_Autogen,
     ~/Attack_Objectives_Autogen,
-    ~/Attack_Adaptive_Autogen,
+    ~/GenBTAtk_Artillery_Expensive_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
-    ~/Airstrike_Defense_Autogen,
+    ~/Airstrike_AA_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Defense_Static_AA_Autogen,
     ~/GenBTAtk_Artillery_TriggerHappy_Autogen,

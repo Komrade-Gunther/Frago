@@ -12,9 +12,6 @@ CountingRule_Average is 2
 CountingRule_Min is 3
 CountingRule_Max is 4
 
-
-
-
 // GhostModule.h
 EShowGhostOverSpecificTerrainConditionFilterType is TBaseClass
 (
@@ -128,7 +125,7 @@ Constantes is TTunableConstante
 
     // Distance pour petits déplacements (en mètres). Définie la distance max de déplacement d'un hélico pour:
     // - Rester en très basse altitude.
-    DistanceMaxSmallMovementsInMeters = 500
+    DistanceMaxSmallMovementsInMeters = 150
 
     // Temps utilisé pour prédire la position de landing des hélicos. Pour les hélicos lourd, ils font quand même demi tour, mais je n'ai pas moyen de savoir combien de temps il faut à l'hélico pour se stopper en vitesse linéaire
     // sans faire des calculs à con. Donc j'utilise une heuristique à la place, et si on dépasse ben tant pis... Je ferais mieux si ça va vraiment pas
@@ -176,7 +173,6 @@ Constantes is TTunableConstante
     TagDecrochage                       = "Retraite"  // tag utilisé pour determiner si on affiche l'etiquette decrochage pendant la retraite
     TagRetraite                         = "Retraite" // tag utilisé pour determiner si l'on est en retraite ou non
     UtiliserMouvementRapideParDefaut    = false
-
 
 //----------------------------- Constantes Resale -----------------------------------------//
 
@@ -251,11 +247,11 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
 //---------------------------- Constantes Combat ------------------------------------------//
 
-    DistanceInfanterieEnnemiDectection = 200 * Metre
+    DistanceInfanterieEnnemiDetection = 200 * Metre
     DistanceRelaunchMouvementForMoveAndAttack = 1500 * Metre // Distance pour laquelle une unité en MoveAndAttackTarget doit relancer le mouvement si sa cible s'est déplacée de cette distance (diminuer cette valeur baisse la perf)
-    DistanceToAddToEnnemiDectectionForAAWeapon = 4000.0 * Metre
-    DistanceToAddToEnnemiDectectionForAntiProjectileWeapon = 0.0 * Metre // grosso merdo la porté max d'une arme anti-missile
-    DistanceToAddToEnnemiDectectionForOtherWeapon = 1000.0 * Metre
+    DistanceToAddToEnnemiDetectionForAAWeapon = 4000.0 * Metre
+    DistanceToAddToEnnemiDetectionForAntiProjectileWeapon = 0.0 * Metre // grosso merdo la porté max d'une arme anti-missile
+    DistanceToAddToEnnemiDetectionForOtherWeapon = 1000.0 * Metre
     DureeDeRevelationApresAttaque = 5.0
     FacteurMinTempsViseeReel = 0.75 // Le temps de visée réel est un random entre cette valeur et la valeur de temps de visee théorique située dans l'ODS
 
@@ -277,23 +273,14 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
 //---------------------------- Constantes District ----------------------------------------//
 
-    District_SeTeleporterAuPlusProcheMemeSiOnNePeutPasTirer = false
     FuirDistrictEnFeu = true
-    IgnorerLaVisibiliteDesCiblesLorsDuChoixDuPointDeTir = false
     MargePourLesTestsDeSortieDeDistrict = 16 * Metre
     DurationForLeavingDistrict = 3.0        // Durée de l'action de sortie de district.
-    ModeDeRepartitionDuFeuContreLesDistricts = 2 // 0 : aucune unité ne prend de dégats, 1: une unite prend des degats, 2: toutes les unites prennent des degats
-    RandomiserLesPatrouillesDansLesDistricts = false
-    RefreshBestPlaceEveryNbSeconds = 5 // 1, Les unites dans les quartiers peuvent changer de points de tir tous les x secondes.
-    CheckDistrictBox = false
+    RefreshBestPlaceEveryNbSeconds = 5 // Les unites dans les quartiers peuvent changer de points de tir tous les x secondes.
 
 //---------------------------- Constantes Gameplay ----------------------------------------//
 
     TransformerAttackEnMoveSiPasDArmeAdaptee = false
-
-//--------------------------- Constantes GameRules ----------------------------------------//
-
-    InstantMergeMaxDistance = 2500 * Metre
 
 //---------------------------- Constantes GroupedMovement ---------------------------------//
 
@@ -314,9 +301,14 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
 //---------------------------- Constantes Mouvement ---------------------------------------//
 
-    MoteurHelicos_TempsArret = 4 * Seconde  // 4
-    MoteurHelicos_TempsDemarrage = 2 * Seconde  // 1
+    MoteurHelicos_TempsArret = 8 * Seconde  // 4
+    MoteurHelicos_TempsDemarrage = 4 * Seconde  // 1
     MultiplicateurConsommationUnitesArretees = 0.0 // Entre 0 et 1
+
+//---------------------------- Constantes TandemCharge / ExplosiveReactiveArmor ---------------------------------------//
+    // Bonus des charges tandem contre les armures réactives
+    TandemModifierValue = 1.0
+    TandemModifierType = ModifierType_Additionnel
 
 //--------------------------- Constantes SpreadOrder --------------------------------------//
 
@@ -327,22 +319,17 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
 
     RatioSupplyAmmoAndFuel = 0.0 // En dessous ce ce ratio de munition OU de fuel, l'unité entrera dans la boucle de ravitaillement // Ouai mais ca ne fonctionne plus
 
-//---------------------------- Constantes Vision ------------------------------------------//
-
-    District_AppliquerLesDegatsAuxUnitesInvisibleDansLesDistricts = true
-
 //----------------------------- Constantes Weapons ----------------------------------------//
 
     MergeAllWeaponOnSameTurretInUI = false // permet d'indiquer dans l'interface si on merge les armes sur une même tourelle
                                            // même si elles ont des munitions différentes (boites de munitions différentes).
 
-    MaxWeaponsOnUI = 6 // Nombre d'armes affichées sur les panneaux d'interface qui affiche les armes
+    MaxWeaponsOnUI = 4 // Nombre d'armes affichées sur les panneaux d'interface qui affiche les armes
 
 
     AdditionalSuppressDamagePerLostPhysicalDamage = 25 // c'est un multiplicateur des degats physiques qu'on va appliquer en stress.
 
     ArtilleryDispersionTargetNotVisible = 1 // 2 Dispersion du tireur (artillerie) quand la cible n'est pas visible (attaque sur position ou unité)
-    DamageMultiplierWhenShooterIsHidden = 1
 
     // http://dl.uncw.edu/digilib/mathematics/algebra/mat111hb/functions/equations/equations.html
     DistanceFriendlyFire = 1 * Metre  // distance entre un ennemi et un allié en dessous de laquelle une tourelle ne tire pas (1000)
@@ -356,14 +343,11 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
     // Attention, le parametre OneSalveDesignatedShot n'est plus specifique a l'artillerie
     NbSalveDesignatedShot = -1 // -1 -> tir jusqu'a epuisement des munitions. 0 est indéfini, prévenir si il y en a besoin
 
-    NombreMaxWeaponTraits = 5
-
     ShootingAdjustmentAngleMax = 0.4 //20°
     SplashSurTirRate = true // Est-ce que les tirs ratés font des dégâts de splash ?
     SplashRatioDamage = [0.35, 0.35, 0.25] // Stress, Suppress, Physical damages (entre 0 et 1). ratio des dégâts en périphérie du cercle de splash
     SplashRatioDistance = [0.35, 0.35, 0.30] // Stress, Suppress, Physical damages (entre 0 et 1). Ratio du rayon de splash où les dégâts commencent à être amoindris. Ex: 0.25 si DistanceImpact / SplashRadius > 0.25
 
-    MinBlindageForRoEMissiles = ArmorDescriptor_Blindage_2 // Blindage min pour la RoE Missiles
     TagAllowedForMissileRoE = "AllowedForMissileRoE"
 
     // Lorsqu'un projectile explose sur un plan et fait des dégats de splash, on définit quels plans sont affectés
@@ -473,7 +457,7 @@ WargameConstantes is TWargameTunableConstante
     BaseIncome = MAP
     [
         (CombatRule/NotSpecified,   0),
-        (CombatRule/CaptureTheFlag, 65),
+        (CombatRule/CaptureTheFlag, 260),
         (CombatRule/Destruction,    4),
     ]
     DefaultIncomeMultiplierIndex    = 3 // normal
@@ -481,8 +465,8 @@ WargameConstantes is TWargameTunableConstante
     IncomeMultiplier = [   0,    0.5,    0.75,       1,      1.25,       1.5 ]
     TimeBeforeEarningCommandPoints = MAP
     [
-        (CombatRule/NotSpecified,   15.0),
-        (CombatRule/CaptureTheFlag, 15.0),
+        (CombatRule/NotSpecified,   60.0),
+        (CombatRule/CaptureTheFlag, 60.0),
         (CombatRule/Destruction,     4.0),
     ]
 
@@ -513,15 +497,6 @@ WargameConstantes is TWargameTunableConstante
     // Multiplicateur de points de commandement gagnes par joueur par période de TimeBeforeEarningCommandPoints en mode conquete
     //                                   none  very_low    low   medium
     IncomeMultiplierInDestructionMode = [  0,      0.5,   0.75,      1]
-
-//--------------------------- Constantes Défense ---------------------------------------//
-
-    AreaSnapRange = 10000.0
-    BlockedTerrainsRange = 75000.0 // Hackos !!: doit être supérieur à la valeur dans FeedbackRenderToolbox.cg pour les trucs Clipped
-    LineMinimalDistance = 3750.0 //15000.0
-    LineSnapRange = 7500.0
-    AllowedTerrainsMask = ~/AllowedTerrainsTypeForDefense
-    TrenchSlotSize = 3000.0
 
 //------------------------- Constantes IAStrat ------------------------------------------//
     // Bonus en pourcentage donné à l'IA à l'income. Exemple : 0.0 = +0%, 0.10 = +10%
@@ -614,7 +589,6 @@ WargameConstantes is TWargameTunableConstante
         (193.02, 'Value_5'),
         (233.48, 'Value_6'),
     ]
-
 
     PaliersDeResilience = MAP
     [

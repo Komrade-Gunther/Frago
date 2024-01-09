@@ -328,38 +328,31 @@ UISpecificInGameHUDTimePanelViewDescriptor is TUISpecificInGameHUDTimePanelViewD
         TUIGameSpeedDescriptor(
             GameSpeedValue = 0.001
             GameSpeedToken = "GS_BULTIME"
-            ButtonElementName = "SpeedPauseButton"
         ),
         //GameSpeed_Slow
         TUIGameSpeedDescriptor(
             GameSpeedValue = 0.33
             GameSpeedToken = "GS_SLOW"
-            ButtonElementName = "SpeedSlowButton"
         ),
         //GameSpeed_Normal
         TUIGameSpeedDescriptor(
             GameSpeedValue = 1.0
             GameSpeedToken = "GS_NORMAL"
-            ButtonElementName = "SpeedNormalButton"
         ),
         //GameSpeed_Fast
         TUIGameSpeedDescriptor(
             GameSpeedValue = 2.0
             GameSpeedToken = "GS_FAST"
-            ButtonElementName = "SpeedFastButton"
         ),
         //GameSpeed_VeryFast
         TUIGameSpeedDescriptor(
             GameSpeedValue = 3.0
             GameSpeedToken = "GS_VFAST"
-            ButtonElementName = "SpeedVeryFastButton"
         ),
     ]
 
     MainComponentDescriptor = ~/SpecificInGameHUDTimePanelViewMainComponent
     MainComponentContainerUniqueName = "SpecificInGameHUDTimePanelViewMainContainer"
-
-    ShortcutUILayer = $/M3D/Input/UserInputLayerHandler/InputLayer_InGameShortcuts
 )
 
 

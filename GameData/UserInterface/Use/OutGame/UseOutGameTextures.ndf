@@ -405,8 +405,7 @@ unnamed TBUCKToolAdditionalTextureBank
 
 
         ("mission_dossierVide", MAP [( ~/ComponentState/Normal, TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Missions/MissionDossierVide.png" )), ]),
-
-
+        ("mission_dossierVide_Onglet", MAP [( ~/ComponentState/Normal, TUIResourceTexture_OutGame( FileName = "GameData:/Assets/2D/Interface/UseOutGame/Missions/MissionDossierVide_onglet.png" )), ]),
 
         ("texture_switch_icon", MAP [( ~/ComponentState/Normal, ~/texture_switch_icon), ]),
 

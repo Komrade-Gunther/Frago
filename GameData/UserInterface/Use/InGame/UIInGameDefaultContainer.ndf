@@ -113,27 +113,17 @@ template PanelRoundedCorner
     // ++ BUCKContainerDescriptor
     ElementName : string = "",
     UniqueName : string = "",
-    RequiredTags : LIST<string> = [],
-    ForbiddenTags : LIST<string> = [],
     ComponentFrame : TUIFramePropertyRTTI = TUIFramePropertyRTTI ( RelativeWidthHeight = [1.0, 1.0] ),
 
     MagnifierMultiplication : float = 0.0,
-
-    PointerEventsToAllow : int = ~/EAllowablePointerEventType/None,
-    HidePointerEvents : bool = false,
-
-    GridAlign : bool = false,
-
-    IsDroppable : bool = false,
-    ForegroundForDropBlockColor : string = "",
-    BorderForDropLineColor : string = "",
-    BorderForDropLineThicknessToken : string = "",
 
     FitStyle : int = ~/ContainerFitStyle/None,
     ChildFitToContent : bool = false,
 
     ClipContent : bool = false,
     IsClippable : bool = true,
+
+    HidePointerEvents : bool = false,
 
     HasBackground : bool = true,
     BackgroundBlockColorToken : string = "H2_bleu_2",
@@ -145,7 +135,6 @@ template PanelRoundedCorner
     BackgroundLocalRenderLayer : int = 0,
     BorderLocalRenderLayer : int = 0,
 
-    ComponentStateLocked : bool = false,
     Components = [],
     // -- BUCKContainerDescriptor
 
@@ -157,7 +146,9 @@ is BUCKPolygonDescriptor
 (
     MagnifierMultiplication = <MagnifierMultiplication>
     ElementName = <ElementName>
+    UniqueName = <UniqueName>
     ComponentFrame = <ComponentFrame>
+
 
     PolygonShape = PolygonShapeRoundedContainer
     (
@@ -167,6 +158,10 @@ is BUCKPolygonDescriptor
     )
 
     FitStyle = <FitStyle>
+    ChildFitToContent = <ChildFitToContent>
+
+    ClipContent = <ClipContent>
+    IsClippable = <IsClippable>
 
     HidePointerEvents = <HidePointerEvents>
 

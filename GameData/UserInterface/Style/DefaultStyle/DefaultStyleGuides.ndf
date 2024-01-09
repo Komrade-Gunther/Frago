@@ -447,6 +447,15 @@ DefaultStyleGuide is TUIStyleGuide
                                                    ( ~/ComponentState/ToggleClicked,         TColorRTTI( Color = Blanc ) ),
                                                    ( ~/ComponentState/Grayed,                TColorRTTI( Color = [122,167,176,50] ) ),
                                                ]),
+        ("CustomFlareText",                    MAP [
+                                                   ( ~/ComponentState/Normal,                TColorRTTI( Color = [122,167,176,202]  ) ),
+                                                   ( ~/ComponentState/Highlighted,           TColorRTTI( Color = BleuVariable ) ),
+                                                   ( ~/ComponentState/Clicked,               TColorRTTI( Color = Blanc184 ) ),
+                                                   ( ~/ComponentState/Toggled,               TColorRTTI( Color = [22,133,173,255] ) ),
+                                                   ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color =  [22,133,173,255] ) ),
+                                                   ( ~/ComponentState/ToggleClicked,         TColorRTTI( Color = Blanc ) ),
+                                                   ( ~/ComponentState/Grayed,                TColorRTTI( Color = [122,167,176,50] ) ),
+                                               ]),
 
         ("BoutonTemps_pawn",                    MAP [
                                                    ( ~/ComponentState/Normal,                TColorRTTI( Color = [19,85,106,102]  ) ),
@@ -1468,7 +1477,7 @@ DefaultStyleGuide is TUIStyleGuide
                                                             ( ~/ComponentState/Highlighted,           TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Clicked,               TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Toggled,               TColorRTTI( Color = Otan ) ),
-                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = Otan ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = BlancPur ) ),
                                                         ]),
 
         // VERT
@@ -1503,7 +1512,7 @@ DefaultStyleGuide is TUIStyleGuide
                                                             ( ~/ComponentState/Highlighted,           TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Clicked,               TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Toggled,               TColorRTTI( Color = Otan_vert ) ),
-                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = Otan_vert ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = BlancPur ) ),
                                                         ]),
         //-------------------------------------------------------------------------------------
         // PACT
@@ -1546,7 +1555,7 @@ DefaultStyleGuide is TUIStyleGuide
                                                             ( ~/ComponentState/Highlighted,           TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Clicked,               TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Toggled,               TColorRTTI( Color = Pact ) ),
-                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = Pact ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = BlancPur ) ),
                                                         ]),
         // ORANGE
         ("playerHelper/Orange/Pact_background",                      MAP [
@@ -1580,7 +1589,7 @@ DefaultStyleGuide is TUIStyleGuide
                                                             ( ~/ComponentState/Highlighted,           TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Clicked,               TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Toggled,               TColorRTTI( Color = Pact_orange ) ),
-                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = Pact_orange) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = BlancPur) ),
                                                         ]),
 
 
@@ -2212,8 +2221,9 @@ DefaultStyleGuide is TUIStyleGuide
                                                             ( ~/ComponentState/Highlighted,           TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Clicked,               TColorRTTI( Color = Blanc7 ) ),
                                                             ( ~/ComponentState/Toggled,               TColorRTTI( Color = Pact_fond ) ),
-                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = Pact_orange ) ),
+                                                            ( ~/ComponentState/ToggleHighlighted,     TColorRTTI( Color = [18,4,4,255] ) ),
                                                         ]),
+
         ("playerHelper/Pact_line",                      MAP [
                                                             ( ~/ComponentState/Grayed,                TColorRTTI( Color = [120,120,120,128] ) ),
                                                             ( ~/ComponentState/Normal,                TColorRTTI( Color = [255,0,0,255] ) ),
@@ -2477,6 +2487,9 @@ DefaultStyleGuide is TUIStyleGuide
         ("division_US_5",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [84, 96, 76,255] ) ),]),
         ("division_US_6",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [114,126,106,255] ) ),]),
 
+
+        ("division_US_8th",MAP [( ~/ComponentState/Normal, TColorRTTI( Color = [125,155,3,255] ) ),]),
+
         ("division_US_air",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = bleuNavy_clair ) ),]),
 
         // RFA
@@ -2486,14 +2499,36 @@ DefaultStyleGuide is TUIStyleGuide
         ("division_RFA_4",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [45,58,60,255] ) ),]),
         ("division_RFA_5",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [2,16,19,255] ) ),]),
         ("division_RFA_violet_sombre",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [50,25,66,255] ) ),]),
+        ("division_RFA_kassel_1",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [28,29,32,215] ) ),]),
+        ("division_RFA_kdo", MAP [( ~/ComponentState/Normal, TColorRTTI( Color = [73,71,62,215] ) ),]),
+        ("division_RFA_air_kassel_1",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [157,177,234,210] ) ),]),
+        ("division_BE_kassel_1",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [147,148,79,255] ) ),]),
+        ("division_BE_Boar_1",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [147,148,79,255] ) ),]),
+        ("division_BE_Boar_2",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [216,217,144,255] ) ),]),
+        ("division_BE_air",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [155,162,129,255] ) ),]),
+
+        ("division_UK_corps",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [112,73,16,180] ) ),]),
+        ("division_UK_boar_1",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [178,131,42,190] ) ),]),
+        ("division_UK_air",                        MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [129,162,155,255] ) ),]),
 
         ("division_SOV_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [134,37,4,180] ) ), ]),
         ("division_SOV_2",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [116,90,35,180] ) ), ]),
         ("division_SOV_3",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [201,59,12,180] ) ), ]),
+        ("SovDivision_air",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [0,201,155,180] ) ), ]),
+        ("SovDivision_kassel_2",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [87,28,28,180] ) ), ]),
+        ("SovDivision_kassel_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [99,191,172,180] ) ), ]),
+        ("SovDivision_kassel_3",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [201,59,12,180] ) ), ]),
+
+        ("SovDivision_boar_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [255,45,46,180] ) ), ]),
+
+
 
         // ("division_DDR_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [139,65,5,220] ) ), ]),
         ("division_DDR_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [15,5,5,210] ) ), ]),
+        ("division_DDR_kassel_1",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [15,5,5,210] ) ), ]),
         ("division_DDR_hq",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [91,80,80,210] ) ), ]),
+        ("division_DDR_11",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [36,19,15,230] ) ), ]),
+        ("division_DDR_7",                    MAP [ ( ~/ComponentState/Normal, TColorRTTI( Color = [43,36,32,230] ) ), ]),
 
         // OTAN DIVERS
         ("corps_otan",                            MAP [( ~/ComponentState/Normal,                 TColorRTTI( Color = [19,42,19,255] ) ),]),
@@ -2804,6 +2839,7 @@ DefaultStyleGuide is TUIStyleGuide
                                                             ( ~/ComponentState/Normal,            TColorRTTI( Color = [1,166,108,210] ) ),
                                                             ( ~/ComponentState/Highlighted,       TColorRTTI( Color = [1+15,166+15,108+15,210] ) ),
                                                             ( ~/ComponentState/Clicked,           TColorRTTI( Color = [159,225,153,255] ) ),
+                                                            ( ~/ComponentState/Grayed,            TColorRTTI( Color = [94, 179, 149, 125] ) ),
                                                         ]),
         ("tampon_gris",              MAP [
                                         ( ~/ComponentState/Normal,                TColorRTTI( Color = [20,20,20,128] ) ),

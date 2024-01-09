@@ -7,14 +7,11 @@ private StrategicHUDHeaderButtonManager is TBUCKRadioButtonManager()
 private SpecificStrategicHUDHeaderViewMainComponent is BUCKContainerDescriptor
 (
     UniqueName = 'HUDTopElement'
-    ComponentFrame = TUIFramePropertyRTTI
-    (
-        // RelativeWidthHeight = [1,0]
-    )
+    ComponentFrame = TUIFramePropertyRTTI()
 
     Components =
     [
-    SteelmanReinforcementButtonPanel,
+        ~/SteelmanReinforcementButtonPanel,
     ]
 )
 
@@ -26,7 +23,6 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
     Axis = ~/ListAxis/Vertical
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
-    // FirstMargin = TRTTILength( Magnifiable = 8.0 )
     InterItemMargin = TRTTILength( Magnifiable = 4.0 )
 
     Elements =
@@ -41,7 +37,7 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     MagnifiableWidthHeight = [0.0, 29.0]
-                    MagnifiableOffset = [0,0]
+                    MagnifiableOffset = [0.0, 0.0]
                 )
 
                 BladeDescriptor = ~/ReinforcementButton
@@ -62,12 +58,11 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                MagnifiableOffset = [16,-44]
-                    MagnifiableWidthHeight = [0,40]
-                    // RelativeWidthHeight = [0.0, 1.0]
-                    AlignementToFather = [0.0, 0]
-                    AlignementToAnchor = [0.0, 0]
-                )
+                MagnifiableOffset = [16.0, -44.0]
+                MagnifiableWidthHeight = [0.0, 40.0]
+                AlignementToFather = [0.0, 0.0]
+                AlignementToAnchor = [0.0, 0.0]
+            )
 
 
             ParagraphStyle = TParagraphStyleRTTI
@@ -76,8 +71,9 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
                 VerticalAlignment = UIText_Bottom
                 InterLine = 0
             )
+
             TextStyle = "Default"
-            TextPadding = TRTTILength4 (Magnifiable = [0,0,0,4])
+            TextPadding = TRTTILength4 (Magnifiable = [0.0, 0.0, 0.0, 4.0])
             HorizontalFitStyle = ~/FitStyle/FitToContent
             VerticalFitStyle = ~/FitStyle/UserDefined
             TypefaceToken = "Eurostyle_Italic"
@@ -87,7 +83,6 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
             TextColor = "SM_paleSilver"
             TextSize = "12"
         )
-
     ]
 )
 
@@ -199,6 +194,7 @@ private StrategicProductionMenuStrategicIncomePointsText is BUCKTextDescriptor
     )
 )
 
+// -------------------------------------------------------------------------------------------------
 // Strategic points
 private StrategicProductionMenuStrategicPointsText is BUCKTextDescriptor
 (
@@ -239,11 +235,13 @@ private StrategicProductionMenuStrategicPointsText is BUCKTextDescriptor
     )
 )
 
-
 // -------------------------------------------------------------------------------------------------
+
 private StrategicBoutonsMenus is PanelRoundedCorner
 (
+    UniqueName = "StrategicBoutonsMenusRoundedPanel"
     ElementName = "StrategicBoutonsMenusRoundedPanel"
+
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableOffset = [25.0, 0.0]
@@ -257,6 +255,7 @@ private StrategicBoutonsMenus is PanelRoundedCorner
     HasBorder = true
     BorderLineColorToken = 'SM_Grullo'
     BorderThicknessToken = '2'
+
     Components =
     [
         BUCKListDescriptor
@@ -306,6 +305,8 @@ private StrategicBoutonsMenus is PanelRoundedCorner
     ]
 )
 
+// -------------------------------------------------------------------------------------------------
+
 UISpecificStrategicHUDHeaderOptionViewDescriptor is TUISpecificStrategicHUDHeaderOptionViewDescriptor
 (
     MainComponentDescriptor = BoutonAccelerationDuTemps
@@ -319,6 +320,7 @@ UISpecificStrategicHUDHeaderOptionViewDescriptor is TUISpecificStrategicHUDHeade
 )
 
 // -------------------------------------------------------------------------------------------------
+
 private ReinforcementButton is BUCKSpecificButton
 (
     ElementName = 'BtnReinforcement'
@@ -332,7 +334,7 @@ private ReinforcementButton is BUCKSpecificButton
     ButtonRelativeWidthHeight = [0.0, 0.0]
     ButtonMagnifiableWidthHeight = [160.0, 32.0]
 
-    TextParagraphStyle = ~/paragraphStyleTextCenter //paragraphStyleTextLeftAlign
+    TextParagraphStyle = ~/paragraphStyleTextCenter
     HasText = true
     TextTypefaceToken = "Eurostyle"
     TextColorToken = "SM_paleSilver"
@@ -349,6 +351,8 @@ private ReinforcementButton is BUCKSpecificButton
     IsTogglable = true
     RadioButtonManager = StrategicHUDHeaderButtonManager
 )
+
+// -------------------------------------------------------------------------------------------------
 
 SpecificStrategicHUDHeaderViewResources is TUISpecificStrategicHUDHeaderViewDescriptor
 (

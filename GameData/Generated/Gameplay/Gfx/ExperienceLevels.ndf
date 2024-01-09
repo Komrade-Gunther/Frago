@@ -43,7 +43,7 @@ export ExperienceLevelsPackDescriptor_XP_pack_SF is TExperienceLevelsPackDescrip
             ]
             LevelEffectsPacks = [
                 ~/UnitEffect_Ajoute_Tag_xp_veteran,
-                ~/UnitEffect_Precision_plus_15,
+                ~/UnitEffect_Precision_plus_10,
                 ~/UnitEffect_RoF_plus_15pourcent,
                 ~/UnitEffect_Effet_Suppress_Recu_66pourcent,
                 ~/UnitEffect_Regen_suppress_veteran,
@@ -60,7 +60,7 @@ export ExperienceLevelsPackDescriptor_XP_pack_SF is TExperienceLevelsPackDescrip
             ]
             LevelEffectsPacks = [
                 ~/UnitEffect_Ajoute_Tag_xp_elite,
-                ~/UnitEffect_Precision_plus_20,
+                ~/UnitEffect_Precision_plus_15,
                 ~/UnitEffect_RoF_plus_20pourcent,
                 ~/UnitEffect_Effet_Suppress_Recu_50pourcent,
                 ~/UnitEffect_Regen_suppress_elite,
@@ -113,7 +113,7 @@ export ExperienceLevelsPackDescriptor_XP_pack_simple_v2 is TExperienceLevelsPack
             ]
             LevelEffectsPacks = [
                 ~/UnitEffect_Ajoute_Tag_xp_veteran,
-                ~/UnitEffect_Precision_plus_10,
+                ~/UnitEffect_Precision_plus_5,
                 ~/UnitEffect_RoF_plus_5pourcent,
                 ~/UnitEffect_Effet_Suppress_Recu_vet2,
                 ~/UnitEffect_Regen_suppress_veteran,
@@ -130,7 +130,7 @@ export ExperienceLevelsPackDescriptor_XP_pack_simple_v2 is TExperienceLevelsPack
             ]
             LevelEffectsPacks = [
                 ~/UnitEffect_Ajoute_Tag_xp_elite,
-                ~/UnitEffect_Precision_plus_20,
+                ~/UnitEffect_Precision_plus_10,
                 ~/UnitEffect_RoF_plus_10pourcent,
                 ~/UnitEffect_Effet_Suppress_Recu_vet3,
                 ~/UnitEffect_Regen_suppress_elite,

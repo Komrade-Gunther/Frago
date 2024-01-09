@@ -40,6 +40,13 @@ export OrderDisplayDrawer is TOrderDisplayDrawer
                                 OrderDisplayGoDown,
                                 OrderDisplayGoUp,
 
+                                OrderDisplayAIDefend,
+                                OrderDisplayAIAttack,
+                                OrderDisplayAIManageArtillery_Focus,
+                                OrderDisplayAIManageArtillery_CounterBattery,
+                                OrderDisplayAIManageArtillery_Auto,
+                                OrderDisplayAIAirplaneAutoManage,
+                                OrderDisplayAISupply
                             ]
     DefaultOrderDisplayDrawInfo = OrderDisplayDefault
     AltitudeMinToDrawDashLine = 100.0
@@ -477,6 +484,103 @@ export OrderDisplayGoUp is TOrderDisplayDrawInfo
     MustDrawCircle              = true
     MustDrawArrow               = false
 )
-//------------------------------------------------------------------------------
-//******************************************************************************
-//------------------------------------------------------------------------------
+
+export OrderDisplayAIAttack is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "AIAttack"
+    ColorLineStart              = [240, 0, 0, 50]
+    ColorLineEnd                = [240, 0, 0, alpha]
+    MaxMetersBetweenColors      = MaxMeter
+    LineThickness               = 2000.0
+    ColorCircleDestination      = [0, 0, 0, 0]
+    CircleDestinationThickness  = 0
+    CircleDestinationRadius     = 0
+    DashLengthInMeters          = 100
+    DisplayWaypoints            = true
+    HideNextOrders              = true
+    MustDrawCircle              = false
+    MustDrawArrow               = true
+    Hatched                     = true
+)
+
+export OrderDisplayAIDefend is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "AIDefend"
+    LineThickness               = 2000.0
+    ColorCircleDestination      = [30, 30, 222, 180]
+    CircleDestinationThickness  = 1000.0
+    CircleDestinationRadius     = 2000.0
+    DisplayWaypoints            = false
+    HideNextOrders              = true
+    MustDrawCircle              = true
+    MustDrawArrow               = false
+)
+
+export OrderDisplayAIManageArtillery_Focus is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "AIManageArtillery_Focus"
+    ColorLineStart              = [240, 0, 0, 0]
+    ColorLineEnd                = [240, 0, 0, alpha]
+    MaxMetersBetweenColors      = MaxMeter
+    LineThickness               = 2000.0
+    ColorCircleDestination      = [240, 0, 0, alpha]
+    CircleDestinationThickness  = 1000.0
+    CircleDestinationRadius     = 2000.0
+    DashLengthInMeters          = 0
+    DisplayWaypoints            = false
+    HideNextOrders              = true
+    MustDrawCircle              = true
+    MustDrawArrow               = false
+)
+
+export OrderDisplayAIManageArtillery_CounterBattery is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "AIManageArtillery_CounterBattery"
+    LineThickness               = 2000.0
+    ColorCircleDestination      = [240, 0, 0, alpha]
+    CircleDestinationThickness  = 1000.0
+    CircleDestinationRadius     = 2000.0
+    DisplayWaypoints            = false
+    HideNextOrders              = true
+    MustDrawCircle              = true
+    MustDrawArrow               = false
+)
+
+export OrderDisplayAIManageArtillery_Auto is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "AIManageArtillery_Auto"
+    LineThickness               = 2000.0
+    ColorCircleDestination      = [240, 0, 0, alpha]
+    CircleDestinationThickness  = 1000.0
+    CircleDestinationRadius     = 2000.0
+    DisplayWaypoints            = false
+    HideNextOrders              = true
+    MustDrawCircle              = true
+    MustDrawArrow               = false
+)
+
+export OrderDisplayAIAirplaneAutoManage is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "AIAirplaneAutoManage"
+    LineThickness               = 2000.0
+    ColorCircleDestination      = [240, 0, 0, alpha]
+    CircleDestinationThickness  = 1000.0
+    CircleDestinationRadius     = 2000.0
+    DisplayWaypoints            = false
+    HideNextOrders              = true
+    MustDrawCircle              = true
+    MustDrawArrow               = false
+)
+
+export OrderDisplayAISupply is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "AISupply"
+    LineThickness               = 2000.0
+    ColorCircleDestination      = [244, 187, 50, alpha]
+    CircleDestinationThickness  = 1000.0
+    CircleDestinationRadius     = 2000.0
+    DisplayWaypoints            = false
+    HideNextOrders              = true
+    MustDrawCircle              = true
+    MustDrawArrow               = false
+)

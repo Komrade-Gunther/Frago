@@ -16,7 +16,7 @@ export Maintain_AirStrike is TMacroActionDescriptor_AirStrike_Specific
 //-------------------------------------------------------------------------
 private template Template_Airstrike
 [
-    MinimumResourceForLaunch:int = 0,
+    MinimumResourceForLaunch = MAP[],
     AnnulerSupportSiAttaqueEchoue:bool = false,
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/All,
     PoolModel = ~/Pool_Airstrike_AA,
@@ -37,23 +37,10 @@ is TMacroActionDescriptor_AirStrike_Specific
 //-------------------------------------------------------------------------
 // Missions
 //-------------------------------------------------------------------------
-export Airstrike_Defense is Template_Airstrike
+export Airstrike_AA is Template_Airstrike
 (
     AnnulerSupportSiAttaqueEchoue = false
-    TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Defense // pas d'attaque du tout
-    PoolModel = ~/Pool_Airstrike_AA
-    AdditionnalParameter =
-    [
-        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
-        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
-    ]
-)
-
-//-------------------------------------------------------------------------
-export Airstrike_Offensive_AA is Template_Airstrike
-(
-    AnnulerSupportSiAttaqueEchoue = false
-    TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Attack | ~/EAirStrikeRequestType/OpportunisticSingleTarget
+    TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Defense | ~/EAirStrikeRequestType/Attack | ~/EAirStrikeRequestType/OpportunisticSingleTarget
     PoolModel = ~/Pool_Airstrike_AA
     AdditionnalParameter =
     [
@@ -96,11 +83,11 @@ export Airstrike_SEAD is Template_Airstrike
 //-------------------------------------------------------------------------
 // Autogens
 //-------------------------------------------------------------------------
-export Airstrike_Defense_Autogen is Template_Airstrike
+export Airstrike_AA_Autogen is Template_Airstrike
 (
     MinimumResourceForLaunch = ~/MinimumResourceForLaunch_Stage_1
     AnnulerSupportSiAttaqueEchoue = false
-    TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Defense // pas d'attaque du tout
+    TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Defense | ~/EAirStrikeRequestType/Attack | ~/EAirStrikeRequestType/OpportunisticSingleTarget
     PoolModel = ~/Pool_Airstrike_AA
     AdditionnalParameter =
     [
@@ -108,20 +95,7 @@ export Airstrike_Defense_Autogen is Template_Airstrike
         TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
     ]
 )
-//-------------------------------------------------------------------------
-//Principalement pour la defense BKT
-export Airstrike_Defense_Autogen_Economic is Template_Airstrike
-(
-    MinimumResourceForLaunch = ~/MinimumResourceForLaunch_Economic
-    AnnulerSupportSiAttaqueEchoue = false
-    TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Defense // pas d'attaque du tout
-    PoolModel = ~/Pool_Airstrike_AA
-    AdditionnalParameter =
-    [
-        TAirStrikeAcceptableThreatSettingHolder(PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.5),
-        TAirStrikeAcceptableThreatSettingHolder(DifficultyList = [IADifficulty/TresDifficile, IADifficulty/PlusDifficile] PercentAcceptableDangerousIndicesForAirplaneValidTarget = 0.65),
-    ]
-)
+
 //-------------------------------------------------------------------------
 export Airstrike_Offense_Autogen is Template_Airstrike
 (

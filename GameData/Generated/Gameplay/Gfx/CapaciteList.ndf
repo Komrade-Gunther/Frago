@@ -304,8 +304,8 @@ export Capacite_Choc is TCapaciteDescriptor
     AreaShape            = ~/CapaciteAreaShape_circulaire
     InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
     ActionRadiusWithBoundingBox = False
-    Radius              = 990.00 * Metre
-    Range               = 990.00 * Metre
+    Radius              = 150.00 * Metre
+    Range               = 400.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
     CastTime            = 0.00
@@ -644,7 +644,7 @@ export Capacite_GSR_no_GSR is TCapaciteDescriptor
     Range               = 1.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 10.00
+    CastTime            = 8.00
     Cooldown            = 0.00
     CheckVisibility     = True
     AllowReflexDuringCast   = True
@@ -687,7 +687,7 @@ export Capacite_IFV is TCapaciteDescriptor
     InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
     ActionRadiusWithBoundingBox = False
     Radius              = 500.00 * Metre
-    Range               = 1450.00 * Metre
+    Range               = 900.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
     CastTime            = 0.00
@@ -968,8 +968,8 @@ export Capacite_MilitaryPolice is TCapaciteDescriptor
     AreaShape            = ~/CapaciteAreaShape_circulaire
     InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
     ActionRadiusWithBoundingBox = False
-    Radius              = 1700.00 * Metre
-    Range               = 1700.00 * Metre
+    Radius              = 750.00 * Metre
+    Range               = 750.00 * Metre
     AutomaticOrderRange = 0.00 * Metre
     CastRangeTolerance  = 0.00 * Metre
     CastTime            = 0.00
@@ -1853,228 +1853,6 @@ export Capacite_sniper_no_snipe is TCapaciteDescriptor
     ]
 
 )
-export Capacite_Pin_Nearby_Units is TCapaciteDescriptor
-(
-    DescriptorId     = GUID:{445f3f4a-dffe-4df4-b88c-baa0d761de86}
-    Name             = "Capacite_Pin_Nearby_Units"
-    NameToken        = "None"
-    CumulEffect          = ~/CapaciteCumulEffect_jamais
-    Declenchement        = ~/CapaciteDeclenchementType_automatique
-    TypeCible            = ~/CapaciteTypeCible_unite
-    TargetTeamFilter     = ~/CapaciteTargetFilter_joueur
-    InfluenceMapAlliance = ~/AllianceRelation/vide
-    TargetWoundedFilter  = ~/CapaciteWoundedFilterType_tout
-    AreaShape            = ~/CapaciteAreaShape_circulaire
-    InfluenceMapType     = ~/CapaciteInfluenceMapType_zones
-    ActionRadiusWithBoundingBox = False
-    Radius              = 10.00 * Metre
-    Range               = 10.00 * Metre
-    AutomaticOrderRange = 0.00 * Metre
-    CastRangeTolerance  = 0.00 * Metre
-    CastTime            = 0.00
-    Cooldown            = 1.00
-    CheckVisibility     = True
-    AllowReflexDuringCast   = True
-    AllowMovementDuringCast = True
-    CanBeCastFromTransport  = False
-    CastEffectDuration = -1.00
-    CastEffectBound    = True
-    TargetEffect         = ~/UnitEffect_Pinned_FRL
-    TargetEffectDuration = 1.00
-    SelfEffectDuration   = 0.00
-    MinVirtualUnits         = 1
-    OrderMustSpreadTargets = False
-    MaxTargetNb            = -1
-    DivideEffect           = False
-    MultiplyCost           = False
-    TargetInBuilding       = True
-    TargetInTransport      = False
-    TargetInSelf           = False
-    TargetMySelf           = False
-    FeedbackActivationMask = ~/CapaciteFeedbackActivationMask_soloselected | ~/CapaciteFeedbackActivationMask_anyalliance
-    DisplayRangeColor      = RGBA[255,255,255,255]
-    DisplayRangeThickness  = 0.40
-    Price = MAP[]
-    TagsCiblePossible = [
-        "Infanterie",
-    ]
-
-)//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //

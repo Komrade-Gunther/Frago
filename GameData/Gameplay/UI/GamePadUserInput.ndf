@@ -4,7 +4,7 @@ unnamed TIngameGamePadUserInputForTrailer
     UsePad = $/GameplayOption/UsePad
     InputLayer = $/M3D/Input/UserInputLayerHandler/InputLayer_GamePadForTrailer
     InGameManagerHandler = $/UI/Managers/InGameManagerHandler
-    Scene3D = $/M3D/Scene/Scene_2D_Interface
+    Scene = $/M3D/Scene/Scene_2D_Interface
 
     ScreenShotDirectoryName = "LocalShotDir:/Screenshots"
     ScreenShotBaseName = $/Clusters/ProjectFinalName

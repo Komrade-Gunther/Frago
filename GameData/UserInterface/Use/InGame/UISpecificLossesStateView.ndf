@@ -473,7 +473,7 @@ private CategoryColumnsList is BUCKListDescriptor
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = Display3ColumnsTitrePerte(ColumnName="Supply" TextToken = 'LS_supply')
+            ComponentDescriptor = Display3ColumnsTitrePerte(ColumnName="Supply" TextToken = 'LS_support')
         ),
     ]
 )

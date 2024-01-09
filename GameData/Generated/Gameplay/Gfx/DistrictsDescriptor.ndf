@@ -46,12 +46,13 @@ export Descriptor_District_Quartier_Gros is TEntityDescriptor(
             StunDamagesRegen = ~/Building_StunDamagesRegen
             BlindageProperties = TBlindageProperties
             (
-                ArmorDescriptorFront = ArmorDescriptor_Batiment_1
-                ArmorDescriptorSides = ArmorDescriptor_Batiment_1
-                ArmorDescriptorRear = ArmorDescriptor_Batiment_1
-                ArmorDescriptorTop = ArmorDescriptor_Batiment_1
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ExplosiveReactiveArmor = False
             )
-            KillWhenDamagesReachMax = False
+            KillWhenDamagesReachMax = True
             HitRollSize = 5.0
             HitRollECM = 0.0
             AutoOrientation = False
@@ -122,10 +123,11 @@ export Descriptor_District_Quartier_HLM is TEntityDescriptor(
             StunDamagesRegen = ~/Building_StunDamagesRegen
             BlindageProperties = TBlindageProperties
             (
-                ArmorDescriptorFront = ArmorDescriptor_Batiment_1
-                ArmorDescriptorSides = ArmorDescriptor_Batiment_1
-                ArmorDescriptorRear = ArmorDescriptor_Batiment_1
-                ArmorDescriptorTop = ArmorDescriptor_Batiment_1
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ExplosiveReactiveArmor = False
             )
             KillWhenDamagesReachMax = False
             HitRollSize = 5.0
@@ -198,12 +200,13 @@ export Descriptor_District_Quartier_Moyen is TEntityDescriptor(
             StunDamagesRegen = ~/Building_StunDamagesRegen
             BlindageProperties = TBlindageProperties
             (
-                ArmorDescriptorFront = ArmorDescriptor_Batiment_1
-                ArmorDescriptorSides = ArmorDescriptor_Batiment_1
-                ArmorDescriptorRear = ArmorDescriptor_Batiment_1
-                ArmorDescriptorTop = ArmorDescriptor_Batiment_1
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ExplosiveReactiveArmor = False
             )
-            KillWhenDamagesReachMax = False
+            KillWhenDamagesReachMax = True
             HitRollSize = 5.0
             HitRollECM = 0.0
             AutoOrientation = False
@@ -274,12 +277,13 @@ export Descriptor_District_Quartier_Moyen_resistant_mieux is TEntityDescriptor(
             StunDamagesRegen = ~/Building_StunDamagesRegen
             BlindageProperties = TBlindageProperties
             (
-                ArmorDescriptorFront = ArmorDescriptor_Batiment_1
-                ArmorDescriptorSides = ArmorDescriptor_Batiment_1
-                ArmorDescriptorRear = ArmorDescriptor_Batiment_1
-                ArmorDescriptorTop = ArmorDescriptor_Batiment_1
+                ResistanceFront = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceSides = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceRear = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ResistanceTop = TResistanceTypeRTTI(Family=ResistanceFamily_batiment Index=1)
+                ExplosiveReactiveArmor = False
             )
-            KillWhenDamagesReachMax = False
+            KillWhenDamagesReachMax = True
             HitRollSize = 5.0
             HitRollECM = 0.0
             AutoOrientation = False
@@ -305,4 +309,3 @@ export Descriptor_District_Quartier_Moyen_resistant_mieux is TEntityDescriptor(
         ~/TargetDataModuleDescriptor,
     ]
 )
-//

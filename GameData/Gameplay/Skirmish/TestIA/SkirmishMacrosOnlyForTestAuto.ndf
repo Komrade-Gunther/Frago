@@ -7,7 +7,7 @@ export Attack_Objectives_OnlyTestAuto is TMacroActionDescriptor_ObjectiveAttack_
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [Pool_Objective_Attack_TestAuto] LaunchASAP_RatioMin = 0.01 DisableReinforcement = true),
-        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 1.0 UtiliserMenaceLaPlusProcheAuLieuDeLaPlusFaible = true),
+        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 1.0),
     ]
 )
 
@@ -226,7 +226,7 @@ export Pool_Artillery_TestAuto is TPoolModel
 private template Template_Airstrike_TestAuto
 [
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/All,
-    PoolModel = ~/Pool_Airstrike_Defense_TestAuto
+    PoolModel = ~/Pool_Airstrike_AA_TestAuto
 ]
 is TMacroActionDescriptor_AirStrike_Specific
 (
@@ -241,10 +241,10 @@ is TMacroActionDescriptor_AirStrike_Specific
 
 
 //-------------------------------------------------------------------------
-export Airstrike_Defense_TestAutoOnly is Template_Airstrike_TestAuto
+export Airstrike_AA_TestAutoOnly is Template_Airstrike_TestAuto
 (
     TypesDeRequetesAcceptees = ~/EAirStrikeRequestType/Defense
-    PoolModel = ~/Pool_Airstrike_Defense_TestAuto
+    PoolModel = ~/Pool_Airstrike_AA_TestAuto
 )
 
 //-------------------------------------------------------------------------
@@ -279,7 +279,7 @@ export Pool_Airstrike_Offense_TestAuto is TPoolModel
     ]
 )
 //-------------------------------------------------------------------------
-export Pool_Airstrike_Defense_TestAuto is TPoolModel
+export Pool_Airstrike_AA_TestAuto is TPoolModel
 (
     ModelList = [
     TPoolElement(

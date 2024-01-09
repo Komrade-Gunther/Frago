@@ -554,6 +554,10 @@ Texture_Interface_Weapon_81mm_mortar is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/81mm_mortar.png"
 )
+Texture_Interface_Weapon_pm43 is TUIResourceTexture_Common
+(
+    FileName = "Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/pm43.png"
+)
 Texture_Interface_Weapon_m29 is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/m29.png"
@@ -561,10 +565,6 @@ Texture_Interface_Weapon_m29 is TUIResourceTexture_Common
 Texture_Interface_Weapon_M30 is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/M30.png"
-)
-Texture_Interface_Weapon_pm43 is TUIResourceTexture_Common
-(
-    FileName = "Assets/2D/Interface/Common/UnitsIcons/Armes/Panel_Info/pm43.png"
 )
 Texture_Interface_Weapon_AKs74u is TUIResourceTexture_Common
 (
@@ -1230,9 +1230,9 @@ WeaponAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Interface_Weapon_MW1", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_MW1)]),
         ("Texture_Interface_Weapon_tampella_120", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_tampella_120)]),
         ("Texture_Interface_Weapon_81mm_mortar", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_81mm_mortar)]),
+        ("Texture_Interface_Weapon_pm43", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_pm43)]),
         ("Texture_Interface_Weapon_m29", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_m29)]),
         ("Texture_Interface_Weapon_M30", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_M30)]),
-        ("Texture_Interface_Weapon_pm43", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_pm43)]),
         ("Texture_Interface_Weapon_AKs74u", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_AKs74u)]),
         ("Texture_Interface_Weapon_AS_Val", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_AS_Val)]),
         ("Texture_Interface_Weapon_L2A3", MAP [(~/ComponentState/Normal, ~/Texture_Interface_Weapon_L2A3)]),

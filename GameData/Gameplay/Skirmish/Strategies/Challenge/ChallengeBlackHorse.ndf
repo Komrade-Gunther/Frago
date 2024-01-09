@@ -91,7 +91,7 @@ export ChalBlackHorse_Phase_Deploiement is TSequenceGeneratorDescriptor
 
         ~/Artillery_Expensive,
 
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
     ]
 )
 //-------------------------------------------------------------------------
@@ -124,6 +124,6 @@ export ChalBlackHorse_Phase_Command is TSequenceGeneratorDescriptor
         ~/Artillery_Expensive,
         ~/Blackhorse_Side_Attack,          // Environ 200
 
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
     ]
 )

@@ -19300,3 +19300,137 @@ Descriptor_OrderAvailability_Su_25T_SOV is
     "AIStop"
 ]
 
+Descriptor_OrderAvailability_BMD_1K_CMD_SOV is 
+[
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "AIDefend",
+    "AIAttack",
+    "AIStop"
+]
+
+Descriptor_OrderAvailability_BMD_1P_SOV is 
+[
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "UnloadFromTransport",
+    "UnloadAtPosition",
+    "UnloadSelf",
+    "LoadUnit",
+    "AIDefend",
+    "AIAttack",
+    "AIStop"
+]
+
+Descriptor_OrderAvailability_BMD_2_CMD_SOV is 
+[
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "AIDefend",
+    "AIAttack",
+    "AIStop"
+]
+
+Descriptor_OrderAvailability_Challenger_1_Mk3_UK is 
+[
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootDefensiveSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "AIDefend",
+    "AIAttack",
+    "AIStop"
+]
+
+Descriptor_OrderAvailability_M3A2_Bradley_CFV_US is 
+[
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "QuickMove",
+    "Attack",
+    "FastMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Reverse",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "ShootDefensiveSmoke",
+    "AskForSupply",
+    "GoGetSupply",
+    "AIDefend",
+    "AIAttack",
+    "AIStop"
+]
+
+Descriptor_OrderAvailability_MotRifles_RPG22_SOV is 
+[
+    "Stop",
+    "Move",
+    "FollowFormation",
+    "SmartMove",
+    "Attack",
+    "SmartMoveAndAttack",
+    "MoveAndAttack",
+    "Spread",
+    "Shoot",
+    "ShootOnPosition",
+    "ShootOnPositionWithoutCorrection",
+    "AskForSupply",
+    "GoGetSupply",
+    "EnterDistrict",
+    "LoadIntoTransport",
+    "Load",
+    "AIDefend",
+    "AIAttack",
+    "AIStop"
+]
+

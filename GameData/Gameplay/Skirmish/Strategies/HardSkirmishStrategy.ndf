@@ -96,7 +96,7 @@ export Hard_Phase_Deploiement is TSequenceGeneratorDescriptor
         ~/Attack_Objectives,
 
 
-        ~/Airstrike_Offensive_AA,
+        ~/Airstrike_AA,
 
         ~/Reco,            // 40 par reco
 
@@ -130,7 +130,7 @@ export Hard_Phase_Deploiement is TSequenceGeneratorDescriptor
         ~/Defense_Static_Adaptive,
 
         ~/Airstrike_Offense,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
 
         ~/Artillery_Sniper,
         ~/Artillery_Expensive,
@@ -164,7 +164,7 @@ export Hard_Phase_Command is TSequenceGeneratorDescriptor
 
         ~/Attack_Objectives,
 
-        ~/Airstrike_Offensive_AA,
+        ~/Airstrike_AA,
 
         ~/Reco,
 
@@ -197,7 +197,7 @@ export Hard_Phase_Command is TSequenceGeneratorDescriptor
         ~/Attack_Filler,
 
         ~/Airstrike_Offense,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
 
         ~/Attack_Helo,
 
@@ -276,7 +276,7 @@ export Hard_Phase_LastHope is TSequenceGeneratorDescriptor
         ~/Attack_Adaptive,
 
         ~/Airstrike_Offense,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
 
 
         //Low prio mais peut servir si on n'a pas de zone dans nos couloirs
@@ -295,7 +295,7 @@ export Hard_Phase_LastHope is TSequenceGeneratorDescriptor
         ~/Artillery_TriggerHappy_1for2Corridors,
 
         ~/Airstrike_Offense,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
 
         ~/Artillery_Sniper,
         ~/Artillery_Expensive,
@@ -328,7 +328,7 @@ HardScaling is
 
     ~/Airstrike_Assault_Autogen,
     ~/Airstrike_Offense_Autogen,
-    ~/Airstrike_Defense_Autogen,
+    ~/Airstrike_AA_Autogen,
 
     ~/Artillery_TriggerHappy_Autogen,
 
@@ -348,7 +348,7 @@ HardScaling_Attack is
 
     ~/Airstrike_Assault_Autogen,
     ~/Airstrike_Offense_Autogen,
-    ~/Airstrike_Defense_Autogen,
+    ~/Airstrike_AA_Autogen,
 
     ~/Artillery_TriggerHappy_Autogen,
 ]

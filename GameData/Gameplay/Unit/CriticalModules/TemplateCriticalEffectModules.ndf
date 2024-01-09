@@ -26,7 +26,7 @@ CriticalEffect_FuelExplosion_Desc is TCriticalEffectDescriptor
 (
     Token = 'CRITIC2'
     HappeningKey = 'critical_fuel_explosion'
-    EffectsPack = ~/UnitEffect_Critic_Perd_1_PV
+    EffectsPack = ~/UnitEffect_Critic_Pert_4_PV
     TimeOut = 5
     RepairCost = -1
     Unique = False
@@ -61,27 +61,6 @@ template CriticalEffect_ArmourCracked
     Roll = <Roll>
     Descriptor = ~/CriticalEffect_ArmourCracked_Desc
 )
-
-CriticalEffect_CrewKilled_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC4'
-    HappeningKey = 'critical_crew_dead'
-    EffectsPack = ~/UnitEffect_Critic_Bailed_Out
-    TimeOut = -1
-    RepairCost = 100
-    Unique = True
-    DisplayOnDeath = False
-)
-// Crew killed -> Bail out
-template CriticalEffect_CrewKilled
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_CrewKilled_Desc
-)
-
 
 CriticalEffect_BailedOut_Desc is TCriticalEffectDescriptor
 (
@@ -121,26 +100,6 @@ template CriticalEffect_TransmissionDamaged
 (
     Roll = <Roll>
     Descriptor = ~/CriticalEffect_TransmissionDamaged_Desc
-)
-
-CriticalEffect_TransmissionDestroyed_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC7'
-    HappeningKey = 'critical_engine_destroyed'
-    EffectsPack = ~/UnitEffect_Critic_Full_Stop
-    TimeOut = -1
-    RepairCost = 100
-    Unique = True
-    DisplayOnDeath = False
-)
-// Transmission pétée -> Full stop
-template CriticalEffect_TransmissionDestroyed
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_TransmissionDestroyed_Desc
 )
 
 CriticalEffect_EngineDamaged_Desc is TCriticalEffectDescriptor
@@ -188,7 +147,7 @@ CriticalEffect_TracksBroken_Desc is TCriticalEffectDescriptor
     Token = 'CRITIC10'
     HappeningKey = 'critical_track_broke'
     EffectsPack = ~/UnitEffect_Critic_Chenille_Detruite
-    TimeOut = 30
+    TimeOut = 60
     RepairCost = -1
     Unique = True
     DisplayOnDeath = False
@@ -223,130 +182,11 @@ template CriticalEffect_TurretStuck
     Descriptor = ~/CriticalEffect_TurretStuck_Desc
 )
 
-CriticalEffect_GunJammed_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC14'
-    HappeningKey = 'critical_gun_turret_stuck'
-    EffectsPack = ~/UnitEffect_Critic_Stop_Armes
-    TimeOut = -1
-    RepairCost = 100
-    Unique = True
-    DisplayOnDeath = False
-)
-// Gun Jammed -> plus de tir
-template CriticalEffect_GunJammed
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_GunJammed_Desc
-)
-
-CriticalEffect_ShooterKilled_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC15'
-    HappeningKey = 'critical_crew'
-    EffectsPack = ~/UnitEffect_Critic_Stop_Armes
-    TimeOut = 30
-    RepairCost = -1
-    Unique = True
-    DisplayOnDeath = False
-)
-// Shooter killed -> Armes stop 30sec
-template CriticalEffect_ShooterKilled
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_ShooterKilled_Desc
-)
-
-CriticalEffect_LoaderKilled_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC16'
-    HappeningKey = 'critical_crew'
-    EffectsPack = ~/UnitEffect_Critic_Stop_Reload
-    TimeOut = 30
-    RepairCost = -1
-    Unique = True
-    DisplayOnDeath = False
-)
-// Loader killed -> no reload 30sec
-template CriticalEffect_LoaderKilled
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_LoaderKilled_Desc
-)
-
-CriticalEffect_DriverKilled_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC17'
-    HappeningKey = 'critical_crew'
-    EffectsPack = ~/UnitEffect_Critic_Full_Stop
-    TimeOut = 30
-    RepairCost = -1
-    Unique = True
-    DisplayOnDeath = False
-)
-// Driver killed -> Full stop 30sec
-template CriticalEffect_DriverKilled
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_DriverKilled_Desc
-)
-
-CriticalEffect_SightDamaged_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC18'
-    EffectsPack = ~/UnitEffect_Critic_Visee_50
-    TimeOut = -1
-    RepairCost = 100
-    Unique = True
-    DisplayOnDeath = False
-)
-// Laser range damaged -> Précision 0.5
-template CriticalEffect_SightDamaged
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_SightDamaged_Desc
-)
-
-CriticalEffect_LoaderWounded_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC19'
-    HappeningKey = 'critical_gun_turret_stuck'
-    EffectsPack = ~/UnitEffect_Critic_Reload_50
-    TimeOut = -1
-    RepairCost = 100
-    Unique = True
-    DisplayOnDeath = False
-)
-// Gun breech damaged -> reload *0.5
-template CriticalEffect_LoaderWounded
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_LoaderWounded_Desc
-)
-
 CriticalEffect_Incendiary_Desc is TCriticalEffectDescriptor
 (
     Token = 'CRITIC20'
     HappeningKey = 'critical_incendiary'
-    EffectsPack = ~/UnitEffect_Critic_Perd_1_PV
+    EffectsPack = ~/UnitEffect_Critic_Pert_3_PV
     TimeOut = 5
     RepairCost = -1
     Unique = True
@@ -382,46 +222,6 @@ template CriticalEffect_Spalling
     Descriptor = ~/CriticalEffect_Spalling_Desc
 )
 
-CriticalEffect_EngineStalled_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC22'
-    HappeningKey = 'critical_engine_destroyed'
-    EffectsPack = ~/UnitEffect_Critic_Full_Stop
-    TimeOut = 30
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = False
-)
-// Moteur calé -> Full stop 30sec
-template CriticalEffect_EngineStalled
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_EngineStalled_Desc
-)
-
-CriticalEffect_CrewPanicked_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC23'
-    EffectsPack = ~/UnitEffect_Critic_Deroute
-    TimeOut = 30
-    RepairCost = -1
-    Unique = True
-    DisplayOnDeath = False
-)
-// Crew panicked -> Deroute
-template CriticalEffect_CrewPanicked
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_CrewPanicked_Desc
-)
-
-
 CriticalEffect_Bounce_Desc is TCriticalEffectDescriptor
 (
     Token = 'BOUNCE1'
@@ -439,82 +239,6 @@ template CriticalEffect_Bounce
 (
     Roll = <Roll>
     Descriptor = ~/CriticalEffect_Bounce_Desc
-)
-
-CriticalEffect_ShooterKO_Desc is TCriticalEffectDescriptor
-(
-    Token = 'BOUNCE2'
-    EffectsPack = ~/UnitEffect_Critic_Stop_Armes
-    TimeOut = 10
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = False
-)
-// Shooter KO -> Armes stop 10sec
-template CriticalEffect_ShooterKO
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_ShooterKO_Desc
-)
-
-CriticalEffect_LoaderKO_Desc is TCriticalEffectDescriptor
-(
-    Token = 'BOUNCE3'
-    EffectsPack = ~/UnitEffect_Critic_Stop_Reload
-    TimeOut = 10
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = False
-)
-// Loader KO -> no reload 10sec
-template CriticalEffect_LoaderKO
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_LoaderKO_Desc
-)
-
-CriticalEffect_DriverKO_Desc is TCriticalEffectDescriptor
-(
-    Token = 'BOUNCE4'
-    EffectsPack = ~/UnitEffect_Critic_Full_Stop
-    TimeOut = 10
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = False
-)
-// Driver KO -> Full stop 10sec
-template CriticalEffect_DriverKO
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_DriverKO_Desc
-)
-
-CriticalEffect_CrewKO_Desc is TCriticalEffectDescriptor
-(
-    Token = 'BOUNCE5'
-    EffectsPack = ~/UnitEffect_Critic_Bailed_Out
-    TimeOut = 10
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = False
-)
-// Crew KO -> Bailout 10sec
-template CriticalEffect_CrewKO
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/CriticalEffect_CrewKO_Desc
 )
 
 CriticalEffect_CompReset_Desc is TCriticalEffectDescriptor
@@ -541,44 +265,6 @@ template CriticalEffect_CompReset
 // ****************************************************************************************************************************************
 // *** Critiques d'avions *****************************************************************************************************************
 // ****************************************************************************************************************************************
-
-AirplaneCriticalEffect_WingRippedOff_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC101'
-    EffectsPack = ~/UnitEffect_Effet_Meurt
-    TimeOut = 0
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = True
-)
-// Wing ripped off -> mort
-template AirplaneCriticalEffect_WingRippedOff
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/AirplaneCriticalEffect_WingRippedOff_Desc
-)
-
-AirplaneCriticalEffect_ElevatorRippedOff_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC102'
-    EffectsPack = ~/UnitEffect_Effet_Meurt
-    TimeOut = 0
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = True
-)
-// Elevator ripped off -> mort
-template AirplaneCriticalEffect_ElevatorRippedOff
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/AirplaneCriticalEffect_ElevatorRippedOff_Desc
-)
 
 AirplaneCriticalEffect_EngineOnFire_Desc is TCriticalEffectDescriptor
 (
@@ -618,26 +304,6 @@ template AirplaneCriticalEffect_FuelTankOnFire
 (
     Roll = <Roll>
     Descriptor = ~/AirplaneCriticalEffect_FuelTankOnFire_Desc
-)
-
-AirplaneCriticalEffect_PilotKilled_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC105'
-    HappeningKey = 'critical_pilot'
-    EffectsPack = ~/UnitEffect_Effet_Meurt
-    TimeOut = 0
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = True
-)
-// Pilot killed -> mort
-template AirplaneCriticalEffect_PilotKilled
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/AirplaneCriticalEffect_PilotKilled_Desc
 )
 
 AirplaneCriticalEffect_PilotInjured_Desc is TCriticalEffectDescriptor
@@ -818,26 +484,6 @@ template AirplaneCriticalEffect_EngineOverheating
 (
     Roll = <Roll>
     Descriptor = ~/AirplaneCriticalEffect_EngineOverheating_Desc
-)
-
-AirplaneCriticalEffect_LandingGearDamaged_Desc is TCriticalEffectDescriptor
-(
-    Token = 'CRITIC118'
-    HappeningKey = 'structural_damaged'
-    EffectsPack = ~/UnitEffect_Critic_Perd_1_PV
-    TimeOut = 0
-    RepairCost = -1
-    Unique = False
-    DisplayOnDeath = False
-)
-// Landing gear damaged -> Loss 1 HP
-template AirplaneCriticalEffect_LandingGearDamaged
-[
-    Roll
-] is TCriticalEffect
-(
-    Roll = <Roll>
-    Descriptor = ~/AirplaneCriticalEffect_LandingGearDamaged_Desc
 )
 
 AirplaneCriticalEffect_WingsDamaged_Desc is TCriticalEffectDescriptor
@@ -1233,20 +879,16 @@ template HelicoCriticalEffect_Hydraulic_Fluid_Fire
 PackEffetCritique_VehiculeStandard is
 [
     CriticalEffect_Incendiary(Roll = (1,1)),
-    CriticalEffect_EngineDamaged(Roll = (2,3)),
+    CriticalEffect_EngineDamaged(Roll = (2,2)),
+    CriticalEffect_EngineDestroyed(Roll = (3,3)),
     CriticalEffect_AmmoExplosion(Roll = (4,4)),
     CriticalEffect_FuelExplosion(Roll = (5,5)),
-    CriticalEffect_CompReset(Roll = (6,7)),
-    CriticalEffect_TracksBroken(Roll = (7,7)),
+    CriticalEffect_CompReset(Roll = (6,6)),
+    CriticalEffect_BailedOut(Roll = (7,7)),
     CriticalEffect_ArmourCracked (Roll = (8,8)),
     CriticalEffect_Spalling (Roll = (9,9)),
-    CriticalEffect_TurretStuck(Roll = (11,12)),
-    CriticalEffect_TracksBroken(Roll = (13,13)),
-
-    CriticalEffect_EngineDestroyed(Roll = (103,103)),
-    //CriticalEffect_TracksBroken(Roll = (110,110)),
-	//CriticalEffect_BailedOut(Roll = (7,7)),
-
+    CriticalEffect_TracksBroken(Roll = (10,10)),
+    CriticalEffect_TurretStuck(Roll = (11,11)),
 ]
 
 PackEffetCritique_VehiculeNonArme is

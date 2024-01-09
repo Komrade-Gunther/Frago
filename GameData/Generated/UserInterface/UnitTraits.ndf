@@ -105,6 +105,15 @@ UnitTraits is TUnitTraitsContainer
             )
         ),
         (
+            "TANDEM",
+            TUnitTraitDescriptor
+            (
+                TraitTextureName       = "Texture_Trait_Icon_tandem"
+                TraitHintTitleToken    = "GIQBDXUCJM"
+                TraitHintBodyToken     = "FVZWPYWRWX"
+            )
+        ),
+        (
             "TIRET",
             TUnitTraitDescriptor
             (

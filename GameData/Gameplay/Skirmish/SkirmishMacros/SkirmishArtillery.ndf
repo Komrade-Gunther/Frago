@@ -14,7 +14,7 @@ export Maintain_Artillery is TMacroActionDescriptor_Artillery_Specific
 //-------------------------------------------------------------------------
 private template Template_Artillery_TriggerHappy
 [
-    MinimumResourceForLaunch:int = 0,
+    MinimumResourceForLaunch = MAP[],
     ParametresDeMission = [],
     GenerationSettingHolder = TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
     ArtilleryStrikeSettingHolder = TArtilleryStrikeSettingHolder(),
@@ -226,7 +226,7 @@ export GenBTAtk_Artillery_Support is TMacroActionDescriptor_Artillery_Specific
 //-------------------------------------------------------------------------
 private template Template_Artillery_Expensive
 [
-    MinimumResourceForLaunch:int = 0,
+    MinimumResourceForLaunch = MAP[],
     ArtilleryStrikeSettingHolder = [],
 ]
 is TMacroActionDescriptor_Artillery_Specific

@@ -159,7 +159,7 @@ export Easy_Phase_Command is TSequenceGeneratorDescriptor
         ~/Defense_Static_Adaptive,
 
         ~/Airstrike_Offense,
-        ~/Airstrike_Defense,
+        ~/Airstrike_AA,
 
         //------------------------------
         // Défenses Avions Arti
@@ -181,7 +181,7 @@ Easy_Scaling is
     ~/Attack_Adaptive_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
-    ~/Airstrike_Defense_Autogen,
+    ~/Airstrike_AA_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Defense_Static_AA_Autogen,
     ~/Airstrike_Offense_Autogen,

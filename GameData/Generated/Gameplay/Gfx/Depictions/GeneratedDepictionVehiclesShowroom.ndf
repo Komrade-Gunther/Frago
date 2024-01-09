@@ -112,7 +112,10 @@ Gfx_AMX_10_RC_FR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_AMX_10_RC_FR_Tourelle_02
@@ -138,7 +141,10 @@ Gfx_AMX_13_VCI_12_7mm_FR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_AMX_13_VCI_12_7mm_FR_Tourelle_01
@@ -424,6 +430,16 @@ Gfx_BM30_Smerch_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Alternatives = Alternatives_BM30_Smerch_SOV
     Selector = Selector_BM30_Smerch_SOV
 )
+Gfx_BMD_1K_CMD_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_BMD_1K_CMD_SOV
+    Selector = Selector_BMD_1K_CMD_SOV
+)
+Gfx_BMD_1P_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_BMD_1P_SOV
+    Selector = Selector_BMD_1P_SOV
+)
 Gfx_BMD_1_CMD_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
     Alternatives = Alternatives_BMD_1_CMD_SOV
@@ -438,6 +454,11 @@ Gfx_BMD_1_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
     Alternatives = Alternatives_BMD_1_SOV
     Selector = Selector_BMD_1_SOV
+)
+Gfx_BMD_2_CMD_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_BMD_2_CMD_SOV
+    Selector = Selector_BMD_2_CMD_SOV
 )
 Gfx_BMD_2_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
@@ -689,6 +710,11 @@ Gfx_Challenger_1_Mk1_UK_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Alternatives = Alternatives_Challenger_1_Mk1_UK
     Selector = Selector_Challenger_1_Mk1_UK
 )
+Gfx_Challenger_1_Mk3_UK_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_Challenger_1_Mk3_UK
+    Selector = Selector_Challenger_1_Mk3_UK
+)
 Gfx_DCA_53T2_20mm_FR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
     Alternatives = Alternatives_DCA_53T2_20mm_FR
@@ -822,7 +848,10 @@ Gfx_FV103_Spartan_BEL_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_FV103_Spartan_BEL_Tourelle_01
@@ -838,7 +867,10 @@ Gfx_FV103_Spartan_UK_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_FV103_Spartan_UK_Tourelle_01
@@ -914,7 +946,10 @@ Gfx_FV432_Mortar_UK_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_FV432_Mortar_UK_Tourelle_02
@@ -935,7 +970,10 @@ Gfx_FV432_UK_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_FV432_UK_Tourelle_01
@@ -1251,7 +1289,10 @@ Gfx_Iltis_MILAN_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_Iltis_MILAN_RFA_Tourelle_01
@@ -1273,7 +1314,10 @@ Gfx_Iltis_reco_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_Iltis_reco_RFA_Tourelle_01
@@ -1295,7 +1339,10 @@ Gfx_Jaguar_1_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_Jaguar_1_RFA_Tourelle_01
@@ -1311,7 +1358,10 @@ Gfx_Jaguar_2_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_Jaguar_2_RFA_Tourelle_01
@@ -1368,7 +1418,10 @@ Gfx_Lars_2_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_Lars_2_RFA_Tourelle_02
@@ -1384,7 +1437,10 @@ Gfx_Leopard_1A1_CMD_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_Leopard_1A1_CMD_RFA_Tourelle_02
@@ -1400,7 +1456,10 @@ Gfx_Leopard_1A1_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_Leopard_1A1_RFA_Tourelle_02
@@ -1416,7 +1475,10 @@ Gfx_Leopard_1A5_CMD_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_Leopard_1A5_CMD_RFA_Tourelle_02
@@ -1432,7 +1494,10 @@ Gfx_Leopard_1A5_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_Leopard_1A5_RFA_Tourelle_02
@@ -1532,7 +1597,10 @@ Gfx_M109A2_HOWZ_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M109A2_HOWZ_US_Tourelle_02
@@ -1548,7 +1616,10 @@ Gfx_M109A2_NG_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M109A2_NG_US_Tourelle_02
@@ -1569,7 +1640,10 @@ Gfx_M109A3G_HOWZ_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M109A3G_HOWZ_RFA_Tourelle_02
@@ -1595,7 +1669,10 @@ Gfx_M113A1G_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M113A1G_RFA_Tourelle_01
@@ -1611,7 +1688,10 @@ Gfx_M113A1G_reco_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M113A1G_reco_RFA_Tourelle_01
@@ -1632,7 +1712,10 @@ Gfx_M113A1_TOW_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M113A1_TOW_US_Tourelle_02
@@ -1663,7 +1746,10 @@ Gfx_M113_Dragon_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M113_Dragon_US_Tourelle_02
@@ -1679,7 +1765,10 @@ Gfx_M113_GreenArcher_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M113_GreenArcher_RFA_Tourelle_01
@@ -1695,7 +1784,10 @@ Gfx_M113_GreenArcher_UK_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M113_GreenArcher_UK_Tourelle_01
@@ -1711,7 +1803,10 @@ Gfx_M113_PzMorser_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M113_PzMorser_RFA_Tourelle_01
@@ -1732,7 +1827,10 @@ Gfx_M151A2_TOW_NG_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M151A2_TOW_NG_US_Tourelle_01
@@ -1748,7 +1846,10 @@ Gfx_M151A2_scout_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_M151A2_scout_US_Tourelle_01
@@ -1892,6 +1993,11 @@ Gfx_M3A1_Bradley_CFV_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Alternatives = Alternatives_M3A1_Bradley_CFV_US
     Selector = Selector_M3A1_Bradley_CFV_US
 )
+Gfx_M3A2_Bradley_CFV_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
+(
+    Alternatives = Alternatives_M3A2_Bradley_CFV_US
+    Selector = Selector_M3A2_Bradley_CFV_US
+)
 Gfx_M48A2C_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
     Alternatives = Alternatives_M48A2C_RFA
@@ -1911,6 +2017,7 @@ Gfx_M48_Chaparral_MIM72F_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
 (
     Alternatives = Alternatives_M48_Chaparral_MIM72F_US
     Selector = Selector_M48_Chaparral_MIM72F_US
+    SubDepictions = HumanSubDepictionsShowroom_M48_Chaparral_MIM72F_US
     SubDepictionGenerators = [ SubGenerators_Showroom_M48_Chaparral_MIM72F_US ]
 )
 Gfx_M548A2_supply_US_Showroom_Autogen is ShowroomVehicleDepictionTemplate
@@ -2001,7 +2108,10 @@ Gfx_MCV_80_Warrior_MILAN_UK_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_MCV_80_Warrior_MILAN_UK_Tourelle_02
@@ -2057,7 +2167,10 @@ Gfx_MTLB_Vasilek_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_MTLB_Vasilek_SOV_Tourelle_01
@@ -2240,7 +2353,10 @@ Gfx_SPW_152K_DDR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_SPW_152K_DDR_Tourelle_01
@@ -2445,7 +2561,10 @@ Gfx_TPZ_Fuchs_1_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_TPZ_Fuchs_1_RFA_Tourelle_01
@@ -2461,7 +2580,10 @@ Gfx_TPZ_Fuchs_CMD_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_TPZ_Fuchs_CMD_RFA_Tourelle_01
@@ -2477,7 +2599,10 @@ Gfx_TPZ_Fuchs_MILAN_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_TPZ_Fuchs_MILAN_RFA_Tourelle_01
@@ -2485,7 +2610,10 @@ Gfx_TPZ_Fuchs_MILAN_RFA_Showroom_Autogen is ShowroomVehicleDepictionTemplate
         ),
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_TPZ_Fuchs_MILAN_RFA_Tourelle_02
@@ -2603,7 +2731,10 @@ Gfx_UAZ_469_Reco_DDR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_UAZ_469_Reco_DDR_Tourelle_01
@@ -2619,7 +2750,10 @@ Gfx_UAZ_469_Reco_SOV_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_UAZ_469_Reco_SOV_Tourelle_01
@@ -2710,7 +2844,10 @@ Gfx_VAB_CMD_FR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_VAB_CMD_FR_Tourelle_01
@@ -2726,7 +2863,10 @@ Gfx_VAB_FR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_01"
+            Anchors = 
+            [
+                "base_tourelle_01",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_VAB_FR_Tourelle_01
@@ -2749,7 +2889,10 @@ Gfx_VAB_MILAN_FR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     [
         TSubDepiction
         (
-            Anchor = "base_tourelle_02"
+            Anchors = 
+            [
+                "base_tourelle_02",
+            ]
             Depiction = ShowroomDepictionTemplateInternal
             (
                 MeshDescriptor = $/GFX/DepictionResources/Modele_VAB_MILAN_FR_Tourelle_02
@@ -2884,15 +3027,4 @@ Gfx_ZSU_57_2_DDR_Showroom_Autogen is ShowroomVehicleDepictionTemplate
     Alternatives = Alternatives_ZSU_57_2_DDR
     Selector = Selector_ZSU_57_2_DDR
     SubDepictions = HumanSubDepictionsShowroom_ZSU_57_2_DDR
-)
-Gfx_60mm_mortar_101st_FRL_Showroom_Autogen is ShowroomVehicleDepictionTemplate
-(
-    Alternatives = Alternatives_81mm_mortar_UK
-    Selector = Selector_81mm_mortar_UK
-    SubDepictions = HumanSubDepictionsShowroom_Mortier_107mm_Airborne_US
-)
-Gfx_M270_MLRS_US_ATACMS_FRL_Showroom_Autogen is ShowroomVehicleDepictionTemplate
-(
-    Alternatives = Alternatives_M270_MLRS_US
-    Selector = Selector_M270_MLRS_US
 )

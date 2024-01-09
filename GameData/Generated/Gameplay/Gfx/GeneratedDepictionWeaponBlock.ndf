@@ -594,6 +594,22 @@ Weapon_Canon_HE_73_mm_2A28_Grom is TCompositeHappening
         SFXWeapon_Canon_HE_73_mm_2A28_Grom,
     ]
 )
+Weapon_ATGM_9k111M_Faktoriya is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_ATGM_9k111M_Faktoriya,
+        SFXWeapon_ATGM_9k111M_Faktoriya,
+    ]
+)
+Weapon_MMG_PKT_7_62mm_x2 is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_MMG_PKT_7_62mm_x2,
+        SFXWeapon_MMG_PKT_7_62mm_x2,
+    ]
+)
 Weapon_AutoCanon_AP_30mm_24A2_BMP2 is TCompositeHappening
 (
     SubHappenings = 
@@ -610,6 +626,14 @@ Weapon_AutoCanon_HE_30mm_24A2_BMP2 is TCompositeHappening
         SFXWeapon_AutoCanon_HE_30mm_24A2_BMP2,
     ]
 )
+Weapon_ATGM_9M113_Konkurs_BMP2 is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_ATGM_9M113_Konkurs_BMP2,
+        SFXWeapon_ATGM_9M113_Konkurs_BMP2,
+    ]
+)
 Weapon_Lance_grenade_AGS17 is TCompositeHappening
 (
     SubHappenings = 
@@ -624,14 +648,6 @@ Weapon_ATGM_9M14_MalyutkaP is TCompositeHappening
     [
         FXWeapon_ATGM_9M14_MalyutkaP,
         SFXWeapon_ATGM_9M14_MalyutkaP,
-    ]
-)
-Weapon_ATGM_9M113_Konkurs_BMP2 is TCompositeHappening
-(
-    SubHappenings = 
-    [
-        FXWeapon_ATGM_9M113_Konkurs_BMP2,
-        SFXWeapon_ATGM_9M113_Konkurs_BMP2,
     ]
 )
 Weapon_Canon_HE_100mm_2A70 is TCompositeHappening
@@ -1656,6 +1672,14 @@ Weapon_ATGM_BGM71D_TOW_2_x2 is TCompositeHappening
     [
         FXWeapon_ATGM_BGM71D_TOW_2_x2,
         SFXWeapon_ATGM_BGM71D_TOW_2_x2,
+    ]
+)
+Weapon_ATGM_BGM71D_TOW_2A_x2 is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_ATGM_BGM71D_TOW_2A_x2,
+        SFXWeapon_ATGM_BGM71D_TOW_2A_x2,
     ]
 )
 Weapon_ATGM_BGM71C_ITOW_x2 is TCompositeHappening
@@ -3532,14 +3556,5 @@ Weapon_Bomb_GBU_24_x2 is TCompositeHappening
     [
         FXWeapon_Bomb_GBU_24_x2,
         SFXWeapon_Bomb_GBU_24_x2,
-    ]
-)
-
-Weapon_RocketArt_ATACMS_FRL is TCompositeHappening
-(
-    SubHappenings = 
-    [
-        FXWeapon_RocketArt_ATACMS_FRL,
-        SFXWeapon_RocketArt_M26_227mm,
     ]
 )

@@ -64,16 +64,6 @@ private LoginModalConnectButtonDescriptor is LoginScreenMainButton
 
 // -------------------------------------------------------------------------------------------------
 
-private AutoLoginModalConnectButtonDescriptor is LoginScreenMainButton
-(
-    ElementName = "AutoLoginConnectButton"
-    ButtonMagnifiableWidthHeight = [80.0, 25.0]
-    TextToken = 'BTN_CONNEC'
-    Mapping = TEugBMutablePBaseClass(Value = TUserInputMapping(KeyboardEventID = UserInputKeyboard/KEY_ENTER))
-)
-
-// -------------------------------------------------------------------------------------------------
-
 private LoginModalLinkButtonDescriptor is LoginScreenMainButton
 (
     ElementName = "LinkButton"
@@ -413,19 +403,6 @@ BUCKSpecificLoginMainComponentDescriptor is LoginTvContainer
                 BUCKListElementDescriptor(ComponentDescriptor = ~/LoginModalLinkButtonDescriptor),
                 BUCKListElementDescriptor(ComponentDescriptor = ~/LoginModalFirstConnexionButtonDescriptor),
             ]
-        ),
-        BUCKContainerDescriptor
-        (
-            ElementName = "AutoLoginButtonList"
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                AlignementToFather  = [0.5, 0.5]
-                AlignementToAnchor  = [0.5, 0.5]
-            )
-
-            FitStyle = ~/ContainerFitStyle/FitToContent
-
-            Components = [ ~/AutoLoginModalConnectButtonDescriptor ]
         ),
         LoginPanelMonitorForeground
 

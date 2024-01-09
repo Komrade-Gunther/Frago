@@ -194,4 +194,3 @@ export DamageTypeEvolutionOverRangeDescriptor_APDS_autocannon_FRL is TDamageType
        (100.0, 38.0),
    ]
 )
-

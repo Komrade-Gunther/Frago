@@ -3,7 +3,8 @@ SelectionPawnPanelWidth is 373.0
 
 template BUCKSpecificSelectionPanelPawnMainComponent
 [
-    ContainsCubeAction : bool
+    ContainsCubeAction : bool,
+    HasSpotlight : bool,
 ] is BUCKListDescriptor
 (
     ElementName = "SmartGroupsConfigurationMainPanel"
@@ -49,7 +50,6 @@ template BUCKSpecificSelectionPanelPawnMainComponent
                     )] : []
                 ) +
                 [
-                    ,
                     BUCKListElementDescriptor
                     (
                         ComponentDescriptor = BUCKListDescriptor
@@ -142,6 +142,7 @@ template BUCKSpecificSelectionPanelPawnMainComponent
                                                 BladeDescriptor = ~/CombatGroupsTabInStrategic
                                             ),
                                         ]
+                                        + (<HasSpotlight> ? [~/SpotLight_PawnInfoPanel] : [])
                                     )
                                 ),
                             ]
@@ -173,6 +174,19 @@ template BUCKSpecificSelectionPanelPawnMainComponent
             )
         ),
     ]
+)
+
+//-------------------------------------------------------------------------------------
+
+SpotLight_PawnInfoPanel is BUCKSpotlightDescriptor
+(
+    UniqueName = "SpotLight_PawnInfoPanel"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 1.0]
+        AlignementToAnchor = [0.0, 0.0]
+        AlignementToFather = [0.0, 0.0]
+    )
 )
 
 //-------------------------------------------------------------------------------------
@@ -706,12 +720,17 @@ template UISpecificSelectionPanelPawnViewDescriptorTemplate
     MainComponentContainerUniqueName : string = "",
     SmartGroupsDisplayerAlignment : float2 = [0.0, 1.0],
     ContainsCubeAction : bool,
+    HasSpotlight : bool,
     HQBackgroundBlockColorToken : string = "",
 ]
 is TUISpecificSelectionPanelPawnViewDescriptor
 (
     MainComponentContainerUniqueName = <MainComponentContainerUniqueName>
-    MainComponentDescriptor = BUCKSpecificSelectionPanelPawnMainComponent(ContainsCubeAction = <ContainsCubeAction>)
+    MainComponentDescriptor = BUCKSpecificSelectionPanelPawnMainComponent
+    (
+        ContainsCubeAction = <ContainsCubeAction>
+        HasSpotlight = <HasSpotlight>
+    )
 
     SmartGroupsDisplayerDescriptor = UISpecificStrategicSmartGroupsDisplayerViewDescriptor
     (

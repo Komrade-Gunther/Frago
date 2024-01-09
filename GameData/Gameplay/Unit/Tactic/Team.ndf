@@ -81,10 +81,6 @@ export Tactic_TeamUnitDescriptor is TEntityDescriptor
                 ),
                 TacticVirtualFactory
                 (
-                    FactoryType = EDefaultFactories/Marine
-                ),
-                TacticVirtualFactory
-                (
                     FactoryType = EDefaultFactories/Support
                 ),
                 TacticVirtualFactory

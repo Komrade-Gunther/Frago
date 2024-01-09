@@ -2,15 +2,16 @@
 
 template ShortcutButton
 [
-    ElementName : string = '',
-    UniqueName : string = '',
-    TextureToken : string = '',
-    HintTitleToken : string = '',
-    HintBodyToken : string = '',
-    HintExtendedToken : string = '',
+    ElementName : string = "",
+    UniqueName : string = "",
+    SpotlightUniqueName : string = "",
+    TextureToken : string = "",
+    HintTitleToken : string = "",
+    HintBodyToken : string = "",
+    HintExtendedToken : string = "",
     RelativeWidthHeight : float2 = [1.0, 1.0],
     MagnifiableWidthHeight : float2 = [0.0, 0.0],
-    MagnifiableWidthHeightTexture : = [30.0, 30.0],
+    MagnifiableWidthHeightTexture : float2 = [30.0, 30.0],
     BackgroundBlockColorToken : string = "BoutonTemps",
     BorderLineColorToken : string = "CouleurBordure_boutonShortcuts",
     LeftClickSound : TSoundDescriptor = nil,
@@ -73,7 +74,19 @@ template ShortcutButton
                 )
             ]
         ),
-    ]
+    ] +
+    ( <SpotlightUniqueName> == "" ? []
+        : [
+            BUCKSpotlightDescriptor
+            (
+                UniqueName = <SpotlightUniqueName>
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 1.0]
+                )
+            )
+        ]
+    )
 )
 
 //------------------------------------------------------------------------------
@@ -147,6 +160,7 @@ BoutonAffichageStrategicSituation is ShortcutButton
     RelativeWidthHeight = [0.0, 0.0]
     ElementName = 'BtnStrategicSituation'
     UniqueName = 'StrategicHeader_BtnStrategicSituation'
+    SpotlightUniqueName = 'SpotLight_SituationBtn'
     TextureToken = "UseStrategic_BoutonMission"
     HintTitleToken = "SSC_TITLE"
     HintBodyToken = "head_Osb"
@@ -161,6 +175,7 @@ BoutonAffichageOrdreDeBataille is ShortcutButton
     RelativeWidthHeight = [0.0, 0.0]
     UniqueName = 'StrategicHeader_OrganisationBtn'
     ElementName = 'BtnOrganisation'
+    SpotlightUniqueName = 'SpotLight_OrganisationBtn'
     TextureToken = "UseStrategic_BoutonOrganisation"
     HintTitleToken = "SBO_TITL"
     HintBodyToken = "head_Obb"
@@ -169,12 +184,14 @@ BoutonAffichageOrdreDeBataille is ShortcutButton
     LeftClickSound = SoundEvent_SteelmanOrderOfBattle
 )
 
+
 BoutonAffichagePertes is ShortcutButton
 (
     MagnifiableWidthHeight = [32.0, 100 div 3]
     RelativeWidthHeight = [0.0, 0.0]
     UniqueName = 'StrategicHeader_BtnLossesState'
     ElementName = 'BtnLossesState'
+    SpotlightUniqueName = 'SpotLight_CasualtiesBtn'
     TextureToken = "UseStrategic_BoutonPertes"
     HintTitleToken = "SH_LOSS"
     HintBodyToken = "head_Lsb"
@@ -189,6 +206,7 @@ BoutonAccelerationDuTemps is ShortcutButton
     MagnifiableWidthHeight = [32.0, 100 div 3]
     RelativeWidthHeight = [0.0, 0.0]
     UniqueName = ''
+    SpotlightUniqueName = 'SpotLight_GameSpeedBtn'
     TextureToken = "vitesse03Strat"
     HintTitleToken = "sp_t"
     HintBodyToken = "sp_c"
@@ -196,6 +214,55 @@ BoutonAccelerationDuTemps is ShortcutButton
     BorderLineColorToken = "SM_Grullo"
     LeftClickSound = SoundEvent_SteelmanGameSpeed
 )
+
+//------------------------------------------------------------------------------
+// Spotlights Steelman
+//------------------------------------------------------------------------------
+
+SpotLight_SituationBtn is BUCKSpotlightDescriptor
+(
+    UniqueName = "SpotLight_SituationBtn"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 1.0]
+        AlignementToAnchor = [0.0, 0.0]
+        AlignementToFather = [0.0, 0.0]
+    )
+)
+
+SpotLight_OrganisationBtn is BUCKSpotlightDescriptor
+(
+    UniqueName = "SpotLight_OrganisationBtn"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 1.0]
+        AlignementToAnchor = [0.0, 0.0]
+        AlignementToFather = [0.0, 0.0]
+    )
+)
+
+SpotLight_CasualtiesBtn is BUCKSpotlightDescriptor
+(
+    UniqueName = "SpotLight_CasualtiesBtn"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 1.0]
+        AlignementToAnchor = [0.0, 0.0]
+        AlignementToFather = [0.0, 0.0]
+    )
+)
+
+SpotLight_GameSpeedBtn is BUCKSpotlightDescriptor
+(
+    UniqueName = "SpotLight_GameSpeedBtn"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 1.0]
+        AlignementToAnchor = [0.0, 0.0]
+        AlignementToFather = [0.0, 0.0]
+    )
+)
+
 //------------------------------------------------------------------------------
 
 BUCKSpecificShortcutsForSelectionMainComponentDescriptor is PanelRoundedCorner

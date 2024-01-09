@@ -50,7 +50,7 @@ export Ammo_FireWithHighSpreadProbaForTestIA is TAmmunitionDescriptor
     Caliber                     = 'Napalm'
     WeaponCursorType            = Weapon_Cursor_MachineGun
     Level                       = 1
-    Arme                        = TDamageTypeRTTI(Family="he" Index=1)
+    Arme                        = TDamageTypeRTTI(Family=DamageFamily_he Index=1)
     ProjectileType              = EProjectileType/Obus
     TempsEntreDeuxTirs          = 1.0
     PorteeMaximale              = ((3000) * Metre)

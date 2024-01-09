@@ -437,6 +437,7 @@ private template SoloQuitButton
     BackgroundBlockColorToken = "loginBoutonBackground_cyan"
     TextSizeToken = "32"
     BorderThicknessToken = "3"
+    LeftClickSound = ~/SoundEvent_SoloNavigationButton
 )
 
 //-------------------------------------------------------------------------------------
@@ -701,6 +702,8 @@ template SoloNavigationButton
 
     BigLineAction = ~/BigLineAction/ResizeFont
 
+    LeftClickSound = ~/SoundEvent_SoloNavigationButton
+
     Mapping = <Mapping>
 )
 
@@ -834,7 +837,7 @@ private template ScenarioMultiList
         "OperationDurationMultilist"
     ] + ((<GameType> == ~/GameChallenge) ? ["OperationCountryMultilist"] : [])
 
-    SortableColumnNames = ((<GameType> == ~/GameCampaign) ? [] :
+    SortableColumnNames = ((<GameType> == ~/GameTutorial) ? [] :
     [
         "IsCompletedMultilist",
         "OperationNameMultilist",
@@ -1125,7 +1128,7 @@ private template BUCKSpecificScenarioMainComponentDescriptor
 ] is WindowFrame
 (
     HasBackground = false
-    TitleToken = (<GameType> == ~/GameCampaign) ? "TACT_TUTO" : ((<GameType> == ~/GameStrategic) ? "new_AG" : "new_HB")
+    TitleToken = (<GameType> == ~/GameStrategic) ? "new_AG" : "new_HB"
     HasTitle =  (<IsSubView> ? false : true)
     ContentExtendWeight = (<IsSubView> ? 0.2 : 1.0)
     ContentRelativeWidthHeight = [1.0, 1.0]
@@ -1153,30 +1156,21 @@ private template BUCKSpecificScenarioMainComponentDescriptor
                 AlignementToFather = [0.5, 1.0]
             )
 
-            Components = []+ ((<GameType> == ~/GameChallenge) ?
+            // Note : Game type is never tutorial, which uses UISpecificTutorialViewDescriptor
+            Components = ((<GameType> == ~/GameChallenge) ?
             [
                 ~/FullPanelPreviewMission,
             ] :
             [
-                FullPanelLoadMission
-                (
-                    ListTitle = (<GameType> == ~/GameCampaign) ? "tuto_list" : ((<GameType> == ~/GameStrategic) ? "str_list" : "op_list")
-                    BackgroundTexture = (<GameType> == ~/GameCampaign) ? ~/TutorielMissionListBackground : ((<GameType> == ~/GameStrategic) ? ~/StrategicMissionListBackground : ~/ChallengeMissionListBackground)
-                    GameType = <GameType>
-                ),
+                ~/StrategicFullPanel
             ])
         )
     ]
 )
 //-------------------------------------------------------------------------------------
-template FullPanelLoadMission
-[
-    BackgroundTexture : string,
-    ListTitle : string,
-    GameType : int,
-] is BUCKTextureDescriptor
+StrategicFullPanel is BUCKTextureDescriptor
 (
-    ElementName = "LoadMissionFullPanel"
+    ElementName = "StrategicFullPanel"
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [1214.0, 806.0]
@@ -1185,7 +1179,7 @@ template FullPanelLoadMission
         MagnifiableOffset = [0,25]
     )
 
-    TextureToken = <BackgroundTexture>
+    TextureToken = ~/StrategicMissionListBackground
     HidePointerEvents = true
 
     Components =
@@ -1193,8 +1187,8 @@ template FullPanelLoadMission
         // page de gauche
         ScenarioListContainer
         (
-            ListTitle = <ListTitle>
-            GameType = <GameType>
+            ListTitle = "str_list"
+            GameType = ~/GameStrategic
         ),
         // page de droite
         ScenarioDescriptionContainer
@@ -1207,7 +1201,7 @@ template FullPanelLoadMission
                 AlignementToFather = [0.5, 0.0]
                 AlignementToAnchor = [0.5, 0.0]
             )
-            GameType = <GameType>
+            GameType = ~/GameStrategic
         ),
     ]
 )

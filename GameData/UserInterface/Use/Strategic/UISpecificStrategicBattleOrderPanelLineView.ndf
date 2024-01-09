@@ -342,12 +342,12 @@ is UISpecificStrategicBattleOrderPanelLineViewDescriptor
 
                         TextStyle = "Default"
 
-                        TypefaceToken = "Eurostyle_Italic"
+                        TypefaceToken = "Eurostyle"
                         BigLineAction = ~/BigLineAction/CutByDots
 
                         TextDico = <TitleTextDico>
 
-                        TextColor = "BlancEquipe"
+                        TextColor = "Blanc"
                         TextSize = "14"
                     )
                 ),
@@ -471,8 +471,8 @@ template UISpecificStrategicBattleOrderPanelCompanyLineViewDescriptor
                     TextStyle = "Default"
                     BigLineAction = ~/BigLineAction/ResizeFont
 
-                    TypefaceToken = "Eurostyle"
-                    TextColor = "Blanc"
+                    TypefaceToken = "Eurostyle_Italic"
+                    TextColor = "BlancEquipe"
                     TextSize = "14"
                 ),
             ]

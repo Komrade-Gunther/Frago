@@ -10,7 +10,7 @@ template HUDBackgroundParallelogram
     Color1 : string,
     HasBorder : bool = false,
     Components : LIST<TBUCKContainerDescriptor> = [],
-
+    HidePointerEvents : bool = false,
 ]
 is BUCKPolygonDescriptor
 (
@@ -43,7 +43,7 @@ is BUCKPolygonDescriptor
     BorderThicknessToken = '1'
 
     Components = <Components>
-
+    HidePointerEvents = <HidePointerEvents>
 )
 
 template HUDBackgroundParallelogramFreize

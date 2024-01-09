@@ -17,6 +17,10 @@ Texture_Division_Emblem_Berlin_Command is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/Berlin_Command.png"
 )
+Texture_Division_Emblem_DDR_GroundForces_SansFond is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/DDR_GroundForces_SansFond.png"
+)
 Texture_Division_Emblem_4_MSD_DDR is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/4_MSD_DDR.png"
@@ -60,6 +64,10 @@ Texture_Division_Emblem_35th_VDV_Brigade is TUIResourceTexture_Common
 Texture_Division_Emblem_39th_gmsd is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/39th_gmsd.png"
+)
+Texture_Division_Emblem_Blazon57th_gtd is TUIResourceTexture_Common
+(
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/Blazon57th_gtd.png"
 )
 Texture_Division_Emblem_79th_gtd is TUIResourceTexture_Common
 (
@@ -132,6 +140,7 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Division_Emblem_FR_5eDB", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_5eDB)]),
         ("Texture_Division_Emblem_default", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_default)]),
         ("Texture_Division_Emblem_Berlin_Command", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_Berlin_Command)]),
+        ("Texture_Division_Emblem_DDR_GroundForces_SansFond", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_DDR_GroundForces_SansFond)]),
         ("Texture_Division_Emblem_4_MSD_DDR", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_4_MSD_DDR)]),
         ("Texture_Division_Emblem_7_Panzerdivision_DDR", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_7_Panzerdivision_DDR)]),
         ("Texture_Division_Emblem_RDA_KDA_Erfurt", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_RDA_KDA_Erfurt)]),
@@ -143,6 +152,7 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Division_Emblem_SOV_27GvMSD", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_SOV_27GvMSD)]),
         ("Texture_Division_Emblem_35th_VDV_Brigade", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_35th_VDV_Brigade)]),
         ("Texture_Division_Emblem_39th_gmsd", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_39th_gmsd)]),
+        ("Texture_Division_Emblem_Blazon57th_gtd", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_Blazon57th_gtd)]),
         ("Texture_Division_Emblem_79th_gtd", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_79th_gtd)]),
         ("Texture_Division_Emblem_UK_1st_Armoured", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_UK_1st_Armoured)]),
         ("Texture_Division_Emblem_UK_2nd_Infantry", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_UK_2nd_Infantry)]),

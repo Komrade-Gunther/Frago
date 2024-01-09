@@ -205,7 +205,7 @@ GameTypeChoiceButton is BUCKListDescriptor
         (
             ComponentDescriptor = SpecificModalButton
             (
-                ElementName = "CampaignButton"
+                ElementName = "StrategicButton"
                 TextToken = "SGP_CAMP"
                 IsFilled = false
                 IsTogglable = true

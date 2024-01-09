@@ -28,9 +28,8 @@ private StandardLabelListNameOnly is BUCKListDescriptor
                 Components =
                 [
                     // Icône de couverture
-                    UnitLabelCoverIcon
+                    UnitLabelTerrainIcon
                     (
-                        IsForMultiSelection = false
                         LocalRenderLayer = 4
                     ),
 

@@ -15,10 +15,11 @@ private StrategicBattlePlanningButtons is StrategicSecondaryCubeActionPanel
 
     ]
 )
+
 AttackPreparation is PanelRoundedCorner
 (
-    HidePointerEvents = true
     ElementName = "AttackPreparation"
+    HidePointerEvents = true
 
     BackgroundBlockColorToken = 'SM_RifleGreen_75'
     BorderLineColorToken = 'SM_Grullo'
@@ -28,35 +29,29 @@ AttackPreparation is PanelRoundedCorner
     ComponentFrame = TUIFramePropertyRTTI ( MagnifiableWidthHeight = [600,0])
     FitStyle = ~/ContainerFitStyle/FitToContentVertically
     Components =
-
     [
-
-        BUCKListDescriptor
+       BUCKListDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                RelativeWidthHeight = [1,0]
-
+                RelativeWidthHeight = [1.0, 0.0]
             )
-            //BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
-            FirstMargin = TRTTILength (Magnifiable = 15)
+
+            FirstMargin = TRTTILength (Magnifiable = 15.0)
             InterItemMargin = TRTTILength( Magnifiable = 5.0 )
             LastMargin = TRTTILength( Magnifiable = 15.0 )
             Axis = ~/ListAxis/Vertical
+
             Elements =
             [
                 BUCKListElementDescriptor
                 (
                     ComponentDescriptor = BUCKTextDescriptor
                     (
-
-
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            // MagnifiableWidthHeight = [0,20]
                             AlignementToFather = [0.5, 0.0]
                             AlignementToAnchor = [0.5, 0.0]
-
                         )
 
                         ParagraphStyle = TParagraphStyleRTTI
@@ -84,15 +79,11 @@ AttackPreparation is PanelRoundedCorner
                 (
                     ComponentDescriptor = BUCKTextDescriptor
                     (
-
-
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            RelativeWidthHeight = [1,0]
-                            //MagnifiableWidthHeight = [0,20]
+                            RelativeWidthHeight = [1.0, 0.0]
                             AlignementToFather = [0.5, 0.0]
                             AlignementToAnchor = [0.5, 0.0]
-
                         )
 
                         ParagraphStyle = TParagraphStyleRTTI
@@ -130,46 +121,39 @@ AttackPreparation is PanelRoundedCorner
                         BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
                         Axis = ~/ListAxis/Horizontal
-                        InterItemMargin = TRTTILength ( Magnifiable = 10)
+                        InterItemMargin = TRTTILength (Magnifiable = 10.0)
+
                         Elements =
                         [
                             BUCKListElementDescriptor
                             (
                                 ComponentDescriptor = BoutonStartBattle
-                                            (
-                                                MagnifiableWidthHeight =  [160,40]
-                                                ElementName = 'ValidateButton'
-                                                TextToken = "BtnValPlan"
-                                                HintBodyToken = "BtnValPlaH"
-                                            )
+                                (
+                                    MagnifiableWidthHeight =  [160.0, 40.0]
+                                    ElementName = 'ValidateButton'
+                                    TextToken = "BtnValPlan"
+                                    HintBodyToken = "BtnValPlaH"
+                                )
                             ),
                             BUCKListElementDescriptor
                             (
                                 ComponentDescriptor = BoutonStartBattle
-                                            (
-                                                MagnifiableWidthHeight =  [160,40]
-                                                ElementName = 'CancelButton'
-                                                TextToken = "BTL_SHOCAN"
-                                                HintBodyToken = "BtnCanPreH"
-                                            )
+                                (
+                                    MagnifiableWidthHeight =  [160.0, 40.0]
+                                    ElementName = 'CancelButton'
+                                    TextToken = "BTL_SHOCAN"
+                                    HintBodyToken = "BtnCanPreH"
+                                )
                             ),
-
                          ]
                     )
                 ),
             ]
-    ),
-
-
-
-
-
-
-
-
+        ),
     ]
 )
 StrategicBattlePlanningResources is TStrategicBattlePlanningResources
 (
     MainComponent = ~/StrategicBattlePlanningButtons
 )
+

@@ -5,11 +5,7 @@ BUCKSpecificInGameObjectiveBriefMainComponentDescriptor is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        // MagnifiableWidthHeight = [~/ObjectiveBriefMainComponentWidth, 0.0]
         RelativeWidthHeight = [1,0]
-        // AlignementToFather = [1.0, 0.0]
-        // AlignementToAnchor = [1.0, 0.0]
-        // MagnifiableOffset = [-10,0]
     )
 
     FirstMargin  = TRTTILength (Magnifiable = 8.0)
@@ -35,8 +31,6 @@ BUCKSpecificInGameObjectiveBriefMainComponentDescriptor is BUCKListDescriptor
                 ParagraphStyle = ~/LDHintParagraphStyleLeftAlignedExact
                 HorizontalFitStyle = ~/FitStyle/MinBetweenUserDefinedAndContent
                 VerticalFitStyle = ~/FitStyle/UserDefined
-                // HasBackground = true
-                BackgroundBlockColorToken = 'Orange'
 
                 TextPadding = TRTTILength4(Magnifiable = [10.0, 0.0, 4.0, 0.0])
 

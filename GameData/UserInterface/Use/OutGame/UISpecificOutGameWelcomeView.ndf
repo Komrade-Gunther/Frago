@@ -10,8 +10,8 @@ private UIWelcomeQuitButton is BUCKButtonDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [200.0, 60.0]
-        AlignementToAnchor = [0.0, 1.0]
-        AlignementToFather = [0.0, 1.0]
+        AlignementToAnchor = [0.5, 1.0]
+        AlignementToFather = [0.5, 1.0]
     )
     HasBackground = true
     BackgroundBlockColorToken = "HUBOutGameNavBar/ButtonOverlay"

@@ -10,7 +10,9 @@ is BUCKTextDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [100.0, 20.0]
-        MagnifiableOffset = [0.0, 40.0]
+        MagnifiableOffset = [27.0, 0.0]
+        AlignementToAnchor = [0.0, 1.0]
+        AlignementToFather = [0.0, 1.0]
     )
 
     ParagraphStyle = TParagraphStyleRTTI
@@ -28,7 +30,6 @@ is BUCKTextDescriptor
     TextColor = "Noir"
     TextSize = "14"
     Rotation = -45
-    TextPadding = TRTTILength4 (Magnifiable = [30.0, 0.0, 0.0, 0.0])
 )
 
 //-------------------------------------------------------------------------------------
@@ -165,6 +166,75 @@ private MultiScenarioSelectionBackButton is ConfirmButton
 )
 
 //-------------------------------------------------------------------------------------
+
+private template MultiScenarioMultiListTitle
+[
+    ElementName : string,
+    RelativeWidthHeight : float2 = [0.0, 1.0],
+    MagnifiableWidthHeight : float2 = [0.0, 0.0],
+    SortingType : int,
+    TextToken : string,
+    HintBodyToken : string,
+] is BUCKContainerDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = <RelativeWidthHeight>
+        MagnifiableWidthHeight = <MagnifiableWidthHeight>
+    )
+
+    Components =
+    [
+        BUCKPerspectiveWarpOffscreenContainerDescriptor
+        (
+            ElementName = <ElementName> + "PerspectiveContainer"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 1.0]
+            )
+
+            DistortTextureDrawer = $/UserInterface/UIDistortTextureDrawer
+
+            MagnifiableTopLeftOffset = [60.0, 0.0]
+            MagnifiableTopRightOffset = [60.0, 0.0]
+            MagnifiableBottomLeftOffset = [0.0, 0.0]
+            MagnifiableBottomRightOffset = [0.0, 0.0]
+
+            Components =
+            [
+                BUCKMultiListTitleButtonDescriptor
+                (
+                    ElementName = <ElementName>
+                    ComponentFrame = TUIFramePropertyRTTI
+                    (
+                        RelativeWidthHeight = [1.0, 1.0]
+                    )
+
+                    SortingType = <SortingType>
+                    CheckBoxBorderLineColorToken = 'gris_load'
+
+                    ShowCheckbox = false
+                    HidePointerEvents = true
+
+                    HasBackground = true
+                    BackgroundBlockColorToken = "fond_gris_liste_carte"
+
+                    HasBorder = true
+                    BorderThicknessToken = "1"
+                    BorderLineColorToken = "fond_gris_liste_carte"
+                ),
+                BUCKSpecificHintableArea
+                (
+                    HintBodyToken = <HintBodyToken>
+                    DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+                )
+            ]
+        ),
+        MultiScenarioSelectionTitleText(TextToken = <TextToken> )
+    ]
+)
+
+//-------------------------------------------------------------------------------------
 private MultiScenarioSelectionTitleColumns is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
@@ -181,150 +251,79 @@ private MultiScenarioSelectionTitleColumns is BUCKListDescriptor
         BUCKListElementDescriptor
         (
             ExtendWeight = 1.0
-            ComponentDescriptor = BUCKMultiListTitleButtonDescriptor
+            ComponentDescriptor = MultiScenarioMultiListTitle
             (
                 ElementName = "ScenarioNameMultiList"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [1.0, 1.0]
-                )
-
+                RelativeWidthHeight = [1.0, 1.0]
                 SortingType = ~/MultiListSorting/String
-                CheckBoxBorderLineColorToken = 'gris_load'
-
-                ShowCheckbox = false
-                HidePointerEvents = true
-                Components =
-                [
-                    MultiScenarioSelectionTitleText(TextToken = 'MSSNAME' ),
-                    parallelograme_englobant(largeur = 244 HintBodyToken = 'msnameh')
-                ]
+                TextToken = "MSSNAME"
+                HintBodyToken = "msnameh"
             )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = BUCKMultiListTitleButtonDescriptor
+            ComponentDescriptor = MultiScenarioMultiListTitle
             (
                 ElementName = "CombatRuleMultiList"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [~/MultiScenarioSelectionCombatRuleColumnWidth, 0.0]
-                )
-
+                MagnifiableWidthHeight = [~/MultiScenarioSelectionCombatRuleColumnWidth, 0.0]
                 SortingType = ~/MultiListSorting/Integer
-                ShowCheckbox = false
-                HidePointerEvents = true
-                Components =
-                [
-                    MultiScenarioSelectionTitleText(TextToken = 'MSSCBTRUL' ),
-                    parallelograme_englobant(largeur = 120 HintBodyToken = 'MSSCBTRULh')
-                ]
+                TextToken = "MSSCBTRUL"
+                HintBodyToken = "MSSCBTRULh"
             )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = BUCKMultiListTitleButtonDescriptor
+            ComponentDescriptor = MultiScenarioMultiListTitle
             (
                 ElementName = "IsRankedMultiList"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [~/MultiScenarioSelectionIsRankedColumnWidth, 0.0]
-                )
-
+                MagnifiableWidthHeight = [~/MultiScenarioSelectionIsRankedColumnWidth, 0.0]
                 SortingType = ~/MultiListSorting/Integer
-                ShowCheckbox = false
-                HidePointerEvents = true
-                Components =
-                [
-                    MultiScenarioSelectionTitleText(TextToken = 'MSSRANKED' ),
-                    parallelograme_englobant(largeur = 100 HintBodyToken = 'MSSRANKEDh')
-                ]
+                TextToken = "MSSRANKED"
+                HintBodyToken = "MSSRANKEDh"
             )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = BUCKMultiListTitleButtonDescriptor
+            ComponentDescriptor = MultiScenarioMultiListTitle
             (
                 ElementName = "NumberPlayersMultiList"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [~/MultiScenarioSelectionNumberPlayersColumnWidth, 0.0]
-                )
-
+                MagnifiableWidthHeight = [~/MultiScenarioSelectionNumberPlayersColumnWidth, 0.0]
                 SortingType = ~/MultiListSorting/Integer
-                ShowCheckbox = false
-                HidePointerEvents = true
-                Components =
-                [
-                    MultiScenarioSelectionTitleText(TextToken = 'MSSNBPLAY' ),
-                    parallelograme_englobant(largeur = 100 HintBodyToken = 'MSSNBPLAYh')
-                ]
+                TextToken = "MSSNBPLAY"
+                HintBodyToken = "MSSNBPLAYh"
             )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = BUCKMultiListTitleButtonDescriptor
+            ComponentDescriptor = MultiScenarioMultiListTitle
             (
                 ElementName = "MapSizeMultiList"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [~/MultiScenarioSelectionMapSizeColumnWidth, 0.0]
-                )
-
+                MagnifiableWidthHeight = [~/MultiScenarioSelectionMapSizeColumnWidth, 0.0]
                 SortingType = ~/MultiListSorting/String
-                ShowCheckbox = false
-                HidePointerEvents = true
-                Components =
-                [
-                    MultiScenarioSelectionTitleText(TextToken = 'MSSMAPSIZ' ),
-                    parallelograme_englobant(largeur = 100 HintBodyToken = 'MSSMAPSIZh')
-                ]
+                TextToken = "MSSMAPSIZ"
+                HintBodyToken = "MSSMAPSIZh"
             )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = BUCKMultiListTitleButtonDescriptor
+            ComponentDescriptor = MultiScenarioMultiListTitle
             (
                 ElementName = "DensityMultiList"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [~/MultiScenarioSelectionDensityColumnWidth, 0.0]
-                )
-
+                MagnifiableWidthHeight = [~/MultiScenarioSelectionDensityColumnWidth, 0.0]
                 SortingType = ~/MultiListSorting/String
-                ShowCheckbox = false
-                HidePointerEvents = true
-                Components =
-                [
-                    MultiScenarioSelectionTitleText(TextToken = 'MSSDENSIT' ),
-                    parallelograme_englobant(largeur = 120 HintBodyToken = 'MSSDENSITh')
-                ]
+                TextToken = "MSSDENSIT"
+                HintBodyToken = "MSSDENSITh"
             )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = BUCKMultiListTitleButtonDescriptor
+            ComponentDescriptor = MultiScenarioMultiListTitle
             (
                 ElementName = "RiversMultiList"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [0.0, 1.0]
-                    MagnifiableWidthHeight = [~/MultiScenarioSelectionRiversColumnWidth, 0.0]
-                )
-
+                MagnifiableWidthHeight = [~/MultiScenarioSelectionRiversColumnWidth, 0.0]
                 SortingType = ~/MultiListSorting/Integer
-                ShowCheckbox = false
-                HidePointerEvents = true
-                Components =
-                [
-                    MultiScenarioSelectionTitleText(TextToken = 'MSSRIVERS' ),
-                    parallelograme_englobant(largeur = 100 HintBodyToken = 'MSSRIVERSh')
-                ]
+                TextToken = "MSSRIVERS"
+                HintBodyToken = "MSSRIVERSh"
             )
         ),
     ]
@@ -372,7 +371,7 @@ template parallelograme_englobant
 
     Components =
     [
-         BUCKSpecificHintableArea
+        BUCKSpecificHintableArea
         (
             HintTitleToken = ''
             HintBodyToken = <HintBodyToken>
@@ -692,7 +691,7 @@ private MultiScenarioListContainer is BUCKContainerDescriptor
     ElementName = "ScenarioListLeftPartContainer"
     ComponentFrame = TUIFramePropertyRTTI
     (
-       MagnifiableWidthHeight = [526.0, 730.0]
+       RelativeWidthHeight = [1.0, 1.0]
     )
 
     Components =
@@ -701,7 +700,7 @@ private MultiScenarioListContainer is BUCKContainerDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
-                RelativeWidthHeight = [0.9, 0.0]
+                RelativeWidthHeight = [0.84, 0.0]
                 AlignementToAnchor = [0.4, 0.0]
                 AlignementToFather = [0.4, 0.0]
             )
@@ -1122,32 +1121,13 @@ page_de_gauche is BUCKContainerDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-       MagnifiableWidthHeight = [526.0, 745.0]
+       MagnifiableWidthHeight = [526.0, 730.0]
        MagnifiableOffset = [71.0, 31.0]
     )
 
     Components =
     [
-        BUCKPerspectiveWarpOffscreenContainerDescriptor
-        (
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                RelativeWidthHeight = [1.0, 1.0]
-            )
-
-            DistortTextureDrawer = $/UserInterface/UIDistortTextureDrawer
-            PointerEventsToAllow = ~/EAllowablePointerEventType/Move
-
-            MagnifiableTopLeftOffset = [0.0,  0.0]
-            MagnifiableTopRightOffset = [0.0, -5.0]
-            MagnifiableBottomLeftOffset = [6.0, 0.0]
-            MagnifiableBottomRightOffset = [7.0, -5.0]
-
-            Components =
-            [
-                ~/MultiScenarioListContainer,
-            ]
-        ),
+        ~/MultiScenarioListContainer,
     ]
 )
 
@@ -1166,6 +1146,7 @@ page_de_droite is BUCKContainerDescriptor
     [
         BUCKPerspectiveWarpOffscreenContainerDescriptor
         (
+            ElementName = "RightPagePerspectiveContainer"
             ComponentFrame = TUIFramePropertyRTTI
             (
                 RelativeWidthHeight = [1.0, 1.0]

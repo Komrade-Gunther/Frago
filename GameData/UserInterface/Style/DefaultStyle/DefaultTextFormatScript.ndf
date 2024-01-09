@@ -1979,18 +1979,6 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
         //-------------------------------------------------------------------------------------
         // icones pour AutoResolve
         (
-            "stationary",
-            TTFSCommand_UISymbol
-            (
-                TextureToken = "UseStrategic_SelectionPanel_Deploy"
-                BBMin=[0, -1, 0]
-                BBMax=[1.5, 0.5, 0]
-                //BBMin=[-0.2, -0.8, 0]
-                //BBMax=[1, 0.3, 0]
-                ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
-            )
-        ),
-        (
             "assault",
             TTFSCommand_UISymbol
             (
@@ -2067,6 +2055,22 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
             TemplateTFS_Division(TextureToken = "CommonTexture_division_US_3AD")
         ),
         (
+            "US_11ACR",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_US_11ACR")
+        ),
+        (
+            "UK_3armoured",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_UK_3armoured")
+        ),
+        (
+            "BEL_16mec",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_BEL_16mec")
+        ),
+        (
+            "RFA_26llb",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_26llb")
+        ),
+        (
             "RFA_5PZ",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_5PZ")
         ),
@@ -2075,8 +2079,32 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
             TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_terrkdo")
         ),
         (
+            "RFA_2Luft",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_2Luft")
+        ),
+        (
+            "DDR_4MSD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_DDR_4MSD")
+        ),
+        (
+            "DDR_Luft",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_DDR_Luft")
+        ),
+        (
             "SOV_57_GVMSD",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_57_GVMSD")
+        ),
+        (
+            "SOV_35_GvDShB",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_35_GvDShB")
+        ),
+        (
+            "SOV_default",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_default")
+        ),
+        (
+            "SOV_guard",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_guard")
         ),
         //-------------------------------------------------------------------------------------
 
@@ -2273,16 +2301,6 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
             TTFSCommand_UISymbol
             (
                 TextureToken = "UseStrategic_SelectionPawnPanel_Motorised"
-                BBMin=[0, -1, 0]
-                BBMax=[1.5, 0.5, 0]
-                ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
-            )
-        ),
-        (
-            "tuto_deployed",
-            TTFSCommand_UISymbol
-            (
-                TextureToken = "UseStrategic_Labels_Stationary"
                 BBMin=[0, -1, 0]
                 BBMax=[1.5, 0.5, 0]
                 ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend

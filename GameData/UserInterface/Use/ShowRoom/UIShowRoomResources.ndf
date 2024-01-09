@@ -46,7 +46,7 @@ ShowRoomResource is TUISpecificShowRoomResources
     MousePolicyManagerResources     = nil
 
     LDHintResource                  = ~/SpecificInGameLDHintResource
-    WarningPanelResources           = ~/WarningPanelResources
+    WarningPanelResources           = ~/WarningPanelInGameResources
 
     WarnOnMultiplayerDeckNotFilled  = true
 

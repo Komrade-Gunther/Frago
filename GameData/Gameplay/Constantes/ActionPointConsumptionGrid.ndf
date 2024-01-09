@@ -4,11 +4,11 @@ export ActionPointConsumptionGridConstants is TActionPointConsumptionGridConstan
     //--------------------------------- REGLAGES GAMEPLAY -----------------------------------//
     //---------------------------------------------------------------------------------------//
     TerrainsBloquants = [
-        ~/ETerrainType/EauPeuProfonde,         //Rivers/Lake
     ]
-     TerrainsRalentisseurs = [
-         ~/ETerrainType/StrategicForest,
-     ]
+
+    TerrainsRalentisseurs = [
+        ~/ETerrainType/StrategicForest,
+    ]
 
     // Precision de la grille : Attention à l'impact sur les perfs
     TailleDeCaseApproximative = ~/ActionPointConsumptionRefs/CaseSize // ATTENTION : modifier cette valeur dans GameData:/Gameplay/Constantes/ActionPointConsumptionGridRefs.ndf
@@ -18,5 +18,4 @@ export ActionPointConsumptionGridConstants is TActionPointConsumptionGridConstan
     //---------------------------------------------------------------------------------------//
     CouleurDeLaCourbe = RGBA [19,85,106,0]  //[96,57,19,255]
     EpaisseurDeLaCourbe = 1200
-    RemplirLePolygon = true
 )

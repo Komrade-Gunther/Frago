@@ -40,7 +40,7 @@ export CubeAction_Menu_Ordres_infs_simplifie is TCubeActionMenuDescriptor
 		( 2, [
 			~/CubeAction_Order_ShootOnPositionSmoke,
 			~/CubeAction_Order_ShootDefensiveSmoke,
-             ]),
+             ]),       
         ( 3, [ CubeAction_Order_Move ] ),
         ( 4, [ CubeAction_Order_Attack ] ),
         ( 10, [ CubeAction_Functionality_RiposteStance ] ),

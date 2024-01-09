@@ -64,6 +64,7 @@ ServeurType is BUCKListDescriptor
                 (
                     Alignment = UIText_Left
                     VerticalAlignment = UIText_VerticalCenter
+                    BigWordAction = ~/BigWordAction/BigWordNewLine
                     InterLine = 0.1
                 )
 
@@ -91,6 +92,7 @@ ServeurType is BUCKListDescriptor
                 (
                     Alignment = UIText_Center
                     VerticalAlignment = UIText_VerticalCenter
+                    BigWordAction = ~/BigWordAction/BigWordNewLine
                     InterLine = 0.1
                 )
 

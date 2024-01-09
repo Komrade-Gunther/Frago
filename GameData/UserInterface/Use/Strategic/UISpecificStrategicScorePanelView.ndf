@@ -3,9 +3,9 @@ hauteurTexte is 25
 
 //-------------------------------------------------------------------------------------
 
-private ScorePanelRemainingTurns is BUCKTextDescriptor
+private ScorePanelDate is BUCKTextDescriptor
 (
-    ElementName = "RemainingTurns"
+    ElementName = "Date"
 
     ComponentFrame = TUIFramePropertyRTTI
     (
@@ -14,13 +14,18 @@ private ScorePanelRemainingTurns is BUCKTextDescriptor
 
     ParagraphStyle = ~/paragraphStyleTextCenter
 
+    HasBorder = true
+    BorderLineColorToken = 'SM_Grullo'
+    BorderThicknessToken = '1'
+    BordersToDraw =  ~/TBorderSide/Bottom
+
     TextStyle = "Default"
     TypefaceToken = "UIMainFont"
 
     VerticalFitStyle = ~/FitStyle/FitToContent
 
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
-    TextToken = "SSC_RTURN"
+    TextToken = "SSC_DATE"
     TextSize = "SD2_Moyen"
     TextColor = "SD2_BleuVariable"
 )
@@ -216,13 +221,15 @@ MainPanelScore is BUCKListDescriptor
         (
             ComponentDescriptor = SteelmanMainTitle(TextToken =  'SSC_TITLE')
         ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = ~/ScorePanelDate
+        ),
         //-------------------------------------------------------------------------------------
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKTextDescriptor
             (
-
-
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [1.0, 0.0]
@@ -258,10 +265,6 @@ MainPanelScore is BUCKListDescriptor
             ComponentDescriptor = PlayersScore
         ),
         //-------------------------------------------------------------------------------------
-        BUCKListElementDescriptor
-        (
-            ComponentDescriptor = ~/ScorePanelRemainingTurns
-        ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = ~/VictoryRatio
@@ -311,7 +314,13 @@ PlayersTerritory is BUCKListDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = TerritoryPerSideDisplay () // allié
+            ComponentDescriptor = TerritoryPerSideDisplay
+            (
+                ElementName_Camp = 'Allies'
+                Camp = 'Allies'
+                TextToken_Camp = 'SSC_HALLIE'
+                BackgroundBlockColorToken = 'Noir30'
+            )
         ),
         BUCKListElementDescriptor
         (
@@ -321,7 +330,7 @@ PlayersTerritory is BUCKListDescriptor
                 Camp = 'Axis'
                 TextToken_Camp = 'SSC_HAXIS'
                 BackgroundBlockColorToken = 'BlancEquipe_30'
-            ) // allié
+            )
 
         ),
     ]
@@ -339,7 +348,13 @@ PlayersScore is BUCKListDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = ScorePerSideDisplay () // allié
+            ComponentDescriptor = ScorePerSideDisplay
+            (
+                ElementName_Camp = 'Allies'
+                Camp = 'Allies'
+                TextToken_Camp = 'SSC_HALLIE'
+                BackgroundBlockColorToken = 'Noir30'
+            )
         ),
         BUCKListElementDescriptor
         (
@@ -349,8 +364,7 @@ PlayersScore is BUCKListDescriptor
                 Camp = 'Axis'
                 TextToken_Camp = 'SSC_HAXIS'
                 BackgroundBlockColorToken = 'BlancEquipe_30'
-            ) // allié
-
+            )
         ),
     ]
  )
@@ -361,10 +375,10 @@ PlayersScore is BUCKListDescriptor
 template TerritoryPerSideDisplay
 [
 
-    ElementName_Camp : string = 'Allies',
-    Camp : string = 'Allies',
-    TextToken_Camp : string = 'SSC_HALLIE',
-    BackgroundBlockColorToken : string = 'Noir30'
+    ElementName_Camp : string,
+    Camp : string,
+    TextToken_Camp : string,
+    BackgroundBlockColorToken : string,
 ]
 
 is BUCKListDescriptor
@@ -408,6 +422,8 @@ is BUCKListDescriptor
                 InterItemMargin = TRTTILength( Magnifiable = 8.0 )
                 LastMargin = TRTTILength( Magnifiable = 8.0 )
                 BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
+
+                // Filled with 'TerritoryLine'
             )
         ),
     ]
@@ -415,11 +431,10 @@ is BUCKListDescriptor
 
 template ScorePerSideDisplay
 [
-
-    ElementName_Camp : string = 'Allies',
-    Camp : string = 'Allies',
-    TextToken_Camp : string = 'SSC_HALLIE',
-    BackgroundBlockColorToken : string = 'Noir30'
+    ElementName_Camp : string,
+    Camp : string,
+    TextToken_Camp : string,
+    BackgroundBlockColorToken : string,
 ]
 is BUCKListDescriptor
 (
@@ -427,8 +442,7 @@ is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [500,0]
-
-        )
+    )
 
     HasBackground = true
     BackgroundBlockColorToken = <BackgroundBlockColorToken>
@@ -556,13 +570,13 @@ ScoreTable is BUCKGridDescriptor
                             ([0,5], TemplateTextVictory (TextToken = 'SC_MAJDEFE' IsTitre = true)),
                                 ([0,6], TemplateTextVictory (TextToken = 'SC_TOTDEFE' IsTitre = true)),
 
-    ([1,0], TemplateTextVictory (TextToken = 'SSC_v_5' BackgroundBlockColorToken = 'score_01')),
-        ([1,1], TemplateTextVictory (TextToken = 'SSC_v_4' BackgroundBlockColorToken = 'score_02')),
+    ([1,0], TemplateTextVictory (TextToken = 'SSC_v_4' BackgroundBlockColorToken = 'score_01')),
+        ([1,1], TemplateTextVictory (TextToken = 'SSC_v_3' BackgroundBlockColorToken = 'score_02')),
                 ([1,2], TemplateTextVictory (TextToken = 'SSC_v_2' BackgroundBlockColorToken = 'score_03')),
                     ([1,3], TemplateTextVictory (TextToken = 'SSC_d_1' BackgroundBlockColorToken = 'score_04')),
                         ([1,4], TemplateTextVictory (TextToken = 'SSC_v_2' BackgroundBlockColorToken = 'score_05')),
-                            ([1,5], TemplateTextVictory (TextToken = 'SSC_v_4' BackgroundBlockColorToken = 'score_06')),
-                                ([1,6], TemplateTextVictory (TextToken = 'SSC_v_5')),
+                            ([1,5], TemplateTextVictory (TextToken = 'SSC_v_3' BackgroundBlockColorToken = 'score_06')),
+                                ([1,6], TemplateTextVictory (TextToken = 'SSC_v_4')),
 
     ]
 )

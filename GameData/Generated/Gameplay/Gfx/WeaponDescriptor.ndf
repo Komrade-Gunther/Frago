@@ -1,4 +1,3 @@
-//
 export WeaponDescriptor_2K12_KUB_DDR is TWeaponManagerModuleDescriptor
 (
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
@@ -9652,6 +9651,213 @@ export WeaponDescriptor_BMP_1P_reco_SOV is TWeaponManagerModuleDescriptor
             NbFX = 2
             Tag = 'tourelle5'
             YulBoneOrdinal = 5
+        )
+    ]
+)
+
+export WeaponDescriptor_BMD_1K_CMD_SOV is TWeaponManagerModuleDescriptor
+(
+    DelayIdleAmmoSorting = DelayIdleAmmoSorting
+    DefaultHoldFireState = False
+    DefaultRiposteStance = False
+    Salves = [1, 75, -1, -1, -1, -1]
+    HasMainSalvo = False
+    SalvoIsMainSalvo = [False, False, False, False, False, False, False]
+    AlwaysOrientArmorTowardsThreat = True
+    TurretDescriptorList = 
+    [
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 6.283185307179586
+            AngleRotationMaxPitch = 0.4363323129985824
+            AngleRotationMinPitch = -0.17453292519943295
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_Canon_AP_73_mm_2A28_Grom
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_Canon_AP_73_mm_2A28_Grom'
+                    HandheldEquipmentKey = 'MeshAlternative_1'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_1'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_1"]
+                ),
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_Canon_HE_73_mm_2A28_Grom
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_Canon_HE_73_mm_2A28_Grom'
+                    HandheldEquipmentKey = 'MeshAlternative_2'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_2"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle1'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.0471975511965976
+            YulBoneOrdinal = 1
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 0.017453292519943295
+            AngleRotationMaxPitch = 0.13962634015954636
+            AngleRotationMinPitch = -0.13962634015954636
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_MMG_PKT_7_62mm
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_MMG_PKT_7_62mm'
+                    HandheldEquipmentKey = 'MeshAlternative_3'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    TirContinu = True
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_3'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_3"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle2'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.5707963267948966
+            YulBoneOrdinal = 2
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 0.017453292519943295
+            AngleRotationMaxPitch = 0.13962634015954636
+            AngleRotationMinPitch = -0.13962634015954636
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_MMG_PKT_7_62mm
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_MMG_PKT_7_62mm'
+                    HandheldEquipmentKey = 'MeshAlternative_5'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    TirContinu = True
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_5'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_5'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_5"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle3'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.5707963267948966
+            YulBoneOrdinal = 3
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AimingPriority = 1
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 0.017453292519943295
+            AngleRotationMaxPitch = 0.13962634015954636
+            AngleRotationMinPitch = -0.13962634015954636
+            MasterTurretYulBoneOrdinal = 1
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_MMG_PKT_7_62mm
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_MMG_PKT_7_62mm'
+                    HandheldEquipmentKey = 'MeshAlternative_4'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    TirContinu = True
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_4'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_4'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_4"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle4'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.5707963267948966
+            YulBoneOrdinal = 4
         )
     ]
 )
@@ -90587,3 +90793,809 @@ export WeaponDescriptor_M270_MLRS_US_ATACMS_FRL is TWeaponManagerModuleDescripto
         )
     ]
 )
+
+export WeaponDescriptor_BMD_1P_SOV is TWeaponManagerModuleDescriptor
+(
+    DelayIdleAmmoSorting = DelayIdleAmmoSorting
+    DefaultHoldFireState = False
+    DefaultRiposteStance = False
+    Salves = [1, 3, 50, -1, -1, -1]
+    HasMainSalvo = False
+    SalvoIsMainSalvo = [False, False, False, False, False, False, False]
+    AlwaysOrientArmorTowardsThreat = True
+    TurretDescriptorList = 
+    [
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 6.283185307179586
+            AngleRotationMaxPitch = 0.4363323129985824
+            AngleRotationMinPitch = -0.17453292519943295
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_Canon_AP_73_mm_2A28_Grom
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_Canon_AP_73_mm_2A28_Grom'
+                    HandheldEquipmentKey = 'MeshAlternative_1'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_1'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_1"]
+                ),
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_Canon_HE_73_mm_2A28_Grom
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_Canon_HE_73_mm_2A28_Grom'
+                    HandheldEquipmentKey = 'MeshAlternative_2'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_2"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle1'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.0471975511965976
+            YulBoneOrdinal = 1
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.17453292519943275
+            AngleRotationMax = 6.283185307179586
+            AngleRotationMaxPitch = 0.7853981633974483
+            AngleRotationMinPitch = -0.17453292519943295
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_ATGM_9k111M_Faktoriya
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_ATGM_9k111M_Faktoriya'
+                    HandheldEquipmentKey = 'MeshAlternative_3'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_3'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_3"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle2'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.0471975511965976
+            YulBoneOrdinal = 2
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 0.017453292519943295
+            AngleRotationMaxPitch = 0.13962634015954636
+            AngleRotationMinPitch = -0.13962634015954636
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_MMG_PKT_7_62mm_x2
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_MMG_PKT_7_62mm_x2'
+                    HandheldEquipmentKey = 'MeshAlternative_4'
+                    NbWeapons = 1
+                    SalvoStockIndex = 2
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    TirContinu = True
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_4'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_4'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_4"]
+                )
+            ]
+            NbFX = 2
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle3'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.5707963267948966
+            YulBoneOrdinal = 3
+        )
+    ]
+)
+
+export WeaponDescriptor_BMD_2_CMD_SOV is TWeaponManagerModuleDescriptor
+(
+    DelayIdleAmmoSorting = DelayIdleAmmoSorting
+    DefaultHoldFireState = False
+    DefaultRiposteStance = False
+    Salves = [60, 3, 50, -1, -1, -1]
+    HasMainSalvo = False
+    SalvoIsMainSalvo = [False, False, False, False, False, False, False]
+    AlwaysOrientArmorTowardsThreat = True
+    TurretDescriptorList = 
+    [
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 6.283185307179586
+            AngleRotationMaxPitch = 0.4363323129985824
+            AngleRotationMinPitch = -0.17453292519943295
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_AutoCanon_AP_30mm_24A2_BMP2
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_AutoCanon_AP_30mm_24A2_BMP2'
+                    HandheldEquipmentKey = 'MeshAlternative_1'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_1'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_1"]
+                ),
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_AutoCanon_HE_30mm_24A2_BMP2
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_AutoCanon_HE_30mm_24A2_BMP2'
+                    HandheldEquipmentKey = 'MeshAlternative_2'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_2"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle1'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.3962634015954636
+            YulBoneOrdinal = 1
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.17453292519943275
+            AngleRotationMax = 6.283185307179586
+            AngleRotationMaxPitch = 0.7853981633974483
+            AngleRotationMinPitch = -0.17453292519943295
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_ATGM_9M113_Konkurs_BMP2
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_ATGM_9M113_Konkurs_BMP2'
+                    HandheldEquipmentKey = 'MeshAlternative_3'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_3'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_3"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle2'
+            VitesseRotation = 1.0471975511965976
+            YulBoneOrdinal = 2
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 0.017453292519943295
+            AngleRotationMaxPitch = 0.13962634015954636
+            AngleRotationMinPitch = -0.13962634015954636
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_MMG_PKT_7_62mm_x2
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_MMG_PKT_7_62mm_x2'
+                    HandheldEquipmentKey = 'MeshAlternative_4'
+                    NbWeapons = 1
+                    SalvoStockIndex = 2
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    TirContinu = True
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_4'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_4'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_4"]
+                )
+            ]
+            NbFX = 2
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle3'
+            VitesseRotation = 1.5707963267948966
+            YulBoneOrdinal = 3
+        )
+    ]
+)
+
+export WeaponDescriptor_Challenger_1_Mk3_UK is TWeaponManagerModuleDescriptor
+(
+    DelayIdleAmmoSorting = DelayIdleAmmoSorting
+    DefaultHoldFireState = False
+    DefaultRiposteStance = False
+    Salves = [64, 42, 1, -1, -1, -1]
+    HasMainSalvo = False
+    SalvoIsMainSalvo = [False, False, False, False, False, False, False]
+    AlwaysOrientArmorTowardsThreat = True
+    TurretDescriptorList = 
+    [
+        TTurretTwoAxisDescriptor
+        (
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 6.283185307179586
+            AngleRotationMaxPitch = 0.4363323129985824
+            AngleRotationMinPitch = -0.17453292519943295
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_Canon_AP_120_mm_L11A5_Challenger
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_Canon_AP_120_mm_L11A5_Challenger'
+                    HandheldEquipmentKey = 'MeshAlternative_1'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_1'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_1"]
+                ),
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_Canon_HE_120_mm_L11A5_Challenger
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_Canon_HE_120_mm_L11A5_Challenger'
+                    HandheldEquipmentKey = 'MeshAlternative_2'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_2"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle1'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_WatchForwardNormal
+            VitesseRotation = 1.0471975511965976
+            YulBoneOrdinal = 1
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AimingPriority = 3
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 0.017453292519943295
+            AngleRotationMaxPitch = 0.13962634015954636
+            AngleRotationMinPitch = -0.13962634015954636
+            MasterTurretYulBoneOrdinal = 1
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_MMG_L8A2_7_62mm
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_MMG_L8A2_7_62mm'
+                    HandheldEquipmentKey = 'MeshAlternative_4'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    TirContinu = True
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_4'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_4'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_4"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle4'
+            VitesseRotation = 1.5707963267948966
+            YulBoneOrdinal = 4
+        ),
+        TTurretUnitDescriptor
+        (
+            AngleRotationMax = 2.0943951023931953
+            AngleRotationMaxPitch = 1.5707963267948966
+            AngleRotationMinPitch = -1.5707963267948966
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_SMOKE_Vehicle_Grenadex8
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_SMOKE_Vehicle_Grenadex8'
+                    HandheldEquipmentKey = 'MeshAlternative_5'
+                    NbWeapons = 1
+                    SalvoStockIndex = 2
+                    ShowDispersion = False
+                    ShowInInterface = False
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_5'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_5'
+                    WeaponShootDataPropertyName = 
+                    [
+                        "WeaponShootData_0_5",
+                        "WeaponShootData_1_5",
+                        "WeaponShootData_2_5",
+                        "WeaponShootData_3_5"
+                    ]
+                )
+            ]
+            NbFX = 1
+            Tag = 'tourelle5'
+            YulBoneOrdinal = 5
+        )
+    ]
+)
+
+export WeaponDescriptor_M3A2_Bradley_CFV_US is TWeaponManagerModuleDescriptor
+(
+    DelayIdleAmmoSorting = DelayIdleAmmoSorting
+    DefaultHoldFireState = False
+    DefaultRiposteStance = False
+    Salves = [60, 6, 62, 1, -1, -1]
+    HasMainSalvo = False
+    SalvoIsMainSalvo = [False, False, False, False, False, False, False]
+    AlwaysOrientArmorTowardsThreat = True
+    TurretDescriptorList = 
+    [
+        TTurretTwoAxisDescriptor
+        (
+            AimingPriority = 2
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 6.283185307179586
+            AngleRotationMaxPitch = 0.4363323129985824
+            AngleRotationMinPitch = -0.17453292519943295
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_AutoCanon_AP_25mm_M242_Bushmaster_Late
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_AutoCanon_AP_25mm_M242_Bushmaster_Late'
+                    HandheldEquipmentKey = 'MeshAlternative_1'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_1'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_1"]
+                ),
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_AutoCanon_HE_25mm_M242_Bushmaster_Late
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_AutoCanon_HE_25mm_M242_Bushmaster_Late'
+                    HandheldEquipmentKey = 'MeshAlternative_2'
+                    NbWeapons = 1
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_2"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle1'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.3962634015954636
+            YulBoneOrdinal = 1
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AimingPriority = 1
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 0.017453292519943295
+            AngleRotationMaxPitch = 0.13962634015954636
+            AngleRotationMinPitch = -0.13962634015954636
+            MasterTurretYulBoneOrdinal = 1
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_ATGM_BGM71D_TOW_2A_x2
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_ATGM_BGM71D_TOW_2A_x2'
+                    HandheldEquipmentKey = 'MeshAlternative_3'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_3'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_3"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle2'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.5707963267948966
+            YulBoneOrdinal = 2
+        ),
+        TTurretTwoAxisDescriptor
+        (
+            AimingPriority = 3
+            AngleRotationBase = 0.0
+            AngleRotationBasePitch = 0.0
+            AngleRotationMax = 0.017453292519943295
+            AngleRotationMaxPitch = 0.13962634015954636
+            AngleRotationMinPitch = -0.13962634015954636
+            MasterTurretYulBoneOrdinal = 1
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_MMG_M240_7_62mm
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_MMG_M240_7_62mm'
+                    HandheldEquipmentKey = 'MeshAlternative_4'
+                    NbWeapons = 1
+                    SalvoStockIndex = 2
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    TirContinu = True
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_4'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_4'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_4"]
+                )
+            ]
+            NbFX = 1
+            OutOfRangeTrackingDuration = 3.5
+            Tag = 'tourelle4'
+            TurretIdleBehaviourDescriptor = ~/TurretIdle_VehicleReco
+            VitesseRotation = 1.5707963267948966
+            YulBoneOrdinal = 4
+        ),
+        TTurretUnitDescriptor
+        (
+            AngleRotationMax = 2.0943951023931953
+            AngleRotationMaxPitch = 1.5707963267948966
+            AngleRotationMinPitch = -1.5707963267948966
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_SMOKE_Vehicle_Grenadex8
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_SMOKE_Vehicle_Grenadex8'
+                    HandheldEquipmentKey = 'MeshAlternative_5'
+                    NbWeapons = 1
+                    SalvoStockIndex = 3
+                    ShowDispersion = False
+                    ShowInInterface = False
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_5'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_5'
+                    WeaponShootDataPropertyName = 
+                    [
+                        "WeaponShootData_0_5",
+                        "WeaponShootData_1_5",
+                        "WeaponShootData_2_5",
+                        "WeaponShootData_3_5"
+                    ]
+                )
+            ]
+            NbFX = 2
+            Tag = 'tourelle5'
+            YulBoneOrdinal = 5
+        )
+    ]
+)
+
+export WeaponDescriptor_MotRifles_RPG22_SOV is TWeaponManagerModuleDescriptor
+(
+    DelayIdleAmmoSorting = DelayIdleAmmoSorting
+    DefaultHoldFireState = False
+    DefaultRiposteStance = False
+    Salves = [156, 92, 4, -1, -1, -1]
+    HasMainSalvo = False
+    SalvoIsMainSalvo = [False, False, False, False, False, False, False]
+    AlwaysOrientArmorTowardsThreat = False
+    TurretDescriptorList = 
+    [
+        TTurretInfanterieDescriptor
+        (
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_FM_AK_74
+                    AnimateOnlyOneSoldier = False
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_FM_AK_74'
+                    HandheldEquipmentKey = 'MeshAlternative_1'
+                    NbWeapons = 6
+                    SalvoStockIndex = 0
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_1'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_1'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_1"]
+                )
+            ]
+            NbFX = 1
+            YulBoneOrdinal = 1
+        ),
+        TTurretInfanterieDescriptor
+        (
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_SAW_RPK_74_5_56mm'
+                    HandheldEquipmentKey = 'MeshAlternative_2'
+                    NbWeapons = 1
+                    SalvoStockIndex = 1
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_2'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_2"]
+                )
+            ]
+            NbFX = 1
+            YulBoneOrdinal = 2
+        ),
+        TTurretInfanterieDescriptor
+        (
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_RocketInf_RPG22_72_5mm'
+                    HandheldEquipmentKey = 'MeshAlternative_3'
+                    NbWeapons = 1
+                    SalvoStockIndex = 2
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_3'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_3"]
+                )
+            ]
+            NbFX = 1
+            YulBoneOrdinal = 3
+        )
+    ]
+)
+

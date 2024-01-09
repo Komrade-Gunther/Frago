@@ -111,23 +111,6 @@ MouseCurseur_invalide is TMouseCursorAnimation
     )
 )
 
-//-------------------------- curseur_barbed_wire --------------------------------------
-
-MouseCurseur_barbed_wire is TMouseCursorAnimation
-(
-    HotSpotX           = 1
-    HotSpotY           = 1
-    AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/Common/Cursors/curseur_barbed_wire.png",
-        ]
-    )
-)
-
 //-------------------------- Curseur_attaque --------------------------------------
 
 MouseCurseur_attaque is TMouseCursorAnimation
@@ -245,21 +228,6 @@ Mousecurseur_mouvement_attaque_coverh is TMouseCursorAnimation
     )
 )
 
-Mousecurseur_mouvement_attaque_barbed_wire is TMouseCursorAnimation
-(
-    HotSpotX           = 1
-    HotSpotY           = 1
-    AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/Common/Cursors/curseur_mouvement_attaque.png",
-        ]
-    )
-)
-
 //-------------------------- curseur_mouvement_rapide --------------------------------------
 
 Mousecurseur_mouvement_rapide is TMouseCursorAnimation
@@ -307,20 +275,6 @@ Mousecurseur_mouvement_rapide_coverh is TMouseCursorAnimation
     )
 )
 
-Mousecurseur_mouvement_rapide_barbed_wire is TMouseCursorAnimation
-(
-    HotSpotX           = 1
-    HotSpotY           = 1
-    AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/Common/Cursors/curseur_mouvement_rapide.png",
-        ]
-    )
-)
 //-------------------------- curseur_retour --------------------------------------
 
 
@@ -369,21 +323,6 @@ Mousecurseur_curseur_retour_coverh is TMouseCursorAnimation
     )
 )
 
-Mousecurseur_curseur_retour_barbed_wire is TMouseCursorAnimation
-(
-    HotSpotX           = 1
-    HotSpotY           = 1
-    AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/Common/Cursors/curseur_retour.png",
-        ]
-    )
-)
-
 //-------------------------- curseur_unloadatposition --------------------------------------
 
 Mousecurseur_UnloadAtPosition is TMouseCursorAnimation
@@ -427,21 +366,6 @@ Mousecurseur_UnloadAtPosition_coverh is TMouseCursorAnimation
         FileNameList =
         [
             "GameData:/Assets/2D/Interface/Common/Cursors/curseur_debarquement_ch.png",
-        ]
-    )
-)
-
-Mousecurseur_UnloadAtPosition_barbed_wire is TMouseCursorAnimation
-(
-    HotSpotX           = 1
-    HotSpotY           = 1
-    AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/Common/Cursors/curseur_debarquement.png",
         ]
     )
 )
@@ -587,6 +511,21 @@ MouseCurseur_strategic_urbain is TMouseCursorAnimation
         FileNameList =
         [
             "GameData:/Assets/2D/Interface/Common/Cursors/curseur_strategic_urbain.png"
+        ]
+    )
+)
+MouseCurseur_strategic_semiurbain is TMouseCursorAnimation
+(
+    HotSpotX           = 1
+    HotSpotY           = 1
+    AnimationCycleTime = 1
+    //RepetitionFrame    = 1
+    TextureList = TResourceDescriptorTextureAnimation
+    (
+        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
+        FileNameList =
+        [
+            "GameData:/Assets/2D/Interface/Common/Cursors/curseur_strategic_semiurbain.png"
         ]
     )
 )
