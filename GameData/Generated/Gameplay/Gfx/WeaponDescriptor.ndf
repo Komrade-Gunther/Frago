@@ -23359,7 +23359,7 @@ export WeaponDescriptor_GreenBerets_US is TWeaponManagerModuleDescriptor
                     EffectTag = 'FireEffect_SMOKE_Vehicle_Grenadex8'
                     HandheldEquipmentKey = 'MeshAlternative_5'
                     NbWeapons = 1
-                    SalvoStockIndex = 3
+                    SalvoStockIndex = 4
                     ShowDispersion = False
                     ShowInInterface = True
                     ShowSplashRadius = False

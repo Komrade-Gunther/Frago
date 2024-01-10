@@ -324,7 +324,7 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
     MergeAllWeaponOnSameTurretInUI = false // permet d'indiquer dans l'interface si on merge les armes sur une même tourelle
                                            // même si elles ont des munitions différentes (boites de munitions différentes).
 
-    MaxWeaponsOnUI = 4 // Nombre d'armes affichées sur les panneaux d'interface qui affiche les armes
+    MaxWeaponsOnUI = 7 // Nombre d'armes affichées sur les panneaux d'interface qui affiche les armes
 
 
     AdditionalSuppressDamagePerLostPhysicalDamage = 25 // c'est un multiplicateur des degats physiques qu'on va appliquer en stress.
