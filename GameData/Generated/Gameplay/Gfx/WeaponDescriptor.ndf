@@ -4808,13 +4808,13 @@ export WeaponDescriptor_ATteam_ITOW_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_ATGM_BGM71C_ITOW
+                    Ammunition = ~/Ammo_ATGM_BGM71_TOW
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_ATGM_BGM71C_ITOW'
+                    EffectTag = 'FireEffect_ATGM_BGM71_TOW'
                     HandheldEquipmentKey = 'MeshAlternative_1'
                     NbWeapons = 1
                     SalvoStockIndex = 0
@@ -6232,7 +6232,7 @@ export WeaponDescriptor_Airborne_CMD_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -6342,13 +6342,13 @@ export WeaponDescriptor_Airborne_Dragon_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -7026,13 +7026,13 @@ export WeaponDescriptor_Airborne_MP_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 1
                     SalvoStockIndex = 1
@@ -7104,7 +7104,7 @@ export WeaponDescriptor_Airborne_Scout_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -7214,7 +7214,7 @@ export WeaponDescriptor_Airborne_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -7292,13 +7292,13 @@ export WeaponDescriptor_Airborne_half_Dragon_US is TWeaponManagerModuleDescripto
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 1
                     SalvoStockIndex = 1
@@ -7402,13 +7402,13 @@ export WeaponDescriptor_Airborne_half_LAW_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 1
                     SalvoStockIndex = 1
@@ -7434,7 +7434,7 @@ export WeaponDescriptor_Airborne_half_LAW_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -21675,7 +21675,7 @@ export WeaponDescriptor_Fallschirmjager_FalseFlag_CMD_DDR is TWeaponManagerModul
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -21753,13 +21753,13 @@ export WeaponDescriptor_Fallschirmjager_FalseFlag_DDR is TWeaponManagerModuleDes
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -21785,7 +21785,7 @@ export WeaponDescriptor_Fallschirmjager_FalseFlag_DDR is TWeaponManagerModuleDes
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -22994,13 +22994,13 @@ export WeaponDescriptor_GreenBerets_CMD_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 3
                     SalvoStockIndex = 1
@@ -23026,7 +23026,7 @@ export WeaponDescriptor_GreenBerets_CMD_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -23136,7 +23136,7 @@ export WeaponDescriptor_GreenBerets_MP5_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -23233,7 +23233,7 @@ export WeaponDescriptor_GreenBerets_US is TWeaponManagerModuleDescriptor
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
     DefaultHoldFireState = False
     DefaultRiposteStance = False
-    Salves = [80, 160, 4, 1, -1, -1]
+    Salves = [80, 160, 4, 80, 1, -1, -1]
     HasMainSalvo = False
     SalvoIsMainSalvo = [False, False, False, False, False, False, False]
     AlwaysOrientArmorTowardsThreat = False
@@ -23278,13 +23278,13 @@ export WeaponDescriptor_GreenBerets_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -23310,7 +23310,7 @@ export WeaponDescriptor_GreenBerets_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -23334,6 +23334,38 @@ export WeaponDescriptor_GreenBerets_US is TWeaponManagerModuleDescriptor
             ]
             NbFX = 1
             YulBoneOrdinal = 3
+        ),
+		TTurretInfanterieDescriptor
+        (
+            MountedWeaponDescriptorList = 
+            [
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_Sniper_M14
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_Sniper_M14'
+                    HandheldEquipmentKey = 'MeshAlternative_4'
+                    NbWeapons = 1
+                    SalvoStockIndex = 3
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_4'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_4'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_4"]
+                )
+            ]
+            NbFX = 1
+            YulBoneOrdinal = 4
         ),
         TTurretInfanterieDescriptor
         (
@@ -28296,13 +28328,13 @@ export WeaponDescriptor_LRRP_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 1
                     SalvoStockIndex = 1
@@ -30177,13 +30209,13 @@ export WeaponDescriptor_LightRifles_CMD_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 1
                     SalvoStockIndex = 1
@@ -30319,13 +30351,13 @@ export WeaponDescriptor_LightRifles_LAW_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -30429,13 +30461,13 @@ export WeaponDescriptor_LightRifles_RCL_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -39199,13 +39231,13 @@ export WeaponDescriptor_MANPAD_Stinger_C_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_MANPAD_FIM92
+                    Ammunition = ~/Ammo_MANPAD_FIM43
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_MANPAD_FIM92'
+                    EffectTag = 'FireEffect_MANPAD_FIM43'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 1
                     SalvoStockIndex = 1
@@ -43197,13 +43229,13 @@ export WeaponDescriptor_Ranger_tuto_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -43229,7 +43261,7 @@ export WeaponDescriptor_Ranger_tuto_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -46004,7 +46036,7 @@ export WeaponDescriptor_Ranger_US is TWeaponManagerModuleDescriptor
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
     DefaultHoldFireState = False
     DefaultRiposteStance = False
-    Salves = [80, 160, 4, 1, -1, -1]
+    Salves = [80, 160, 8, 4, -1, -1]
     HasMainSalvo = False
     SalvoIsMainSalvo = [False, False, False, False, False, False, False]
     AlwaysOrientArmorTowardsThreat = False
@@ -46049,13 +46081,13 @@ export WeaponDescriptor_Ranger_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -46081,16 +46113,40 @@ export WeaponDescriptor_Ranger_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_Carl_Gustav
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_RocketInf_AT4_83mm'
+                    EffectTag = 'FireEffect_RocketInf_Carl_Gustav'
                     HandheldEquipmentKey = 'MeshAlternative_3'
                     NbWeapons = 1
                     SalvoStockIndex = 2
+                    ShowDispersion = False
+                    ShowInInterface = True
+                    ShowSplashRadius = False
+                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOffThickness = -0.1
+                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
+                    SplashRadiusOnThickness = -0.1
+                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
+                    WeaponIgnoredPropertyName = 'WeaponIgnored_3'
+                    WeaponShootDataPropertyName = ["WeaponShootData_0_3"]
+                ),
+                TMountedWeaponDescriptor
+                (
+                    AmmoConsumption_ForInterface = 1
+                    Ammunition = ~/Ammo_RocketInf_Carl_Gustav_SMOKE_FRL
+                    AnimateOnlyOneSoldier = True
+                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOffThickness = -0.1
+                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
+                    DispersionRadiusOnThickness = -0.1
+                    EffectTag = 'FireEffect_RocketInf_Carl_Gustav'
+                    HandheldEquipmentKey = 'MeshAlternative_3'
+                    NbWeapons = 1
+                    SalvoStockIndex = 3
                     ShowDispersion = False
                     ShowInInterface = True
                     ShowSplashRadius = False
@@ -46105,38 +46161,6 @@ export WeaponDescriptor_Ranger_US is TWeaponManagerModuleDescriptor
             ]
             NbFX = 1
             YulBoneOrdinal = 3
-        ),
-        TTurretInfanterieDescriptor
-        (
-            MountedWeaponDescriptorList = 
-            [
-                TMountedWeaponDescriptor
-                (
-                    AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SMOKE_Infantry_Grenadex2
-                    AnimateOnlyOneSoldier = True
-                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
-                    DispersionRadiusOffThickness = -0.1
-                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
-                    DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SMOKE_Vehicle_Grenadex8'
-                    HandheldEquipmentKey = 'MeshAlternative_5'
-                    NbWeapons = 1
-                    SalvoStockIndex = 3
-                    ShowDispersion = False
-                    ShowInInterface = True
-                    ShowSplashRadius = False
-                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
-                    SplashRadiusOffThickness = -0.1
-                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
-                    SplashRadiusOnThickness = -0.1
-                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_5'
-                    WeaponIgnoredPropertyName = 'WeaponIgnored_5'
-                    WeaponShootDataPropertyName = ["WeaponShootData_0_5"]
-                )
-            ]
-            NbFX = 2
-            YulBoneOrdinal = 5
         )
     ]
 )
@@ -47273,13 +47297,13 @@ export WeaponDescriptor_Rifles_Cavalry_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 3
                     SalvoStockIndex = 1
@@ -47305,7 +47329,7 @@ export WeaponDescriptor_Rifles_Cavalry_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -47603,13 +47627,13 @@ export WeaponDescriptor_Rifles_LAW_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 3
                     SalvoStockIndex = 1
@@ -47933,13 +47957,13 @@ export WeaponDescriptor_Rifles_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 3
                     SalvoStockIndex = 1
@@ -48043,13 +48067,13 @@ export WeaponDescriptor_Rifles_half_AT4_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -48075,7 +48099,7 @@ export WeaponDescriptor_Rifles_half_AT4_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -48295,13 +48319,13 @@ export WeaponDescriptor_Rifles_half_Dragon_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -48405,13 +48429,13 @@ export WeaponDescriptor_Rifles_half_LAW_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 2
                     SalvoStockIndex = 1
@@ -48955,7 +48979,7 @@ export WeaponDescriptor_SAS_UK is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -63578,13 +63602,13 @@ export WeaponDescriptor_AH1F_Cobra_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_ATGM_BGM71C_ITOW_x8
+                    Ammunition = ~/Ammo_AGM_BGM71_TOW_x8
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_ATGM_BGM71C_ITOW_x8'
+                    EffectTag = 'FireEffect_AGM_BGM71_TOW_x8'
                     HandheldEquipmentKey = 'MeshAlternative_3'
                     NbWeapons = 1
                     SalvoStockIndex = 1
@@ -82958,7 +82982,7 @@ export WeaponDescriptor_Airborne_Scout_US_101st_FRL is TWeaponManagerModuleDescr
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -83036,13 +83060,13 @@ export WeaponDescriptor_LRRP_US_101st_FRL is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 1
                     SalvoStockIndex = 1
@@ -83146,13 +83170,13 @@ export WeaponDescriptor_GreenBerets_US_101st_FRL is TWeaponManagerModuleDescript
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 1
                     SalvoStockIndex = 1
@@ -83178,7 +83202,7 @@ export WeaponDescriptor_GreenBerets_US_101st_FRL is TWeaponManagerModuleDescript
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_AT4_83mm
+                    Ammunition = ~/Ammo_RocketInf_M72_LAW_66mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -83791,13 +83815,13 @@ export WeaponDescriptor_Rifles_US_Dualat_FRL is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_M249_5_56mm
+                    Ammunition = ~/Ammo_MMG_M60_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_SAW_M249_5_56mm'
+                    EffectTag = 'FireEffect_SAW_M60_7_62mm'
                     HandheldEquipmentKey = 'MeshAlternative_2'
                     NbWeapons = 3
                     SalvoStockIndex = 1
@@ -87317,13 +87341,13 @@ export WeaponDescriptor_M151A2_TOW_NG_US is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_ATGM_BGM71C_ITOW
+                    Ammunition = ~/Ammo_ATGM_BGM71_TOW
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_ATGM_BGM71C_ITOW'
+                    EffectTag = 'FireEffect_ATGM_BGM71_TOW'
                     HandheldEquipmentKey = 'MeshAlternative_1'
                     NbWeapons = 1
                     SalvoStockIndex = 0
