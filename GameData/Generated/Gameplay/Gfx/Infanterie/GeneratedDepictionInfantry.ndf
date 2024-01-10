@@ -2104,8 +2104,8 @@ Gfx_Engineers_Flam_SOV is TemplateInfantryDepictionSquad
 AllWeaponAlternatives_Engineers_Flam_SOV is [
   TDepictionDescriptor( SelectorId = ['MeshAlternative_1'] MeshDescriptor = $/GFX/DepictionResources/Modele_AK74 ),
   TDepictionDescriptor( SelectorId = ['MeshAlternative_2'] MeshDescriptor = $/GFX/DepictionResources/Modele_PKM ),
-  TDepictionDescriptor( SelectorId = ['MeshAlternative_3'] MeshDescriptor = $/GFX/DepictionResources/Modele_RPO_A_Shmel ),
-  TMeshlessDepictionDescriptor( SelectorId = ['none'] ReferenceMeshForSkeleton = $/GFX/DepictionResources/Modele_RPO_A_Shmel ),
+  TDepictionDescriptor( SelectorId = ['MeshAlternative_3'] MeshDescriptor = $/GFX/DepictionResources/Modele_LPO50 ),
+  TMeshlessDepictionDescriptor( SelectorId = ['none'] ReferenceMeshForSkeleton = $/GFX/DepictionResources/Modele_LPO50 ),
 ]
 AllWeaponSubDepiction_Engineers_Flam_SOV is TemplateAllSubWeaponDepiction
 (
@@ -2123,7 +2123,7 @@ AllWeaponSubDepiction_Engineers_Flam_SOV is TemplateAllSubWeaponDepiction
     ),
     DepictionOperator_WeaponInstantFireInfantry
     (
-      FireEffectTag = ["FireEffect_RocketInf_RPO_A_93mm"]
+      FireEffectTag = ["FireEffect_flamethrower_LPO"]
       WeaponShootDataPropertyName = "WeaponShootData_0_3"
     ),
   ]
@@ -2131,6 +2131,11 @@ AllWeaponSubDepiction_Engineers_Flam_SOV is TemplateAllSubWeaponDepiction
 AllWeaponSubDepictionBackpack_Engineers_Flam_SOV is TemplateAllSubBackpackWeaponDepiction
 (
   Alternatives = AllWeaponAlternatives_Engineers_Flam_SOV
+)
+SubDepictionFuel_Engineers_Flam_SOV is TemplateWeaponAccessorySubDepiction
+(
+  EnabledValue = 'MeshAlternative_3'
+  MeshDescriptor = $/GFX/DepictionResources/Modele_LPO50_fuel
 )
 TacticDepiction_Engineers_Flam_SOV_Alternatives is [
   TDepictionDescriptor( SelectorId = ['high', '01'] MeshDescriptor = $/GFX/DepictionResources/Modele_Engineers_Flam_SOV ),
@@ -2146,7 +2151,7 @@ TacticDepiction_Engineers_Flam_SOV_Soldier is TemplateInfantryDepictionFactoryTa
 (
   Selector = InfantrySelectorTactic_00_06
   Alternatives = TacticDepiction_Engineers_Flam_SOV_Alternatives
-  SubDepictions = [AllWeaponSubDepiction_Engineers_Flam_SOV, AllWeaponSubDepictionBackpack_Engineers_Flam_SOV]
+  SubDepictions = [AllWeaponSubDepiction_Engineers_Flam_SOV, AllWeaponSubDepictionBackpack_Engineers_Flam_SOV, SubDepictionFuel_Engineers_Flam_SOV]
   Operators = [DepictionOperator_SkeletalAnimation2_Default( ConditionalTags = [ ('mmg', 'MeshAlternative_2') ] )]
 )
 TacticDepiction_Engineers_Flam_SOV_Ghost is TemplateInfantryDepictionFactoryGhost

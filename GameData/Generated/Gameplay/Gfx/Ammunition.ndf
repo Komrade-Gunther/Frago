@@ -21512,7 +21512,7 @@ Ammo_DCA_2_canons_S60_57mm is TAmmunitionDescriptor
         BaseHitValueModifiers = 
         [
             (EBaseHitValueModifier/Base, 0.0),
-            (EBaseHitValueModifier/Idling, 15),
+            (EBaseHitValueModifier/Idling, 10),
             (EBaseHitValueModifier/Moving, 0),
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
@@ -23137,7 +23137,7 @@ Ammo_FM_FAL is TAmmunitionDescriptor
     Name = 'PDOKDYDALD'
     TypeName = 'NA'
     TypeCategoryName = 'THRUBJLEUJ'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'KQYZKDFEAI'
     TraitsToken = ['MOTION', 'CAC']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -23331,7 +23331,7 @@ Ammo_FM_FNC is TAmmunitionDescriptor
     Name = 'IUACLYPWRR'
     TypeName = 'NA'
     TypeCategoryName = 'THRUBJLEUJ'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'KQYZKDFEAI'
     TraitsToken = ['MOTION', 'CAC']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -23428,7 +23428,7 @@ Ammo_FM_FNC_Para is TAmmunitionDescriptor
     Name = 'WHJTFLDOYY'
     TypeName = 'NA'
     TypeCategoryName = 'THRUBJLEUJ'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'KQYZKDFEAI'
     TraitsToken = ['MOTION', 'CAC']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -23525,7 +23525,7 @@ Ammo_FM_G3KA4 is TAmmunitionDescriptor
     Name = 'PYUUQOJTWR'
     TypeName = 'NA'
     TypeCategoryName = 'THRUBJLEUJ'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'KQYZKDFEAI'
     TraitsToken = ['MOTION', 'CAC']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -23622,7 +23622,7 @@ Ammo_FM_KMS_72 is TAmmunitionDescriptor
     Name = 'ECMEUFNUCF'
     TypeName = 'NA'
     TypeCategoryName = 'MPRVLPMVZK'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'YEKMWFEREZ'
     TraitsToken = ['MOTION', 'CAC']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -23719,7 +23719,7 @@ Ammo_FM_L1A1_SLR is TAmmunitionDescriptor
     Name = 'HPYENREAPM'
     TypeName = 'NA'
     TypeCategoryName = 'THRUBJLEUJ'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'KQYZKDFEAI'
     TraitsToken = ['MOTION', 'CAC']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -24065,7 +24065,7 @@ Ammo_FM_M16A1 is TAmmunitionDescriptor
         [
             (EBaseHitValueModifier/Base, 0.0),
             (EBaseHitValueModifier/Idling, 30),
-            (EBaseHitValueModifier/Moving, 15),
+            (EBaseHitValueModifier/Moving, 10),
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
@@ -24087,7 +24087,7 @@ Ammo_FM_M16A1 is TAmmunitionDescriptor
     CanShootOnPosition = True
     CanShootWhileMoving = True
     NbrProjectilesSimultanes = 1
-    AffichageMunitionParSalve = 3
+    AffichageMunitionParSalve = 12
     MissileDescriptor = nil
     InterfaceWeaponTexture = "Texture_Interface_Weapon_M16"
     SmokeDescriptor = nil
@@ -24786,7 +24786,7 @@ Ammo_FM_kbk_AK is TAmmunitionDescriptor
     Name = 'RIJJGBGTZM'
     TypeName = 'NA'
     TypeCategoryName = 'MPRVLPMVZK'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'YEKMWFEREZ'
     TraitsToken = ['MOTION', 'CAC']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -24883,7 +24883,7 @@ Ammo_FM_kbk_AKM is TAmmunitionDescriptor
     Name = 'AYYOIYKCVF'
     TypeName = 'NA'
     TypeCategoryName = 'MPRVLPMVZK'
-    Caliber = 'XUTVWWNOTF'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'YEKMWFEREZ'
     TraitsToken = ['MOTION', 'CAC']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -24937,8 +24937,8 @@ Ammo_FM_kbk_AKM is TAmmunitionDescriptor
         BaseHitValueModifiers = 
         [
             (EBaseHitValueModifier/Base, 0.0),
-            (EBaseHitValueModifier/Idling, 30),
-            (EBaseHitValueModifier/Moving, 20),
+            (EBaseHitValueModifier/Idling, 23),
+            (EBaseHitValueModifier/Moving, 13),
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
@@ -24951,7 +24951,7 @@ Ammo_FM_kbk_AKM is TAmmunitionDescriptor
         ]
     )
     TempsDeVisee = 1.5
-    TempsEntreDeuxSalves = 1.25
+    TempsEntreDeuxSalves = 1.0
     TempsEntreDeuxSalves_Min = -1.0
     TempsEntreDeuxSalves_Max = -1.0
     NbTirParSalves = 1
@@ -24960,7 +24960,7 @@ Ammo_FM_kbk_AKM is TAmmunitionDescriptor
     CanShootOnPosition = True
     CanShootWhileMoving = True
     NbrProjectilesSimultanes = 1
-    AffichageMunitionParSalve = 3
+    AffichageMunitionParSalve = 12
     MissileDescriptor = nil
     InterfaceWeaponTexture = "Texture_Interface_Weapon_AK74"
     SmokeDescriptor = nil
@@ -24973,6 +24973,7 @@ Ammo_FM_kbk_AKM is TAmmunitionDescriptor
     DistanceForSpeed = 1500.0 * Metre
     DamageTypeEvolutionOverRangeDescriptor = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
 )
+
 
 Ammo_Gatling_AP_M197_20mm is TAmmunitionDescriptor
 (
@@ -37967,7 +37968,7 @@ Ammo_MMG_M1919 is TAmmunitionDescriptor
     Name = 'OFYKLAIMJA'
     TypeName = 'NA'
     TypeCategoryName = 'BBQBDWUTJX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['MOTION']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -38359,7 +38360,7 @@ Ammo_MMG_M60_7_62mm is TAmmunitionDescriptor
     Name = 'AFJCOTRQIO'
     TypeName = 'NA'
     TypeCategoryName = 'BBQBDWUTJX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -38550,7 +38551,7 @@ Ammo_MMG_PKM_7_62mm is TAmmunitionDescriptor
     Name = 'DYJVEUAGFP'
     TypeName = 'NA'
     TypeCategoryName = 'BBQBDWUTJX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -39035,7 +39036,7 @@ Ammo_MMG_inf__MG3_7_62mm is TAmmunitionDescriptor
     Name = 'OBSQQPAYMY'
     TypeName = 'NA'
     TypeCategoryName = 'BBQBDWUTJX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -39221,7 +39222,7 @@ Ammo_MMG_inf_AANF1_7_62mm is TAmmunitionDescriptor
     Name = 'YOTAQAJQEW'
     TypeName = 'NA'
     TypeCategoryName = 'BBQBDWUTJX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -39314,7 +39315,7 @@ Ammo_MMG_inf_MAG_7_62mm is TAmmunitionDescriptor
     Name = 'QAQKNAVQHM'
     TypeName = 'NA'
     TypeCategoryName = 'BBQBDWUTJX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -57229,7 +57230,7 @@ Ammo_SAW_Bren_L4A4 is TAmmunitionDescriptor
     Name = 'BRGVFIWEIT'
     TypeName = 'NA'
     TypeCategoryName = 'YSLEYULPVD'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['MOTION']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -57322,7 +57323,7 @@ Ammo_SAW_FALO is TAmmunitionDescriptor
     Name = 'WTMWVCYVNT'
     TypeName = 'NA'
     TypeCategoryName = 'YSLEYULPVD'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['MOTION']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -57415,7 +57416,7 @@ Ammo_SAW_HK21_7_62mm is TAmmunitionDescriptor
     Name = 'ZZJMGSPPCW'
     TypeName = 'NA'
     TypeCategoryName = 'YSLEYULPVD'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['MOTION']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -57787,7 +57788,7 @@ Ammo_SAW_RPK_7_62mm is TAmmunitionDescriptor
     Name = 'GSHEDDHURZ'
     TypeName = 'NA'
     TypeCategoryName = 'YSLEYULPVD'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['MOTION']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -57842,8 +57843,8 @@ Ammo_SAW_RPK_7_62mm is TAmmunitionDescriptor
         BaseHitValueModifiers = 
         [
             (EBaseHitValueModifier/Base, 0.0),
-            (EBaseHitValueModifier/Idling, 25),
-            (EBaseHitValueModifier/Moving, 10),
+            (EBaseHitValueModifier/Idling, 20),
+            (EBaseHitValueModifier/Moving, 8),
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
@@ -57973,7 +57974,7 @@ Ammo_SAW_lMG_K_7_62mm is TAmmunitionDescriptor
     Name = 'SNZRXWKBHX'
     TypeName = 'NA'
     TypeCategoryName = 'YSLEYULPVD'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'FUQCRZJUJQ'
     TraitsToken = ['MOTION']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58164,7 +58165,7 @@ Ammo_Sniper_C3A1 is TAmmunitionDescriptor
     Name = 'CPSQIYZAFZ'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58255,7 +58256,7 @@ Ammo_Sniper_CETME_C is TAmmunitionDescriptor
     Name = 'TAIKJUKLBK'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58346,7 +58347,7 @@ Ammo_Sniper_FAL is TAmmunitionDescriptor
     Name = 'YPLEEDFUUG'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58438,7 +58439,7 @@ Ammo_Sniper_FN_Model_3011 is TAmmunitionDescriptor
     Name = 'EZHQBLQBEA'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58530,7 +58531,7 @@ Ammo_Sniper_FRF1 is TAmmunitionDescriptor
     Name = 'TOFHWGIMZX'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58621,7 +58622,7 @@ Ammo_Sniper_FRF2 is TAmmunitionDescriptor
     Name = 'LRVWFVHRGT'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58713,7 +58714,7 @@ Ammo_Sniper_G3A3ZF is TAmmunitionDescriptor
     Name = 'XLDVSULPGX'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58805,7 +58806,7 @@ Ammo_Sniper_L1A1_SLR is TAmmunitionDescriptor
     Name = 'AUAGASKMME'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58897,7 +58898,7 @@ Ammo_Sniper_L96A1 is TAmmunitionDescriptor
     Name = 'NSFINIKJOC'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -58989,7 +58990,7 @@ Ammo_Sniper_M14 is TAmmunitionDescriptor
     Name = 'UTGBWYJOYH'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -59081,7 +59082,7 @@ Ammo_Sniper_M24 is TAmmunitionDescriptor
     Name = 'PERMBGIQUR'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -59173,7 +59174,7 @@ Ammo_Sniper_M43 is TAmmunitionDescriptor
     Name = 'PZKSKJHZUQ'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -59264,7 +59265,7 @@ Ammo_Sniper_PSG1 is TAmmunitionDescriptor
     Name = 'NWOXZZKBRD'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -59356,7 +59357,7 @@ Ammo_Sniper_SVD_Dragunov is TAmmunitionDescriptor
     Name = 'RQNXYIATHG'
     TypeName = 'NA'
     TypeCategoryName = 'GGSLNBFHEX'
-    Caliber = 'HZTSKUHHBI'
+    Caliber = 'ZMMBFKRQQR'
     WeaponDescriptionToken = 'QQSDUKCNVD'
     TraitsToken = ['STAT']
     WeaponCursorType = Weapon_Cursor_MachineGun
@@ -84335,7 +84336,7 @@ Ammo_DCA_2_canons_S60_57mm_AP_FRL is TAmmunitionDescriptor
         BaseHitValueModifiers = 
         [
             (EBaseHitValueModifier/Base, 0.0),
-            (EBaseHitValueModifier/Idling, 15),
+            (EBaseHitValueModifier/Idling, 5),
             (EBaseHitValueModifier/Moving, 0),
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)

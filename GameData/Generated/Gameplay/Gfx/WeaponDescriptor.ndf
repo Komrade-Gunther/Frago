@@ -4534,30 +4534,6 @@ export WeaponDescriptor_AT_T12_Rapira_SOV is TWeaponManagerModuleDescriptor
                     WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_2'
                     WeaponIgnoredPropertyName = 'WeaponIgnored_2'
                     WeaponShootDataPropertyName = ["WeaponShootData_0_2"]
-                ),
-                TMountedWeaponDescriptor
-                (
-                    AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_ATGM_9M117_Bastion
-                    AnimateOnlyOneSoldier = False
-                    DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
-                    DispersionRadiusOffThickness = -0.1
-                    DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
-                    DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_ATGM_9M117_Bastion'
-                    HandheldEquipmentKey = 'MeshAlternative_3'
-                    NbWeapons = 1
-                    SalvoStockIndex = 1
-                    ShowDispersion = False
-                    ShowInInterface = True
-                    ShowSplashRadius = False
-                    SplashRadiusOffColor = RGBA[0, 0, 0, 0]
-                    SplashRadiusOffThickness = -0.1
-                    SplashRadiusOnColor = RGBA[0, 0, 0, 0]
-                    SplashRadiusOnThickness = -0.1
-                    WeaponActiveAndCanShootPropertyName = 'WeaponActiveAndCanShoot_3'
-                    WeaponIgnoredPropertyName = 'WeaponIgnored_3'
-                    WeaponShootDataPropertyName = ["WeaponShootData_0_3"]
                 )
             ]
             NbFX = 1
@@ -14795,7 +14771,7 @@ export WeaponDescriptor_DShV_CMD_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -14827,7 +14803,7 @@ export WeaponDescriptor_DShV_CMD_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -14905,7 +14881,7 @@ export WeaponDescriptor_DShV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -14937,7 +14913,7 @@ export WeaponDescriptor_DShV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -14969,7 +14945,7 @@ export WeaponDescriptor_DShV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VL
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -15638,7 +15614,7 @@ export WeaponDescriptor_Engineers_CMD_DDR is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VL
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -15826,7 +15802,7 @@ export WeaponDescriptor_Engineers_CMD_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -15858,7 +15834,7 @@ export WeaponDescriptor_Engineers_CMD_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VL
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -16014,7 +15990,7 @@ export WeaponDescriptor_Engineers_CMD_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -16487,7 +16463,7 @@ export WeaponDescriptor_Engineers_Flam_SOV is TWeaponManagerModuleDescriptor
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
     DefaultHoldFireState = False
     DefaultRiposteStance = False
-    Salves = [140, 80, 5, -1, -1, -1]
+    Salves = [140, 80, 15, -1, -1, -1]
     HasMainSalvo = False
     SalvoIsMainSalvo = [False, False, False, False, False, False, False]
     AlwaysOrientArmorTowardsThreat = False
@@ -16500,7 +16476,7 @@ export WeaponDescriptor_Engineers_Flam_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -16564,13 +16540,13 @@ export WeaponDescriptor_Engineers_Flam_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPO_A_93mm
+                    Ammunition = ~/Ammo_flamethrower_LPO
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
                     DispersionRadiusOnColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOnThickness = -0.1
-                    EffectTag = 'FireEffect_RocketInf_RPO_A_93mm'
+                    EffectTag = 'FireEffect_flamethrower_LPO'
                     HandheldEquipmentKey = 'MeshAlternative_3'
                     NbWeapons = 1
                     SalvoStockIndex = 2
@@ -16610,7 +16586,7 @@ export WeaponDescriptor_Engineers_Flam_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -16642,7 +16618,7 @@ export WeaponDescriptor_Engineers_Flam_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -17018,7 +16994,7 @@ export WeaponDescriptor_Engineers_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -17128,7 +17104,7 @@ export WeaponDescriptor_Engineers_Scout_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -17160,7 +17136,7 @@ export WeaponDescriptor_Engineers_Scout_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -17568,7 +17544,7 @@ export WeaponDescriptor_Engineers_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -17600,7 +17576,7 @@ export WeaponDescriptor_Engineers_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -21565,7 +21541,7 @@ export WeaponDescriptor_Fallschirmjager_DDR is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VL
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -22647,7 +22623,7 @@ export WeaponDescriptor_FireSupport_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -26898,7 +26874,7 @@ export WeaponDescriptor_HvyScout_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -26930,7 +26906,7 @@ export WeaponDescriptor_HvyScout_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -26962,7 +26938,7 @@ export WeaponDescriptor_HvyScout_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -38436,7 +38412,7 @@ export WeaponDescriptor_MANPAD_Igla_DDR is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -38468,7 +38444,7 @@ export WeaponDescriptor_MANPAD_Igla_DDR is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_MANPAD_igla
+                    Ammunition = ~/Ammo_MANPAD_Strela2M
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -38545,7 +38521,7 @@ export WeaponDescriptor_MANPAD_Igla_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -38577,7 +38553,7 @@ export WeaponDescriptor_MANPAD_Igla_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_MANPAD_igla
+                    Ammunition = ~/Ammo_MANPAD_Strela2M
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -38654,7 +38630,7 @@ export WeaponDescriptor_MANPAD_Igla_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -38686,7 +38662,7 @@ export WeaponDescriptor_MANPAD_Igla_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_MANPAD_igla
+                    Ammunition = ~/Ammo_MANPAD_Strela2M
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -40252,7 +40228,7 @@ export WeaponDescriptor_MP_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -42491,7 +42467,7 @@ export WeaponDescriptor_MotRifles_BTR_DDR is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VL
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -42524,7 +42500,7 @@ export WeaponDescriptor_MotRifles_BTR_SOV is TWeaponManagerModuleDescriptor
     DelayIdleAmmoSorting = DelayIdleAmmoSorting
     DefaultHoldFireState = False
     DefaultRiposteStance = False
-    Salves = [140, 80, 6, -1, -1, -1]
+    Salves = [140, 80, 8, -1, -1, -1]
     HasMainSalvo = False
     SalvoIsMainSalvo = [False, False, False, False, False, False, False]
     AlwaysOrientArmorTowardsThreat = False
@@ -42537,7 +42513,7 @@ export WeaponDescriptor_MotRifles_BTR_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -42569,7 +42545,7 @@ export WeaponDescriptor_MotRifles_BTR_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -42601,7 +42577,7 @@ export WeaponDescriptor_MotRifles_BTR_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VR_64mm
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -42757,7 +42733,7 @@ export WeaponDescriptor_MotRifles_CMD_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -42789,7 +42765,7 @@ export WeaponDescriptor_MotRifles_CMD_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -42931,7 +42907,7 @@ export WeaponDescriptor_MotRifles_DDR is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VL
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -43087,7 +43063,7 @@ export WeaponDescriptor_MotRifles_HMG_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -43151,7 +43127,7 @@ export WeaponDescriptor_MotRifles_HMG_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -43417,7 +43393,7 @@ export WeaponDescriptor_MotRifles_Metis_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -43449,7 +43425,7 @@ export WeaponDescriptor_MotRifles_Metis_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -43527,7 +43503,7 @@ export WeaponDescriptor_MotRifles_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -43559,7 +43535,7 @@ export WeaponDescriptor_MotRifles_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -43591,7 +43567,7 @@ export WeaponDescriptor_MotRifles_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VL
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -43669,7 +43645,7 @@ export WeaponDescriptor_MotSchutzen_DDR is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VR_64mm
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -43701,7 +43677,7 @@ export WeaponDescriptor_MotSchutzen_DDR is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VR_64mm
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -50552,7 +50528,7 @@ export WeaponDescriptor_Scout_LRRP_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -50740,7 +50716,7 @@ export WeaponDescriptor_Scout_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -50772,7 +50748,7 @@ export WeaponDescriptor_Scout_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -50804,7 +50780,7 @@ export WeaponDescriptor_Scout_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -51116,7 +51092,7 @@ export WeaponDescriptor_Scout_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -51148,7 +51124,7 @@ export WeaponDescriptor_Scout_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -51180,7 +51156,7 @@ export WeaponDescriptor_Scout_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61284,7 +61260,7 @@ export WeaponDescriptor_VDV_Afgantsy_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61316,7 +61292,7 @@ export WeaponDescriptor_VDV_Afgantsy_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61458,7 +61434,7 @@ export WeaponDescriptor_VDV_CMD_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61490,7 +61466,7 @@ export WeaponDescriptor_VDV_CMD_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_MANPAD_igla
+                    Ammunition = ~/Ammo_MANPAD_Strela2M
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61568,7 +61544,7 @@ export WeaponDescriptor_VDV_HMG_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61632,7 +61608,7 @@ export WeaponDescriptor_VDV_HMG_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61678,7 +61654,7 @@ export WeaponDescriptor_VDV_Mech_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61710,7 +61686,7 @@ export WeaponDescriptor_VDV_Mech_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61742,7 +61718,7 @@ export WeaponDescriptor_VDV_Mech_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VL
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61788,7 +61764,7 @@ export WeaponDescriptor_VDV_Metis_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61820,7 +61796,7 @@ export WeaponDescriptor_VDV_Metis_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61898,7 +61874,7 @@ export WeaponDescriptor_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61930,7 +61906,7 @@ export WeaponDescriptor_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -61962,7 +61938,7 @@ export WeaponDescriptor_VDV_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG7VR_64mm
+                    Ammunition = ~/Ammo_RocketInf_RPG7
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -86376,7 +86352,7 @@ export WeaponDescriptor_Engineers_CMD_TTsko_SOV is TWeaponManagerModuleDescripto
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -86454,7 +86430,7 @@ export WeaponDescriptor_Engineers_Flam_TTsko_SOV is TWeaponManagerModuleDescript
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -86564,7 +86540,7 @@ export WeaponDescriptor_Engineers_Scout_TTsko_SOV is TWeaponManagerModuleDescrip
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -86596,7 +86572,7 @@ export WeaponDescriptor_Engineers_Scout_TTsko_SOV is TWeaponManagerModuleDescrip
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -86674,7 +86650,7 @@ export WeaponDescriptor_Engineers_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -86784,7 +86760,7 @@ export WeaponDescriptor_FireSupport_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -87105,7 +87081,7 @@ export WeaponDescriptor_HvyScout_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -87137,7 +87113,7 @@ export WeaponDescriptor_HvyScout_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -87169,7 +87145,7 @@ export WeaponDescriptor_HvyScout_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -88267,7 +88243,7 @@ export WeaponDescriptor_MANPAD_Igla_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -88299,7 +88275,7 @@ export WeaponDescriptor_MANPAD_Igla_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_MANPAD_igla
+                    Ammunition = ~/Ammo_MANPAD_Strela2M
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -88744,7 +88720,7 @@ export WeaponDescriptor_MotRifles_BTR_TTsko_SOV is TWeaponManagerModuleDescripto
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -88776,7 +88752,7 @@ export WeaponDescriptor_MotRifles_BTR_TTsko_SOV is TWeaponManagerModuleDescripto
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -88854,7 +88830,7 @@ export WeaponDescriptor_MotRifles_CMD_TTsko_SOV is TWeaponManagerModuleDescripto
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -88886,7 +88862,7 @@ export WeaponDescriptor_MotRifles_CMD_TTsko_SOV is TWeaponManagerModuleDescripto
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -88932,7 +88908,7 @@ export WeaponDescriptor_MotRifles_HMG_TTsko_SOV is TWeaponManagerModuleDescripto
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -88996,7 +88972,7 @@ export WeaponDescriptor_MotRifles_HMG_TTsko_SOV is TWeaponManagerModuleDescripto
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -89042,7 +89018,7 @@ export WeaponDescriptor_MotRifles_Metis_TTsko_SOV is TWeaponManagerModuleDescrip
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -89074,7 +89050,7 @@ export WeaponDescriptor_MotRifles_Metis_TTsko_SOV is TWeaponManagerModuleDescrip
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -89152,7 +89128,7 @@ export WeaponDescriptor_MotRifles_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -89184,7 +89160,7 @@ export WeaponDescriptor_MotRifles_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -89670,7 +89646,7 @@ export WeaponDescriptor_Scout_Spetsnaz_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AKS_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -89780,7 +89756,7 @@ export WeaponDescriptor_Scout_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -89812,7 +89788,7 @@ export WeaponDescriptor_Scout_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -89844,7 +89820,7 @@ export WeaponDescriptor_Scout_TTsko_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -91531,7 +91507,7 @@ export WeaponDescriptor_MotRifles_RPG22_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_FM_AK_74
+                    Ammunition = ~/Ammo_FM_kbk_AKM
                     AnimateOnlyOneSoldier = False
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -91563,7 +91539,7 @@ export WeaponDescriptor_MotRifles_RPG22_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_SAW_RPK_74_5_56mm
+                    Ammunition = ~/Ammo_SAW_RPK_7_62mm
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
@@ -91595,7 +91571,7 @@ export WeaponDescriptor_MotRifles_RPG22_SOV is TWeaponManagerModuleDescriptor
                 TMountedWeaponDescriptor
                 (
                     AmmoConsumption_ForInterface = 1
-                    Ammunition = ~/Ammo_RocketInf_RPG22_72_5mm
+                    Ammunition = ~/Ammo_RocketInf_RPG2
                     AnimateOnlyOneSoldier = True
                     DispersionRadiusOffColor = RGBA[0, 0, 0, 0]
                     DispersionRadiusOffThickness = -0.1
