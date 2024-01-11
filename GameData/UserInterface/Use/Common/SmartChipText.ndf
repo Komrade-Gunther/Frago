@@ -1,0 +1,38 @@
+template SmartChipListDescriptor
+[
+    AlignementToFather,
+    AlignementToAnchor,
+    LocalRenderLayer,
+    SmartGroupOnly,
+]
+is TSmartChipListDescriptor
+(
+    UniformDrawer = $/UserInterface/UIUniformDrawer
+
+    ElementName = "SmartChipList"
+
+    SmartOrderTextColor = "SD2_NoirPur"
+    SmartGroupTextColor = "SD2_BlancPur"
+    SmartOrderBackgroundColorToken = "VividRed"
+    SmartGroupBackgroundColorToken = "Cyan"
+    MagnifiableChipSize = 10
+
+    AlignementToFather = <AlignementToFather>
+    AlignementToAnchor = <AlignementToAnchor>
+    LocalRenderLayer = <LocalRenderLayer>
+    SmartGroupOnly = <SmartGroupOnly>
+
+    ParagraphStyle = TParagraphStyleRTTI
+    (
+        Alignment = UIText_Center
+        VerticalAlignment = UIText_VerticalCenter
+        InterLine = 0
+    )
+
+    TextStyle = "Default"
+    TypefaceToken = "UIMainFont"
+    TextDico = ~/LocalisationConstantes/dico_interface_ingame
+
+    TextSize = "10"
+    TextFormatScript = ~/DefaultTextFormatScript
+)

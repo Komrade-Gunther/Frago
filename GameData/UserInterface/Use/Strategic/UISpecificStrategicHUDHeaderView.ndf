@@ -44,12 +44,26 @@ SteelmanReinforcementButtonPanel is BUCKListDescriptor
                 Axis = ~/ListAxis/Horizontal
                 BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
                 InterItemMargin = TRTTILength( Magnifiable = 10.0 )
+
+                BackgroundComponents =
+                [
+                    BUCKSpotlightDescriptor
+                    (
+                        UniqueName = "Spotlight_Rack"
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            RelativeWidthHeight = [1.0, 1.0]
+                        )
+                    )
+                ]
             )
         ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = PanelRenfortsEtDate
         ),
+
+
     ]
 
     BackgroundComponents =
@@ -186,7 +200,7 @@ private StrategicProductionMenuStrategicIncomePointsText is BUCKTextDescriptor
     TextColor = "Gold"
     TextSize = "14"
 
-    Hint = BUCKSpecificHintableArea
+    Hint = BUCKSpecificStrategicHintableArea
     (
         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
         HintTitleToken = "head_CPEt"
@@ -226,7 +240,7 @@ private StrategicProductionMenuStrategicPointsText is BUCKTextDescriptor
     TextColor = "Gold"
     TextSize = "18"
 
-    Hint = BUCKSpecificHintableArea
+    Hint = BUCKSpecificStrategicHintableArea
     (
         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
         HintTitleToken = "head_CPt"
@@ -244,7 +258,7 @@ private StrategicBoutonsMenus is PanelRoundedCorner
 
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableOffset = [25.0, 0.0]
+        MagnifiableOffset = [0.0, 0.0]
         AlignementToFather = [1.0, 1.0]
         AlignementToAnchor = [1.0, 1.0]
     )
@@ -272,7 +286,7 @@ private StrategicBoutonsMenus is PanelRoundedCorner
             Axis = ~/ListAxis/Horizontal
             FirstMargin = TRTTILength(Magnifiable = 19.0)
             InterItemMargin = TRTTILength(Magnifiable = 13.0)
-            LastMargin = TRTTILength(Magnifiable = 30.0)
+            LastMargin = TRTTILength(Magnifiable = 19.0)
 
             Elements =
             [
@@ -294,7 +308,7 @@ private StrategicBoutonsMenus is PanelRoundedCorner
                 (
                     ComponentDescriptor = BUCKContainerDescriptor
                     (
-                        UniqueName = "SpecificStrategicHUDHeaderOptionViewMainContainer"
+                        UniqueName = "SpecificStrategicHUDGameSpeedViewMainContainer"
                         ComponentFrame = TUIFramePropertyRTTI ()
 
                         FitStyle = ~/ContainerFitStyle/FitToContent
@@ -307,16 +321,12 @@ private StrategicBoutonsMenus is PanelRoundedCorner
 
 // -------------------------------------------------------------------------------------------------
 
-UISpecificStrategicHUDHeaderOptionViewDescriptor is TUISpecificStrategicHUDHeaderOptionViewDescriptor
+UISpecificStrategicHUDGameSpeedViewDescriptor is TUISpecificStrategicHUDGameSpeedViewDescriptor
 (
     MainComponentDescriptor = BoutonAccelerationDuTemps
-    MainComponentContainerUniqueName = "SpecificStrategicHUDHeaderOptionViewMainContainer"
+    MainComponentContainerUniqueName = "SpecificStrategicHUDGameSpeedViewMainContainer"
 
-    PawnQuickMoveSpeedValue = 200.0
-    PawnStandardMoveSpeedValue = 8.0
-
-    DefaultForceShowPowerGauges = true
-    DefaultHideLabelUnitIcon = false
+    GameSpeedMutliplierInPercent = 200
 )
 
 // -------------------------------------------------------------------------------------------------
@@ -343,10 +353,11 @@ private ReinforcementButton is BUCKSpecificButton
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
     HidePointerEvents = true
 
-    HintTitleToken = ""
-    HintBodyToken = ""
-    HintExtendedToken = "head_Reb"
-    HintDico = ~/LocalisationConstantes/dico_interface_ingame
+    HintableAreaComponent = BUCKSpecificStrategicHintableArea
+    (
+        HintExtendedToken = "head_Reb"
+        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+    )
 
     IsTogglable = true
     RadioButtonManager = StrategicHUDHeaderButtonManager

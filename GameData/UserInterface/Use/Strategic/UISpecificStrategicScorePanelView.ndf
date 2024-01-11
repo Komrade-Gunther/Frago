@@ -14,20 +14,21 @@ private ScorePanelDate is BUCKTextDescriptor
 
     ParagraphStyle = ~/paragraphStyleTextCenter
 
-    HasBorder = true
+    HasBorder = false
     BorderLineColorToken = 'SM_Grullo'
     BorderThicknessToken = '1'
     BordersToDraw =  ~/TBorderSide/Bottom
 
     TextStyle = "Default"
-    TypefaceToken = "UIMainFont"
+
 
     VerticalFitStyle = ~/FitStyle/FitToContent
 
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
     TextToken = "SSC_DATE"
-    TextSize = "SD2_Moyen"
-    TextColor = "SD2_BleuVariable"
+    TypefaceToken = "Eurostyle"
+    TextColor = "BlancEquipe"
+    TextSize = "21"
 )
 
 //-------------------------------------------------------------------------------------
@@ -88,7 +89,7 @@ private VictoryRatio is BUCKListDescriptor
                 TextSize = "26"
                 TextColor = "SM_paleSilver"
 
-                Hint = BUCKSpecificHintableArea
+                Hint = BUCKSpecificStrategicHintableArea
                 (
                     DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     HintTitleToken = ''
@@ -247,7 +248,7 @@ MainPanelScore is BUCKListDescriptor
                 TextSize = "26"
                 TextColor = "SM_paleSilver"
 
-                Hint = BUCKSpecificHintableArea
+                Hint = BUCKSpecificStrategicHintableArea
                 (
                     DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     HintTitleToken = ''
@@ -574,9 +575,9 @@ ScoreTable is BUCKGridDescriptor
         ([1,1], TemplateTextVictory (TextToken = 'SSC_v_3' BackgroundBlockColorToken = 'score_02')),
                 ([1,2], TemplateTextVictory (TextToken = 'SSC_v_2' BackgroundBlockColorToken = 'score_03')),
                     ([1,3], TemplateTextVictory (TextToken = 'SSC_d_1' BackgroundBlockColorToken = 'score_04')),
-                        ([1,4], TemplateTextVictory (TextToken = 'SSC_v_2' BackgroundBlockColorToken = 'score_05')),
-                            ([1,5], TemplateTextVictory (TextToken = 'SSC_v_3' BackgroundBlockColorToken = 'score_06')),
-                                ([1,6], TemplateTextVictory (TextToken = 'SSC_v_4')),
+                        ([1,4], TemplateTextVictory (TextToken = 'SSC_d_2' BackgroundBlockColorToken = 'score_05')),
+                            ([1,5], TemplateTextVictory (TextToken = 'SSC_d_3' BackgroundBlockColorToken = 'score_06')),
+                                ([1,6], TemplateTextVictory (TextToken = 'SSC_d_4')),
 
     ]
 )

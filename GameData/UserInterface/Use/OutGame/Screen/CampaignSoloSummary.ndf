@@ -4,7 +4,7 @@ private template MissionDescriptionText
 [
     ElementName : string = "",
     TextToken : string = "",
-    TextColor : string = 'Noir',
+    TextColor : string = 'Noir_noHL',
     TextSize = "13",
     TypefaceToken = "Courrier",
     Alignment = UIText_Left,
@@ -916,12 +916,118 @@ is BUCKSpecificScrollingContainerDescriptor
                         TypefaceToken = "Eurostyle"
                         TextSize = '14'
                     )
+                ),
+                BUCKListElementDescriptor
+                (
+                    ComponentDescriptor = BUCKTextureDescriptor
+                    (
+                        ElementName = "MapTexture_AG"
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            MagnifiableWidthHeight = [400, 400]
+                            AlignementToAnchor = [0.4, 0.0]
+                            AlignementToFather = [0.4, 0.0]
+                        )
+
+                        TextureFrame = TUIFramePropertyRTTI
+                        (
+                            MagnifiableWidthHeight = [400, 200]
+                            MagnifiableOffset = [0,40]
+                        )
+                    )
+                )
+            ]
+        )
+    ]
+)
+//-------------------------------------------------------------------------------------
+template displayArmyGeneral_missionDisplay_template
+[
+    BackgroundComponents = [],
+    ForegroundComponents = [],
+]
+is BUCKSpecificScrollingContainerDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, 800.0]
+    )
+
+    ExternalScrollbar = true
+    HasVerticalScrollbar = true
+
+    VerticalScrollbarComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [8.0, 0.0]
+        AlignementToAnchor = [1.0, 0.0]
+        AlignementToFather = [1.0, 0.0]
+        MagnifiableOffset =  [-8.0, 0.0]
+    )
+
+    HasBackground = true
+    BackgroundBlockColorToken = 'Orange'
+
+    Components =
+     [
+        BUCKListDescriptor
+        (
+            ElementName = "ObjectivesList"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [1.0, 0.0]
+                MagnifiableOffset = [15.0, 0.0]
+            )
+
+            Axis = ~/ListAxis/Vertical
+            FirstMargin = TRTTILength( Magnifiable = 10)
+            Elements =
+            [
+                BUCKListElementDescriptor
+                (
+                    ComponentDescriptor = MissionDescriptionText
+                    (
+                        ElementName = "TitreObjectifs"
+                        TextPadding = TRTTILength4(Magnifiable = [20,30,50,0])
+                        Alignment = UIText_Center
+                        TypefaceToken = "Eurostyle"
+                        TextColor = "Noir"
+                        TextSize = "20"
+                    )
+                ),
+                BUCKListElementDescriptor
+                (
+                    ComponentDescriptor = MissionDescriptionText
+                    (
+                        ElementName = "TexteObjectifs"
+                        TextPadding = TRTTILength4(Magnifiable = [20,30,50,0])
+                        Alignment = UIText_Left
+                        TypefaceToken = "Eurostyle"
+                        TextSize = '14'
+                    )
+                ),
+                BUCKListElementDescriptor
+                (
+                    ComponentDescriptor = BUCKTextureDescriptor
+                    (
+                        ElementName = "MapTexture_AG"
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            MagnifiableWidthHeight = [200, 200]
+                            AlignementToAnchor = [0.5, 0.0]
+                            AlignementToFather = [0.5, 0.0]
+                            // MagnifiableOffset = [-1,10]
+
+                        )
+                    )
                 )
             ]
         )
     ]
 )
 
+//-------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------
 MissionElementsList is BUCKListDescriptor
 (

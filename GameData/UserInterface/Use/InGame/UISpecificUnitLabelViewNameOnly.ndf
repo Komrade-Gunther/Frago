@@ -33,7 +33,7 @@ private StandardLabelListNameOnly is BUCKListDescriptor
                         LocalRenderLayer = 4
                     ),
 
-                    UnitLabelBackground
+                    UnitSurrounding
                     (
                         LocalRenderLayer = 2
                     ),
@@ -80,9 +80,8 @@ private UnitNameAndRightListNameOnly is BUCKContainerDescriptor
     FitStyle = ~/ContainerFitStyle/FitToContent
     Components =
     [
-        UnitLabelUpperList
+        CurrentUnitLabelUpperList
         (
-            IsForMultiSelection = false
             ChildFitToContent = true
         ),
         BUCKListDescriptor
@@ -134,19 +133,15 @@ private UpperLabelNameOnly is BUCKListDescriptor
     [
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = UnitLabelUnitMoraleGaugeBUCKComponent
+            ComponentDescriptor = UnitLabelUnitMoraleAndHPGaugesBUCKComponent
             (
-                ElementName = "MoraleGauge"
                 LocalRenderLayer = 1
+                MoraleOnly = true
             )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = UnitNameListSensibleArea
-            (
-                IsForCarriedUnit = true
-                LocalRenderLayer = 1
-            )
+            ComponentDescriptor = CarriedUnitNameListSensibleArea( LocalRenderLayer = 1 )
         ),
     ]
 

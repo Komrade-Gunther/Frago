@@ -171,7 +171,6 @@ export Pool_Airstrike_Assault is TPoolModel
         PriceComparisonMethod = EPriceComparatorType/Random
         TagsPriority = [
             "Avion_AT",
-            "Avion_Assaut",
         ]
     ),
     ]
@@ -193,11 +192,4 @@ export Pool_Airstrike_SEAD is TPoolModel
     ),
     ]
 )
-// Requetes
-//-------------------------------------------------------------------------
-export VEasy_BasicAirstrikeSupport is
-[
-    (["Avion_Chasseur_Bombardier", "Avion_Bombardier", "Avion_Assaut", "Avion_AT"], 2),
-]
-//-------------------------------------------------------------------------
 

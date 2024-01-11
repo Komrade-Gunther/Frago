@@ -19,7 +19,7 @@ FeedbackMessage_OnNewPhaseStarted               is 14
 FeedbackMessage_OnPhaseResourcesGained          is 15
 FeedbackMessage_OnAirplaneOutOfFuel             is 16
 FeedbackMessage_OnAirplaneOutOfAmmo             is 17
-FeedbackMessage_OnAssaultOrder                  is 18
+FeedbackMessage_OnAssaultDistrictOrder          is 18
 FeedbackMessage_OnStopOrder                     is 19
 FeedbackMessage_OnCapturedEnemyUnit             is 20
 FeedbackMessage_OnUnitCapturedByEnemy           is 21
@@ -83,7 +83,6 @@ FeedbackMessage_OnCommandZoneLost               is 78
 FeedbackMessage_OnCommandZoneSecuredByEnemy     is 79
 FeedbackMessage_OnAerialCorridorSecuredByPlayer is 80
 FeedbackMessage_OnAerialCorridorLost            is 81
-FeedbackMessage_OnBombarderOrder                is 82
 FeedbackMessage_OnSmartMoveOrder                is 83
 FeedbackMessage_OnSmartMoveAndAttackOrder       is 84
 FeedbackMessage_OnSellOrder                     is 85
@@ -100,7 +99,6 @@ FeedbackMessage_OnAIManageArtillery_CounterBatteryOrder   is 95
 FeedbackMessage_OnAIDefendOrder                 is 96
 FeedbackMessage_AIAirplaneAutoManageOrder       is 97
 FeedbackMessage_OnShootDefensiveSmokeOrder      is 98
-FeedbackMessage_OnAirplaineAirDenyOrder         is 99
 FeedbackMessage_OnAISupplyOrder                 is 100
 FeedbackMessage_OnIFV                           is 101
 FeedbackMessage_OnREDUnitLostForReplay          is 102
@@ -130,7 +128,7 @@ export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
         "FeedbackMessage_OnPhaseResourcesGained",
         "FeedbackMessage_OnAirplaneOutOfFuel",
         "FeedbackMessage_OnAirplaneOutOfAmmo",
-        "FeedbackMessage_OnAssaultOrder",
+        "FeedbackMessage_OnAssaultDistrictOrder",
         "FeedbackMessage_OnStopOrder",
         "FeedbackMessage_OnCapturedEnemyUnit",
         "FeedbackMessage_OnUnitCapturedByEnemy",
@@ -194,7 +192,6 @@ export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
         "FeedbackMessage_OnCommandZoneSecuredByEnemy",
         "FeedbackMessage_OnAerialCorridorSecuredByPlayer",
         "FeedbackMessage_OnAerialCorridorLost",
-        "FeedbackMessage_OnBombarderOrder",
         "FeedbackMessage_OnSmartMoveOrder",
         "FeedbackMessage_OnSmartMoveAndAttackOrder",
         "FeedbackMessage_OnSellOrder",
@@ -211,7 +208,6 @@ export Generated_DispatchedMessageType_Enum is TDispatchedMessageType
         "FeedbackMessage_OnAIDefendOrder",
         "FeedbackMessage_OnAIAirplaneAutoManageOrder",
         "FeedbackMessage_OnShootDefensiveSmokeOrder",
-        "FeedbackMessage_OnAirplaineAirDenyOrder",
         "FeedbackMessage_OnAISupplyOrder",
         "FeedbackMessage_OnIFV",
         "FeedbackMessage_OnREDUnitLostForReplay",

@@ -389,7 +389,7 @@ Gfx_AH1F_ATAS_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -402,7 +402,7 @@ Gfx_AH1F_ATAS_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -420,8 +420,8 @@ Gfx_AH1F_ATAS_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_Hydra_70mm_x14 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -507,7 +507,7 @@ Gfx_AH1F_CNITE_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -520,7 +520,7 @@ Gfx_AH1F_CNITE_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -539,8 +539,8 @@ Gfx_AH1F_CNITE_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_Hydra_70mm_x19 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -627,7 +627,7 @@ Gfx_AH1F_Cobra_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -640,7 +640,7 @@ Gfx_AH1F_Cobra_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -658,8 +658,8 @@ Gfx_AH1F_Cobra_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_Hydra_70mm_x14 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -745,7 +745,7 @@ Gfx_AH1F_HeavyHog_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -758,7 +758,7 @@ Gfx_AH1F_HeavyHog_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -776,8 +776,8 @@ Gfx_AH1F_HeavyHog_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_Zuni_1272mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -863,7 +863,7 @@ Gfx_AH1S_Cobra_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -876,7 +876,7 @@ Gfx_AH1S_Cobra_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -894,8 +894,8 @@ Gfx_AH1S_Cobra_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_Hydra_70mm_x19 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -985,7 +985,7 @@ Gfx_AH64_Apache_NG_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -998,7 +998,7 @@ Gfx_AH64_Apache_NG_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -1030,8 +1030,8 @@ Gfx_AH64_Apache_NG_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_Hydra_70mm_x19 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1500 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 340 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1500 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 340 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
                 + Eject_Actions_AH64_Apache_NG_US
@@ -1123,7 +1123,7 @@ Gfx_AH64_Apache_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -1136,7 +1136,7 @@ Gfx_AH64_Apache_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -1168,8 +1168,8 @@ Gfx_AH64_Apache_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_Hydra_70mm_x19 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1500 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 340 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1500 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 340 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
                 + Eject_Actions_AH64_Apache_US
@@ -1249,7 +1249,7 @@ Gfx_AH64_Apache_emp1_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -1262,7 +1262,7 @@ Gfx_AH64_Apache_emp1_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -1293,8 +1293,8 @@ Gfx_AH64_Apache_emp1_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_AGM_AGM114A_x16 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1500 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 340 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1500 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 340 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
                 + Eject_Actions_AH64_Apache_emp1_US
@@ -1386,7 +1386,7 @@ Gfx_AH64_Apache_emp2_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -1399,7 +1399,7 @@ Gfx_AH64_Apache_emp2_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -1431,8 +1431,8 @@ Gfx_AH64_Apache_emp2_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_Hydra_70mm_x19 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1500 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 340 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1500 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 340 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
                 + Eject_Actions_AH64_Apache_emp2_US
@@ -1496,7 +1496,7 @@ Gfx_AH6C_Little_Bird_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -1509,7 +1509,7 @@ Gfx_AH6C_Little_Bird_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -1524,8 +1524,8 @@ Gfx_AH6C_Little_Bird_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_RocketAir_Hydra_70mm_x14 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 900 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 170 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 900 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 170 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -1562,7 +1562,7 @@ Gfx_Alouette_III_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -1575,7 +1575,7 @@ Gfx_Alouette_III_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -1588,8 +1588,8 @@ Gfx_Alouette_III_FR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1150 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 250 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1150 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 250 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -1624,7 +1624,7 @@ Gfx_Alouette_III_reco_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -1637,7 +1637,7 @@ Gfx_Alouette_III_reco_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -1650,8 +1650,8 @@ Gfx_Alouette_III_reco_FR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1150 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 250 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1150 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 250 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -1686,7 +1686,7 @@ Gfx_Alouette_II_CMD_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -1699,7 +1699,7 @@ Gfx_Alouette_II_CMD_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -1712,8 +1712,8 @@ Gfx_Alouette_II_CMD_RFA_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1150 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 250 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1150 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 250 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -1748,7 +1748,7 @@ Gfx_Alouette_II_reco_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -1761,7 +1761,7 @@ Gfx_Alouette_II_reco_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -1774,8 +1774,8 @@ Gfx_Alouette_II_reco_RFA_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1150 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 250 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1150 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 250 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -2069,7 +2069,7 @@ Gfx_Bo_105_CMD_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2082,7 +2082,7 @@ Gfx_Bo_105_CMD_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2095,8 +2095,8 @@ Gfx_Bo_105_CMD_RFA_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -2144,7 +2144,7 @@ Gfx_Bo_105_PAH_1A1_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2157,7 +2157,7 @@ Gfx_Bo_105_PAH_1A1_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2171,8 +2171,8 @@ Gfx_Bo_105_PAH_1A1_RFA_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_ATGM_HOT2_x6 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -2220,7 +2220,7 @@ Gfx_Bo_105_PAH_1_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2233,7 +2233,7 @@ Gfx_Bo_105_PAH_1_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2247,8 +2247,8 @@ Gfx_Bo_105_PAH_1_RFA_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_ATGM_HOT1_x6 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -2284,7 +2284,7 @@ Gfx_Bo_105_reco_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2297,7 +2297,7 @@ Gfx_Bo_105_reco_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2310,8 +2310,8 @@ Gfx_Bo_105_reco_RFA_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -2346,7 +2346,7 @@ Gfx_Bo_105_trans_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2359,7 +2359,7 @@ Gfx_Bo_105_trans_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2372,8 +2372,8 @@ Gfx_Bo_105_trans_RFA_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 995 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 195 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -2409,7 +2409,7 @@ Gfx_CH47D_Chinook_supply_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2422,7 +2422,7 @@ Gfx_CH47D_Chinook_supply_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = True
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2436,8 +2436,8 @@ Gfx_CH47D_Chinook_supply_UK_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -2473,7 +2473,7 @@ Gfx_CH47_Chinook_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2486,7 +2486,7 @@ Gfx_CH47_Chinook_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = True
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2500,8 +2500,8 @@ Gfx_CH47_Chinook_US_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -2537,7 +2537,7 @@ Gfx_CH47_Super_Chinook_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2550,7 +2550,7 @@ Gfx_CH47_Super_Chinook_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = True
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2564,8 +2564,8 @@ Gfx_CH47_Super_Chinook_US_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -2601,7 +2601,7 @@ Gfx_CH53G_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 6
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2614,7 +2614,7 @@ Gfx_CH53G_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2628,8 +2628,8 @@ Gfx_CH53G_RFA_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2500 PaleCount = 6 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 600 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2500 PaleCount = 6 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 600 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -2665,7 +2665,7 @@ Gfx_CH53G_trans_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 6
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2678,7 +2678,7 @@ Gfx_CH53G_trans_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2692,8 +2692,8 @@ Gfx_CH53G_trans_RFA_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2500 PaleCount = 6 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 600 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2500 PaleCount = 6 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 600 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -2729,7 +2729,7 @@ Gfx_CH53_Sea_Stallion_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 6
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -2742,7 +2742,7 @@ Gfx_CH53_Sea_Stallion_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -2756,8 +2756,8 @@ Gfx_CH53_Sea_Stallion_US_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2500 PaleCount = 6 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 600 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2500 PaleCount = 6 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 600 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -3625,6 +3625,79 @@ Gfx_F15E_StrikeEagle_US_Autogen is TacticAerialDepictionTemplate
         ]
 
         SubDepictionGenerators = [ SubGenerators_F15E_StrikeEagle_US ]
+)
+// Dépiction de l'unité F16A_CBU_BEL
+Op_F16A_CBU_BEL_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_F16A_CBU_BEL_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_F16A_CBU_BEL
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_F16A_CBU_BEL_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_F16A_CBU_BEL
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+    ]
+)
+Gfx_F16A_CBU_BEL_Autogen is TacticAerialDepictionTemplate
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'F16A_CBU_BEL'
+    Alternatives = Alternatives_F16A_CBU_BEL
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_SD_avion_multirole_F16,
+            DepictionOperator_Turret_1_Aim,
+            Op_F16A_CBU_BEL_Weapon1,
+            Op_F16A_CBU_BEL_Weapon2,
+            Op_F16A_CBU_BEL_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_M61_Vulcan_20mm ),
+                    ( [ "weapon_effet_tag2" ], Weapon_Bomb_CBU_Mk20_Rockeye_II_250kg_x2 ),
+                    ( [ "weapon_effet_tag3" ], Weapon_Bomb_Mk82_250kg_x6 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            TSubDepiction( Anchors = ['pilot'] Depiction = Pilot_Pilote_US),
+        ]
+
+        SubDepictionGenerators = [ SubGenerators_F16A_CBU_BEL ]
 )
 // Dépiction de l'unité F16C_LGB_US
 Op_F16C_LGB_US_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -5207,7 +5280,7 @@ Gfx_Gazelle_20mm_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5220,7 +5293,7 @@ Gfx_Gazelle_20mm_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5236,8 +5309,8 @@ Gfx_Gazelle_20mm_FR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_20mm_M621_GIAT ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -5301,7 +5374,7 @@ Gfx_Gazelle_20mm_reco_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5314,7 +5387,7 @@ Gfx_Gazelle_20mm_reco_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5330,8 +5403,8 @@ Gfx_Gazelle_20mm_reco_FR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_20mm_M621_GIAT ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -5366,7 +5439,7 @@ Gfx_Gazelle_CMD_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5379,7 +5452,7 @@ Gfx_Gazelle_CMD_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5392,8 +5465,8 @@ Gfx_Gazelle_CMD_UK_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -5440,7 +5513,7 @@ Gfx_Gazelle_HOT_2_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5453,7 +5526,7 @@ Gfx_Gazelle_HOT_2_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5467,8 +5540,8 @@ Gfx_Gazelle_HOT_2_FR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_AGM_HOT2_x4 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -5516,7 +5589,7 @@ Gfx_Gazelle_HOT_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5529,7 +5602,7 @@ Gfx_Gazelle_HOT_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5543,8 +5616,8 @@ Gfx_Gazelle_HOT_FR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_AGM_HOT1_x4 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -5592,7 +5665,7 @@ Gfx_Gazelle_Mistral_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5605,7 +5678,7 @@ Gfx_Gazelle_Mistral_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5619,8 +5692,8 @@ Gfx_Gazelle_Mistral_FR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_Mistral_Celtic_x4 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -5668,7 +5741,7 @@ Gfx_Gazelle_SNEB_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5681,7 +5754,7 @@ Gfx_Gazelle_SNEB_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5695,8 +5768,8 @@ Gfx_Gazelle_SNEB_UK_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_RocketAir_SNEB_68mm_x12 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -5732,7 +5805,7 @@ Gfx_Gazelle_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5745,7 +5818,7 @@ Gfx_Gazelle_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5758,8 +5831,8 @@ Gfx_Gazelle_UK_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -5794,7 +5867,7 @@ Gfx_Gazelle_reco_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5807,7 +5880,7 @@ Gfx_Gazelle_reco_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5820,8 +5893,8 @@ Gfx_Gazelle_reco_FR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -5856,7 +5929,7 @@ Gfx_Gazelle_trans_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -5869,7 +5942,7 @@ Gfx_Gazelle_trans_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -5882,8 +5955,8 @@ Gfx_Gazelle_trans_UK_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1300 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 100 PaleCount = 8 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -7185,7 +7258,7 @@ Gfx_Ka_50_AA_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -7198,7 +7271,7 @@ Gfx_Ka_50_AA_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -7216,8 +7289,8 @@ Gfx_Ka_50_AA_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_Pod_GUV_Gatling_7_62mm_12_7mm_x2 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
 
@@ -7308,7 +7381,7 @@ Gfx_Ka_50_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -7321,7 +7394,7 @@ Gfx_Ka_50_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -7339,8 +7412,8 @@ Gfx_Ka_50_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_B8_80mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 1400 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
 
@@ -7349,6 +7422,82 @@ Gfx_Ka_50_SOV_Autogen is TacticAerialDepictionTemplate
         ]
 
         SubDepictionGenerators = [ SubGenerators_Ka_50_SOV ]
+)
+// Dépiction de l'unité L39ZO_DDR
+Op_L39ZO_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_L39ZO_DDR_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_L39ZO_DDR
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 2
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+        "WeaponShootData_1_2",
+    ]
+)
+Op_L39ZO_DDR_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_L39ZO_DDR
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 2
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+        "WeaponShootData_1_3",
+    ]
+)
+Gfx_L39ZO_DDR_Autogen is TacticAerialDepictionTemplate
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'L39ZO_DDR'
+    Alternatives = Alternatives_L39ZO_DDR
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_SD_avion_AlphaJet,
+            DepictionOperator_Turret_1_Aim,
+            Op_L39ZO_DDR_Weapon1,
+            Op_L39ZO_DDR_Weapon2,
+            Op_L39ZO_DDR_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_Mauser_BK_27mm ),
+                    ( [ "weapon_effet_tag2" ], Weapon_RocketAir_SNEB_68mm_x18 ),
+                    ( [ "weapon_effet_tag3" ], Weapon_RocketAir_SNEB_68mm_x18 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane_Smoky
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            TSubDepiction( Anchors = ['pilot', 'pilot2'] Depiction = Pilot_Pilote_US),
+        ]
+
+        SubDepictionGenerators = [ SubGenerators_L39ZO_DDR ]
 )
 // Dépiction de l'unité Lynx_AH_Mk1_TOW_UK
 Op_Lynx_AH_Mk1_TOW_UK_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
@@ -7390,7 +7539,7 @@ Gfx_Lynx_AH_Mk1_TOW_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -7403,7 +7552,7 @@ Gfx_Lynx_AH_Mk1_TOW_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -7417,8 +7566,8 @@ Gfx_Lynx_AH_Mk1_TOW_UK_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_AGM_BGM71_TOW_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1380 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 236 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1380 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 236 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -7465,7 +7614,7 @@ Gfx_Lynx_AH_Mk1_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -7478,7 +7627,7 @@ Gfx_Lynx_AH_Mk1_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -7491,8 +7640,8 @@ Gfx_Lynx_AH_Mk1_UK_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1380 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 236 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1380 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 236 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -7561,7 +7710,7 @@ Gfx_Lynx_AH_Mk7_I_TOW_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -7574,7 +7723,7 @@ Gfx_Lynx_AH_Mk7_I_TOW_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -7588,8 +7737,8 @@ Gfx_Lynx_AH_Mk7_I_TOW_UK_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_AGM_BGM71C_ITOW_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1380 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 236 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1380 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 236 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -8120,6 +8269,67 @@ Gfx_MiG_23MF_DDR_Autogen is TacticAerialDepictionTemplate
         ]
 
         SubDepictionGenerators = [ SubGenerators_MiG_23MF_DDR ]
+)
+// Dépiction de l'unité MiG_23MF_SOV
+Op_MiG_23MF_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
+(
+    Anchors = 
+    [
+        "fx_tourelle1_tir_01",
+    ]
+    FireEffectTag = "weapon_effet_tag1"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
+    WeaponShootDataPropertyName = "WeaponShootData_0_1"
+)
+Op_MiG_23MF_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_MiG_23MF_SOV
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Gfx_MiG_23MF_SOV_Autogen is TacticAerialDepictionTemplate
+(
+    Deviator = DepictionDeviator_Airplane
+    AdditionalTextures = AirplaneDestTextures
+    Selector = SpecificAirplaneDepictionSelector
+    CoatingName = 'MiG_23MF_SOV'
+    Alternatives = Alternatives_MiG_23MF_SOV
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_SD_avion_multirole_MiG23,
+            DepictionOperator_Turret_1_Aim,
+            Op_MiG_23MF_SOV_Weapon1,
+            Op_MiG_23MF_SOV_Weapon2,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_AirplaneParts,
+            DepictionOperator_Airplane,
+            DepictionOperator_AirplaneShadow,
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+            DepictionOperator_Flares,
+        ]
+        Actions = MAP[
+                    ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_GSh_23_23mm ),
+                    ( [ "weapon_effet_tag2" ], Weapon_Bomb_FAB_500kg_x6 ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Avion
+                + DepictionAction_CriticalFX_Airplane
+                + DepictionAction_MovementFX_SingleReactorAirplane
+                + DepictionAction_Flare_Simple
+
+        SubDepictions = [
+            TSubDepiction( Anchors = ['pilot'] Depiction = Pilot_Pilote_DDR),
+        ]
+
+        SubDepictionGenerators = [ SubGenerators_MiG_23MF_SOV ]
 )
 // Dépiction de l'unité MiG_23MLD_SOV
 Op_MiG_23MLD_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -9405,7 +9615,7 @@ Gfx_Mi_24D_AA_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -9418,7 +9628,7 @@ Gfx_Mi_24D_AA_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -9435,8 +9645,8 @@ Gfx_Mi_24D_AA_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_AA_R60_Vympel_helo ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -9510,7 +9720,7 @@ Gfx_Mi_24D_s5_AT_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -9523,7 +9733,7 @@ Gfx_Mi_24D_s5_AT_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -9540,8 +9750,8 @@ Gfx_Mi_24D_s5_AT_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_AGM_9M17P_FalangaP_x4 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -9615,7 +9825,7 @@ Gfx_Mi_24D_s8_AT_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -9628,7 +9838,7 @@ Gfx_Mi_24D_s8_AT_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -9645,8 +9855,8 @@ Gfx_Mi_24D_s8_AT_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_AGM_9M17P_FalangaP_x4 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -9736,7 +9946,7 @@ Gfx_Mi_24K_reco_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -9749,7 +9959,7 @@ Gfx_Mi_24K_reco_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -9765,8 +9975,8 @@ Gfx_Mi_24K_reco_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_B8_80mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -9904,7 +10114,7 @@ Gfx_Mi_24P_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -9917,7 +10127,7 @@ Gfx_Mi_24P_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -9935,8 +10145,8 @@ Gfx_Mi_24P_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_B8_80mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -10029,7 +10239,7 @@ Gfx_Mi_24P_s8_AT2_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10042,7 +10252,7 @@ Gfx_Mi_24P_s8_AT2_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10060,8 +10270,8 @@ Gfx_Mi_24P_s8_AT2_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_B8_80mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -10154,7 +10364,7 @@ Gfx_Mi_24P_s8_AT_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10167,7 +10377,7 @@ Gfx_Mi_24P_s8_AT_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10185,8 +10395,8 @@ Gfx_Mi_24P_s8_AT_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_B8_80mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -10279,7 +10489,7 @@ Gfx_Mi_24VP_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10292,7 +10502,7 @@ Gfx_Mi_24VP_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10310,8 +10520,8 @@ Gfx_Mi_24VP_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag4" ], Weapon_RocketAir_B8_80mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
 
@@ -10386,7 +10596,7 @@ Gfx_Mi_24V_AA_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10399,7 +10609,7 @@ Gfx_Mi_24V_AA_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10416,8 +10626,8 @@ Gfx_Mi_24V_AA_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_B8_80mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -10491,7 +10701,7 @@ Gfx_Mi_24V_AT_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10504,7 +10714,7 @@ Gfx_Mi_24V_AT_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10521,8 +10731,8 @@ Gfx_Mi_24V_AT_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_B8_80mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -10596,7 +10806,7 @@ Gfx_Mi_24V_RKT_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10609,7 +10819,7 @@ Gfx_Mi_24V_RKT_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10626,8 +10836,8 @@ Gfx_Mi_24V_RKT_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_S13_122mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -10701,7 +10911,7 @@ Gfx_Mi_24V_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10714,7 +10924,7 @@ Gfx_Mi_24V_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10731,8 +10941,8 @@ Gfx_Mi_24V_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2000 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 450 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -10769,7 +10979,7 @@ Gfx_Mi_26_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 8
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10782,7 +10992,7 @@ Gfx_Mi_26_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10796,8 +11006,8 @@ Gfx_Mi_26_SOV_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 3500 PaleCount = 8 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 800 PaleCount = 5 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 3500 PaleCount = 8 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 800 PaleCount = 5 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
 
@@ -10833,7 +11043,7 @@ Gfx_Mi_2_reco_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10846,7 +11056,7 @@ Gfx_Mi_2_reco_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10859,8 +11069,8 @@ Gfx_Mi_2_reco_DDR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -10895,7 +11105,7 @@ Gfx_Mi_2_reco_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10908,7 +11118,7 @@ Gfx_Mi_2_reco_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10921,8 +11131,8 @@ Gfx_Mi_2_reco_SOV_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -10957,7 +11167,7 @@ Gfx_Mi_2_trans_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -10970,7 +11180,7 @@ Gfx_Mi_2_trans_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -10983,8 +11193,8 @@ Gfx_Mi_2_trans_DDR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -11020,7 +11230,7 @@ Gfx_Mi_2_trans_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -11033,7 +11243,7 @@ Gfx_Mi_2_trans_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -11046,8 +11256,8 @@ Gfx_Mi_2_trans_SOV_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 3 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 3 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -11083,7 +11293,7 @@ Gfx_Mi_8K_CMD_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -11096,7 +11306,7 @@ Gfx_Mi_8K_CMD_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -11110,8 +11320,8 @@ Gfx_Mi_8K_CMD_SOV_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
 
@@ -11171,7 +11381,7 @@ Gfx_Mi_8MTV_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -11184,7 +11394,7 @@ Gfx_Mi_8MTV_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -11200,8 +11410,8 @@ Gfx_Mi_8MTV_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2200 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2200 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
 
@@ -11239,7 +11449,7 @@ Gfx_Mi_8R_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -11252,7 +11462,7 @@ Gfx_Mi_8R_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -11265,8 +11475,8 @@ Gfx_Mi_8R_SOV_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -11338,7 +11548,7 @@ Gfx_Mi_8TB_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -11351,7 +11561,7 @@ Gfx_Mi_8TB_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -11367,8 +11577,8 @@ Gfx_Mi_8TB_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_ATGM_9M14_MalyutkaP_x6 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -11441,7 +11651,7 @@ Gfx_Mi_8TV_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -11454,7 +11664,7 @@ Gfx_Mi_8TV_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -11470,8 +11680,8 @@ Gfx_Mi_8TV_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -11479,6 +11689,110 @@ Gfx_Mi_8TV_DDR_Autogen is TacticAerialDepictionTemplate
         ]
 
         SubDepictionGenerators = [ SubGenerators_Mi_8TV_DDR ]
+)
+// Dépiction de l'unité Mi_8TV_Gunship_SOV
+Op_Mi_8TV_Gunship_SOV_Weapon1 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Mi_8TV_Gunship_SOV
+    FireEffectTag = "weapon_effet_tag1"
+    NbProj = 1
+    WeaponIndex = 1
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_1",
+    ]
+)
+Op_Mi_8TV_Gunship_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Mi_8TV_Gunship_SOV
+    FireEffectTag = "weapon_effet_tag2"
+    NbProj = 1
+    WeaponIndex = 2
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_2",
+    ]
+)
+Op_Mi_8TV_Gunship_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Mi_8TV_Gunship_SOV
+    FireEffectTag = "weapon_effet_tag3"
+    NbProj = 2
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_3",
+        "WeaponShootData_1_3",
+    ]
+)
+Gfx_Mi_8TV_Gunship_SOV_Autogen is TacticAerialDepictionTemplate
+(
+    AdditionalTextures = HelicoDestTextures
+    Selector = SpecificHelicoDepictionSelector
+    CoatingName = 'Mi_8TV_Gunship_SOV'
+    Alternatives = Alternatives_Mi_8TV_Gunship_SOV
+
+    Operators = 
+        [
+            DepictionOperator_MovementSound_SM_Helico_Mi17,
+            Op_Mi_8TV_Gunship_SOV_Weapon1,
+            Op_Mi_8TV_Gunship_SOV_Weapon2,
+            Op_Mi_8TV_Gunship_SOV_Weapon3,
+            DepictionOperator_CriticalEffects,
+            DepictionOperator_HelicopterLanding,
+            DepictionOperator_GroundPuff_Helico,
+            DepictionOperator_ShadowPointCloudProvider,
+            DepictionOperator_Rotors
+            (
+                RotorList = 
+                [
+                    TRotor
+                    (
+                        BladesBoneName = "helice_ls_1"
+                        BlurActionId = 
+                        [
+                            "FX_Helice_1",
+                        ]
+                        Clockwise = False
+                        NbBlade = 5
+                        RotationAxis = float3[0, 0, 1]
+                        RotationSpeed = 242
+                        RotorBoneName = "bloc_moteur_1"
+                    ),
+                    TRotor
+                    (
+                        BladesBoneName = "helice_ls_2"
+                        BlurActionId = 
+                        [
+                            "FX_Helice_2",
+                        ]
+                        Clockwise = False
+                        NbBlade = 3
+                        RotationAxis = float3[0, 1, 0]
+                        RotationSpeed = 242
+                        RotorBoneName = "bloc_moteur_2"
+                    ),
+                ]
+            ),
+            DepictionOperator_Feedback_Degat_Level1,
+            DepictionOperator_Feedback_Degat_Level2,
+            DepictionOperator_Heat,
+        ]
+        Actions = MAP[
+                    ( [ "weapon_effet_tag1" ], Weapon_RocketAir_B8_80mm_x20 ),
+                    ( [ "weapon_effet_tag2" ], Weapon_AA_R60M_Vympel ),
+                    ( [ "weapon_effet_tag3" ], Weapon_FakeRoquette_S_24_helo ),
+                ]
+                + DepictionAction_Stress_And_Wrecked_Helicopter
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + DepictionAction_CriticalFX_Helicopter
+
+        SubDepictions = [
+            TSubDepiction( Anchors = ['pilot', 'pilot2'] Depiction = Pilot_Pilote_Helico_SOV),
+        ]
+
+        SubDepictionGenerators = [ SubGenerators_Mi_8TV_Gunship_SOV ]
 )
 // Dépiction de l'unité Mi_8TV_PodGatling_DDR
 Op_Mi_8TV_PodGatling_DDR_Weapon1 is DepictionOperator_WeaponContinuousFire
@@ -11544,7 +11858,7 @@ Gfx_Mi_8TV_PodGatling_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -11557,7 +11871,7 @@ Gfx_Mi_8TV_PodGatling_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -11571,8 +11885,8 @@ Gfx_Mi_8TV_PodGatling_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -11730,7 +12044,7 @@ Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -11743,7 +12057,7 @@ Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -11757,8 +12071,8 @@ Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -11903,7 +12217,7 @@ Gfx_Mi_8TV_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -11916,7 +12230,7 @@ Gfx_Mi_8TV_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -11931,8 +12245,8 @@ Gfx_Mi_8TV_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12009,7 +12323,7 @@ Gfx_Mi_8TV_UPK_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12022,7 +12336,7 @@ Gfx_Mi_8TV_UPK_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12033,11 +12347,11 @@ Gfx_Mi_8TV_UPK_DDR_Autogen is TacticAerialDepictionTemplate
             DepictionOperator_Heat,
         ]
         Actions = MAP[
-                    ( [ "weapon_effet_tag4" ], Weapon_RocketAir_S5_57mm_x8 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_RocketAir_B8_80mm_x20 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12120,7 +12434,7 @@ Gfx_Mi_8TV_non_arme_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12133,7 +12447,7 @@ Gfx_Mi_8TV_non_arme_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12146,8 +12460,8 @@ Gfx_Mi_8TV_non_arme_SOV_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12218,7 +12532,7 @@ Gfx_Mi_8TV_s57_16_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12231,7 +12545,7 @@ Gfx_Mi_8TV_s57_16_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12247,8 +12561,8 @@ Gfx_Mi_8TV_s57_16_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12321,7 +12635,7 @@ Gfx_Mi_8TV_s57_32_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12334,7 +12648,7 @@ Gfx_Mi_8TV_s57_32_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12350,8 +12664,8 @@ Gfx_Mi_8TV_s57_32_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12424,7 +12738,7 @@ Gfx_Mi_8TV_s57_32_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12437,7 +12751,7 @@ Gfx_Mi_8TV_s57_32_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12453,8 +12767,8 @@ Gfx_Mi_8TV_s57_32_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12515,7 +12829,7 @@ Gfx_Mi_8TV_s80_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12528,7 +12842,7 @@ Gfx_Mi_8TV_s80_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12543,8 +12857,8 @@ Gfx_Mi_8TV_s80_SOV_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_RocketAir_B8_80mm_x10 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12581,7 +12895,7 @@ Gfx_Mi_8TZ_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12594,7 +12908,7 @@ Gfx_Mi_8TZ_SOV_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12607,8 +12921,8 @@ Gfx_Mi_8TZ_SOV_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12667,7 +12981,7 @@ Gfx_Mi_8T_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12680,7 +12994,7 @@ Gfx_Mi_8T_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12695,8 +13009,8 @@ Gfx_Mi_8T_DDR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_RocketAir_S5_57mm_x8 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12733,7 +13047,7 @@ Gfx_Mi_8T_non_arme_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12746,7 +13060,7 @@ Gfx_Mi_8T_non_arme_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12759,8 +13073,8 @@ Gfx_Mi_8T_non_arme_DDR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12795,7 +13109,7 @@ Gfx_Mi_8_supply_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12808,7 +13122,7 @@ Gfx_Mi_8_supply_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12821,8 +13135,8 @@ Gfx_Mi_8_supply_DDR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -12857,7 +13171,7 @@ Gfx_Mi_9_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -12870,7 +13184,7 @@ Gfx_Mi_9_DDR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 3
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -12884,8 +13198,8 @@ Gfx_Mi_9_DDR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 2030 PaleCount = 5 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 350 PaleCount = 3 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
 
@@ -13528,7 +13842,7 @@ Gfx_OH58C_CMD_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -13541,7 +13855,7 @@ Gfx_OH58C_CMD_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -13554,8 +13868,8 @@ Gfx_OH58C_CMD_US_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -13603,7 +13917,7 @@ Gfx_OH58C_Scout_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -13616,7 +13930,7 @@ Gfx_OH58C_Scout_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -13631,8 +13945,8 @@ Gfx_OH58C_Scout_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_Gatling_m134_7_62mm ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -13679,7 +13993,7 @@ Gfx_OH58D_Combat_Scout_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -13692,7 +14006,7 @@ Gfx_OH58D_Combat_Scout_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -13706,8 +14020,8 @@ Gfx_OH58D_Combat_Scout_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_RocketAir_Hydra_70mm_x14 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -13756,7 +14070,7 @@ Gfx_OH58D_Kiowa_Warrior_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -13769,7 +14083,7 @@ Gfx_OH58D_Kiowa_Warrior_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -13783,8 +14097,8 @@ Gfx_OH58D_Kiowa_Warrior_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_AGM_AGM114A_x4 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -13834,7 +14148,7 @@ Gfx_OH58_CS_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -13847,7 +14161,7 @@ Gfx_OH58_CS_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -13861,8 +14175,8 @@ Gfx_OH58_CS_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_SAM_FIM92_Stinger_CS_x4 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1200 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 215 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -13898,7 +14212,7 @@ Gfx_Puma_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -13911,7 +14225,7 @@ Gfx_Puma_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -13924,8 +14238,8 @@ Gfx_Puma_FR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 5 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 5 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -13960,7 +14274,7 @@ Gfx_Puma_PC_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -13973,7 +14287,7 @@ Gfx_Puma_PC_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -13987,8 +14301,8 @@ Gfx_Puma_PC_FR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 5 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 5 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
 
@@ -14053,7 +14367,7 @@ Gfx_Puma_Pirate_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -14066,7 +14380,7 @@ Gfx_Puma_Pirate_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -14082,8 +14396,8 @@ Gfx_Puma_Pirate_FR_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_AutoCanon_HE_20mm_M621_GIAT ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -14119,7 +14433,7 @@ Gfx_Puma_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -14132,7 +14446,7 @@ Gfx_Puma_UK_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -14145,8 +14459,8 @@ Gfx_Puma_UK_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 5 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 5 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -15786,7 +16100,7 @@ Gfx_Super_Puma_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -15799,7 +16113,7 @@ Gfx_Super_Puma_FR_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 5
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -15812,8 +16126,8 @@ Gfx_Super_Puma_FR_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 5 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 5 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -16522,7 +16836,7 @@ Gfx_UH1A_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -16535,7 +16849,7 @@ Gfx_UH1A_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -16548,8 +16862,8 @@ Gfx_UH1A_US_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -16597,7 +16911,7 @@ Gfx_UH1D_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -16610,7 +16924,7 @@ Gfx_UH1D_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -16624,8 +16938,8 @@ Gfx_UH1D_RFA_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_MMG_MG3_7_62mm ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -16660,7 +16974,7 @@ Gfx_UH1D_Supply_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -16673,7 +16987,7 @@ Gfx_UH1D_Supply_RFA_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -16686,8 +17000,8 @@ Gfx_UH1D_Supply_RFA_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -16737,7 +17051,7 @@ Gfx_UH1H_Huey_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -16750,7 +17064,7 @@ Gfx_UH1H_Huey_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -16764,8 +17078,8 @@ Gfx_UH1H_Huey_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag1" ], Weapon_MMG_M60_7_62mm ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -16800,7 +17114,7 @@ Gfx_UH1H_supply_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -16813,7 +17127,7 @@ Gfx_UH1H_supply_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 2
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -16826,8 +17140,8 @@ Gfx_UH1H_supply_US_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1700 PaleCount = 2 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 300 PaleCount = 2 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
 
         SubDepictions = [
@@ -16888,7 +17202,7 @@ Gfx_UH60A_Black_Hawk_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -16901,7 +17215,7 @@ Gfx_UH60A_Black_Hawk_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -16917,8 +17231,8 @@ Gfx_UH60A_Black_Hawk_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_MMG_M240d_7_62mm ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1720 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 400 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1720 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 400 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 
@@ -16980,7 +17294,7 @@ Gfx_UH60A_CO_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -16993,7 +17307,7 @@ Gfx_UH60A_CO_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -17010,8 +17324,8 @@ Gfx_UH60A_CO_US_Autogen is TacticAerialDepictionTemplate
                     ( [ "weapon_effet_tag2" ], Weapon_MMG_M240d_7_62mm ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1720 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 400 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1720 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 400 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Double
 
@@ -17047,7 +17361,7 @@ Gfx_UH60A_Supply_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 0, 1]
+                        RotationAxis = float3[0, 0, 1]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_1"
                     ),
@@ -17060,7 +17374,7 @@ Gfx_UH60A_Supply_US_Autogen is TacticAerialDepictionTemplate
                         ]
                         Clockwise = False
                         NbBlade = 4
-                        RotationAxis = VECTOR[0, 1, 0]
+                        RotationAxis = float3[0, 1, 0]
                         RotationSpeed = 242
                         RotorBoneName = "bloc_moteur_2"
                     ),
@@ -17074,8 +17388,8 @@ Gfx_UH60A_Supply_US_Autogen is TacticAerialDepictionTemplate
         Actions = MAP[
                 ]
                 + DepictionAction_Stress_And_Wrecked_Helicopter
-                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1720 PaleCount = 4 RotationAxis = VECTOR[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
-                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 400 PaleCount = 4 RotationAxis = VECTOR[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
+                + MAP [ (['FX_Helice_1'], Template_DepictionAction_Rotor( PaleLength = 1720 PaleCount = 4 RotationAxis = float3[0, 0, 1] SousMobile = "bloc_moteur_1" ))]
+                + MAP [ (['FX_Helice_2'], Template_DepictionAction_Rotor( PaleLength = 400 PaleCount = 4 RotationAxis = float3[0, 1, 0] SousMobile = "bloc_moteur_2" ))]
                 + DepictionAction_CriticalFX_Helicopter
                 + DepictionAction_Flare_Simple
 

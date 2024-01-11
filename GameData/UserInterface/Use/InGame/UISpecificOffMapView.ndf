@@ -148,7 +148,6 @@ template BUCKSpecificOffMapButton
     HintExtendedToken : string = "HLB_BUTTOE",
     HintDico : string = ~/LocalisationConstantes/dico_interface_ingame,
     HintableAreaElementName : string = "",
-    UseInGameHintStyle : bool = true,
 
     HoverSound : TSoundDescriptor = nil,
     LeftClickSound : TSoundDescriptor = nil,
@@ -181,22 +180,6 @@ is BUCKContainerDescriptor
         MagnifiableOffset = <ButtonMagnifiableOffset>
         AlignementToAnchor = <ButtonAlignementToAnchor>
         AlignementToFather = <ButtonAlignementToFather>
-    )
-    hintComponent is <UseInGameHintStyle> ?
-    BUCKSpecificHintableArea
-    (
-        ElementName = <HintableAreaElementName>
-        DicoToken = <HintDico>
-        HintTitleToken = <HintTitleToken>
-        HintBodyToken = <HintBodyToken>
-        HintExtendedToken = <HintExtendedToken>
-    ) : BUCKSpecificHintableArea
-    (
-        ElementName = <HintableAreaElementName>
-        DicoToken = <HintDico>
-        HintTitleToken = <HintTitleToken>
-        HintBodyToken = <HintBodyToken>
-        HintExtendedToken = <HintExtendedToken>
     )
 
     RequiredTags = <RequiredTags>
@@ -236,7 +219,14 @@ is BUCKContainerDescriptor
 
     (<HintTitleToken> != "" | <HintBodyToken> != "" | <HintExtendedToken> != "" | <HintableAreaElementName> != "" ?
     [
-        hintComponent,
+        BUCKSpecificHintableArea
+        (
+            ElementName = <HintableAreaElementName>
+            DicoToken = <HintDico>
+            HintTitleToken = <HintTitleToken>
+            HintBodyToken = <HintBodyToken>
+            HintExtendedToken = <HintExtendedToken>
+        ),
     ] : [])
 )
 
@@ -333,7 +323,7 @@ BUCKSpecificOffMapMainComponentDescriptor is BUCKContainerDescriptor
                                 FirstElementMargin = TRTTILength2(Magnifiable = [10.0, 0.0])
                                 InterElementMargin = TRTTILength2(Magnifiable = [3.0, 3.0])
 
-                                MaxElementsPerDimension = [4, 4]
+                                MaxElementsPerDimension = [4, 5]
 
                                 // => On insert les TUISpecificOffMapAirplaneViewDescriptor à l'intérieur de ces dummies
                                 // Doit contenir NbMaxPlanes (dans UISpecificSkirmishProductionMenuView) slots

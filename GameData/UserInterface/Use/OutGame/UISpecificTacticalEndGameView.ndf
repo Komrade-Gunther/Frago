@@ -732,11 +732,11 @@ EndGameExplanationForTacticFromStrategic is BUCKListDescriptor
                 TextStyle = "Default"
                 HorizontalFitStyle = ~/FitStyle/FitToContent
                 VerticalFitStyle = ~/FitStyle/FitToContent
-                TypefaceToken = "Eurostyle"
+                TypefaceToken = "Eurostyle_Medium"
                 BigLineAction = ~/BigLineAction/MultiLine
                 TextDico = ~/LocalisationConstantes/dico_interface_outgame
                 TextColor = "gris_load"
-                TextSize = "16"
+                TextSize = "20"
                 TextPadding = TRTTILength4( Magnifiable = [0.0, 0.0, 0.0, 6.0] )
             )
         ),
@@ -756,8 +756,8 @@ EndGameExplanationForTacticFromStrategic is BUCKListDescriptor
                 BigLineAction = ~/BigLineAction/MultiLine
                 TextDico = ~/LocalisationConstantes/dico_interface_outgame
                 TextColor = "gris_load"
-                TextSize = "16"
-                TextPadding = TRTTILength4( Magnifiable = [0.0, 6.0, 0.0, 6.0] )
+                TextSize = "20"
+                TextPadding = TRTTILength4( Magnifiable = [0.0, 0.0, 0.0, 6.0] )
             )
         ),
 
@@ -766,18 +766,20 @@ EndGameExplanationForTacticFromStrategic is BUCKListDescriptor
             ComponentDescriptor = BUCKTextDescriptor
             (
                 ComponentFrame = TUIFramePropertyRTTI ()
+                // ElementName = "therefore"
 
                 ParagraphStyle = ~/paragraphStyleTextLeftAlign
                 TextStyle = "Default"
                 HorizontalFitStyle = ~/FitStyle/FitToContent
                 VerticalFitStyle = ~/FitStyle/FitToContent
-                TypefaceToken = "Eurostyle"
+                TypefaceToken = "Eurostyle_Medium"
                 BigLineAction = ~/BigLineAction/MultiLine
                 TextDico = ~/LocalisationConstantes/dico_interface_outgame
                 TextToken = 'EG_TFSCon'
                 TextColor = "gris_load"
-                TextSize = "16"
-                TextPadding = TRTTILength4( Magnifiable = [0.0, 6.0, 0.0, 0.0] )
+
+                TextSize = "20"
+                TextPadding = TRTTILength4( Magnifiable = [0.0, 16.0, 0.0, 8.0] )
             )
         ),
 
@@ -796,8 +798,9 @@ EndGameExplanationForTacticFromStrategic is BUCKListDescriptor
                 BigLineAction = ~/BigLineAction/MultiLine
                 TextDico = ~/LocalisationConstantes/dico_interface_outgame
                 TextColor = "gris_load"
-                TextSize = "16"
-                TextPadding = TRTTILength4( Magnifiable = [0.0, 0.0, 0.0, 6.0] )
+
+                TextSize = "20"
+                TextPadding = TRTTILength4( Magnifiable = [0.0, 0.0, 0.0, 8.0] )
             )
         ),
 
@@ -808,7 +811,12 @@ EndGameExplanationForTacticFromStrategic is BUCKListDescriptor
                 ElementName = "EndGameConsequenceEnemiesForceText"
                 ComponentFrame = TUIFramePropertyRTTI ()
 
-                ParagraphStyle = ~/paragraphStyleTextLeftAlign
+                ParagraphStyle = TParagraphStyleRTTI
+                (
+                    Alignment = UIText_Left
+                    VerticalAlignment = UIText_VerticalCenter
+                    InterLine = 0.4
+                )
                 TextStyle = "Default"
                 HorizontalFitStyle = ~/FitStyle/FitToContent
                 VerticalFitStyle = ~/FitStyle/FitToContent
@@ -816,8 +824,8 @@ EndGameExplanationForTacticFromStrategic is BUCKListDescriptor
                 BigLineAction = ~/BigLineAction/MultiLine
                 TextDico = ~/LocalisationConstantes/dico_interface_outgame
                 TextColor = "gris_load"
-                TextSize = "16"
-                TextPadding = TRTTILength4( Magnifiable = [0.0, 0.0, 0.0, 6.0] )
+                TextSize = "20"
+                TextPadding = TRTTILength4( Magnifiable = [0.0, 0.0, 0.0, 32.0] )
             )
         ),
     ]
@@ -1894,13 +1902,15 @@ is BUCKListDescriptor
                 HorizontalFitStyle = ~/FitStyle/UserDefined
                 VerticalFitStyle = ~/FitStyle/UserDefined
                 BigLineAction = ~/BigLineAction/CutByDots
-                TypefaceToken = TacticalEndgameTitleFont
+                // TypefaceToken = TacticalEndgameTitleFont
+                TypefaceToken = "Eurostyle"
+
 
                 TextDico = ~/LocalisationConstantes/dico_interface_outgame
                 TextToken  = <TextToken>
 
-                TextColor = "Debrief/UpdateProfile"
-                TextSize = "Debrief/UpdateProfile"
+                TextColor = "gris_load"
+                TextSize = "18"
             )
         ),
         BUCKListElementSpacer( Magnifiable = 20.0 ),
@@ -1930,13 +1940,15 @@ is BUCKListDescriptor
                 HorizontalFitStyle = ~/FitStyle/UserDefined
                 VerticalFitStyle = ~/FitStyle/UserDefined
                 BigLineAction = ~/BigLineAction/CutByDots
-                TypefaceToken = TacticalEndgameTitleFont
+                // TypefaceToken = TacticalEndgameTitleFont
+                TypefaceToken = "Eurostyle"
+
 
                 TextDico = ~/LocalisationConstantes/dico_interface_outgame
                 TextToken  = <ValueToken>
 
-                TextColor = "Debrief/UpdateProfile"
-                TextSize = "Debrief/UpdateProfile"
+                TextColor = "gris_load"
+                TextSize = "18"
             )
         ),
     ]

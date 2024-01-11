@@ -262,12 +262,7 @@ template BUCKSpecificButton
     OverrideTextElementName : bool = false,
     BigLineAction : int = ~/BigLineAction/CutByDots,
 
-    HintTitleToken : string = "",
-    HintBodyToken : string = "",
-    HintExtendedToken : string = "",
-    HintDico : string = ~/LocalisationConstantes/dico_interface_ingame,
-    HintableAreaElementName : string = "",
-    UseInGameHintStyle : bool = true,
+    HintableAreaComponent : TBUCKHintableAreaDescriptor = nil,
 
     HoverSound : TSoundDescriptor = nil,
     LeftClickSound : TSoundDescriptor = nil,
@@ -304,24 +299,6 @@ is BUCKButtonDescriptor
         MagnifiableOffset = <ButtonMagnifiableOffset>
         AlignementToAnchor = <ButtonAlignementToAnchor>
         AlignementToFather = <ButtonAlignementToFather>
-    )
-
-    // Hint
-    hintComponent is <UseInGameHintStyle> ?
-    BUCKSpecificHintableArea
-    (
-        ElementName = <HintableAreaElementName>
-        DicoToken = <HintDico>
-        HintTitleToken = <HintTitleToken>
-        HintBodyToken = <HintBodyToken>
-        HintExtendedToken = <HintExtendedToken>
-    ) : BUCKSpecificHintableArea
-    (
-        ElementName = <HintableAreaElementName>
-        DicoToken = <HintDico>
-        HintTitleToken = <HintTitleToken>
-        HintBodyToken = <HintBodyToken>
-        HintExtendedToken = <HintExtendedToken>
     )
 
     FitStyle = <FitStyle>
@@ -484,10 +461,7 @@ is BUCKButtonDescriptor
         ),
     ] +
 
-    (<HintTitleToken> != "" | <HintBodyToken> != "" | <HintExtendedToken> != "" | <HintableAreaElementName> != "" ?
-    [
-        hintComponent,
-    ] : [])
+    (<HintableAreaComponent> != nil ? [<HintableAreaComponent>] : [])
 )
 
 //-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- //
@@ -530,12 +504,7 @@ template StandardButton
     TextTypefaceToken : string = "UIMainFont",
     TextDico : string = ~/LocalisationConstantes/dico_interface_outgame,
 
-    HintTitleToken : string = "",
-    HintBodyToken : string = "",
-    HintExtendedToken : string = "",
-    HintDico : string = ~/LocalisationConstantes/dico_interface_outgame,
-    HintableAreaElementName : string = "",
-    UseInGameHintStyle : bool = true,
+    HintableAreaComponent : TBUCKHintableAreaDescriptor = nil,
 
     HoverSound : TSoundDescriptor = nil,
     LeftClickSound : TSoundDescriptor = nil,
@@ -584,12 +553,7 @@ is BUCKSpecificButton
     TextTypefaceToken = <TextTypefaceToken>
     TextDico = <TextDico>
 
-    HintTitleToken = <HintTitleToken>
-    HintBodyToken = <HintBodyToken>
-    HintExtendedToken = <HintExtendedToken>
-    HintDico = <HintDico>
-    HintableAreaElementName = <HintableAreaElementName>
-    UseInGameHintStyle = <UseInGameHintStyle>
+    HintableAreaComponent = <HintableAreaComponent>
 
     HoverSound = <HoverSound>
     LeftClickSound = <LeftClickSound>
@@ -659,12 +623,7 @@ template ConfirmButton
     TextElementName : string = "TextElement",
     TextPadding : TRTTILength4 = TRTTILength4(),
 
-    HintTitleToken : string = "",
-    HintBodyToken : string = "",
-    HintExtendedToken : string = "",
-    HintDico : string = ~/LocalisationConstantes/dico_interface_outgame,
-    HintableAreaElementName : string = "",
-    UseInGameHintStyle : bool = true,
+    HintableAreaComponent : TBUCKHintableAreaDescriptor = nil,
 
     HoverSound : TSoundDescriptor = nil,
     LeftClickSound : TSoundDescriptor = nil,
@@ -738,12 +697,7 @@ is BUCKSpecificButton
     BigLineAction = <BigLineAction>
     TextPadding = <TextPadding>
 
-    HintTitleToken = <HintTitleToken>
-    HintBodyToken = <HintBodyToken>
-    HintExtendedToken = <HintExtendedToken>
-    HintDico = <HintDico>
-    HintableAreaElementName = <HintableAreaElementName>
-    UseInGameHintStyle = <UseInGameHintStyle>
+    HintableAreaComponent = <HintableAreaComponent>
 
     HoverSound = <HoverSound>
     LeftClickSound = <LeftClickSound>
@@ -799,12 +753,7 @@ template CancelButton
     OverrideTextElementName : bool = false,
     TextElementName : string = "TextElement",
 
-    HintTitleToken : string = "",
-    HintBodyToken : string = "",
-    HintExtendedToken : string = "",
-    HintDico : string = ~/LocalisationConstantes/dico_interface_outgame,
-    HintableAreaElementName : string = "",
-    UseInGameHintStyle : bool = true,
+    HintableAreaComponent : TBUCKHintableAreaDescriptor = nil,
 
     HoverSound : TSoundDescriptor = nil,
     LeftClickSound : TSoundDescriptor = nil,
@@ -853,12 +802,7 @@ is BUCKSpecificButton
     OverrideTextElementName = <OverrideTextElementName>
     TextElementName = <TextElementName>
 
-    HintTitleToken = <HintTitleToken>
-    HintBodyToken = <HintBodyToken>
-    HintExtendedToken = <HintExtendedToken>
-    HintDico = <HintDico>
-    HintableAreaElementName = <HintableAreaElementName>
-    UseInGameHintStyle = <UseInGameHintStyle>
+    HintableAreaComponent = <HintableAreaComponent>
 
     HoverSound = <HoverSound>
     LeftClickSound = <LeftClickSound>
@@ -918,7 +862,6 @@ template HUDButton
     HintExtendedToken : string = "HUD_UNKN",
     HintDico : string = ~/LocalisationConstantes/dico_interface_ingame,
     HintableAreaElementName : string = "",
-    UseInGameHintStyle : bool = true,
 
     HoverSound : TSoundDescriptor = nil,
     LeftClickSound : TSoundDescriptor = nil,
@@ -955,24 +898,6 @@ is BUCKButtonDescriptor
     ElementName = <ElementName>
     UniqueName = <UniqueName>
     ComponentFrame = <ComponentFrame>
-
-    // Hint
-    hintComponent is <UseInGameHintStyle> ?
-    BUCKSpecificHintableArea
-    (
-        ElementName = <HintableAreaElementName>
-        DicoToken = <HintDico>
-        HintTitleToken = <HintTitleToken>
-        HintBodyToken = <HintBodyToken>
-        HintExtendedToken = <HintExtendedToken>
-    ) : BUCKSpecificHintableArea
-    (
-        ElementName = <HintableAreaElementName>
-        DicoToken = <HintDico>
-        HintTitleToken = <HintTitleToken>
-        HintBodyToken = <HintBodyToken>
-        HintExtendedToken = <HintExtendedToken>
-    )
 
     Components =
     [
@@ -1058,7 +983,14 @@ is BUCKButtonDescriptor
 
     (<HintTitleToken> != "" | <HintBodyToken> != "" | <HintExtendedToken> != "" | <HintableAreaElementName> != "" ?
     [
-        hintComponent,
+        BUCKSpecificHintableArea
+        (
+            ElementName = <HintableAreaElementName>
+            DicoToken = <HintDico>
+            HintTitleToken = <HintTitleToken>
+            HintBodyToken = <HintBodyToken>
+            HintExtendedToken = <HintExtendedToken>
+        ),
     ] : [])
 
     AllowMultipleInputsPerFrame = <AllowMultipleInputsPerFrame>

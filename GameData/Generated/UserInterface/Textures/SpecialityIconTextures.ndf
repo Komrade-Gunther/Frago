@@ -29,6 +29,10 @@ Texture_Speciality_Icon_era is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/era.png"
 )
+Texture_Speciality_Icon_falseflag is TUIResourceTexture_Common
+(
+    FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/falseflag.png"
+)
 Texture_Speciality_Icon_gsr is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/gsr.png"
@@ -52,6 +56,10 @@ Texture_Speciality_Icon_mp is TUIResourceTexture_Common
 Texture_Speciality_Icon_para is TUIResourceTexture_Common
 (
     FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/para.png"
+)
+Texture_Speciality_Icon_poorlytrained is TUIResourceTexture_Common
+(
+    FileName = "Assets/2D/Interface/Common/UnitsIcons/Specialties/poorlytrained.png"
 )
 Texture_Speciality_Icon_reco_deploy is TUIResourceTexture_Common
 (
@@ -213,12 +221,14 @@ UnitSpecialityAdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("Texture_Speciality_Icon_shock", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_shock)]),
         ("Texture_Speciality_Icon_electronic_warfare", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_electronic_warfare)]),
         ("Texture_Speciality_Icon_era", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_era)]),
+        ("Texture_Speciality_Icon_falseflag", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_falseflag)]),
         ("Texture_Speciality_Icon_gsr", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_gsr)]),
         ("Texture_Speciality_Icon_ifv_2", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_ifv_2)]),
         ("Texture_Speciality_Icon_jammer", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_jammer)]),
         ("Texture_Speciality_Icon_cmd", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_cmd)]),
         ("Texture_Speciality_Icon_mp", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_mp)]),
         ("Texture_Speciality_Icon_para", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_para)]),
+        ("Texture_Speciality_Icon_poorlytrained", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_poorlytrained)]),
         ("Texture_Speciality_Icon_reco_deploy", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_reco_deploy)]),
         ("Texture_Speciality_Icon_reserviste", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_reserviste)]),
         ("Texture_Speciality_Icon_resolute", MAP [(~/ComponentState/Normal, ~/Texture_Speciality_Icon_resolute)]),

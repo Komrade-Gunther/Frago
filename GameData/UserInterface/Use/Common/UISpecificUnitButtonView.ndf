@@ -1,11 +1,4 @@
 
-DicoBaseUnite is TLocalisationDicoResource
-(
-    DicoToken = ~/LocalisationConstantes/dico_unites
-    FileName = "GameData:/Localisation/UNITES.csv"
-    ModFileName = "GameData:/Localisation/MODDING.csv"
-)
-
 private UnitButtonUnitButtonAndAloneUnitButtonContainerInterItemMargin is 2.0
 
 // Container for Unit Button and Alone Unit Button (+ additional unit name and icon)
@@ -26,6 +19,7 @@ private template BUCKSpecificUnitButtonMainComponentDescriptor
     ShowXPButtons : bool = false,
     ShowAddUnitButton : bool = false,
     ShowRemoveUnitButton : bool = false,
+    MaskColorToken : string = "Black80",
 ]
 is BUCKDraggableContainerDescriptor
 (
@@ -79,6 +73,9 @@ is BUCKDraggableContainerDescriptor
                                     ShowXPButtons = <ShowXPButtons>
                                     ShowAddUnitButton = <ShowAddUnitButton>
                                     ShowRemoveUnitButton = <ShowRemoveUnitButton>
+
+                                    MaskColorToken = <MaskColorToken>
+
                                 )
                             ),
 
@@ -261,6 +258,8 @@ private template MainUnitButton
     ShowXPButtons : bool = false,
     ShowAddUnitButton : bool = false,
     ShowRemoveUnitButton : bool = false,
+    MaskColorToken : string,
+
 ]
 is BUCKButtonDescriptor
 (
@@ -294,6 +293,7 @@ is BUCKButtonDescriptor
             ShowXPButtons = <ShowXPButtons>
             ShowAddUnitButton = <ShowAddUnitButton>
             ShowRemoveUnitButton = <ShowRemoveUnitButton>
+            MaskColorToken = <MaskColorToken>
         )
     ]
 )
@@ -305,6 +305,7 @@ private template MainButtonContent
     ShowXPButtons : bool = false,
     ShowAddUnitButton : bool = false,
     ShowRemoveUnitButton : bool = false,
+    MaskColorToken : string,
 ] is BUCKContainerDescriptor
 (
     ElementName = "UnitButtonContent"
@@ -373,7 +374,7 @@ private template MainButtonContent
             ]
         ),
 
-        ~/ManualGrayMask
+        ManualGrayMask ( MaskColorToken = <MaskColorToken>)
     ]
 )
 
@@ -393,29 +394,21 @@ DeckEditorPackXPSelector is BUCKListDescriptor
         (
             ElementName = "Veterancy/3"
             TextureToken = "CommonTexture_Deck_Chevron_3"
-            HintTitle = "DES_UE_VE3"
-            HintBody = "pi_ve3"
         ),
         BoutonXp
         (
             ElementName = "Veterancy/2"
             TextureToken = "CommonTexture_Deck_Chevron_2"
-            HintTitle = "DES_UE_VE2"
-            HintBody = "pi_ve2"
         ),
         BoutonXp
         (
             ElementName = "Veterancy/1"
             TextureToken = "CommonTexture_Deck_Chevron_1"
-            HintTitle = "DES_UE_VE1"
-            HintBody = "pi_ve1"
         ),
         BoutonXp
         (
             ElementName = "Veterancy/0"
             TextureToken = "CommonTexture_Chevron_0"
-            HintTitle = "DES_UE_VE0"
-            HintBody = "pi_ve0"
         ),
     ]
 )
@@ -485,7 +478,12 @@ RemoveUnitButton is UnitCornerButton
 
 //-------------------------------------------------------------------------------------
 
-ManualGrayMask is BUCKContainerDescriptor
+template ManualGrayMask
+[
+    MaskColorToken : string = "Black80"
+]
+
+ is BUCKContainerDescriptor
 (
     ElementName = "ManualGrayMask"
     ComponentFrame = TUIFramePropertyRTTI
@@ -494,7 +492,7 @@ ManualGrayMask is BUCKContainerDescriptor
     )
 
     HasBackground = true
-    BackgroundBlockColorToken = "Black80"
+    BackgroundBlockColorToken = <MaskColorToken>
 )
 
 //-------------------------------------------------------------------------------------
@@ -1572,6 +1570,8 @@ template UISpecificUnitButtonViewDescriptor
     ShowXPButtons : bool = false,
     ShowAddUnitButton : bool = false,
     ShowRemoveUnitButton : bool = false,
+
+    MaskColorToken : string = "Black80",
 ]
 is TUISpecificUnitButtonViewDescriptor
 (
@@ -1593,6 +1593,8 @@ is TUISpecificUnitButtonViewDescriptor
         ShowXPButtons = <ShowXPButtons>
         ShowAddUnitButton = <ShowAddUnitButton>
         ShowRemoveUnitButton = <ShowRemoveUnitButton>
+
+        MaskColorToken = <MaskColorToken>
     )
 
     NoMoreUnitFeedbackOpacity = 0.3

@@ -124,7 +124,6 @@ export UnitEffect_Ajoute_Tag_no_snipe is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_sniper_off"
-            CanBeSeenByEnemy         = false
         ),
     ]
 )
@@ -620,7 +619,6 @@ export UnitEffect_Bouclier_Suppression_IFV is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_ifv"
-            CanBeSeenByEnemy         = false
         ),
     ]
 )
@@ -793,7 +791,6 @@ export UnitEffect_Choc is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_shock"
-            CanBeSeenByEnemy         = false
         ),
     ]
 )
@@ -1621,7 +1618,6 @@ export UnitEffect_GSR is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_gsr"
-            CanBeSeenByEnemy         = false
         ),
     ]
 )
@@ -1650,7 +1646,6 @@ export UnitEffect_Gain_un_niveau_XP is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_leader"
-            CanBeSeenByEnemy         = false
         ),
     ]
 )
@@ -2656,7 +2651,6 @@ export UnitEffect_Steelman_supprimer_PA is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_sniper"
-            CanBeSeenByEnemy         = false
         ),
         TStrategicSupplyMalusEffectDescriptor
         (
@@ -2945,7 +2939,6 @@ export UnitEffect_electronic_warfare is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_electronic_warfare"
-            CanBeSeenByEnemy         = false
         ),
     ]
 )
@@ -2970,7 +2963,6 @@ export UnitEffect_jammer is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_electronic_warfare"
-            CanBeSeenByEnemy         = false
         ),
     ]
 )
@@ -2994,7 +2986,6 @@ export UnitEffect_military_police is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_mp"
-            CanBeSeenByEnemy         = false
         ),
     ]
 )
@@ -3006,7 +2997,7 @@ export UnitEffect_reserviste is TEffectsPackDescriptor
         TUnitEffectIncreaseDamageTakenDescriptor
         (
             ModifierType        = ~/ModifierType_Multiplicatif
-            BonusDamage         = 1.5
+            BonusDamage         = 1.33
             DamageType          = EDamageType/Suppress
         ),
         TBonusWeaponAimtimeEffectDescriptor
@@ -3017,12 +3008,12 @@ export UnitEffect_reserviste is TEffectsPackDescriptor
         TUnitEffectIncreaseWeaponPrecisionArretDescriptor
         (
             ModifierType                  = ~/ModifierType_Pourcentage
-            ModifierValue = -5
+            ModifierValue = -10
         ),
         TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
         (
             ModifierType                  = ~/ModifierType_Pourcentage
-            ModifierValue = -5
+            ModifierValue = -10
         ),
         TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
         (
@@ -3057,7 +3048,6 @@ export UnitEffect_security is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_security"
-            CanBeSeenByEnemy         = false
         ),
     ]
 )
@@ -3090,7 +3080,596 @@ export UnitEffect_sniper is TEffectsPackDescriptor
         TUnitEffectShowLabelIconDescriptor
         (
             TextureToken         = "icone_sniper"
-            CanBeSeenByEnemy         = false
+        ),
+    ]
+)
+export UnitEffect_xp_elite is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{3609c0d0-e709-4218-82f3-b17000180ab2}
+    NameForDebug       = 'xp_elite'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -32
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.80
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 15
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 15
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.80
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 2.2
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_elite",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_elite_SF is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{6a5f1848-6743-445e-8ca7-3cb6294908f4}
+    NameForDebug       = 'xp_elite_SF'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -40
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.70
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 16
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 16
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.70
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 2.6
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_elite",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_elite_arty is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{345aa5ca-d104-4bf9-a763-5f05c84d1c52}
+    NameForDebug       = 'xp_elite_arty'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -24
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.55
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 16
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 16
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.40
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 2.2
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_elite",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_elite_avion is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{fdf98921-e369-4f91-8cbe-0c76a6439f2b}
+    NameForDebug       = 'xp_elite_avion'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -40
+            DamageType          = EDamageType/Suppress
+        ),
+        TUnitEffectBonusPrecisionWhenTargetedDescriptor
+        (
+            ModifierType       = ~/ModifierType_Additionnel
+            BonusPrecisionWhenTargeted = -10
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.68
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 12
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.60
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 3
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_elite",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_poorly_trained is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{3f22d303-a701-4daa-84bf-67d25e62c5ae}
+    NameForDebug       = 'xp_poorly_trained'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = 14
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.08
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = -10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 5
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 1.08
+        ),
+    ]
+)
+export UnitEffect_xp_rookie is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{320e6c09-c78a-4afb-910e-5616f69b0444}
+    NameForDebug       = 'xp_rookie'
+    EffectsDescriptors = [
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 0.6
+            DamageType = EDamageType/Suppress
+        ),
+    ]
+)
+export UnitEffect_xp_rookie_arty is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{de77c916-c5a9-41b0-a86d-ae69fa0b0671}
+    NameForDebug       = 'xp_rookie_arty'
+    EffectsDescriptors = [
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 0.6
+            DamageType = EDamageType/Suppress
+        ),
+    ]
+)
+export UnitEffect_xp_rookie_avion is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{9d93a0b1-9970-46b1-b405-64b8c4e19285}
+    NameForDebug       = 'xp_rookie_avion'
+    EffectsDescriptors = [
+    ]
+)
+export UnitEffect_xp_trained is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{66db5899-38e9-4a52-8ffd-f9e0ec1f8da9}
+    NameForDebug       = 'xp_trained'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -14
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.90
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 5
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 5
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.90
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 1.4
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_regular",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_trained_SF is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{df7b260d-5cc2-48b6-8f25-09c4affb34f1}
+    NameForDebug       = 'xp_trained_SF'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -20
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.9
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 8
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 8
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.9
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 1.6
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_regular",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_trained_arty is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{f9e5d851-8f26-494c-ab44-c18d8ec2eebb}
+    NameForDebug       = 'xp_trained_arty'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -6
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.85
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 6
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 6
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.80
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 1.4
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_regular",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_trained_avion is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{02cd7a2d-d05a-4c03-b71d-6f70734d5ba2}
+    NameForDebug       = 'xp_trained_avion'
+    EffectsDescriptors = [
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.92
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.90
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 1
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_regular",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_veteran is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{27994994-4e24-4508-8084-56579ebacdb8}
+    NameForDebug       = 'xp_veteran'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -22
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.85
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 10
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 10
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.85
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 1.8
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_veteran",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_veteran_SF is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{ae26a7d2-b9f5-4305-a3dd-c49a3a84c4b3}
+    NameForDebug       = 'xp_veteran_SF'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -30
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.8
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 12
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 12
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.8
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 2.2
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_veteran",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_veteran_arty is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{ea968fcf-3393-430f-8673-b13e28de8248}
+    NameForDebug       = 'xp_veteran_arty'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -12
+            DamageType          = EDamageType/Suppress
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.70
+        ),
+        TUnitEffectIncreaseWeaponPrecisionArretDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 12
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 12
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.60
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 1.8
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_veteran",
+            ]
+        ),
+    ]
+)
+export UnitEffect_xp_veteran_avion is TEffectsPackDescriptor
+(
+    DescriptorId       = GUID:{3bb18d5b-9841-4ba3-9ab2-58fc9645841c}
+    NameForDebug       = 'xp_veteran_avion'
+    EffectsDescriptors = [
+        TUnitEffectIncreaseDamageTakenDescriptor
+        (
+            ModifierType        = ~/ModifierType_Pourcentage
+            BonusDamage         = -20
+            DamageType          = EDamageType/Suppress
+        ),
+        TUnitEffectBonusPrecisionWhenTargetedDescriptor
+        (
+            ModifierType       = ~/ModifierType_Additionnel
+            BonusPrecisionWhenTargeted = -5
+        ),
+        TBonusWeaponAimtimeEffectDescriptor
+        (
+            ModifierType  = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.84
+        ),
+        TUnitEffectIncreaseWeaponPrecisionMouvementDescriptor
+        (
+            ModifierType                  = ~/ModifierType_Additionnel
+            ModifierValue = 6
+        ),
+        TUnitEffectAlterWeaponTempsEntreDeuxSalvesDescriptor
+        (
+            ModifierType                     = ~/ModifierType_Multiplicatif
+            ModifierValue = 0.80
+        ),
+        TUnitEffectHealOverTimeDescriptor
+        (
+            NbUpdatePerSecond  = 1
+            HealUnitsPerSecond = 2
+            DamageType = EDamageType/Suppress
+        ),
+        TUnitEffectRaiseTagDescriptor
+        (
+            TagListToRaise = [
+                 "xp_veteran",
+            ]
         ),
     ]
 )

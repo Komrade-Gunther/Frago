@@ -82,7 +82,6 @@ MouseWidgetSelector_Attack is TUIMouseWidgetSelector_Attack
     TextForDamageType = MAP
     [
         (DamageFamily_ap                , "TC_AP"),
-		(DamageFamily_ap_autocannon               , "TC_AP"),
         (DamageFamily_ap_missile        , "TC_HEAT"),
         (DamageFamily_balle             , "TC_BULLET"),
         (DamageFamily_balleaa           , "TC_BULLET"),
@@ -459,7 +458,7 @@ template Template_HardwareMouseWidgetResource_WithTerrainFeedback
     TerrainTypeToMouseCursorAnimation,
     TextSize = "MouseWidget/TextModule",
     TerrainTypeToHintContent : Map<int, THintContentHolder> = MAP[],
-    HintDescriptor : TBUCKHintDescriptor = ~/HintInGameBUCKComponent,
+    HintDescriptor : TBUCKHintDescriptor = HintInGameBUCKComponent(),
     StillTimeBeforeHintAppearance : float = 0.0,
 ]
 is TUIMouseWidgetResource
@@ -705,7 +704,7 @@ MouseWidget_SelectNeutralLand is Template_HardwareMouseWidgetResource_WithTerrai
         (ETerrainType/Ruin,             ~/MouseCurseur_couvert_lourd),
     ]
 
-    StillTimeBeforeHintAppearance = 2
+    StillTimeBeforeHintAppearance = 0.5
     TerrainTypeToHintContent = TerrainTypeToText
 )
 
@@ -752,7 +751,7 @@ MouseWidget_OrderMoveFast_WithTerrainFeedback is Template_HardwareMouseWidgetRes
         (ETerrainType/Ruin,             ~/Mousecurseur_mouvement_rapide_coverh),
     ]
 
-    StillTimeBeforeHintAppearance = 2
+    StillTimeBeforeHintAppearance = 0.5
     TerrainTypeToHintContent = TerrainTypeToText
 )
 
@@ -785,7 +784,7 @@ MouseWidget_OrderReverse_WithTerrainFeedback is Template_HardwareMouseWidgetReso
         (ETerrainType/Ruin,             ~/Mousecurseur_curseur_retour_coverh),
     ]
 
-    StillTimeBeforeHintAppearance = 2
+    StillTimeBeforeHintAppearance = 0.5
     TerrainTypeToHintContent = TerrainTypeToText
 )
 
@@ -818,7 +817,7 @@ MouseWidget_OrderMoveAndAttack_WithTerrainFeedback is Template_HardwareMouseWidg
         (ETerrainType/Ruin,             ~/Mousecurseur_mouvement_attaque_coverh),
     ]
 
-    StillTimeBeforeHintAppearance = 2
+    StillTimeBeforeHintAppearance = 0.5
     TerrainTypeToHintContent = TerrainTypeToText
 )
 
@@ -851,7 +850,7 @@ MouseWidget_OrderUnloadAtPosition_WithTerrainFeedback is Template_HardwareMouseW
         (ETerrainType/Ruin,             ~/Mousecurseur_UnloadAtPosition_coverh),
     ]
 
-    StillTimeBeforeHintAppearance = 2
+    StillTimeBeforeHintAppearance = 0.5
     TerrainTypeToHintContent = TerrainTypeToText
 )
 

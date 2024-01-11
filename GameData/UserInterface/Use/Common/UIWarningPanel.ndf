@@ -15,6 +15,7 @@ StrategicWarningPositiveComponent is WarningStandardComponent
     BackgroundBlockColorToken = 'SM_RifleGreen_75'
     BorderLineColorToken = 'SM_Grullo'
     TypefaceToken = 'Eurostyle'
+    VerticalOffset = 85
 )
 
 StrategicWarningNegativeComponent is WarningStandardComponent
@@ -31,13 +32,12 @@ template WarningStandardComponent
     BackgroundBlockColorToken : string = 'H2_bleu_2',
     BorderLineColorToken : string = 'H2_bleu_2',
     TypefaceToken : string = "UIMainFont",
-
-
+    VerticalOffset : float = 225.0
 ] is BUCKListDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI(
         MagnifiableWidthHeight = [600.0, 0.0]
-        MagnifiableOffset = [0.0, 225.0]
+        MagnifiableOffset = [0.0, <VerticalOffset>]
         AlignementToFather = [0.5, 0.0]
         AlignementToAnchor = [0.5, 0.0]
     )

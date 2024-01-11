@@ -159,7 +159,7 @@ is BUCKButtonDescriptor
                         TextSize = '30'
 
                         TextDico = ~/LocalisationConstantes/dico_maps
-                        TextColor = "Noir"
+                        TextColor = "Noir_noHL"
                     )
                 ),
                 // display logo army and name
@@ -612,40 +612,21 @@ StrategicLobbyLeftPage is BUCKContainerDescriptor
 
     Components =
     [
-        BUCKPerspectiveWarpOffscreenContainerDescriptor
+        BUCKContainerDescriptor
         (
             ComponentFrame = TUIFramePropertyRTTI
             (
                 RelativeWidthHeight = [1.0, 1.0]
             )
-
-            DistortTextureDrawer = $/UserInterface/UIDistortTextureDrawer
-            PointerEventsToAllow = ~/EAllowablePointerEventType/Move
-
-            MagnifiableTopLeftOffset = [0.0,  0.0]
-            MagnifiableTopRightOffset = [0.0, -5.0]
-            MagnifiableBottomLeftOffset = [6.0, 0.0]
-            MagnifiableBottomRightOffset = [7.0, -5.0]
-
             Components =
             [
-                BUCKContainerDescriptor
+                PlayerContainer
                 (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        RelativeWidthHeight = [1.0, 1.0]
-                    )
-                    Components =
-                    [
-                        PlayerContainer
-                        (
-                            ElementName = "LeftPlayer"
-                        )
-                    ]
-                ),
-                StrategicLobbyLeftPageButtons
+                    ElementName = "LeftPlayer"
+                )
             ]
         ),
+        StrategicLobbyLeftPageButtons
     ]
 )
 

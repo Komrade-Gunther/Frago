@@ -12,7 +12,6 @@ export IAStratWeaponConstantes is TIAStratWeaponConstantesDescriptor
     [
         (DamageFamily_ap, [0,255,255,255]),
         (DamageFamily_he, [255,0,255,255]),
-
     ]
 
     DamageFamilyDebugColorPriorityOrder = [DamageFamily_ap, DamageFamily_he]

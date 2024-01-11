@@ -318,6 +318,14 @@ unnamed TBUCKToolAdditionalTextureBank
         ("Outgame_bandeNoireListeMission", MAP [( ~/ComponentState/Normal, ~/Outgame_bandeNoireListeMission), ]),
         ("Outgame_backgroundMultiScreen", MAP [( ~/ComponentState/Normal, ~/Outgame_backgroundMultiScreen), ]),
         //-------------------------------------------------------------------------------------
+        // ressources pour Steelman
+
+        ("AG_carte_bk", MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Missions/AG_carte_bk.png"))] ),
+        ("AG_carte_ab", MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Missions/AG_carte_ab.png"))] ),
+        ("AG_carte_fg", MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Missions/AG_carte_fg.png"))] ),
+        ("AG_carte_hw", MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Missions/AG_carte_hw.png"))] ),
+        ("AG_carte_ba", MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Missions/AG_carte_ba.png"))] ),
+        //-------------------------------------------------------------------------------------
         // fond test pour effets
         ("outgame_fond_test", MAP [( ~/ComponentState/Normal, ~/outgame_fond_test), ]),
         ("outgame_chaise_pour_multi", MAP [( ~/ComponentState/Normal, ~/outgame_chaise_pour_multi), ]),

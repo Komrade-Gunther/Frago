@@ -79,8 +79,6 @@ is WindowFrame
 
                 Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ENTER ) )
 
-                HintTitleToken = ""
-                HintBodyToken = ""
                 HintDico = ~/LocalisationConstantes/dico_interface_outgame
             )
         ),
@@ -94,8 +92,6 @@ is WindowFrame
 
                 Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
 
-                HintTitleToken = ""
-                HintBodyToken = ""
                 HintDico = ~/LocalisationConstantes/dico_interface_outgame
             )
         ),

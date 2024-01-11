@@ -57,12 +57,12 @@ private NoCMD_Advantage is TCombatAdvantageDefinition
 )
 private NoInfantryAdvantage is TCombatAdvantageDefinition
 (
-    AdvantageValue = 2.5
+    AdvantageValue = 1
     TextToken = 'CA_INF'
     HintToken = 'CAH_INF'
     ShowTextForAdvantageWinner = false
-    TagToCheck = [ 'Infanterie' ]
-    TagToCheckAgainst = [ 'Infanterie']
+    TagToCheck = [ 'Steelman_infanterie_autoresolve' ]
+    TagToCheckAgainst = [ 'Steelman_infanterie_autoresolve']
 )
 private NoSupply_Advantage is TCombatAdvantageDefinition
 (
@@ -97,7 +97,7 @@ private DCA_air is TCombatAdvantageDefinition
     TextToken = 'CA_DCA'
     HintToken = 'CAH_DCA'
     ShowTextForAdvantageWinner = true
-    TagToCheck = [ 'Canon_AA' ]
+    TagToCheck = [ 'Canon_AA', 'IsFortifiedAntiAir' ]
     TagToCheckAgainst = [ 'Avion_SEAD']
 )
 private interception_air_air is TCombatAdvantageDefinition
@@ -197,9 +197,9 @@ StrategicAutoresolveConstantes is TStrategicAutoResolveConstantes
         // EStrategicBattlePlayerSide::Defender
         MAP
         [
-            (~/ETerrainType/StrategicForest,    0.15),
-            (~/ETerrainType/StrategicSemiUrban, 0.30),
-            (~/ETerrainType/StrategicUrban,     0.45),
+            (~/ETerrainType/StrategicForest,    0.10),
+            (~/ETerrainType/StrategicSemiUrban, 0.20),
+            (~/ETerrainType/StrategicUrban,     0.30),
         ],
     ]
     ApplyPawnPowerBonusOnSupportUnit = true
@@ -216,7 +216,8 @@ StrategicAutoresolveConstantes is TStrategicAutoResolveConstantes
                 ( ~/EAutoresolveAvantage_NoCMD_vs_CMD,              ~/NoCMD_Advantage ),
                 ( ~/EAutoresolveAvantage_NoSupply_vs_Supply,        ~/NoSupply_Advantage ),
                 ( ~/EAutoresolveAvantage_NoAir_vs_Air,              ~/NoAirSupport_Advantage ),
-                ( ~/EAutoresolveAvantage_NoHelo_vs_Helo,            ~/NoHeloSupport_Advantage ),
+                // Alexis: je retire car les hélo sont parfois dans des btn sans qu'on ait l'info.
+                // ( ~/EAutoresolveAvantage_NoHelo_vs_Helo,            ~/NoHeloSupport_Advantage ),
             ]
         ),
         ( EStrategicBattleType_AerialStrategicBattle, MAP

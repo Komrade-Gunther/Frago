@@ -73,7 +73,6 @@ InGameMinimap is TUISpecificInGameMinimapResources
     CameraMoverTargetClient             = $/Camera/CameraMoverTargetClient
     CameraMoverHelperProxy              = $/M3D/Scene/IngameCameraMoverHelperProxy
 
-   // NorthTexture                      = ~/Texture_Minimap_North
     CameraAngleTexture                  = ~/Texture_Minimap_CameraAngle
 
     UniformAntiAliasedDrawer            = $/UserInterface/UIUniformAntiAliasedDrawer
@@ -116,21 +115,12 @@ InGameMinimap is TUISpecificInGameMinimapResources
     // valeur de 0 a 3, et 4 valeurs OBLIGATOIREMENT
     SortOrderInsideLayer                = [3,1,2,0]
 
-    VisibilityRange                     = ~/AllRanges/ZoomMinimap
-    FadeDuration                        = 0.40
     EventDuration                       = 0.80
     Camera                              = $/M3D/Camera/CameraPrincipale
 
-    CanGiveOrder                        = True
-    CanGiveMoveCamera                   = True
-
-    RotateWithCamera                    = True
-    RotateCameraSnap90                  = True
     SeuilRotateCameraInDegree           = 20
 
     DistrictColor                       = RGBA[255, 252,  58, 255]
-    PlayerColorIsOverriden              = False
-    PlayerOverrideColor                 = RGBA[255, 255, 255, 255]
 
     MinimapPanelDescriptor = ~/MinimapPanelDescriptor
 )

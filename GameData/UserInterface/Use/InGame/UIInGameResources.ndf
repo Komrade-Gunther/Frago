@@ -15,15 +15,15 @@ UIInGameResource is TUISpecificInGameResources
         ("UISpecificIngameChatViewDescriptor", ~/UISpecificIngameChatViewDescriptor),
         ("UISpecificInGameFlarePanelViewDescriptor", ~/UIInGameFlarePanelViewDescriptor),
         ("UISpecificIngameHUDTransportAndUnitsInfoViewDescriptor", ~/UISpecificInGameHUDTransportAndUnitsInfoViewDescriptor),
-        ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor( MainComponentFrame = TUIFramePropertyRTTI() )),
+        ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor()),
         ("SkirmishProductionMenu", UISpecificSkirmishProductionMenuViewDescriptor()),
         ("SkirmishFromStrategicProductionMenu", UISpecificSkirmishProductionMenuViewDescriptor(IsFromStrategic = true)),
         ("UIUnitLabelAggregateViewDescriptor", ~/UISpecificInGameUnitLabelAggregateViewDescriptor),
-        ("InGameUnitLabel", UISpecificUnitLabelViewDescriptor(DebugViewName = "InGameUnitLabelDebug")),
+        ("InGameUnitLabel", ~/UISpecificUnitLabelViewDescriptor),
         ("InGameUnitLabelDebug", ~/UISpecificUnitLabelDebugViewDescriptor),
         ("InGameUnitLabelNameOnly", UISpecificUnitLabelViewDescriptorNameOnly(DebugViewName = "InGameUnitLabelNameOnlyDebug")),
         ("InGameUnitLabelNameOnlyDebug", ~/UISpecificUnitLabelDebugViewDescriptorNameOnly),
-        ("InGameUnitLabelForMultiSelection", UISpecificUnitLabelViewDescriptor(IsForMultiSelection = true DebugViewName = "")),
+        ("InGameUnitLabelForMultiSelection", ~/UISpecificUnitLabelViewForMultiSelectionDescriptor),
         ("UISpecificUnitLabelAggregation", ~/UISpecificUnitLabelAggregationViewDescriptor),
         ("UISpecificUnitLabelAggregationNameOnly", ~/UISpecificUnitLabelAggregationViewNameOnlyDescriptor),
         ("UISpecificTacticCubeActionViewDescriptor", ~/UISpecificTacticCubeActionViewDescriptor),
@@ -84,9 +84,10 @@ UIInGameResource is TUISpecificInGameResources
 
 //-------------------------------------------------------------------------------------
 
+IngameHUDRightFramesWidth is 320.0
+
 InGameMainContainerResource is TUICommonMainContainerResource
 (
-    RefMagnification = ~/RefMagnification
     ContentRefSize = [ 2134 , 1440 ]
     SafeBoxMin     = [  107 ,   80 ]
     SafeBoxSize    = ~/FullScreenSafeBoxSize
@@ -135,7 +136,7 @@ InGameMainContainerResource is TUICommonMainContainerResource
                 (
                     MagnifiableOffset = [-8.0 ,0.0]
 
-                    MagnifiableWidthHeight = [320.0, 0.0]
+                    MagnifiableWidthHeight = [IngameHUDRightFramesWidth, 0.0]
                     AlignementToAnchor = [1.0, 0.0]
                     AlignementToFather = [1.0, 0.0]
                 )
@@ -174,49 +175,28 @@ InGameMainContainerResource is TUICommonMainContainerResource
                     ),
                     BUCKListElementDescriptor
                     (
-                        ComponentDescriptor = BUCKListDescriptor
+                        ComponentDescriptor = BUCKContainerDescriptor
                         (
+                            UniqueName = "UISpecificMiniMapInfoViewMainContainer"
                             ComponentFrame = TUIFramePropertyRTTI
                             (
                                 RelativeWidthHeight = [1.0, 0.0]
                             )
 
-                            FirstMargin = TRTTILength( Magnifiable = 5.0 )
-                            InterItemMargin = TRTTILength( Magnifiable = 5.0 )
-                            LastMargin = TRTTILength( Magnifiable = 5.0 )
-                            Axis = ~/ListAxis/Vertical
+                            FitStyle = ~/ContainerFitStyle/FitToContentVertically
+                        )
+                    ),
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = BUCKContainerDescriptor
+                        (
+                            UniqueName = "UICommonFlarePanelViewMainContainer"
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                            )
 
-                            BackgroundComponents = [ PanelRoundedCorner() ]
-
-                            Elements =
-                            [
-                                BUCKListElementDescriptor
-                                (
-                                    ComponentDescriptor = BUCKContainerDescriptor
-                                    (
-                                        UniqueName = "UISpecificMiniMapInfoViewMainContainer"
-                                        ComponentFrame = TUIFramePropertyRTTI
-                                        (
-                                            RelativeWidthHeight = [1.0, 0.0]
-                                        )
-
-                                        FitStyle = ~/ContainerFitStyle/FitToContentVertically
-                                    )
-                                ),
-                                BUCKListElementDescriptor
-                                (
-                                    ComponentDescriptor = BUCKContainerDescriptor
-                                    (
-                                        UniqueName = "UICommonFlarePanelViewMainContainer"
-                                        ComponentFrame = TUIFramePropertyRTTI
-                                        (
-                                            RelativeWidthHeight = [1.0, 0.0]
-                                        )
-
-                                        FitStyle = ~/ContainerFitStyle/FitToContentVertically
-                                    )
-                                )
-                            ]
+                            FitStyle = ~/ContainerFitStyle/FitToContentVertically
                         )
                     ),
                     BUCKListElementDescriptor

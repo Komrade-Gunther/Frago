@@ -403,7 +403,7 @@ private CombatGroupContainer is BUCKDraggableContainerDescriptor
                                 TextureToken = "UseStrategic_Lock_CombatGroup"
                                 Components =
                                 [
-                                    BUCKSpecificHintableArea
+                                    BUCKSpecificStrategicHintableArea
                                     (
                                         HintBodyToken = 'lock'
                                         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
@@ -601,7 +601,7 @@ Title_bataillonDetails is BUCKContainerDescriptor
 
                 TextToken = "SC_TP_Sub"
                 TextDico = ~/LocalisationConstantes/dico_interface_ingame
-                Hint = BUCKSpecificHintableArea
+                Hint = BUCKSpecificStrategicHintableArea
                 (
                     DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     HintBodyToken = 'sm_tdrag'
@@ -739,7 +739,7 @@ template TacticalPreparationCategoryLine
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
     TextPadding = TRTTILength4(Magnifiable = [5.0, 20.0, 0.0, 7.0])
-    Hint = BUCKSpecificHintableArea
+    Hint = BUCKSpecificStrategicHintableArea
     (
         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
         HintTitleToken = <HintTitleToken>

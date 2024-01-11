@@ -946,8 +946,6 @@ private PanelSelectionUnique_RoeShortcuts is BUCKContainerDescriptor
                     ElementName = 'RoeShortcutList'
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        // AlignementToAnchor = [0.0, 0.5]
-                        // AlignementToFather = [0.0, 0.5]
                         MagnifiableOffset = [0,12]
                     )
 
@@ -1060,23 +1058,6 @@ UISpecificUnitSelectionPanelViewDescriptor is TUISpecificUnitSelectionPanelViewD
         "CommonTexture_Chevron_1",
         "CommonTexture_Chevron_2",
         "CommonTexture_Chevron_3",
-    ]
-
-    ExperienceNameTokens =
-    [
-        "DES_UE_VE0",
-        "DES_UE_VE1",
-        "DES_UE_VE2",
-        "DES_UE_VE3",
-    ]
-
-    ExperienceHintTokens =
-    [
-        // ("TitleToken", "BodyToken")
-        ("DES_UE_VE0", "pi_ve0"),
-        ("DES_UE_VE1", "pi_ve1"),
-        ("DES_UE_VE2", "pi_ve2"),
-        ("DES_UE_VE3", "pi_ve3"),
     ]
 
     HintTitleBySuppressValue = MAP

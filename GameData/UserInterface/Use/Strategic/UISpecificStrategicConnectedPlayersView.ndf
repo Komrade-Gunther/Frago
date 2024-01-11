@@ -60,7 +60,7 @@ private ConnectedPlayerInfoLine is BUCKListDescriptor
                 HorizontalFitStyle = ~/FitStyle/FitToContent
                 VerticalFitStyle = ~/FitStyle/FitToContent
 
-                Hint = BUCKSpecificHintableArea
+                Hint = BUCKSpecificStrategicHintableArea
                 (
                     ElementName = "HintName"
                     DicoToken = ~/LocalisationConstantes/dico_interface_ingame

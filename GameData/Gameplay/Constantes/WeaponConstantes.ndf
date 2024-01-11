@@ -16,16 +16,12 @@ export WeaponConstantes is TWeaponConstantsDescriptor
             0.0
         ),
     ]
-//
+
     DefaultSuppressDamage = TDamageTypeRTTI(Family=DamageFamily_suppress Index=1)
     SuppressDamagePerFamily = MAP
     [
         (
             DamageFamily_ap,
-            TDamageTypeRTTI(Family=DamageFamily_suppressap Index=1)
-        ),
-		(
-            DamageFamily_ap_autocannon,
             TDamageTypeRTTI(Family=DamageFamily_suppressap Index=1)
         ),
         (
@@ -62,7 +58,6 @@ export WeaponConstantes is TWeaponConstantsDescriptor
     DamageTypeToMimeticProjectile = MAP
     [
         (DamageFamily_ap, EImpactProjectile/APShell),
-		(DamageFamily_ap_autocannon, EImpactProjectile/APShell),
         (DamageFamily_ap_missile, EImpactProjectile/APShell),
         (DamageFamily_he, EImpactProjectile/HEShell),
     ]

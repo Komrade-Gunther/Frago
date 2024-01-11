@@ -426,53 +426,6 @@ StrategicOrderCancelled is TUIFeedbackDispatchedMessageDescriptor
     )
 )
 
-
-StrategicOnBombarderOrder is TUIFeedbackDispatchedMessageDescriptor
-(
-    TimeBeforeRepeat = 0
-    IsActiveForPlayer = true
-    IsActiveForAllies = true
-    IsActiveForEnemies = true
-
-    LabelDescriptor = TFeedback2DLabelDescriptor(
-        UILayer = $/UserInterface/UILayer_Labels
-        Camera = $/M3D/Camera/CameraPrincipale
-
-        ComponentDescriptor = BUCKTextDescriptor
-        (
-            ElementName = "TextComponent"
-
-            ComponentFrame = TUIFramePropertyRTTI
-            (
-                AlignementToFather = [0.5, 0.5]
-                AlignementToAnchor = [0.5, 0.5]
-            )
-
-            ParagraphStyle = ~/FeedbackParagraphStyle
-            TextStyle = "TextStyleFeedbackLabel"
-            BigLineAction = ~/BigLineAction/BalancedMultiline
-
-            VerticalFitStyle = ~/FitStyle/FitToContent
-            HorizontalFitStyle = ~/FitStyle/FitToContent
-            TypefaceToken = "StrategicFeedbacks"
-            TextDico = ~/LocalisationConstantes/dico_interface_ingame
-            TextColor = "Feedback/OnBombarderOrder"
-            TextSize = "16"
-        )
-
-        TotalTime = 2.5
-        FadeInTime = 0.0
-        FadeOutTime = 0.0
-        InitialOffset = 0.0
-        FinalOffset = 100.0
-    )
-
-    TextFormatter = TUIFeedbackTextFormatterWithToken
-    (
-        Dico = ~/LocalisationConstantes/dico_interface_ingame
-        Token = "ORDCANC"
-    )
-)
 //----------------------------------------------------------------------------------
 // Declaration liste des messages
 //----------------------------------------------------------------------------------
@@ -500,7 +453,6 @@ StrategicFeedbackMessageManagerDescriptor is TUISpecificFeedbackMessageManagerDe
         ( FeedbackMessage_Strategic_PawnDeathEnemyCapturedAirport, StrategicOnPawnDeath( Token = "SDR_ECA") ),
         ( FeedbackMessage_Strategic_PawnIntercepted, ~/StrategicOnPawnIntercepted ),
         ( FeedbackMessage_Strategic_AttackLoss, ~/StrategicOnAttackLoss ),
-        ( FeedbackMessage_OnBombarderOrder, ~/StrategicOnBombarderOrder ),
         ( FeedbackMessage_Strategic_DefenseLoss, ~/StrategicOnDefenseLoss ),
         ( FeedbackMessage_Strategic_OrderCancelled, ~/StrategicOrderCancelled ),
     ]

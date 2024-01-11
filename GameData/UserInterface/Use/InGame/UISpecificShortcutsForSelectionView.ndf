@@ -6,9 +6,7 @@ template ShortcutButton
     UniqueName : string = "",
     SpotlightUniqueName : string = "",
     TextureToken : string = "",
-    HintTitleToken : string = "",
-    HintBodyToken : string = "",
-    HintExtendedToken : string = "",
+    HintableAreaComponent : TBUCKHintableAreaDescriptor = nil,
     RelativeWidthHeight : float2 = [1.0, 1.0],
     MagnifiableWidthHeight : float2 = [0.0, 0.0],
     MagnifiableWidthHeightTexture : float2 = [30.0, 30.0],
@@ -63,16 +61,7 @@ template ShortcutButton
             TextureToken = <TextureToken>
             TextureColorToken = "CouleurTexture_boutonShortcuts"
 
-            Components =
-            [
-                 BUCKSpecificHintableArea
-                (
-                    DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                    HintTitleToken = <HintTitleToken>
-                    HintBodyToken = <HintBodyToken>
-                    HintExtendedToken = <HintExtendedToken>
-                )
-            ]
+            Components = (<HintableAreaComponent> != nil ? [<HintableAreaComponent>] : [])
         ),
     ] +
     ( <SpotlightUniqueName> == "" ? []
@@ -89,9 +78,65 @@ template ShortcutButton
     )
 )
 
+template ShortcutButtonWithBaseHint
+[
+    ElementName : string = "",
+    TextureToken : string = "",
+    HintTitleToken : string = "",
+    HintBodyToken : string = "",
+    HintExtendedToken : string = "",
+    MagnifiableWidthHeightTexture : float2 = [30.0, 30.0],
+] is ShortcutButton
+(
+    ElementName = <ElementName>
+    MagnifiableWidthHeightTexture = <MagnifiableWidthHeightTexture>
+    TextureToken = <TextureToken>
+
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintTitleToken = <HintTitleToken>
+        HintBodyToken = <HintBodyToken>
+        HintExtendedToken = <HintExtendedToken>
+        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+    )
+)
+
+template ShortcutButtonWithStrategicHint
+[
+    ElementName : string = "",
+    UniqueName : string = "",
+    SpotlightUniqueName : string = "",
+    TextureToken : string = "",
+    HintTitleToken : string = "",
+    HintBodyToken : string = "",
+    RelativeWidthHeight : float2 = [1.0, 1.0],
+    MagnifiableWidthHeight : float2 = [0.0, 0.0],
+    BackgroundBlockColorToken : string = "BoutonTemps",
+    BorderLineColorToken : string = "CouleurBordure_boutonShortcuts",
+    LeftClickSound : TSoundDescriptor = nil,
+] is ShortcutButton
+(
+    ElementName = <ElementName>
+    UniqueName = <UniqueName>
+    SpotlightUniqueName = <SpotlightUniqueName>
+    TextureToken = <TextureToken>
+    RelativeWidthHeight = <RelativeWidthHeight>
+    MagnifiableWidthHeight = <MagnifiableWidthHeight>
+    BackgroundBlockColorToken = <BackgroundBlockColorToken>
+    BorderLineColorToken = <BorderLineColorToken>
+    LeftClickSound = <LeftClickSound>
+
+    HintableAreaComponent = BUCKSpecificStrategicHintableArea
+    (
+        HintTitleToken = <HintTitleToken>
+        HintBodyToken = <HintBodyToken>
+        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+    )
+)
+
 //------------------------------------------------------------------------------
 
-OrderPanelPanelButton is ShortcutButton
+OrderPanelPanelButton is ShortcutButtonWithBaseHint
 (
     ElementName = 'OrdersFeedBackButton'
     TextureToken = "textureOrders"
@@ -101,7 +146,7 @@ OrderPanelPanelButton is ShortcutButton
 
 //------------------------------------------------------------------------------
 
-LoSPanelButton is ShortcutButton
+LoSPanelButton is ShortcutButtonWithBaseHint
 (
     ElementName = 'LoSFeedBackButton'
     TextureToken = "icone_los"
@@ -114,7 +159,7 @@ LoSPanelButton is ShortcutButton
 
 //------------------------------------------------------------------------------
 
-ChatShortcutButton is ShortcutButton
+ChatShortcutButton is ShortcutButtonWithBaseHint
 (
     ElementName = 'ChatButton'
     TextureToken = "icone_chat"
@@ -125,14 +170,14 @@ ChatShortcutButton is ShortcutButton
 
 //------------------------------------------------------------------------------
 
-HelpButton is ShortcutButton
+HelpButton is ShortcutButtonWithBaseHint
 (
     TextureToken = "textureOrders "
 )
 
 //------------------------------------------------------------------------------
 
-EngagementRulesButton is ShortcutButton
+EngagementRulesButton is ShortcutButtonWithBaseHint
 (
     ElementName = 'EngagementRulesButton'
     TextureToken = "icone_roe"
@@ -143,7 +188,7 @@ EngagementRulesButton is ShortcutButton
 
 //------------------------------------------------------------------------------
 
-DisplayStartingInformationButton is ShortcutButton
+DisplayStartingInformationButton is ShortcutButtonWithBaseHint
 (
     ElementName = 'StartingInformationButton'
     TextureToken = "icone_starting_information"
@@ -154,7 +199,7 @@ DisplayStartingInformationButton is ShortcutButton
 //------------------------------------------------------------------------------
 // pour Steelman
 //------------------------------------------------------------------------------
-BoutonAffichageStrategicSituation is ShortcutButton
+BoutonAffichageStrategicSituation is ShortcutButtonWithStrategicHint
 (
     MagnifiableWidthHeight = [32.0, 100 div 3]
     RelativeWidthHeight = [0.0, 0.0]
@@ -169,7 +214,7 @@ BoutonAffichageStrategicSituation is ShortcutButton
     LeftClickSound = SoundEvent_SteelmanCampaignStatus
 )
 
-BoutonAffichageOrdreDeBataille is ShortcutButton
+BoutonAffichageOrdreDeBataille is ShortcutButtonWithStrategicHint
 (
     MagnifiableWidthHeight = [32.0, 100 div 3]
     RelativeWidthHeight = [0.0, 0.0]
@@ -185,7 +230,7 @@ BoutonAffichageOrdreDeBataille is ShortcutButton
 )
 
 
-BoutonAffichagePertes is ShortcutButton
+BoutonAffichagePertes is ShortcutButtonWithStrategicHint
 (
     MagnifiableWidthHeight = [32.0, 100 div 3]
     RelativeWidthHeight = [0.0, 0.0]
@@ -200,7 +245,7 @@ BoutonAffichagePertes is ShortcutButton
     LeftClickSound = SoundEvent_SteelmanCasualtiesList
 )
 
-BoutonAccelerationDuTemps is ShortcutButton
+BoutonAccelerationDuTemps is ShortcutButtonWithStrategicHint
 (
     ElementName = 'BtnGameSpeed'
     MagnifiableWidthHeight = [32.0, 100 div 3]

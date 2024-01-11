@@ -10,7 +10,7 @@ export Sound_AmbianceArtilleryImpactsArmyGeneral is TSoundSet
             SoundSettings = $/SoundSettings/HUD_SoundSettings
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery Impact_Army_General_OneShot_01.wav"
+                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery_Impact_Army_General_OneShot_01.wav"
             )
             UseSpecialLoop = False
         ),
@@ -19,7 +19,7 @@ export Sound_AmbianceArtilleryImpactsArmyGeneral is TSoundSet
             SoundSettings = $/SoundSettings/HUD_SoundSettings
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery Impact_Army_General_OneShot_02.wav"
+                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery_Impact_Army_General_OneShot_02.wav"
             )
             UseSpecialLoop = False
         ),
@@ -28,7 +28,7 @@ export Sound_AmbianceArtilleryImpactsArmyGeneral is TSoundSet
             SoundSettings = $/SoundSettings/HUD_SoundSettings
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery Impact_Army_General_OneShot_03.wav"
+                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery_Impact_Army_General_OneShot_03.wav"
             )
             UseSpecialLoop = False
         ),
@@ -37,7 +37,7 @@ export Sound_AmbianceArtilleryImpactsArmyGeneral is TSoundSet
             SoundSettings = $/SoundSettings/HUD_SoundSettings
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery Impact_Army_General_OneShot_04.wav"
+                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery_Impact_Army_General_OneShot_04.wav"
             )
             UseSpecialLoop = False
         ),
@@ -46,7 +46,7 @@ export Sound_AmbianceArtilleryImpactsArmyGeneral is TSoundSet
             SoundSettings = $/SoundSettings/HUD_SoundSettings
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery Impact_Army_General_OneShot_05.wav"
+                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery_Impact_Army_General_OneShot_05.wav"
             )
             UseSpecialLoop = False
         ),
@@ -55,7 +55,7 @@ export Sound_AmbianceArtilleryImpactsArmyGeneral is TSoundSet
             SoundSettings = $/SoundSettings/HUD_SoundSettings
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery Impact_Army_General_OneShot_06.wav"
+                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery_Impact_Army_General_OneShot_06.wav"
             )
             UseSpecialLoop = False
         ),
@@ -64,7 +64,7 @@ export Sound_AmbianceArtilleryImpactsArmyGeneral is TSoundSet
             SoundSettings = $/SoundSettings/HUD_SoundSettings
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery Impact_Army_General_OneShot_07.wav"
+                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery_Impact_Army_General_OneShot_07.wav"
             )
             UseSpecialLoop = False
         ),
@@ -73,7 +73,7 @@ export Sound_AmbianceArtilleryImpactsArmyGeneral is TSoundSet
             SoundSettings = $/SoundSettings/HUD_SoundSettings
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery Impact_Army_General_OneShot_08.wav"
+                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery_Impact_Army_General_OneShot_08.wav"
             )
             UseSpecialLoop = False
         ),
@@ -82,7 +82,7 @@ export Sound_AmbianceArtilleryImpactsArmyGeneral is TSoundSet
             SoundSettings = $/SoundSettings/HUD_SoundSettings
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery Impact_Army_General_OneShot_09.wav"
+                FileName = "GameData:/Assets/Sons/SFX/Env/Artillery_Impact_Army_General_OneShot_09.wav"
             )
             UseSpecialLoop = False
         ),
@@ -1832,6 +1832,24 @@ export Sound_FULDA_105mm_M60_Patton is TSoundSet
             )
             UseSpecialLoop = False
         ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Canon/105mm_canon_tir_M60_Patton_5.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Canon/105mm_canon_tir_M60_Patton_6.wav"
+            )
+            UseSpecialLoop = False
+        ),
     ]
 )
 
@@ -2110,6 +2128,24 @@ export Sound_FULDA_120mm_Leo2 is TSoundSet
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Canon/120mm_canon_tir_Leo2_6.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Canon/120mm_canon_tir_Leo2_7.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Canon_Gros
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Canon/120mm_canon_tir_Leo2_8.wav"
             )
             UseSpecialLoop = False
         ),
@@ -2800,7 +2836,7 @@ export Sound_FULDA_2A38_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_30mm_autocanon_Tunguska_1.wav"
@@ -2809,7 +2845,7 @@ export Sound_FULDA_2A38_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_30mm_autocanon_Tunguska_2.wav"
@@ -2818,7 +2854,7 @@ export Sound_FULDA_2A38_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_30mm_autocanon_Tunguska_3.wav"
@@ -2841,7 +2877,7 @@ export Sound_FULDA_2A42_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP2_1.wav"
@@ -2850,7 +2886,7 @@ export Sound_FULDA_2A42_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP2_2.wav"
@@ -2859,7 +2895,7 @@ export Sound_FULDA_2A42_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP2_3.wav"
@@ -2868,7 +2904,7 @@ export Sound_FULDA_2A42_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP2_4.wav"
@@ -2891,7 +2927,7 @@ export Sound_FULDA_2A72_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP3_1.wav"
@@ -2900,7 +2936,7 @@ export Sound_FULDA_2A72_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP3_2.wav"
@@ -2909,7 +2945,7 @@ export Sound_FULDA_2A72_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP3_3.wav"
@@ -2918,7 +2954,7 @@ export Sound_FULDA_2A72_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP3_4.wav"
@@ -2927,7 +2963,7 @@ export Sound_FULDA_2A72_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP3_5.wav"
@@ -2936,7 +2972,7 @@ export Sound_FULDA_2A72_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP3_6.wav"
@@ -2945,7 +2981,7 @@ export Sound_FULDA_2A72_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_BMP3_7.wav"
@@ -3605,7 +3641,7 @@ export Sound_FULDA_AGS_17_Grenade_Launcher is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_LanceGrenade_tir_AGS_17_1.wav"
@@ -3614,7 +3650,7 @@ export Sound_FULDA_AGS_17_Grenade_Launcher is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_LanceGrenade_tir_AGS_17_2.wav"
@@ -3623,7 +3659,7 @@ export Sound_FULDA_AGS_17_Grenade_Launcher is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_LanceGrenade_tir_AGS_17_3.wav"
@@ -3632,7 +3668,7 @@ export Sound_FULDA_AGS_17_Grenade_Launcher is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_LanceGrenade_tir_AGS_17_4.wav"
@@ -3791,7 +3827,7 @@ export Sound_FULDA_APZ23_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_23mm_autocanon_Shilka_1.wav"
@@ -3800,7 +3836,7 @@ export Sound_FULDA_APZ23_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_23mm_autocanon_Shilka_2.wav"
@@ -3809,7 +3845,7 @@ export Sound_FULDA_APZ23_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_23mm_autocanon_Shilka_3.wav"
@@ -3818,7 +3854,7 @@ export Sound_FULDA_APZ23_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_23mm_autocanon_Shilka_4.wav"
@@ -3827,7 +3863,7 @@ export Sound_FULDA_APZ23_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_23mm_autocanon_Shilka_5.wav"
@@ -3836,7 +3872,7 @@ export Sound_FULDA_APZ23_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_23mm_autocanon_Shilka_6.wav"
@@ -3845,7 +3881,7 @@ export Sound_FULDA_APZ23_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_23mm_autocanon_Shilka_7.wav"
@@ -3909,7 +3945,7 @@ export Sound_FULDA_Bofor_autocanon is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_1.wav"
@@ -3918,7 +3954,7 @@ export Sound_FULDA_Bofor_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_2.wav"
@@ -3927,7 +3963,7 @@ export Sound_FULDA_Bofor_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_3.wav"
@@ -3936,7 +3972,7 @@ export Sound_FULDA_Bofor_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_4.wav"
@@ -3945,7 +3981,7 @@ export Sound_FULDA_Bofor_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_5.wav"
@@ -3954,7 +3990,7 @@ export Sound_FULDA_Bofor_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_6.wav"
@@ -3963,7 +3999,7 @@ export Sound_FULDA_Bofor_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_40mm_autocanon_Bofor_7.wav"
@@ -4290,7 +4326,7 @@ export Sound_FULDA_CARL_GUSTAV_Firing is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_CARL_1.wav"
@@ -4299,7 +4335,7 @@ export Sound_FULDA_CARL_GUSTAV_Firing is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_CARL_2.wav"
@@ -4308,7 +4344,7 @@ export Sound_FULDA_CARL_GUSTAV_Firing is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_CARL_3.wav"
@@ -4334,7 +4370,7 @@ export Sound_FULDA_Cal50 is TSoundSet
             SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_10.wav"
+                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_01.wav"
             )
             UseSpecialLoop = False
         ),
@@ -4343,7 +4379,70 @@ export Sound_FULDA_Cal50 is TSoundSet
             SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
             TheSoundStream = TSoundStream
             (
-                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_11.wav"
+                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_02.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_03.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_04.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_05.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_06.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_07.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_08.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_lourde
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/HMG/Cal_50_Firing_09.wav"
             )
             UseSpecialLoop = False
         ),
@@ -5338,6 +5437,65 @@ export SoundHappening_FULDA_Drop_Bomblets_MW1 is TSoundHappening
 )
 
 
+export Sound_FULDA_FALO is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Fusils/FALO_Firing_1.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Fusils/FALO_Firing_2.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Fusils/FALO_Firing_3.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Fusils/FALO_Firing_4.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Mitrailleuse_legere
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Fusils/FALO_Firing_5.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_FALO is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_FALO
+    Volume = 1
+)
+
+
 export Sound_FULDA_FAMAS_Burst_3_Rounds is TSoundSet
 (
     Items = 
@@ -5539,7 +5697,7 @@ export Sound_FULDA_Fk20_Dual_chain_gun_Continuous is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Fk20_Double_Salve_1.wav"
@@ -5548,7 +5706,7 @@ export Sound_FULDA_Fk20_Dual_chain_gun_Continuous is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Fk20_Double_Salve_2.wav"
@@ -5557,7 +5715,7 @@ export Sound_FULDA_Fk20_Dual_chain_gun_Continuous is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Fk20_Double_Salve_3.wav"
@@ -5566,7 +5724,7 @@ export Sound_FULDA_Fk20_Dual_chain_gun_Continuous is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Fk20_Double_Salve_4.wav"
@@ -5589,7 +5747,7 @@ export Sound_FULDA_Fk20_chain_gun_Continuous is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Fk20_Salve_1.wav"
@@ -5598,7 +5756,7 @@ export Sound_FULDA_Fk20_chain_gun_Continuous is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Fk20_Salve_2.wav"
@@ -5607,7 +5765,7 @@ export Sound_FULDA_Fk20_chain_gun_Continuous is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Fk20_Salve_3.wav"
@@ -5616,7 +5774,7 @@ export Sound_FULDA_Fk20_chain_gun_Continuous is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Fk20_Salve_4.wav"
@@ -5816,7 +5974,7 @@ export Sound_FULDA_Gsh30k_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Hind_Gsh30k_1.wav"
@@ -5825,7 +5983,7 @@ export Sound_FULDA_Gsh30k_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Hind_Gsh30k_2.wav"
@@ -5834,7 +5992,7 @@ export Sound_FULDA_Gsh30k_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Hind_Gsh30k_3.wav"
@@ -5843,7 +6001,7 @@ export Sound_FULDA_Gsh30k_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Hind_Gsh30k_4.wav"
@@ -5852,7 +6010,7 @@ export Sound_FULDA_Gsh30k_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Hind_Gsh30k_5.wav"
@@ -5861,7 +6019,7 @@ export Sound_FULDA_Gsh30k_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Hind_Gsh30k_6.wav"
@@ -6887,7 +7045,7 @@ export Sound_FULDA_M230_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Apache_M230_1.wav"
@@ -6896,7 +7054,7 @@ export Sound_FULDA_M230_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Apache_M230_2.wav"
@@ -6905,7 +7063,7 @@ export Sound_FULDA_M230_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Apache_M230_3.wav"
@@ -6914,7 +7072,7 @@ export Sound_FULDA_M230_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Apache_M230_4.wav"
@@ -6923,7 +7081,7 @@ export Sound_FULDA_M230_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Apache_M230_5.wav"
@@ -6932,7 +7090,7 @@ export Sound_FULDA_M230_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Apache_M230_6.wav"
@@ -6941,7 +7099,7 @@ export Sound_FULDA_M230_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Apache_M230_7.wav"
@@ -6950,7 +7108,7 @@ export Sound_FULDA_M230_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Apache_M230_8.wav"
@@ -6959,7 +7117,7 @@ export Sound_FULDA_M230_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_Apache_M230_9.wav"
@@ -6982,7 +7140,7 @@ export Sound_FULDA_M242_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/25mm_autocanon_tir_Bushmaster_M242_1.wav"
@@ -6991,7 +7149,7 @@ export Sound_FULDA_M242_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/25mm_autocanon_tir_Bushmaster_M242_2.wav"
@@ -7000,7 +7158,7 @@ export Sound_FULDA_M242_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/25mm_autocanon_tir_Bushmaster_M242_3.wav"
@@ -7009,7 +7167,7 @@ export Sound_FULDA_M242_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/25mm_autocanon_tir_Bushmaster_M242_4.wav"
@@ -7018,7 +7176,7 @@ export Sound_FULDA_M242_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/25mm_autocanon_tir_Bushmaster_M242_5.wav"
@@ -7027,7 +7185,7 @@ export Sound_FULDA_M242_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/25mm_autocanon_tir_Bushmaster_M242_6.wav"
@@ -7036,7 +7194,7 @@ export Sound_FULDA_M242_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/25mm_autocanon_tir_Bushmaster_M242_7.wav"
@@ -7413,7 +7571,7 @@ export Sound_FULDA_M621_GIAT is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_GIAT_M621_1.wav"
@@ -7422,7 +7580,7 @@ export Sound_FULDA_M621_GIAT is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_GIAT_M621_2.wav"
@@ -7431,7 +7589,7 @@ export Sound_FULDA_M621_GIAT is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_GIAT_M621_3.wav"
@@ -7440,7 +7598,7 @@ export Sound_FULDA_M621_GIAT is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_GIAT_M621_4.wav"
@@ -7449,7 +7607,7 @@ export Sound_FULDA_M621_GIAT is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_GIAT_M621_5.wav"
@@ -7458,7 +7616,7 @@ export Sound_FULDA_M621_GIAT is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_GIAT_M621_6.wav"
@@ -7467,7 +7625,7 @@ export Sound_FULDA_M621_GIAT is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_GIAT_M621_7.wav"
@@ -7490,7 +7648,7 @@ export Sound_FULDA_M693_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_M693_1.wav"
@@ -7499,7 +7657,7 @@ export Sound_FULDA_M693_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_M693_2.wav"
@@ -7508,7 +7666,7 @@ export Sound_FULDA_M693_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_M693_3.wav"
@@ -7848,7 +8006,7 @@ export Sound_FULDA_MK_20_Rh_202_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_Rh_202_chain_gun_1.wav"
@@ -7857,7 +8015,7 @@ export Sound_FULDA_MK_20_Rh_202_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_Rh_202_chain_gun_2.wav"
@@ -7866,7 +8024,7 @@ export Sound_FULDA_MK_20_Rh_202_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_Rh_202_chain_gun_3.wav"
@@ -7875,7 +8033,7 @@ export Sound_FULDA_MK_20_Rh_202_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_Rh_202_chain_gun_4.wav"
@@ -7884,7 +8042,7 @@ export Sound_FULDA_MK_20_Rh_202_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/20mm_autocanon_tir_Rh_202_chain_gun_5.wav"
@@ -8051,6 +8209,65 @@ export SoundHappening_FULDA_Mauser_BK27 is TSoundHappening
 )
 
 
+export Sound_FULDA_Maxton_quad_gun is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_12_7mm_quadcanon_Maxton_1.wav"
+            )
+            UseSpecialLoop = True
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_12_7mm_quadcanon_Maxton_2.wav"
+            )
+            UseSpecialLoop = True
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_12_7mm_quadcanon_Maxton_3.wav"
+            )
+            UseSpecialLoop = True
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_12_7mm_quadcanon_Maxton_4.wav"
+            )
+            UseSpecialLoop = True
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_12_7mm_quadcanon_Maxton_5.wav"
+            )
+            UseSpecialLoop = True
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_Maxton_quad_gun is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_Maxton_quad_gun
+    Volume = 2
+)
+
+
 export Sound_FULDA_Mistral_Firing is TSoundSet
 (
     Items = 
@@ -8198,7 +8415,7 @@ export Sound_FULDA_Oerlikon_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_35mm_autocanon_Oerlikon_GPF_1.wav"
@@ -8207,7 +8424,7 @@ export Sound_FULDA_Oerlikon_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_35mm_autocanon_Oerlikon_GPF_2.wav"
@@ -8216,7 +8433,7 @@ export Sound_FULDA_Oerlikon_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_35mm_autocanon_Oerlikon_GPF_3.wav"
@@ -8471,7 +8688,7 @@ export Sound_FULDA_RARDEN_L21A1_chain_gun is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_RARDEN_L21A1_01.wav"
@@ -8480,7 +8697,7 @@ export Sound_FULDA_RARDEN_L21A1_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_RARDEN_L21A1_02.wav"
@@ -8489,7 +8706,7 @@ export Sound_FULDA_RARDEN_L21A1_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_RARDEN_L21A1_03.wav"
@@ -8498,7 +8715,7 @@ export Sound_FULDA_RARDEN_L21A1_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_RARDEN_L21A1_04.wav"
@@ -8507,7 +8724,7 @@ export Sound_FULDA_RARDEN_L21A1_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_RARDEN_L21A1_05.wav"
@@ -8516,7 +8733,7 @@ export Sound_FULDA_RARDEN_L21A1_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_RARDEN_L21A1_06.wav"
@@ -8525,7 +8742,7 @@ export Sound_FULDA_RARDEN_L21A1_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_RARDEN_L21A1_07.wav"
@@ -8534,7 +8751,7 @@ export Sound_FULDA_RARDEN_L21A1_chain_gun is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/30mm_autocanon_tir_RARDEN_L21A1_08.wav"
@@ -8547,6 +8764,38 @@ export Sound_FULDA_RARDEN_L21A1_chain_gun is TSoundSet
 export SoundHappening_FULDA_RARDEN_L21A1_chain_gun is TSoundHappening
 (
     SoundDescList = Sound_FULDA_RARDEN_L21A1_chain_gun
+    Volume = 2
+)
+
+
+export Sound_FULDA_RL83_Blindicide_Firing is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_RL83_Blindicide_1.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_RL83_Blindicide_2.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_RL83_Blindicide_Firing is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_RL83_Blindicide_Firing
     Volume = 2
 )
 
@@ -8844,7 +9093,7 @@ export Sound_FULDA_S60_autocanon is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_1.wav"
@@ -8853,7 +9102,7 @@ export Sound_FULDA_S60_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_2.wav"
@@ -8862,7 +9111,7 @@ export Sound_FULDA_S60_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_3.wav"
@@ -8871,7 +9120,7 @@ export Sound_FULDA_S60_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_4.wav"
@@ -8880,7 +9129,7 @@ export Sound_FULDA_S60_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_5.wav"
@@ -8889,7 +9138,7 @@ export Sound_FULDA_S60_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_6.wav"
@@ -8898,19 +9147,10 @@ export Sound_FULDA_S60_autocanon is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_7.wav"
-            )
-            UseSpecialLoop = False
-        ),
-        TSoundDescriptor
-        (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
-            TheSoundStream = TSoundStream
-            (
-                FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_57mm_autocanon_S60_8.wav"
             )
             UseSpecialLoop = False
         ),
@@ -9920,6 +10160,106 @@ export SoundHappening_FULDA_Stinger_Firing is TSoundHappening
 )
 
 
+export Sound_FULDA_Strela_Firing is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Strela_1.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Strela_2.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Strela_3.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_Strela_Firing is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_Strela_Firing
+    Volume = 2
+)
+
+
+export Sound_FULDA_Strela_Manpad_Firing is TSoundSet
+(
+    Items = 
+    [
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Strela_Manpad_1.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Strela_Manpad_2.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Strela_Manpad_3.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Strela_Manpad_4.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Missile_Moyen
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Missiles/Tir_Strela_Manpad_5.wav"
+            )
+            UseSpecialLoop = False
+        ),
+    ]
+)
+
+export SoundHappening_FULDA_Strela_Manpad_Firing is TSoundHappening
+(
+    SoundDescList = Sound_FULDA_Strela_Manpad_Firing
+    Volume = 1
+)
+
+
 export Sound_FULDA_TOR_Firing is TSoundSet
 (
     Items = 
@@ -10412,7 +10752,7 @@ export Sound_FULDA_ZU23_Dual_chain_gun_Continuous is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Zu23_Double_Salve_1.wav"
@@ -10421,7 +10761,7 @@ export Sound_FULDA_ZU23_Dual_chain_gun_Continuous is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Zu23_Double_Salve_2.wav"
@@ -10430,7 +10770,7 @@ export Sound_FULDA_ZU23_Dual_chain_gun_Continuous is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Zu23_Double_Salve_3.wav"
@@ -10439,7 +10779,7 @@ export Sound_FULDA_ZU23_Dual_chain_gun_Continuous is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tir_Autocanon
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Autocanons/Tir_20mm_autocanon_Zu23_Double_Salve_4.wav"
@@ -11619,13 +11959,22 @@ export Sound_ImpactBallesBatiment is TSoundSet
             )
             UseSpecialLoop = False
         ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBalle_16.wav"
+            )
+            UseSpecialLoop = False
+        ),
     ]
 )
 
 export SoundHappening_ImpactBallesBatiment is TSoundHappening
 (
     SoundDescList = Sound_ImpactBallesBatiment
-    Volume = 0.5
+    Volume = 1
 )
 
 
@@ -11696,13 +12045,67 @@ export Sound_ImpactBallesSol is TSoundSet
             )
             UseSpecialLoop = False
         ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_08.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_09.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_10.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_11.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_12.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_13.wav"
+            )
+            UseSpecialLoop = False
+        ),
     ]
 )
 
 export SoundHappening_ImpactBallesSol is TSoundHappening
 (
     SoundDescList = Sound_ImpactBallesSol
-    Volume = 0.5
+    Volume = 1
 )
 
 
@@ -12035,13 +12438,148 @@ export Sound_ImpactBalles_burstBatiment is TSoundSet
             )
             UseSpecialLoop = False
         ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_08.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_09.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_10.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_11.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_12.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_13.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_14.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_15.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_16.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_17.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_18.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_19.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_20.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_21.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBatBallesBurst_22.wav"
+            )
+            UseSpecialLoop = False
+        ),
     ]
 )
 
 export SoundHappening_ImpactBalles_burstBatiment is TSoundHappening
 (
     SoundDescList = Sound_ImpactBalles_burstBatiment
-    Volume = 0.5
+    Volume = 1
 )
 
 
@@ -12383,6 +12921,60 @@ export Sound_ImpactBalles_burstSol_SAW is TSoundSet
             )
             UseSpecialLoop = False
         ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_08.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_09.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_10.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_11.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_12.wav"
+            )
+            UseSpecialLoop = False
+        ),
+        TSoundDescriptor
+        (
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Impact_Balles_legeres
+            TheSoundStream = TSoundStream
+            (
+                FileName = "GameData:/Assets/Sons/SFX/Impacts/impactBallesBurst_13.wav"
+            )
+            UseSpecialLoop = False
+        ),
     ]
 )
 
@@ -12561,7 +13153,7 @@ export Sound_ImpactBalles_burstVehicule is TSoundSet
 export SoundHappening_ImpactBalles_burstVehicule is TSoundHappening
 (
     SoundDescList = Sound_ImpactBalles_burstVehicule
-    Volume = 0.5
+    Volume = 1
 )
 
 
@@ -12744,7 +13336,7 @@ export Sound_ImpactCanon_grosSol is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Moyen_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Impacts/impactGrosObus_01.wav"
@@ -12753,7 +13345,7 @@ export Sound_ImpactCanon_grosSol is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Moyen_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Impacts/impactGrosObus_02.wav"
@@ -12762,7 +13354,7 @@ export Sound_ImpactCanon_grosSol is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Moyen_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Impacts/impactGrosObus_03.wav"
@@ -12771,7 +13363,7 @@ export Sound_ImpactCanon_grosSol is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Moyen_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Impacts/impactGrosObus_04.wav"
@@ -12844,7 +13436,7 @@ export Sound_ImpactCanon_moyenSol is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Petits_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Impacts/impactGrosObus_01.wav"
@@ -12853,7 +13445,7 @@ export Sound_ImpactCanon_moyenSol is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Petits_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Impacts/impactGrosObus_02.wav"
@@ -12862,7 +13454,7 @@ export Sound_ImpactCanon_moyenSol is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Petits_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Impacts/impactGrosObus_03.wav"
@@ -12871,7 +13463,7 @@ export Sound_ImpactCanon_moyenSol is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Petits_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/Impacts/impactGrosObus_04.wav"
@@ -12944,7 +13536,7 @@ export Sound_ImpactCanon_petitSol is TSoundSet
     [
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tres_Petits_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/ObusCanon/SFX_Impact_Obus_Sol_Petit_01.wav"
@@ -12953,7 +13545,7 @@ export Sound_ImpactCanon_petitSol is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tres_Petits_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/ObusCanon/SFX_Impact_Obus_Sol_Petit_02.wav"
@@ -12962,7 +13554,7 @@ export Sound_ImpactCanon_petitSol is TSoundSet
         ),
         TSoundDescriptor
         (
-            SoundSettings = $/SoundSettings/SFX_SoundSettings
+            SoundSettings = $/SoundSettings/SFX_SoundSettings_Tres_Petits_Impact_HE
             TheSoundStream = TSoundStream
             (
                 FileName = "GameData:/Assets/Sons/SFX/ObusCanon/SFX_Impact_Obus_Sol_Petit_03.wav"

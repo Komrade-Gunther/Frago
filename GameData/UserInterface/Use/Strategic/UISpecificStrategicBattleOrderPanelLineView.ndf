@@ -377,7 +377,7 @@ is UISpecificStrategicBattleOrderPanelLineViewDescriptor
                                 TextureToken = 'SelectPawn_oob'
                                 TextureColorToken = 'SM_SelectPawn_oob'
                             ),
-                            BUCKSpecificHintableArea
+                            BUCKSpecificStrategicHintableArea
                             (
                                 HintTitleToken = 'SBO_zoomt'
                                 HintBodyToken = 'SBO_zoomb'

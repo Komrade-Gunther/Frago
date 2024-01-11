@@ -1,15 +1,11 @@
 
 
-Texture_NATO_Unidentified is TUIResourceTextureWithUsefulnessMask
+Texture_NATO_Unidentified is TUIResourceTexture_CommonNoGen
 (
-    TypeMask      = TypeMask/Common
-    CivMask       = CivMask/Common
-    FileName      = 'Assets/2D/Interface/UseInGame/LabelIcons/NATO/NATO_Unidentified.png'
+    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/NATO_Unidentified.png'
 )
 
-Texture_Test_NATO_Unidentified is TUIResourceTextureWithUsefulnessMask
+Texture_Test_NATO_Unidentified is TUIResourceTexture_CommonNoGen
 (
-    TypeMask      = TypeMask/Common
-    CivMask       = CivMask/Common
-    FileName      = 'Assets/2D/Interface/UseInGame/LabelIcons/NATO/NATO_Unidentified.png'
+    FileName      = 'GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/NATO_Unidentified.png'
 )

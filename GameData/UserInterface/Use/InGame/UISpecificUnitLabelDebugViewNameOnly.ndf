@@ -56,7 +56,7 @@ private DEBUG_StandardLabelListNameOnly is BUCKListDescriptor
                         LocalRenderLayer = 4
                     ),
 
-                    DEBUG_UnitLabelBackground
+                    DEBUG_UnitSurrounding
                     (
                         LocalRenderLayer = 2
                     ),

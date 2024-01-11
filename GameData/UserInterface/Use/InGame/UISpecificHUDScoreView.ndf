@@ -332,165 +332,212 @@ BUCKSpecificHUDScorePlayerMainComponentDescriptor is BUCKContainerDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
     (
-        MagnifiableWidthHeight = [230.0, 20.0]
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, 20.0]
     )
-
 
     Components =
     [
-        BUCKListDescriptor
+        ~/BUCKSpecificHUDScorePlayerOneLine
+    ]
+)
+
+//--------------------------------------------------
+
+BUCKSpecificHUDScorePlayerOneLine is BUCKListDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [0.0, 1.0]
+    )
+
+    Axis = ~/ListAxis/Horizontal
+
+    InterItemMargin = TRTTILength( Magnifiable = 5.0)
+
+    Elements =
+    [
+        BUCKListElementDescriptor
         (
-            ElementName = "PlayerScoreLine"
-            ComponentFrame = TUIFramePropertyRTTI
+            ComponentDescriptor = BUCKTextureDescriptor
             (
-                RelativeWidthHeight = [0,1]
+                ElementName = "DivisionIcon"
+
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [0.0, 1.0]
+                    MagnifiableWidthHeight = [20.0, 0.0]
+                    AlignementToFather = [0.0, 0.5]
+                    AlignementToAnchor = [0.0, 0.5]
+                )
+
+                TextureFrame   = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0])
+                TileTextureInComponent = false
+                ClipTextureToComponent = true
+                TextureToken = "UseInGame_undefined_division_icone"
+
+                Components =
+                [
+                    BUCKSpecificHintableArea
+                    (
+                        ElementName = "DivisionIconHint"
+                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+
+                        HintTitleToken = "HUD_UNKN"
+                    ),
+                ]
             )
+        ),
 
-            Axis = ~/ListAxis/Horizontal
-
-            FirstMargin = TRTTILength( Magnifiable = 0.0)
-            InterItemMargin = TRTTILength( Magnifiable = 5.0)
-            LastMargin = TRTTILength( Magnifiable = 5.0)
-
-            Elements =
-            [
-                BUCKListElementDescriptor
+        BUCKListElementDescriptor
+        (
+            ExtendWeight = 1.0
+            ComponentDescriptor = BUCKSpecificTextWithHint
+            (
+                ElementName = "Name"
+                ComponentFrame = TUIFramePropertyRTTI
                 (
-                    ComponentDescriptor = BUCKTextureDescriptor
-                    (
-                        ElementName = "DivisionIcon"
+                    RelativeWidthHeight = [1.0, 1.0]
+                    AlignementToFather = [0.0, 0.5]
+                    AlignementToAnchor = [0.0, 0.5]
+                )
 
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [0.0, 1.0]
-                            MagnifiableWidthHeight = [20.0, 0.0]
-                            //PixelWidthHeight = [-2.0, -2.0]
-                            AlignementToFather = [0.0, 0.5]
-                            AlignementToAnchor = [0.0, 0.5]
-                        )
-
-                        TextureFrame   = TUIFramePropertyRTTI( RelativeWidthHeight = [1.0, 1.0])
-                        TileTextureInComponent = false
-                        ClipTextureToComponent = true
-                        TextureToken = "UseInGame_division_icone"
-
-                        Components =
-                        [
-                            BUCKSpecificHintableArea
-                            (
-                                ElementName = "DivisionIconHint"
-                                DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-
-                                HintTitleToken = "HUD_UNKN"
-                            ),
-                        ]
-                    )
-                ),
-
-                BUCKListElementDescriptor
+                TextStyle = "Default"
+                ParagraphStyle = TParagraphStyleRTTI
                 (
-                    ExtendWeight = 1.0
-                    ComponentDescriptor = BUCKSpecificTextWithHint
+                    Alignment = UIText_Left
+                    VerticalAlignment = UIText_VerticalCenter
+                    BigWordAction = ~/BigWordAction/BigWordCut
+                )
+
+                TextSize = "16"
+                TextColor = "Cyan"
+                TextToken = ""
+                TextDico = ~/LocalisationConstantes/dico_interface_ingame
+                TypefaceToken = "IBM"
+
+                BigLineAction = ~/BigLineAction/CutByDots
+                HorizontalFitStyle = ~/FitStyle/UserDefined
+                VerticalFitStyle = ~/FitStyle/UserDefined
+
+                Hint = BUCKSpecificHintableArea
+                (
+                    ElementName = "HintName"
+                    DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                )
+
+
+            )
+        ),
+
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKTextDescriptor
+            (
+                ElementName = "Points"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [0.0, 1.0]
+                    MagnifiableWidthHeight = [50.0, 0.0]
+                    AlignementToFather = [0.0, 0.5]
+                    AlignementToAnchor = [0.0, 0.5]
+                )
+
+                TextStyle = "Default"
+                ParagraphStyle = TParagraphStyleRTTI
+                (
+                    Alignment = UIText_Right
+                    VerticalAlignment = UIText_VerticalCenter
+                    BigWordAction = ~/BigWordAction/BigWordCut
+                )
+
+                TextSize = "14"
+                TextColor = "Cyan"
+                TextToken = ""
+                TextDico = ~/LocalisationConstantes/dico_interface_ingame
+                TypefaceToken = "IBM"
+
+                BigLineAction = ~/BigLineAction/ResizeFont
+                HorizontalFitStyle = ~/FitStyle/UserDefined
+                VerticalFitStyle = ~/FitStyle/UserDefined
+            )
+        ),
+
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKContainerDescriptor
+            (
+                ElementName = "PingArea"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [0.0, 1.0]
+                    AlignementToFather = [0.0, 0.5]
+                    AlignementToAnchor = [0.0, 0.5]
+                )
+                FitStyle = ~/ContainerFitStyle/FitToContentHorizontally
+            )
+        ),
+
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKButtonDescriptor
+            (
+                ElementName = "MuteButton"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [0.0, 1.0]
+                    MagnifiableWidthHeight = [16.0, -4.0]
+                    AlignementToFather = [0.0, 0.5]
+                    AlignementToAnchor = [0.0, 0.5]
+                )
+                IsTogglable = true
+
+                Components =
+                [
+                    PanelRoundedCorner
                     (
-                        ElementName = "Name"
+                        Radius = 3
+                        BackgroundBlockColorToken = "BoutonTemps"
+                        BorderLineColorToken = "BoutonTemps"
+                    ),
+                    BUCKTextureDescriptor
+                    (
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [1.0, 1.0]
-                            AlignementToFather = [0.0, 0.5]
-                            AlignementToAnchor = [0.0, 0.5]
+                            MagnifiableWidthHeight = [-2.0, -2.0]
+                            AlignementToAnchor = [0.5, 0.5]
+                            AlignementToFather = [0.5, 0.5]
                         )
 
-                        TextStyle = "Default"
-                        ParagraphStyle = TParagraphStyleRTTI
-                        (
-                            Alignment = UIText_Left
-                            VerticalAlignment = UIText_VerticalCenter
-                            BigWordAction = ~/BigWordAction/BigWordCut
-                        )
+                        TextureFrame = TUIFramePropertyRTTI()
 
-                        TextSize = "16"
-                        TextColor = "Cyan"
-                        TextToken = ""
-                        TextDico = ~/LocalisationConstantes/dico_interface_ingame
-                        TypefaceToken = "IBM"
-
-                        BigLineAction = ~/BigLineAction/CutByDots
-                        HorizontalFitStyle = ~/FitStyle/UserDefined
-                        VerticalFitStyle = ~/FitStyle/UserDefined
-
-                        Hint = BUCKSpecificHintableArea
-                        (
-                            ElementName = "HintName"
-                            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                        )
-
-
-                    )
-                ),
-
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKTextDescriptor
+                        ResizeMode = ~/TextureResizeMode/FitToParentConservingRatio
+                        TextureColorToken = "CouleurTexture_boutonShortcuts"
+                        TextureToken = "texturePlayerMuted"
+                    ),
+                    BUCKSpecificHintableArea
                     (
-                        ElementName = "Points"
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [0.0, 1.0]
-                            MagnifiableWidthHeight = [50.0, 0.0]
-                            AlignementToFather = [0.0, 0.5]
-                            AlignementToAnchor = [0.0, 0.5]
-                        )
-
-                        TextStyle = "Default"
-                        ParagraphStyle = TParagraphStyleRTTI
-                        (
-                            Alignment = UIText_Right
-                            VerticalAlignment = UIText_VerticalCenter
-                            BigWordAction = ~/BigWordAction/BigWordCut
-                        )
-
-                        TextSize = "14"
-                        TextColor = "Cyan"
-                        TextToken = ""
-                        TextDico = ~/LocalisationConstantes/dico_interface_ingame
-                        TypefaceToken = "IBM"
-
-                        BigLineAction = ~/BigLineAction/ResizeFont
-                        HorizontalFitStyle = ~/FitStyle/UserDefined
-                        VerticalFitStyle = ~/FitStyle/UserDefined
-                    )
-                ),
-
-                BUCKListElementDescriptor
-                (
-                    ComponentDescriptor = BUCKContainerDescriptor
-                    (
-                        ElementName = "PingArea"
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [0.0, 1.0]
-                            MagnifiableWidthHeight = [30.0, 0.0]
-                            AlignementToFather = [0.0, 0.5]
-                            AlignementToAnchor = [0.0, 0.5]
-                        )
-
-                    )
-                )
-            ]
+                        ElementName = "MuteButtonHintableArea"
+                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                    ),
+                ]
+            )
         )
     ]
 )
 
-
-
-
 //--------------------------------------------------
+
 ScorePanelPlayerList is BUCKListDescriptor
 (
     ElementName = "ScorePanelPlayerList"
-    ComponentFrame = TUIFramePropertyRTTI()
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+    )
+
     Axis = ~/ListAxis/Vertical
-    BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
     FirstMargin = TRTTILength( Magnifiable = 4.0 )
     InterItemMargin = TRTTILength( Magnifiable = 1.0 )
@@ -585,6 +632,7 @@ BUCKSpecificHUDScoreAllianceMainComponentDescriptor is BUCKContainerDescriptor
                         [
                             BUCKListElementDescriptor
                             (
+                                ExtendWeight = 1.0
                                 ComponentDescriptor = ScorePanelPlayerList
                             )
                         ]
@@ -812,6 +860,11 @@ UISpecificHUDScorePlayerViewDescriptor is TUISpecificHUDScorePlayerViewDescripto
 (
     MainComponentDescriptor = BUCKSpecificHUDScorePlayerMainComponentDescriptor
     MainComponentContainerUniqueName = "" // Permet d'indiquer l'endroit ou le composant doit s'insérer
+
+    MutedHintTitleText = "MTBTmt"
+    MutedHintBodyText = "MTBTmb"
+    UnmutedHintTitleText = "MTBTut"
+    UnmutedHintBodyText = "MTBTub"
 )
 
 //------------------------------------------------------------------------------

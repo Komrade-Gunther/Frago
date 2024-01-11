@@ -65,6 +65,14 @@ Weapon_MMG_PKT_7_62mm is TCompositeHappening
         SFXWeapon_MMG_PKT_7_62mm,
     ]
 )
+Weapon_Canon_HE_direct_2A51_120mm is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_Canon_HE_direct_2A51_120mm,
+        SFXWeapon_Canon_HE_direct_2A51_120mm,
+    ]
+)
 Weapon_Howz_Canon_D22_Howitzer_152mm_late_guided is TCompositeHappening
 (
     SubHappenings = 
@@ -1578,6 +1586,7 @@ Weapon_Canon_HE_73_mm_SPG9 is TCompositeHappening
         SFXWeapon_Canon_HE_73_mm_SPG9,
     ]
 )
+Weapon_Gatling_M61_Vulcan_20mm_noRadar is FXWeapon_Gatling_M61_Vulcan_20mm_noRadar
 Weapon_Gatling_M61_Vulcan_20mm_late is TCompositeHappening
 (
     SubHappenings = 
@@ -1928,6 +1937,30 @@ Weapon_Mortier_RT61_120mm_SMOKE is TCompositeHappening
     [
         FXWeapon_Mortier_RT61_120mm_SMOKE,
         SFXWeapon_Mortier_RT61_120mm_SMOKE,
+    ]
+)
+Weapon_Howz_Canon_2B16_NONA_K_120mm is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_Howz_Canon_2B16_NONA_K_120mm,
+        SFXWeapon_Howz_Canon_2B16_NONA_K_120mm,
+    ]
+)
+Weapon_Howz_Canon_2B16_NONA_K_120mm_SMOKE is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_Howz_Canon_2B16_NONA_K_120mm_SMOKE,
+        SFXWeapon_Howz_Canon_2B16_NONA_K_120mm_SMOKE,
+    ]
+)
+Weapon_Canon_AP_2B16_NONA_K_120mm is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_Canon_AP_2B16_NONA_K_120mm,
+        SFXWeapon_Canon_AP_2B16_NONA_K_120mm,
     ]
 )
 Weapon_Mortier_PM43_120mm is TCompositeHappening
@@ -2675,6 +2708,23 @@ Weapon_RocketAir_S13_122mm_x10 is TCompositeHappening
         SFXWeapon_RocketAir_S13_122mm_x10,
     ]
 )
+Weapon_RocketAir_B8_80mm_x20 is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_RocketAir_B8_80mm_x20,
+        SFXWeapon_RocketAir_B8_80mm_x20,
+    ]
+)
+Weapon_AA_R60M_Vympel is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_AA_R60M_Vympel,
+        SFXWeapon_AA_R60M_Vympel,
+    ]
+)
+Weapon_FakeRoquette_S_24_helo is FXWeapon_FakeRoquette_S_24_helo
 Weapon_Pod_GUV_AGS17_2x is TCompositeHappening
 (
     SubHappenings = 
@@ -3090,14 +3140,6 @@ Weapon_GatlingAir_GSh_23_23mm is TCompositeHappening
     [
         FXWeapon_GatlingAir_GSh_23_23mm,
         SFXWeapon_GatlingAir_GSh_23_23mm,
-    ]
-)
-Weapon_AA_R60M_Vympel is TCompositeHappening
-(
-    SubHappenings = 
-    [
-        FXWeapon_AA_R60M_Vympel,
-        SFXWeapon_AA_R60M_Vympel,
     ]
 )
 Weapon_RocketAir_S5_57mm_x32 is TCompositeHappening

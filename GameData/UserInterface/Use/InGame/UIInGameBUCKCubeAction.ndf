@@ -21,6 +21,15 @@ template CubeActionButton
     BorderLineColorToken : string = "BoutonTemps",
     RoundedVertexes : LIST< bool > = [true, true, true, true], // le 1er est en bas à gauche
 
+    HintableAreaComponent : TBUCKHintableAreaDescriptor = BUCKSpecificHintableArea
+    (
+        ElementName = "CubeActionHintableArea"
+        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+        HintTitleToken = "HUD_UNKN"
+        HintBodyToken = "HUD_UNKN"
+        HintExtendedToken = "HUD_UNKN"
+    ),
+
 ] is TCommonInGameCubeActionButtonDescriptor
 (
     ComponentFrame = TUIFramePropertyRTTI
@@ -87,16 +96,9 @@ template CubeActionButton
             TextDico        = ~/LocalisationConstantes/dico_interface_outgame
             TypefaceToken   = "Liberator"
         ),
+    ] +
 
-        BUCKSpecificHintableArea
-        (
-            ElementName = "CubeActionHintableArea"
-            DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-            HintTitleToken = "HUD_UNKN"
-            HintBodyToken = "HUD_UNKN"
-            HintExtendedToken = "HUD_UNKN"
-        ),
-    ]
+    (<HintableAreaComponent> != nil ? [<HintableAreaComponent>] : [])
 )
 
 //------------------------------------------------------------------------

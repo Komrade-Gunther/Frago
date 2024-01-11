@@ -17,5 +17,8 @@ Strategic_IAGroupEntityDescriptor is TEntityDescriptor
         TIAGroupPoolModuleDescriptor
         (
         ),
+        TIAGroupTargetModuleDescriptor
+        (
+        ),
     ]
 )

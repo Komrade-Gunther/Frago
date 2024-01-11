@@ -12,8 +12,6 @@ InterfaceLayers is [
 
     $/M3D/Scene/Scene3D_AfterPostProcess/Calque_FX_AfterPostProcess,
     $/M3D/Scene/Scene3D_AfterPostProcess/influenceMapFeedback/DrawOnMap,
-    $/M3D/Scene/Scene3D_AfterPostProcess/Calque_Area,
-    $/M3D/Scene/Scene3D_AfterPostProcess/Calque_Area_Border,
     $/M3D/Scene/Scene3D_AfterPostProcess/Calque_Fleche_GD,
 
     $/M3D/Scene/Scene3D_AfterPostProcess/pictograph/Render/Calque_FeedbackRenderToolbox_Solid,

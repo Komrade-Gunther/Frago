@@ -151,7 +151,7 @@ SubDepictionTowedUnit is TacticTowedSubDepictionTemplate
         ('Howz_M198_155mm_US', TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Howz_M198_155mm_US Angle = 0.5235987755982988 )),
         ('Howz_M46_130mm_DDR', TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Howz_M46_130mm_DDR Angle = 0.4363323129985824 )),
         ('Howz_MstaB_150mm_SOV', TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Howz_MstaB_150mm_SOV Angle = 0.4363323129985824 )),
-        ('Howz_ZiS3_76mm_DDR', TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Howz_ZiS3_76mm_DDR Angle = 0.8203047484373349 )),
+        ('Howz_ZiS3_76mm_DDR', TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Howz_ZiS3_76mm_DDR Angle = 0.3490658503988659 )),
         ('Mortier_2B9_Vasilek_SOV', TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_2B9_Vasilek_SOV Angle = 0.5235987755982988 )),
         ('Mortier_2B9_Vasilek_nonPara_SOV', TInitialPoseAngle( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_2B9_Vasilek_nonPara_SOV Angle = 0.5235987755982988 )),
     ]

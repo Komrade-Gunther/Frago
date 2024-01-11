@@ -217,10 +217,13 @@ private LaunchBattleMainComponent is BUCKSpecificButton
 
     HidePointerEvents = true
 
-    HintTitleToken = "HLB_BUTTOT"
-    HintBodyToken = "HLB_BUTTOB"
-    HintExtendedToken = "HLB_BUTTOE"
-    HintDico = ~/LocalisationConstantes/dico_interface_ingame
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintTitleToken = "HLB_BUTTOT"
+        HintBodyToken = "HLB_BUTTOB"
+        HintExtendedToken = "HLB_BUTTOE"
+        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+    )
 
     Components = [~/LaunchButtonCancelDescriptor, ~/SpotLight_StartGame]
 )

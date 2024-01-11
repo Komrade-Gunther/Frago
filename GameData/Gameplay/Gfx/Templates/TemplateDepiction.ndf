@@ -409,10 +409,12 @@ is TSubDepiction
     Anchors = ["remorque_1"]
     Depiction = TDepictionTemplate
     (
+        TowedInitialPoses is TTowedInitialPoses( InitialPoses = <InitialPoses> )
+
         Deviator = TTowedDeviatorDesc
         (
                 WorldFloorProxy = $/M3D/Scene/WorldFloorForIAProxy
-                InitialPoses = <InitialPoses>
+                InitialPoses = TowedInitialPoses
         )
         ResidentMaterialTags = [ MaterialTagMech ]
         AdditionalTextures = VehicleDestTextures
@@ -420,7 +422,10 @@ is TSubDepiction
         DepictionAlternatives = [ AlternativeTowedNone ] + <Alternatives>
 
         Operators = [
-            DepictionOperator_Reset_Generic,
+            TCosmeticTowedPoseOperatorDesc(
+                OperatorId = 'TowedUnit'
+                InitialPoses = TowedInitialPoses
+            ),
             DepictionOperator_Propulsion_Wheels_TowedCanon,
         ]
 

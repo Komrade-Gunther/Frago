@@ -1,8 +1,7 @@
-RefMagnification is 1.0
 
 MagnifiableMarginForContent is 15.0
-MagnifiableMainPanelWidth is 1323.0 div ~/RefMagnification
-MagnifiableMainPanelContentWidth is 1720.0//MagnifiableMainPanelWidth - 2 * MagnifiableMarginForContent
+MagnifiableMainPanelWidth is 1323.0
+MagnifiableMainPanelContentWidth is 1720.0
 
 private OutGameWarningPanelResources is TUICommonWarningPanelResource
 (

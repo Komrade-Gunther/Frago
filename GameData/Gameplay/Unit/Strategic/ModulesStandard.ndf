@@ -1,10 +1,8 @@
 ActionPointsReachModuleDescriptor is TActionPointsReachModuleDescriptor()
 IALinkToGroupModuleDescriptor is TIALinkToGroupModuleDescriptor()
-IAMacroOrderModuleDescriptor is TIAMacroOrderModuleDescriptor()
 StrategicSequenceModuleDescriptor is TStrategicSequenceModuleDescriptor()
 StrategicSupplyableModuleDescriptor is TStrategicSupplyableModuleDescriptor()
 StrategicAerialModuleDescriptor is TStrategicAerialModuleDescriptor()
-StrategicDefensePointsModuleDescriptor is TDefensePointsModuleDescriptor()
 
 template StrategicFatigueModuleDescriptor [ InitialFatigue ] is TStrategicFatigueModuleDescriptor
 (
@@ -38,4 +36,10 @@ StrategicBuildingModuleDescriptor is TWargameBuildingModuleDescriptor
 (
     BoundingBoxMin = ~/StrategicBuildingBoxMin
     BoundingBoxMax = ~/StrategicBuildingBoxMax
+)
+
+template StrategicUIModuleDescriptor [ NameToken, ProdMenuTexture ] is TPawnUIModuleDescriptor
+(
+    NameToken = <NameToken>
+    ProdMenuTexture = <ProdMenuTexture>
 )

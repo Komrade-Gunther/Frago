@@ -126,7 +126,7 @@ private BoutonNextTurn is BUCKButtonDescriptor
             ]
         ),
 
-        BUCKSpecificHintableArea
+        BUCKSpecificStrategicHintableArea
         (
             DicoToken = ~/LocalisationConstantes/dico_interface_ingame
             HintTitleToken = "nextT_nt"

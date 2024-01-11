@@ -749,7 +749,7 @@ FullPanelLobby is BUCKContainerDescriptor
             )
             TextureToken = 'Texture_dossier_triple_lobby'
         ),
-        LobbyTopTabContent(MagnifiableOffset = [290.0, 461.0 - LobbyVerticalOffset]),
+        LobbyTopTabContent(MagnifiableOffset = [290.0, 455.5 - LobbyVerticalOffset]),
         ~/MainListLobby,
         BUCKTextureDescriptor
         (

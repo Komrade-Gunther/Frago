@@ -278,8 +278,8 @@ private ChronoPointCommandement is BUCKListDescriptor
                         ChronoTexture = "UseInGame_RequisitionTimer_fond"
                         TextureToken = "UseInGame_RequisitionTimer"
 
-                        ChronoTextureColor0 = "Cyan"
-                        ChronoTextureColor1 = "Transparent"
+                        ChronoBackgroundColor = "Cyan"
+                        ChronoForegroundColor = "Transparent"
 
                         TextureFrame = TUIFramePropertyRTTI
                         (
@@ -627,7 +627,10 @@ private SmartGroupTypeProductionButton is BUCKSpecificButton
     TextElementName = ""
     TextToken = "HUD_PRDGRP"
 
-    HintBodyToken  = "deckSGop"
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintBodyToken  = "deckSGop"
+    )
 
     TextComponentFrame = TUIFramePropertyRTTI
     (
@@ -673,9 +676,12 @@ private DeckTypeProductionButton is BUCKSpecificButton
     TextElementName = ""
     TextToken = "HUD_PRDDCK"
 
-    HintTitleToken  = ""
-    HintBodyToken  = "deckOp"
-    HintExtendedToken  = ""
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintTitleToken  = ""
+        HintBodyToken  = "deckOp"
+        HintExtendedToken  = ""
+    )
 
     TextComponentFrame = TUIFramePropertyRTTI
     (
@@ -745,14 +751,6 @@ private SkirmishProductionMenuDivisionText is BUCKTextDescriptor
     TextSize = "24"
     TextDico = ~/LocalisationConstantes/dico_unites
     TextColor = "LighterGray"
-
-    Hint = BUCKSpecificHintableArea
-    (
-        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-        HintTitleToken = ""
-        HintBodyToken = ""
-        HintExtendedToken = ""
-    )
 )
 
 // -------------------------------------------------------------------------------------------------
@@ -789,8 +787,12 @@ SkirmishProductionMenuCategoryButton is BUCKSpecificButton
     HasText = true
     TextElementName = "ButtonTextElement"
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
-    HintableAreaElementName = "ButtonHintableArea"
-    HintDico = ~/LocalisationConstantes/dico_interface_ingame
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        ElementName = "ButtonHintableArea"
+        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+    )
+
     TextComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
@@ -821,9 +823,9 @@ SkirmishProductionMenuPawnButton is BUCKSpecificButton
     RoundedVertexes = [true, false, false, true]
     TextColorToken = "ButtonHUD/Text2_pawn"
     TextTypefaceToken = "Liberator"
-    TextSizeToken = "16"
+    TextSizeToken = "14"
     ButtonRelativeWidthHeight = [0.0, 0.0]
-    ButtonMagnifiableWidthHeight = [158.0, 36.0]
+    ButtonMagnifiableWidthHeight = [130.0, 36.0] // This width must be changed very carefuly as the buttons can overlap the cmd points
     ButtonMagnifiableOffset = [0.0, -5.0]
 
     IsTogglable = true
@@ -832,14 +834,13 @@ SkirmishProductionMenuPawnButton is BUCKSpecificButton
     HidePointerEvents = true
 
     OverrideTextElementName = true
-    BigLineAction = ~/BigLineAction/MultiLine
+    BigLineAction = ~/BigLineAction/ResizeFont
     TextPadding = TRTTILength4 ( Magnifiable = [5.0, 2.0, 0.0, 5.0])
 
     HasText = true
     TextElementName = "ButtonTextElement"
-
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
-    HintDico = ~/LocalisationConstantes/dico_interface_ingame
+
     TextComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
@@ -870,7 +871,7 @@ SkirmishProductionMenuCombatGroupButton is BUCKSpecificButton
     TextColorToken = "ButtonHUD/Text2_pawn"
     TextSizeToken = "14"
     ButtonRelativeWidthHeight = [0.0, 0.0]
-    ButtonMagnifiableWidthHeight = [130, 30.0]
+    ButtonMagnifiableWidthHeight = [130, 30.0] // This width must be changed very carefuly as the buttons can overlap the cmd points
     ButtonMagnifiableOffset = [0.0, -2.0]
     TextTypefaceToken = "Eurostyle_Italic"
     IsTogglable = true
@@ -886,7 +887,6 @@ SkirmishProductionMenuCombatGroupButton is BUCKSpecificButton
     TextPadding = TRTTILength4( Magnifiable = [2.0, 0.0, 2.0, 0.0])
 
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
-    HintDico = ~/LocalisationConstantes/dico_interface_ingame
     TextComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
@@ -901,6 +901,8 @@ SkirmishProductionMenuCombatGroupButton is BUCKSpecificButton
         InterLine = 0
     )
 )
+
+
 
 // -------------------------------------------------------------------------------------------------
 // UnitButtonList
@@ -1056,7 +1058,7 @@ template UISpecificSkirmishProductionMenuViewDescriptor
 
     ShortcutUILayer = $/M3D/Input/UserInputLayerHandler/InputLayer_InGameShortcuts
 
-    NbMaxPlanes = 16
+    NbMaxPlanes = 9
 
     SquadGroupName = "HPROD_SQD"
     HalfSquadGroupName = "HPROD_HSQD"

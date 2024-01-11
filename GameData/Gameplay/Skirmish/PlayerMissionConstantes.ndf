@@ -5,17 +5,9 @@ ETargetFilter_None     is 0
 ETargetFilter_HasShot  is 1
 ETargetFilter_UnitSeen is 2
 ///////////////////////////////////////////////////////////////////////////////////////////
-private player_mission_Renfort_AT is TSupportSetting
-(
-    TagDeContre = "Anti_Char_Mobile"
-    TagAContrer = "Char"
-    VerifierEnnemiesDansLesZonesVoisines = true
-    Ratio = 0.01 // Un seul AT du coup
-    NecessaireAuLancement = false // La mission ne lancera son attaque que si le ratio est respecté au point de regroupement
-)
 private player_mission_BasicAirstrikeSupport is
 [
-    (["Avion_Chasseur_Bombardier", "Avion_Bombardier", "Avion_Assaut", "Avion_AT"], 2),
+    (["Avion_Chasseur_Bombardier", "Avion_Bombardier", "Avion_AT"], 2),
 ]
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -27,7 +19,7 @@ export colonelAttackDescriptor is TMacroActionDescriptor_Attack_Specific
     [
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TAirStrikeSettingHolder(Setting = ~/BasicAirstrikeSupport),
-        TSupportSettingHolder(SettingList = [Renfort_AT, Renfort_TransportsAbandonnes]),
+        TSupportSettingHolder(SettingList = [Renfort_TransportsAbandonnes]),
         TArtilleryAmountSettingHolder(ArtilleryAmount = 2),
         TBlitzkriegSettingHolder(RatioFactorToDisableSelfPreservation = 2.0   MinimumCostForSelfPreservation = 100),
         TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 0.001),
@@ -44,7 +36,7 @@ export colonelDefenseDescriptor is TMacroActionDescriptor_Defense_Specific
         TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
         TAirStrikeSettingHolder(Setting = ~/BasicAirstrikeSupport),
         TArtilleryAmountSettingHolder(ArtilleryAmount = 1),
-        TSupportSettingHolder(SettingList = [player_mission_Renfort_AT]),
+        TSupportSettingHolder(SettingList = [Renfort_TransportsAbandonnes]),
         TMacroActionProductionSettingHolder(DisableReinforcement = true),
         TMacroActionLifetimeSettingHolder(MaintainForever = true), //IMPORTANT
         TIgnoreSafePathSettingHolder(), //on esquive pas la menace sur le chemin

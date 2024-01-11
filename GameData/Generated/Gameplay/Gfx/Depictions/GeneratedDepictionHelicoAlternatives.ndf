@@ -289,6 +289,12 @@ Alternatives_F15E_StrikeEagle_US is
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_F15E_StrikeEagle_US_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_F15E_StrikeEagle_US_LOW ),
 ]
+Alternatives_F16A_CBU_BEL is 
+[
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_F16A_CBU_BEL ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_F16A_CBU_BEL_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_F16A_CBU_BEL_LOW ),
+]
 Alternatives_F16C_LGB_US is 
 [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_F16C_LGB_US ),
@@ -595,6 +601,12 @@ Alternatives_Ka_50_SOV is
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_Ka_50_SOV_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_Ka_50_SOV_LOW ),
 ]
+Alternatives_L39ZO_DDR is 
+[
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_L39ZO_DDR ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_L39ZO_DDR_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_L39ZO_DDR_LOW ),
+]
 Alternatives_Lynx_AH_Mk1_TOW_UK is 
 [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Lynx_AH_Mk1_TOW_UK ),
@@ -660,6 +672,12 @@ Alternatives_MiG_23MF_DDR is
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_DDR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_DDR_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_DDR_LOW ),
+]
+Alternatives_MiG_23MF_SOV is 
+[
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_SOV_LOW ),
 ]
 Alternatives_MiG_23MLD_SOV is 
 [
@@ -894,6 +912,12 @@ Alternatives_Mi_8TV_DDR is
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_DDR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_DDR_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_DDR_LOW ),
+]
+Alternatives_Mi_8TV_Gunship_SOV is 
+[
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_Gunship_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_Gunship_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_Gunship_SOV_LOW ),
 ]
 Alternatives_Mi_8TV_PodGatling_DDR is 
 [

@@ -140,10 +140,22 @@ is BUCKTextureAnimationDescriptor
     AnimDuration = 4.0
 )
 
-//Modale waiting
-private WaitModalWindowFrame is SpecificModalWindow
+private SavingComponent is BUCKListDescriptor
 (
-    ElementsList =
+    Axis = ~/ListAxis/Horizontal
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [0, 45.0]
+        MagnifiableOffset = [0.0, 20.0]
+        AlignementToFather = [0.5, 0.0]
+        AlignementToAnchor = [0.5, 0.0]
+    )
+
+    FirstMargin = TRTTILength(Pixel = DistanceBetweenExternalAndInternalBorder + 1.0)
+    LastMargin = TRTTILength(Pixel = DistanceBetweenExternalAndInternalBorder + 1.0)
+
+    Elements =
     [
         BUCKListElementDescriptor
         (
@@ -151,21 +163,42 @@ private WaitModalWindowFrame is SpecificModalWindow
             (
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    MagnifiableWidthHeight = [45.0, 45.0]
-                    AlignementToAnchor = [0.5, 0.0]
-                    AlignementToFather = [0.5, 0.0]
+                    RelativeWidthHeight = [0.0, 1.0]
+                    MagnifiableWidthHeight = [45.0, 0.0]
                 )
             )
         ),
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = SpecificModalText(ElementName = "ModalContent")
-        )
+            ComponentDescriptor = BUCKTextDescriptor
+            (
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [0.0, 1.0]
+                )
+
+                ParagraphStyle = paragraphStyleTextCenter
+                TextStyle = "TextStyleEcranMoniteur"
+
+                HorizontalFitStyle = ~/FitStyle/FitToContent
+                VerticalFitStyle = ~/FitStyle/UserDefined
+                TypefaceToken = "IBM"
+                BigLineAction = ~/BigLineAction/MultiLine
+                TextToken = "M_SAVING"
+                TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                TextColor = "Blanc"
+                TextSize = "24"
+            )
+        ),
+    ]
+    BackgroundComponents =
+    [
+        PanelRoundedCorner()
     ]
 )
 
 WaitAnimResource is TUISpecificOutGameWaitAnimResource
 (
     AnimatedComponent = AnimatedWaitingComponent()
-    ModaleComponent = ~/WaitModalWindowFrame
+    SavingComponent = ~/SavingComponent
 )

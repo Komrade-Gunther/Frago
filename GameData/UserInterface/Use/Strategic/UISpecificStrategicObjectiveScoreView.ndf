@@ -77,7 +77,7 @@ BUCKSpecificStrategicObjectiveScoreMainComponentDescriptor is BUCKRackDescriptor
         ]
         ForegroundComponents =
         [
-            BUCKSpecificHintableArea
+            BUCKSpecificStrategicHintableArea
             (
                 HintTitleToken = 'SM_scoret'
                 HintBodyToken = 'SM_scoreb'

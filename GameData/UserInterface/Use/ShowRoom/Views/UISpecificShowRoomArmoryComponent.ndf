@@ -1317,22 +1317,6 @@ ArmoryComponentDescriptor is TUISpecificShowRoomArmoryComponentDescriptor
 
     ]
 
-    HideUnitListFactor = TUIAnimFactorRTTI
-    (
-        AnimDuration = 0.5
-        Modificator = ~/AnimModificator/None
-    )
-
-    HideInterfaceFactor = TUIAnimFactorRTTI
-    (
-        AnimDuration = 0.5
-        Modificator = ~/AnimModificator/None
-        ParamsAnim =
-        [
-            -50.0, // Offset en Y à utiliser pour laisser les boutons affiches en bas
-        ]
-    )
-
     TypeFilters =
     [
         MAP
@@ -1357,7 +1341,7 @@ ArmoryComponentDescriptor is TUISpecificShowRoomArmoryComponentDescriptor
         MAP
         [
             ("Texture_Speciality_Icon_ifv", ["ifv"]),
-            ("Texture_Speciality_Icon_armor", ["armor"]),
+            ("Texture_Speciality_Icon_armor", ["armor","Armor_heavy"]),
         ],
         MAP[
             ("Texture_Speciality_Icon_reco", ["reco","hel_reco"]),

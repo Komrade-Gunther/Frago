@@ -42,7 +42,6 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
         "HintEd_01",
         "HintEd_02",
         "HintEd_03",
-        "HintEd_04",
     ]
 
     DevHints = [
@@ -58,6 +57,7 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
         "HNT_DT011",
         "HNT_DT012",
         "HNT_DT013",
+        "HNT_DT014",
     ]
 
     CommonHints = [
@@ -116,6 +116,7 @@ SpecificOutGameLoadingPanelResource is TUISpecificOutGameLoadingPanelResource
                     TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_27_.webm"  DicoVideo =  ~/DicoVideoOutGame),
                     TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_28_.webm"  DicoVideo =  ~/DicoVideoOutGame),
                     TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_29_.webm"  DicoVideo =  ~/DicoVideoOutGame),
+                    TUIResourceVideo ( VideoFile =  "GameData:/Assets/Videos/loading_screen_animated/Video_Loading_Screen_30_.webm"  DicoVideo =  ~/DicoVideoOutGame),
                 ]
             ),
 

@@ -154,7 +154,7 @@ private DEBUG_UnitLabelUnitIcon is BUCKTextureDescriptor
 //----------------------------------------------------------------------
 // Fond de l'étiquette
 // les couleurs (background et lignes) sont spécifiées directement dans PlayerUIHelper.ndf
-private template DEBUG_UnitLabelBackground
+private template DEBUG_UnitSurrounding
 [
     LocalRenderLayer : int,
     MagnifiableWidthHeight : float2 = [40.0, 40.0],
@@ -173,7 +173,7 @@ is BUCKSensibleAreaDescriptor
     [
         BUCKTextureDescriptor
         (
-            ElementName = "Background"
+            ElementName = "Surrounding"
             ComponentFrame = TUIFramePropertyRTTI
             (
                 RelativeWidthHeight = [1.0, 1.0]
@@ -412,9 +412,9 @@ is BUCKChronoAnimatedTextureDescriptor
     ChronoTexture = "icone_reticule"
     TextureToken = "icone_reticule_vide"
 
-    ChronoTextureColor0 = "Transparent"
+    ChronoBackgroundColor = "Transparent"
     // A configurer via AimingDefaultColor
-    ChronoTextureColor1 = "Cyan"
+    ChronoForegroundColor = "Cyan"
 
     TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
 
@@ -446,8 +446,8 @@ is BUCKChronoAnimatedTextureDescriptor
     ChronoTexture = "icone_chrono_district"
     TextureToken = "icone_chrono_district"
 
-    ChronoTextureColor0 = "Noir"
-    ChronoTextureColor1 = "Cyan"
+    ChronoBackgroundColor = "Noir"
+    ChronoForegroundColor = "Cyan"
     LocalRenderLayer = <LocalRenderLayer>
 
     TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
@@ -499,7 +499,7 @@ private DEBUG_UnitLabelUnitSupplyGaugeBUCKComponent is BUCKSimpleGaugeDescriptor
     HasBackground = true
     BackgroundBlockColorToken = "Black40"
     BackgroundLocalRenderLayer = 1
-    LocalRenderLayer = 2
+    LocalRenderLayer = 1 // le C++ ordonne correctement les triangles avec le background pas besoin d'avoir un layer différent
 
     GaugeMax = 1000
     GraduationStep = 125
@@ -677,7 +677,7 @@ private template DEBUG_UnitLabelHPGaugeBUCKComponent
     HasBackground = true
     BackgroundBlockColorToken = "Noir"
     BackgroundLocalRenderLayer = <LocalRenderLayer>
-    LocalRenderLayer = <LocalRenderLayer>+1
+    LocalRenderLayer = <LocalRenderLayer> // le C++ ordonne correctement les triangles avec le background pas besoin d'avoir un layer différent
 
     GraduationThicknessToken = "1"
     GraduationColorToken = "Noir"
@@ -941,7 +941,7 @@ private DEBUG_StandardLabelList is BUCKListDescriptor
                         LocalRenderLayer = 4
                     ),
 
-                    DEBUG_UnitLabelBackground
+                    DEBUG_UnitSurrounding
                     (
                         LocalRenderLayer = 2
                     ),
@@ -1262,7 +1262,7 @@ is TUISpecificInGameUnitLabelDebugViewDescriptor
 
     // Colors for morale gauge
     MoraleGaugeTiers = [0.25, 0.5, 0.75, 1.0]
-    MoraleGaugeColors = ["pi3", "pi2", "pi1", "score_05", "score_05" ]
+    MoraleGaugeColors = ["pi3", "pi2", "pi1", "score_05"]
 
     // HP value of each HP square.
     // If it equals 1, a 12 HP unit will display 12 HP squares on its label. It if equals 2, 6 HP squares will be displayed.
@@ -1285,54 +1285,8 @@ is TUISpecificInGameUnitLabelDebugViewDescriptor
     ]
     DefaultCarriedUnitIcon          = "UseInGame_Transport_ARMORED"
     CarriedUnitIconUnknow = "UseInGame_Transport_UNKNOW"
-    DefaultSpecialtyIcon            = "Spec_bombes_1"
     AceBackgroundTexture            = "CommonTexture_Etiquette_Background_Ace"
     NormalBackgroundTexture         = "CommonTexture_Label_Background"
-
-    // Couleurs du reticule de visee
-    AimingDefaultColor = "Cyan"
-    AimingWhileMovingColor = "Cyan50p"
-
-    ReloadingDefaultColor = "Vert"
-    ReloadingWhileMovingColor = "Vert50p"
-
-    // Smart Orders
-    SmartOrderLabelTokens = MAP
-    [
-        // Faire le lien avec PlayerMissionConstantes.ndf
-        (
-            1,
-            "ORD_AIATTS"
-        ),
-        (
-            2,
-            "ORD_AIDEFS"
-        ),
-        (
-            4,
-            "ORD_AIARFS"
-        ),
-        (
-            5,
-            "ORD_AIARCS"
-        ),
-        (
-            6,
-            "ORD_AIARAS"
-        ),
-        (
-            7,
-            "ORD_AIAAAS"
-        ),
-        (
-            9,
-            "ORD_AISUPL"
-        ),
-        (
-            10,
-            "ORD_INVLS"
-        ),
-    ]
 )
 
 UISpecificUnitLabelDebugViewDescriptor is UISpecificInGameUnitLabelDebugViewDescriptor

@@ -125,7 +125,14 @@ OrientationWrapperFxImpactSolAvionGros__ is TRandomHappening
         ImpactWrapper( Action = $/GFX/GameFx/OrientationWrapper_fx_impact_sol_avion_gros_9 ),
     ]
 )
-FxOuvertureBombeCluster is ImpactWrapper( Action = $/GFX/GameFx/fx_Ouverture_Bombe_Cluster )
+FxOuvertureBombeCluster_ is TRandomHappening
+(
+    Alternatives = [
+        ImpactWrapper( Action = $/GFX/GameFx/fx_Ouverture_Bombe_Cluster_1 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_Ouverture_Bombe_Cluster_2 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_Ouverture_Bombe_Cluster_3 ),
+    ]
+)
 FxOuvertureBombletesNoAirBurstMW1_ is TRandomHappening
 (
     Alternatives = [
@@ -143,7 +150,14 @@ FxOuvertureRoquetteCluster_ is TRandomHappening
         ImpactWrapper( Action = $/GFX/GameFx/fx_Ouverture_Roquette_Cluster_4 ),
     ]
 )
-FxOuvertureRoquetteNapalm is ImpactWrapper( Action = $/GFX/GameFx/fx_Ouverture_Roquette_Napalm )
+FxOuvertureRoquetteNapalm_ is TRandomHappening
+(
+    Alternatives = [
+        ImpactWrapper( Action = $/GFX/GameFx/fx_Ouverture_Roquette_Napalm_1 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_Ouverture_Roquette_Napalm_2 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_Ouverture_Roquette_Napalm_3 ),
+    ]
+)
 FxDestructionUniteMBT_ is TRandomHappening
 (
     Alternatives = [
@@ -197,7 +211,33 @@ FxImpactDCAM197GatlingAir_ is TRandomHappening
         ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_M197_Gatling_air_4 ),
     ]
 )
-FxImpactDCAM197GatlingVehiculeAir is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_M197_Gatling_vehicule_air )
+FxImpactDCAM197GatlingVehiculeAir_ is TRandomHappening
+(
+    Alternatives = [
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_M197_Gatling_vehicule_air_1 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_M197_Gatling_vehicule_air_2 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_M197_Gatling_vehicule_air_3 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_M197_Gatling_vehicule_air_4 ),
+    ]
+)
+FxImpactDCAProximityFuzeAir_ is TRandomHappening
+(
+    Alternatives = [
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_Proximity_Fuze_air_1 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_Proximity_Fuze_air_2 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_Proximity_Fuze_air_3 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_Proximity_Fuze_air_4 ),
+    ]
+)
+FxImpactDCAProximityFuzeVehiculeAir_ is TRandomHappening
+(
+    Alternatives = [
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_Proximity_Fuze_vehicule_air_1 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_Proximity_Fuze_vehicule_air_2 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_Proximity_Fuze_vehicule_air_3 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_Proximity_Fuze_vehicule_air_4 ),
+    ]
+)
 FxImpactDCAAirGros is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_air_gros )
 FxImpactDCAAirPetit is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_DCA_air_petit )
 FxImpactDCAAirPetit_ is TRandomHappening
@@ -375,7 +415,15 @@ FxImpactEauHEMoyen is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_eau_HE_moye
 FxImpactEauHEPetit is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_eau_HE_petit )
 FxImpactEauHeTresgros2 is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_eau_he_tresgros2 )
 FxImpactEauHelico_ is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_eau_helico_1 )
-FxImpactHeVehiculeAirGros is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_he_vehicule_air_gros )
+FxImpactHeVehiculeAirGros__ is TRandomHappening
+(
+    Alternatives = [
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_he_vehicule_air_gros_01 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_he_vehicule_air_gros_02 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_he_vehicule_air_gros_03 ),
+        ImpactWrapper( Action = $/GFX/GameFx/fx_impact_he_vehicule_air_gros_04 ),
+    ]
+)
 FxImpactHeVehiculeAirMoyen is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_he_vehicule_air_moyen )
 FxImpactHeVehiculeAirPetit is ImpactWrapper( Action = $/GFX/GameFx/fx_impact_he_vehicule_air_petit )
 FxImpactHeVehiculeAirPetit_ is TRandomHappening
@@ -948,7 +996,7 @@ AllImpactHappenings is MAP[
   ([ 'BombeBLG66' ], TImpactHappening( Happenings = MAP[
       ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
       ( EImpactSurface/Water , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
-      ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxOuvertureBombeCluster, SoundHappening_ImpactCanon_petitSol ] ) ),
+      ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxOuvertureBombeCluster_, SoundHappening_ImpactCanon_petitSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
       ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
@@ -988,7 +1036,7 @@ AllImpactHappenings is MAP[
   ([ 'BombeMk20RockeyeII' ], TImpactHappening( Happenings = MAP[
       ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
       ( EImpactSurface/Water , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
-      ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxOuvertureBombeCluster, SoundHappening_ImpactCanon_petitSol ] ) ),
+      ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxOuvertureBombeCluster_, SoundHappening_ImpactCanon_petitSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
       ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactSolClusterMK20RockeyeIISalve_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
@@ -1161,7 +1209,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAAirGros, SoundHappening_ImpactCanon_moyenSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBatHeGros_, SoundHappening_ImpactCanon_moyenBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactObusVehiculeMoyen_, SoundHappening_ImpactObus_moyenVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactHeVehiculeAirGros, SoundHappening_ImpactObus_moyenVehicule ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactHeVehiculeAirGros__, SoundHappening_ImpactObus_moyenVehicule ] ) ),
       ( EImpactSurface/Missile , SoundHappening_ImpactObus_moyenVehicule ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ FxRebondObusGros, SoundHappening_ImpactObus_grosVehicule ] ) ),
     ])),
@@ -1191,7 +1239,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAAirGros, SoundHappening_ImpactCanon_moyenSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBatHeGros_, SoundHappening_ImpactCanon_moyenBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactObusVehiculeMoyen_, SoundHappening_ImpactObus_moyenVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactHeVehiculeAirGros, SoundHappening_ImpactObus_moyenVehicule ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactHeVehiculeAirGros__, SoundHappening_ImpactObus_moyenVehicule ] ) ),
       ( EImpactSurface/Missile , SoundHappening_ImpactObus_moyenVehicule ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ FxRebondObusGros, SoundHappening_ImpactObus_grosVehicule ] ) ),
     ])),
@@ -1238,10 +1286,10 @@ AllImpactHappenings is MAP[
   ([ 'CanonPetit2A38HEFI' ], TImpactHappening( Happenings = MAP[
       ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpact2A38Autocanon_, SoundHappening_ImpactCanon_petitSol ] ) ),
       ( EImpactSurface/Water , TCompositeHappening( SubHappenings = [ FxImpactBallesCal50Eau_, SoundHappening_Impact_HE_Petit_Eau ] ) ),
-      ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
+      ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAProximityFuzeAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBat2A38Autocanon_, SoundHappening_ImpactAutocanon_20mmBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehicule2A38Autocanon, SoundHappening_ImpactAutocanon_20mmVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAProximityFuzeVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ FxRebondObusPetit, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1271,7 +1319,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBat2A38Autocanon_, SoundHappening_ImpactAutocanon_20mmBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehicule2A38Autocanon, SoundHappening_ImpactAutocanon_20mmVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ FxRebondObusPetit, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1281,7 +1329,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBat2A38Autocanon_, SoundHappening_ImpactAutocanon_20mmBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehicule2A38Autocanon, SoundHappening_ImpactAutocanon_20mmVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ FxRebondObusPetit, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1291,7 +1339,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBat2A38Autocanon_, SoundHappening_ImpactAutocanon_20mmBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehicule2A38Autocanon, SoundHappening_ImpactAutocanon_20mmVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ FxRebondObusPetit, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1338,10 +1386,10 @@ AllImpactHappenings is MAP[
   ([ 'CanonPetitOerlikonGPFHEFI' ], TImpactHappening( Happenings = MAP[
       ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpact2A38Autocanon_, SoundHappening_ImpactCanon_petitSol ] ) ),
       ( EImpactSurface/Water , TCompositeHappening( SubHappenings = [ FxImpactBallesCal50Eau_, SoundHappening_Impact_HE_Petit_Eau ] ) ),
-      ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
+      ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAProximityFuzeAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBat2A38Autocanon_, SoundHappening_ImpactAutocanon_20mmBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehicule2A38Autocanon, SoundHappening_ImpactAutocanon_20mmVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAProximityFuzeVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ FxRebondObusPetit, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1501,7 +1549,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactGAU8Gatling_, SoundHappening_ImpactCanon_petitSol_GAU ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactVehiculeGAU8Gatling, SoundHappening_ImpactCanon_petitSol_GAU ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehiculeM197Gatling, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1551,7 +1599,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactM61A1Vulcan_, SoundHappening_ImpactAutocanon_20mmBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactVehiculeM61A1Vulcan_, SoundHappening_ImpactAutocanon_20mmVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehiculeM197Gatling, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1601,7 +1649,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactM197Gatling, SoundHappening_ImpactAutocanon_20mmBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehiculeM197Gatling, SoundHappening_ImpactAutocanon_20mmVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehiculeM197Gatling, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1611,7 +1659,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactM61A1Vulcan_, SoundHappening_ImpactAutocanon_20mmBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactVehiculeM61A1Vulcan_, SoundHappening_ImpactAutocanon_20mmVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehiculeM197Gatling, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1691,7 +1739,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingAir_, SoundHappening_ImpactAutocanon_20mmSol ] ) ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactMK27Canon_, SoundHappening_ImpactAutocanon_20mmBatiment ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactVehiculeM61A1Vulcan_, SoundHappening_ImpactAutocanon_20mmVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir, SoundHappening_FULDA_Impacts_DCA ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactDCAM197GatlingVehiculeAir_, SoundHappening_FULDA_Impacts_DCA ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Impacts_DCA ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ OrientationWrapperFxImpactVehiculeM197Gatling, SoundHappening_ImpactObus_petitVehicule ] ) ),
     ])),
@@ -1751,7 +1799,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Air , FxImpactMissileAirGros ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBatHeGros_, SoundHappening_ImpactMissileAT_grosVehicule ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactMissileVehiculeGros_, SoundHappening_ImpactMissileAT_grosVehicule ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactHeVehiculeAirGros, SoundHappening_ImpactMissileAT_grosVehicule ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactHeVehiculeAirGros__, SoundHappening_ImpactMissileAT_grosVehicule ] ) ),
       ( EImpactSurface/Missile , SoundHappening_ImpactMissileAT_grosVehicule ),
       ( EImpactSurface/Ricochet , TCompositeHappening( SubHappenings = [ FxImpactMissileVehiculePetit, SoundHappening_ImpactMissileAT_grosVehicule ] ) ),
     ])),
@@ -1866,7 +1914,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Ricochet , nil ),
     ])),
   ([ 'MitrailleuseMG3Externe' ], TImpactHappening( Happenings = MAP[
-      ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpactBalleSolTresPetitMG3Section_, SoundHappening_ImpactBalles_burstSol_Short_MG_3 ] ) ),
+      ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpactBalleSolTresPetitMG3Section_, SoundHappening_ImpactBalles_burstSol ] ) ),
       ( EImpactSurface/Water , TCompositeHappening( SubHappenings = [ FxImpactBallesCal50Eau_, SoundHappening_ImpactBalles_burstSol_Short_MG_3 ] ) ),
       ( EImpactSurface/Air , FxImpactBallesAirTresPetit_ ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBalleBatimentTresPetitMitrailleuse_, SoundHappening_ImpactBalles_burstBatiment ] ) ),
@@ -1876,7 +1924,7 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Ricochet , nil ),
     ])),
   ([ 'MitrailleuseMG3Interne' ], TImpactHappening( Happenings = MAP[
-      ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpactBalleSolTresPetitMG3Section_, SoundHappening_ImpactBalles_burstSol_Short_MG_3 ] ) ),
+      ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpactBalleSolTresPetitMG3Section_, SoundHappening_ImpactBalles_burstSol ] ) ),
       ( EImpactSurface/Water , TCompositeHappening( SubHappenings = [ FxImpactBallesCal50Eau_, SoundHappening_ImpactBalles_burstSol_Short_MG_3 ] ) ),
       ( EImpactSurface/Air , FxImpactBallesAirTresPetit_ ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactBalleBatimentTresPetitMitrailleuse_, SoundHappening_ImpactBalles_burstBatiment ] ) ),
@@ -1939,16 +1987,16 @@ AllImpactHappenings is MAP[
       ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpactSolHEM270110Mm130MmCluster_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
       ( EImpactSurface/Water , TCompositeHappening( SubHappenings = [ FxImpactEauHEGros, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
       ( EImpactSurface/Air , TCompositeHappening( SubHappenings = [ FxOuvertureRoquetteCluster_, SoundHappening_ImpactCanon_petitSol ] ) ),
-      ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactSolHEM270227MmCluster_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
-      ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactSolHEM270227MmCluster_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
-      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactSolHEM270227MmCluster_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
+      ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactSolHEM270110Mm130MmCluster_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
+      ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactSolHEM270110Mm130MmCluster_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
+      ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactSolHEM270110Mm130MmCluster_, SoundHappening_FULDA_Bombe_Cluster_sol ] ) ),
       ( EImpactSurface/Missile , SoundHappening_FULDA_Bombe_Cluster_sol ),
       ( EImpactSurface/Ricochet , nil ),
     ])),
   ([ 'Roquette110Mm130MmNapalm' ], TImpactHappening( Happenings = MAP[
       ( EImpactSurface/Ground , TCompositeHappening( SubHappenings = [ FxImpactSolNapalmRoquette110Mm130Mm_, SoundHappening_FULDA_Bombe_Napalm_sol ] ) ),
       ( EImpactSurface/Water , TCompositeHappening( SubHappenings = [ FxImpactEauHEGros, SoundHappening_Impact_HE_Gros_Eau ] ) ),
-      ( EImpactSurface/Air , FxOuvertureRoquetteNapalm ),
+      ( EImpactSurface/Air , FxOuvertureRoquetteNapalm_ ),
       ( EImpactSurface/Wall , TCompositeHappening( SubHappenings = [ FxImpactSolNapalmRoquette110Mm130Mm_, SoundHappening_FULDA_Bombe_Napalm_sol ] ) ),
       ( EImpactSurface/Vehicle , TCompositeHappening( SubHappenings = [ FxImpactSolNapalmRoquette110Mm130Mm_, SoundHappening_FULDA_Bombe_Napalm_sol ] ) ),
       ( EImpactSurface/FlyingVehicle , TCompositeHappening( SubHappenings = [ FxImpactSolNapalmRoquette110Mm130Mm_, SoundHappening_FULDA_Bombe_Napalm_sol ] ) ),

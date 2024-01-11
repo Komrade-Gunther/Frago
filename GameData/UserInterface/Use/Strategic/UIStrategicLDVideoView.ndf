@@ -9,7 +9,7 @@ UIStrategicLDVideoViewDescriptor is TUICommonLDVideoViewDescriptor
             "FullScreenCutSceneVideo", ~/CommonFullScreenCutSceneVideo
         ),
         (
-            "DefaultSubtitleDescriptor", ~/CommonDefaultSubtitleDescriptor
+            "DefaultSubtitleDescriptor", ~/StrategicDefaultSubtitleDescriptor
         ),
     ]
     MainComponentDescriptor = BUCKContainerDescriptor(ComponentFrame=TUIFramePropertyRTTI())
@@ -17,4 +17,32 @@ UIStrategicLDVideoViewDescriptor is TUICommonLDVideoViewDescriptor
     SkipVideoOption = $/MiscOptions/SkipMovies
     ShowSubtitles = $/GameplayOption/ShowSubtitles
     VideoLoadingPriority = 1000
+)
+
+//-------------------------------------------------------------------------------------
+
+StrategicDefaultSubtitleDescriptor is BUCKTextDescriptor
+(
+    ElementName = "SubtitleText"
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [0.8, 0.0]
+        MagnifiableWidthHeight = [0.0, 60.0]
+        AlignementToFather = [0.5, 1.0]
+        AlignementToAnchor = [0.5, 1.0]
+        MagnifiableOffset = [0.0, -40.0]
+    )
+
+    ParagraphStyle = ~/VideoSubtitleParagraphStyle
+    TextStyle = "DefaultSubtitle"
+
+    TypefaceToken = "Liberator"
+
+    BigLineAction = ~/BigLineAction/MultiLine
+
+    TextColor = "Subtitle/Text"
+    TextSize = "Subtitle/StrategicText"
+
+    TextDico = ~/LocalisationConstantes/dico_interface_ingame
 )

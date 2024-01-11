@@ -76,9 +76,6 @@ Constantes is TTunableConstante
      //   les particulent qui tombent hors de la map.
     LaunchDeathAmmoOutmap = false
 
-    // Facteur de securite a appliquer sur le splash physique dans le calcul de la dispersion. Ne pas descendre trop bas, sinon on se prend des dégats en mouvement
-    FacteurSecuriteSplashPhysique = 1 // 1.75
-
     StunEffectDuration = 4.0
 
 //----------------------------- Constantes Commander -----------------------------------------//
@@ -125,7 +122,7 @@ Constantes is TTunableConstante
 
     // Distance pour petits déplacements (en mètres). Définie la distance max de déplacement d'un hélico pour:
     // - Rester en très basse altitude.
-    DistanceMaxSmallMovementsInMeters = 150
+    DistanceMaxSmallMovementsInMeters = 500
 
     // Temps utilisé pour prédire la position de landing des hélicos. Pour les hélicos lourd, ils font quand même demi tour, mais je n'ai pas moyen de savoir combien de temps il faut à l'hélico pour se stopper en vitesse linéaire
     // sans faire des calculs à con. Donc j'utilise une heuristique à la place, et si on dépasse ben tant pis... Je ferais mieux si ça va vraiment pas
@@ -614,12 +611,12 @@ WargameConstantes is TWargameTunableConstante
     ValeurMinimumCoverMoyen = 7.5 // Terrain stealth bonus
     ValeurMinimumCoverTresLeger = 10 // Unit stealth bonus
 
-    ValeurOptionTailleNewLabelMinimal = 0.45*1.4
-    ValeurOptionTailleNewLabelVerySmall = 0.55*1.4
-    ValeurOptionTailleNewLabelSmall = 0.63*1.4
-    ValeurOptionTailleNewLabelNormal = 0.7*1.4
-    ValeurOptionTailleNewLabelLarge = 0.88*1.4
-    ValeurOptionTailleNewLabelVeryLarge = 1.0*1.4
+    ValeurOptionTailleNewLabelMinimal = 0.63
+    ValeurOptionTailleNewLabelVerySmall = 0.77
+    ValeurOptionTailleNewLabelSmall = 0.88
+    ValeurOptionTailleNewLabelNormal = 1.0
+    ValeurOptionTailleNewLabelLarge = 1.23
+    ValeurOptionTailleNewLabelVeryLarge = 1.4
 
 
 //------------------------ Constantes Lobby ---------------------------------------//

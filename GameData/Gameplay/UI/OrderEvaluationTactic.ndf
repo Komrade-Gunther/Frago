@@ -134,13 +134,27 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             IsTargetAuthorized = true
         ),
 
+        TOrderEvaluatorLoadIntoTransport(
+            OrderToken = "LoadIntoTransport"
+            IgnoreDefaultOrder = false
+            FXFeedback = $/GFX/GameFx/FX_Feedback_Move
+            MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
+        ),
+
+        TOrderEvaluatorLoadUnit(
+            OrderToken = "LoadUnit"
+            IgnoreDefaultOrder = false
+            FXFeedback = $/GFX/GameFx/FX_Feedback_Move
+            MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
+        ),
+
         TOrderEvaluatorAssaultDistrict(
             OrderToken = "AssaultDistrict"
             IgnoreDefaultOrder = false
             IgnoreDirectOrder = true
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
-            OrderInterpretationForOrderDisplayAndAcknows = "Assault"
+            OrderInterpretationForOrderDisplayAndAcknows = "AssaultDistrict"
         ),
 
         TOrderEvaluatorEnterDistrict(
@@ -173,7 +187,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            ClampDestination = true
+            ClampDestinationOnNavMesh = true
             OrderInterpretationForOrderDisplayAndAcknows = "FastMoveAndAttack"
         ),
 
@@ -184,7 +198,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            ClampDestination = true
+            ClampDestinationOnNavMesh = true
             OrderInterpretationForOrderDisplayAndAcknows = "MoveAndAttack"
         ),
 
@@ -195,7 +209,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Attack
             MouseWidgetSelector = "MouseWidgetSelector_Attack"
             PlayFXFeedbackWithoutTargets = true
-            ClampDestination = true
+            ClampDestinationOnNavMesh = true
             OrderInterpretationForOrderDisplayAndAcknows = "MoveAndAttack"
         ),
 
@@ -248,21 +262,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_UnloadAtPosition"
             PlayFXFeedbackWithoutTargets = true
-            ClampDestination = true
-        ),
-
-        TOrderEvaluatorLoadIntoTransport(
-            OrderToken = "LoadIntoTransport"
-            IgnoreDefaultOrder = false
-            FXFeedback = $/GFX/GameFx/FX_Feedback_Move
-            MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
-        ),
-
-        TOrderEvaluatorLoadUnit(
-            OrderToken = "LoadUnit"
-            IgnoreDefaultOrder = false
-            FXFeedback = $/GFX/GameFx/FX_Feedback_Move
-            MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
+            ClampDestinationOnNavMesh = true
         ),
 
         TOrderEvaluatorMove(
@@ -271,7 +271,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_Reverse"
             PlayFXFeedbackWithoutTargets = true
-            ClampDestination = true
+            ClampDestinationOnNavMesh = true
         ),
 
         TOrderEvaluatorMove(
@@ -280,7 +280,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_MoveFast"
             PlayFXFeedbackWithoutTargets = true
-            ClampDestination = true
+            ClampDestinationOnNavMesh = true
         ),
 
         TOrderEvaluatorMove(
@@ -289,7 +289,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
             PlayFXFeedbackWithoutTargets = true
-            ClampDestination = true
+            ClampDestinationOnNavMesh = true
             OrderInterpretationForOrderDisplayAndAcknows = "Move"
         ),
 
@@ -299,7 +299,7 @@ public orderEvaluatorCollectionTactic is TOrderEvaluatorCollectionDescriptor(
             FXFeedback = $/GFX/GameFx/FX_Feedback_Move
             MouseWidgetSelector = "MouseWidgetSelector_DefaultOrder"
             PlayFXFeedbackWithoutTargets = true
-            ClampDestination = true
+            ClampDestinationOnNavMesh = true
         ),
 
         TOrderEvaluatorUseAnyCapacite(

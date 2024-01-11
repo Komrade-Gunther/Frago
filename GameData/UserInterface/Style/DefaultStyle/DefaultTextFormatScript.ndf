@@ -2051,12 +2051,36 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
         //-------------------------------------------------------------------------------------
 
         (
+            "US_1AD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_US_1AD")
+        ),
+        (
             "US_3AD",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_US_3AD")
         ),
         (
+            "US_3ID",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_US_3ID")
+        ),
+        (
+            "US_8ID",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_US_8ID")
+        ),
+        (
+            "US_17AF",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_US_17AF")
+        ),
+        (
             "US_11ACR",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_US_11ACR")
+        ),
+        (
+            "US_4ATAF",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_US_4ATAF")
+        ),
+        (
+            "US_2ATAF",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_US_2ATAF")
         ),
         (
             "UK_3armoured",
@@ -2067,12 +2091,28 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
             TemplateTFS_Division(TextureToken = "CommonTexture_division_BEL_16mec")
         ),
         (
+            "BEL_1corps",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_BEL_1corps")
+        ),
+        (
+            "BEL_1_INFDIV",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_BEL_1_INFDIV")
+        ),
+        (
             "RFA_26llb",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_26llb")
         ),
         (
             "RFA_5PZ",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_5PZ")
+        ),
+        (
+            "RFA_2PZ",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_2PZ")
+        ),
+        (
+            "RFA_12PZ",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_12PZ")
         ),
         (
             "RFA_terrkdo",
@@ -2083,20 +2123,68 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
             TemplateTFS_Division(TextureToken = "CommonTexture_division_RFA_2Luft")
         ),
         (
+            "DDR_7PZD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_DDR_7PZD")
+        ),
+        (
             "DDR_4MSD",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_DDR_4MSD")
+        ),
+        (
+            "DDR_11MSD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_DDR_11MSD")
+        ),
+        (
+            "DDR_17MSD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_DDR_17MSD")
         ),
         (
             "DDR_Luft",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_DDR_Luft")
         ),
         (
+            "SOV_18_ZRB",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_18_ZRB")
+        ),
+        (
+            "SOV_53_ZRB",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_53_ZRB")
+        ),
+        (
+            "SOV_27_GVMSD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_27_GVMSD")
+        ),
+        (
+            "SOV_39_GVMSD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_39_GVMSD")
+        ),
+        (
             "SOV_57_GVMSD",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_57_GVMSD")
         ),
         (
+            "SOV_16_VA",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_16_VA")
+        ),
+        (
             "SOV_35_GvDShB",
             TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_35_GvDShB")
+        ),
+        (
+            "SOV_20_GVMD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_20_GVMD")
+        ),
+        (
+            "SOV_79_GVTD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_79_GVTD")
+        ),
+        (
+            "SOV_11_GVTD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_11_GVTD")
+        ),
+        (
+            "SOV_9_TD",
+            TemplateTFS_Division(TextureToken = "CommonTexture_division_SOV_9_TD")
         ),
         (
             "SOV_default",
@@ -2109,6 +2197,14 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
         //-------------------------------------------------------------------------------------
 
 
+        (
+            "NATO",
+            TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_NATO_small")
+        ),
+        (
+            "PACT",
+            TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_PACT_small")
+        ),
         (
             "TCH",
             TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_TCH")
@@ -2132,6 +2228,10 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
         (
             "RFA",
             TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_RFA")
+        ),
+        (
+            "UK_RFA",
+            TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_UK_RFA")
         ),
         (
             "DDR",
@@ -2189,6 +2289,11 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
             "GER",
             TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_GERW")
         ),
+        (
+            "BEL",
+            TemplateTFS_Flag(TextureToken = "CommonTexture_MotherCountryFlag_BEL")
+        ),
+        //-------------------------------------------------------------------------------------
         (
             "ammo",
             TTFSCommand_UISymbol
@@ -2263,26 +2368,6 @@ DefaultTextFormatScript is TTextFormatScriptRTTI
                 TextureToken = "icone_los"
                 BBMin=[0, -1, 0]
                 BBMax=[2, 0.4, 0]
-                ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
-            )
-        ),
-        (
-            "tuto_fortification",
-            TTFSCommand_UISymbol
-            (
-                TextureToken = "UseStrategic_Labels_Fortified"
-                BBMin=[0, -1, 0]
-                BBMax=[1.5, 0.5, 0]
-                ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
-            )
-        ),
-        (
-            "tuto_fortificationEncours",
-            TTFSCommand_UISymbol
-            (
-                TextureToken = "UseStrategic_Labels_FortificationEnCours"
-                BBMin=[0, -1, 0]
-                BBMax=[1.5, 0.5, 0]
                 ShaderDescriptor = $/M3D/Shader/MaterialInterface2D_Blend
             )
         ),

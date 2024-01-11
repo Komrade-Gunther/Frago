@@ -2,26 +2,13 @@
 StrategicLabelsOnMapResources is TUICommonGameplayLabelOnMapResources
 (
     LabelsLayer = $/UserInterface/UI3DLayer_General
-    LabelsTransformation = TLabelTransformationComposition
+    LabelsTransformation = TLabelTransformPreTranslateFaceCamFakePerspective
     (
-        Transformations = [
-            TLabelTransformPreTranslate
-            (
-                Translation = [0,0,4200]
-            ),
-            TLabelTransformFaceCam
-            (
-                Camera = $/M3D/Camera/CameraPrincipale
-            ),
-            TLabelTransformFakePerspective
-            (
-                ScalePerAltitudeConstReso = 1.5
-                Camera = $/M3D/Camera/CameraPrincipale
-                Scene2D = $/M3D/Scene/Scene_2D_Interface
-                ConstnessFactor = 0.6
-            ),
-        ]
-
+        PreTranslation = [0,0,4200]
+        ScalePerAltitudeConstReso = 1.5
+        Camera = $/M3D/Camera/CameraPrincipale
+        Scene2D = $/M3D/Scene/Scene_2D_Interface
+        ConstnessFactor = 0.6
     )
 
     Camera = $/M3D/Camera/CameraPrincipale

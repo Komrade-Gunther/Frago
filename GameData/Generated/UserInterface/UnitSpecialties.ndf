@@ -98,6 +98,16 @@ UnitSpecialties is TUnitSpecialtiesContainer
             )
         ),
         (
+            "_falseflag",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_falseflag"
+                SpecialtyHintTitleToken    = "SIHQPRGNKW"
+                SpecialtyHintBodyToken     = "Body_FFlag"
+                SpecialtyHintExtendedToken = "Ext_FFlag"
+            )
+        ),
+        (
             "_gsr",
             TUnitSpecialtyDescriptor
             (
@@ -173,6 +183,16 @@ UnitSpecialties is TUnitSpecialtiesContainer
                 SpecialtyHintTitleToken    = "CWSHQEZXJG"
                 SpecialtyHintBodyToken     = "YNUTASHOHT"
                 SpecialtyHintExtendedToken = "SJUDEPLDMU"
+            )
+        ),
+        (
+            "_poorlytrained",
+            TUnitSpecialtyDescriptor
+            (
+                SpecialtyTextureName       = "Texture_Speciality_Icon_poorlytrained"
+                SpecialtyHintTitleToken    = "LHWZEZQPZG"
+                SpecialtyHintBodyToken     = "HSOMKEUDVC"
+                SpecialtyHintExtendedToken = "DJGKHTPOAE"
             )
         ),
         (

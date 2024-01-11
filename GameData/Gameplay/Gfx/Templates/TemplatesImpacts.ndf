@@ -45,9 +45,9 @@ is TSequencingActionHappening
                 Action = <Action>
 
                 NamedParams = MAP[
-                    ('parPosition', [0, 0, 0]),
+                    ('parPosition', float3[0, 0, 0]),
                     ('parPower', parPower),
-                    ('parDirection', [1,0,0]),
+                    ('parDirection', float3[1,0,0]),
                     ('parRadiusPhysical', parRadiusPhysical),
                     ('parRadiusSuppress', parRadiusSuppress),
                     ('parTerrain', parTerrain),

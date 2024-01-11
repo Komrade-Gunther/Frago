@@ -40,11 +40,29 @@ export MeshDescriptor_Driver_Para_UK_LOW is TemplateMeshDescriptor
 //--------------------------------------------------------------------------------------------------------------------
 export MeshDescriptor_Driver_RFA is TemplateMeshDescriptor
 (
-    FileName = 'GameData:Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
+    FileName = 'GameData:Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_1.Ase2NdfBin'
 )
 export MeshDescriptor_Driver_RFA_LOW is TemplateMeshDescriptor
 (
-    FileName = 'GameData:Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin'
+    FileName = 'GameData:Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_1.Ase2NdfBin'
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_FJ_RFA is TemplateMeshDescriptor
+(
+    FileName = 'GameData:Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.Ase2NdfBin'
+)
+export MeshDescriptor_Driver_FJ_RFA_LOW is TemplateMeshDescriptor
+(
+    FileName = 'GameData:Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.Ase2NdfBin'
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_BEL is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_2.Ase2NdfBin'
+)
+export MeshDescriptor_Driver_BEL_LOW is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_2.Ase2NdfBin'
 )
 //--------------------------------------------------------------------------------------------------------------------
 export MeshDescriptor_Driver_SOV is TemplateMeshDescriptor
@@ -54,6 +72,15 @@ export MeshDescriptor_Driver_SOV is TemplateMeshDescriptor
 export MeshDescriptor_Driver_VdV_SOV is TemplateMeshDescriptor
 (
     FileName = 'GameData:Assets/3D/Units/URSS/Infanterie/VDV/VDV_spe.Ase2NdfBin'
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Driver_DDR is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/DDR/Infanterie/MotSchutzen/MotSchutzen_NCO.Ase2NdfBin'
+)
+export MeshDescriptor_Driver_DDR_LOW is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/DDR/Infanterie/MotSchutzen/MotSchutzen_NCO.Ase2NdfBin'
 )
 //--------------------------------------------------------------------------------------------------------------------
 export MeshDescriptor_Driver_SOV_LOW is TemplateMeshDescriptor (FileName = MotoStrelki_1_LOW)
@@ -375,6 +402,23 @@ export MeshDescriptor_Servant_D_RFA_LOW is TemplateMeshDescriptor
     FileName = 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_2.Ase2NdfBin'
 )
 //--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_FJ_RFA is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.Ase2NdfBin'
+)
+export MeshDescriptor_Servant_D_FJ_RFA is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.Ase2NdfBin'
+)
+export MeshDescriptor_Servant_G_FJ_RFA_LOW is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.Ase2NdfBin'
+)
+export MeshDescriptor_Servant_D_FJ_RFA_LOW is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/RFA/Infanterie/Fallschirm/Fallschirm_NCO.Ase2NdfBin'
+)
+//--------------------------------------------------------------------------------------------------------------------
 export MeshDescriptor_Servant_PzGrenadier_NCO_G_RFA is TemplateMeshDescriptor
 (
     FileName = 'GameData:/Assets/3D/Units/RFA/Infanterie/PzGrenadier/PzGrenadier_NCO.Ase2NdfBin'
@@ -509,6 +553,23 @@ export MeshDescriptor_Servant_Para_Sep_G_FR_LOW is TemplateMeshDescriptor
 export MeshDescriptor_Servant_Para_NCO_D_FR_LOW is TemplateMeshDescriptor
 (
     FileName = 'GameData:/Assets/3D/Units/FR/Infanterie/Paras/Para_NCO.Ase2NdfBin'
+)
+//--------------------------------------------------------------------------------------------------------------------
+export MeshDescriptor_Servant_G_BEL is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_1.Ase2NdfBin'
+)
+export MeshDescriptor_Servant_D_BEL is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_2.Ase2NdfBin'
+)
+export MeshDescriptor_Servant_G_BEL_LOW is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_1.Ase2NdfBin'
+)
+export MeshDescriptor_Servant_D_BEL_LOW is TemplateMeshDescriptor
+(
+    FileName = 'GameData:/Assets/3D/Units/BEL/Infanterie/Linie/Linie_2.Ase2NdfBin'
 )
 //--------------------------------------------------------------------------------------------------------------------
 export FuldaSoldier is TResourceMultiMaterialMesh

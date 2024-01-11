@@ -59,31 +59,5 @@ export GenBT_Choose_Strategy is TSequenceGeneratorDescriptor
     NbMacroActionAllowedToProduceSimultaneous = 9001
     GeneratorList =
     [
-        ~/GenBT_FakeSupport,
-    ]
-)
-
-//-------------------------------------------------------------------------
-export GenBT_FakeSupport is TMacroActionDescriptor_Support_Specific
-(
-    ParametresDeMission =
-    [
-        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
-        TMacroActionProductionSettingHolder(PoolModelList = [~/GenBT_FakePool]),
-        TCounterTagSettingHolder(TagDeContre = "ThisUnitDoesNotExist"),
-    ]
-)
-//-------------------------------------------------------------------------
-export GenBT_FakePool is TPoolModel
-(
-    ModelList = [
-        TPoolElement(
-            DescriptorId = GUID:{b6fe1740-6a89-11e9-a18a-704d7b2c87d4}
-            Required = true
-            Nb = 1
-            TagsPriority = [
-                "ThisUnitDoesNotExist",
-            ]
-        ),
     ]
 )

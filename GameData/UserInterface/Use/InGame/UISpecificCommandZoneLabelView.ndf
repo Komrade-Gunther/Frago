@@ -108,26 +108,12 @@ BUCKSpecificCommandZoneLabelMainComponentDescriptor is BUCKListDescriptor
     ]
 )
 
-CommandZoneLabelReferentiel is TLabelTransformationComposition
-(
-    Transformations =
-    [
-        TLabelTransformPostTranslateForArea
-        (
-            Translation = [0,0,0]
-        ),
-    ]
-)
-
 UISpecificCommandZoneLabelViewDescriptor is TUISpecificCommandZoneLabelViewDescriptor
 (
     MainComponentDescriptor = ~/BUCKSpecificCommandZoneLabelMainComponentDescriptor
     MainComponentContainerUniqueName = "" // Permet d'indiquer l'endroit ou le composant doit s'insérer
 
     UI3DLayer = $/UserInterface/UI3DLayer_General
-
-    LabelReferentiel = ~/CommandZoneLabelReferentiel
-
     VisibilityRange = ~/AllInGameRanges/ZoomCommandArea
     FadeDuration = 0.5
 

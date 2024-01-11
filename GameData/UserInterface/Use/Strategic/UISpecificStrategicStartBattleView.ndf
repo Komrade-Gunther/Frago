@@ -89,6 +89,8 @@ template BoutonStartBattle
             ),
             BUCKTextDescriptor
             (
+                ElementName = <ElementName> + "Text"
+
                 ComponentFrame = TUIFramePropertyRTTI
                 (
                     RelativeWidthHeight = [1.0, 1.0]
@@ -107,7 +109,7 @@ template BoutonStartBattle
                 TextColor = "SM_Grullo"
                 TextSize = '16'
             ),
-            BUCKSpecificHintableArea
+            BUCKSpecificStrategicHintableArea
             (
                 DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                 HintBodyToken = <HintBodyToken>
@@ -330,7 +332,7 @@ private TextCommandTitre is BUCKTextDescriptor
     TextColor = "Transparent"
     TextSize = "8"
 
-    Hint = BUCKSpecificHintableArea
+    Hint = BUCKSpecificStrategicHintableArea
     (
         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
         HintTitleToken = 'pip_comt'
@@ -486,7 +488,7 @@ template TemplateTextStartBattle
     TextColor = <TextColor>
     TextSize = "16"
 
-    Hint = BUCKSpecificHintableArea
+    Hint = BUCKSpecificStrategicHintableArea
     (
         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
         HintTitleToken = <HintTitleToken>
@@ -716,7 +718,7 @@ private PanelInfosBataille is BUCKListDescriptor
                                         TextColor = "SM_paleSilver"
                                         TextSize = "12"
 
-                                        Hint = BUCKSpecificHintableArea
+                                        Hint = BUCKSpecificStrategicHintableArea
                                         (
                                             DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                                             HintTitleToken = 'PrC_stan'
@@ -752,7 +754,7 @@ private PanelInfosBataille is BUCKListDescriptor
                                         TextColor = "SM_paleSilver"
                                         TextSize = "12"
 
-                                        Hint = BUCKSpecificHintableArea
+                                        Hint = BUCKSpecificStrategicHintableArea
                                         (
                                             DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                                             HintTitleToken = 'PrC_aux'
@@ -1423,6 +1425,9 @@ UISpecificStrategicStartBattleViewDescriptor is TUISpecificStrategicStartBattleV
     BattleGroupsViewDescriptor = UISpecificStrategicStartBattleGroupViewDescriptor(BattlegroupToken = "PrpBtlGrp1")
 
     TerrainTypeTokens = ~/StrategicTerrainTypeTokens
+
+    AutoresolveToken = "BtnAutoRes"
+    SurrendToken = "BtnAutoSur"
 
     // à garder d'équerre avec StrategicBattleRole.ndf
     // la position dans le tableau correspond au role défini dans StrategicBattleRole.ndf (PanelListeGroupCombatRack pour les fighter donc en position 0 par exemple)

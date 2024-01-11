@@ -26,7 +26,7 @@ ShowRoomResource is TUISpecificShowRoomResources
 
     ViewDescriptors = MAP
     [
-        ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor(MainComponentFrame = TUIFramePropertyRTTI() IsShowRoom = true)),
+        ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor(IsShowRoom = true)),
         ("ArmoryComponentDescriptor", ~/ArmoryComponentDescriptor),
         ("DeckCreatorScreenComponentDescriptor", ~/DeckCreatorScreenComponentDescriptor),
         ("UISpecificShowRoomGroupsDeckCreatorScreenViewDescriptor", UISpecificShowRoomGroupsDeckCreatorScreenViewDescriptor(IsForChallenge = false)),
@@ -71,7 +71,6 @@ ShowRoomResource is TUISpecificShowRoomResources
 
 ShowRoomMainContainerResource is TUICommonMainContainerResource
 (
-    RefMagnification = ~/RefMagnification
     ContentRefSize = [ 2134 , 1440 ]
     SafeBoxMin     = [  107 ,   80 ]
     SafeBoxSize    = ~/FullScreenSafeBoxSize

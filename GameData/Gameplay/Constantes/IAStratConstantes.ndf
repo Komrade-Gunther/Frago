@@ -20,7 +20,6 @@ export IAStratConstantes is TIAStratConstantesDescriptor_Specific
     CanSelectTransportUnits = false
     ForceSelectCurrentTransporter = true
     NbMacroActionAllowedToProduceSimultaneous = 3
-    PoucentageDeTolerancePourPoolElement = 0.2
     RayonDOccupationDansLaGeoDbProdution_ValeurMin = 50 * Metre
     RayonDOccupationDansLaGeoDbProdution_ValeurMax = 100 * Metre
     ForbiddenTagsByMission = MAP
@@ -347,22 +346,21 @@ AirstrikeConstantes is TIAStratAirstrikeConstantes
 (
     UseAirstrikeDefenseSystem = true
     DefenseAirstrikeSettings = [
-        (["Avion_Chasseur"], 1),
-        (["Avion_Chasseur_Bombardier"], 1),
+        (["Avion_Chasseur"], 9),
+        (["Avion_Chasseur_Bombardier"], 9),
     ]
 
     UseAirStrikeOpportunisticAttack = true
     OpportunisticSingleTargetAirstrikeSettings = [
-        (["Avion_Assaut"], 1),
-        (["Avion_AT"], 1),
-        (["Avion_Chasseur"], 1),
-        (["Avion_Chasseur_Bombardier"], 1),
-        (["Avion_SEAD"], 1)
+        (["Avion_AT"], 9),
+        (["Avion_Chasseur"], 9),
+        (["Avion_Chasseur_Bombardier"], 9),
+        (["Avion_SEAD"], 9)
     ]
     OpportunisticTargetInGroupAirstrikeSettings = [
-        (["Avion_Bombardier"], 2),
-        (["Avion_Chasseur_Bombardier"], 2),
-        (["Avion_Napalm"], 2),
+        (["Avion_Bombardier"], 9),
+        (["Avion_Chasseur_Bombardier"], 9),
+        (["Avion_Napalm"], 9),
     ]
     TargetPowerForOpportunisticSingleTargetAirStrike = 80
     TargetPowerForOpportunisticTargetInGroupAirStrike = 60
@@ -448,12 +446,10 @@ VisionConstantes is TIAStratVisionConstantes
 
 MapSlicingConstantes is TMapSlicingConstantes
 (
-    MapSlicingType = 0 // 0 = square, 1 = hexa - Attention à changer NB_NEIGHBORS_PER_POLYGON et NB_VERTICES_PER_POLYGON, dans MapHelper.h, en conséquence
     NbPositionsPerPolygon = 9
     MaxNbUnitsPerPolygon = 8
-    PositionAtCenter = true
 
-    WaypointsInLightCoverTerrainTypes = [~/ETerrainType/ForetLegere, ~/ETerrainType/Urbain]
+    WaypointsInLightCoverTerrainTypes = [~/ETerrainType/ForetLegere]
 )
 
 //--------------------------------------------------------------------------------------//
@@ -509,14 +505,6 @@ FakeGunThreatDescriptor is TFakeGunThreatDescriptor
             CurrentRange = 5000.0 * Metre
             TirIndirect = false
             TypeArme = TDamageTypeRTTI(Family=DamageFamily_ap Index=10)
-            ColPlan = ~/ECollisionPlane/Ground
-            IsPiercing = true
-            ),
-		TFakeGunDescriptor(
-
-            CurrentRange = 5000.0 * Metre
-            TirIndirect = false
-            TypeArme = TDamageTypeRTTI(Family=DamageFamily_ap_autocannon Index=10)
             ColPlan = ~/ECollisionPlane/Ground
             IsPiercing = true
             ),

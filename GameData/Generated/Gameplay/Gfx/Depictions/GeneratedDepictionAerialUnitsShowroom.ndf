@@ -55,13 +55,13 @@ Gfx_AH1F_ATAS_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -79,13 +79,13 @@ Gfx_AH1F_CNITE_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -103,13 +103,13 @@ Gfx_AH1F_Cobra_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -127,13 +127,13 @@ Gfx_AH1F_HeavyHog_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -151,13 +151,13 @@ Gfx_AH1S_Cobra_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -175,13 +175,13 @@ Gfx_AH64_Apache_NG_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -199,13 +199,13 @@ Gfx_AH64_Apache_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -223,13 +223,13 @@ Gfx_AH64_Apache_emp1_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -247,13 +247,13 @@ Gfx_AH64_Apache_emp2_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -271,13 +271,13 @@ Gfx_AH6C_Little_Bird_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -295,13 +295,13 @@ Gfx_Alouette_III_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -315,13 +315,13 @@ Gfx_Alouette_III_reco_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -335,13 +335,13 @@ Gfx_Alouette_II_CMD_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -355,13 +355,13 @@ Gfx_Alouette_II_reco_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -435,13 +435,13 @@ Gfx_Bo_105_CMD_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -455,13 +455,13 @@ Gfx_Bo_105_PAH_1A1_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -475,13 +475,13 @@ Gfx_Bo_105_PAH_1_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -495,13 +495,13 @@ Gfx_Bo_105_reco_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -515,13 +515,13 @@ Gfx_Bo_105_trans_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -535,13 +535,13 @@ Gfx_CH47D_Chinook_supply_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = 30
         ),
     ]
@@ -555,13 +555,13 @@ Gfx_CH47_Chinook_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = 30
         ),
     ]
@@ -575,13 +575,13 @@ Gfx_CH47_Super_Chinook_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = 30
         ),
     ]
@@ -595,13 +595,13 @@ Gfx_CH53G_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -615,13 +615,13 @@ Gfx_CH53G_trans_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -635,13 +635,13 @@ Gfx_CH53_Sea_Stallion_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -879,6 +879,21 @@ Gfx_F15E_StrikeEagle_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_F15E_StrikeEagle_US_train
+        ),
+    ]
+)
+Gfx_F16A_CBU_BEL_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_F16A_CBU_BEL
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_F16A_CBU_BEL,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_F16A_CBU_BEL_train
         ),
     ]
 )
@@ -1221,13 +1236,13 @@ Gfx_Gazelle_20mm_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1241,13 +1256,13 @@ Gfx_Gazelle_20mm_reco_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1261,13 +1276,13 @@ Gfx_Gazelle_CMD_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1281,13 +1296,13 @@ Gfx_Gazelle_HOT_2_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1301,13 +1316,13 @@ Gfx_Gazelle_HOT_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1321,13 +1336,13 @@ Gfx_Gazelle_Mistral_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1341,13 +1356,13 @@ Gfx_Gazelle_SNEB_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1361,13 +1376,13 @@ Gfx_Gazelle_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1381,13 +1396,13 @@ Gfx_Gazelle_reco_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1401,13 +1416,13 @@ Gfx_Gazelle_trans_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1676,13 +1691,13 @@ Gfx_Ka_50_AA_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1700,19 +1715,34 @@ Gfx_Ka_50_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
     SubDepictionGenerators = 
     [
         SubGenerators_Showroom_Ka_50_SOV,
+    ]
+)
+Gfx_L39ZO_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_L39ZO_DDR
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_L39ZO_DDR,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_L39ZO_DDR_train
+        ),
     ]
 )
 Gfx_Lynx_AH_Mk1_TOW_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
@@ -1724,13 +1754,13 @@ Gfx_Lynx_AH_Mk1_TOW_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1744,13 +1774,13 @@ Gfx_Lynx_AH_Mk1_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1783,13 +1813,13 @@ Gfx_Lynx_AH_Mk7_I_TOW_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -1911,6 +1941,21 @@ Gfx_MiG_23MF_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         ShowroomLandingGear
         (
             MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_DDR_train
+        ),
+    ]
+)
+Gfx_MiG_23MF_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_SOV
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_MiG_23MF_SOV,
+    ]
+    SubDepictions = 
+    [
+        ShowroomLandingGear
+        (
+            MeshDescriptor = $/GFX/DepictionResources/Modele_MiG_23MF_SOV_train
         ),
     ]
 )
@@ -2194,13 +2239,13 @@ Gfx_Mi_24D_AA_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2218,13 +2263,13 @@ Gfx_Mi_24D_s5_AT_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2242,13 +2287,13 @@ Gfx_Mi_24D_s8_AT_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2266,13 +2311,13 @@ Gfx_Mi_24K_reco_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2325,13 +2370,13 @@ Gfx_Mi_24P_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2349,13 +2394,13 @@ Gfx_Mi_24P_s8_AT2_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2373,13 +2418,13 @@ Gfx_Mi_24P_s8_AT_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2397,13 +2442,13 @@ Gfx_Mi_24VP_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2421,13 +2466,13 @@ Gfx_Mi_24V_AA_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2445,13 +2490,13 @@ Gfx_Mi_24V_AT_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2469,13 +2514,13 @@ Gfx_Mi_24V_RKT_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2493,13 +2538,13 @@ Gfx_Mi_24V_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2517,13 +2562,13 @@ Gfx_Mi_26_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2537,13 +2582,13 @@ Gfx_Mi_2_reco_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2557,13 +2602,13 @@ Gfx_Mi_2_reco_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2577,13 +2622,13 @@ Gfx_Mi_2_trans_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2597,13 +2642,13 @@ Gfx_Mi_2_trans_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2617,13 +2662,13 @@ Gfx_Mi_8K_CMD_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2637,13 +2682,13 @@ Gfx_Mi_8MTV_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2661,13 +2706,13 @@ Gfx_Mi_8R_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2681,13 +2726,13 @@ Gfx_Mi_8TB_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2705,19 +2750,43 @@ Gfx_Mi_8TV_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
     SubDepictionGenerators = 
     [
         SubGenerators_Showroom_Mi_8TV_DDR,
+    ]
+)
+Gfx_Mi_8TV_Gunship_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
+(
+    MeshDescriptor = $/GFX/DepictionResources/Modele_Mi_8TV_Gunship_SOV
+    Operators = 
+    [
+        DepictionOperator_Reset_Generic,
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_1"
+            RotationAxis = float3[0, 0, 1]
+            RotationInDegree = -30
+        ),
+        TCosmeticFixedBoneRotationOperatorDesc
+        (
+            BoneName = "bloc_moteur_2"
+            RotationAxis = float3[0, 1, 0]
+            RotationInDegree = -30
+        ),
+    ]
+    SubDepictionGenerators = 
+    [
+        SubGenerators_Showroom_Mi_8TV_Gunship_SOV,
     ]
 )
 Gfx_Mi_8TV_PodGatling_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
@@ -2729,13 +2798,13 @@ Gfx_Mi_8TV_PodGatling_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2820,13 +2889,13 @@ Gfx_Mi_8TV_PodGatling_PodAGL_SOV_Showroom_Autogen is ShowroomAerialDepictionTemp
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2911,13 +2980,13 @@ Gfx_Mi_8TV_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2935,13 +3004,13 @@ Gfx_Mi_8TV_UPK_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -2994,13 +3063,13 @@ Gfx_Mi_8TV_non_arme_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3014,13 +3083,13 @@ Gfx_Mi_8TV_s57_16_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3038,13 +3107,13 @@ Gfx_Mi_8TV_s57_32_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3062,13 +3131,13 @@ Gfx_Mi_8TV_s57_32_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3086,13 +3155,13 @@ Gfx_Mi_8TV_s80_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3110,13 +3179,13 @@ Gfx_Mi_8TZ_SOV_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3130,13 +3199,13 @@ Gfx_Mi_8T_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3154,13 +3223,13 @@ Gfx_Mi_8T_non_arme_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3174,13 +3243,13 @@ Gfx_Mi_8_supply_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3194,13 +3263,13 @@ Gfx_Mi_9_DDR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3349,13 +3418,13 @@ Gfx_OH58C_CMD_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3369,13 +3438,13 @@ Gfx_OH58C_Scout_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3389,13 +3458,13 @@ Gfx_OH58D_Combat_Scout_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3413,13 +3482,13 @@ Gfx_OH58D_Kiowa_Warrior_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3437,13 +3506,13 @@ Gfx_OH58_CS_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3457,13 +3526,13 @@ Gfx_Puma_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3477,13 +3546,13 @@ Gfx_Puma_PC_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3497,13 +3566,13 @@ Gfx_Puma_Pirate_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3517,13 +3586,13 @@ Gfx_Puma_UK_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -3899,13 +3968,13 @@ Gfx_Super_Puma_FR_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -4054,13 +4123,13 @@ Gfx_UH1A_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -4074,13 +4143,13 @@ Gfx_UH1D_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -4094,13 +4163,13 @@ Gfx_UH1D_Supply_RFA_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -4114,13 +4183,13 @@ Gfx_UH1H_Huey_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -4134,13 +4203,13 @@ Gfx_UH1H_supply_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -4154,13 +4223,13 @@ Gfx_UH60A_Black_Hawk_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -4174,13 +4243,13 @@ Gfx_UH60A_CO_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]
@@ -4194,13 +4263,13 @@ Gfx_UH60A_Supply_US_Showroom_Autogen is ShowroomAerialDepictionTemplate
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_1"
-            RotationAxis = VECTOR[0, 0, 1]
+            RotationAxis = float3[0, 0, 1]
             RotationInDegree = -30
         ),
         TCosmeticFixedBoneRotationOperatorDesc
         (
             BoneName = "bloc_moteur_2"
-            RotationAxis = VECTOR[0, 1, 0]
+            RotationAxis = float3[0, 1, 0]
             RotationInDegree = -30
         ),
     ]

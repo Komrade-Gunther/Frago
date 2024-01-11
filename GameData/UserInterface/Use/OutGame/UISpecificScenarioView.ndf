@@ -677,7 +677,6 @@ template SoloNavigationButton
     TextDico : string = ~/LocalisationConstantes/dico_interface_outgame,
     ButtonAlignementToAnchor : float2 = [0.0,0.0],
     ButtonAlignementToFather : float2 = [0.0,0.0],
-
 ] is ConfirmButton
 (
     ElementName = <ElementName>
@@ -689,11 +688,14 @@ template SoloNavigationButton
     BorderThicknessToken = "3"
 
     TextToken = <TextToken>
-    HintTitleToken = <HintTitleToken>
-    HintBodyToken = <HintBodyToken>
-    HintExtendedToken = <HintExtendedToken>
-    HintableAreaElementName = <HintableAreaElementName>
-    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        ElementName = <HintableAreaElementName>
+        HintTitleToken = <HintTitleToken>
+        HintBodyToken = <HintBodyToken>
+        HintExtendedToken = <HintExtendedToken>
+        DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+    )
     TextTypefaceToken = "Liberator"
     TextColorToken = <IsEmphasized> ? "tampon_vert" : "tampon_gris"
     TextSizeToken = <TextSizeToken>

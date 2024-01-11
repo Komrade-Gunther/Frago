@@ -241,6 +241,11 @@ GhostDepiction_F15E_StrikeEagle_US is GhostAerialDepictionTemplate
     Alternatives = Alternatives_F15E_StrikeEagle_US
     Selector = SpecificAirplaneDepictionSelector
 )
+GhostDepiction_F16A_CBU_BEL is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_F16A_CBU_BEL
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_F16C_LGB_US is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_F16C_LGB_US
@@ -496,6 +501,11 @@ GhostDepiction_Ka_50_SOV is GhostAerialDepictionTemplate
     Alternatives = Alternatives_Ka_50_SOV
     Selector = SpecificHelicoDepictionSelector
 )
+GhostDepiction_L39ZO_DDR is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_L39ZO_DDR
+    Selector = SpecificAirplaneDepictionSelector
+)
 GhostDepiction_Lynx_AH_Mk1_TOW_UK is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Lynx_AH_Mk1_TOW_UK
@@ -549,6 +559,11 @@ GhostDepiction_MiG_23MF_AA_DDR is GhostAerialDepictionTemplate
 GhostDepiction_MiG_23MF_DDR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_MiG_23MF_DDR
+    Selector = SpecificAirplaneDepictionSelector
+)
+GhostDepiction_MiG_23MF_SOV is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_MiG_23MF_SOV
     Selector = SpecificAirplaneDepictionSelector
 )
 GhostDepiction_MiG_23MLD_SOV is GhostAerialDepictionTemplate
@@ -744,6 +759,11 @@ GhostDepiction_Mi_8TB_DDR is GhostAerialDepictionTemplate
 GhostDepiction_Mi_8TV_DDR is GhostAerialDepictionTemplate
 (
     Alternatives = Alternatives_Mi_8TV_DDR
+    Selector = SpecificHelicoDepictionSelector
+)
+GhostDepiction_Mi_8TV_Gunship_SOV is GhostAerialDepictionTemplate
+(
+    Alternatives = Alternatives_Mi_8TV_Gunship_SOV
     Selector = SpecificHelicoDepictionSelector
 )
 GhostDepiction_Mi_8TV_PodGatling_DDR is GhostAerialDepictionTemplate
@@ -1155,6 +1175,7 @@ AerialMimeticGhost is MAP[
   ( 'F15C_Eagle_AA2_US', GhostDepiction_F15C_Eagle_AA2_US ),
   ( 'F15C_Eagle_AA_US', GhostDepiction_F15C_Eagle_AA_US ),
   ( 'F15E_StrikeEagle_US', GhostDepiction_F15E_StrikeEagle_US ),
+  ( 'F16A_CBU_BEL', GhostDepiction_F16A_CBU_BEL ),
   ( 'F16C_LGB_US', GhostDepiction_F16C_LGB_US ),
   ( 'F16E_AA_US', GhostDepiction_F16E_AA_US ),
   ( 'F16E_AGM_US', GhostDepiction_F16E_AGM_US ),
@@ -1206,6 +1227,7 @@ AerialMimeticGhost is MAP[
   ( 'Jaguar_nplm_FR', GhostDepiction_Jaguar_nplm_FR ),
   ( 'Ka_50_AA_SOV', GhostDepiction_Ka_50_AA_SOV ),
   ( 'Ka_50_SOV', GhostDepiction_Ka_50_SOV ),
+  ( 'L39ZO_DDR', GhostDepiction_L39ZO_DDR ),
   ( 'Lynx_AH_Mk1_TOW_UK', GhostDepiction_Lynx_AH_Mk1_TOW_UK ),
   ( 'Lynx_AH_Mk1_UK', GhostDepiction_Lynx_AH_Mk1_UK ),
   ( 'Lynx_AH_Mk7_I_TOW_UK', GhostDepiction_Lynx_AH_Mk7_I_TOW_UK ),
@@ -1217,6 +1239,7 @@ AerialMimeticGhost is MAP[
   ( 'MiG_23BN_AT_DDR', GhostDepiction_MiG_23BN_AT_DDR ),
   ( 'MiG_23MF_AA_DDR', GhostDepiction_MiG_23MF_AA_DDR ),
   ( 'MiG_23MF_DDR', GhostDepiction_MiG_23MF_DDR ),
+  ( 'MiG_23MF_SOV', GhostDepiction_MiG_23MF_SOV ),
   ( 'MiG_23MLD_SOV', GhostDepiction_MiG_23MLD_SOV ),
   ( 'MiG_23ML_DDR', GhostDepiction_MiG_23ML_DDR ),
   ( 'MiG_23ML_SOV', GhostDepiction_MiG_23ML_SOV ),
@@ -1256,6 +1279,7 @@ AerialMimeticGhost is MAP[
   ( 'Mi_8R_SOV', GhostDepiction_Mi_8R_SOV ),
   ( 'Mi_8TB_DDR', GhostDepiction_Mi_8TB_DDR ),
   ( 'Mi_8TV_DDR', GhostDepiction_Mi_8TV_DDR ),
+  ( 'Mi_8TV_Gunship_SOV', GhostDepiction_Mi_8TV_Gunship_SOV ),
   ( 'Mi_8TV_PodGatling_DDR', GhostDepiction_Mi_8TV_PodGatling_DDR ),
   ( 'Mi_8TV_PodGatling_PodAGL_SOV', GhostDepiction_Mi_8TV_PodGatling_PodAGL_SOV ),
   ( 'Mi_8TV_SOV', GhostDepiction_Mi_8TV_SOV ),

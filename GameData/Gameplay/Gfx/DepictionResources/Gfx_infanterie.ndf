@@ -502,13 +502,29 @@ export Modele_Spetsnaz_SOV_06 is TemplateMeshDescriptor( FileName = SOV_VDV_spe 
 export Modele_Spetsnaz_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_VDV_1_LOW )
 
 //DShV_CMD_SOV
-export Modele_DShV_CMD_SOV is TemplateMeshDescriptor( FileName = SOV_VDV_1 )
-export Modele_DShV_CMD_SOV_02 is TemplateMeshDescriptor( FileName = SOV_VDV_2 )
-export Modele_DShV_CMD_SOV_03 is TemplateMeshDescriptor( FileName = SOV_VDV_NCO )
-export Modele_DShV_CMD_SOV_04 is TemplateMeshDescriptor( FileName = SOV_VDV_Officer )
-export Modele_DShV_CMD_SOV_05 is TemplateMeshDescriptor( FileName = SOV_VDV_Sniper )
+export Modele_DShV_CMD_SOV is TemplateMeshDescriptor( FileName = SOV_VDV_Officer )
+export Modele_DShV_CMD_SOV_02 is TemplateMeshDescriptor( FileName = SOV_VDV_NCO )
+export Modele_DShV_CMD_SOV_03 is TemplateMeshDescriptor( FileName = SOV_VDV_Sniper )
+export Modele_DShV_CMD_SOV_04 is TemplateMeshDescriptor( FileName = SOV_VDV_1 )
+export Modele_DShV_CMD_SOV_05 is TemplateMeshDescriptor( FileName = SOV_VDV_2 )
 export Modele_DShV_CMD_SOV_06 is TemplateMeshDescriptor( FileName = SOV_VDV_spe )
 export Modele_DShV_CMD_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_VDV_1_LOW )
+
+//DShV_SOV
+export Modele_DShV_SOV is TemplateMeshDescriptor( FileName = SOV_VDV_NCO )
+export Modele_DShV_SOV_02 is TemplateMeshDescriptor( FileName = SOV_VDV_Sniper )
+export Modele_DShV_SOV_03 is TemplateMeshDescriptor( FileName = SOV_VDV_NCO )
+export Modele_DShV_SOV_04 is TemplateMeshDescriptor( FileName = SOV_VDV_2 )
+export Modele_DShV_SOV_05 is TemplateMeshDescriptor( FileName = SOV_VDV_spe )
+export Modele_DShV_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_VDV_1_LOW )
+
+//HvyScout_DShV_SOV
+export Modele_HvyScout_DShV_SOV is TemplateMeshDescriptor( FileName = SOV_VDV_NCO )
+export Modele_HvyScout_DShV_SOV_02 is TemplateMeshDescriptor( FileName = SOV_VDV_Sniper )
+export Modele_HvyScout_DShV_SOV_03 is TemplateMeshDescriptor( FileName = SOV_VDV_NCO )
+export Modele_HvyScout_DShV_SOV_04 is TemplateMeshDescriptor( FileName = SOV_VDV_2 )
+export Modele_HvyScout_DShV_SOV_05 is TemplateMeshDescriptor( FileName = SOV_VDV_spe )
+export Modele_HvyScout_DShV_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_VDV_1_LOW )
 
 //VDV_CMD_SOV
 export Modele_VDV_CMD_SOV is TemplateMeshDescriptor( FileName = SOV_VDV_1 )
@@ -528,15 +544,6 @@ export Modele_Engineers_CMD_VDV_SOV_05 is TemplateMeshDescriptor( FileName = SOV
 export Modele_Engineers_CMD_VDV_SOV_06 is TemplateMeshDescriptor( FileName = SOV_VDV_spe )
 export Modele_Engineers_CMD_VDV_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_VDV_1_LOW )
 
-//DShV_SOV
-export Modele_DShV_SOV is TemplateMeshDescriptor( FileName = SOV_VDV_1 )
-export Modele_DShV_SOV_02 is TemplateMeshDescriptor( FileName = SOV_VDV_2 )
-export Modele_DShV_SOV_03 is TemplateMeshDescriptor( FileName = SOV_VDV_NCO )
-export Modele_DShV_SOV_04 is TemplateMeshDescriptor( FileName = SOV_VDV_Officer )
-export Modele_DShV_SOV_05 is TemplateMeshDescriptor( FileName = SOV_VDV_Sniper )
-export Modele_DShV_SOV_06 is TemplateMeshDescriptor( FileName = SOV_VDV_spe )
-export Modele_DShV_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_VDV_1_LOW )
-
 //VDV_HMG_SOV
 export Modele_VDV_HMG_SOV is TemplateMeshDescriptor( FileName = SOV_VDV_1 )
 export Modele_VDV_HMG_SOV_02 is TemplateMeshDescriptor( FileName = SOV_VDV_2 )
@@ -545,7 +552,6 @@ export Modele_VDV_HMG_SOV_04 is TemplateMeshDescriptor( FileName = SOV_VDV_Offic
 export Modele_VDV_HMG_SOV_05 is TemplateMeshDescriptor( FileName = SOV_VDV_Sniper )
 export Modele_VDV_HMG_SOV_06 is TemplateMeshDescriptor( FileName = SOV_VDV_spe )
 export Modele_VDV_HMG_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_VDV_1_LOW )
-
 
 //VDV_Afgantsy_SOV
 export Modele_VDV_Afgantsy_SOV is TemplateMeshDescriptor( FileName = SOV_VDV_1 )
@@ -716,10 +722,6 @@ export Modele_Airborne_half_M60_US_09 is TemplateMeshDescriptor( FileName = US_A
 export Modele_Airborne_half_M60_US_10 is TemplateMeshDescriptor( FileName = US_AB_Officer )
 export Modele_Airborne_half_M60_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
-//Marines_CMD_NL
-export Modele_Marines_CMD_NL is TemplateMeshDescriptor( FileName = US_AB_1 )
-export Modele_Marines_CMD_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
-
 //Airborne_CMD_US
 export Modele_Airborne_CMD_US is TemplateMeshDescriptor( FileName = US_AB_1 )
 export Modele_Airborne_CMD_US_02 is TemplateMeshDescriptor( FileName = US_AB_1 )
@@ -746,10 +748,6 @@ export Modele_Airborne_Dragon_US_09 is TemplateMeshDescriptor( FileName = US_AB_
 export Modele_Airborne_Dragon_US_10 is TemplateMeshDescriptor( FileName = US_AB_Officer )
 export Modele_Airborne_Dragon_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
-//Marine_Scout_NL
-export Modele_Marine_Scout_NL is TemplateMeshDescriptor( FileName = US_AB_1 )
-export Modele_Marine_Scout_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
-
 //Airborne_Scout_US
 export Modele_Airborne_Scout_US is TemplateMeshDescriptor( FileName = US_AB_1 )
 export Modele_Airborne_Scout_US_02 is TemplateMeshDescriptor( FileName = US_AB_1 )
@@ -762,10 +760,6 @@ export Modele_Airborne_Scout_US_08 is TemplateMeshDescriptor( FileName = US_AB_s
 export Modele_Airborne_Scout_US_09 is TemplateMeshDescriptor( FileName = US_AB_Sniper )
 export Modele_Airborne_Scout_US_10 is TemplateMeshDescriptor( FileName = US_AB_Officer )
 export Modele_Airborne_Scout_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
-
-//Marines_HMG_NL
-export Modele_Marines_HMG_NL is TemplateMeshDescriptor( FileName = US_AB_1 )
-export Modele_Marines_HMG_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
 //Airborne_HMG_US
 export Modele_Airborne_HMG_US is TemplateMeshDescriptor( FileName = US_AB_1 )
@@ -828,10 +822,6 @@ export Modele_Airborne_Engineers_US_08 is TemplateMeshDescriptor( FileName = US_
 export Modele_Airborne_Engineers_US_09 is TemplateMeshDescriptor( FileName = US_AB_Sniper )
 export Modele_Airborne_Engineers_US_10 is TemplateMeshDescriptor( FileName = US_AB_Officer )
 export Modele_Airborne_Engineers_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
-
-//Marines_NL
-export Modele_Marines_NL is TemplateMeshDescriptor( FileName = US_AB_1 )
-export Modele_Marines_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
 //Airborne_US
 export Modele_Airborne_US is TemplateMeshDescriptor( FileName = US_AB_1 )
@@ -912,17 +902,39 @@ export Modele_LightRifles_RCL_US_10 is TemplateMeshDescriptor( FileName = US_GI_
 export Modele_LightRifles_RCL_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
 //Rangers_CMD_US
-export Modele_Rangers_CMD_US is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Rangers_CMD_US_02 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Rangers_CMD_US is TemplateMeshDescriptor( FileName = US_GI_Officer )
+export Modele_Rangers_CMD_US_02 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
 export Modele_Rangers_CMD_US_03 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Rangers_CMD_US_04 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Rangers_CMD_US_05 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Rangers_CMD_US_06 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
-export Modele_Rangers_CMD_US_07 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
-export Modele_Rangers_CMD_US_08 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
-export Modele_Rangers_CMD_US_09 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
-export Modele_Rangers_CMD_US_10 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
+export Modele_Rangers_CMD_US_04 is TemplateMeshDescriptor( FileName = US_GI_2 )
+export Modele_Rangers_CMD_US_05 is TemplateMeshDescriptor( FileName = US_GI_spe )
 export Modele_Rangers_CMD_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
+
+//Ranger_tuto_US
+export Modele_Ranger_tuto_US is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
+export Modele_Ranger_tuto_US_02 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_tuto_US_03 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_tuto_US_04 is TemplateMeshDescriptor( FileName = US_GI_2 )
+export Modele_Ranger_tuto_US_05 is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_Ranger_tuto_US_06 is TemplateMeshDescriptor( FileName = US_GI_spe )
+export Modele_Ranger_tuto_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
+
+//Ranger_Dragon_US
+export Modele_Ranger_Dragon_US is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
+export Modele_Ranger_Dragon_US_02 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_Dragon_US_03 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_Dragon_US_04 is TemplateMeshDescriptor( FileName = US_GI_2 )
+export Modele_Ranger_Dragon_US_05 is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_Ranger_Dragon_US_06 is TemplateMeshDescriptor( FileName = US_GI_spe )
+export Modele_Ranger_Dragon_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
+
+//Ranger_US
+export Modele_Ranger_US is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
+export Modele_Ranger_US_02 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_US_03 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
+export Modele_Ranger_US_04 is TemplateMeshDescriptor( FileName = US_GI_2 )
+export Modele_Ranger_US_05 is TemplateMeshDescriptor( FileName = US_GI_1 )
+export Modele_Ranger_US_06 is TemplateMeshDescriptor( FileName = US_GI_spe )
+export Modele_Ranger_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
 //HMG_M2_US
 export Modele_HMG_M2_US is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin' )
@@ -1000,7 +1012,6 @@ export Modele_Rifles_CMD_US_09 is TemplateMeshDescriptor( FileName = US_GI_Snipe
 export Modele_Rifles_CMD_US_10 is TemplateMeshDescriptor( FileName = US_GI_Officer )
 export Modele_Rifles_CMD_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
-
 //GSR_US
 export Modele_GSR_US is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin' )
 export Modele_GSR_US_02 is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_1.Ase2NdfBin' )
@@ -1011,18 +1022,12 @@ export Modele_GSR_US_06 is TemplateMeshDescriptor( FileName = 'GameData:/Assets/
 export Modele_GSR_US_LOW is TemplateMeshDescriptor( FileName = 'GameData:/Assets/3D/Units/US/Infanterie/GI/GI_spe.Ase2NdfBin' )
 
 //GreenBerets_MP5_US
-export Modele_GreenBerets_MP5_US is TemplateMeshDescriptor( FileName = US_GB_1 )
-export Modele_GreenBerets_MP5_US_02 is TemplateMeshDescriptor( FileName = US_GB_1 )
-export Modele_GreenBerets_MP5_US_03 is TemplateMeshDescriptor( FileName = US_GB_1 )
+export Modele_GreenBerets_MP5_US is TemplateMeshDescriptor( FileName = Civil1_Mullet )
+export Modele_GreenBerets_MP5_US_02 is TemplateMeshDescriptor( FileName = Civil3_Mannschaft )
+export Modele_GreenBerets_MP5_US_03 is TemplateMeshDescriptor( FileName = Civil5_DoubleDenim )
 export Modele_GreenBerets_MP5_US_04 is TemplateMeshDescriptor( FileName = US_GB_1 )
-export Modele_GreenBerets_MP5_US_05 is TemplateMeshDescriptor( FileName = US_GB_1 )
-export Modele_GreenBerets_MP5_US_06 is TemplateMeshDescriptor( FileName = US_GB_NCO )
-export Modele_GreenBerets_MP5_US_07 is TemplateMeshDescriptor( FileName = US_GB_NCO )
-export Modele_GreenBerets_MP5_US_08 is TemplateMeshDescriptor( FileName = US_GB_NCO )
-export Modele_GreenBerets_MP5_US_09 is TemplateMeshDescriptor( FileName = US_GB_NCO )
-export Modele_GreenBerets_MP5_US_10 is TemplateMeshDescriptor( FileName = US_GB_NCO )
+export Modele_GreenBerets_MP5_US_05 is TemplateMeshDescriptor( FileName = US_GB_NCO )
 export Modele_GreenBerets_MP5_US_LOW is TemplateMeshDescriptor( FileName = US_GB_1_LOW )
-
 
 //GreenBerets_US
 export Modele_GreenBerets_US is TemplateMeshDescriptor( FileName = US_GB_1 )
@@ -1045,32 +1050,6 @@ export Modele_LRRP_US_04 is TemplateMeshDescriptor( FileName = US_GI_Sniper )
 export Modele_LRRP_US_05 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
 export Modele_LRRP_US_06 is TemplateMeshDescriptor( FileName = US_GI_Officer )
 export Modele_LRRP_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
-
-//Ranger_tuto_US
-export Modele_Ranger_tuto_US is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Ranger_tuto_US_02 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Ranger_tuto_US_03 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Ranger_tuto_US_04 is TemplateMeshDescriptor( FileName = US_GI_NCO )
-export Modele_Ranger_tuto_US_05 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Ranger_tuto_US_06 is TemplateMeshDescriptor( FileName = US_GI_Sniper )
-export Modele_Ranger_tuto_US_07 is TemplateMeshDescriptor( FileName = US_GI_2 )
-export Modele_Ranger_tuto_US_08 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
-export Modele_Ranger_tuto_US_09 is TemplateMeshDescriptor( FileName = US_GI_Officer )
-export Modele_Ranger_tuto_US_10 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
-export Modele_Ranger_tuto_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
-
-//Ranger_US
-export Modele_Ranger_US is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Ranger_US_02 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Ranger_US_03 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Ranger_US_04 is TemplateMeshDescriptor( FileName = US_GI_NCO )
-export Modele_Ranger_US_05 is TemplateMeshDescriptor( FileName = US_Rangers_1 )
-export Modele_Ranger_US_06 is TemplateMeshDescriptor( FileName = US_GI_Sniper )
-export Modele_Ranger_US_07 is TemplateMeshDescriptor( FileName = US_GI_2 )
-export Modele_Ranger_US_08 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
-export Modele_Ranger_US_09 is TemplateMeshDescriptor( FileName = US_GI_Officer )
-export Modele_Ranger_US_10 is TemplateMeshDescriptor( FileName = US_Rangers_NCO )
-export Modele_Ranger_US_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
 //Rifles_HMG_US
 export Modele_Rifles_HMG_US is TemplateMeshDescriptor( FileName = US_GI_1 )
@@ -1521,7 +1500,25 @@ export Modele_Rifles_CMD_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LO
 export Modele_MP_NL is TemplateMeshDescriptor( FileName = US_GI_1 )
 export Modele_MP_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
+//Marines_NL
+export Modele_Marines_NL is TemplateMeshDescriptor( FileName = US_AB_1 )
+export Modele_Marines_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
 
+//Marine_Scout_NL
+export Modele_Marine_Scout_NL is TemplateMeshDescriptor( FileName = US_AB_1 )
+export Modele_Marine_Scout_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
+
+//Marines_CMD_NL
+export Modele_Marines_CMD_NL is TemplateMeshDescriptor( FileName = US_AB_1 )
+export Modele_Marines_CMD_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
+
+//Marines_HMG_NL
+export Modele_Marines_HMG_NL is TemplateMeshDescriptor( FileName = US_AB_1 )
+export Modele_Marines_HMG_NL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
+
+//Engineers_CMD_NL
+export Modele_Engineers_CMD_NL is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_1 )
+export Modele_Engineers_CMD_NL_LOW is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_LOW )
 
 //------------------------------------------------------------------------------
 //
@@ -1588,14 +1585,30 @@ Militarstreifen_2 is 'GameData:/Assets/3D/Units/DDR/Infanterie/Militarstreifen/M
 Militarstreifen_1_LOW is 'GameData:/Assets/3D/Units/DDR/Infanterie/Militarstreifen/Militarstreifen_1_LOW.Ase2NdfBin'
 
 //------------------------------------------------------------------------------
+//Reserve_HMG_DDR
+export Modele_Reserve_HMG_DDR is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_NCO )
+export Modele_Reserve_HMG_DDR_02 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_Sniper )
+export Modele_Reserve_HMG_DDR_03 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_2 )
+export Modele_Reserve_HMG_DDR_04 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_1 )
+export Modele_Reserve_HMG_DDR_05 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_spe )
+export Modele_Reserve_HMG_DDR_LOW is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_LOW )
+
 //Reserve_DDR
-export Modele_Reserve_DDR is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_1 )
-export Modele_Reserve_DDR_02 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_2 )
-export Modele_Reserve_DDR_03 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_NCO )
-export Modele_Reserve_DDR_04 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_Officer )
-export Modele_Reserve_DDR_05 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_Sniper )
-export Modele_Reserve_DDR_06 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_spe )
+export Modele_Reserve_DDR is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_NCO )
+export Modele_Reserve_DDR_02 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_Sniper )
+export Modele_Reserve_DDR_03 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_2 )
+export Modele_Reserve_DDR_04 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_1 )
+export Modele_Reserve_DDR_05 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_spe )
 export Modele_Reserve_DDR_LOW is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_LOW )
+
+//Reserve_CMD_DDR
+export Modele_Reserve_CMD_DDR is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_Officer )
+export Modele_Reserve_CMD_DDR_02 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_NCO )
+export Modele_Reserve_CMD_DDR_03 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_Sniper )
+export Modele_Reserve_CMD_DDR_04 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_2 )
+export Modele_Reserve_CMD_DDR_05 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_1 )
+export Modele_Reserve_CMD_DDR_06 is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_spe )
+export Modele_Reserve_CMD_DDR_LOW is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_LOW )
 
 //MotSchutzen_DDR
 export Modele_MotSchutzen_DDR is TemplateMeshDescriptor( FileName = DDR_MotSchutzen_1 )
@@ -1710,17 +1723,17 @@ export Modele_KdA_DDR_03 is TemplateMeshDescriptor( FileName = DDR_KdA_NCO )
 export Modele_KdA_DDR_04 is TemplateMeshDescriptor( FileName = DDR_KdA_1 )
 export Modele_KdA_DDR_05 is TemplateMeshDescriptor( FileName = DDR_KdA_1 )
 export Modele_KdA_DDR_06 is TemplateMeshDescriptor( FileName = DDR_KdA_NCO )
-export Modele_KdA_DDR_LOW is TemplateMeshDescriptor( FileName = DDR_KdA_2 )
+export Modele_KdA_DDR_LOW is TemplateMeshDescriptor( FileName = DDR_KdA_LOW )
 
 //  KdA_CMD_DDR
 
 export Modele_KdA_CMD_DDR is TemplateMeshDescriptor( FileName = DDR_KdA_1 )
 export Modele_KdA_CMD_DDR_02 is TemplateMeshDescriptor( FileName = DDR_KdA_2 )
-export Modele_KdA_CMD_DDR_03 is TemplateMeshDescriptor( FileName = DDR_KdA_LOW )
+export Modele_KdA_CMD_DDR_03 is TemplateMeshDescriptor( FileName = DDR_KdA_1 )
 export Modele_KdA_CMD_DDR_04 is TemplateMeshDescriptor( FileName = DDR_KdA_NCO )
 export Modele_KdA_CMD_DDR_05 is TemplateMeshDescriptor( FileName = DDR_KdA_1 )
 export Modele_KdA_CMD_DDR_06 is TemplateMeshDescriptor( FileName = DDR_KdA_NCO )
-export Modele_KdA_CMD_DDR_LOW is TemplateMeshDescriptor( FileName = DDR_KdA_2 )
+export Modele_KdA_CMD_DDR_LOW is TemplateMeshDescriptor( FileName = DDR_KdA_LOW )
 
 //  Fallschirmjager_FlaseFlag_Demo_DDR
 
@@ -2033,12 +2046,8 @@ export Modele_SEK_RFA_06 is TemplateMeshDescriptor( FileName = SEK_3 )
 export Modele_SEK_RFA_LOW is TemplateMeshDescriptor( FileName = SEK_1 )
 
 //BGS_RFA
-export Modele_BGS_RFA is TemplateMeshDescriptor( FileName = RFA_BGS_1 )
+export Modele_BGS_RFA is TemplateMeshDescriptor( FileName = RFA_BGS_2 )
 export Modele_BGS_RFA_02 is TemplateMeshDescriptor( FileName = RFA_BGS_1 )
-export Modele_BGS_RFA_03 is TemplateMeshDescriptor( FileName = RFA_BGS_1 )
-export Modele_BGS_RFA_04 is TemplateMeshDescriptor( FileName = RFA_BGS_2 )
-export Modele_BGS_RFA_05 is TemplateMeshDescriptor( FileName = RFA_BGS_2 )
-export Modele_BGS_RFA_06 is TemplateMeshDescriptor( FileName = RFA_BGS_2 )
 export Modele_BGS_RFA_LOW is TemplateMeshDescriptor( FileName = RFA_BGS_1_LOW )
 
 //------------------------------------------------------------------------------
@@ -2580,7 +2589,7 @@ export Modele_Sniper_Fern_RFA_LOW is TemplateMeshDescriptor( FileName = FR_Para_
 //Sniper_Spetsnaz_SOV
 export Modele_Sniper_Spetsnaz_SOV is TemplateMeshDescriptor( FileName = SOV_VDV_NCO )
 export Modele_Sniper_Spetsnaz_SOV_02 is TemplateMeshDescriptor( FileName = SOV_VDV_Sniper )
-export Modele_Sniper_Spetsnaz_SOV_LOW is TemplateMeshDescriptor( FileName = FR_Para_LOW )
+export Modele_Sniper_Spetsnaz_SOV_LOW is TemplateMeshDescriptor( FileName = SOV_VDV_1_LOW )
 
 //Sniper_US
 export Modele_Sniper_US is TemplateMeshDescriptor( FileName = UK_Ghillie )
@@ -2767,6 +2776,27 @@ UK_Territorial_1_LOW is 'GameData:/Assets/3D/Units/UK/Infanterie/Territorial/Ter
 UK_Ghillie is 'GameData:/Assets/3D/Units/UK/Infanterie/Ghillie/Ghillie.Ase2NdfBin'
 UK_Ghillie_LOW is 'GameData:/Assets/3D/Units/UK/Infanterie/Ghillie/Ghillie_LOW.Ase2NdfBin'
 //------------------------------------------------------------------------------
+UK_Gurkhas_1 is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_1.Ase2NdfBin'
+UK_Gurkhas_2 is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_2.Ase2NdfBin'
+UK_Gurkhas_sniper is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_sniper.Ase2NdfBin'
+UK_Gurkhas_spe is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_spe.Ase2NdfBin'
+UK_Gurkhas_1_LOW is 'GameData:/Assets/3D/Units/UK/Infanterie/Gurkhas/Gurkhas_1_LOW.Ase2NdfBin'
+
+//Rifles_Gurkhas_UK
+export Modele_Rifles_Gurkhas_UK is TemplateMeshDescriptor( FileName = UK_Gurkhas_sniper )
+export Modele_Rifles_Gurkhas_UK_02 is TemplateMeshDescriptor( FileName = UK_Gurkhas_2 )
+export Modele_Rifles_Gurkhas_UK_03 is TemplateMeshDescriptor( FileName = UK_Gurkhas_1 )
+export Modele_Rifles_Gurkhas_UK_04 is TemplateMeshDescriptor( FileName = UK_Gurkhas_spe )
+export Modele_Rifles_Gurkhas_UK_LOW is TemplateMeshDescriptor( FileName = UK_Gurkhas_1_LOW )
+
+//Rifles_Gurkhas_CMD_UK
+export Modele_Rifles_Gurkhas_CMD_UK is TemplateMeshDescriptor( FileName = UK_Rifleman_Officer )
+export Modele_Rifles_Gurkhas_CMD_UK_02 is TemplateMeshDescriptor( FileName = UK_Gurkhas_sniper )
+export Modele_Rifles_Gurkhas_CMD_UK_03 is TemplateMeshDescriptor( FileName = UK_Gurkhas_2 )
+export Modele_Rifles_Gurkhas_CMD_UK_04 is TemplateMeshDescriptor( FileName = UK_Gurkhas_1 )
+export Modele_Rifles_Gurkhas_CMD_UK_05 is TemplateMeshDescriptor( FileName = UK_Gurkhas_spe )
+export Modele_Rifles_Gurkhas_CMD_UK_LOW is TemplateMeshDescriptor( FileName = UK_Gurkhas_1_LOW )
+
 //Sniper_UK
 export Modele_Sniper_UK is TemplateMeshDescriptor( FileName = UK_Ghillie )
 export Modele_Sniper_UK_LOW is TemplateMeshDescriptor( FileName = UK_Ghillie_LOW )
@@ -2874,10 +2904,6 @@ export Modele_Paratroopers_CMD_UK_04 is TemplateMeshDescriptor( FileName = UK_Pa
 export Modele_Paratroopers_CMD_UK_05 is TemplateMeshDescriptor( FileName = UK_Para_Officer )
 export Modele_Paratroopers_CMD_UK_06 is TemplateMeshDescriptor( FileName = UK_Para_spe )
 export Modele_Paratroopers_CMD_UK_LOW is TemplateMeshDescriptor( FileName = UK_Para_1_LOW )
-
-//Rifles_Gurkhas_CMD_UK
-export Modele_Rifles_Gurkhas_CMD_UK is TemplateMeshDescriptor( FileName = UK_Rifleman_1 )
-export Modele_Rifles_Gurkhas_CMD_UK_LOW is TemplateMeshDescriptor( FileName = UK_Para_1_LOW )
 
 //Rifles_CMD_UK
 export Modele_Rifles_CMD_UK is TemplateMeshDescriptor( FileName = UK_Rifleman_1 )
@@ -3006,10 +3032,6 @@ export Modele_Gun_Group_UK_05 is TemplateMeshDescriptor( FileName = UK_Rifleman_
 export Modele_Gun_Group_UK_06 is TemplateMeshDescriptor( FileName = UK_Rifleman_spe )
 export Modele_Gun_Group_UK_LOW is TemplateMeshDescriptor( FileName = UK_Para_1_LOW )
 
-//Rifles_Gurkhas_UK
-export Modele_Rifles_Gurkhas_UK is TemplateMeshDescriptor( FileName = UK_Rifleman_1 )
-export Modele_Rifles_Gurkhas_UK_LOW is TemplateMeshDescriptor( FileName = UK_Para_1_LOW )
-
 //Rifles_UK
 export Modele_Rifles_UK is TemplateMeshDescriptor( FileName = UK_Rifleman_1 )
 export Modele_Rifles_UK_02 is TemplateMeshDescriptor( FileName = UK_Rifleman_2 )
@@ -3107,18 +3129,10 @@ BEL_ParaCmdo_spe is 'GameData:/Assets/3D/Units/BEL/Infanterie/ParaCmdo/ParaCmdo_
 BEL_ParaCmdo_1_LOW is 'GameData:/Assets/3D/Units/BEL/Infanterie/ParaCmdo/ParaCmdo_1_LOW.Ase2NdfBin'
 
 //-------------------------------------------------------------------------------
-//Scout_BEL
-export Modele_Scout_BEL is TemplateMeshDescriptor( FileName = BEL_Chasseur_1 )
-export Modele_Scout_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Chasseur_2 )
-export Modele_Scout_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Chasseur_NCO )
-export Modele_Scout_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Chasseur_2 )
-export Modele_Scout_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Chasseur_NCO )
-export Modele_Scout_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Chasseur_1 )
-export Modele_Scout_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Chasseur_1_LOW )
 
 //ParaCmdo_Pionier_BEL
-export Modele_ParaCmdo_Pionier_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
-export Modele_ParaCmdo_Pionier_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_ParaCmdo_Pionier_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_ParaCmdo_Pionier_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
 export Modele_ParaCmdo_Pionier_BEL_03 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_spe )
 export Modele_ParaCmdo_Pionier_BEL_04 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_2 )
 export Modele_ParaCmdo_Pionier_BEL_05 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
@@ -3126,8 +3140,8 @@ export Modele_ParaCmdo_Pionier_BEL_06 is TemplateMeshDescriptor( FileName = BEL_
 export Modele_ParaCmdo_Pionier_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1_LOW )
 
 //ParaCmdo_AT_BEL
-export Modele_ParaCmdo_AT_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
-export Modele_ParaCmdo_AT_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_ParaCmdo_AT_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_ParaCmdo_AT_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
 export Modele_ParaCmdo_AT_BEL_03 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_spe )
 export Modele_ParaCmdo_AT_BEL_04 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_2 )
 export Modele_ParaCmdo_AT_BEL_05 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
@@ -3144,27 +3158,28 @@ export Modele_ParaCmdo_BEL_06 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo
 export Modele_ParaCmdo_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1_LOW )
 
 //ParaCmdo_CMD_BEL
-export Modele_ParaCmdo_CMD_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
-export Modele_ParaCmdo_CMD_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_ParaCmdo_CMD_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_ParaCmdo_CMD_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
 export Modele_ParaCmdo_CMD_BEL_03 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_spe )
 export Modele_ParaCmdo_CMD_BEL_04 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_2 )
 export Modele_ParaCmdo_CMD_BEL_05 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
-export Modele_ParaCmdo_CMD_BEL_06 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_Officer )
+export Modele_ParaCmdo_CMD_BEL_06 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_2 )
 export Modele_ParaCmdo_CMD_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1_LOW )
 
 //Scout_ParaCmdo_BEL
-export Modele_Scout_ParaCmdo_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
-export Modele_Scout_ParaCmdo_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_Scout_ParaCmdo_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_Scout_ParaCmdo_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
 export Modele_Scout_ParaCmdo_BEL_03 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_spe )
 export Modele_Scout_ParaCmdo_BEL_04 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_2 )
 export Modele_Scout_ParaCmdo_BEL_05 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
-export Modele_Scout_ParaCmdo_BEL_06 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_spe )
+export Modele_Scout_ParaCmdo_BEL_06 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_2 )
 export Modele_Scout_ParaCmdo_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1_LOW )
 
 //Scout_ParaCmdo_Mech_BEL
-export Modele_Scout_ParaCmdo_Mech_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
-export Modele_Scout_ParaCmdo_Mech_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_2 )
-export Modele_Scout_ParaCmdo_Mech_BEL_03 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_Scout_ParaCmdo_Mech_BEL is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_NCO )
+export Modele_Scout_ParaCmdo_Mech_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1 )
+export Modele_Scout_ParaCmdo_Mech_BEL_03 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_spe )
+export Modele_Scout_ParaCmdo_Mech_BEL_04 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_2 )
 export Modele_Scout_ParaCmdo_Mech_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_1_LOW )
 
 //LRRP_BEL
@@ -3179,12 +3194,23 @@ export Modele_LRRP_BEL_08 is TemplateMeshDescriptor( FileName = BEL_ParaCmdo_spe
 export Modele_LRRP_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_ESR_1_LOW )
 
 //Provincial_CMD_BEL
-export Modele_Provincial_CMD_BEL is TemplateMeshDescriptor( FileName = RFA_Jager_1 )
-export Modele_Provincial_CMD_BEL_LOW is TemplateMeshDescriptor( FileName = RFA_Jager_LOW )
+export Modele_Provincial_CMD_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Provincial_CMD_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_Officer )
+export Modele_Provincial_CMD_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Provincial_CMD_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Provincial_CMD_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Provincial_CMD_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Provincial_CMD_BEL_07 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Provincial_CMD_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Provincial_BEL
-export Modele_Provincial_BEL is TemplateMeshDescriptor( FileName = RFA_Jager_1 )
-export Modele_Provincial_BEL_LOW is TemplateMeshDescriptor( FileName = RFA_Jager_LOW )
+export Modele_Provincial_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Provincial_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Provincial_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Provincial_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Provincial_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Provincial_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Provincial_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Rifles_CMD_BEL
 export Modele_Rifles_CMD_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
@@ -3196,79 +3222,127 @@ export Modele_Rifles_CMD_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_
 export Modele_Rifles_CMD_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Reserve_BEL
-export Modele_Reserve_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Reserve_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
 export Modele_Reserve_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
 export Modele_Reserve_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
-export Modele_Reserve_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Reserve_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
 export Modele_Reserve_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
 export Modele_Reserve_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
 export Modele_Reserve_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Rifles_AT_BEL
-export Modele_Rifles_AT_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Rifles_AT_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
 export Modele_Rifles_AT_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
 export Modele_Rifles_AT_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
-export Modele_Rifles_AT_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Rifles_AT_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
 export Modele_Rifles_AT_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
 export Modele_Rifles_AT_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
 export Modele_Rifles_AT_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Mech_Rifles_AT_BEL
-export Modele_Mech_Rifles_AT_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Mech_Rifles_AT_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Mech_Rifles_AT_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Mech_Rifles_AT_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Mech_Rifles_AT_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Mech_Rifles_AT_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Mech_Rifles_AT_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
 export Modele_Mech_Rifles_AT_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Mech_Rifles_CMD_BEL
-export Modele_Mech_Rifles_CMD_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Mech_Rifles_CMD_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Mech_Rifles_CMD_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_Officer )
+export Modele_Mech_Rifles_CMD_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Mech_Rifles_CMD_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Mech_Rifles_CMD_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
 export Modele_Mech_Rifles_CMD_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Mech_Rifles_MG_BEL
-export Modele_Mech_Rifles_MG_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Mech_Rifles_MG_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Mech_Rifles_MG_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Mech_Rifles_MG_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Mech_Rifles_MG_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Mech_Rifles_MG_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Mech_Rifles_MG_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
 export Modele_Mech_Rifles_MG_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Rifles_BEL
-export Modele_Rifles_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Rifles_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
 export Modele_Rifles_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
-export Modele_Rifles_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
-export Modele_Rifles_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Rifles_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Rifles_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
 export Modele_Rifles_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
-export Modele_Rifles_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Rifles_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
 export Modele_Rifles_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //MANPAD_Mistral_BEL
-export Modele_MANPAD_Mistral_BEL is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_1 )
-export Modele_MANPAD_Mistral_BEL_LOW is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_LOW )
+export Modele_MANPAD_Mistral_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_MANPAD_Mistral_BEL_01 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_MANPAD_Mistral_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Engineers_CMD_BEL
-export Modele_Engineers_CMD_BEL is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_1 )
-export Modele_Engineers_CMD_BEL_LOW is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_LOW )
-
-//Engineers_CMD_NL
-export Modele_Engineers_CMD_NL is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_1 )
-export Modele_Engineers_CMD_NL_LOW is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_LOW )
+export Modele_Engineers_CMD_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Engineers_CMD_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_Officer )
+export Modele_Engineers_CMD_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Engineers_CMD_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Engineers_CMD_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Engineers_CMD_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Engineers_AT_BEL
-export Modele_Engineers_AT_BEL is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_1 )
-export Modele_Engineers_AT_BEL_LOW is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_LOW )
+export Modele_Engineers_AT_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Engineers_AT_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Engineers_AT_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Engineers_AT_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Engineers_AT_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Engineers_AT_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Engineers_AT_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Engineers_BEL
-export Modele_Engineers_BEL is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_1 )
-export Modele_Engineers_BEL_LOW is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_LOW )
+export Modele_Engineers_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Engineers_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Engineers_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Engineers_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Engineers_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Engineers_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Engineers_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Engineers_Flam_BEL
-export Modele_Engineers_Flam_BEL is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_1 )
-export Modele_Engineers_Flam_BEL_LOW is TemplateMeshDescriptor( FileName = RFA_PzGrenadier_LOW )
+export Modele_Engineers_Flam_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Engineers_Flam_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Engineers_Flam_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Engineers_Flam_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Engineers_Flam_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Engineers_Flam_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Engineers_Flam_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Scout_Provincial_AT_BEL
-export Modele_Scout_Provincial_AT_BEL is TemplateMeshDescriptor( FileName = RFA_Jager_1 )
-export Modele_Scout_Provincial_AT_BEL_LOW is TemplateMeshDescriptor( FileName = RFA_Jager_LOW )
+export Modele_Scout_Provincial_AT_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Scout_Provincial_AT_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Scout_Provincial_AT_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Scout_Provincial_AT_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Scout_Provincial_AT_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Scout_Provincial_AT_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Scout_Provincial_AT_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
 
 //Scout_Provincial_BEL
-export Modele_Scout_Provincial_BEL is TemplateMeshDescriptor( FileName = RFA_Jager_1 )
-export Modele_Scout_Provincial_BEL_LOW is TemplateMeshDescriptor( FileName = RFA_Jager_LOW )
+export Modele_Scout_Provincial_BEL is TemplateMeshDescriptor( FileName = BEL_Linie_NCO )
+export Modele_Scout_Provincial_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Scout_Provincial_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Linie_spe )
+export Modele_Scout_Provincial_BEL_04 is TemplateMeshDescriptor( FileName = BEL_Linie_1 )
+export Modele_Scout_Provincial_BEL_05 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Scout_Provincial_BEL_06 is TemplateMeshDescriptor( FileName = BEL_Linie_2 )
+export Modele_Scout_Provincial_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Linie_1_LOW )
+
+//Scout_BEL
+export Modele_Scout_BEL is TemplateMeshDescriptor( FileName = BEL_Chasseur_NCO )
+export Modele_Scout_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Chasseur_2 )
+export Modele_Scout_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Chasseur_1 )
+export Modele_Scout_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Chasseur_1_LOW )
 
 //Scout_AT_BEL
-export Modele_Scout_AT_BEL is TemplateMeshDescriptor( FileName = UK_Rifleman_1 )
-export Modele_Scout_AT_BEL_LOW is TemplateMeshDescriptor( FileName = UK_Para_1_LOW )
+export Modele_Scout_AT_BEL is TemplateMeshDescriptor( FileName = BEL_Chasseur_NCO )
+export Modele_Scout_AT_BEL_02 is TemplateMeshDescriptor( FileName = BEL_Chasseur_2 )
+export Modele_Scout_AT_BEL_03 is TemplateMeshDescriptor( FileName = BEL_Chasseur_1 )
+export Modele_Scout_AT_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_Chasseur_1_LOW )
 
 //Sniper_ESR_BEL
 export Modele_Sniper_ESR_BEL is TemplateMeshDescriptor( FileName = BEL_ESR_1 )
@@ -3276,8 +3350,8 @@ export Modele_Sniper_ESR_BEL_02 is TemplateMeshDescriptor( FileName = BEL_ESR_2 
 export Modele_Sniper_ESR_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_ESR_1_LOW )
 
 //MP_BEL
-export Modele_MP_BEL is TemplateMeshDescriptor( FileName = US_GI_1 )
-export Modele_MP_BEL_LOW is TemplateMeshDescriptor( FileName = US_GI_1_LOW )
+export Modele_MP_BEL is TemplateMeshDescriptor( FileName = BEL_MP_1 )
+export Modele_MP_BEL_LOW is TemplateMeshDescriptor( FileName = BEL_MP_1_LOW )
 
 //------------------------------------------------------------------------------
 //
@@ -3586,3 +3660,5 @@ Civil7_Pastel_Male is 'GameData:/Assets/3D/Units/URSS/Infanterie/Civil7_Pastel_M
 Civil8_Princess is    'GameData:/Assets/3D/Units/URSS/Infanterie/Civil8_Princess/Civil8_Princess.Ase2NdfBin'
 Civil9_Punk_Female is 'GameData:/Assets/3D/Units/URSS/Infanterie/Civil9_Punk_Female/Civil9_Punk_Female.Ase2NdfBin'
 Civil10_Punk_Male is  'GameData:/Assets/3D/Units/URSS/Infanterie/Civil10_Punk_Male/Civil10_Punk_Male.Ase2NdfBin'
+
+

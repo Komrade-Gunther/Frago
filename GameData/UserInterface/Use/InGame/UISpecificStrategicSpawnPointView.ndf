@@ -90,7 +90,7 @@ BUCKSpecificStrategicSpawnPointMainComponentDescriptor is BUCKContainerDescripto
                     (
                         ComponentFrame = TUIFramePropertyRTTI
                         (
-                            MagnifiableWidthHeight = [ 5.0, 100.0] //hauteur pour que la pancarte passe par dessus les labels des pions  //71 //41
+                            MagnifiableWidthHeight = [ 5.0, 113.0] //hauteur pour que la pancarte passe par dessus les labels des pions  //71 //41
                             RelativeOffset = [0.5, 0.0]
                             AlignementToAnchor = [ 0.5, 0.0 ]
                         )
@@ -158,30 +158,20 @@ UISpecificStrategicSpawnPointViewDescriptor is TUISpecificStrategicSpawnPointVie
 
     LabelsLayer = $/UserInterface/UI3DLayer_General
 
-    LabelsTransformation = TLabelTransformationComposition
+    LabelsTransformation = TLabelTransformPreTranslateFaceCamFakePerspective
     (
-        Transformations = [
-            TLabelTransformFaceCam
-            (
-                Camera = $/M3D/Camera/CameraPrincipale
-            ),
-            TLabelTransformFakePerspective
-            (
-                ScalePerAltitudeConstReso = 1.5
-                Camera = $/M3D/Camera/CameraPrincipale
-                Scene2D = $/M3D/Scene/Scene_2D_Interface
-                ConstnessFactor = 0.6
-            ),
-        ]
-
+        ScalePerAltitudeConstReso = 1.5
+        Camera = $/M3D/Camera/CameraPrincipale
+        Scene2D = $/M3D/Scene/Scene_2D_Interface
+        ConstnessFactor = 0.6
     )
 
     //Transparence appliquée aux pancartes quand un autre groupe de renfort est ouvert
     TransparencyForNotSelectedReinforcementGroup = 0.25  //0.0 = invisible, 1.0 = opaque
 
     //cf. BlockColorsMap dans DefaultStyleGuides.ndf
-    ColorTokenSpawnCapturedByEnemy = "BeigeSteelman"
-    ColorTokenSpawnCapturedByLocalPlayer = "GrisSteelman"
+    ColorTokenSpawnCapturedByEnemy = "drapeau_renfort_nogo"
+    ColorTokenSpawnCapturedByLocalPlayer = "drapeau_renfort_go"
     ColorTokenSpawnPointMain = "SM_LDhint_texte_gen" //"GrisSteelman"
 
     //Période d'un cycle de clignotement d'un point de spawn contrôlé bloqué par un ennemi (en seconde)

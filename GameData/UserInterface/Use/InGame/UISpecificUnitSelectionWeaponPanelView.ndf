@@ -206,8 +206,8 @@ private WeaponPanelWeaponStatus is BUCKContainerDescriptor
                         ChronoTexture = "icone_reticule"
                         TextureToken = "icone_reticule_vide"
 
-                        ChronoTextureColor0 = "Transparent"
-                        ChronoTextureColor1 = "Vert"
+                        ChronoBackgroundColor = "Transparent"
+                        ChronoForegroundColor = "Vert"
 
                         TextureFrame = TUIFramePropertyRTTI(RelativeWidthHeight = [1.0, 1.0])
                     )

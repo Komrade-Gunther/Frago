@@ -84,6 +84,7 @@ template StatsPanelMultiListLine
 ]
 is BUCKButtonDescriptor
 (
+    ElementName = "StatsPanelMultiListLine_" + <ElementName>
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 0.0]
@@ -110,55 +111,17 @@ is BUCKButtonDescriptor
             Axis = ~/ListAxis/Horizontal
             BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
             FirstMargin = TRTTILength(Magnifiable = 20.0)
+            InterItemMargin = TRTTILength(Magnifiable = 5.0)
+            LastMargin = TRTTILength(Magnifiable = 40.0)
 
             Elements =
             [
                 // Stat name (e.g. Player level, victories...)
                 BUCKListElementDescriptor
                 (
-                    ExtendWeight = 1
-                    ComponentDescriptor = BUCKContainerDescriptor
-                    (
-                        ElementName = 'StatsName' + <ElementName>
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            RelativeWidthHeight = [1.0, 1.0]
-                        )
-
-                        Components =
-                        [
-                            BUCKTextDescriptor
-                            (
-                                ElementName = 'TextName' + <ElementName>
-                                ComponentFrame = TUIFramePropertyRTTI
-                                (
-                                    RelativeWidthHeight = [1.0, 1.0]
-                                    AlignementToAnchor = [0.5, 0.5]
-                                    AlignementToFather = [0.5, 0.5]
-                                )
-
-                                ParagraphStyle = TParagraphStyleRTTI
-                                (
-                                    Alignment = ~/UIText_Left
-                                    VerticalAlignment = ~/UIText_VerticalCenter
-                                )
-                                TextToken = <TextToken>
-                                TextStyle = 'Default'
-                                TypefaceToken = "Courrier"
-                                TextColor = "noir_param"
-                                TextSize = "14"
-                                TextDico = ~/LocalisationConstantes/dico_interface_outgame
-                            )
-                        ]
-                    )
-                ),
-                // Stat value
-                BUCKListElementDescriptor
-                (
-                    //ExtendWeight = 0.8
                     ComponentDescriptor = BUCKTextDescriptor
                     (
-                        ElementName = 'TextValue' + <ElementName>
+                        ElementName = "TextName" + <ElementName>
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [0.0, 1.0]
@@ -168,22 +131,47 @@ is BUCKButtonDescriptor
 
                         ParagraphStyle = TParagraphStyleRTTI
                         (
-                            Alignment = ~/UIText_Right
+                            Alignment = ~/UIText_Left
                             VerticalAlignment = ~/UIText_VerticalCenter
                         )
-                        HorizontalFitStyle = ~/FitStyle/UserDefined
-                        TextStyle = 'Default'
+
+                        HorizontalFitStyle = ~/FitStyle/FitToContent
+                        TextToken = <TextToken>
+                        TextStyle = "Default"
                         TypefaceToken = "Courrier"
-                        TextSize = '14'
-                        TextColor = 'gris_stats'
+                        TextColor = "noir_param"
+                        TextSize = "14"
                         TextDico = ~/LocalisationConstantes/dico_interface_outgame
                     )
                 ),
-
+                // Stat value
                 BUCKListElementDescriptor
                 (
-                    ExtendWeight = 0.2
-                    ComponentDescriptor = BUCKContainerDescriptor ( ComponentFrame = TUIFramePropertyRTTI ())
+                    ExtendWeight = 1
+                    ComponentDescriptor = BUCKTextDescriptor
+                    (
+                        ElementName = "TextValue" + <ElementName>
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            RelativeWidthHeight = [1.0, 1.0]
+                            AlignementToAnchor = [0.0, 0.5]
+                            AlignementToFather = [0.0, 0.5]
+                        )
+
+                        ParagraphStyle = TParagraphStyleRTTI
+                        (
+                            Alignment = ~/UIText_Right
+                            VerticalAlignment = ~/UIText_VerticalCenter
+                            BigWordAction = ~/BigWordAction/BigWordCut
+                        )
+
+                        HorizontalFitStyle = ~/FitStyle/UserDefined
+                        TextStyle = "Default"
+                        TypefaceToken = "Courrier"
+                        TextSize = "14"
+                        TextColor = "gris_stats"
+                        TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                    )
                 )
             ]
         )

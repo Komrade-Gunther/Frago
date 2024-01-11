@@ -19,11 +19,6 @@ UseStrategic_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
         ("UseStrategic_Labels_Fatigue_4",                             MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_Fatigue_4)] ),
         ("UseStrategic_Labels_Fatigue_5",                             MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_Fatigue_5)] ),
 
-        ("UseStrategic_Labels_Boxing",                               MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_Boxing)] ),
-        ("UseStrategic_Labels_DenyArea",                             MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_DenyArea)] ),
-        ("UseStrategic_Labels_RecoArea",                             MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_RecoArea)] ),
-        ("UseStrategic_Labels_FortificationEnCours",                 MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_FortificationEnCours)] ),
-        ("UseStrategic_Labels_Fortified",                            MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_Fortified)] ),
         ("UseStrategic_Labels_FortificationAntiAirEnCours",          MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_FortificationAntiAirEnCours)] ),
         ("UseStrategic_Labels_FortificationAntiAir",                 MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_FortificationAntiAir)] ),
         ("UseStrategic_Labels_Arrow",                                MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_Arrow)] ),
@@ -44,7 +39,10 @@ UseStrategic_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
 
         ("UseStrategic_Labels_Terrain_TerrainUrbain",                MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/terrain_urbain.png"))] ),
         ("UseStrategic_Labels_Terrain_TerrainForet",                 MAP [(~/ComponentState/Normal, ~/UseStrategic_Labels_Terrain_TerrainForet)] ),
-        ("UseStrategic_Labels_Terrain_TerrainPlaine",                       MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/terrain_plaine.png"))] ),
+        ("UseStrategic_Labels_Terrain_TerrainPlaine",                MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/terrain_plaine.png"))] ),
+
+        ("UseStrategic_Labels_NoCmd",                                MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/no_cmd.png"))] ),
+        ("UseStrategic_Labels_NoInfantry",                           MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/no_infantry.png"))] ),
 
 
         ("renfort_end", MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Renfort/renfort_end.png"))] ),
@@ -106,7 +104,7 @@ UseStrategic_AdditionalTextureBank is TBUCKToolAdditionalTextureBank
 
         ("UseStrategic_Lock_Company",                                MAP [(~/ComponentState/Normal, ~/UseStrategic_Lock_Company)] ),
 
-        ("UseInGame_division_icone",  MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/3rd_Armored_Division.png"))] ),
+        ("UseInGame_undefined_division_icone",  MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/undefined_division_slot.png"))] ),
         ("UseStrategic_oob_L",  MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/oob_L.png"))] ),
     ]
 )
@@ -123,11 +121,6 @@ UseStrategic_Labels_Fatigue_4                            is TUIResourceTexture_I
 UseStrategic_Labels_Fatigue_5                            is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/Fatigue_5.png")
 
 
-UseStrategic_Labels_Boxing                               is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/Boxing.png")
-UseStrategic_Labels_DenyArea                             is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/DenyArea.png")
-UseStrategic_Labels_RecoArea                             is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/RecoArea.png")
-UseStrategic_Labels_FortificationEnCours                 is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/FortificationEnCours.png")
-UseStrategic_Labels_Fortified                            is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/Fortified.png")
 UseStrategic_Labels_FortificationAntiAirEnCours          is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/DCAModeEnCours.png")
 UseStrategic_Labels_FortificationAntiAir                 is TUIResourceTexture_InGame(FileName = "GameData:/Assets/2D/Interface/UseStrategic/Icons/DCA.png")
 

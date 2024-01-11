@@ -49,29 +49,19 @@ private UnitLabelAggregationViewDescriptor is BUCKSensibleAreaDescriptor
                         BUCKListElementDescriptor(ComponentDescriptor = ~/AggregatedUnitLabelUnitIcon),
                         BUCKListElementDescriptor
                         (
-                            ComponentDescriptor = UnitNameListSensibleArea
-                            (
-                                ComponentFrame = TUIFramePropertyRTTI
-                                (
-                                    AlignementToFather = [0.5, 0.0]
-                                    AlignementToAnchor = [0.5, 0.0]
-                                )
-                                IsForCarriedUnit = true
-                                LocalRenderLayer = 1
-                            )
+                            ComponentDescriptor = CarriedUnitNameListSensibleArea( LocalRenderLayer = 1 )
                         ),
                     ]
 
                     ForegroundComponents =
                     [
-                        UnitLabelUpperList
+                        CurrentUnitLabelUpperList
                         (
                             ComponentFrame = TUIFramePropertyRTTI
                             (
                                 AlignementToFather = [0.5, 0.0]
                                 AlignementToAnchor = [0.5, 1.0]
                             )
-                            IsForMultiSelection = false
                         ),
                     ]
                 ),
@@ -117,30 +107,19 @@ private UnitLabelAggregationViewNameOnlyDescriptor is BUCKLocalLayerContainerDes
             [
                 BUCKListElementDescriptor
                 (
-                    ComponentDescriptor = UnitLabelUpperList(IsForMultiSelection = false)
+                    ComponentDescriptor = CurrentUnitLabelUpperList()
                 ),
                 BUCKListElementDescriptor
                 (
-                    ComponentDescriptor = UnitNameListSensibleArea
-                    (
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            AlignementToFather = [0.5, 0.0]
-                            AlignementToAnchor = [0.5, 0.0]
-                        )
-                        IsForCarriedUnit = true
-                        LocalRenderLayer = 1
-                    )
+                    ComponentDescriptor = CarriedUnitNameListSensibleArea( LocalRenderLayer = 1 )
                 ),
                 BUCKListElementDescriptor
                 (
-                    ComponentDescriptor = UnitGroupCount
+                    ComponentDescriptor = SmartChipList
                     (
-                        ComponentFrame = TUIFramePropertyRTTI
-                        (
-                            AlignementToFather = [0.5, 0.0]
-                            AlignementToAnchor = [0.5, 0.0]
-                        )
+                        SmartGroupOnly = true
+                        AlignementToFather = [0.5, 0.0]
+                        AlignementToAnchor = [0.5, 0.0]
                         LocalRenderLayer = 2
                     )
                 )
@@ -184,54 +163,11 @@ private AggregatedUpperLabel is BUCKListDescriptor
 
         BUCKListElementDescriptor
         (
-            ComponentDescriptor = UnitNameListSensibleArea
+            ComponentDescriptor = CurrentUnitNameListSensibleArea
             (
-                IsForCarriedUnit = false
                 LocalRenderLayer = 1
             )
         ),
-    ]
-)
-
-
-//----------------------------------------------------------------------
-// Nombre de groupes d'unités
-template UnitGroupCount
-[
-    ComponentFrame : TUIFramePropertyRTTI,
-    LocalRenderLayer : int,
-] is BUCKTextDescriptor
-(
-    ElementName = "UnitGroupCount"
-    ComponentFrame = <ComponentFrame>
-    LocalRenderLayer = <LocalRenderLayer> + 1
-
-    ParagraphStyle = TParagraphStyleRTTI
-    (
-        Alignment = UIText_Center
-        VerticalAlignment = UIText_VerticalCenter
-        InterLine = 0
-    )
-
-    TextStyle = "Default"
-    TypefaceToken = "UISecondFont"
-    TextPadding = TRTTILength4(Magnifiable = [2.0, 1.0, 3.0, 1.0])
-    HorizontalFitStyle = ~/FitStyle/FitToContent
-    VerticalFitStyle = ~/FitStyle/FitToContent
-
-    TextColor = "Blanc"
-    TextSize = "14"
-
-    Components =
-    [
-        PanelRoundedCorner
-        (
-            BackgroundBlockColorToken = "Noir"
-            BorderLineColorToken = "Gris_pi"
-            Radius = 3
-            BackgroundLocalRenderLayer = <LocalRenderLayer>
-            BorderLocalRenderLayer = <LocalRenderLayer>
-        )
     ]
 )
 
@@ -269,27 +205,11 @@ private AggregatedUnitLabelUnitIcon is TBUCKSpecificLabelUnitIconDescriptor
             )
 
             Axis = ~/ListAxis/Vertical
-            InterItemMargin = TRTTILength(Magnifiable = 0.1)
 
             Elements =
             [
                 BUCKListElementDescriptor(ComponentDescriptor = OverlayIconContainer(LocalRenderLayer = 4)),
-                BUCKListElementDescriptor(ComponentDescriptor = UnitLabelUnitMoraleGaugeBUCKComponent(LocalRenderLayer = 3)),
-                BUCKListElementSpacer(Magnifiable = 1.0),
-                BUCKListElementDescriptor(ComponentDescriptor = UnitLabelHPGaugeBUCKComponent(LocalRenderLayer = 3))
-            ]
-
-            ForegroundComponents =
-            [
-                UnitGroupCount
-                (
-                    ComponentFrame = TUIFramePropertyRTTI
-                    (
-                        AlignementToFather = [0.5, 1.0]
-                        AlignementToAnchor = [0.5, 1.0]
-                    )
-                    LocalRenderLayer = 2
-                )
+                BUCKListElementDescriptor(ComponentDescriptor = UnitLabelUnitMoraleAndHPGaugesBUCKComponent(LocalRenderLayer = 3)),
             ]
         ),
         SmartChipList(LocalRenderLayer = 3),
@@ -306,13 +226,13 @@ private AggregatedUnitLabelUnitIcon is TBUCKSpecificLabelUnitIconDescriptor
 //----------------------------------------------------------------------
 
 // L'etiquette
-UISpecificUnitLabelAggregationViewDescriptor is UISpecificInGameUnitLabelViewDescriptor
+UISpecificUnitLabelAggregationViewDescriptor is UISpecificInGameUnitLabelViewForAggregationDescriptor
 (
     MainComponentDescriptor = ~/UnitLabelAggregationViewDescriptor
     DebugViewName = ""
 )
 
-UISpecificUnitLabelAggregationViewNameOnlyDescriptor is UISpecificInGameUnitLabelViewDescriptor
+UISpecificUnitLabelAggregationViewNameOnlyDescriptor is UISpecificInGameUnitLabelViewForAggregationDescriptor
 (
     MainComponentDescriptor = ~/UnitLabelAggregationViewNameOnlyDescriptor
     DebugViewName = ""

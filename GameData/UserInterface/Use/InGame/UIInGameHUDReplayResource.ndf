@@ -305,10 +305,13 @@ private ReplayPanel is BUCKListDescriptor
                                 VerticalAlignment = UIText_VerticalCenter
                             )
 
-                            HintTitleToken = "HRP_HDPNT"
-                            HintBodyToken = "HRP_HDPNB"
-                            HintExtendedToken = "HRP_HDPNE"
-                            HintDico = ~/LocalisationConstantes/dico_interface_ingame
+                            HintableAreaComponent = BUCKSpecificHintableArea
+                            (
+                                HintTitleToken = "HRP_HDPNT"
+                                HintBodyToken = "HRP_HDPNB"
+                                HintExtendedToken = "HRP_HDPNE"
+                                DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                            )
                         )
                     ),
                     BUCKListElementDescriptor
@@ -330,10 +333,13 @@ private ReplayPanel is BUCKListDescriptor
                                 VerticalAlignment = UIText_VerticalCenter
                             )
 
-                            HintTitleToken = "HRP_HDHUDT"
-                            HintBodyToken = "HRP_HDHUDB"
-                            HintExtendedToken = "HRP_HDHUDE"
-                            HintDico = ~/LocalisationConstantes/dico_interface_ingame
+                            HintableAreaComponent = BUCKSpecificHintableArea
+                            (
+                                HintTitleToken = "HRP_HDHUDT"
+                                HintBodyToken = "HRP_HDHUDB"
+                                HintExtendedToken = "HRP_HDHUDE"
+                                DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                            )
                         )
                     ),
                 ]

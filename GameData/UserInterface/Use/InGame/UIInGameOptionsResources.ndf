@@ -5,7 +5,6 @@ optionsResources is TUISpecificInGameOptionsResources
     ShowArmorValues                     = $/GUIOption/ShowArmorValues
     LabelSize                           = $/GUIOption/LabelsSize
     StrategicLabelSize                  = $/GUIOption/StrategicLabelsSize
-    StrategicPawnSpeed                  = $/GameplayOption/StrategicPawnSpeed
     MinimalistTargetCursorDisplay       = $/GUIOption/MinimalistTargetCursorDisplay
     MinimapDisplay                      = $/GUIOption/MinimapDisplay
     AutoCreateSmartGroup                = $/GUIOption/AutoCreateSmartGroup

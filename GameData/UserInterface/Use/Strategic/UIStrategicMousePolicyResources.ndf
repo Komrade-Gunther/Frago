@@ -1,4 +1,3 @@
-//RefMagnification is 4. div 3.
 
 private MouseCurseur_AssaultPossible is TMouseCursorAnimation
 (
@@ -62,6 +61,8 @@ private MouseWidget_MultiSelectionStrategic is Template_HardwareMouseWidgetResou
 
 StrategicTerrainTypeToMouseCursorAnimation is MAP
 [
+    (ETerrainType/None,                 ~/MouseCursorAnimationDefault),
+    (ETerrainType/Default,              ~/MouseCursorAnimationDefault),
     (ETerrainType/StrategicForest,      ~/MouseCurseur_strategic_foret),
     (ETerrainType/StrategicPlain,       ~/MouseCurseur_strategic_plaine),
     (ETerrainType/StrategicSemiUrban,   ~/MouseCurseur_strategic_semiurbain),
@@ -90,7 +91,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
             ~/ETerrainType/StrategicUrban, // semi urbain pour l'instant
             THintContentHolder
             (
-                TitleToken = "smTer_s"
+                TitleToken = "smTer_u"
                 BodyToken = ""
                 ExtendedToken = ""
             )
@@ -100,7 +101,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
             THintContentHolder
             (
                 BodyToken = "smTer_f"
-                ExtendedToken = "smTer_fe"
+                ExtendedToken = ""
             )
         ),
 
@@ -109,7 +110,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
             THintContentHolder
             (
                 BodyToken = "smTer_s"
-                ExtendedToken = "smTer_se"
+                ExtendedToken = ""
             )
         ),
         (
@@ -117,7 +118,7 @@ MouseWidget_StrategicSelectNeutralLand is Template_HardwareMouseWidgetResource_W
             THintContentHolder
             (
                 BodyToken = "smTer_p"
-                ExtendedToken = "smTer_pe"
+                ExtendedToken = ""
             )
         ),
 
@@ -322,122 +323,6 @@ MouseWidget_StrategicOrderNeutralLand is Template_HardwareMouseWidgetResource_Wi
 //--------------------------------------------------------
 // Strategic Orders
 //--------------------------------------------------------
-private MouseCurseur_TransferOrder is TMouseCursorAnimation
-(
-    HotSpotX           = 0
-    HotSpotY           = 0
-    AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/UseStrategic/Cursors/curseur_transfer.png",
-        ]
-    )
-)
-
-private MouseCurseur_DefaultOrder is TMouseCursorAnimation
-(
-    HotSpotX           = 0
-    HotSpotY           = 0
-    AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/UseStrategic/Cursors/curseur_steelman_deny.png",
-        ]
-    )
-)
-
-private MouseCurseur_RecoOrder is TMouseCursorAnimation
-(
-    HotSpotX           = 0
-    HotSpotY           = 0
-    AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/UseStrategic/Cursors/curseur_steelman_reco.png",
-        ]
-    )
-)
-
-private MouseCurseur_InvalidOrder is TMouseCursorAnimation
-(
-    HotSpotX           = 0
-    HotSpotY           = 0
-    AnimationCycleTime = 1
-    TextureList = TResourceDescriptorTextureAnimation
-    (
-        UsefulnessMask = CivMask/Common + TypeMask/PCInterface
-        FileNameList =
-        [
-            "GameData:/Assets/2D/Interface/Common/Cursors/curseur_invalide.png",
-        ]
-    )
-)
-
-template Template_HardwareMouseWidgetResource_WithGabarit
-[
-    HardwareMouseCursorAnimation = ~/MouseCursorAnimationDefault,
-    RelativeTextPlacement = [0.5, 1.5],
-    TextSize = "MouseWidget/TextModuleBig"
-]
-is TUIMouseWidgetResource
-(
-    ModuleResourceList =
-    MAP
-    [
-        (
-            "CursorSetter",
-            TUIMouseWidgetSimpleCursorSetterModuleResource
-            (
-                HardwareMouseCursorAnimation = <HardwareMouseCursorAnimation>
-            )
-        ),
-        (
-            "GabaritModule",
-            TUIMouseWidgetGabaritModuleResource()
-        ),
-    ]
-
-    UILayer = $/UserInterface/UILayer_2DInterface_InGame
-
-    ViewDescriptors = MAP
-    [
-        (
-            "TextView",
-            UIMouseWidgetTextViewDescriptor
-            (
-                RelativeTextPlacement = <RelativeTextPlacement>
-                TextSize = <TextSize>
-            )
-        ),
-    ]
-)
-
-private MouseWidget_TransferOrder is Template_HardwareMouseWidgetResource_WithGabarit
-(
-    HardwareMouseCursorAnimation    = ~/MouseCurseur_TransferOrder
-)
-private MouseWidget_DefaultOrder is Template_HardwareMouseWidgetResource_WithGabarit
-(
-    HardwareMouseCursorAnimation    = ~/MouseCurseur_DefaultOrder
-)
-private MouseWidget_RecoOrder is Template_HardwareMouseWidgetResource_WithGabarit
-(
-    HardwareMouseCursorAnimation    = ~/MouseCurseur_RecoOrder
-)
-private MouseWidget_InvalidOrder is Template_HardwareMouseWidgetResource_WithGabarit
-(
-    HardwareMouseCursorAnimation    = ~/MouseCurseur_InvalidOrder
-)
-
 StrategicMouseWidgetSelector_Default is TUIStrategicMouseWidgetSelectorDefault
 (
     MouseWidgetList = MAP
@@ -462,102 +347,8 @@ StrategicMouseWidgetSelector_Default is TUIStrategicMouseWidgetSelectorDefault
         (TextStyle_Invalid      , "WidgetSelector/Invalid"),
     ]
 
-    TooCloseToken   = ""
-    OutOfRangeToken = ""
     KilometersToken = "RANGE_KM"
     AttackAvailableToken = "CUR_ASSAUL"
-)
-
-StrategicMouseWidgetSelector_DenyOrder is TUIStrategicMouseWidgetSelectorOrder
-(
-    MouseWidgetList = MAP
-    [
-        (Cursor_None             , ~/MouseWidget_Blank),
-        (Cursor_Default          , ~/MouseWidget_DefaultOrder),
-        (Cursor_OrderInvalid     , ~/MouseWidget_InvalidOrder),
-    ]
-
-    TextColorMap = MAP
-    [
-        (TextStyle_WithinRange  , "WidgetSelector/WithinRange"),
-        (TextStyle_OutOfRange   , "WidgetSelector/OutOfRange"),
-        (TextStyle_Invalid      , "WidgetSelector/Invalid"),
-    ]
-
-    ValidOrderToken = "CUR_DENVAL"
-    InvalidOrderToken = "CUR_DENINV"
-
-    SignpostTitleToken = "SIG_DENTIT"
-    SignpostBodyToken = "SIG_DENBOD"
-)
-
-StrategicMouseWidgetSelector_RecoOrder is TUIStrategicMouseWidgetSelectorOrder
-(
-    MouseWidgetList = MAP
-    [
-        (Cursor_None             , ~/MouseWidget_Blank),
-        (Cursor_Default          , ~/MouseWidget_RecoOrder),
-        (Cursor_OrderInvalid     , ~/MouseWidget_InvalidOrder),
-    ]
-
-    TextColorMap = MAP
-    [
-        (TextStyle_WithinRange  , "WidgetSelector/WithinRange"),
-        (TextStyle_OutOfRange   , "WidgetSelector/OutOfRange"),
-        (TextStyle_Invalid      , "WidgetSelector/Invalid"),
-    ]
-
-    ValidOrderToken = "CUR_RECVAL"
-    InvalidOrderToken = "CUR_RECINV"
-
-    SignpostTitleToken = "SIG_RECTIT"
-    SignpostBodyToken = "SIG_RECBOD"
-)
-
-StrategicMouseWidgetSelector_BoxingOrder is TUIStrategicMouseWidgetSelectorOrder
-(
-    MouseWidgetList = MAP
-    [
-        (Cursor_None             , ~/MouseWidget_Blank),
-        (Cursor_Default          , ~/MouseWidget_DefaultOrder),
-        (Cursor_OrderInvalid     , ~/MouseWidget_InvalidOrder),
-    ]
-
-    TextColorMap = MAP
-    [
-        (TextStyle_WithinRange  , "WidgetSelector/WithinRange"),
-        (TextStyle_OutOfRange   , "WidgetSelector/OutOfRange"),
-        (TextStyle_Invalid      , "WidgetSelector/Invalid"),
-    ]
-
-    ValidOrderToken = "CUR_BOXVAL"
-    InvalidOrderToken = "CUR_BOXINV"
-
-    SignpostTitleToken = "ORD_ARDENY"
-    SignpostBodyToken = "SIG_BOXBOD"
-)
-
-StrategicMouseWidgetSelector_BombOrder is TUIStrategicMouseWidgetSelectorOrder
-(
-    MouseWidgetList = MAP
-    [
-        (Cursor_None             , ~/MouseWidget_Blank),
-        (Cursor_Default          , ~/MouseWidget_DefaultOrder),
-        (Cursor_OrderInvalid     , ~/MouseWidget_InvalidOrder),
-    ]
-
-    TextColorMap = MAP
-    [
-        (TextStyle_WithinRange  , "WidgetSelector/WithinRange"),
-        (TextStyle_OutOfRange   , "WidgetSelector/OutOfRange"),
-        (TextStyle_Invalid      , "WidgetSelector/Invalid"),
-    ]
-
-    ValidOrderToken = "CUR_BOMVAL"
-    InvalidOrderToken = "CUR_BOMINV"
-
-    SignpostTitleToken = "SIG_BOMTIT"
-    SignpostBodyToken = "SIG_BOMBOD"
 )
 
 private StrategicMousePolicyManagerResources is TUIStrategicMousePolicyManagerResources
@@ -577,22 +368,6 @@ private StrategicMousePolicyManagerResources is TUIStrategicMousePolicyManagerRe
         (
             "MouseWidgetSelector_DefaultOrder",
             ~/MouseWidgetSelector_DefaultOrder //Nico : Ca me parait bizarre de pas utiliser celui du strategic ici mais je porte le comportement tel qu'il était
-        ),
-        (
-            "MouseWidgetSelector_DenyOrder",
-            ~/StrategicMouseWidgetSelector_DenyOrder
-        ),
-        (
-            "MouseWidgetSelector_BoxingOrder",
-            ~/StrategicMouseWidgetSelector_BoxingOrder
-        ),
-        (
-            "MouseWidgetSelector_BombOrder",
-            ~/StrategicMouseWidgetSelector_BombOrder
-        ),
-        (
-            "MouseWidgetSelector_RecoOrder",
-            ~/StrategicMouseWidgetSelector_RecoOrder
         ),
     ]
 )

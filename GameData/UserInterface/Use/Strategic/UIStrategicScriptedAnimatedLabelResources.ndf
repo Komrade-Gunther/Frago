@@ -1,7 +1,7 @@
 StrategicScriptedLabelResources is TUIScriptedAnimatedLabelResources
 (
     Layer = $/UserInterface/UILayer_Labels
-    WorldFloorProxy = $/M3D/Scene/WorldFloorForIAProxy
+    WorldFloorProxy = $/M3D/Scene/WorldFloorOutMapProxy
 
     LabelMagnificationMultiplier = 1.0
 
@@ -48,21 +48,12 @@ is  TUIScriptedAnimatedLabelDescriptor
     NewAnimatedLabelToken = "OBJ_NEWI"
     AnimPriority = <AnimPriority>
 
-    LabelTransformation = TLabelTransformationComposition
+    LabelTransformation = TLabelTransformPreTranslateFaceCamFakePerspective
     (
-        Transformations = [
-            TLabelTransformFaceCam
-            (
-                Camera = $/M3D/Camera/CameraPrincipale
-            ),
-            TLabelTransformFakePerspective
-            (
-                ScalePerAltitudeConstReso = 0.6
-                Camera = $/M3D/Camera/CameraPrincipale
-                Scene2D = $/M3D/Scene/Scene_2D_Interface
-                ConstnessFactor = 0.6
-            ),
-        ]
+        ScalePerAltitudeConstReso = 0.6
+        Camera = $/M3D/Camera/CameraPrincipale
+        Scene2D = $/M3D/Scene/Scene_2D_Interface
+        ConstnessFactor = 0.6
     )
 
     ComponentDescriptor = BUCKListDescriptor
@@ -210,21 +201,12 @@ is  TUIScriptedAnimatedLabelDescriptor
     NewAnimatedLabelToken = "OBJ_NEWI"
     AnimPriority = <AnimPriority>
 
-    LabelTransformation = TLabelTransformationComposition
+    LabelTransformation = TLabelTransformPreTranslateFaceCamFakePerspective
     (
-        Transformations = [
-            TLabelTransformFaceCam
-            (
-                Camera = $/M3D/Camera/CameraPrincipale
-            ),
-            TLabelTransformFakePerspective
-            (
-                ScalePerAltitudeConstReso = 0.6
-                Camera = $/M3D/Camera/CameraPrincipale
-                Scene2D = $/M3D/Scene/Scene_2D_Interface
-                ConstnessFactor = 0.6
-            ),
-        ]
+        ScalePerAltitudeConstReso = 0.6
+        Camera = $/M3D/Camera/CameraPrincipale
+        Scene2D = $/M3D/Scene/Scene_2D_Interface
+        ConstnessFactor = 0.6
     )
 
     ComponentDescriptor = BUCKListDescriptor
@@ -394,21 +376,12 @@ is TUIScriptedAnimatedLabelDescriptor
     NewAnimatedLabelToken = <NewAnimatedLabelToken>
     AnimPriority = <AnimPriority>
 
-    LabelTransformation = TLabelTransformationComposition
+    LabelTransformation = TLabelTransformPreTranslateFaceCamFakePerspective
     (
-        Transformations = [
-            TLabelTransformFaceCam
-            (
-                Camera = $/M3D/Camera/CameraPrincipale
-            ),
-            TLabelTransformFakePerspective
-            (
-                ScalePerAltitudeConstReso = 0.6
-                Camera = $/M3D/Camera/CameraPrincipale
-                Scene2D = $/M3D/Scene/Scene_2D_Interface
-                ConstnessFactor = 0.6
-            ),
-        ]
+        ScalePerAltitudeConstReso = 0.6
+        Camera = $/M3D/Camera/CameraPrincipale
+        Scene2D = $/M3D/Scene/Scene_2D_Interface
+        ConstnessFactor = 0.6
     )
 
     ComponentDescriptor = BUCKListDescriptor
@@ -447,7 +420,7 @@ is TUIScriptedAnimatedLabelDescriptor
                             ElementName = "Pole"
 
                             HasBackground = true
-                            BackgroundBlockColorToken = 'Steelman_Background_BoutonOrdreDeBataille' //SD2_Blanc184'
+                            BackgroundBlockColorToken = 'Steelman_Objective_Pole'
                         ),
                         //Forme du drapeau (ce container est récupéré dans le C++ et la texture du drapeau est découpée puis appliquée à l'intérieur)
                         BUCKHintableAreaDescriptor
@@ -461,7 +434,7 @@ is TUIScriptedAnimatedLabelDescriptor
 
                             ElementName = "FlagContainer"
 
-                            HintStandardBUCKComponent = ~/HintInGameBUCKComponent
+                            HintStandardBUCKComponent = BUCKSpecificStrategicHint
                             MaskEvents = true //Évite que le hint du terrain s'affiche si la souris est immobile sur le drapeau
                         )
                     ]

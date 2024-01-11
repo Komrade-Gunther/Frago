@@ -2,17 +2,16 @@
 private MaxMeter is 500
 private CerclePositionAir is 2000
 private alpha is 160
-//------------------------------------------------------------------------------
-//******************************************************************************
-//------------------------------------------------------------------------------
 
+//------------------------------------------------------------------------------
 export OrderDisplayDrawer is TOrderDisplayDrawer
 (
     OrderDisplayDrawInfos = [
                                 //MOVE
                                 OrderDisplayMove,
-                                OrderDisplayAirplanePatrol,
+                                OrderDisplayFollow,
                                 OrderDisplayAirplaneMoveAndEngage,
+                                OrderDisplayAirplanePatrol,
                                 OrderDisplayQuickMove,
                                 OrderDisplayReverse,
                                 OrderDisplayAirplaneEvacuate,
@@ -21,6 +20,7 @@ export OrderDisplayDrawer is TOrderDisplayDrawer
                                 OrderDisplayEnterDistrict,
                                 OrderDisplayFastMoveAndAttack,
                                 //ATTACK
+                                OrderDisplayAssaultDistrict,
                                 OrderDisplayAttack,
                                 OrderDisplayAirplaneAttack,
                                 OrderDisplayShoot,
@@ -46,9 +46,11 @@ export OrderDisplayDrawer is TOrderDisplayDrawer
                                 OrderDisplayAIManageArtillery_CounterBattery,
                                 OrderDisplayAIManageArtillery_Auto,
                                 OrderDisplayAIAirplaneAutoManage,
-                                OrderDisplayAISupply
+                                OrderDisplayAISupply,
+
+                                OrderDisplaySell
                             ]
-    DefaultOrderDisplayDrawInfo = OrderDisplayDefault
+    DefaultOrderDisplayDrawInfo = OrderDisplayNotFound
     AltitudeMinToDrawDashLine = 100.0
     WorldFloorProxy = $/M3D/Scene/WorldFloorForIAProxy
 )
@@ -56,11 +58,24 @@ export OrderDisplayDrawer is TOrderDisplayDrawer
 //------------------------------------------------------------------------------
 //******************************************************************************
 //------------------------------------------------------------------------------
-export OrderDisplayDefault is TOrderDisplayDrawInfo
+export OrderDisplayNotFound is TOrderDisplayDrawInfo
 (
     OrderToken                  = ""
+    ColorLineStart              = [127, 0, 255, 50]
+    ColorLineEnd                = [127, 0, 255, alpha]
+    MaxMetersBetweenColors      = MaxMeter
+    LineThickness               = 2000.0
+    DisplayWaypoints            = true
+    HideNextOrders              = false
+    MustDrawCircle              = false
+    MustDrawArrow               = true
+)
+
+export OrderDisplaySell is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "Sell"
     ColorLineStart              = [240, 0, 0, 50]
-    ColorLineEnd                = [240, 0, 0, alpha] //Red
+    ColorLineEnd                = [240, 0, 0, alpha]
     MaxMetersBetweenColors      = MaxMeter
     LineThickness               = 2000.0
     DisplayWaypoints            = true
@@ -91,12 +106,32 @@ export OrderDisplayMove is TOrderDisplayDrawInfo
     AerialDashLineBaseCircleRadius     = CerclePositionAir
 )
 
+export OrderDisplayFollow is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "FollowUnit"
+    ColorLineStart              = [128, 187, 255, 50]
+    ColorLineEnd                = [128, 187, 255, alpha] //Light blue
+    MaxMetersBetweenColors      = MaxMeter
+    LineThickness               = 2000.0
+    DisplayWaypoints            = true
+    HideNextOrders              = false
+    MustDrawCircle              = false
+    MustDrawArrow               = true
+
+    AerialDashLineThickness     = 500.0
+    AerialDashLineDashLength    = 5.0
+    MustDrawDashLineForAerialOrderDestination = true
+    AerialDashLineDrawCircleAtBase = true
+    AerialDashLineBaseCircleThickness     = 500.0
+    AerialDashLineBaseCircleRadius     = CerclePositionAir
+)
+
 export OrderDisplayAirplanePatrol is TOrderDisplayDrawInfo
 (
     OrderToken                  = "AirplanePatrol"
-    ColorLineStart              = [128, 187, 255, 0]
+    ColorLineStart              = [128, 187, 255, 50]
     ColorLineEnd                = [128, 187, 255, alpha] //Light blue
-    MaxMetersBetweenColors      = 0
+    MaxMetersBetweenColors      = MaxMeter
     LineThickness               = 2000.0
     DisplayWaypoints            = true
     HideNextOrders              = false
@@ -243,6 +278,19 @@ export OrderDisplayAttack is TOrderDisplayDrawInfo
     HideNextOrders              = false
     MustDrawCircle              = true
     MustDrawArrow               = false
+)
+
+export OrderDisplayAssaultDistrict is TOrderDisplayDrawInfo
+(
+    OrderToken                  = "AssaultDistrict"
+    ColorLineStart              = [240, 0, 0, 50]
+    ColorLineEnd                = [240, 0, 0, alpha] //Red
+    MaxMetersBetweenColors      = MaxMeter
+    LineThickness               = 2000.0
+    DisplayWaypoints            = true
+    HideNextOrders              = false
+    MustDrawCircle              = false
+    MustDrawArrow               = true
 )
 
 export OrderDisplayAirplaneAttack is TOrderDisplayDrawInfo

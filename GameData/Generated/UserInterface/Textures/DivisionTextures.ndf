@@ -9,9 +9,9 @@ Texture_Division_Emblem_FR_5eDB is TUIResourceTexture_Common
 (
     FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/FR_5eDB.png"
 )
-Texture_Division_Emblem_default is TUIResourceTexture_Common
+Texture_Division_Emblem_FR_7eDB is TUIResourceTexture_Common
 (
-    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/default.png"
+    FileName = "GameData:/Assets/2D/Interface/UseOutGame/Division/Emblem/FR_7eDB.png"
 )
 Texture_Division_Emblem_Berlin_Command is TUIResourceTexture_Common
 (
@@ -138,7 +138,7 @@ DivisionAdditionalTextureBank is TBUCKToolAdditionalTextureBank
     [
         ("Texture_Division_Emblem_FR_11e_Para", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_11e_Para)]),
         ("Texture_Division_Emblem_FR_5eDB", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_5eDB)]),
-        ("Texture_Division_Emblem_default", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_default)]),
+        ("Texture_Division_Emblem_FR_7eDB", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_FR_7eDB)]),
         ("Texture_Division_Emblem_Berlin_Command", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_Berlin_Command)]),
         ("Texture_Division_Emblem_DDR_GroundForces_SansFond", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_DDR_GroundForces_SansFond)]),
         ("Texture_Division_Emblem_4_MSD_DDR", MAP [(~/ComponentState/Normal, ~/Texture_Division_Emblem_4_MSD_DDR)]),

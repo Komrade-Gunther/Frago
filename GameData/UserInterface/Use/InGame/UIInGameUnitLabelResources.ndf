@@ -8,7 +8,6 @@ InGameUnitLabelUpdateFeedbackType is TBaseClass
     Missile is 3
     Shell is 4
     Supply is 5
-    Length is 6
 )
 
 SpecificInGameUnitLabelResources is TUISpecificUnitLabelResources
@@ -21,25 +20,21 @@ SpecificInGameUnitLabelResources is TUISpecificUnitLabelResources
     OpacityControlByFloat           = $/M3D/Shader/UnitLabelOpacity
     FadeFactorForShaderParameter    = $/M3D/Scene/MaskAlphaFade
 
-    // pour configurer il faut ouvrir les ajustables : label et agregate
-    LabelInAggregatMagnifiableBox = [UnitLabelAggregationWidth, UnitLabelAggregationHeight]
-    LabelMagnifiableBox = [80, 30]
-    RatioToLabelInAggregatMagnifiableBox = [0.2, 0.4]
-    RatioToLabelMagnifiableBox = [0.20, 0.3]
+    LabelInAggregatMagnifiableBox = [UnitLabelAggregationWidth * 0.2, UnitLabelAggregationHeight * 0.4]
+    LabelMagnifiableBox = [16, 9]
     MagnifiableOffsetCenter = [0.0, -37.0]
     MagnifiableOffsetAggregatCenter = [0.0, -32.0]
 
     NbMaxAggregatedUnits = 12
 
-    MagnificationMultiplier = 1
+    // Valeur de transparence de la version de l'étiquette pour les ghost
+    GhostLabelVersionTransparency = 0.5
+    GhostLabelDeploymentVersionTransparency = 0.9
+
     UI3DTransformation = TModernWarfareLabelTransformation
     (
         Camera = $/M3D/Camera/CameraPrincipale
-        ScalePerAltitudeConstReso = 1.0 // pas touche! - voir sebastien
         Scene2D = $/M3D/Scene/Scene_2D_Interface
-        ConstnessFactor = 1
-        PreTranslate = [0.0, 0.0, 0.0]
-        PostTranslate = [0.0, 250.0, 0.0] // valeur pour régler la hauteur des étiquettes par rapport à l'unité
         RefResolution = [ 1920.0, 1080.0 ]
     )
 
@@ -50,5 +45,62 @@ SpecificInGameUnitLabelResources is TUISpecificUnitLabelResources
         (DamageFamily_balledca, ~/InGameUnitLabelUpdateFeedbackType/Bullets),
         (DamageFamily_ap_missile, ~/InGameUnitLabelUpdateFeedbackType/Missile),
     ]
+
+    // Smart Orders
+    SmartOrderLabelTokens = MAP
+    [
+        // Faire le lien avec PlayerMissionConstantes.ndf
+        (
+            1,
+            "ORD_AIATTS"
+        ),
+        (
+            2,
+            "ORD_AIDEFS"
+        ),
+        (
+            4,
+            "ORD_AIARFS"
+        ),
+        (
+            5,
+            "ORD_AIARCS"
+        ),
+        (
+            6,
+            "ORD_AIARAS"
+        ),
+        (
+            7,
+            "ORD_AIAAAS"
+        ),
+        (
+            9,
+            "ORD_AISUPL"
+        ),
+        (
+            10,
+            "ORD_INVLS"
+        ),
+    ]
+
+    // Textures
+    TerrainTypeToTexture = MAP
+    [
+        (ETerrainType/ForetLegere,  "CommonTexture_Couvert_Moyen"),
+        (ETerrainType/ForetDense,   "CommonTexture_Couvert_Moyen"),
+        (ETerrainType/LightSmoke,   "CommonTexture_Couvert_Moyen"),
+        (ETerrainType/MediumSmoke,  "CommonTexture_Couvert_Moyen"),
+        (ETerrainType/PetitBatiment,"CommonTexture_Couvert_Lourd"),
+        (ETerrainType/Batiment,     "CommonTexture_Couvert_Lourd"),
+        (ETerrainType/Ruin,         "CommonTexture_Couvert_Lourd"),
+    ]
+
+    // Couleurs du reticule de visee
+    AimingDefaultColor = "Cyan"
+    AimingWhileMovingColor = "Cyan50p"
+
+    ReloadingDefaultColor = "Vert"
+    ReloadingWhileMovingColor = "Vert50p"
 )
 

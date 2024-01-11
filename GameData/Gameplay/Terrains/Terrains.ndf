@@ -358,49 +358,6 @@ export EauPeuProfonde is TGameplayTerrain
     AuthorizeNearGroundFlying = true
 )
 
-export Urbain is TGameplayTerrain
-(
-    BloqueAmphibie = false
-    BloqueAtterrissage = true
-    BloqueInfanterie = false
-    BloqueVehicule = false
-    BloqueVision = false
-    CriticalEffectProbability = 0.05
-    DamageModifierPerFamilyAndResistance = MAP [
-        (
-            DamageFamily_balle,
-            MAP [
-                (
-                    ResistanceFamily_infanterie,
-                    0.8
-                ),
-            ]
-        ),
-        (
-            DamageFamily_he,
-            MAP [
-                (
-                    ResistanceFamily_infanterie,
-                    0.8
-                ),
-            ]
-        ),
-    ]
-    DebugColor = rgba[200, 170, 170, 255]
-    DissimulationModifierGroundAir = 40 //20
-    DissimulationModifierGroundGround = 40 //20
-    HeightInMeters = 4//8
-    InflammabilityProbability = 0.4
-    Name = 'Urbain'
-    SpeedModifierAllTerrainWheel = 1
-    SpeedModifierInfantry = 1
-    SpeedModifierTrack = 1
-    StealthBonus = 4 //7
-    //~~~~~~~~
-    TerrainType = ~/ETerrainType/Urbain
-    WorldLayerActiveMask = 255
-    AuthorizeNearGroundFlying = true
-)
 export Rocher is TGameplayTerrain
 (
     BloqueAmphibie = true

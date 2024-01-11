@@ -10,5 +10,5 @@ export Modele_M1_Abrams_US_MID is TemplateMeshDescriptor
 
 export Modele_M1_Abrams_US_LOW is TemplateMeshDescriptor
 (
-    FileName = 'GameData:/Assets/3D/Units/US/Char/LODS/M1_Abrams_LOW.fbx'
+    FileName = 'GameData:/Assets/3D/Units/US/Char/M1_Abrams_LOW/M1_Abrams_LOW.fbx'
 )

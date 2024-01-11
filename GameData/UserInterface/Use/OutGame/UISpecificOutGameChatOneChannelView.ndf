@@ -26,9 +26,6 @@ BUCKSpecificOutGameChatOneChannelMainComponentDescriptor is BUCKButtonDescriptor
         (
             ElementName = "ChannelButtonHintableArea"
             DicoToken = ~/LocalisationConstantes/dico_interface_outgame
-            HintTitleToken = ""
-            HintBodyToken = ""
-            HintExtendedToken = ""
         ),
         BUCKTextDescriptor
         (

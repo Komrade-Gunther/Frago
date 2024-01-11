@@ -63,11 +63,9 @@ is BUCKListDescriptor
                         BackgroundBlockColorToken = 'SM_Grullo_2'
                         BorderLineColorToken = 'SM_Noir'
                     ),
-                    BUCKSpecificHintableArea
+                    BUCKSpecificStrategicHintableArea
                     (
                         ElementName = "PawnSlotHintableArea"
-                        HintTitleToken = ""
-                        HintBodyToken = ""
                         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     ),
                     BUCKTextureDescriptor

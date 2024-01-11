@@ -326,6 +326,11 @@ GhostDepiction_ATteam_TOW_US is GhostVehicleDepictionTemplate
     Selector = Selector_ATteam_TOW_US
     Alternatives = Alternatives_ATteam_TOW_US
 )
+GhostDepiction_Alvis_Stalwart_UK is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_Alvis_Stalwart_UK
+    Alternatives = Alternatives_Alvis_Stalwart_UK
+)
 GhostDepiction_Atteam_Fagot_VDV_SOV is GhostVehicleDepictionTemplate
 (
     Selector = Selector_Atteam_Fagot_VDV_SOV
@@ -745,6 +750,11 @@ GhostDepiction_FV103_Spartan_BEL is GhostVehicleDepictionTemplate
 (
     Selector = Selector_FV103_Spartan_BEL
     Alternatives = Alternatives_FV103_Spartan_BEL
+)
+GhostDepiction_FV103_Spartan_GSR_UK is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_FV103_Spartan_GSR_UK
+    Alternatives = Alternatives_FV103_Spartan_GSR_UK
 )
 GhostDepiction_FV103_Spartan_UK is GhostVehicleDepictionTemplate
 (
@@ -1361,6 +1371,11 @@ GhostDepiction_M151_MUTT_trans_US is GhostVehicleDepictionTemplate
     Selector = Selector_M151_MUTT_trans_US
     Alternatives = Alternatives_M151_MUTT_trans_US
 )
+GhostDepiction_M163_CS_US is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_M163_CS_US
+    Alternatives = Alternatives_M163_CS_US
+)
 GhostDepiction_M163_PIVADS_US is GhostVehicleDepictionTemplate
 (
     Selector = Selector_M163_PIVADS_US
@@ -1576,6 +1591,11 @@ GhostDepiction_MAN_Kat_6x6_trans_RFA is GhostVehicleDepictionTemplate
     Selector = Selector_MAN_Kat_6x6_trans_RFA
     Alternatives = Alternatives_MAN_Kat_6x6_trans_RFA
 )
+GhostDepiction_MCV_80_Warrior_CMD_UK is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_MCV_80_Warrior_CMD_UK
+    Alternatives = Alternatives_MCV_80_Warrior_CMD_UK
+)
 GhostDepiction_MCV_80_Warrior_MILAN_UK is GhostVehicleDepictionTemplate
 (
     Selector = Selector_MCV_80_Warrior_MILAN_UK
@@ -1720,6 +1740,11 @@ GhostDepiction_Mortier_MORT61_120mm_para_FR is GhostVehicleDepictionTemplate
 (
     Selector = Selector_Mortier_MORT61_120mm_para_FR
     Alternatives = Alternatives_Mortier_MORT61_120mm_para_FR
+)
+GhostDepiction_Mortier_Nona_K_120mm_SOV is GhostVehicleDepictionTemplate
+(
+    Selector = Selector_Mortier_Nona_K_120mm_SOV
+    Alternatives = Alternatives_Mortier_Nona_K_120mm_SOV
 )
 GhostDepiction_Mortier_PM43_120mm_DDR is GhostVehicleDepictionTemplate
 (
@@ -2342,6 +2367,7 @@ VehicleMimeticGhost is MAP[
   ( 'ATteam_TOW2_US', GhostDepiction_ATteam_TOW2_US ),
   ( 'ATteam_TOW2_para_US', GhostDepiction_ATteam_TOW2_para_US ),
   ( 'ATteam_TOW_US', GhostDepiction_ATteam_TOW_US ),
+  ( 'Alvis_Stalwart_UK', GhostDepiction_Alvis_Stalwart_UK ),
   ( 'Atteam_Fagot_VDV_SOV', GhostDepiction_Atteam_Fagot_VDV_SOV ),
   ( 'Atteam_Konkurs_VDV_SOV', GhostDepiction_Atteam_Konkurs_VDV_SOV ),
   ( 'BM21V_GradV_SOV', GhostDepiction_BM21V_GradV_SOV ),
@@ -2426,6 +2452,7 @@ VehicleMimeticGhost is MAP[
   ( 'FV102_Striker_BEL', GhostDepiction_FV102_Striker_BEL ),
   ( 'FV102_Striker_UK', GhostDepiction_FV102_Striker_UK ),
   ( 'FV103_Spartan_BEL', GhostDepiction_FV103_Spartan_BEL ),
+  ( 'FV103_Spartan_GSR_UK', GhostDepiction_FV103_Spartan_GSR_UK ),
   ( 'FV103_Spartan_UK', GhostDepiction_FV103_Spartan_UK ),
   ( 'FV105_Sultan_BEL', GhostDepiction_FV105_Sultan_BEL ),
   ( 'FV105_Sultan_UK', GhostDepiction_FV105_Sultan_UK ),
@@ -2549,6 +2576,7 @@ VehicleMimeticGhost is MAP[
   ( 'M151_MUTT_CMD_US', GhostDepiction_M151_MUTT_CMD_US ),
   ( 'M151_MUTT_RCL_DDR', GhostDepiction_M151_MUTT_RCL_DDR ),
   ( 'M151_MUTT_trans_US', GhostDepiction_M151_MUTT_trans_US ),
+  ( 'M163_CS_US', GhostDepiction_M163_CS_US ),
   ( 'M163_PIVADS_US', GhostDepiction_M163_PIVADS_US ),
   ( 'M1A1HA_Abrams_CMD_US', GhostDepiction_M1A1HA_Abrams_CMD_US ),
   ( 'M1A1HA_Abrams_US', GhostDepiction_M1A1HA_Abrams_US ),
@@ -2592,6 +2620,7 @@ VehicleMimeticGhost is MAP[
   ( 'M998_Humvee_US', GhostDepiction_M998_Humvee_US ),
   ( 'MAN_Kat_6x6_RFA', GhostDepiction_MAN_Kat_6x6_RFA ),
   ( 'MAN_Kat_6x6_trans_RFA', GhostDepiction_MAN_Kat_6x6_trans_RFA ),
+  ( 'MCV_80_Warrior_CMD_UK', GhostDepiction_MCV_80_Warrior_CMD_UK ),
   ( 'MCV_80_Warrior_MILAN_UK', GhostDepiction_MCV_80_Warrior_MILAN_UK ),
   ( 'MCV_80_Warrior_UK', GhostDepiction_MCV_80_Warrior_UK ),
   ( 'MFRW_RM70_DDR', GhostDepiction_MFRW_RM70_DDR ),
@@ -2621,6 +2650,7 @@ VehicleMimeticGhost is MAP[
   ( 'Mortier_2S12_120mm_VDV_SOV', GhostDepiction_Mortier_2S12_120mm_VDV_SOV ),
   ( 'Mortier_MORT61_120mm_FR', GhostDepiction_Mortier_MORT61_120mm_FR ),
   ( 'Mortier_MORT61_120mm_para_FR', GhostDepiction_Mortier_MORT61_120mm_para_FR ),
+  ( 'Mortier_Nona_K_120mm_SOV', GhostDepiction_Mortier_Nona_K_120mm_SOV ),
   ( 'Mortier_PM43_120mm_DDR', GhostDepiction_Mortier_PM43_120mm_DDR ),
   ( 'Mortier_Tampella_120mm_RFA', GhostDepiction_Mortier_Tampella_120mm_RFA ),
   ( 'OT_65_DDR', GhostDepiction_OT_65_DDR ),

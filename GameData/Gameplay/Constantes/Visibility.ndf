@@ -13,11 +13,6 @@ export AllRanges is TVisibilityRangeContainer
             AltitudeMax = AltitudeMax
             AltitudeMin = ~/SeuilZoomAffichageZoneDeploiement
         ),
-        export ZoomMinimap is TVisibilityRange
-        (
-            AltitudeMax = AltitudeMax
-            AltitudeMin = AltitudeMin
-        ),
         export Zoom1234ForFx is TVisibilityRange
         (
             AltitudeMax = AltitudeMaxForFx

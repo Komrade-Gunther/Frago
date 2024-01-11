@@ -1,59 +1,3 @@
-export CubeAction_Strategic_GroundDeny is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
-(
-    CubeActionName          = "CubeAction_Strategic_GroundDeny"
-    DebugName               = "InGameCubeAction_Strategic_GroundDeny"
-
-    OrderToken = 'Shoot'
-    ValidationTargetToken = 'HNT_WARN'
-
-    ButtonTextToken         = 'ORD_GRDENY'
-    HintTitleToken          = 'HNT_GRDENY'
-    HintBodyToken           = 'HNB_GRDENY'
-    HintExtendedToken       = ''
-    HintDico                = ~/LocalisationConstantes/dico_interface_ingame
-    ActionType              = OrderWithClickValidation
-    CubeActionFunctionType  = StrategicCubeActionFunctionType/Orders
-    Mapping                 = $/KeyboardOption/Mapping_ShootOnPosition
-)
-
-export CubeAction_Strategic_AirplaineAirDeny is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
-(
-    CubeActionName          = "CubeAction_Strategic_AirplaineAirDeny"
-    DebugName               = "InGameCubeAction_Strategic_AirplaineAirDeny"
-
-    OrderToken = 'AirplaineAirDeny'
-    ValidationTargetToken = 'HNT_WARN'
-
-    ButtonTextToken         = 'ORD_ARDENY'
-    HintTitleToken          = 'HNT_ARDENY'
-    HintBodyToken           = 'HNB_ARDENY'
-    HintExtendedToken       = 'HNE_ARDENY'
-    HintDico                = ~/LocalisationConstantes/dico_interface_ingame
-    ActionType              = OrderWithClickValidation
-    CubeActionFunctionType  = StrategicCubeActionFunctionType/Orders
-    Mapping                 = $/KeyboardOption/Mapping_Attack
-)
-
-export CubeAction_Strategic_Bombardment is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
-(
-    CubeActionName          = "CubeAction_Strategic_Bombardment"
-    DebugName               = "InGameCubeAction_Strategic_Bombardment"
-
-    OrderToken = 'Bombarder'
-    ValidationTargetToken = 'HNT_WARN'
-
-    //LeftClickSound = InterfaceSound( FileName = "GameData:/Assets/Sons/Hud/AirRaid.wav")
-
-    ButtonTextToken         = 'ORD_BOMBER'
-    HintTitleToken          = 'HNT_BOMBER'
-    HintBodyToken           = 'HNB_BOMBER'
-    HintExtendedToken       = ''
-    HintDico                = ~/LocalisationConstantes/dico_interface_ingame
-    ActionType              = OrderWithClickValidation
-    CubeActionFunctionType  = StrategicCubeActionFunctionType/Orders
-    Mapping                 = $/KeyboardOption/Mapping_Attack
-)
-
 export CubeAction_Strategic_Fortify is Template_CubeActionOrderButtonInformationsDescriptor_WithSound
 (
     CubeActionName          = "CubeAction_Strategic_Fortify"
@@ -78,6 +22,7 @@ export CubeAction_Strategic_FortifyAntiAir is Template_CubeActionOrderButtonInfo
 (
     CubeActionName          = "CubeAction_Strategic_FortifyAntiAir"
     DebugName               = "InGameCubeAction_Strategic_FortifyAntiAir"
+    SpotlightUniqueName = "SpotLight_Deploy_AA"
 
     OrderToken = 'FortifyAntiAir'
     ValidationTargetToken = 'HNT_WARN'
@@ -92,4 +37,5 @@ export CubeAction_Strategic_FortifyAntiAir is Template_CubeActionOrderButtonInfo
     ActionType              = OrderInstant
     CubeActionFunctionType  = StrategicCubeActionFunctionType/Orders
     Mapping                 = $/KeyboardOption/Mapping_CallArtillery
+
 )

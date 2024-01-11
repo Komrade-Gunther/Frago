@@ -53,31 +53,5 @@ export AutoDeploy_DoNothing is TSequenceGeneratorDescriptor
     NbMacroActionAllowedToProduceSimultaneous = 9001
     GeneratorList =
     [
-        ~/AutoDeploy_DoNothing_FakeSupport,
-    ]
-)
-
-//-------------------------------------------------------------------------
-export AutoDeploy_DoNothing_FakeSupport is TMacroActionDescriptor_Support_Specific
-(
-    ParametresDeMission =
-    [
-        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
-        TMacroActionProductionSettingHolder(PoolModelList = [~/AutoDeploy_DoNothing_FakePool]),
-        TCounterTagSettingHolder(TagDeContre = "ThisUnitDoesNotExist"),
-    ]
-)
-//-------------------------------------------------------------------------
-export AutoDeploy_DoNothing_FakePool is TPoolModel
-(
-    ModelList = [
-        TPoolElement(
-            DescriptorId = GUID:{1f93ab9d-5096-4fef-beae-9841ff9c5ae7}
-            Required = true
-            Nb = 1
-            TagsPriority = [
-                "ThisUnitDoesNotExist",
-            ]
-        ),
     ]
 )

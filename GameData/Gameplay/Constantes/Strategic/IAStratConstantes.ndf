@@ -4,14 +4,11 @@ StrategicIAStratConstantes is TIAStratStrategicConstantesDescriptor
 (
     NbAirplanesToKeepBeforeUsingAirDeny = 3
     NbAirplanesToKeepBeforeUsingBombard = 1
-    NbMaxPawnAllowedToFortifyPerObjective = 0
 
-    DistanceMaxToAssignPawnToExistingGroup = 3000.0 * Metre
+    DistanceMaxToAssignPawnToExistingGroup = 1500.0 * Metre
     DistanceMaxForPawnToBeAvailableForCurrentObjective = 1500.0 * Metre
 
-    NumberMaxOfProductionPerTurn = 3
-
-    MaxFatigueToBeSelectedForStrategicBattle = 3
+    MaxFatigueToBeSelectedForStrategicBattle = 4 // indique le max de PA que peut avoir un pion pour participer à un combat mais aussi pour reculer le temps de récupérer sa fatigue.
 
     // Par defaut, tous les Fighter et AuxiliarySupport se placent au plus près de l'ennemi
     PawnWithTagToPlaceFarthestFromEnemy = [
@@ -22,14 +19,20 @@ StrategicIAStratConstantes is TIAStratStrategicConstantesDescriptor
     [
         (EStrategicBattleRole/GroundSupport,
             [
-                (4, 5000 * Metre),
+                (3, 2000 * Metre),
             ]
         ),
         (EStrategicBattleRole/Fighter,
             [
-                (4, 2000 * Metre),
+                (4, 1500 * Metre),
+                // (1, 2000 * Metre),
             ]
         ),
+        (EStrategicBattleRole/AuxiliarySupport,
+            [
+                (4, 2000 * Metre),
+            ]
+        )
     ]
 
     StartBattleDescriptorByType = MAP
@@ -189,23 +192,78 @@ StrategicIAStratConstantes is TIAStratStrategicConstantesDescriptor
     [
         TIAGroupPool
         (
-            Name = "AntiAir"
-            PossibleTags = ["AntiAir"]
-            NbMaxPawns = 1
+            Name = "Attack"
+            // Le tag des unités pouvant rejoindre le groupe
+            PossibleTags = ["AllUnits"]
+            // Ce groupe sera créé pour les objectifs dont le status est le suivant
+            ZoneStatus = [ EStrategicZoneStatus/ToCapture, EStrategicZoneStatus/CapturedNotActive ]
+            // Ensemble des validateurs qui permettent de définir si un groupe est valide ou non.
+            // Si l'un des validateur fonctionne, alors le groupe est considéré comme valide.
+            Validators = [
+                TIAGroupValidator(
+                    BattleRole = EStrategicBattleRole/Fighter
+                    ExcludedTags = ["Helicopter", "AntiAir"]
+                    PawnsCount = 1
+                )
+            ]
+            // Les éléments du groupe seront choisis selon les critères définis ci dessous :
+            Elements = [
+                TIAGroupPoolElement(
+                    // Les meilleurs éléments en attaque seront choisis en premier, dans une limite de trois par poids de l'objectif
+                    Comparator = EIAGroupPoolElementComparatorType/BestAttack
+                    PawnsCountByObjectiveWeight = 6
+                ),
+                TIAGroupPoolElement(
+                    // Une fois que les éléments précédents auront été choisis, on complètera en
+                    // prenant autant de pions que possible dont l'attaque est proche de la moyenne.
+                    Comparator = EIAGroupPoolElementComparatorType/AverageAttack
+                ),
+            ]
+            Behaviors = [ TIAPawnsBehaviorExhausted, TIAPawnsBehaviorNotSupplied, TIAPawnsBehaviorArtillery, TIAPawnsBehaviorAntiAir, TIAPawnsBehaviorAttack ]
         ),
         TIAGroupPool
         (
-            Name = "DefaultGroup"
+            Name = "Defense"
             PossibleTags = ["AllUnits"]
-            MaxPowerValue = 25000.0
+            ZoneStatus = [ EStrategicZoneStatus/ToDefend, EStrategicZoneStatus/NotActive ]
+            Validators = [
+                TIAGroupValidator(
+                    BattleRole = EStrategicBattleRole/Fighter
+                    ExcludedTags = ["Helicopter", "AntiAir"]
+                    PawnsCount = 1
+                ),
+                TIAGroupValidator(
+                    BattleRole = EStrategicBattleRole/AuxiliarySupport
+                    ExcludedTags = ["Helicopter", "AntiAir"]
+                    PawnsCount = 1
+                )
+            ]
+            Elements = [
+                TIAGroupPoolElement(
+                    Comparator = EIAGroupPoolElementComparatorType/AverageDefense
+                    PawnsCountByObjectiveWeight = 6
+                ),
+                TIAGroupPoolElement(
+                    Comparator = EIAGroupPoolElementComparatorType/AverageDefense
+                ),
+            ]
+            Behaviors = [ TIAPawnsBehaviorExhausted, TIAPawnsBehaviorNotSupplied, TIAPawnsBehaviorArtillery, TIAPawnsBehaviorAntiAir, TIAPawnsBehaviorDefense ]
         ),
     ]
+)
 
-    NbGroupMaxPerObjective = MAP
-    [
-        (
-            "AntiAir",
-            1
-        ),
-    ]
+EIAGroupPoolElementComparatorType is TBaseClass
+(
+    BestAttack is 0
+    BestDefense is 1
+    AverageAttack is 2
+    AverageDefense is 3
+)
+
+EStrategicZoneStatus is TBaseClass
+(
+    NotActive is 0
+    ToDefend is 1
+    ToCapture is 2
+    CapturedNotActive is 3
 )

@@ -97,53 +97,7 @@ template BUCKSpecificSelectionPanelPawnMainComponent
 
                                 BUCKListElementDescriptor
                                 (
-                                    ComponentDescriptor = BUCKContainerDescriptor
-                                    (
-                                        ComponentFrame = TUIFramePropertyRTTI
-                                        (
-                                            MagnifiableWidthHeight = [~/SelectionPawnPanelWidth, 0.0]
-                                        )
-
-                                        FitStyle = ~/ContainerFitStyle/FitToContentVertically
-
-                                        Components =
-                                        [
-                                            BUCKContainerDescriptor
-                                            (
-                                                ComponentFrame = TUIFramePropertyRTTI
-                                                (
-                                                    RelativeWidthHeight = [1.0, 1.0]
-                                                )
-
-                                                HasBackground = true
-                                                BackgroundBlockColorToken = "VertMilitaire"
-                                            ),
-
-                                            BUCKRackDescriptor
-                                            (
-                                                ElementName = "CombatGroupsTabRack"
-                                                ComponentFrame = TUIFramePropertyRTTI
-                                                (
-                                                    RelativeWidthHeight = [1.0, 0.0]
-                                                )
-
-                                                Axis = ~/ListAxis/Vertical
-
-                                                ChildFitToContent = true
-
-                                                FirstMargin = TRTTILength(Magnifiable = 10.0)
-                                                InterItemMargin = TRTTILength (Magnifiable = 8.0)
-                                                LastMargin = TRTTILength(Magnifiable = 10.0)
-
-                                                HasBackground = true
-                                                BackgroundBlockColorToken =  "SM_Grullo"
-                                                IsDroppable = true
-
-                                                BladeDescriptor = ~/CombatGroupsTabInStrategic
-                                            ),
-                                        ]
-                                        + (<HasSpotlight> ? [~/SpotLight_PawnInfoPanel] : [])
-                                    )
+                                    ComponentDescriptor = CombatGroupsTabsMainContainer(HasSpotlight = <HasSpotlight>)
                                 ),
                             ]
                         )
@@ -178,14 +132,85 @@ template BUCKSpecificSelectionPanelPawnMainComponent
 
 //-------------------------------------------------------------------------------------
 
+template CombatGroupsTabsMainContainer
+[
+    HasSpotlight : bool,
+] is BUCKListDescriptor
+(
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [~/SelectionPawnPanelWidth, 0.0]
+    )
+
+    Axis = ~/ListAxis/Vertical
+
+    HasBackground = true
+    BackgroundBlockColorToken =  "SM_Grullo"
+
+    FirstMargin = TRTTILength(Magnifiable = 10.0)
+    InterItemMargin = TRTTILength (Magnifiable = 8.0)
+    LastMargin = TRTTILength(Magnifiable = 10.0)
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKTextDescriptor
+            (
+                ElementName = "PawnRoleAndUnitsLeft"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 0.0]
+                    MagnifiableWidthHeight = [0.0, 16.0]
+                    AlignementToFather  = [0.5, 0.0]
+                    AlignementToAnchor  = [0.5, 0.0]
+                )
+
+                ParagraphStyle = paragraphStyleTextCenter
+                TextStyle = "Default"
+                BigLineAction = ~/BigLineAction/ResizeFont
+
+                TextDico = ~/LocalisationConstantes/dico_interface_ingame
+
+                TypefaceToken = "Liberator"
+                TextColor = "SM_Ebony"
+                TextSize = "16"
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BUCKRackDescriptor
+            (
+                ElementName = "CombatGroupsTabRack"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 0.0]
+                )
+
+                Axis = ~/ListAxis/Vertical
+
+                ChildFitToContent = true
+
+                InterItemMargin = TRTTILength (Magnifiable = 8.0)
+
+                IsDroppable = true
+
+                BladeDescriptor = ~/CombatGroupsTabInStrategic
+            )
+        ),
+    ]
+
+    ForegroundComponents = (<HasSpotlight> ? [~/SpotLight_PawnInfoPanel] : [])
+)
+
+//-------------------------------------------------------------------------------------
+
 SpotLight_PawnInfoPanel is BUCKSpotlightDescriptor
 (
     UniqueName = "SpotLight_PawnInfoPanel"
     ComponentFrame = TUIFramePropertyRTTI
     (
         RelativeWidthHeight = [1.0, 1.0]
-        AlignementToAnchor = [0.0, 0.0]
-        AlignementToFather = [0.0, 0.0]
     )
 )
 
@@ -223,12 +248,6 @@ CombatGroupsTabInStrategic is BUCKDraggableContainerDescriptor
 
             Components =
             [
-                // BUCKSpecificHintableArea
-                // (
-                //     HintTitleToken = 'sm_comt'
-                //     HintBodyToken = 'sm_comc'
-                //     DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                // ),
                 PanelRoundedCorner
                 (
                     ElementName = "CombatGroupRoundedContainer"
@@ -242,19 +261,45 @@ CombatGroupsTabInStrategic is BUCKDraggableContainerDescriptor
                     ElementName = "CombatGroupsTabText"
                     ComponentFrame = TUIFramePropertyRTTI
                     (
-                        RelativeWidthHeight = [0.0, 1.0]
-                        MagnifiableWidthHeight = [200.0, 0.0]
+                        RelativeWidthHeight = [1.0, 1.0]
                         AlignementToFather  = [0.5, 0.5]
                         AlignementToAnchor  = [0.5, 0.5]
                     )
 
-                    ParagraphStyle = paragraphStyleTextCenter
+                    ParagraphStyle = ~/paragraphStyleTextCenter
                     TextStyle = "Default"
                     BigLineAction = ~/BigLineAction/ResizeFont
+
+                    TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
                     TypefaceToken = "Liberator"
                     TextColor = "SM_paleSilver"
                     TextSize = "16"
+
+                    Components =
+                    [
+                        BUCKTextDescriptor
+                        (
+                            ElementName = "CombatGroupsUnitsLeft"
+                            ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                RelativeWidthHeight = [1.0, 0.0]
+                                MagnifiableWidthHeight = [0.0, 14.0]
+                                AlignementToFather  = [1.0, 0.5]
+                                AlignementToAnchor  = [1.0, 0.5]
+                            )
+
+                            ParagraphStyle = ~/paragraphStyleTextRightAlign
+                            TextStyle = "Default"
+                            BigLineAction = ~/BigLineAction/ResizeFont
+
+                            TextPadding = TRTTILength4(Magnifiable = [0.0, 0.0, 5.0, 0.0])
+
+                            TypefaceToken = "Liberator"
+                            TextColor = "SM_paleSilver"
+                            TextSize = "14"
+                        )
+                    ]
                 ),
             ]
         )
@@ -275,8 +320,6 @@ PawnDivisionInfosBanner is BUCKListDescriptor
     HasBackground = true
     BackgroundBlockColorToken = 'SM_Ebony'
 
-    LastMargin = TRTTILength (Magnifiable = 0.0)
-
     Elements =
     [
         // icone du bataillon
@@ -291,6 +334,7 @@ PawnDivisionInfosBanner is BUCKListDescriptor
                     AlignementToFather = [0.0, 0.5]
                     AlignementToAnchor = [0.0, 0.5]
                 )
+
                 TextureColorToken = 'SM_paleSilver'
                 TextureFrame = TUIFramePropertyRTTI
                 (
@@ -298,18 +342,15 @@ PawnDivisionInfosBanner is BUCKListDescriptor
                     AlignementToAnchor = [0.5, 0.5]
                     AlignementToFather = [0.5, 0.5]
                 )
+
                 Components =
                 [
-                BUCKSpecificHintableArea
-                (
-                    HintTitleToken = ''
-                    HintBodyToken = 'sm_icoba'
-                    HintExtendedToken =''
-                    DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-                )
+                    BUCKSpecificStrategicHintableArea
+                    (
+                        HintBodyToken = "sm_icoba"
+                        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                    )
                 ]
-
-
             )
         ),
         BUCKListElementDescriptor
@@ -342,7 +383,7 @@ PawnDivisionInfosBanner is BUCKListDescriptor
 
                 Components =
                 [
-                    BUCKSpecificHintableArea
+                    BUCKSpecificStrategicHintableArea
                     (
                         ElementName = "FlagHint"
                         DicoToken = ~/LocalisationConstantes/dico_unites
@@ -369,11 +410,9 @@ PawnDivisionInfosBanner is BUCKListDescriptor
 
                 Components =
                 [
-                    BUCKSpecificHintableArea
+                    BUCKSpecificStrategicHintableArea
                     (
-                        HintTitleToken = ''
-                        HintBodyToken = 'sm_divic'
-                        HintExtendedToken =''
+                        HintBodyToken = "sm_divic"
                         DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                     )
                 ]
@@ -395,9 +434,9 @@ PawnName is BUCKListDescriptor
     Axis = ~/ListAxis/Vertical
     BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromLargestChild
 
-    FirstMargin = TRTTILength( Magnifiable = 4.0 )
-    LastMargin = TRTTILength( Magnifiable = 4.0 )
-    InterItemMargin = TRTTILength (Magnifiable = 2)
+    FirstMargin = TRTTILength(Magnifiable = 4.0)
+    LastMargin = TRTTILength(Magnifiable = 4.0)
+    InterItemMargin = TRTTILength(Magnifiable = 2.0)
 
     Elements =
     [
@@ -435,7 +474,6 @@ PawnName is BUCKListDescriptor
                     HintBodyToken = 'sm_nomba'
                     HintExtendedToken = ''
                 )
-
             )
         ),
         BUCKListElementDescriptor
@@ -485,7 +523,6 @@ PawnCharacteristicList is BUCKListDescriptor
     ComponentFrame = TUIFramePropertyRTTI
     (
         MagnifiableWidthHeight = [0.0, 40.0]
-        // RelativeWidthHeight = [1,0]
     )
 
     Axis = ~/ListAxis/Horizontal
@@ -495,11 +532,6 @@ PawnCharacteristicList is BUCKListDescriptor
     HasBackground = true
     BackgroundBlockColorToken = 'SM_Feldgrau'
 
-    // HasBorder = true
-    // BordersToDraw = ~/TBorderSide/Bottom
-    // BorderLineColorToken = 'SM_onyx'
-    // BorderThicknessToken = '2'
-
     Elements =
     [
         BUCKListElementDescriptor
@@ -507,14 +539,13 @@ PawnCharacteristicList is BUCKListDescriptor
             ComponentDescriptor = DisplayAttackAndDefenseValueForPawn
             (
                 ElementName = "PowerValue"
-                TextureColorTokenForIcone = "SM_paleSilver" //"SM_Noir"
+                TextureColorTokenForIcone = "SM_paleSilver"
                 TextureToken = "UseStrategic_SelectionPanel_Attack"
                 TextColor = "BlancEquipe"
                 TextToken = "AttStre"
                 TextToken_title = "sm_piatt"
                 HintTitleToken = "sm_battt"
                 HintBodyToken =  "sm_battc"
-
             )
         ),
         BUCKListElementDescriptor
@@ -545,7 +576,6 @@ PawnCharacteristicList is BUCKListDescriptor
 
                 HintTitleToken = "sm_fatt"
                 HintBodyToken =  "sm_fatc"
-
             )
         ),
         BUCKListElementDescriptor
@@ -605,43 +635,16 @@ template DisplayAttackAndDefenseValueForPawn
 
     HasBackground = true
     BackgroundBlockColorToken = 'SM_RifleGreen'
+
     Elements =
     [
-        // BUCKListElementDescriptor
-        // (
-        //     ComponentDescriptor = BUCKTextureDescriptor
-        //     (
-        //         ComponentFrame = TUIFramePropertyRTTI
-        //         (
-        //             MagnifiableWidthHeight = [20.0, 20.0]
-        //         )
-
-        //         ResizeMode = ~/TextureResizeMode/UserDefined
-
-        //         TextureColorToken = <TextureColorTokenForIcone>
-        //         TextureToken = <TextureToken>
-
-        //         Components =
-        //         [
-        //         BUCKSpecificHintableArea
-        //         (
-        //             HintTitleToken = <HintTitleToken>
-        //             HintBodyToken = <HintBodyToken>
-        //             HintExtendedToken = <HintExtendedToken>
-        //             DicoToken = ~/LocalisationConstantes/dico_interface_ingame
-        //         )
-        //         ]
-        //     )
-        // ),
         BUCKListElementDescriptor
         (
             ComponentDescriptor = BUCKTextDescriptor
             (
-                // ElementName = <ElementName>
-
                 ComponentFrame = TUIFramePropertyRTTI
                 (
-                    MagnifiableWidthHeight = [85,0]
+                    MagnifiableWidthHeight = [85.0, 0.0]
                     AlignementToAnchor = [0.5, 0.0]
                     AlignementToFather = [0.5, 0.0]
                 )
@@ -657,7 +660,6 @@ template DisplayAttackAndDefenseValueForPawn
                 HorizontalFitStyle = ~/FitStyle/UserDefined
                 VerticalFitStyle = ~/FitStyle/FitToContent
 
-                // TypefaceToken = "Eurostyle"
                 TypefaceToken = "Eurostyle"
                 BigLineAction = ~/BigLineAction/MultiLine
                 TextToken = <TextToken_title>
@@ -700,10 +702,9 @@ template DisplayAttackAndDefenseValueForPawn
     ]
 
     // Hint
-
     ForegroundComponents =
     [
-        BUCKSpecificHintableArea
+        BUCKSpecificStrategicHintableArea
         (
             HintTitleToken = <HintTitleToken>
             HintBodyToken = <HintBodyToken>
@@ -738,4 +739,14 @@ is TUISpecificSelectionPanelPawnViewDescriptor
     )
 
     HQBackgroundBlockColorToken = <HQBackgroundBlockColorToken>
+
+    // à garder d'équerre avec StrategicBattleRole.ndf
+    // la position dans le tableau correspond au role défini dans StrategicBattleRole.ndf (PanelListeGroupCombatRack pour les fighter donc en position 0 par exemple)
+    PawnRoles =
+    [
+        "sm_comb", // Fighter
+        "sm_auxb", // AuxiliarySupport
+        "sm_airs", // AirSupport
+        "sm_arts",  // GroundSupport
+    ]
 )

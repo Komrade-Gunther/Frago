@@ -1,4 +1,3 @@
-//RefMagnification is 4. div 3.
 
 StrategicResource is TUISpecificStrategicResources
 (
@@ -17,7 +16,7 @@ StrategicResource is TUISpecificStrategicResources
         ("UISpecificIngameChatViewDescriptor", ~/UISpecificIngameChatViewDescriptor),
         ("UISpecificInGameFlarePanelViewDescriptor", ~/UIStrategicFlarePanelViewDescriptor),
         ("UISpecificLossesStateViewDescriptor", ~/UISpecificLossesStateViewDescriptor),
-        ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor(MainComponentContainerUniqueName = "BUCKSpecificUnitInfoPanelMainComponentContainer" UseForStrategic = True)),
+        ("UISpecificUnitInfoPanelViewDescriptor", UISpecificUnitInfoPanelViewDescriptor(MainComponentContainerUniqueName = "BUCKSpecificUnitInfoPanelMainComponentContainer")),
         ("UISpecificStrategicDateViewDescriptor", ~/UISpecificStrategicDateViewDescriptor),
         ("UISpecificSelectionPanelPawnViewDescriptor", UISpecificSelectionPanelPawnViewDescriptorTemplate(MainComponentContainerUniqueName = "BUCKSpecificSelectionPanelPawnMainComponentContainer" ContainsCubeAction = true HasSpotlight = true)),
         ("UISpecificStrategicSpawnPointViewDescriptor", ~/UISpecificStrategicSpawnPointViewDescriptor),
@@ -29,10 +28,9 @@ StrategicResource is TUISpecificStrategicResources
         ("StrategicTacticalPreparation", ~/UISpecificStrategicTacticalPreparationViewDescriptor),
         ("StrategicConnectedPlayersDescriptor", ~/UISpecificStrategicConnectedPlayersViewDescriptor),
         ("UICommonHUDPingDisplayViewDescriptor", ~/UICommonHUDPingDisplayViewDescriptor),
-        ("UISpecificStrategicHUDHeaderOptionViewDescriptor", ~/UISpecificStrategicHUDHeaderOptionViewDescriptor),
+        ("UISpecificStrategicHUDGameSpeedViewDescriptor", ~/UISpecificStrategicHUDGameSpeedViewDescriptor),
         ("UISpecificStrategicObjectiveScoreViewDescriptor", ~/UISpecificStrategicObjectiveScoreViewDescriptor),
         ("ObjectiveViewDescriptor", ~/UISpecificStrategicObjectiveBriefViewDescriptor),
-        ("SignpostViewDescriptor", ~/UISpecificSignpostViewDescriptor),
         ("LDVideoViewDescriptor", ~/UIStrategicLDVideoViewDescriptor),
     ]
 
@@ -116,18 +114,6 @@ private StrategicBottomScreen is BUCKListDescriptor
                 Elements =
                 [
                     BUCKListElementDescriptor
-                   (
-                        ComponentDescriptor =  BUCKContainerDescriptor
-                        (
-                            UniqueName = "SpecificSignpostViewMainContainer"
-
-                            ComponentFrame = TUIFramePropertyRTTI
-                            (
-                                MagnifiableWidthHeight = [337.0, 78.0]
-                            )
-                        )
-                    ),
-                    BUCKListElementDescriptor
                     (
                         ComponentDescriptor = BUCKContainerDescriptor
                         (
@@ -161,7 +147,6 @@ private StrategicBottomScreen is BUCKListDescriptor
 
 private StrategicMainContainerResource is TUICommonMainContainerResource
 (
-    RefMagnification = ~/RefMagnification
     ContentRefSize = [ 2134 , 1440 ]
     SafeBoxMin     = [  107 ,   80 ]
     SafeBoxSize    = ~/FullScreenSafeBoxSize
@@ -188,7 +173,7 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
                     MagnifiableOffset = [0.0, 44.0]
                 )
 
-                LastMargin = TRTTILength( Magnifiable = 0.0 )
+                InterItemMargin = TRTTILength( Magnifiable = 2.0 )
                 Axis = ~/ListAxis/Vertical
                 HidePointerEvents = true
                 Elements =
@@ -247,7 +232,7 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
                 Axis = ~/ListAxis/Vertical
                 BreadthComputationMode = ~/BreadthComputationMode/ComputeBreadthFromFrameProperty
                 FirstMargin = TRTTILength( Magnifiable = 44.0 )
-                InterItemMargin = TRTTILength( Magnifiable = 4.0 )
+                InterItemMargin = TRTTILength( Magnifiable = 0.0 )
 
                 Elements =
                 [
@@ -278,7 +263,16 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
                             FitStyle = ~/ContainerFitStyle/FitToContentVertically
                         )
                     ),
-
+                    BUCKListElementDescriptor
+                    (
+                        ComponentDescriptor = BUCKContainerDescriptor
+                        (
+                        ComponentFrame = TUIFramePropertyRTTI
+                            (
+                                MagnifiableWidthHeight = [10.0, 3.0]
+                            )
+                        )
+                    ),
                     BUCKListElementDescriptor
                     (
                         ComponentDescriptor = BUCKContainerDescriptor
@@ -324,16 +318,6 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
             ),
             BUCKContainerDescriptor
             (
-                UniqueName = "SpecificAutoresolveViewDescriptor"
-                ComponentFrame = TUIFramePropertyRTTI
-                (
-                    RelativeWidthHeight = [1.0, 1.0]
-                    AlignementToAnchor = [0.5, 0.5]
-                    AlignementToFather = [0.5, 0.5]
-                )
-            ),
-            BUCKContainerDescriptor
-            (
                 UniqueName = "PourPlacerPanneauPreparationCombat"
                 ComponentFrame = TUIFramePropertyRTTI
                 (
@@ -345,6 +329,19 @@ private StrategicMainContainerResource is TUICommonMainContainerResource
 
             ~/StrategicBottomScreen,
             ~/StrategicBoutonsMenus,
+
+            //-------------------------------------------------------------------------------------
+
+            BUCKContainerDescriptor
+            (
+                UniqueName = "SpecificAutoresolveViewDescriptor"
+                ComponentFrame = TUIFramePropertyRTTI
+                (
+                    RelativeWidthHeight = [1.0, 1.0]
+                    AlignementToAnchor = [0.5, 0.5]
+                    AlignementToFather = [0.5, 0.5]
+                )
+            ),
         ]
     )
 )
@@ -422,9 +419,23 @@ private UISpecificStrategicCubeActionViewDescriptor is TUISpecificCubeActionView
                 BorderLineColorToken = 'SM_Noir'
                 RoundedVertexes = [false, true, true, false]
                 BigLineAction = ~/BigLineAction/ResizeFont
+
+                HintableAreaComponent = BUCKSpecificStrategicHintableArea
+                (
+                    ElementName = "CubeActionHintableArea"
+                    DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+                )
             )
         ),
         (~/StrategicCubeActionFunctionType/TogglableOrders, CubeActionToggleButton(BigLineAction = ~/BigLineAction/ResizeFont)),
     ]
     EmptyButtonTemplateDescriptor  = ~/CubeActionEmptyButton
+
+    SpotlightDescriptor = BUCKSpotlightDescriptor
+    (
+        ComponentFrame = TUIFramePropertyRTTI
+        (
+            RelativeWidthHeight = [1.0, 1.0]
+        )
+    )
 )

@@ -242,14 +242,18 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "major_US",             Steelman_newLDHINT (Texture = 'major_US' portrait_name = 'us_maj_1')),
         ( "major_US_mini",             Steelman_newLDHINT (portrait_name = 'us_maj_1' width = 1120)),
 
+        ( "general_UK",             Steelman_newLDHINT (Texture = 'general_UK' portrait_name = 'uk_gen_1' )),
+        ( "major_UK",             Steelman_newLDHINT (Texture = 'major_UK' portrait_name = 'uk_maj_1')),
+        ( "major_UK_mini",             Steelman_newLDHINT (portrait_name = 'uk_maj_1' width = 1120)),
+
         ( "general_RFA",             Steelman_newLDHINT (Texture = 'general_RFA' HasButtons = true portrait_name = 'rfa_gen_1' )),
         ( "major_RFA",             Steelman_newLDHINT (Texture = 'major_RFA' HasButtons = true portrait_name = 'rfa_maj_1' )),
         ( "major_RFA_mini",             Steelman_newLDHINT (portrait_name = 'rfa_maj_1' width = 1120)),
 
-        ( "general_SOV",             Steelman_newLDHINT (Texture = 'general_SOV' portrait_name = 'ddr_gen_1' )),
-        ( "general_SOV_mini",             Steelman_newLDHINT (portrait_name = 'ddr_gen_1' width = 1120 )),
-        ( "major_SOV",             Steelman_newLDHINT (Texture = 'major_SOV' portrait_name = 'ddr_maj_1' )),
-        ( "major_SOV_mini",             Steelman_newLDHINT (portrait_name = 'ddr_maj_1' width = 1120)),
+        ( "general_SOV",             Steelman_newLDHINT (Texture = 'general_SOV' portrait_name = 'sov_gen_1' )),
+        ( "general_SOV_mini",             Steelman_newLDHINT (portrait_name = 'sov_gen_1' width = 1120 )),
+        ( "major_SOV",             Steelman_newLDHINT (Texture = 'major_SOV' portrait_name = 'sov_maj_1' )),
+        ( "major_SOV_mini",             Steelman_newLDHINT (portrait_name = 'sov_maj_1' width = 1120)),
 
 
         // tuto_1
@@ -260,25 +264,17 @@ SpecificInGameLDHintResource is TUICommonInGameLDHintResource
         ( "Steelman_tuto_2",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman = 'Steelman_tuto_2' )),
         ( "Steelman_tuto_3",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman = 'Steelman_tuto_3' )),
 
+        // tuto_
+        ( "interception",            Steelman_newLDHINT (Texture = 'interception' HasButtons = true)),
+        ( "Combat_Prep_2",            Steelman_newLDHINT (Texture = 'Combat_Prep_2' HasButtons = true)),
+        ( "Combat_Prep_3",            Steelman_newLDHINT (Texture = 'Combat_Prep_3' HasButtons = true)),
+        ( "tactical_1",            Steelman_newLDHINT (Texture = 'tactical_1' HasButtons = true)),
+        ( "tactical_2",            Steelman_newLDHINT (Texture = 'tactical_2' HasButtons = true)),
+
         //-------------------------------------------------------------------------------------
         // bad h.
         //-------------------------------------------------------------------------------------
-        // ( "bad_hersfeld_sov_01",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_hersfeld_sov_01' )),
-        // ( "bad_hersfeld_sov_02",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_hersfeld_sov_02' )),
-        // ( "bad_hersfeld_sov_03",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_hersfeld_sov_03' )),
-        // ( "bad_hersfeld_sov_04",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_hersfeld_sov_04' )),
-        // ( "bad_hersfeld_sov_05",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_hersfeld_sov_05' )),
-        // ( "bad_hersfeld_sov_wip",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_hersfeld_sov_wip' )),
 
-        // ( "otan_bad_1",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'otan_bad_1' )),
-        // ( "otan_bad_1a",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'otan_bad_1a' )),
-        // ( "otan_bad_2",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'otan_bad_2' )),
-        // ( "otan_bad_2a",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'otan_bad_2a' )),
-
-        // ( "bad_intro_1",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_intro_1' )),
-        // ( "bad_intro_2",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_intro_2' )),
-        // ( "bad_intro_3",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_intro_3' )),
-        // ( "bad_intro_4",             PORTRAIT_PauseAndTexture_Steelman (TextureSteelman_FullScreen = 'bad_intro_4' )),
 
         ( "BH_otan_1",             Steelman_newLDHINT (Texture = 'BH_otan_1' HasButtons = true portrait_name = 'rfa_gen_1' )),
         ( "BH_otan_2",             Steelman_newLDHINT (Texture = 'BH_otan_2' HasButtons = true portrait_name = 'rfa_gen_1' )),
@@ -457,6 +453,12 @@ UseInGame_AdditionalLDHintTextureBank is TBUCKToolAdditionalTextureBank
     ( "Steelman_tuto_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto_1/tuto_1.png' ))] ),
     ( "Steelman_tuto_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto_1/tuto_2.png' ))] ),
     ( "Steelman_tuto_3",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto_1/tuto_3.png' ))] ),
+    ( "interception",           MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/interception.png' ))] ),
+    ( "Combat_Prep_2",           MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/Combat_Prep_2.png' ))] ),
+    ( "Combat_Prep_3",           MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/Combat_Prep_3.png' ))] ),
+    ( "tactical_1",           MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/tactical_1.png' ))] ),
+    ( "tactical_2",           MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/tactical_2.png' ))] ),
+
 
     ( "general_DDR",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/general_DDR.png' ))] ),
     ( "major_DDR",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/major_ddr.png' ))] ),
@@ -476,33 +478,12 @@ UseInGame_AdditionalLDHintTextureBank is TBUCKToolAdditionalTextureBank
 
     ( "general_US",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/general_US.png' ))] ),
     ( "major_US",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/major_US.png' ))] ),
-    // bad h.
-    // ( "bad_hersfeld_sov_01",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/sov_01.png' ))] ),
-    // ( "bad_hersfeld_sov_02",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/sov_02.png' ))] ),
-    // ( "bad_hersfeld_sov_03",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/sov_03.png' ))] ),
-    // ( "bad_hersfeld_sov_04",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/sov_04.png' ))] ),
-    // ( "bad_hersfeld_sov_05",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/sov_05.png' ))] ),
-    // ( "bad_hersfeld_sov_wip",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/sov_wip.png' ))] ),
-    // ( "otan_bad_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_bad_1.png' ))] ),
-    // ( "otan_bad_1a",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_bad_1a.png' ))] ),
-    // ( "otan_bad_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_bad_2.png' ))] ),
-    // ( "otan_bad_2a",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_bad_2a.png' ))] ),
 
-    // // ( "bad_intro_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Map/Scenario/CampagneStrat_Bruderkrieg/ldhint2/situation_globale.png' ))] ),
-    // // ( "bad_intro_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Map/Scenario/CampagneStrat_Bruderkrieg/ldhint2/situation_locale.png' ))] ),
-    // // ( "bad_intro_3",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Map/Scenario/CampagneStrat_Bruderkrieg/ldhint2/situation_locale_2.png' ))] ),
-    // // ( "bad_intro_4",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Map/Scenario/CampagneStrat_Bruderkrieg/ldhint2/situation_zoom.png' ))] ),
-
-    // ( "bad_intro_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/ldhint2/situation_globale.png' ))] ),
-    // ( "bad_intro_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/ldhint2/situation_locale.png' ))] ),
-    // ( "bad_intro_3",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/ldhint2/situation_locale_2.png' ))] ),
-    // ( "bad_intro_4",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/ldhint2/situation_zoom.png' ))] ),
+    ( "general_UK",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/general_UK.png' ))] ),
+    ( "major_UK",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/major_UK.png' ))] ),
 
     ( "BH_otan_1",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/bh_briefing_otan_01.png' ))] ),
-    // ( "BH_otan_2",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_2.png' ))] ),
-    // ( "BH_otan_4",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_4.png' ))] ),
-    // ( "BH_otan_5",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_5.png' ))] ),
-    // ( "BH_otan_6",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/bad_hersfeld/otan_6.png' ))] ),
+
     ( "Steelman_Hawthorne",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/Hawthorne.png' ))] ),
     ( "Steelman_Sulivan",        MAP [(~/ComponentState/Normal, TUIResourceTexture_InGame( FileName='GameData:/Assets/2D/Interface/UseStrategic/LDHint/tuto/Sulivan.png' ))] ),
 

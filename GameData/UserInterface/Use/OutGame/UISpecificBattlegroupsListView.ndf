@@ -17,11 +17,15 @@ template DeckListButton
     ElementName = <ElementName>
     TextToken = <TextToken>
 
-    HintableAreaElementName = <HintableAreaElementName>
-    HintTitleToken = <HintTitleToken>
-    HintBodyToken = <HintBodyToken>
-    HintExtendedToken = <HintExtendedToken>
-    HintDico = <HintDico>
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        ElementName = <HintableAreaElementName>
+        HintTitleToken = <HintTitleToken>
+        HintBodyToken = <HintBodyToken>
+        HintExtendedToken = <HintExtendedToken>
+        DicoToken = <HintDico>
+    )
+
     BigLineAction = <BigLineAction>
 
     ButtonMagnifiableWidthHeight = ~/DeckListButtonsDims
@@ -108,10 +112,14 @@ private DeckListPanelImportButton is ConfirmButton
     TextSizeToken = '26'
     BorderThicknessToken = '3'
 
-    HintTitleToken = "ODL_IMPOBT"
-    HintBodyToken = "ODL_IMPOBB"
-    HintExtendedToken = "ODL_IMPOBE"
-    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintTitleToken = "ODL_IMPOBT"
+        HintBodyToken = "ODL_IMPOBB"
+        HintExtendedToken = "ODL_IMPOBE"
+        DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+    )
+
     LeftClickSound = SoundEvent_OpenImportDeckModal
 )
 
@@ -129,10 +137,13 @@ private DeckListPanelEditButton is ConfirmButton
     TextSizeToken = '26'
     BorderThicknessToken = '3'
 
-    HintTitleToken = "ODL_EDITBT"
-    HintBodyToken = "ODL_EDITBB"
-    HintExtendedToken = "ODL_EDITBE"
-    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintTitleToken = "ODL_EDITBT"
+        HintBodyToken = "ODL_EDITBB"
+        HintExtendedToken = "ODL_EDITBE"
+        DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+    )
     LeftClickSound = SoundEvent_EditDeck
 )
 
@@ -150,10 +161,13 @@ private DeckListPanelViewButton is ConfirmButton
     TextSizeToken = '26'
     BorderThicknessToken = '3'
 
-    HintTitleToken = "ODL_VIEWBT"
-    HintBodyToken = "ODL_VIEWBB"
-    HintExtendedToken = "ODL_VIEWBE"
-    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintTitleToken = "ODL_VIEWBT"
+        HintBodyToken = "ODL_VIEWBB"
+        HintExtendedToken = "ODL_VIEWBE"
+        DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+    )
     LeftClickSound = SoundEvent_ViewDeck
 )
 
@@ -175,10 +189,13 @@ private DeckListPanelCreateButton is ConfirmButton
     BigLineAction = ~/BigLineAction/ResizeFont
     TextPadding = TRTTILength4( Magnifiable = [5.0, 0.0, 5.0, 0.0] )
 
-    HintTitleToken = "ODL_CREABT"
-    HintBodyToken = "ODL_CREABB"
-    HintExtendedToken = "ODL_CREABE"
-    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintTitleToken = "ODL_CREABT"
+        HintBodyToken = "ODL_CREABB"
+        HintExtendedToken = "ODL_CREABE"
+        DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+    )
     LeftClickSound = SoundEvent_OpenCreateDeckModal
 )
 
@@ -187,10 +204,13 @@ private DeckListPanelSelectButton is ConfirmButton
     ElementName = "SelectButton"
     TextToken = "NV_SELECT"
 
-    HintTitleToken = "ODL_SELEBT"
-    HintBodyToken = "ODL_SELEBB"
-    HintExtendedToken = "ODL_SELEBE"
-    HintDico = ~/LocalisationConstantes/dico_interface_outgame
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintTitleToken = "ODL_SELEBT"
+        HintBodyToken = "ODL_SELEBB"
+        HintExtendedToken = "ODL_SELEBE"
+        DicoToken = ~/LocalisationConstantes/dico_interface_outgame
+    )
     BigLineAction = ~/BigLineAction/ResizeFont
 
     ButtonMagnifiableWidthHeight = [400.0, 34.0]

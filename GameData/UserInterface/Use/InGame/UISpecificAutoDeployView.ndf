@@ -14,10 +14,13 @@ BUCKSpecificAutoDeployMainComponentDescriptor is BUCKSpecificButton
     TextDico = ~/LocalisationConstantes/dico_interface_ingame
     IsTogglable = true
 
-    HintTitleToken = "DSI_ADHT"
-    HintBodyToken = "DSI_ADHB"
-    HintExtendedToken = "DSI_ADHE"
-    HintDico = ~/LocalisationConstantes/dico_interface_ingame
+    HintableAreaComponent = BUCKSpecificHintableArea
+    (
+        HintTitleToken = "DSI_ADHT"
+        HintBodyToken = "DSI_ADHB"
+        HintExtendedToken = "DSI_ADHE"
+        DicoToken = ~/LocalisationConstantes/dico_interface_ingame
+    )
 )
 
 UISpecificAutoDeployViewDescriptor is TUISpecificAutoDeployViewDescriptor

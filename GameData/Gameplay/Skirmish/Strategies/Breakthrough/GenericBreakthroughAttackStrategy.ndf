@@ -86,7 +86,7 @@ export GenBTAtk_PhaseDeploiement is TSequenceGeneratorDescriptor
         //------------------------------
         // Grosse attaque
         ~/Attack_Main,
-        ~/Attack_Objectives,
+        ~/Attack_Main,
 
         ~/GenBTAtk_Artillery_Support,
         ~/GenBTAtk_Artillery_TriggerHappy_1for4Corridors,
@@ -129,13 +129,15 @@ export GenBTAtk_Phase_Command is TSequenceGeneratorDescriptor
         // Attaques principales
         //------------------------------
         ~/Attack_Main,
-        ~/Attack_Objectives,
+        ~/Attack_Main,
 
         ~/GenBTAtk_Artillery_Support,
         ~/GenBTAtk_Artillery_Expensive,
 
         ~/Airstrike_Offense,
         ~/Airstrike_AA,
+
+        ~/Attack_Objectives,
 
         //------------------------------
         // Défenses Avions Arti
@@ -170,14 +172,13 @@ GenBTAtk_Defenses_Airstrike_Arti_Shuffle_Deploy is
 
 GenBTAtk_Scaling is
 [
-    ~/Attack_Main_Autogen,
+    ~/Attack_Adaptive_Autogen,
     ~/Attack_Objectives_Autogen,
     ~/GenBTAtk_Artillery_Expensive_Autogen,
-    ~/Defense_Dynamic_Adaptive_Autogen,
-    ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Airstrike_AA_Autogen,
     ~/Defense_Dynamic_Adaptive_Autogen,
     ~/Defense_Static_AA_Autogen,
+    ~/Attack_Adaptive_Autogen,
     ~/GenBTAtk_Artillery_TriggerHappy_Autogen,
     ~/Airstrike_Offense_Autogen,
     ~/GenBTAtk_Artillery_TriggerHappy_Autogen,

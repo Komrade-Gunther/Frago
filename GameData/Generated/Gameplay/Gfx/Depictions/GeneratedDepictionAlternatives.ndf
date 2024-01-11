@@ -326,6 +326,11 @@ Alternatives_ATteam_TOW_US is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_ATteam_TOW_US_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_ATteam_TOW_US_LOW ),
 ]
+Alternatives_Alvis_Stalwart_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Alvis_Stalwart_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_Alvis_Stalwart_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_Alvis_Stalwart_UK_LOW ),
+]
 Alternatives_Atteam_Fagot_VDV_SOV is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Atteam_Fagot_VDV_SOV ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_Atteam_Fagot_VDV_SOV_MID ),
@@ -745,6 +750,11 @@ Alternatives_FV103_Spartan_BEL is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_FV103_Spartan_BEL ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_FV103_Spartan_BEL_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_FV103_Spartan_BEL_LOW DisabledOperators = [ 'tourelle1' ] ),
+]
+Alternatives_FV103_Spartan_GSR_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_FV103_Spartan_GSR_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_FV103_Spartan_GSR_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_FV103_Spartan_GSR_UK_LOW DisabledOperators = [ 'tourelle1' ] ),
 ]
 Alternatives_FV103_Spartan_UK is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_FV103_Spartan_UK ),
@@ -1361,6 +1371,11 @@ Alternatives_M151_MUTT_trans_US is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M151_MUTT_trans_US_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_M151_MUTT_trans_US_LOW DisabledOperators = [ 'tourelle1' ] ),
 ]
+Alternatives_M163_CS_US is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M163_CS_US ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M163_CS_US_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_M163_CS_US_LOW DisabledOperators = [ 'tourelle1' ] ),
+]
 Alternatives_M163_PIVADS_US is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_M163_PIVADS_US ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_M163_PIVADS_US_MID ),
@@ -1576,6 +1591,11 @@ Alternatives_MAN_Kat_6x6_trans_RFA is [
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_MAN_Kat_6x6_trans_RFA_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_MAN_Kat_6x6_trans_RFA_LOW ),
 ]
+Alternatives_MCV_80_Warrior_CMD_UK is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_MCV_80_Warrior_CMD_UK ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_MCV_80_Warrior_CMD_UK_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_MCV_80_Warrior_CMD_UK_LOW DisabledOperators = [ 'tourelle4' ] ),
+]
 Alternatives_MCV_80_Warrior_MILAN_UK is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_MCV_80_Warrior_MILAN_UK ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_MCV_80_Warrior_MILAN_UK_MID ),
@@ -1720,6 +1740,11 @@ Alternatives_Mortier_MORT61_120mm_para_FR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_MORT61_120mm_para_FR ),
     DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_MORT61_120mm_para_FR_MID ),
     DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_MORT61_120mm_para_FR_LOW ),
+]
+Alternatives_Mortier_Nona_K_120mm_SOV is [
+    DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_Nona_K_120mm_SOV ),
+    DepictionDescriptor_LOD_Mid( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_Nona_K_120mm_SOV_MID ),
+    DepictionDescriptor_LOD_Low( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_Nona_K_120mm_SOV_LOW ),
 ]
 Alternatives_Mortier_PM43_120mm_DDR is [
     DepictionDescriptor_LOD_High( MeshDescriptor = $/GFX/DepictionResources/Modele_Mortier_PM43_120mm_DDR ),

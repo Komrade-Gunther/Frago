@@ -169,5 +169,8 @@ NotificationPanelResource is TUISpecificOutGameNotificationPanelResource
     NotificationAvatarTextFrame = ~/NotificationAvatarTextFrame
     NotificationTextFrame = ~/NotificationTextFrame
     NotificationTextSizeToken = "InfoSecondaire"
-    MaxPlayerAndTeamNameSize = 10
+    PlayerNameMaxSize = 10
+
+    Layer = $/UserInterface/UILayer_2DInterfaceAboveBlur_OutGame
+    DisplayTime = 10.0
 )

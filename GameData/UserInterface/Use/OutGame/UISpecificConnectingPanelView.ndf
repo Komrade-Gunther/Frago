@@ -158,10 +158,6 @@ BUCKSpecificConnectingPanelMainComponentDescriptor is LoginTvContainer
                         TextToken = "BTN_CANCEL"
 
                         Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
-
-                        HintTitleToken = ""
-                        HintBodyToken = ""
-                        HintDico = ~/LocalisationConstantes/dico_interface_outgame
                     )
                 ),
             ]

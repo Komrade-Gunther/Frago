@@ -1018,6 +1018,10 @@ FXWeapon_Bomb_Matra_250kg_x5 is TIntroduceMobileHappening( Happening = FXProject
 
 FXWeapon_Bomb_Matra_400kg_x16 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA400 ) )
 
+FXWeapon_Bomb_Matra_400kg_x2 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA400 ) )
+
+FXWeapon_Bomb_Matra_400kg_x3 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA400 ) )
+
 FXWeapon_Bomb_Matra_400kg_x4 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA400 ) )
 
 FXWeapon_Bomb_Matra_400kg_x6 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_MATRA400 ) )
@@ -1042,11 +1046,21 @@ FXWeapon_Bomb_Mk82_250kg_x6 is TIntroduceMobileHappening( Happening = FXProjecti
 
 FXWeapon_Bomb_Mk82_250kg_x8 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk82 ) )
 
+FXWeapon_Bomb_Mk83_450kg_x10 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
+
+FXWeapon_Bomb_Mk83_450kg_x12 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
+
 FXWeapon_Bomb_Mk83_450kg_x2 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
 
 FXWeapon_Bomb_Mk83_450kg_x3 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
 
 FXWeapon_Bomb_Mk83_450kg_x5 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
+
+FXWeapon_Bomb_Mk83_450kg_x7 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
+
+FXWeapon_Bomb_Mk83_450kg_x8 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
+
+FXWeapon_Bomb_Mk83_450kg_x9 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk83 ) )
 
 FXWeapon_Bomb_ZB500_500kg_Napalm_x4 is TIntroduceMobileHappening( Happening = FXProjectile_3( Action = $/GFX/GameFx/fx_traine_bombe_Mk77 ) )
 
@@ -1095,6 +1109,27 @@ FXWeapon_Canon_AP_100mm_D10T_Merida is FiringAndProjectile
 )
 
 FXWeapon_Canon_AP_100mm_D10T_early is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_01 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_02 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_03 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_04 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_05 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_06 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_07 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_08 ),
+            ]
+        ),
+        FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_105mm_APFDS ),
+    ]
+)
+
+FXWeapon_Canon_AP_100mm_D10T_early_HEAT is FiringAndProjectile
 (
     Happenings = [
         TRandomHappening
@@ -1525,6 +1560,27 @@ FXWeapon_Canon_AP_120_mm_L11A5_Challenger is FiringAndProjectile
 )
 
 FXWeapon_Canon_AP_120_mm_L11A5_Mk10 is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_01 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_02 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_03 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_04 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_05 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_06 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_07 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_08 ),
+            ]
+        ),
+        FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_105mm_APFDS ),
+    ]
+)
+
+FXWeapon_Canon_AP_120_mm_L11A5_Mk8 is FiringAndProjectile
 (
     Happenings = [
         TRandomHappening
@@ -2644,6 +2700,27 @@ FXWeapon_Canon_HE_120_mm_L11A5_Mk10 is FiringAndProjectile
     ]
 )
 
+FXWeapon_Canon_HE_120_mm_L11A5_Mk8 is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_01 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_02 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_03 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_04 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_05 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_06 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_07 ),
+                FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_105mm_Abrams_08 ),
+            ]
+        ),
+        FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_105mm_HE ),
+    ]
+)
+
 FXWeapon_Canon_HE_120_mm_L11A5_Mk9 is FiringAndProjectile
 (
     Happenings = [
@@ -3200,6 +3277,14 @@ FXWeapon_Canon_HE_90mm_M48_KanJPz is FiringAndProjectile
     ]
 )
 
+FXWeapon_Canon_HE_direct_2A51_120mm is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_3( Action = $/GFX/GameFx/fx_tir_obus_120mm ),
+        FXProjectile_4( Action = $/GFX/GameFx/fx_traine_obus_76mm_HE ),
+    ]
+)
+
 FXWeapon_Canon_HEAT_152mm_Sheridan is FiringAndProjectile
 (
     Happenings = [
@@ -3736,6 +3821,7 @@ FXWeapon_DCA_2_canons_S60_57mm is FiringAndProjectile
                 FXFiring_6( Action = $/GFX/GameFx/fx_tir_obus_57mm_S60_Douiles_1 ),
                 FXFiring_6( Action = $/GFX/GameFx/fx_tir_obus_57mm_S60_Douiles_2 ),
                 FXFiring_6( Action = $/GFX/GameFx/fx_tir_obus_57mm_S60_Douiles_3 ),
+                FXFiring_6( Action = $/GFX/GameFx/fx_tir_obus_57mm_S60_Douiles_4 ),
             ]
         ),
         TRandomHappening
@@ -3757,9 +3843,9 @@ FXWeapon_DCA_2_canons_VDAA_20mm is FiringAndProjectile
         (
             Alternatives =
             [
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_2A38_double_douilles_eject_1 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_2A38_double_douilles_eject_2 ),
-                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_2A38_double_douilles_eject_3 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_Oerlikon_douilles_eject_1 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_Oerlikon_douilles_eject_2 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_Oerlikon_douilles_eject_3 ),
             ]
         ),
         TRandomHappening
@@ -3825,6 +3911,30 @@ FXWeapon_DCA_4_canon_Maxson_SP_12_7mm is FiringAndProjectile
 )
 
 FXWeapon_DCA_4_canon_Maxson_towed_12_7mm is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_APZ23_double_douilles_eject_1 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_APZ23_double_douilles_eject_2 ),
+                FXFiring_5( Action = $/GFX/GameFx/fx_tir_obus_APZ23_double_douilles_eject_3 ),
+            ]
+        ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXProjectile_6( Action = $/GFX/GameFx/fx_traine_AZP23_1 ),
+                FXProjectile_6( Action = $/GFX/GameFx/fx_traine_AZP23_2 ),
+                FXProjectile_6( Action = $/GFX/GameFx/fx_traine_AZP23_3 ),
+            ]
+        ),
+    ]
+)
+
+FXWeapon_DCA_4_canon_ZPU4_towed_14_5mm is FiringAndProjectile
 (
     Happenings = [
         TRandomHappening
@@ -4892,6 +5002,32 @@ FXWeapon_Gatling_M61_Vulcan_20mm_late is FiringAndProjectile
 )
 
 FXWeapon_Gatling_M61_Vulcan_20mm_late_TOWED is FiringAndProjectile
+(
+    Happenings = [
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_M168_Gatling_1 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_M168_Gatling_2 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_M168_Gatling_3 ),
+                FXFiring_8( Action = $/GFX/GameFx/fx_tir_M168_Gatling_4 ),
+            ]
+        ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXProjectile_9( Action = $/GFX/GameFx/fx_traine_M168_Gatling_1 ),
+                FXProjectile_9( Action = $/GFX/GameFx/fx_traine_M168_Gatling_2 ),
+                FXProjectile_9( Action = $/GFX/GameFx/fx_traine_M168_Gatling_3 ),
+                FXProjectile_9( Action = $/GFX/GameFx/fx_traine_M168_Gatling_4 ),
+            ]
+        ),
+    ]
+)
+
+FXWeapon_Gatling_M61_Vulcan_20mm_noRadar is FiringAndProjectile
 (
     Happenings = [
         TRandomHappening
@@ -9652,6 +9788,28 @@ FXWeapon_RocketAir_B8_80mm_x80 is FiringAndProjectile
 )
 
 FXWeapon_RocketAir_CRV7_FAT_70mm_x19 is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_18( Action = $/GFX/GameFx/fx_tir_roquette_M261_Hydras_air ),
+        TRandomHappening
+        (
+            Alternatives =
+            [
+                FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_1 ),
+                FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_2 ),
+                FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_3 ),
+                FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_4 ),
+                FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_5 ),
+                FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_6 ),
+                FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_7 ),
+                FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_8 ),
+                FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_M261_Hydras_9 ),
+            ]
+        ),
+    ]
+)
+
+FXWeapon_RocketAir_CRV7_FAT_70mm_x38 is FiringAndProjectile
 (
     Happenings = [
         FXFiring_18( Action = $/GFX/GameFx/fx_tir_roquette_M261_Hydras_air ),

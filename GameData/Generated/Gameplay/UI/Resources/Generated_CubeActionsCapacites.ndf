@@ -13,9 +13,6 @@ CubeAction_Capacity_Aura_Commandement_1 is TCubeActionCapacityButtonInformations
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Aura_Commandement_1
 )
 
@@ -31,9 +28,6 @@ CubeAction_Capacity_Aura_Commandement_2 is TCubeActionCapacityButtonInformations
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Aura_Commandement_2
 )
 
@@ -49,9 +43,6 @@ CubeAction_Capacity_Aura_Commandement_3 is TCubeActionCapacityButtonInformations
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Aura_Commandement_3
 )
 
@@ -67,9 +58,6 @@ CubeAction_Capacity_Aura_capture_allie_solo is TCubeActionCapacityButtonInformat
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Aura_capture_allie_solo
 )
 
@@ -85,9 +73,6 @@ CubeAction_Capacity_Bouclier_Anti_Suppression_50 is TCubeActionCapacityButtonInf
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Bouclier_Anti_Suppression_50
 )
 
@@ -103,9 +88,6 @@ CubeAction_Capacity_Bouclier_Anti_Suppression_99 is TCubeActionCapacityButtonInf
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Bouclier_Anti_Suppression_99
 )
 
@@ -121,9 +103,6 @@ CubeAction_Capacity_Choc is TCubeActionCapacityButtonInformationsDescriptor
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Choc
 )
 
@@ -139,9 +118,6 @@ CubeAction_Capacity_Cowering_Rampe_Capacite is TCubeActionCapacityButtonInformat
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Cowering_Rampe_Capacite
 )
 
@@ -157,9 +133,6 @@ CubeAction_Capacity_Cowering_Stop_Capacite is TCubeActionCapacityButtonInformati
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Cowering_Stop_Capacite
 )
 
@@ -175,9 +148,6 @@ CubeAction_Capacity_Debarque_camion is TCubeActionCapacityButtonInformationsDesc
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Debarque_camion
 )
 
@@ -193,9 +163,6 @@ CubeAction_Capacity_Declare_hors_transport is TCubeActionCapacityButtonInformati
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Declare_hors_transport
 )
 
@@ -211,9 +178,6 @@ CubeAction_Capacity_Discipline is TCubeActionCapacityButtonInformationsDescripto
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Discipline
 )
 
@@ -229,9 +193,6 @@ CubeAction_Capacity_GSR is TCubeActionCapacityButtonInformationsDescriptor
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_GSR
 )
 
@@ -247,9 +208,6 @@ CubeAction_Capacity_GSR_no_GSR is TCubeActionCapacityButtonInformationsDescripto
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_GSR_no_GSR
 )
 
@@ -265,9 +223,6 @@ CubeAction_Capacity_IFV is TCubeActionCapacityButtonInformationsDescriptor
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_IFV
 )
 
@@ -283,9 +238,6 @@ CubeAction_Capacity_Infanterie_Dissimulee is TCubeActionCapacityButtonInformatio
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Infanterie_Dissimulee
 )
 
@@ -301,9 +253,6 @@ CubeAction_Capacity_Infanterie_Retranchee is TCubeActionCapacityButtonInformatio
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Infanterie_Retranchee
 )
 
@@ -319,9 +268,6 @@ CubeAction_Capacity_Malus_Suppress_AllTime is TCubeActionCapacityButtonInformati
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Malus_Suppress_AllTime
 )
 
@@ -337,9 +283,6 @@ CubeAction_Capacity_Malus_Suppress_Zone_Influence_Ennemie is TCubeActionCapacity
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Malus_Suppress_Zone_Influence_Ennemie
 )
 
@@ -355,9 +298,6 @@ CubeAction_Capacity_Menace_Ennemi_Proche is TCubeActionCapacityButtonInformation
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Menace_Ennemi_Proche
 )
 
@@ -373,9 +313,6 @@ CubeAction_Capacity_MilitaryPolice is TCubeActionCapacityButtonInformationsDescr
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_MilitaryPolice
 )
 
@@ -391,9 +328,6 @@ CubeAction_Capacity_Ordre_Unload_NonArmes is TCubeActionCapacityButtonInformatio
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Ordre_Unload_NonArmes
 )
 
@@ -409,9 +343,6 @@ CubeAction_Capacity_Regen_suppress_xp_1 is TCubeActionCapacityButtonInformations
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Regen_suppress_xp_1
 )
 
@@ -427,9 +358,6 @@ CubeAction_Capacity_Regen_suppress_xp_2 is TCubeActionCapacityButtonInformations
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Regen_suppress_xp_2
 )
 
@@ -445,9 +373,6 @@ CubeAction_Capacity_Regen_suppress_xp_3 is TCubeActionCapacityButtonInformations
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Regen_suppress_xp_3
 )
 
@@ -463,9 +388,6 @@ CubeAction_Capacity_Soutien_Allie_Proche is TCubeActionCapacityButtonInformation
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Soutien_Allie_Proche
 )
 
@@ -481,9 +403,6 @@ CubeAction_Capacity_Soutien_Allie_Proche_Commandant is TCubeActionCapacityButton
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Soutien_Allie_Proche_Commandant
 )
 
@@ -499,9 +418,6 @@ CubeAction_Capacity_Soutien_Allie_Proche_Commandant_2 is TCubeActionCapacityButt
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Soutien_Allie_Proche_Commandant_2
 )
 
@@ -517,9 +433,6 @@ CubeAction_Capacity_Soutien_Allie_Proche_Commandant_3 is TCubeActionCapacityButt
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Soutien_Allie_Proche_Commandant_3
 )
 
@@ -535,9 +448,6 @@ CubeAction_Capacity_Suicide_SurCetteCibleEnnemie is TCubeActionCapacityButtonInf
     HintTitleToken               = "ht_kamikaz"
     HintBodyToken                = "hd_kamikaz"
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Suicide_SurCetteCibleEnnemie
     Mapping                      = $/KeyboardOption/Mapping_Movedie
 )
@@ -554,9 +464,6 @@ CubeAction_Capacity_Suicide_SurCettePosition is TCubeActionCapacityButtonInforma
     HintTitleToken               = "ht_movedie"
     HintBodyToken                = "hd_movedie"
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Suicide_SurCettePosition
     Mapping                      = $/KeyboardOption/Mapping_Movedie
 )
@@ -573,9 +480,6 @@ CubeAction_Capacity_Tank_Dissimule is TCubeActionCapacityButtonInformationsDescr
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_Tank_Dissimule
 )
 
@@ -591,9 +495,6 @@ CubeAction_Capacity_electronic_warfare is TCubeActionCapacityButtonInformationsD
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_electronic_warfare
 )
 
@@ -609,10 +510,22 @@ CubeAction_Capacity_jammer is TCubeActionCapacityButtonInformationsDescriptor
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_jammer
+)
+
+CubeAction_Capacity_poorly_trained is TCubeActionCapacityButtonInformationsDescriptor
+(
+    CubeActionName               = "CubeAction_Capacity_poorly_trained"
+    CubeActionFunctionType       = ~/TacticCubeActionFunctionType/Orders
+    BackgroundTexture            = "Texture_Button_Capacity_poorly_trained"
+    HoverSound                   = CubeActionButtonHoverSound_IfEnabled
+    ClickSound                   = CubeActionButtonClickSound_IfEnabled
+    ButtonTextToken              = ""
+    HintDico                     = ~/LocalisationConstantes/dico_interface_ingame
+    HintTitleToken               = ""
+    HintBodyToken                = ""
+    HintExtendedToken            = ""
+    Descriptor                   = ~/Capacite_poorly_trained
 )
 
 CubeAction_Capacity_reserviste is TCubeActionCapacityButtonInformationsDescriptor
@@ -627,9 +540,6 @@ CubeAction_Capacity_reserviste is TCubeActionCapacityButtonInformationsDescripto
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_reserviste
 )
 
@@ -645,9 +555,6 @@ CubeAction_Capacity_resolute is TCubeActionCapacityButtonInformationsDescriptor
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_resolute
 )
 
@@ -663,9 +570,6 @@ CubeAction_Capacity_security is TCubeActionCapacityButtonInformationsDescriptor
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_security
 )
 
@@ -681,9 +585,6 @@ CubeAction_Capacity_sniper is TCubeActionCapacityButtonInformationsDescriptor
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_sniper
 )
 
@@ -699,9 +600,6 @@ CubeAction_Capacity_sniper_no_snipe is TCubeActionCapacityButtonInformationsDesc
     HintTitleToken               = ""
     HintBodyToken                = ""
     HintExtendedToken            = ""
-    DependanciesToIgnore         =
-    [
-    ]
     Descriptor                   = ~/Capacite_sniper_no_snipe
 )
 

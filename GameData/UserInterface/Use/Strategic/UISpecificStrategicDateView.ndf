@@ -57,7 +57,7 @@ BUCKSpecificStrategicDateMainComponentDescriptor is BUCKListDescriptor
 
                         //         TypefaceToken = "Eurostyle_Medium"
 
-                        //         Hint = BUCKSpecificHintableArea
+                        //         Hint = BUCKSpecificStrategicHintableArea
                         //         (
                         //             DicoToken = ~/LocalisationConstantes/dico_interface_ingame
                         //             HintTitleToken = "nextT_apt"
@@ -122,7 +122,7 @@ private PanelDate is BUCKContainerDescriptor
         ComponentFrame = TUIFramePropertyRTTI
         (
             RelativeWidthHeight = [1,1]
-            MagnifiableOffset = [0,2]
+            MagnifiableOffset = [0,5]
         )
         ParagraphStyle = TParagraphStyleRTTI
                 (
@@ -138,12 +138,12 @@ private PanelDate is BUCKContainerDescriptor
 
         TextToken = "StrStrDate"
         TextColor = "Noir"
-        TextSize = "28"
+        TextSize = "24"
         TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
         TypefaceToken = "Eurostyle"
 
-        Hint = BUCKSpecificHintableArea
+        Hint = BUCKSpecificStrategicHintableArea
         (
             DicoToken = ~/LocalisationConstantes/dico_interface_ingame
             HintTitleToken = "nextT_dat"
@@ -174,12 +174,12 @@ private PanelDate is BUCKContainerDescriptor
         VerticalFitStyle = ~/FitStyle/UserDefined
 
         TextColor = "Noir"
-        TextSize = "8"
+        TextSize = "10"
         TextDico = ~/LocalisationConstantes/dico_interface_ingame
 
         TypefaceToken = "Eurostyle_Medium"
 
-        Hint = BUCKSpecificHintableArea
+        Hint = BUCKSpecificStrategicHintableArea
         (
             DicoToken = ~/LocalisationConstantes/dico_interface_ingame
             HintTitleToken = "nextT_apt"

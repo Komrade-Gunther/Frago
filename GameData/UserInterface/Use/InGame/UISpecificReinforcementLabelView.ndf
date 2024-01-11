@@ -33,26 +33,12 @@ BUCKSpecificReinforcementLabelMainComponentDescriptor is BUCKTextDescriptor
     TypefaceToken = "Liberator"
 )
 
-ReinforcementTextReferentiel is TLabelTransformationComposition
-(
-    Transformations =
-    [
-        TLabelTransformPostTranslateForArea
-        (
-            Translation = [0,0,0]
-        )
-    ]
-)
-
 UISpecificReinforcementLabelViewDescriptor is TUISpecificReinforcementLabelViewDescriptor
 (
     MainComponentDescriptor = ~/BUCKSpecificReinforcementLabelMainComponentDescriptor
     MainComponentContainerUniqueName = "" // Permet d'indiquer l'endroit ou le composant doit s'insérer
 
     UI3DLayer = $/UserInterface/UI3DLayer_General
-
-    LabelReferentiel = ~/ReinforcementTextReferentiel
-
     VisibilityRange = ~/AllInGameRanges/ZoomRenfortArrow
     FadeDuration = 0.5
 

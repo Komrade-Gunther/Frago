@@ -329,7 +329,7 @@ is BUCKListDescriptor
 
     ForegroundComponents =
     [
-        BUCKSpecificHintableArea
+        BUCKSpecificStrategicHintableArea
         (
             ElementName = <LineName> + "Hint"
             HintTitleToken = <HintTitleToken>
@@ -520,7 +520,7 @@ AutoResolveArmyForcesAndRatio is BUCKContainerDescriptor
 
             ForegroundComponents =
             [
-                BUCKSpecificHintableArea
+                BUCKSpecificStrategicHintableArea
                 (
                     HintTitleToken = 'AR_forcrat'
                     HintBodyToken = 'AR_forcrab'
@@ -566,7 +566,7 @@ template AutoResolveCombatResultSubTitle
     TextSize = "14"
     TextColor = "AutoResolve/Information"
 
-    Hint = BUCKSpecificHintableArea
+    Hint = BUCKSpecificStrategicHintableArea
     (
         HintTitleToken = <HintTitleToken>
         HintBodyToken = <HintBodyToken>
@@ -1395,7 +1395,7 @@ template ArmyStrengthDisplay
 
             ForegroundComponents =
             [
-                BUCKSpecificHintableArea
+                BUCKSpecificStrategicHintableArea
                 (
                     HintTitleToken = 'AR_ovstret'
                     HintBodyToken = 'AR_ovstreb'

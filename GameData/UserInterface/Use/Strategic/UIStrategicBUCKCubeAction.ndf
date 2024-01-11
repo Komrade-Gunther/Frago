@@ -128,7 +128,7 @@ is TCommonInGameCubeActionButtonDescriptor
             UniformDrawer   = $/UserInterface/UIUniformDrawer
         ),
 
-        BUCKSpecificHintableArea
+        BUCKSpecificStrategicHintableArea
         (
             DicoToken = <HintDico>
             HintTitleToken = <HintTitleToken>
@@ -199,7 +199,7 @@ template StrategicEmptySecondaryCubeActionButton
             UniformDrawer   = $/UserInterface/UIUniformDrawer
         ),
 
-        BUCKSpecificHintableArea
+        BUCKSpecificStrategicHintableArea
         (
             DicoToken = ~/LocalisationConstantes/dico_interface_ingame
             HintTitleToken = "HUD_UNKN"

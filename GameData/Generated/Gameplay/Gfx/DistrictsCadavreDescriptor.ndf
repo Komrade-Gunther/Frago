@@ -1,23 +1,16 @@
 // Ne pas éditer, ce fichier est auto-généré !
 
 
-export Descriptor_UnitCadavre_Quartier_Gros is TEntityDescriptor(
-    DescriptorId       = GUID:{928414ef-6292-4b1b-a94d-8963725a11dd}
-    ClassNameForDebug  = 'CadavreQuartier_Gros'
+export Descriptor_UnitCadavre_Big_District is TEntityDescriptor(
+    DescriptorId       = GUID:{2387bae3-7504-42c3-948d-9fa745ef79a6}
+    ClassNameForDebug  = 'CadavreBig_District'
     ModulesDescriptors =
     [
         TTypeUnitModuleDescriptor
         (
         ),
         ~/BuildingTagsModuleDescriptor,
-        TFlagsModuleDescriptor
-        (
-            InitialFlagSet =
-            [
-                Flag_Detectable,
-                Flag_Batiment,
-            ]
-        ),
+        ~/DistrictFlagsModuleDescriptor,
         ~/DistrictPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         ~/DebugModuleDescriptor,
@@ -31,29 +24,22 @@ export Descriptor_UnitCadavre_Quartier_Gros is TEntityDescriptor(
             CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu_Batiment
             ModuleDescriptorsToSteal =
             [
-                $/GFX/Everything/Descriptor_District_Quartier_Gros/ApparenceModel,
+                $/GFX/Everything/Descriptor_District_Big_District/ApparenceModel,
             ]
         ),
-        $/GFX/Everything/Descriptor_District_Quartier_Gros/ApparenceModel,
+        $/GFX/Everything/Descriptor_District_Big_District/ApparenceModel,
     ]
 )
-export Descriptor_UnitCadavre_Quartier_HLM is TEntityDescriptor(
-    DescriptorId       = GUID:{a1a45187-7e48-479b-a8e3-89bfc42d5a39}
-    ClassNameForDebug  = 'CadavreQuartier_HLM'
+export Descriptor_UnitCadavre_HLM_District is TEntityDescriptor(
+    DescriptorId       = GUID:{72eb94a2-0963-444d-8f8f-3c693f4c422e}
+    ClassNameForDebug  = 'CadavreHLM_District'
     ModulesDescriptors =
     [
         TTypeUnitModuleDescriptor
         (
         ),
         ~/BuildingTagsModuleDescriptor,
-        TFlagsModuleDescriptor
-        (
-            InitialFlagSet =
-            [
-                Flag_Detectable,
-                Flag_Batiment,
-            ]
-        ),
+        ~/DistrictFlagsModuleDescriptor,
         ~/DistrictPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         ~/DebugModuleDescriptor,
@@ -67,29 +53,22 @@ export Descriptor_UnitCadavre_Quartier_HLM is TEntityDescriptor(
             CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu_Batiment
             ModuleDescriptorsToSteal =
             [
-                $/GFX/Everything/Descriptor_District_Quartier_HLM/ApparenceModel,
+                $/GFX/Everything/Descriptor_District_HLM_District/ApparenceModel,
             ]
         ),
-        $/GFX/Everything/Descriptor_District_Quartier_HLM/ApparenceModel,
+        $/GFX/Everything/Descriptor_District_HLM_District/ApparenceModel,
     ]
 )
-export Descriptor_UnitCadavre_Quartier_Moyen is TEntityDescriptor(
-    DescriptorId       = GUID:{cbe1809a-13d0-4566-a765-1c4bc5a5aae9}
-    ClassNameForDebug  = 'CadavreQuartier_Moyen'
+export Descriptor_UnitCadavre_Mid_District is TEntityDescriptor(
+    DescriptorId       = GUID:{b48f05b1-cc13-4d3b-ace2-c5fb0062c44c}
+    ClassNameForDebug  = 'CadavreMid_District'
     ModulesDescriptors =
     [
         TTypeUnitModuleDescriptor
         (
         ),
         ~/BuildingTagsModuleDescriptor,
-        TFlagsModuleDescriptor
-        (
-            InitialFlagSet =
-            [
-                Flag_Detectable,
-                Flag_Batiment,
-            ]
-        ),
+        ~/DistrictFlagsModuleDescriptor,
         ~/DistrictPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         ~/DebugModuleDescriptor,
@@ -103,29 +82,22 @@ export Descriptor_UnitCadavre_Quartier_Moyen is TEntityDescriptor(
             CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu_Batiment
             ModuleDescriptorsToSteal =
             [
-                $/GFX/Everything/Descriptor_District_Quartier_Moyen/ApparenceModel,
+                $/GFX/Everything/Descriptor_District_Mid_District/ApparenceModel,
             ]
         ),
-        $/GFX/Everything/Descriptor_District_Quartier_Moyen/ApparenceModel,
+        $/GFX/Everything/Descriptor_District_Mid_District/ApparenceModel,
     ]
 )
-export Descriptor_UnitCadavre_Quartier_Moyen_resistant_mieux is TEntityDescriptor(
-    DescriptorId       = GUID:{52588dea-92d2-4879-9832-73a058dafb34}
-    ClassNameForDebug  = 'CadavreQuartier_Moyen_resistant_mieux'
+export Descriptor_UnitCadavre_Small_District is TEntityDescriptor(
+    DescriptorId       = GUID:{8ba7a9ce-1db8-4d75-8420-c43e92fa6ef3}
+    ClassNameForDebug  = 'CadavreSmall_District'
     ModulesDescriptors =
     [
         TTypeUnitModuleDescriptor
         (
         ),
         ~/BuildingTagsModuleDescriptor,
-        TFlagsModuleDescriptor
-        (
-            InitialFlagSet =
-            [
-                Flag_Detectable,
-                Flag_Batiment,
-            ]
-        ),
+        ~/DistrictFlagsModuleDescriptor,
         ~/DistrictPositionModuleDescriptor,
         ~/LinkTeamModuleDescriptor,
         ~/DebugModuleDescriptor,
@@ -139,9 +111,9 @@ export Descriptor_UnitCadavre_Quartier_Moyen_resistant_mieux is TEntityDescripto
             CadavreDuration = $/GFX/Everything/CadavreDurationApresFeu_Batiment
             ModuleDescriptorsToSteal =
             [
-                $/GFX/Everything/Descriptor_District_Quartier_Moyen_resistant_mieux/ApparenceModel,
+                $/GFX/Everything/Descriptor_District_Small_District/ApparenceModel,
             ]
         ),
-        $/GFX/Everything/Descriptor_District_Quartier_Moyen_resistant_mieux/ApparenceModel,
+        $/GFX/Everything/Descriptor_District_Small_District/ApparenceModel,
     ]
 )

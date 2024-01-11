@@ -52,7 +52,7 @@ template SpecificModalButton
     BackgroundBlockColorToken = <IsFilled> ? 'loginBoutonBackground_cyan' : 'loginBoutonBackground_vert'
     TextSizeToken = <TextSizeToken>
     BorderThicknessToken = "3"
-    HintableAreaElementName = <HintableAreaElementName>
+    HintableAreaComponent = BUCKSpecificHintableArea(ElementName = <HintableAreaElementName>)
     RadioButtonManager = <RadioButtonManager>
     IsTogglable = <IsTogglable>
 )
