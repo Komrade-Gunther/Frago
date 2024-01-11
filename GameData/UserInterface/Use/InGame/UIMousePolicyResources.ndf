@@ -82,6 +82,7 @@ MouseWidgetSelector_Attack is TUIMouseWidgetSelector_Attack
     TextForDamageType = MAP
     [
         (DamageFamily_ap                , "TC_AP"),
+		(DamageFamily_ap_autocannon                , "TC_AP"),
         (DamageFamily_ap_missile        , "TC_HEAT"),
         (DamageFamily_balle             , "TC_BULLET"),
         (DamageFamily_balleaa           , "TC_BULLET"),

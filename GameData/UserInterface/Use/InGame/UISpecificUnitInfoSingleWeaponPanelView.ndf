@@ -8,6 +8,14 @@ DamageTypeComponentConfigurations is
         AmmoText = "WeaponAPAmmoText"
         CalibreText = "WeaponAPCalibreText"
     ),
+	TDamageComponentConfiguration
+    (
+        DamageType = DamageFamily_ap_autocannon
+        Button = "APButton"
+        AmmoText = "WeaponAPAmmoText"
+        CalibreText = "WeaponAPCalibreText"
+    ),
+
     TDamageComponentConfiguration
     (
         DamageType = DamageFamily_he

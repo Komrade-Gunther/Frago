@@ -23,6 +23,9 @@ WeaponTypePriorities is TWeaponTypePrioritiesHolder
         (DamageFamily_ap, EWeaponRangeDependant/DependOfRange_Near),
         (DamageFamily_ap, EWeaponRangeDependant/NotDefined),
         (DamageFamily_ap, EWeaponRangeDependant/DependOfRange_Far),
+        (DamageFamily_ap_autocannon, EWeaponRangeDependant/DependOfRange_Near),
+        (DamageFamily_ap_autocannon, EWeaponRangeDependant/NotDefined),
+        (DamageFamily_ap_autocannon, EWeaponRangeDependant/DependOfRange_Far),
         (DamageFamily_ap_missile, EWeaponRangeDependant/NotDefined),
         (DamageFamily_he, EWeaponRangeDependant/NotDefined),
     ]
