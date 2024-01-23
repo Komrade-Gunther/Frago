@@ -24974,7 +24974,6 @@ Ammo_FM_kbk_AKM is TAmmunitionDescriptor
     DamageTypeEvolutionOverRangeDescriptor = ~/DamageTypeEvolutionOverRangeDescriptor_AP1_1Km
 )
 
-
 Ammo_Gatling_AP_M197_20mm is TAmmunitionDescriptor
 (
     DescriptorId = GUID:{2bdbf334-3416-4dd2-a4df-f6f410718f17}
@@ -71982,8 +71981,14 @@ Ammo_Javelin is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -72069,8 +72074,13 @@ Ammo_Javelin_LML is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -72344,8 +72354,13 @@ Ammo_MANPAD_Blowpipe is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -72431,8 +72446,13 @@ Ammo_MANPAD_FIM43 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -72518,8 +72538,13 @@ Ammo_MANPAD_FIM92 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -72605,8 +72630,13 @@ Ammo_MANPAD_Javelin is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -72692,8 +72722,13 @@ Ammo_MANPAD_Strela2M is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -72779,8 +72814,13 @@ Ammo_MANPAD_igla is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -72866,8 +72906,13 @@ Ammo_Mistral is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -72953,8 +72998,13 @@ Ammo_Mistral_Celtic_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -73040,8 +73090,13 @@ Ammo_SAM_9M311_Tunguska_x8 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -73127,8 +73182,14 @@ Ammo_SAM_9M33 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+        )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -73213,8 +73274,14 @@ Ammo_SAM_9M330_Tor_x8 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     MaxSuccessiveHitCount = 3
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
@@ -73302,8 +73369,14 @@ Ammo_SAM_9M336_x3 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 20.0
@@ -73390,8 +73463,14 @@ Ammo_SAM_9M33M2_x6 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 20.0
@@ -73478,8 +73557,14 @@ Ammo_SAM_9M38M1_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 20.0
@@ -73566,8 +73651,14 @@ Ammo_SAM_FIM92_Stinger_CS is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -73653,8 +73744,14 @@ Ammo_SAM_FIM92_Stinger_CS_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -73740,8 +73837,14 @@ Ammo_SAM_FIM92_Stinger_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -73827,8 +73930,14 @@ Ammo_SAM_FIM92C is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -73913,8 +74022,14 @@ Ammo_SAM_I_Hawk is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 20.0
@@ -74000,8 +74115,14 @@ Ammo_SAM_I_Hawk_x3 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 20.0
@@ -74088,8 +74209,14 @@ Ammo_SAM_Igla is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -74175,8 +74302,14 @@ Ammo_SAM_Igla1M is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -74262,8 +74395,14 @@ Ammo_SAM_IglaV is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -74349,8 +74488,14 @@ Ammo_SAM_IglaV_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -74436,8 +74581,14 @@ Ammo_SAM_MIM72A is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -74523,8 +74674,14 @@ Ammo_SAM_MIM72F is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -74610,8 +74767,14 @@ Ammo_SAM_MIM72G is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -74697,8 +74860,14 @@ Ammo_SAM_Mistral is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -74784,8 +74953,14 @@ Ammo_SAM_RAPIER is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -74871,8 +75046,14 @@ Ammo_SAM_RAPIER_DARKFIRE_x6 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 5.0
@@ -74959,8 +75140,14 @@ Ammo_SAM_RAPIER_FSA_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 5.0
@@ -75047,8 +75234,14 @@ Ammo_SAM_RAPIER_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -75134,8 +75327,14 @@ Ammo_SAM_RAPIER_x8 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -75221,8 +75420,14 @@ Ammo_SAM_ROLAND is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 15.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -75308,8 +75513,14 @@ Ammo_SAM_ROLAND_1 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 15.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -75395,8 +75606,14 @@ Ammo_SAM_ROLAND_1_x2 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 15.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -75482,8 +75699,14 @@ Ammo_SAM_ROLAND_2 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 15.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -75569,8 +75792,14 @@ Ammo_SAM_ROLAND_2_x2 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 15.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -75656,8 +75885,14 @@ Ammo_SAM_ROLAND_3 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 15.0
@@ -75744,8 +75979,14 @@ Ammo_SAM_ROLAND_3_x2 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     Guidance = Guidance_Radar
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 15.0
@@ -75832,8 +76073,14 @@ Ammo_SAM_Strela1_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -75919,8 +76166,14 @@ Ammo_SAM_Strela10_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -76006,8 +76259,14 @@ Ammo_SAM_Strela10_x4_FASTA is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -76093,8 +76352,14 @@ Ammo_SAM_Strela2_x12 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -76180,8 +76445,14 @@ Ammo_SAM_Strela2_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 1.0
     TempsEntreDeuxSalves = 5.0
     TempsEntreDeuxSalves_Min = -1.0
@@ -79477,8 +79748,14 @@ Ammo_MANPAD_FIM92_A is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     MaxSuccessiveHitCount = 3
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 10.0
@@ -79565,8 +79842,14 @@ Ammo_SAM_Strela10M3_x4 is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     MaxSuccessiveHitCount = 3
     TempsDeVisee = 2.0
     TempsEntreDeuxSalves = 20.0
@@ -79747,8 +80030,14 @@ Ammo_MANPAD_FIM92_FRL_Slow is TAmmunitionDescriptor
             (EBaseHitValueModifier/SuccessfulShots, 0.0),
             (EBaseHitValueModifier/Targeted, 0.0)
         ]
-        HitModifierList = [EDiceHitModifier/Precision, EDiceHitModifier/SuccesiveShots, EDiceHitModifier/Suppress]
-    )
+        HitModifierList = 
+        [
+            EDiceHitModifier/Precision,
+            EDiceHitModifier/DistanceToTarget,
+            EDiceHitModifier/SuccesiveShots,
+            EDiceHitModifier/Suppress
+        ]    
+            )
     TempsDeVisee = 2.3
     TempsEntreDeuxSalves = 10.0
     TempsEntreDeuxSalves_Min = -1.0
