@@ -44,7 +44,7 @@ BUCKSpecificConnectionStateMainComponentDescriptor is LoginTvContainer
                         ComponentFrame = TUIFramePropertyRTTI
                         (
                             RelativeWidthHeight = [1.0, 0.0]
-                            MagnifiableWidthHeight = [0.0, 150.0]
+                            MagnifiableWidthHeight = [0.0, 30.0]
                         )
 
                         TextPadding = TRTTILength4( Magnifiable = [18.0, 0.0, 0.0, 0.0] )
@@ -63,6 +63,39 @@ BUCKSpecificConnectionStateMainComponentDescriptor is LoginTvContainer
 
                         TextColor       = "Blanc"
                         TextSize        = "22"
+
+                        TextDico = ~/LocalisationConstantes/dico_interface_outgame
+                    )
+                ),
+
+                BUCKListElementDescriptor
+                (
+                    ComponentDescriptor = BUCKTextDescriptor
+                    (
+                        ElementName = "ConnectionErrorText"
+
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            RelativeWidthHeight = [1.0, 0.0]
+                            MagnifiableWidthHeight = [0.0, 150.0]
+                        )
+
+                        TextPadding = TRTTILength4( Magnifiable = [18.0, 0.0, 0.0, 0.0] )
+
+                        ParagraphStyle = TParagraphStyleRTTI
+                        (
+                            VerticalAlignment = ~/UIText_FirstBaseLine
+                            Alignment = UIText_Left
+                        )
+
+                        HorizontalFitStyle = ~/FitStyle/UserDefined
+                        VerticalFitStyle = ~/FitStyle/UserDefined
+
+                        TextStyle = "TextStyleEcranMoniteur"
+                        TypefaceToken = "UISecondFont"
+
+                        TextColor       = "Blanc"
+                        TextSize        = "16"
 
                         TextDico = ~/LocalisationConstantes/dico_interface_outgame
                     )

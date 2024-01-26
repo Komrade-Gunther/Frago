@@ -389,7 +389,7 @@ BUCKSpecificLoginMainComponentDescriptor is LoginTvContainer
             ComponentFrame = TUIFramePropertyRTTI
             (
                 MagnifiableWidthHeight = [0.0, 50.0]
-                MagnifiableOffset = [0.0, -50.0]
+                MagnifiableOffset = [0.0, 0.0]
                 AlignementToFather  = [0.5, 1.0]
                 AlignementToAnchor  = [0.5, 1.0]
             )
